@@ -8,3 +8,4 @@ C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\tccCshar
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\tccCsharp.pdb
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.exe
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.pdb
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.Form1.resources
