@@ -9,7 +9,7 @@ namespace tccCsharp
     internal class User
     {
         public int id_usuario { get; set; }
-        public string name { get; set; }
+        public string nome { get; set; }
         public string bio { get; set; }
         public int avatar { get; set; }
         public string naturalidade { get; set; }
@@ -18,7 +18,7 @@ namespace tccCsharp
         public string email { get; set; }
         public string senha { get; set; }
         public string telefone { get; set; }
-        public string commits { get; set; }
+        public int commits { get; set; }
         public bool excluido { get; set; }
 
 

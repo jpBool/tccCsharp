@@ -8,7 +8,6 @@ C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\tccCshar
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\tccCsharp.pdb
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.exe
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.pdb
-C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.Form1.resources
 C:\Users\joao pedro\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\tccCsharp.exe.config
 C:\Users\joao pedro\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\tccCsharp.exe
 C:\Users\joao pedro\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\tccCsharp.pdb
@@ -93,3 +92,5 @@ C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\System.T
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\System.ValueTuple.xml
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.csproj.CopyComplete
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmLogin.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmPerfil.resources

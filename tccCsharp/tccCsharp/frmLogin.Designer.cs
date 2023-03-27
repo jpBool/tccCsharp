@@ -1,6 +1,6 @@
 ﻿namespace tccCsharp
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -99,7 +99,7 @@
             this.lblSenha.TabIndex = 6;
             this.lblSenha.Text = "Senha:";
             // 
-            // Form1
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,8 +111,8 @@
             this.Controls.Add(this.btnLogar);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnLimpar);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmLogin";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

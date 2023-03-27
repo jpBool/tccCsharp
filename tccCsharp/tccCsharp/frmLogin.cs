@@ -11,10 +11,9 @@ using Npgsql;
 
 namespace tccCsharp
 {
-    public partial class Form1 : Form
+    public  partial class  frmLogin : Form
     {
-        int id_usuario = 0;
-        public Form1()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -38,21 +37,23 @@ namespace tccCsharp
                 lblResultados.Text += "Preemcha o campo Senha\n";
                 return;
             }
-            id_usuario = Banco.logar(email, senha);
-            if(id_usuario == 0)
+            Program.id_usuario = Banco.logar(email, senha);
+            if(Program.id_usuario == 0)
             {
                 lblResultados.Text += "E-mail ou Senha Incorreto(s), verifique !!!\n";
             }
-            else if (id_usuario == -1)
+            else if (Program.id_usuario == -1)
             {
                 lblResultados.Text += "Ocorreu um erro ao logar no sistema.\n";
             }
             else
             {
-                lblResultados.Text += "Login efetuado com succeso.\n"; 
+                lblResultados.Text += "Login efetuado com succeso.\n";
+                this.Close();
             }
+
         }
+        
     }
 }
 
-//hayashi presente  oojjopoioiiooihiohoihioh

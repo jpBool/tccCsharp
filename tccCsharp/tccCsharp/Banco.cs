@@ -67,7 +67,7 @@ namespace tccCsharp
             string sql;
             try
             {
-                sql = "select id_usuario,nome,senha from gp2_usuarios ";
+                sql = "select id_usuario,nome from gp2_usuarios ";
                 sql += " where email = @1 and senha = @2 and excluido = false";
 
                 List<object> param = new List<object>();
@@ -84,7 +84,7 @@ namespace tccCsharp
                 }
                 else
                 {
-                    //MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!","Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!","Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     dr.Close();
                     return 0;
                     
@@ -96,6 +96,38 @@ namespace tccCsharp
                 MessageBox.Show("Ocorreu um erro ao logar no sistema !!!" + "\n\nMais detalhes: " + ex.Message,"Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return -1;
             }
+        }
+
+        public static User CarregaPerfil(User usuario)
+        {
+            string sql;
+            try
+            {
+                sql = "select nome, bio, avatar, naturalidade, nascimento, inscricao, email, telefone, commits from gp2_usuarios";
+                sql += " where id_usuario = @1 and excluido = false";
+
+                List<object> param = new List<object>();
+                param.Add(Program.id_usuario);
+
+
+                NpgsqlDataReader dr = Banco.selecionar(sql, param);
+                dr.Read();
+                usuario.nome = dr["nome"].ToString();
+                usuario.bio = dr["bio"].ToString();
+                usuario.avatar = Convert.ToInt32(dr["avatar"]);
+                usuario.naturalidade = dr["naturalidade"].ToString();
+                usuario.nascimento = Convert.ToDateTime(dr["nascimento"]);
+                usuario.inscricao = Convert.ToDateTime(dr["inscricao"]);
+                usuario.email = dr["email"].ToString();
+                usuario.telefone = dr["telefone"].ToString();
+                usuario.commits = Convert.ToInt32(dr["commits"]);
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar as informações do usuário !!!" + "\n\nMais detalhes: " + ex.Message, "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return usuario;
         }
 
 
