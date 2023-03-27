@@ -15,6 +15,7 @@ namespace tccCsharp
         public Form1()
         {
             InitializeComponent();
+            Banco.conectar();
         }
 
         private void button1_Click(object sender, EventArgs e)
