@@ -51,8 +51,8 @@
             this.btnCompartilhar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.gbProjeto = new System.Windows.Forms.GroupBox();
-            this.lblNomeP = new System.Windows.Forms.Label();
             this.lblDescricaoP = new System.Windows.Forms.Label();
+            this.lblNomeP = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbProjeto.SuspendLayout();
             this.SuspendLayout();
@@ -230,14 +230,14 @@
             // 
             this.btnExcluir.Location = new System.Drawing.Point(6, 182);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(51, 23);
             this.btnExcluir.TabIndex = 21;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnCompartilhar
             // 
-            this.btnCompartilhar.Location = new System.Drawing.Point(148, 182);
+            this.btnCompartilhar.Location = new System.Drawing.Point(128, 182);
             this.btnCompartilhar.Name = "btnCompartilhar";
             this.btnCompartilhar.Size = new System.Drawing.Size(75, 23);
             this.btnCompartilhar.TabIndex = 22;
@@ -246,7 +246,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(172, 10);
+            this.btnEditar.Location = new System.Drawing.Point(152, 19);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(51, 23);
             this.btnEditar.TabIndex = 23;
@@ -262,28 +262,28 @@
             this.gbProjeto.Controls.Add(this.btnCompartilhar);
             this.gbProjeto.Location = new System.Drawing.Point(26, 226);
             this.gbProjeto.Name = "gbProjeto";
-            this.gbProjeto.Size = new System.Drawing.Size(229, 212);
+            this.gbProjeto.Size = new System.Drawing.Size(211, 212);
             this.gbProjeto.TabIndex = 25;
             this.gbProjeto.TabStop = false;
             this.gbProjeto.Text = "Projeto";
             // 
-            // lblNomeP
-            // 
-            this.lblNomeP.AutoSize = true;
-            this.lblNomeP.Location = new System.Drawing.Point(72, 42);
-            this.lblNomeP.Name = "lblNomeP";
-            this.lblNomeP.Size = new System.Drawing.Size(85, 13);
-            this.lblNomeP.TabIndex = 26;
-            this.lblNomeP.Text = "Nome do projeto";
-            // 
             // lblDescricaoP
             // 
             this.lblDescricaoP.AutoSize = true;
-            this.lblDescricaoP.Location = new System.Drawing.Point(62, 72);
+            this.lblDescricaoP.Location = new System.Drawing.Point(51, 85);
             this.lblDescricaoP.Name = "lblDescricaoP";
             this.lblDescricaoP.Size = new System.Drawing.Size(105, 13);
             this.lblDescricaoP.TabIndex = 26;
             this.lblDescricaoP.Text = "Descrição do projeto";
+            // 
+            // lblNomeP
+            // 
+            this.lblNomeP.AutoSize = true;
+            this.lblNomeP.Location = new System.Drawing.Point(61, 55);
+            this.lblNomeP.Name = "lblNomeP";
+            this.lblNomeP.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeP.TabIndex = 26;
+            this.lblNomeP.Text = "Nome do projeto";
             // 
             // frmPerfil
             // 
