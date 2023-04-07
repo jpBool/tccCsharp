@@ -38,7 +38,6 @@
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblCommits = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtBio = new System.Windows.Forms.TextBox();
             this.lblProjetos = new System.Windows.Forms.Label();
             this.btnAddProject = new System.Windows.Forms.Button();
             this.lblSeguindo = new System.Windows.Forms.Label();
@@ -67,6 +66,10 @@
             this.btnCompartilhar3 = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnAvancar = new System.Windows.Forms.Button();
+            this.lblNTelefone = new System.Windows.Forms.Label();
+            this.lblNInscricao = new System.Windows.Forms.Label();
+            this.lblDtNasc = new System.Windows.Forms.Label();
+            this.lblNAvatar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbProjeto1.SuspendLayout();
             this.gpbProjeto2.SuspendLayout();
@@ -85,7 +88,7 @@
             // lblBio
             // 
             this.lblBio.AutoSize = true;
-            this.lblBio.Location = new System.Drawing.Point(402, 59);
+            this.lblBio.Location = new System.Drawing.Point(364, 52);
             this.lblBio.Name = "lblBio";
             this.lblBio.Size = new System.Drawing.Size(22, 13);
             this.lblBio.TabIndex = 1;
@@ -103,7 +106,7 @@
             // lblNaturalidade
             // 
             this.lblNaturalidade.AutoSize = true;
-            this.lblNaturalidade.Location = new System.Drawing.Point(402, 30);
+            this.lblNaturalidade.Location = new System.Drawing.Point(364, 30);
             this.lblNaturalidade.Name = "lblNaturalidade";
             this.lblNaturalidade.Size = new System.Drawing.Size(67, 13);
             this.lblNaturalidade.TabIndex = 3;
@@ -161,14 +164,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 92);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtBio
-            // 
-            this.txtBio.Location = new System.Drawing.Point(405, 75);
-            this.txtBio.Name = "txtBio";
-            this.txtBio.Size = new System.Drawing.Size(100, 20);
-            this.txtBio.TabIndex = 11;
-            this.txtBio.Text = "Bio";
             // 
             // lblProjetos
             // 
@@ -236,7 +231,7 @@
             // lblAtivoDesde
             // 
             this.lblAtivoDesde.AutoSize = true;
-            this.lblAtivoDesde.Location = new System.Drawing.Point(177, 141);
+            this.lblAtivoDesde.Location = new System.Drawing.Point(177, 154);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
             this.lblAtivoDesde.Size = new System.Drawing.Size(124, 13);
             this.lblAtivoDesde.TabIndex = 20;
@@ -439,11 +434,51 @@
             this.btnAvancar.Text = ">";
             this.btnAvancar.UseVisualStyleBackColor = true;
             // 
+            // lblNTelefone
+            // 
+            this.lblNTelefone.AutoSize = true;
+            this.lblNTelefone.Location = new System.Drawing.Point(616, 104);
+            this.lblNTelefone.Name = "lblNTelefone";
+            this.lblNTelefone.Size = new System.Drawing.Size(78, 13);
+            this.lblNTelefone.TabIndex = 32;
+            this.lblNTelefone.Text = "Nº de telefone:";
+            // 
+            // lblNInscricao
+            // 
+            this.lblNInscricao.AutoSize = true;
+            this.lblNInscricao.Location = new System.Drawing.Point(612, 80);
+            this.lblNInscricao.Name = "lblNInscricao";
+            this.lblNInscricao.Size = new System.Drawing.Size(82, 13);
+            this.lblNInscricao.TabIndex = 31;
+            this.lblNInscricao.Text = "Nº de inscrição:";
+            // 
+            // lblDtNasc
+            // 
+            this.lblDtNasc.AutoSize = true;
+            this.lblDtNasc.Location = new System.Drawing.Point(588, 52);
+            this.lblDtNasc.Name = "lblDtNasc";
+            this.lblDtNasc.Size = new System.Drawing.Size(105, 13);
+            this.lblDtNasc.TabIndex = 30;
+            this.lblDtNasc.Text = "Data de nascimento:";
+            // 
+            // lblNAvatar
+            // 
+            this.lblNAvatar.AutoSize = true;
+            this.lblNAvatar.Location = new System.Drawing.Point(639, 30);
+            this.lblNAvatar.Name = "lblNAvatar";
+            this.lblNAvatar.Size = new System.Drawing.Size(54, 13);
+            this.lblNAvatar.TabIndex = 29;
+            this.lblNAvatar.Text = "Avatar nº:";
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblNTelefone);
+            this.Controls.Add(this.lblNInscricao);
+            this.Controls.Add(this.lblDtNasc);
+            this.Controls.Add(this.lblNAvatar);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnAvancar);
             this.Controls.Add(this.gpbProjeto3);
@@ -457,7 +492,6 @@
             this.Controls.Add(this.lblSeguindo);
             this.Controls.Add(this.btnAddProject);
             this.Controls.Add(this.lblProjetos);
-            this.Controls.Add(this.txtBio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblCommits);
             this.Controls.Add(this.lblTelefone);
@@ -497,7 +531,6 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label lblCommits;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtBio;
         private System.Windows.Forms.Label lblProjetos;
         private System.Windows.Forms.Button btnAddProject;
         private System.Windows.Forms.Label lblSeguindo;
@@ -526,5 +559,9 @@
         private System.Windows.Forms.Button btnCompartilhar3;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnAvancar;
+        private System.Windows.Forms.Label lblNTelefone;
+        private System.Windows.Forms.Label lblNInscricao;
+        private System.Windows.Forms.Label lblDtNasc;
+        private System.Windows.Forms.Label lblNAvatar;
     }
 }
