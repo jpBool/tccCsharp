@@ -46,7 +46,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogar.AutoSize = true;
             this.btnLogar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLogar.Location = new System.Drawing.Point(138, 301);
+            this.btnLogar.Location = new System.Drawing.Point(136, 204);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(44, 23);
             this.btnLogar.TabIndex = 3;
@@ -80,16 +80,13 @@
             // 
             // lblLogin
             // 
-            this.lblLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(102, 56);
+            this.lblLogin.Location = new System.Drawing.Point(118, 48);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(65, 25);
+            this.lblLogin.Size = new System.Drawing.Size(71, 25);
             this.lblLogin.TabIndex = 7;
-            this.lblLogin.Text = "Login";
+            this.lblLogin.Text = " Login";
             // 
             // gpbLogin
             // 
@@ -125,13 +122,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSenha.Location = new System.Drawing.Point(82, 161);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(82, 20);
+            this.txtSenha.Size = new System.Drawing.Size(208, 20);
             this.txtSenha.TabIndex = 2;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gpbLogin);
             this.Name = "frmLogin";

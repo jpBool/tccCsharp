@@ -22,6 +22,8 @@ namespace tccCsharp
             Application.Run(new frmLogin());
             if (id_usuario != 0)
                 Application.Run(new frmPerfil());
+
+            //Application.Run(new frmLogin());
         }
 
     }

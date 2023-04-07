@@ -47,14 +47,30 @@
             this.lblProjConcl = new System.Windows.Forms.Label();
             this.lblProjPublic = new System.Windows.Forms.Label();
             this.lblAtivoDesde = new System.Windows.Forms.Label();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnCompartilhar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.gbProjeto = new System.Windows.Forms.GroupBox();
+            this.btnExcluir1 = new System.Windows.Forms.Button();
+            this.btnCompartilhar1 = new System.Windows.Forms.Button();
+            this.btnEditar1 = new System.Windows.Forms.Button();
+            this.gpbProjeto1 = new System.Windows.Forms.GroupBox();
             this.lblDescricaoP = new System.Windows.Forms.Label();
             this.lblNomeP = new System.Windows.Forms.Label();
+            this.gpbProjeto2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEditar2 = new System.Windows.Forms.Button();
+            this.btnExcluir2 = new System.Windows.Forms.Button();
+            this.btnCompartilhar2 = new System.Windows.Forms.Button();
+            this.gpbProjeto3 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnEditar3 = new System.Windows.Forms.Button();
+            this.btnExcluir3 = new System.Windows.Forms.Button();
+            this.btnCompartilhar3 = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnAvancar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.gbProjeto.SuspendLayout();
+            this.gpbProjeto1.SuspendLayout();
+            this.gpbProjeto2.SuspendLayout();
+            this.gpbProjeto3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNome
@@ -226,46 +242,46 @@
             this.lblAtivoDesde.TabIndex = 20;
             this.lblAtivoDesde.Text = "Ativo desde AA/MM/DD";
             // 
-            // btnExcluir
+            // btnExcluir1
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(6, 182);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(51, 23);
-            this.btnExcluir.TabIndex = 21;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir1.Location = new System.Drawing.Point(6, 182);
+            this.btnExcluir1.Name = "btnExcluir1";
+            this.btnExcluir1.Size = new System.Drawing.Size(51, 23);
+            this.btnExcluir1.TabIndex = 21;
+            this.btnExcluir1.Text = "Excluir";
+            this.btnExcluir1.UseVisualStyleBackColor = true;
             // 
-            // btnCompartilhar
+            // btnCompartilhar1
             // 
-            this.btnCompartilhar.Location = new System.Drawing.Point(128, 182);
-            this.btnCompartilhar.Name = "btnCompartilhar";
-            this.btnCompartilhar.Size = new System.Drawing.Size(75, 23);
-            this.btnCompartilhar.TabIndex = 22;
-            this.btnCompartilhar.Text = "Compartilhar";
-            this.btnCompartilhar.UseVisualStyleBackColor = true;
+            this.btnCompartilhar1.Location = new System.Drawing.Point(128, 182);
+            this.btnCompartilhar1.Name = "btnCompartilhar1";
+            this.btnCompartilhar1.Size = new System.Drawing.Size(75, 23);
+            this.btnCompartilhar1.TabIndex = 22;
+            this.btnCompartilhar1.Text = "Compartilhar";
+            this.btnCompartilhar1.UseVisualStyleBackColor = true;
             // 
-            // btnEditar
+            // btnEditar1
             // 
-            this.btnEditar.Location = new System.Drawing.Point(152, 19);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(51, 23);
-            this.btnEditar.TabIndex = 23;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar1.Location = new System.Drawing.Point(152, 19);
+            this.btnEditar1.Name = "btnEditar1";
+            this.btnEditar1.Size = new System.Drawing.Size(51, 23);
+            this.btnEditar1.TabIndex = 23;
+            this.btnEditar1.Text = "Editar";
+            this.btnEditar1.UseVisualStyleBackColor = true;
             // 
-            // gbProjeto
+            // gpbProjeto1
             // 
-            this.gbProjeto.Controls.Add(this.lblDescricaoP);
-            this.gbProjeto.Controls.Add(this.lblNomeP);
-            this.gbProjeto.Controls.Add(this.btnEditar);
-            this.gbProjeto.Controls.Add(this.btnExcluir);
-            this.gbProjeto.Controls.Add(this.btnCompartilhar);
-            this.gbProjeto.Location = new System.Drawing.Point(26, 226);
-            this.gbProjeto.Name = "gbProjeto";
-            this.gbProjeto.Size = new System.Drawing.Size(211, 212);
-            this.gbProjeto.TabIndex = 25;
-            this.gbProjeto.TabStop = false;
-            this.gbProjeto.Text = "Projeto";
+            this.gpbProjeto1.Controls.Add(this.lblDescricaoP);
+            this.gpbProjeto1.Controls.Add(this.lblNomeP);
+            this.gpbProjeto1.Controls.Add(this.btnEditar1);
+            this.gpbProjeto1.Controls.Add(this.btnExcluir1);
+            this.gpbProjeto1.Controls.Add(this.btnCompartilhar1);
+            this.gpbProjeto1.Location = new System.Drawing.Point(52, 226);
+            this.gpbProjeto1.Name = "gpbProjeto1";
+            this.gpbProjeto1.Size = new System.Drawing.Size(211, 212);
+            this.gpbProjeto1.TabIndex = 25;
+            this.gpbProjeto1.TabStop = false;
+            this.gpbProjeto1.Text = "Projeto";
             // 
             // lblDescricaoP
             // 
@@ -285,12 +301,154 @@
             this.lblNomeP.TabIndex = 26;
             this.lblNomeP.Text = "Nome do projeto";
             // 
+            // gpbProjeto2
+            // 
+            this.gpbProjeto2.Controls.Add(this.label1);
+            this.gpbProjeto2.Controls.Add(this.label2);
+            this.gpbProjeto2.Controls.Add(this.btnEditar2);
+            this.gpbProjeto2.Controls.Add(this.btnExcluir2);
+            this.gpbProjeto2.Controls.Add(this.btnCompartilhar2);
+            this.gpbProjeto2.Location = new System.Drawing.Point(294, 226);
+            this.gpbProjeto2.Name = "gpbProjeto2";
+            this.gpbProjeto2.Size = new System.Drawing.Size(211, 212);
+            this.gpbProjeto2.TabIndex = 26;
+            this.gpbProjeto2.TabStop = false;
+            this.gpbProjeto2.Text = "Projeto";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(51, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Descrição do projeto";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Nome do projeto";
+            // 
+            // btnEditar2
+            // 
+            this.btnEditar2.Location = new System.Drawing.Point(152, 19);
+            this.btnEditar2.Name = "btnEditar2";
+            this.btnEditar2.Size = new System.Drawing.Size(51, 23);
+            this.btnEditar2.TabIndex = 23;
+            this.btnEditar2.Text = "Editar";
+            this.btnEditar2.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluir2
+            // 
+            this.btnExcluir2.Location = new System.Drawing.Point(6, 182);
+            this.btnExcluir2.Name = "btnExcluir2";
+            this.btnExcluir2.Size = new System.Drawing.Size(51, 23);
+            this.btnExcluir2.TabIndex = 21;
+            this.btnExcluir2.Text = "Excluir";
+            this.btnExcluir2.UseVisualStyleBackColor = true;
+            // 
+            // btnCompartilhar2
+            // 
+            this.btnCompartilhar2.Location = new System.Drawing.Point(128, 182);
+            this.btnCompartilhar2.Name = "btnCompartilhar2";
+            this.btnCompartilhar2.Size = new System.Drawing.Size(75, 23);
+            this.btnCompartilhar2.TabIndex = 22;
+            this.btnCompartilhar2.Text = "Compartilhar";
+            this.btnCompartilhar2.UseVisualStyleBackColor = true;
+            // 
+            // gpbProjeto3
+            // 
+            this.gpbProjeto3.Controls.Add(this.label3);
+            this.gpbProjeto3.Controls.Add(this.label4);
+            this.gpbProjeto3.Controls.Add(this.btnEditar3);
+            this.gpbProjeto3.Controls.Add(this.btnExcluir3);
+            this.gpbProjeto3.Controls.Add(this.btnCompartilhar3);
+            this.gpbProjeto3.Location = new System.Drawing.Point(537, 226);
+            this.gpbProjeto3.Name = "gpbProjeto3";
+            this.gpbProjeto3.Size = new System.Drawing.Size(211, 212);
+            this.gpbProjeto3.TabIndex = 27;
+            this.gpbProjeto3.TabStop = false;
+            this.gpbProjeto3.Text = "Projeto";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(51, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Descrição do projeto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(61, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 13);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Nome do projeto";
+            // 
+            // btnEditar3
+            // 
+            this.btnEditar3.Location = new System.Drawing.Point(152, 19);
+            this.btnEditar3.Name = "btnEditar3";
+            this.btnEditar3.Size = new System.Drawing.Size(51, 23);
+            this.btnEditar3.TabIndex = 23;
+            this.btnEditar3.Text = "Editar";
+            this.btnEditar3.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluir3
+            // 
+            this.btnExcluir3.Location = new System.Drawing.Point(6, 182);
+            this.btnExcluir3.Name = "btnExcluir3";
+            this.btnExcluir3.Size = new System.Drawing.Size(51, 23);
+            this.btnExcluir3.TabIndex = 21;
+            this.btnExcluir3.Text = "Excluir";
+            this.btnExcluir3.UseVisualStyleBackColor = true;
+            // 
+            // btnCompartilhar3
+            // 
+            this.btnCompartilhar3.Location = new System.Drawing.Point(128, 182);
+            this.btnCompartilhar3.Name = "btnCompartilhar3";
+            this.btnCompartilhar3.Size = new System.Drawing.Size(75, 23);
+            this.btnCompartilhar3.TabIndex = 22;
+            this.btnCompartilhar3.Text = "Compartilhar";
+            this.btnCompartilhar3.UseVisualStyleBackColor = true;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(-5, 321);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(51, 38);
+            this.btnVoltar.TabIndex = 27;
+            this.btnVoltar.Text = "<";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            // 
+            // btnAvancar
+            // 
+            this.btnAvancar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAvancar.Location = new System.Drawing.Point(754, 321);
+            this.btnAvancar.Name = "btnAvancar";
+            this.btnAvancar.Size = new System.Drawing.Size(51, 38);
+            this.btnAvancar.TabIndex = 28;
+            this.btnAvancar.Text = ">";
+            this.btnAvancar.UseVisualStyleBackColor = true;
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gbProjeto);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnAvancar);
+            this.Controls.Add(this.gpbProjeto3);
+            this.Controls.Add(this.gpbProjeto2);
+            this.Controls.Add(this.gpbProjeto1);
             this.Controls.Add(this.lblAtivoDesde);
             this.Controls.Add(this.lblProjPublic);
             this.Controls.Add(this.lblProjConcl);
@@ -312,11 +470,16 @@
             this.Controls.Add(this.lblNome);
             this.MaximizeBox = false;
             this.Name = "frmPerfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPerfil";
             this.Load += new System.EventHandler(this.frmPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.gbProjeto.ResumeLayout(false);
-            this.gbProjeto.PerformLayout();
+            this.gpbProjeto1.ResumeLayout(false);
+            this.gpbProjeto1.PerformLayout();
+            this.gpbProjeto2.ResumeLayout(false);
+            this.gpbProjeto2.PerformLayout();
+            this.gpbProjeto3.ResumeLayout(false);
+            this.gpbProjeto3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,11 +506,25 @@
         private System.Windows.Forms.Label lblProjConcl;
         private System.Windows.Forms.Label lblProjPublic;
         private System.Windows.Forms.Label lblAtivoDesde;
-        private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnCompartilhar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.GroupBox gbProjeto;
+        private System.Windows.Forms.Button btnExcluir1;
+        private System.Windows.Forms.Button btnCompartilhar1;
+        private System.Windows.Forms.Button btnEditar1;
+        private System.Windows.Forms.GroupBox gpbProjeto1;
         private System.Windows.Forms.Label lblDescricaoP;
         private System.Windows.Forms.Label lblNomeP;
+        private System.Windows.Forms.GroupBox gpbProjeto2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnEditar2;
+        private System.Windows.Forms.Button btnExcluir2;
+        private System.Windows.Forms.Button btnCompartilhar2;
+        private System.Windows.Forms.GroupBox gpbProjeto3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnEditar3;
+        private System.Windows.Forms.Button btnExcluir3;
+        private System.Windows.Forms.Button btnCompartilhar3;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnAvancar;
     }
 }
