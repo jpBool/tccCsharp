@@ -142,8 +142,8 @@ namespace tccCsharp
                 param.Add(Program.id_usuario);
                
                 NpgsqlDataReader dr = Banco.selecionar(sql, param);
-                if (dr.Read())
-                {
+                
+                
                     while(dr.Read())
                     {
                         Project linha = new Project();
@@ -170,15 +170,7 @@ namespace tccCsharp
                         projetos.Add(linha);
                     };
                     dr.Close();
-                    return projetos;
-                }
-                else
-                {
-                    dr.Close();
-                    return projetos;
-
-                }
-
+                    return projetos;       
             }
             catch (Exception ex)
             {

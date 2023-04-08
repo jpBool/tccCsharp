@@ -27,7 +27,6 @@ namespace tccCsharp
         public int atualizador { get; set; }
         public bool excluido { get; set; }
         public string linguagem { get; set; }
-        
 
     }
 }

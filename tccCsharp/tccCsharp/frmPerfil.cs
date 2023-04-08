@@ -23,7 +23,6 @@ namespace tccCsharp
 
             projetos = Banco.CarregarProjetos(projetos);
 
-
             Project projeto1 = new Project();
             projeto1 = projetos[0];
             lblNomeP1.Text = projeto1.nome_projeto;
