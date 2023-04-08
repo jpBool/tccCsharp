@@ -50,17 +50,17 @@
             this.btnCompartilhar1 = new System.Windows.Forms.Button();
             this.btnEditar1 = new System.Windows.Forms.Button();
             this.gpbProjeto1 = new System.Windows.Forms.GroupBox();
-            this.lblDescricaoP = new System.Windows.Forms.Label();
-            this.lblNomeP = new System.Windows.Forms.Label();
+            this.lblDescricaoP1 = new System.Windows.Forms.Label();
+            this.lblNomeP1 = new System.Windows.Forms.Label();
             this.gpbProjeto2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDescricaoP2 = new System.Windows.Forms.Label();
+            this.lblNomeP2 = new System.Windows.Forms.Label();
             this.btnEditar2 = new System.Windows.Forms.Button();
             this.btnExcluir2 = new System.Windows.Forms.Button();
             this.btnCompartilhar2 = new System.Windows.Forms.Button();
             this.gpbProjeto3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblDescricaoP3 = new System.Windows.Forms.Label();
+            this.lblNomeP3 = new System.Windows.Forms.Label();
             this.btnEditar3 = new System.Windows.Forms.Button();
             this.btnExcluir3 = new System.Windows.Forms.Button();
             this.btnCompartilhar3 = new System.Windows.Forms.Button();
@@ -70,6 +70,7 @@
             this.lblNInscricao = new System.Windows.Forms.Label();
             this.lblDtNasc = new System.Windows.Forms.Label();
             this.lblNAvatar = new System.Windows.Forms.Label();
+            this.lblAMD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbProjeto1.SuspendLayout();
             this.gpbProjeto2.SuspendLayout();
@@ -233,9 +234,9 @@
             this.lblAtivoDesde.AutoSize = true;
             this.lblAtivoDesde.Location = new System.Drawing.Point(177, 154);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
-            this.lblAtivoDesde.Size = new System.Drawing.Size(124, 13);
+            this.lblAtivoDesde.Size = new System.Drawing.Size(66, 13);
             this.lblAtivoDesde.TabIndex = 20;
-            this.lblAtivoDesde.Text = "Ativo desde AA/MM/DD";
+            this.lblAtivoDesde.Text = "Ativo desde:";
             // 
             // btnExcluir1
             // 
@@ -266,8 +267,8 @@
             // 
             // gpbProjeto1
             // 
-            this.gpbProjeto1.Controls.Add(this.lblDescricaoP);
-            this.gpbProjeto1.Controls.Add(this.lblNomeP);
+            this.gpbProjeto1.Controls.Add(this.lblDescricaoP1);
+            this.gpbProjeto1.Controls.Add(this.lblNomeP1);
             this.gpbProjeto1.Controls.Add(this.btnEditar1);
             this.gpbProjeto1.Controls.Add(this.btnExcluir1);
             this.gpbProjeto1.Controls.Add(this.btnCompartilhar1);
@@ -278,28 +279,28 @@
             this.gpbProjeto1.TabStop = false;
             this.gpbProjeto1.Text = "Projeto";
             // 
-            // lblDescricaoP
+            // lblDescricaoP1
             // 
-            this.lblDescricaoP.AutoSize = true;
-            this.lblDescricaoP.Location = new System.Drawing.Point(51, 85);
-            this.lblDescricaoP.Name = "lblDescricaoP";
-            this.lblDescricaoP.Size = new System.Drawing.Size(105, 13);
-            this.lblDescricaoP.TabIndex = 26;
-            this.lblDescricaoP.Text = "Descrição do projeto";
+            this.lblDescricaoP1.AutoSize = true;
+            this.lblDescricaoP1.Location = new System.Drawing.Point(51, 85);
+            this.lblDescricaoP1.Name = "lblDescricaoP1";
+            this.lblDescricaoP1.Size = new System.Drawing.Size(105, 13);
+            this.lblDescricaoP1.TabIndex = 26;
+            this.lblDescricaoP1.Text = "Descrição do projeto";
             // 
-            // lblNomeP
+            // lblNomeP1
             // 
-            this.lblNomeP.AutoSize = true;
-            this.lblNomeP.Location = new System.Drawing.Point(61, 55);
-            this.lblNomeP.Name = "lblNomeP";
-            this.lblNomeP.Size = new System.Drawing.Size(85, 13);
-            this.lblNomeP.TabIndex = 26;
-            this.lblNomeP.Text = "Nome do projeto";
+            this.lblNomeP1.AutoSize = true;
+            this.lblNomeP1.Location = new System.Drawing.Point(61, 55);
+            this.lblNomeP1.Name = "lblNomeP1";
+            this.lblNomeP1.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeP1.TabIndex = 26;
+            this.lblNomeP1.Text = "Nome do projeto";
             // 
             // gpbProjeto2
             // 
-            this.gpbProjeto2.Controls.Add(this.label1);
-            this.gpbProjeto2.Controls.Add(this.label2);
+            this.gpbProjeto2.Controls.Add(this.lblDescricaoP2);
+            this.gpbProjeto2.Controls.Add(this.lblNomeP2);
             this.gpbProjeto2.Controls.Add(this.btnEditar2);
             this.gpbProjeto2.Controls.Add(this.btnExcluir2);
             this.gpbProjeto2.Controls.Add(this.btnCompartilhar2);
@@ -310,23 +311,23 @@
             this.gpbProjeto2.TabStop = false;
             this.gpbProjeto2.Text = "Projeto";
             // 
-            // label1
+            // lblDescricaoP2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 13);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Descrição do projeto";
+            this.lblDescricaoP2.AutoSize = true;
+            this.lblDescricaoP2.Location = new System.Drawing.Point(51, 85);
+            this.lblDescricaoP2.Name = "lblDescricaoP2";
+            this.lblDescricaoP2.Size = new System.Drawing.Size(105, 13);
+            this.lblDescricaoP2.TabIndex = 26;
+            this.lblDescricaoP2.Text = "Descrição do projeto";
             // 
-            // label2
+            // lblNomeP2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Nome do projeto";
+            this.lblNomeP2.AutoSize = true;
+            this.lblNomeP2.Location = new System.Drawing.Point(61, 55);
+            this.lblNomeP2.Name = "lblNomeP2";
+            this.lblNomeP2.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeP2.TabIndex = 26;
+            this.lblNomeP2.Text = "Nome do projeto";
             // 
             // btnEditar2
             // 
@@ -357,8 +358,8 @@
             // 
             // gpbProjeto3
             // 
-            this.gpbProjeto3.Controls.Add(this.label3);
-            this.gpbProjeto3.Controls.Add(this.label4);
+            this.gpbProjeto3.Controls.Add(this.lblDescricaoP3);
+            this.gpbProjeto3.Controls.Add(this.lblNomeP3);
             this.gpbProjeto3.Controls.Add(this.btnEditar3);
             this.gpbProjeto3.Controls.Add(this.btnExcluir3);
             this.gpbProjeto3.Controls.Add(this.btnCompartilhar3);
@@ -369,23 +370,23 @@
             this.gpbProjeto3.TabStop = false;
             this.gpbProjeto3.Text = "Projeto";
             // 
-            // label3
+            // lblDescricaoP3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Descrição do projeto";
+            this.lblDescricaoP3.AutoSize = true;
+            this.lblDescricaoP3.Location = new System.Drawing.Point(51, 85);
+            this.lblDescricaoP3.Name = "lblDescricaoP3";
+            this.lblDescricaoP3.Size = new System.Drawing.Size(105, 13);
+            this.lblDescricaoP3.TabIndex = 26;
+            this.lblDescricaoP3.Text = "Descrição do projeto";
             // 
-            // label4
+            // lblNomeP3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 55);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 13);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Nome do projeto";
+            this.lblNomeP3.AutoSize = true;
+            this.lblNomeP3.Location = new System.Drawing.Point(61, 55);
+            this.lblNomeP3.Name = "lblNomeP3";
+            this.lblNomeP3.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeP3.TabIndex = 26;
+            this.lblNomeP3.Text = "Nome do projeto";
             // 
             // btnEditar3
             // 
@@ -470,11 +471,21 @@
             this.lblNAvatar.TabIndex = 29;
             this.lblNAvatar.Text = "Avatar nº:";
             // 
+            // lblAMD
+            // 
+            this.lblAMD.AutoSize = true;
+            this.lblAMD.Location = new System.Drawing.Point(249, 154);
+            this.lblAMD.Name = "lblAMD";
+            this.lblAMD.Size = new System.Drawing.Size(65, 13);
+            this.lblAMD.TabIndex = 33;
+            this.lblAMD.Text = "AA/MM/DD";
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblAMD);
             this.Controls.Add(this.lblNTelefone);
             this.Controls.Add(this.lblNInscricao);
             this.Controls.Add(this.lblDtNasc);
@@ -543,17 +554,17 @@
         private System.Windows.Forms.Button btnCompartilhar1;
         private System.Windows.Forms.Button btnEditar1;
         private System.Windows.Forms.GroupBox gpbProjeto1;
-        private System.Windows.Forms.Label lblDescricaoP;
-        private System.Windows.Forms.Label lblNomeP;
+        private System.Windows.Forms.Label lblDescricaoP1;
+        private System.Windows.Forms.Label lblNomeP1;
         private System.Windows.Forms.GroupBox gpbProjeto2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDescricaoP2;
+        private System.Windows.Forms.Label lblNomeP2;
         private System.Windows.Forms.Button btnEditar2;
         private System.Windows.Forms.Button btnExcluir2;
         private System.Windows.Forms.Button btnCompartilhar2;
         private System.Windows.Forms.GroupBox gpbProjeto3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblDescricaoP3;
+        private System.Windows.Forms.Label lblNomeP3;
         private System.Windows.Forms.Button btnEditar3;
         private System.Windows.Forms.Button btnExcluir3;
         private System.Windows.Forms.Button btnCompartilhar3;
@@ -563,5 +574,6 @@
         private System.Windows.Forms.Label lblNInscricao;
         private System.Windows.Forms.Label lblDtNasc;
         private System.Windows.Forms.Label lblNAvatar;
+        private System.Windows.Forms.Label lblAMD;
     }
 }

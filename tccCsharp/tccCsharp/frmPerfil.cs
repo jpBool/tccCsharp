@@ -19,6 +19,17 @@ namespace tccCsharp
 
         private void frmPerfil_Load(object sender, EventArgs e)
         {
+            List<Project> projetos = new List<Project>();
+
+            projetos = Banco.CarregarProjetos(projetos);
+
+
+            Project projeto1 = new Project();
+            projeto1 = projetos[0];
+            lblNomeP1.Text = projeto1.nome_projeto;
+
+
+
             User usuario = new User();
             Banco.CarregaPerfil(usuario);
             lblNome.Text = usuario.nome.ToString();
@@ -31,5 +42,7 @@ namespace tccCsharp
             lblTelefone.Text = usuario.telefone.ToString();
             lblCommits.Text = usuario.commits.ToString();
         }
+
+
     }
 }

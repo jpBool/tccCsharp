@@ -130,6 +130,62 @@ namespace tccCsharp
             return usuario;
         }
 
+        public static List<Project> CarregarProjetos(List<Project> projetos)
+        {
+            string sql;
+            try
+            {
+                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, imagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem from gp2_projetos where id_criador = @1 and excluido = false";
+
+                
+                List<object> param = new List<object>();
+                param.Add(Program.id_usuario);
+               
+                NpgsqlDataReader dr = Banco.selecionar(sql, param);
+                if (dr.Read())
+                {
+                    while(dr.Read())
+                    {
+                        Project linha = new Project();
+                        linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
+                        linha.id_criador = Convert.ToInt32(dr["id_criador"]);
+                        linha.autores = dr["autores"].ToString();
+                        linha.email_contato = dr["email_contato"].ToString();
+                        linha.nome_projeto = dr["nome_projeto"].ToString();
+                        linha.palavras_chave = dr["palavras_chave"].ToString();
+                        linha.publico = Convert.ToBoolean(dr["publico"]);
+                        linha.descricao_breve = dr["descricao_breve"].ToString();
+                        linha.descricao_detalhada = dr["descricao_detalhada"].ToString();
+                        linha.link_site = dr["link_site"].ToString();
+                        linha.link_youtube = dr["link_youtube"].ToString();
+                        linha.status = Convert.ToInt32(dr["status"]);
+                        linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
+                        linha.imagem = dr["imagem"].ToString();
+                        linha.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
+                        linha.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
+                        linha.atualizador = Convert.ToInt32(dr["atualizador"]);
+                        linha.excluido = Convert.ToBoolean(dr["excluido"]);
+                        linha.linguagem = dr["linguagem"].ToString();
+
+                        projetos.Add(linha);
+                    };
+                    dr.Close();
+                    return projetos;
+                }
+                else
+                {
+                    dr.Close();
+                    return projetos;
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar seus projetos!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return projetos;
+            }
+        }
 
 
 
