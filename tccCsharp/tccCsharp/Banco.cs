@@ -143,7 +143,7 @@ namespace tccCsharp
                
                 NpgsqlDataReader dr = Banco.selecionar(sql, param);
                 
-                
+              
                     while(dr.Read())
                     {
                         Project linha = new Project();
