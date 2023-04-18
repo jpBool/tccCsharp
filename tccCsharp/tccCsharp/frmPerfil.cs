@@ -103,6 +103,7 @@ namespace tccCsharp
         private void btnLogoff_Click(object sender, EventArgs e)
         {
             Program.projetos.Clear();
+            Program.id_usuario = 0;
             this.Close();
         }
     }

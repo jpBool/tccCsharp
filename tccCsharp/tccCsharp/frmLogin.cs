@@ -48,8 +48,10 @@ namespace tccCsharp
                 Program.projetos = Banco.CarregarProjetos(Program.projetos);
                 frmPerfil splash = new frmPerfil();
                 splash.ShowDialog();
+                if (Program.id_usuario == 0)
                 this.Visible = true;
-                
+                else
+                this.Close();
             }
 
         }
