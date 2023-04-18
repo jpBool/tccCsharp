@@ -13,17 +13,15 @@ namespace tccCsharp
         /// </summary>
         /// 
         public static int id_usuario = 0;
+        public static List<Project> projetos = new List<Project>();
 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
-            if (id_usuario != 0)
-                Application.Run(new frmPerfil());
 
-            //Application.Run(new frmLogin());
+            Application.Run(new frmLogin());
         }
 
     }

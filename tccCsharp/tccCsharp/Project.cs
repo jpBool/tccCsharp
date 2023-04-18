@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tccCsharp
 {
-    internal class Project
+    public class Project
     {
         public int id_projeto { get; set; }
         public int id_criador { get; set; }
@@ -27,6 +27,6 @@ namespace tccCsharp
         public int atualizador { get; set; }
         public bool excluido { get; set; }
         public string linguagem { get; set; }
-
+        public DateTime previsao { get; set; }
     }
 }

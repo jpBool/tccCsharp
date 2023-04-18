@@ -33,21 +33,29 @@ namespace tccCsharp
             Program.id_usuario = Banco.logar(email, senha);
             if(Program.id_usuario == 0)
             {
+                //E-mail ou senha incorretos
+                return;
             }
             else if (Program.id_usuario == -1)
             {
-
+                //Aconteceu algum erro no banco
+                return;
             }
             else
             {
-                this.Close();
+                txtSenha.Clear();
+                this.Visible = false;
+                Program.projetos = Banco.CarregarProjetos(Program.projetos);
+                frmPerfil splash = new frmPerfil();
+                splash.ShowDialog();
+                this.Visible = true;
+                
             }
 
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            
             WindowState = FormWindowState.Maximized;
         }
 

@@ -12,55 +12,66 @@ namespace tccCsharp
 {
     public partial class frmPerfil : Form
     {
+        int X = 0;
+
         public frmPerfil()
         {
             InitializeComponent();
         }
 
-        private void frmPerfil_Load(object sender, EventArgs e)
+        public void refresh_projects(List<Project> projetos)
         {
-            List<Project> projetos = new List<Project>();
+            if (X == 0)
+                btnVoltar.Enabled = false;
+            else
+                btnVoltar.Enabled = true;
 
-            projetos = Banco.CarregarProjetos(projetos);
+            if (projetos.Count() <= X + 3)
+                btnAvancar.Enabled = false;
+            else
+                btnAvancar.Enabled = true;
 
-            btnVoltar.Enabled = false;
             Project projeto1 = new Project();
-            if (projetos.Count > 0 )
+            if (projetos.Count > X + 0)
             {
-                projeto1 = projetos[0];
+                gpbProjeto1.Visible = true;
+                projeto1 = projetos[X + 0];
                 lblNomeP1.Text = projeto1.nome_projeto;
             }
             else
             {
-                gpbProjeto1.Visible= false;
+                gpbProjeto1.Visible = false;
             }
 
             Project projeto2 = new Project();
-            if (projetos.Count() > 1)
+            if (projetos.Count() > X + 1)
             {
-                projeto2 = projetos[1];
+                gpbProjeto2.Visible = true;
+                projeto2 = projetos[X + 1];
                 lblNomeP2.Text = projeto2.nome_projeto;
             }
             else
             {
-                gpbProjeto2.Visible= false;
+                gpbProjeto2.Visible = false;
             }
-            
+
             Project projeto3 = new Project();
-            if (projetos.Count() > 2 )
+            if (projetos.Count() > X + 2)
             {
-                projeto3 = projetos[2];
+                gpbProjeto3.Visible = true;
+                projeto3 = projetos[X + 2];
                 lblNomeP3.Text = projeto3.nome_projeto;
             }
             else
             {
-                gpbProjeto3.Visible= false;
-            }
-            if (projetos.Count() <= 3)
-            { 
-                btnAvancar.Enabled= false;
+                gpbProjeto3.Visible = false;
             }
 
+        }
+
+        private void frmPerfil_Load(object sender, EventArgs e)
+        {
+            refresh_projects(Program.projetos);
 
             User usuario = new User();
             Banco.CarregaPerfil(usuario);
@@ -75,6 +86,24 @@ namespace tccCsharp
             lblCommits.Text = usuario.commits.ToString();
         }
 
+        private void btnAvancar_Click(object sender, EventArgs e)
+        {
+            X += 3;
+            refresh_projects(Program.projetos);
+        }
 
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            X -= 3;
+            refresh_projects(Program.projetos);
+        }
+
+
+
+        private void btnLogoff_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            this.Close();
+        }
     }
 }

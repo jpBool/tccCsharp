@@ -135,7 +135,7 @@ namespace tccCsharp
             string sql;
             try
             {
-                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, imagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem from gp2_projetos where id_criador = @1 and excluido = false";
+                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, imagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
 
                 
                 List<object> param = new List<object>();
@@ -149,23 +149,62 @@ namespace tccCsharp
                         Project linha = new Project();
                         linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
                         linha.id_criador = Convert.ToInt32(dr["id_criador"]);
-                        linha.autores = dr["autores"].ToString();
-                        linha.email_contato = dr["email_contato"].ToString();
+                        
+                        if (dr["autores"] != DBNull.Value)
+                            linha.autores = dr["autores"].ToString();
+                        
+                        if (dr["email_contato"] != DBNull.Value)
+                            linha.email_contato = dr["email_contato"].ToString();
+                        
                         linha.nome_projeto = dr["nome_projeto"].ToString();
-                        linha.palavras_chave = dr["palavras_chave"].ToString();
-                        linha.publico = Convert.ToBoolean(dr["publico"]);
+                        
+                        if (dr["palavras_chave"] != DBNull.Value)
+                            linha.palavras_chave = dr["palavras_chave"].ToString();
+                        
+                        if (dr["publico"] != DBNull.Value)
+                            linha.publico = Convert.ToBoolean(dr["publico"]);
+                        else
+                            linha.publico = false;
+                        
                         linha.descricao_breve = dr["descricao_breve"].ToString();
-                        linha.descricao_detalhada = dr["descricao_detalhada"].ToString();
-                        linha.link_site = dr["link_site"].ToString();
-                        linha.link_youtube = dr["link_youtube"].ToString();
-                        linha.status = Convert.ToInt32(dr["status"]);
-                        linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
-                        linha.imagem = dr["imagem"].ToString();
+                        
+                        if (dr["descricao_detalhada"] != DBNull.Value)
+                            linha.descricao_detalhada = dr["descricao_detalhada"].ToString();
+                        
+                        if (dr["link_site"] != DBNull.Value)
+                            linha.link_site = dr["link_site"].ToString();
+                        
+                        if (dr["link_youtube"] != DBNull.Value)
+                            linha.link_youtube = dr["link_youtube"].ToString();
+                            
+                        if (dr["status"] != DBNull.Value)
+                            linha.status = Convert.ToInt32(dr["status"]);
+                        else
+                            linha.status = 1;
+                       
+                        if (dr["porcentagem"] != DBNull.Value)
+                            linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
+                        else
+                            linha.porcentagem = 0;
+                            
+                        if (dr["imagem"] != DBNull.Value)
+                            linha.imagem = dr["imagem"].ToString();
+                        
                         linha.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
-                        linha.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
-                        linha.atualizador = Convert.ToInt32(dr["atualizador"]);
+                        
+                        if (dr["data_atualizacao"] != DBNull.Value)
+                            linha.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
+                        
+                        if (dr["atualizador"] != DBNull.Value)
+                            linha.atualizador = Convert.ToInt32(dr["atualizador"]);
+                        
                         linha.excluido = Convert.ToBoolean(dr["excluido"]);
-                        linha.linguagem = dr["linguagem"].ToString();
+                        
+                        if (dr["linguagem"] != DBNull.Value)
+                            linha.linguagem = dr["linguagem"].ToString();
+                        
+                        if (dr["previsao"] != DBNull.Value)
+                            linha.previsao = Convert.ToDateTime(dr["previsao"]);
 
                         projetos.Add(linha);
                     };

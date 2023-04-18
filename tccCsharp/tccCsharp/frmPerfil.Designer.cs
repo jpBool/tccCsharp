@@ -71,6 +71,7 @@
             this.lblDtNasc = new System.Windows.Forms.Label();
             this.lblNAvatar = new System.Windows.Forms.Label();
             this.lblAMD = new System.Windows.Forms.Label();
+            this.btnLogoff = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbProjeto1.SuspendLayout();
             this.gpbProjeto2.SuspendLayout();
@@ -424,6 +425,7 @@
             this.btnVoltar.TabIndex = 27;
             this.btnVoltar.Text = "<";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnAvancar
             // 
@@ -434,6 +436,7 @@
             this.btnAvancar.TabIndex = 28;
             this.btnAvancar.Text = ">";
             this.btnAvancar.UseVisualStyleBackColor = true;
+            this.btnAvancar.Click += new System.EventHandler(this.btnAvancar_Click);
             // 
             // lblNTelefone
             // 
@@ -480,11 +483,22 @@
             this.lblAMD.TabIndex = 33;
             this.lblAMD.Text = "AA/MM/DD";
             // 
+            // btnLogoff
+            // 
+            this.btnLogoff.Location = new System.Drawing.Point(-1, 1);
+            this.btnLogoff.Name = "btnLogoff";
+            this.btnLogoff.Size = new System.Drawing.Size(127, 23);
+            this.btnLogoff.TabIndex = 34;
+            this.btnLogoff.Text = "Deslogar";
+            this.btnLogoff.UseVisualStyleBackColor = true;
+            this.btnLogoff.Click += new System.EventHandler(this.btnLogoff_Click);
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogoff);
             this.Controls.Add(this.lblAMD);
             this.Controls.Add(this.lblNTelefone);
             this.Controls.Add(this.lblNInscricao);
@@ -575,5 +589,6 @@
         private System.Windows.Forms.Label lblDtNasc;
         private System.Windows.Forms.Label lblNAvatar;
         private System.Windows.Forms.Label lblAMD;
+        private System.Windows.Forms.Button btnLogoff;
     }
 }
