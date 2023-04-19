@@ -113,14 +113,27 @@ namespace tccCsharp
                 NpgsqlDataReader dr = Banco.selecionar(sql, param);
                 dr.Read();
                 usuario.nome = dr["nome"].ToString();
-                usuario.bio = dr["bio"].ToString();
-                usuario.avatar = Convert.ToInt32(dr["avatar"]);
-                usuario.naturalidade = dr["naturalidade"].ToString();
-                usuario.nascimento = Convert.ToDateTime(dr["nascimento"]);
+
+                if (dr["bio"] != DBNull.Value)
+                    usuario.bio = dr["bio"].ToString();
+
+                if (dr["avatar"] != DBNull.Value)
+                    usuario.avatar = Convert.ToInt32(dr["avatar"]);
+
+                if (dr["naturalidade"] != DBNull.Value)
+                    usuario.naturalidade = dr["naturalidade"].ToString();
+
+                if (dr["nascimento"] != DBNull.Value)
+                    usuario.nascimento = Convert.ToDateTime(dr["nascimento"]);
+
                 usuario.inscricao = Convert.ToDateTime(dr["inscricao"]);
                 usuario.email = dr["email"].ToString();
-                usuario.telefone = dr["telefone"].ToString();
-                usuario.commits = Convert.ToInt32(dr["commits"]);
+
+                if (dr["telefone"] != DBNull.Value)
+                    usuario.telefone = dr["telefone"].ToString();
+
+                if (dr["commits"] != DBNull.Value)
+                    usuario.commits = Convert.ToInt32(dr["commits"]);
                 dr.Close();
             }
             catch (Exception ex)
