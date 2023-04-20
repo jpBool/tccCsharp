@@ -72,6 +72,14 @@
             this.lblNAvatar = new System.Windows.Forms.Label();
             this.lblAMD = new System.Windows.Forms.Label();
             this.btnLogoff = new System.Windows.Forms.Button();
+            this.lblNaturalidadeU = new System.Windows.Forms.Label();
+            this.lblBioU = new System.Windows.Forms.Label();
+            this.lblNPPublicados = new System.Windows.Forms.Label();
+            this.lblNPConcluidos = new System.Windows.Forms.Label();
+            this.lblNPAtivos = new System.Windows.Forms.Label();
+            this.lblNSeguidores = new System.Windows.Forms.Label();
+            this.lblNSeguindo = new System.Windows.Forms.Label();
+            this.lblNCommits = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbProjeto1.SuspendLayout();
             this.gpbProjeto2.SuspendLayout();
@@ -90,7 +98,7 @@
             // lblBio
             // 
             this.lblBio.AutoSize = true;
-            this.lblBio.Location = new System.Drawing.Point(364, 52);
+            this.lblBio.Location = new System.Drawing.Point(434, 71);
             this.lblBio.Name = "lblBio";
             this.lblBio.Size = new System.Drawing.Size(22, 13);
             this.lblBio.TabIndex = 1;
@@ -108,7 +116,7 @@
             // lblNaturalidade
             // 
             this.lblNaturalidade.AutoSize = true;
-            this.lblNaturalidade.Location = new System.Drawing.Point(364, 30);
+            this.lblNaturalidade.Location = new System.Drawing.Point(503, 30);
             this.lblNaturalidade.Name = "lblNaturalidade";
             this.lblNaturalidade.Size = new System.Drawing.Size(67, 13);
             this.lblNaturalidade.TabIndex = 3;
@@ -153,11 +161,11 @@
             // lblCommits
             // 
             this.lblCommits.AutoSize = true;
-            this.lblCommits.Location = new System.Drawing.Point(177, 97);
+            this.lblCommits.Location = new System.Drawing.Point(213, 132);
             this.lblCommits.Name = "lblCommits";
-            this.lblCommits.Size = new System.Drawing.Size(46, 13);
+            this.lblCommits.Size = new System.Drawing.Size(89, 13);
             this.lblCommits.TabIndex = 8;
-            this.lblCommits.Text = "Commits";
+            this.lblCommits.Text = "Commits(Número)";
             // 
             // pictureBox1
             // 
@@ -188,52 +196,52 @@
             // lblSeguindo
             // 
             this.lblSeguindo.AutoSize = true;
-            this.lblSeguindo.Location = new System.Drawing.Point(177, 30);
+            this.lblSeguindo.Location = new System.Drawing.Point(219, 30);
             this.lblSeguindo.Name = "lblSeguindo";
-            this.lblSeguindo.Size = new System.Drawing.Size(52, 13);
+            this.lblSeguindo.Size = new System.Drawing.Size(95, 13);
             this.lblSeguindo.TabIndex = 15;
-            this.lblSeguindo.Text = "Seguindo";
+            this.lblSeguindo.Text = "Seguindo(Número)";
             // 
             // lblSeguidores
             // 
             this.lblSeguidores.AutoSize = true;
-            this.lblSeguidores.Location = new System.Drawing.Point(177, 45);
+            this.lblSeguidores.Location = new System.Drawing.Point(227, 52);
             this.lblSeguidores.Name = "lblSeguidores";
-            this.lblSeguidores.Size = new System.Drawing.Size(60, 13);
+            this.lblSeguidores.Size = new System.Drawing.Size(103, 13);
             this.lblSeguidores.TabIndex = 16;
-            this.lblSeguidores.Text = "Seguidores";
+            this.lblSeguidores.Text = "Seguidores(Número)";
             // 
             // lblProjAtivos
             // 
             this.lblProjAtivos.AutoSize = true;
-            this.lblProjAtivos.Location = new System.Drawing.Point(177, 58);
+            this.lblProjAtivos.Location = new System.Drawing.Point(243, 71);
             this.lblProjAtivos.Name = "lblProjAtivos";
-            this.lblProjAtivos.Size = new System.Drawing.Size(76, 13);
+            this.lblProjAtivos.Size = new System.Drawing.Size(119, 13);
             this.lblProjAtivos.TabIndex = 17;
-            this.lblProjAtivos.Text = "Projetos ativos";
+            this.lblProjAtivos.Text = "Projetos ativos(Número)";
             // 
             // lblProjConcl
             // 
             this.lblProjConcl.AutoSize = true;
-            this.lblProjConcl.Location = new System.Drawing.Point(177, 71);
+            this.lblProjConcl.Location = new System.Drawing.Point(268, 84);
             this.lblProjConcl.Name = "lblProjConcl";
-            this.lblProjConcl.Size = new System.Drawing.Size(101, 13);
+            this.lblProjConcl.Size = new System.Drawing.Size(144, 13);
             this.lblProjConcl.TabIndex = 18;
-            this.lblProjConcl.Text = "Projetos concluídos";
+            this.lblProjConcl.Text = "Projetos concluídos(Número)";
             // 
             // lblProjPublic
             // 
             this.lblProjPublic.AutoSize = true;
-            this.lblProjPublic.Location = new System.Drawing.Point(177, 84);
+            this.lblProjPublic.Location = new System.Drawing.Point(266, 109);
             this.lblProjPublic.Name = "lblProjPublic";
-            this.lblProjPublic.Size = new System.Drawing.Size(99, 13);
+            this.lblProjPublic.Size = new System.Drawing.Size(142, 13);
             this.lblProjPublic.TabIndex = 19;
-            this.lblProjPublic.Text = "Projetos publicados";
+            this.lblProjPublic.Text = "Projetos publicados(Número)";
             // 
             // lblAtivoDesde
             // 
             this.lblAtivoDesde.AutoSize = true;
-            this.lblAtivoDesde.Location = new System.Drawing.Point(177, 154);
+            this.lblAtivoDesde.Location = new System.Drawing.Point(173, 186);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
             this.lblAtivoDesde.Size = new System.Drawing.Size(66, 13);
             this.lblAtivoDesde.TabIndex = 20;
@@ -477,7 +485,7 @@
             // lblAMD
             // 
             this.lblAMD.AutoSize = true;
-            this.lblAMD.Location = new System.Drawing.Point(249, 154);
+            this.lblAMD.Location = new System.Drawing.Point(245, 186);
             this.lblAMD.Name = "lblAMD";
             this.lblAMD.Size = new System.Drawing.Size(65, 13);
             this.lblAMD.TabIndex = 33;
@@ -493,11 +501,91 @@
             this.btnLogoff.UseVisualStyleBackColor = true;
             this.btnLogoff.Click += new System.EventHandler(this.btnLogoff_Click);
             // 
+            // lblNaturalidadeU
+            // 
+            this.lblNaturalidadeU.AutoSize = true;
+            this.lblNaturalidadeU.Location = new System.Drawing.Point(434, 30);
+            this.lblNaturalidadeU.Name = "lblNaturalidadeU";
+            this.lblNaturalidadeU.Size = new System.Drawing.Size(70, 13);
+            this.lblNaturalidadeU.TabIndex = 36;
+            this.lblNaturalidadeU.Text = "Naturalidade:";
+            // 
+            // lblBioU
+            // 
+            this.lblBioU.AutoSize = true;
+            this.lblBioU.Location = new System.Drawing.Point(434, 58);
+            this.lblBioU.Name = "lblBioU";
+            this.lblBioU.Size = new System.Drawing.Size(25, 13);
+            this.lblBioU.TabIndex = 35;
+            this.lblBioU.Text = "Bio:";
+            // 
+            // lblNPPublicados
+            // 
+            this.lblNPPublicados.AutoSize = true;
+            this.lblNPPublicados.Location = new System.Drawing.Point(158, 109);
+            this.lblNPPublicados.Name = "lblNPPublicados";
+            this.lblNPPublicados.Size = new System.Drawing.Size(102, 13);
+            this.lblNPPublicados.TabIndex = 42;
+            this.lblNPPublicados.Text = "Projetos publicados:";
+            // 
+            // lblNPConcluidos
+            // 
+            this.lblNPConcluidos.AutoSize = true;
+            this.lblNPConcluidos.Location = new System.Drawing.Point(158, 84);
+            this.lblNPConcluidos.Name = "lblNPConcluidos";
+            this.lblNPConcluidos.Size = new System.Drawing.Size(104, 13);
+            this.lblNPConcluidos.TabIndex = 41;
+            this.lblNPConcluidos.Text = "Projetos concluídos:";
+            // 
+            // lblNPAtivos
+            // 
+            this.lblNPAtivos.AutoSize = true;
+            this.lblNPAtivos.Location = new System.Drawing.Point(158, 71);
+            this.lblNPAtivos.Name = "lblNPAtivos";
+            this.lblNPAtivos.Size = new System.Drawing.Size(79, 13);
+            this.lblNPAtivos.TabIndex = 40;
+            this.lblNPAtivos.Text = "Projetos ativos:";
+            // 
+            // lblNSeguidores
+            // 
+            this.lblNSeguidores.AutoSize = true;
+            this.lblNSeguidores.Location = new System.Drawing.Point(158, 52);
+            this.lblNSeguidores.Name = "lblNSeguidores";
+            this.lblNSeguidores.Size = new System.Drawing.Size(63, 13);
+            this.lblNSeguidores.TabIndex = 39;
+            this.lblNSeguidores.Text = "Seguidores:";
+            // 
+            // lblNSeguindo
+            // 
+            this.lblNSeguindo.AutoSize = true;
+            this.lblNSeguindo.Location = new System.Drawing.Point(158, 30);
+            this.lblNSeguindo.Name = "lblNSeguindo";
+            this.lblNSeguindo.Size = new System.Drawing.Size(55, 13);
+            this.lblNSeguindo.TabIndex = 38;
+            this.lblNSeguindo.Text = "Seguindo:";
+            // 
+            // lblNCommits
+            // 
+            this.lblNCommits.AutoSize = true;
+            this.lblNCommits.Location = new System.Drawing.Point(158, 132);
+            this.lblNCommits.Name = "lblNCommits";
+            this.lblNCommits.Size = new System.Drawing.Size(49, 13);
+            this.lblNCommits.TabIndex = 37;
+            this.lblNCommits.Text = "Commits:";
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblNPPublicados);
+            this.Controls.Add(this.lblNPConcluidos);
+            this.Controls.Add(this.lblNPAtivos);
+            this.Controls.Add(this.lblNSeguidores);
+            this.Controls.Add(this.lblNSeguindo);
+            this.Controls.Add(this.lblNCommits);
+            this.Controls.Add(this.lblNaturalidadeU);
+            this.Controls.Add(this.lblBioU);
             this.Controls.Add(this.btnLogoff);
             this.Controls.Add(this.lblAMD);
             this.Controls.Add(this.lblNTelefone);
@@ -590,5 +678,13 @@
         private System.Windows.Forms.Label lblNAvatar;
         private System.Windows.Forms.Label lblAMD;
         private System.Windows.Forms.Button btnLogoff;
+        private System.Windows.Forms.Label lblNaturalidadeU;
+        private System.Windows.Forms.Label lblBioU;
+        private System.Windows.Forms.Label lblNPPublicados;
+        private System.Windows.Forms.Label lblNPConcluidos;
+        private System.Windows.Forms.Label lblNPAtivos;
+        private System.Windows.Forms.Label lblNSeguidores;
+        private System.Windows.Forms.Label lblNSeguindo;
+        private System.Windows.Forms.Label lblNCommits;
     }
 }
