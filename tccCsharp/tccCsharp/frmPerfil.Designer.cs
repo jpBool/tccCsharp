@@ -97,6 +97,8 @@
             // 
             // lblBio
             // 
+            this.lblBio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBio.AutoSize = true;
             this.lblBio.Location = new System.Drawing.Point(434, 71);
             this.lblBio.Name = "lblBio";
@@ -106,6 +108,7 @@
             // 
             // lblAvatar
             // 
+            this.lblAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAvatar.AutoSize = true;
             this.lblAvatar.Location = new System.Drawing.Point(699, 30);
             this.lblAvatar.Name = "lblAvatar";
@@ -115,6 +118,8 @@
             // 
             // lblNaturalidade
             // 
+            this.lblNaturalidade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNaturalidade.AutoSize = true;
             this.lblNaturalidade.Location = new System.Drawing.Point(503, 30);
             this.lblNaturalidade.Name = "lblNaturalidade";
@@ -124,6 +129,7 @@
             // 
             // lblNascimento
             // 
+            this.lblNascimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNascimento.AutoSize = true;
             this.lblNascimento.Location = new System.Drawing.Point(699, 52);
             this.lblNascimento.Name = "lblNascimento";
@@ -133,6 +139,7 @@
             // 
             // lblInscricao
             // 
+            this.lblInscricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInscricao.AutoSize = true;
             this.lblInscricao.Location = new System.Drawing.Point(699, 80);
             this.lblInscricao.Name = "lblInscricao";
@@ -151,6 +158,7 @@
             // 
             // lblTelefone
             // 
+            this.lblTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Location = new System.Drawing.Point(699, 104);
             this.lblTelefone.Name = "lblTelefone";
@@ -186,12 +194,16 @@
             // 
             // btnAddProject
             // 
+            this.btnAddProject.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnAddProject.AutoSize = true;
+            this.btnAddProject.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAddProject.Location = new System.Drawing.Point(635, 196);
             this.btnAddProject.Name = "btnAddProject";
-            this.btnAddProject.Size = new System.Drawing.Size(127, 23);
+            this.btnAddProject.Size = new System.Drawing.Size(123, 23);
             this.btnAddProject.TabIndex = 13;
             this.btnAddProject.Text = "Adicionar novo projeto";
             this.btnAddProject.UseVisualStyleBackColor = true;
+            this.btnAddProject.Click += new System.EventHandler(this.btnAddProject_Click);
             // 
             // lblSeguindo
             // 
@@ -426,10 +438,13 @@
             // 
             // btnVoltar
             // 
+            this.btnVoltar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnVoltar.AutoSize = true;
+            this.btnVoltar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(-5, 321);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(51, 38);
+            this.btnVoltar.Size = new System.Drawing.Size(35, 35);
             this.btnVoltar.TabIndex = 27;
             this.btnVoltar.Text = "<";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -437,10 +452,13 @@
             // 
             // btnAvancar
             // 
+            this.btnAvancar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnAvancar.AutoSize = true;
+            this.btnAvancar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAvancar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvancar.Location = new System.Drawing.Point(754, 321);
+            this.btnAvancar.Location = new System.Drawing.Point(770, 321);
             this.btnAvancar.Name = "btnAvancar";
-            this.btnAvancar.Size = new System.Drawing.Size(51, 38);
+            this.btnAvancar.Size = new System.Drawing.Size(35, 35);
             this.btnAvancar.TabIndex = 28;
             this.btnAvancar.Text = ">";
             this.btnAvancar.UseVisualStyleBackColor = true;
@@ -448,6 +466,7 @@
             // 
             // lblNTelefone
             // 
+            this.lblNTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNTelefone.AutoSize = true;
             this.lblNTelefone.Location = new System.Drawing.Point(616, 104);
             this.lblNTelefone.Name = "lblNTelefone";
@@ -457,6 +476,7 @@
             // 
             // lblNInscricao
             // 
+            this.lblNInscricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNInscricao.AutoSize = true;
             this.lblNInscricao.Location = new System.Drawing.Point(612, 80);
             this.lblNInscricao.Name = "lblNInscricao";
@@ -466,6 +486,7 @@
             // 
             // lblDtNasc
             // 
+            this.lblDtNasc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDtNasc.AutoSize = true;
             this.lblDtNasc.Location = new System.Drawing.Point(588, 52);
             this.lblDtNasc.Name = "lblDtNasc";
@@ -475,6 +496,7 @@
             // 
             // lblNAvatar
             // 
+            this.lblNAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNAvatar.AutoSize = true;
             this.lblNAvatar.Location = new System.Drawing.Point(639, 30);
             this.lblNAvatar.Name = "lblNAvatar";
@@ -493,9 +515,11 @@
             // 
             // btnLogoff
             // 
+            this.btnLogoff.AutoSize = true;
+            this.btnLogoff.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLogoff.Location = new System.Drawing.Point(-1, 1);
             this.btnLogoff.Name = "btnLogoff";
-            this.btnLogoff.Size = new System.Drawing.Size(127, 23);
+            this.btnLogoff.Size = new System.Drawing.Size(59, 23);
             this.btnLogoff.TabIndex = 34;
             this.btnLogoff.Text = "Deslogar";
             this.btnLogoff.UseVisualStyleBackColor = true;
@@ -503,6 +527,8 @@
             // 
             // lblNaturalidadeU
             // 
+            this.lblNaturalidadeU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNaturalidadeU.AutoSize = true;
             this.lblNaturalidadeU.Location = new System.Drawing.Point(434, 30);
             this.lblNaturalidadeU.Name = "lblNaturalidadeU";
@@ -512,6 +538,8 @@
             // 
             // lblBioU
             // 
+            this.lblBioU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBioU.AutoSize = true;
             this.lblBioU.Location = new System.Drawing.Point(434, 58);
             this.lblBioU.Name = "lblBioU";
@@ -617,8 +645,8 @@
             this.Controls.Add(this.lblNome);
             this.MaximizeBox = false;
             this.Name = "frmPerfil";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPerfil";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gpbProjeto1.ResumeLayout(false);

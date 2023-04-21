@@ -71,7 +71,8 @@ namespace tccCsharp
 
         private void frmPerfil_Load(object sender, EventArgs e)
         {
-            refresh_projects(Program.projetos);
+            WindowState = FormWindowState.Maximized;
+            /*refresh_projects(Program.projetos);
 
             User usuario = new User();
             Banco.CarregaPerfil(usuario);
@@ -83,7 +84,7 @@ namespace tccCsharp
             lblInscricao.Text = usuario.inscricao.ToShortDateString();
             lblEmail.Text = usuario.email.ToString();
             lblTelefone.Text = usuario.telefone.ToString();
-            lblCommits.Text = usuario.commits.ToString();
+            lblCommits.Text = usuario.commits.ToString();*/
         }
 
         private void btnAvancar_Click(object sender, EventArgs e)
@@ -105,6 +106,11 @@ namespace tccCsharp
             Program.projetos.Clear();
             Program.id_usuario = 0;
             this.Close();
+        }
+
+        private void btnAddProject_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
