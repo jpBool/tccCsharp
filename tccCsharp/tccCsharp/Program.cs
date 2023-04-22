@@ -15,6 +15,8 @@ namespace tccCsharp
         public static int id_usuario = 0;
         public static List<Project> projetos = new List<Project>();
 
+        public static int[] Cor1 = new int[3] { 200, 200, 255 };
+
         [STAThread]
         static void Main()
         {

@@ -72,6 +72,7 @@ namespace tccCsharp
         private void frmPerfil_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+            this.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             /*refresh_projects(Program.projetos);
 
             User usuario = new User();
