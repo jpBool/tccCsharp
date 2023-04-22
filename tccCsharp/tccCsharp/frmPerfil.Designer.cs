@@ -89,7 +89,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(26, 141);
+            this.lblNome.Location = new System.Drawing.Point(23, 134);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(35, 13);
             this.lblNome.TabIndex = 0;
@@ -97,10 +97,9 @@
             // 
             // lblBio
             // 
-            this.lblBio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblBio.AutoSize = true;
-            this.lblBio.Location = new System.Drawing.Point(434, 71);
+            this.lblBio.Location = new System.Drawing.Point(419, 95);
             this.lblBio.Name = "lblBio";
             this.lblBio.Size = new System.Drawing.Size(22, 13);
             this.lblBio.TabIndex = 1;
@@ -110,7 +109,7 @@
             // 
             this.lblAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAvatar.AutoSize = true;
-            this.lblAvatar.Location = new System.Drawing.Point(699, 30);
+            this.lblAvatar.Location = new System.Drawing.Point(651, 30);
             this.lblAvatar.Name = "lblAvatar";
             this.lblAvatar.Size = new System.Drawing.Size(38, 13);
             this.lblAvatar.TabIndex = 2;
@@ -118,10 +117,9 @@
             // 
             // lblNaturalidade
             // 
-            this.lblNaturalidade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNaturalidade.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNaturalidade.AutoSize = true;
-            this.lblNaturalidade.Location = new System.Drawing.Point(503, 30);
+            this.lblNaturalidade.Location = new System.Drawing.Point(495, 56);
             this.lblNaturalidade.Name = "lblNaturalidade";
             this.lblNaturalidade.Size = new System.Drawing.Size(67, 13);
             this.lblNaturalidade.TabIndex = 3;
@@ -131,7 +129,7 @@
             // 
             this.lblNascimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNascimento.AutoSize = true;
-            this.lblNascimento.Location = new System.Drawing.Point(699, 52);
+            this.lblNascimento.Location = new System.Drawing.Point(701, 56);
             this.lblNascimento.Name = "lblNascimento";
             this.lblNascimento.Size = new System.Drawing.Size(63, 13);
             this.lblNascimento.TabIndex = 4;
@@ -141,7 +139,7 @@
             // 
             this.lblInscricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInscricao.AutoSize = true;
-            this.lblInscricao.Location = new System.Drawing.Point(699, 80);
+            this.lblInscricao.Location = new System.Drawing.Point(679, 82);
             this.lblInscricao.Name = "lblInscricao";
             this.lblInscricao.Size = new System.Drawing.Size(50, 13);
             this.lblInscricao.TabIndex = 5;
@@ -150,7 +148,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(26, 154);
+            this.lblEmail.Location = new System.Drawing.Point(23, 152);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 6;
@@ -160,7 +158,7 @@
             // 
             this.lblTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(699, 104);
+            this.lblTelefone.Location = new System.Drawing.Point(675, 108);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(49, 13);
             this.lblTelefone.TabIndex = 7;
@@ -169,7 +167,7 @@
             // lblCommits
             // 
             this.lblCommits.AutoSize = true;
-            this.lblCommits.Location = new System.Drawing.Point(213, 132);
+            this.lblCommits.Location = new System.Drawing.Point(196, 160);
             this.lblCommits.Name = "lblCommits";
             this.lblCommits.Size = new System.Drawing.Size(89, 13);
             this.lblCommits.TabIndex = 8;
@@ -185,6 +183,7 @@
             // 
             // lblProjetos
             // 
+            this.lblProjetos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblProjetos.AutoSize = true;
             this.lblProjetos.Location = new System.Drawing.Point(23, 201);
             this.lblProjetos.Name = "lblProjetos";
@@ -208,7 +207,7 @@
             // lblSeguindo
             // 
             this.lblSeguindo.AutoSize = true;
-            this.lblSeguindo.Location = new System.Drawing.Point(219, 30);
+            this.lblSeguindo.Location = new System.Drawing.Point(201, 30);
             this.lblSeguindo.Name = "lblSeguindo";
             this.lblSeguindo.Size = new System.Drawing.Size(95, 13);
             this.lblSeguindo.TabIndex = 15;
@@ -217,7 +216,7 @@
             // lblSeguidores
             // 
             this.lblSeguidores.AutoSize = true;
-            this.lblSeguidores.Location = new System.Drawing.Point(227, 52);
+            this.lblSeguidores.Location = new System.Drawing.Point(210, 56);
             this.lblSeguidores.Name = "lblSeguidores";
             this.lblSeguidores.Size = new System.Drawing.Size(103, 13);
             this.lblSeguidores.TabIndex = 16;
@@ -226,7 +225,7 @@
             // lblProjAtivos
             // 
             this.lblProjAtivos.AutoSize = true;
-            this.lblProjAtivos.Location = new System.Drawing.Point(243, 71);
+            this.lblProjAtivos.Location = new System.Drawing.Point(225, 82);
             this.lblProjAtivos.Name = "lblProjAtivos";
             this.lblProjAtivos.Size = new System.Drawing.Size(119, 13);
             this.lblProjAtivos.TabIndex = 17;
@@ -235,7 +234,7 @@
             // lblProjConcl
             // 
             this.lblProjConcl.AutoSize = true;
-            this.lblProjConcl.Location = new System.Drawing.Point(268, 84);
+            this.lblProjConcl.Location = new System.Drawing.Point(250, 108);
             this.lblProjConcl.Name = "lblProjConcl";
             this.lblProjConcl.Size = new System.Drawing.Size(144, 13);
             this.lblProjConcl.TabIndex = 18;
@@ -244,7 +243,7 @@
             // lblProjPublic
             // 
             this.lblProjPublic.AutoSize = true;
-            this.lblProjPublic.Location = new System.Drawing.Point(266, 109);
+            this.lblProjPublic.Location = new System.Drawing.Point(250, 134);
             this.lblProjPublic.Name = "lblProjPublic";
             this.lblProjPublic.Size = new System.Drawing.Size(142, 13);
             this.lblProjPublic.TabIndex = 19;
@@ -252,8 +251,9 @@
             // 
             // lblAtivoDesde
             // 
+            this.lblAtivoDesde.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblAtivoDesde.AutoSize = true;
-            this.lblAtivoDesde.Location = new System.Drawing.Point(173, 186);
+            this.lblAtivoDesde.Location = new System.Drawing.Point(419, 30);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
             this.lblAtivoDesde.Size = new System.Drawing.Size(66, 13);
             this.lblAtivoDesde.TabIndex = 20;
@@ -288,6 +288,8 @@
             // 
             // gpbProjeto1
             // 
+            this.gpbProjeto1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gpbProjeto1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gpbProjeto1.Controls.Add(this.lblDescricaoP1);
             this.gpbProjeto1.Controls.Add(this.lblNomeP1);
             this.gpbProjeto1.Controls.Add(this.btnEditar1);
@@ -295,7 +297,7 @@
             this.gpbProjeto1.Controls.Add(this.btnCompartilhar1);
             this.gpbProjeto1.Location = new System.Drawing.Point(52, 226);
             this.gpbProjeto1.Name = "gpbProjeto1";
-            this.gpbProjeto1.Size = new System.Drawing.Size(211, 212);
+            this.gpbProjeto1.Size = new System.Drawing.Size(209, 224);
             this.gpbProjeto1.TabIndex = 25;
             this.gpbProjeto1.TabStop = false;
             this.gpbProjeto1.Text = "Projeto";
@@ -320,6 +322,8 @@
             // 
             // gpbProjeto2
             // 
+            this.gpbProjeto2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gpbProjeto2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gpbProjeto2.Controls.Add(this.lblDescricaoP2);
             this.gpbProjeto2.Controls.Add(this.lblNomeP2);
             this.gpbProjeto2.Controls.Add(this.btnEditar2);
@@ -327,7 +331,7 @@
             this.gpbProjeto2.Controls.Add(this.btnCompartilhar2);
             this.gpbProjeto2.Location = new System.Drawing.Point(294, 226);
             this.gpbProjeto2.Name = "gpbProjeto2";
-            this.gpbProjeto2.Size = new System.Drawing.Size(211, 212);
+            this.gpbProjeto2.Size = new System.Drawing.Size(209, 224);
             this.gpbProjeto2.TabIndex = 26;
             this.gpbProjeto2.TabStop = false;
             this.gpbProjeto2.Text = "Projeto";
@@ -379,6 +383,8 @@
             // 
             // gpbProjeto3
             // 
+            this.gpbProjeto3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gpbProjeto3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gpbProjeto3.Controls.Add(this.lblDescricaoP3);
             this.gpbProjeto3.Controls.Add(this.lblNomeP3);
             this.gpbProjeto3.Controls.Add(this.btnEditar3);
@@ -386,7 +392,7 @@
             this.gpbProjeto3.Controls.Add(this.btnCompartilhar3);
             this.gpbProjeto3.Location = new System.Drawing.Point(537, 226);
             this.gpbProjeto3.Name = "gpbProjeto3";
-            this.gpbProjeto3.Size = new System.Drawing.Size(211, 212);
+            this.gpbProjeto3.Size = new System.Drawing.Size(209, 224);
             this.gpbProjeto3.TabIndex = 27;
             this.gpbProjeto3.TabStop = false;
             this.gpbProjeto3.Text = "Projeto";
@@ -468,7 +474,7 @@
             // 
             this.lblNTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNTelefone.AutoSize = true;
-            this.lblNTelefone.Location = new System.Drawing.Point(616, 104);
+            this.lblNTelefone.Location = new System.Drawing.Point(591, 108);
             this.lblNTelefone.Name = "lblNTelefone";
             this.lblNTelefone.Size = new System.Drawing.Size(78, 13);
             this.lblNTelefone.TabIndex = 32;
@@ -478,7 +484,7 @@
             // 
             this.lblNInscricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNInscricao.AutoSize = true;
-            this.lblNInscricao.Location = new System.Drawing.Point(612, 80);
+            this.lblNInscricao.Location = new System.Drawing.Point(591, 82);
             this.lblNInscricao.Name = "lblNInscricao";
             this.lblNInscricao.Size = new System.Drawing.Size(82, 13);
             this.lblNInscricao.TabIndex = 31;
@@ -488,7 +494,7 @@
             // 
             this.lblDtNasc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDtNasc.AutoSize = true;
-            this.lblDtNasc.Location = new System.Drawing.Point(588, 52);
+            this.lblDtNasc.Location = new System.Drawing.Point(591, 56);
             this.lblDtNasc.Name = "lblDtNasc";
             this.lblDtNasc.Size = new System.Drawing.Size(105, 13);
             this.lblDtNasc.TabIndex = 30;
@@ -498,7 +504,7 @@
             // 
             this.lblNAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNAvatar.AutoSize = true;
-            this.lblNAvatar.Location = new System.Drawing.Point(639, 30);
+            this.lblNAvatar.Location = new System.Drawing.Point(591, 30);
             this.lblNAvatar.Name = "lblNAvatar";
             this.lblNAvatar.Size = new System.Drawing.Size(54, 13);
             this.lblNAvatar.TabIndex = 29;
@@ -506,8 +512,9 @@
             // 
             // lblAMD
             // 
+            this.lblAMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblAMD.AutoSize = true;
-            this.lblAMD.Location = new System.Drawing.Point(245, 186);
+            this.lblAMD.Location = new System.Drawing.Point(491, 30);
             this.lblAMD.Name = "lblAMD";
             this.lblAMD.Size = new System.Drawing.Size(65, 13);
             this.lblAMD.TabIndex = 33;
@@ -527,10 +534,9 @@
             // 
             // lblNaturalidadeU
             // 
-            this.lblNaturalidadeU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNaturalidadeU.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNaturalidadeU.AutoSize = true;
-            this.lblNaturalidadeU.Location = new System.Drawing.Point(434, 30);
+            this.lblNaturalidadeU.Location = new System.Drawing.Point(419, 56);
             this.lblNaturalidadeU.Name = "lblNaturalidadeU";
             this.lblNaturalidadeU.Size = new System.Drawing.Size(70, 13);
             this.lblNaturalidadeU.TabIndex = 36;
@@ -538,10 +544,9 @@
             // 
             // lblBioU
             // 
-            this.lblBioU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBioU.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblBioU.AutoSize = true;
-            this.lblBioU.Location = new System.Drawing.Point(434, 58);
+            this.lblBioU.Location = new System.Drawing.Point(419, 82);
             this.lblBioU.Name = "lblBioU";
             this.lblBioU.Size = new System.Drawing.Size(25, 13);
             this.lblBioU.TabIndex = 35;
@@ -550,7 +555,7 @@
             // lblNPPublicados
             // 
             this.lblNPPublicados.AutoSize = true;
-            this.lblNPPublicados.Location = new System.Drawing.Point(158, 109);
+            this.lblNPPublicados.Location = new System.Drawing.Point(144, 134);
             this.lblNPPublicados.Name = "lblNPPublicados";
             this.lblNPPublicados.Size = new System.Drawing.Size(102, 13);
             this.lblNPPublicados.TabIndex = 42;
@@ -559,7 +564,7 @@
             // lblNPConcluidos
             // 
             this.lblNPConcluidos.AutoSize = true;
-            this.lblNPConcluidos.Location = new System.Drawing.Point(158, 84);
+            this.lblNPConcluidos.Location = new System.Drawing.Point(144, 108);
             this.lblNPConcluidos.Name = "lblNPConcluidos";
             this.lblNPConcluidos.Size = new System.Drawing.Size(104, 13);
             this.lblNPConcluidos.TabIndex = 41;
@@ -568,7 +573,7 @@
             // lblNPAtivos
             // 
             this.lblNPAtivos.AutoSize = true;
-            this.lblNPAtivos.Location = new System.Drawing.Point(158, 71);
+            this.lblNPAtivos.Location = new System.Drawing.Point(144, 82);
             this.lblNPAtivos.Name = "lblNPAtivos";
             this.lblNPAtivos.Size = new System.Drawing.Size(79, 13);
             this.lblNPAtivos.TabIndex = 40;
@@ -577,7 +582,7 @@
             // lblNSeguidores
             // 
             this.lblNSeguidores.AutoSize = true;
-            this.lblNSeguidores.Location = new System.Drawing.Point(158, 52);
+            this.lblNSeguidores.Location = new System.Drawing.Point(145, 56);
             this.lblNSeguidores.Name = "lblNSeguidores";
             this.lblNSeguidores.Size = new System.Drawing.Size(63, 13);
             this.lblNSeguidores.TabIndex = 39;
@@ -586,7 +591,7 @@
             // lblNSeguindo
             // 
             this.lblNSeguindo.AutoSize = true;
-            this.lblNSeguindo.Location = new System.Drawing.Point(158, 30);
+            this.lblNSeguindo.Location = new System.Drawing.Point(144, 30);
             this.lblNSeguindo.Name = "lblNSeguindo";
             this.lblNSeguindo.Size = new System.Drawing.Size(55, 13);
             this.lblNSeguindo.TabIndex = 38;
@@ -595,7 +600,7 @@
             // lblNCommits
             // 
             this.lblNCommits.AutoSize = true;
-            this.lblNCommits.Location = new System.Drawing.Point(158, 132);
+            this.lblNCommits.Location = new System.Drawing.Point(145, 160);
             this.lblNCommits.Name = "lblNCommits";
             this.lblNCommits.Size = new System.Drawing.Size(49, 13);
             this.lblNCommits.TabIndex = 37;
