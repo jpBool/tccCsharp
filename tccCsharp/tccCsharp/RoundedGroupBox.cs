@@ -1,4 +1,5 @@
-﻿using System.Drawing; // Biblioteca para recursos gráficos
+﻿using System;
+using System.Drawing; // Biblioteca para recursos gráficos
 using System.Windows.Forms; // Biblioteca para elementos de interface do usuário
 using System.Drawing.Drawing2D; // Biblioteca para trabalhar com caminhos gráficos
 

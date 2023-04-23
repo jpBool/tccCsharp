@@ -30,13 +30,8 @@
         {
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnAvancar = new System.Windows.Forms.Button();
-            this.btnLogoff = new System.Windows.Forms.Button();
             this.TLP_Mãe = new System.Windows.Forms.TableLayoutPanel();
             this.TLP_Filha2 = new System.Windows.Forms.TableLayoutPanel();
-            this.TLP_Filha1 = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPMenu2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblProjetos = new System.Windows.Forms.Label();
-            this.btnAdicionar = new System.Windows.Forms.Button();
             this.RGPProjeto3 = new tccCsharp.RoundedGroupBox();
             this.RGBDescricaoP3 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP3 = new System.Windows.Forms.Label();
@@ -58,6 +53,7 @@
             this.btnEditar1 = new System.Windows.Forms.Button();
             this.btnExcluir1 = new System.Windows.Forms.Button();
             this.btnCompartilhar1 = new System.Windows.Forms.Button();
+            this.TLP_Filha1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBNeta2 = new tccCsharp.RoundedGroupBox();
             this.TLP_Neta2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBBio = new tccCsharp.RoundedGroupBox();
@@ -79,20 +75,27 @@
             this.lblCommits = new System.Windows.Forms.Label();
             this.lblAMD = new System.Windows.Forms.Label();
             this.lblAtivoDesde = new System.Windows.Forms.Label();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPAvatar = new System.Windows.Forms.TableLayoutPanel();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.opcAvatar = new tccCsharp.OvalPictureBox();
+            this.TLPMenu2 = new System.Windows.Forms.TableLayoutPanel();
+            this.RGBAdicionar = new tccCsharp.RoundedGroupBox();
+            this.lblAdicionar = new System.Windows.Forms.Label();
+            this.lblProjetos = new System.Windows.Forms.Label();
+            this.RGBMenu1 = new tccCsharp.RoundedGroupBox();
+            this.btnLogoff = new System.Windows.Forms.Button();
+            this.btnRecarregar = new System.Windows.Forms.Button();
+            this.btnConfig = new System.Windows.Forms.Button();
             this.TLP_Mãe.SuspendLayout();
             this.TLP_Filha2.SuspendLayout();
-            this.TLP_Filha1.SuspendLayout();
-            this.TLPMenu2.SuspendLayout();
             this.RGPProjeto3.SuspendLayout();
             this.RGBDescricaoP3.SuspendLayout();
             this.RGPProjeto2.SuspendLayout();
             this.RGBDescricaoP2.SuspendLayout();
             this.RGPProjeto1.SuspendLayout();
             this.RGBDescricaoP1.SuspendLayout();
+            this.TLP_Filha1.SuspendLayout();
             this.RGBNeta2.SuspendLayout();
             this.TLP_Neta2.SuspendLayout();
             this.RGBBio.SuspendLayout();
@@ -104,8 +107,11 @@
             this.RGBSeguindo.SuspendLayout();
             this.RGBSeguidores.SuspendLayout();
             this.RGBCommits.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TLPAvatar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).BeginInit();
+            this.TLPMenu2.SuspendLayout();
+            this.RGBAdicionar.SuspendLayout();
+            this.RGBMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -136,19 +142,6 @@
             this.btnAvancar.UseVisualStyleBackColor = true;
             this.btnAvancar.Click += new System.EventHandler(this.btnAvancar_Click);
             // 
-            // btnLogoff
-            // 
-            this.btnLogoff.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnLogoff.AutoSize = true;
-            this.btnLogoff.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLogoff.Location = new System.Drawing.Point(588, 3);
-            this.btnLogoff.Name = "btnLogoff";
-            this.btnLogoff.Size = new System.Drawing.Size(90, 28);
-            this.btnLogoff.TabIndex = 34;
-            this.btnLogoff.Text = "Deslogar";
-            this.btnLogoff.UseVisualStyleBackColor = true;
-            this.btnLogoff.Click += new System.EventHandler(this.btnLogoff_Click);
-            // 
             // TLP_Mãe
             // 
             this.TLP_Mãe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -159,8 +152,8 @@
             this.TLP_Mãe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLP_Mãe.Controls.Add(this.TLP_Filha2, 0, 3);
             this.TLP_Mãe.Controls.Add(this.TLP_Filha1, 0, 1);
-            this.TLP_Mãe.Controls.Add(this.btnLogoff, 0, 0);
             this.TLP_Mãe.Controls.Add(this.TLPMenu2, 0, 2);
+            this.TLP_Mãe.Controls.Add(this.RGBMenu1, 0, 0);
             this.TLP_Mãe.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TLP_Mãe.Location = new System.Drawing.Point(-2, -3);
             this.TLP_Mãe.Margin = new System.Windows.Forms.Padding(0);
@@ -198,63 +191,6 @@
             this.TLP_Filha2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 343F));
             this.TLP_Filha2.Size = new System.Drawing.Size(1267, 343);
             this.TLP_Filha2.TabIndex = 47;
-            // 
-            // TLP_Filha1
-            // 
-            this.TLP_Filha1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLP_Filha1.ColumnCount = 2;
-            this.TLP_Filha1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLP_Filha1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLP_Filha1.Controls.Add(this.RGBNeta2, 1, 0);
-            this.TLP_Filha1.Controls.Add(this.RGBNeta1, 0, 0);
-            this.TLP_Filha1.Location = new System.Drawing.Point(0, 34);
-            this.TLP_Filha1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLP_Filha1.Name = "TLP_Filha1";
-            this.TLP_Filha1.RowCount = 1;
-            this.TLP_Filha1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLP_Filha1.Size = new System.Drawing.Size(1267, 274);
-            this.TLP_Filha1.TabIndex = 46;
-            // 
-            // TLPMenu2
-            // 
-            this.TLPMenu2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPMenu2.ColumnCount = 2;
-            this.TLPMenu2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMenu2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMenu2.Controls.Add(this.lblProjetos, 0, 0);
-            this.TLPMenu2.Controls.Add(this.btnAdicionar, 1, 0);
-            this.TLPMenu2.Location = new System.Drawing.Point(0, 308);
-            this.TLPMenu2.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPMenu2.Name = "TLPMenu2";
-            this.TLPMenu2.RowCount = 1;
-            this.TLPMenu2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMenu2.Size = new System.Drawing.Size(1267, 34);
-            this.TLPMenu2.TabIndex = 48;
-            // 
-            // lblProjetos
-            // 
-            this.lblProjetos.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblProjetos.AutoSize = true;
-            this.lblProjetos.Location = new System.Drawing.Point(15, 8);
-            this.lblProjetos.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.lblProjetos.Name = "lblProjetos";
-            this.lblProjetos.Size = new System.Drawing.Size(124, 18);
-            this.lblProjetos.TabIndex = 15;
-            this.lblProjetos.Text = "Seus Projetos:";
-            // 
-            // btnAdicionar
-            // 
-            this.btnAdicionar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnAdicionar.Location = new System.Drawing.Point(1049, 3);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(215, 28);
-            this.btnAdicionar.TabIndex = 16;
-            this.btnAdicionar.Text = "Adicionar novo projeto";
-            this.btnAdicionar.UseVisualStyleBackColor = true;
             // 
             // RGPProjeto3
             // 
@@ -526,6 +462,24 @@
             this.btnCompartilhar1.Text = "Compartilhar";
             this.btnCompartilhar1.UseVisualStyleBackColor = true;
             // 
+            // TLP_Filha1
+            // 
+            this.TLP_Filha1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLP_Filha1.ColumnCount = 2;
+            this.TLP_Filha1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLP_Filha1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLP_Filha1.Controls.Add(this.RGBNeta2, 1, 0);
+            this.TLP_Filha1.Controls.Add(this.RGBNeta1, 0, 0);
+            this.TLP_Filha1.Location = new System.Drawing.Point(0, 34);
+            this.TLP_Filha1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLP_Filha1.Name = "TLP_Filha1";
+            this.TLP_Filha1.RowCount = 1;
+            this.TLP_Filha1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLP_Filha1.Size = new System.Drawing.Size(1267, 274);
+            this.TLP_Filha1.TabIndex = 46;
+            // 
             // RGBNeta2
             // 
             this.RGBNeta2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -640,7 +594,7 @@
             this.TLP_Neta1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLP_Neta1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLP_Neta1.Controls.Add(this.tableLayoutPanel7, 1, 0);
-            this.TLP_Neta1.Controls.Add(this.tableLayoutPanel6, 0, 0);
+            this.TLP_Neta1.Controls.Add(this.TLPAvatar, 0, 0);
             this.TLP_Neta1.Location = new System.Drawing.Point(8, 8);
             this.TLP_Neta1.Margin = new System.Windows.Forms.Padding(15);
             this.TLP_Neta1.Name = "TLP_Neta1";
@@ -828,24 +782,24 @@
             this.lblAtivoDesde.TabIndex = 39;
             this.lblAtivoDesde.Text = "Ativo desde:";
             // 
-            // tableLayoutPanel6
+            // TLPAvatar
             // 
-            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TLPAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Controls.Add(this.lblEmail, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.lblNome, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 3;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(288, 223);
-            this.tableLayoutPanel6.TabIndex = 0;
+            this.TLPAvatar.ColumnCount = 1;
+            this.TLPAvatar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPAvatar.Controls.Add(this.lblEmail, 0, 2);
+            this.TLPAvatar.Controls.Add(this.lblNome, 0, 1);
+            this.TLPAvatar.Controls.Add(this.opcAvatar, 0, 0);
+            this.TLPAvatar.Location = new System.Drawing.Point(3, 3);
+            this.TLPAvatar.Name = "TLPAvatar";
+            this.TLPAvatar.RowCount = 3;
+            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TLPAvatar.Size = new System.Drawing.Size(288, 223);
+            this.TLPAvatar.TabIndex = 0;
             // 
             // lblEmail
             // 
@@ -857,19 +811,6 @@
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(53, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(400, 400);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(181, 178);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblNome
             // 
             this.lblNome.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -879,6 +820,122 @@
             this.lblNome.Size = new System.Drawing.Size(54, 18);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome";
+            // 
+            // opcAvatar
+            // 
+            this.opcAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.opcAvatar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.opcAvatar.Image = global::tccCsharp.Properties.Resources.Classic_Chess_King_Black;
+            this.opcAvatar.Location = new System.Drawing.Point(54, 3);
+            this.opcAvatar.Name = "opcAvatar";
+            this.opcAvatar.Size = new System.Drawing.Size(180, 172);
+            this.opcAvatar.TabIndex = 7;
+            this.opcAvatar.TabStop = false;
+            // 
+            // TLPMenu2
+            // 
+            this.TLPMenu2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPMenu2.ColumnCount = 2;
+            this.TLPMenu2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPMenu2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPMenu2.Controls.Add(this.RGBAdicionar, 1, 0);
+            this.TLPMenu2.Controls.Add(this.lblProjetos, 0, 0);
+            this.TLPMenu2.Location = new System.Drawing.Point(0, 308);
+            this.TLPMenu2.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPMenu2.Name = "TLPMenu2";
+            this.TLPMenu2.RowCount = 1;
+            this.TLPMenu2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPMenu2.Size = new System.Drawing.Size(1267, 34);
+            this.TLPMenu2.TabIndex = 48;
+            // 
+            // RGBAdicionar
+            // 
+            this.RGBAdicionar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.RGBAdicionar.BackColor = System.Drawing.Color.Transparent;
+            this.RGBAdicionar.BackgroundColor = System.Drawing.Color.White;
+            this.RGBAdicionar.BorderWidth = 1F;
+            this.RGBAdicionar.Controls.Add(this.lblAdicionar);
+            this.RGBAdicionar.CornerRadius = 10;
+            this.RGBAdicionar.Location = new System.Drawing.Point(1058, 3);
+            this.RGBAdicionar.Name = "RGBAdicionar";
+            this.RGBAdicionar.Size = new System.Drawing.Size(206, 28);
+            this.RGBAdicionar.TabIndex = 19;
+            this.RGBAdicionar.TabStop = false;
+            // 
+            // lblAdicionar
+            // 
+            this.lblAdicionar.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdicionar.Location = new System.Drawing.Point(7, 4);
+            this.lblAdicionar.Margin = new System.Windows.Forms.Padding(0);
+            this.lblAdicionar.Name = "lblAdicionar";
+            this.lblAdicionar.Size = new System.Drawing.Size(193, 20);
+            this.lblAdicionar.TabIndex = 32;
+            this.lblAdicionar.Text = "Adicionar novo projeto";
+            this.lblAdicionar.MouseEnter += new System.EventHandler(this.btnAdicionar_MouseEnter);
+            this.lblAdicionar.MouseLeave += new System.EventHandler(this.btnAdicionar_MouseLeave);
+            // 
+            // lblProjetos
+            // 
+            this.lblProjetos.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblProjetos.AutoSize = true;
+            this.lblProjetos.Location = new System.Drawing.Point(15, 8);
+            this.lblProjetos.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.lblProjetos.Name = "lblProjetos";
+            this.lblProjetos.Size = new System.Drawing.Size(124, 18);
+            this.lblProjetos.TabIndex = 15;
+            this.lblProjetos.Text = "Seus Projetos:";
+            // 
+            // RGBMenu1
+            // 
+            this.RGBMenu1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.RGBMenu1.BackgroundColor = System.Drawing.Color.White;
+            this.RGBMenu1.BorderWidth = 1F;
+            this.RGBMenu1.Controls.Add(this.btnConfig);
+            this.RGBMenu1.Controls.Add(this.btnRecarregar);
+            this.RGBMenu1.Controls.Add(this.btnLogoff);
+            this.RGBMenu1.CornerRadius = 10;
+            this.RGBMenu1.Location = new System.Drawing.Point(415, 3);
+            this.RGBMenu1.Name = "RGBMenu1";
+            this.RGBMenu1.Size = new System.Drawing.Size(437, 28);
+            this.RGBMenu1.TabIndex = 49;
+            this.RGBMenu1.TabStop = false;
+            // 
+            // btnLogoff
+            // 
+            this.btnLogoff.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLogoff.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnLogoff.Location = new System.Drawing.Point(19, 0);
+            this.btnLogoff.Name = "btnLogoff";
+            this.btnLogoff.Size = new System.Drawing.Size(138, 28);
+            this.btnLogoff.TabIndex = 35;
+            this.btnLogoff.Text = "Deslogar";
+            this.btnLogoff.UseVisualStyleBackColor = true;
+            // 
+            // btnRecarregar
+            // 
+            this.btnRecarregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRecarregar.AutoSize = true;
+            this.btnRecarregar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRecarregar.Location = new System.Drawing.Point(163, 0);
+            this.btnRecarregar.Name = "btnRecarregar";
+            this.btnRecarregar.Size = new System.Drawing.Size(111, 28);
+            this.btnRecarregar.TabIndex = 36;
+            this.btnRecarregar.Text = "Recarregar";
+            this.btnRecarregar.UseVisualStyleBackColor = true;
+            // 
+            // btnConfig
+            // 
+            this.btnConfig.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnConfig.AutoSize = true;
+            this.btnConfig.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnConfig.Location = new System.Drawing.Point(280, 0);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Size = new System.Drawing.Size(135, 28);
+            this.btnConfig.TabIndex = 37;
+            this.btnConfig.Text = "Configurações";
+            this.btnConfig.UseVisualStyleBackColor = true;
             // 
             // frmPerfil
             // 
@@ -895,9 +952,6 @@
             this.TLP_Mãe.PerformLayout();
             this.TLP_Filha2.ResumeLayout(false);
             this.TLP_Filha2.PerformLayout();
-            this.TLP_Filha1.ResumeLayout(false);
-            this.TLPMenu2.ResumeLayout(false);
-            this.TLPMenu2.PerformLayout();
             this.RGPProjeto3.ResumeLayout(false);
             this.RGPProjeto3.PerformLayout();
             this.RGBDescricaoP3.ResumeLayout(false);
@@ -907,6 +961,7 @@
             this.RGPProjeto1.ResumeLayout(false);
             this.RGPProjeto1.PerformLayout();
             this.RGBDescricaoP1.ResumeLayout(false);
+            this.TLP_Filha1.ResumeLayout(false);
             this.RGBNeta2.ResumeLayout(false);
             this.TLP_Neta2.ResumeLayout(false);
             this.RGBBio.ResumeLayout(false);
@@ -921,9 +976,14 @@
             this.RGBSeguidores.ResumeLayout(false);
             this.RGBCommits.ResumeLayout(false);
             this.RGBCommits.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.TLPAvatar.ResumeLayout(false);
+            this.TLPAvatar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).EndInit();
+            this.TLPMenu2.ResumeLayout(false);
+            this.TLPMenu2.PerformLayout();
+            this.RGBAdicionar.ResumeLayout(false);
+            this.RGBMenu1.ResumeLayout(false);
+            this.RGBMenu1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -931,7 +991,6 @@
         #endregion
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnAvancar;
-        private System.Windows.Forms.Button btnLogoff;
         private System.Windows.Forms.TableLayoutPanel TLP_Mãe;
         private System.Windows.Forms.TableLayoutPanel TLP_Filha2;
         private System.Windows.Forms.TableLayoutPanel TLP_Filha1;
@@ -977,12 +1036,17 @@
         private System.Windows.Forms.Label lblCommits;
         private System.Windows.Forms.Label lblAMD;
         private System.Windows.Forms.Label lblAtivoDesde;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel TLPAvatar;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TableLayoutPanel TLPMenu2;
         private System.Windows.Forms.Label lblProjetos;
-        private System.Windows.Forms.Button btnAdicionar;
+        private RoundedGroupBox RGBAdicionar;
+        private System.Windows.Forms.Label lblAdicionar;
+        private OvalPictureBox opcAvatar;
+        private RoundedGroupBox RGBMenu1;
+        private System.Windows.Forms.Button btnConfig;
+        private System.Windows.Forms.Button btnRecarregar;
+        private System.Windows.Forms.Button btnLogoff;
     }
 }
