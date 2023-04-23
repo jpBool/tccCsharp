@@ -36,6 +36,9 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.npgsqlCommandBuilder1 = new Npgsql.NpgsqlCommandBuilder();
+            this.npgsqlCommandBuilder2 = new Npgsql.NpgsqlCommandBuilder();
+            this.groupBox1 = new tccCsharp.RoundedGroupBox();
             this.gpbLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +77,7 @@
             // 
             // lblLogin
             // 
+            this.lblLogin.AllowDrop = true;
             this.lblLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,12 +120,33 @@
             this.txtSenha.Size = new System.Drawing.Size(208, 20);
             this.txtSenha.TabIndex = 2;
             // 
+            // npgsqlCommandBuilder1
+            // 
+            this.npgsqlCommandBuilder1.QuotePrefix = "\"";
+            this.npgsqlCommandBuilder1.QuoteSuffix = "\"";
+            // 
+            // npgsqlCommandBuilder2
+            // 
+            this.npgsqlCommandBuilder2.QuotePrefix = "\"";
+            this.npgsqlCommandBuilder2.QuoteSuffix = "\"";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.CornerRadius = 10;
+            this.groupBox1.Location = new System.Drawing.Point(28, 101);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gpbLogin);
             this.Name = "frmLogin";
             this.Text = "Login";
@@ -141,6 +166,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtEmail;
+        private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder1;
+        private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder2;
+        private RoundedGroupBox groupBox1;
     }
 }
 

@@ -110,6 +110,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

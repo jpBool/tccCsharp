@@ -86,6 +86,7 @@ namespace tccCsharp
             gpbProjeto1.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             gpbProjeto2.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             gpbProjeto3.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            
 
             /*refresh_projects(Program.projetos);
 
@@ -127,7 +128,6 @@ namespace tccCsharp
         {
 
         }
-
 
     }
 }
