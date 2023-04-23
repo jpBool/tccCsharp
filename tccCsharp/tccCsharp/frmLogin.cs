@@ -59,16 +59,6 @@ namespace tccCsharp
         private void frmLogin_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-
-            
-            groupBox1.Text = "";
-            groupBox1.CornerRadius = 20;
-            groupBox1.Size = new Size(200, 100);
-            groupBox1.Location = new Point(10, 10);
-            groupBox1.BackgroundColor = Color.LightBlue;
-            groupBox1.BorderWidth = 2.0f;
-
-            this.Controls.Add(groupBox1);
         }
 
 

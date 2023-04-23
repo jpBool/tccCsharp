@@ -34,37 +34,37 @@ namespace tccCsharp
             Project projeto1 = new Project();
             if (projetos.Count > X + 0)
             {
-                gpbProjeto1.Visible = true;
+                RGPProjeto1.Visible = true;
                 projeto1 = projetos[X + 0];
                 lblNomeP1.Text = projeto1.nome_projeto;
             }
             else
             {
-                gpbProjeto1.Visible = false;
+                RGPProjeto1.Visible = false;
             }
 
             Project projeto2 = new Project();
             if (projetos.Count() > X + 1)
             {
-                gpbProjeto2.Visible = true;
+                RGPProjeto2.Visible = true;
                 projeto2 = projetos[X + 1];
                 lblNomeP2.Text = projeto2.nome_projeto;
             }
             else
             {
-                gpbProjeto2.Visible = false;
+                RGPProjeto2.Visible = false;
             }
 
             Project projeto3 = new Project();
             if (projetos.Count() > X + 2)
             {
-                gpbProjeto3.Visible = true;
+                RGPProjeto3.Visible = true;
                 projeto3 = projetos[X + 2];
                 lblNomeP3.Text = projeto3.nome_projeto;
             }
             else
             {
-                gpbProjeto3.Visible = false;
+                RGPProjeto3.Visible = false;
             }
 
         }
@@ -72,21 +72,78 @@ namespace tccCsharp
         private void frmPerfil_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            TLP_Mãe.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            TLP_Mãe.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             TLP_Filha1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             TLP_Filha2.BackColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
-            TLP_Neta1.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-            TLP_Neta2.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-            lblSeguindo.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            lblNSeguindo.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            lblNSeguidores.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            lblSeguidores.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            lblNSeguindo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            TLPMenu2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+
+            RGBNeta1.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGBNeta1.CornerRadius = 20;
+
+            RGBNeta2.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGBNeta2.CornerRadius = 20;
+
+            RGBSeguidores.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBSeguidores.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblSeguidores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNSeguidores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            RGBSeguidores.CornerRadius = 20;
+
+            RGBSeguindo.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            RGBSeguindo.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             lblSeguindo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            gpbProjeto1.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-            gpbProjeto2.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-            gpbProjeto3.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-            
+            lblNSeguindo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            RGBSeguindo.CornerRadius = 20;
+
+            RGBCommits.BackgroundColor = Color.Transparent;
+            RGBCommits.ForeColor = Color.Transparent;
+            lblCommits.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNCommits.ForeColor= Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblAtivoDesde.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblAMD.ForeColor= Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGPProjeto1.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGPProjeto2.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGPProjeto3.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGPProjeto1.CornerRadius = 20;
+            RGPProjeto2.CornerRadius = 20;
+            RGPProjeto3.CornerRadius = 20;
+            RGPProjeto1.BorderWidth = 2;
+            RGPProjeto2.BorderWidth = 2;
+            RGPProjeto3.BorderWidth = 2;
+
+            RGBNaturalidade.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBNaturalidade.CornerRadius = 20;
+            RGBNaturalidade.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblNaturalidade.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGBBio.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBBio.CornerRadius = 20;
+            RGBBio.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblBio.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+
+            RGBDescricaoP1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBDescricaoP1.CornerRadius = 20;
+            RGBDescricaoP1.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblDescricaoP1.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGBDescricaoP2.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBDescricaoP2.CornerRadius = 20;
+            RGBDescricaoP2.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblDescricaoP2.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGBDescricaoP3.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBDescricaoP3.CornerRadius = 20;
+            RGBDescricaoP3.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblDescricaoP3.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            btnAdicionar.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+
+            btnLogoff.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnLogoff.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+
 
             /*refresh_projects(Program.projetos);
 
@@ -124,10 +181,9 @@ namespace tccCsharp
             this.Close();
         }
 
-        private void btnAddProject_Click(object sender, EventArgs e)
+        private void RGB_btnAdicionar_MouseHover(object sender, EventArgs e)
         {
-
+            this.BackColor = Color.Orange;
         }
-
     }
 }

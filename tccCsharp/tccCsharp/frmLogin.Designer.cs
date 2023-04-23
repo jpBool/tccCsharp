@@ -38,7 +38,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.npgsqlCommandBuilder1 = new Npgsql.NpgsqlCommandBuilder();
             this.npgsqlCommandBuilder2 = new Npgsql.NpgsqlCommandBuilder();
-            this.groupBox1 = new tccCsharp.RoundedGroupBox();
             this.gpbLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +46,7 @@
             this.btnLogar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnLogar.AutoSize = true;
             this.btnLogar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLogar.Location = new System.Drawing.Point(136, 204);
+            this.btnLogar.Location = new System.Drawing.Point(368, 204);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(44, 23);
             this.btnLogar.TabIndex = 3;
@@ -59,7 +58,7 @@
             // 
             this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(8, 111);
+            this.lblEmail.Location = new System.Drawing.Point(240, 111);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(38, 13);
             this.lblEmail.TabIndex = 5;
@@ -69,7 +68,7 @@
             // 
             this.lblSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(8, 168);
+            this.lblSenha.Location = new System.Drawing.Point(240, 168);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(41, 13);
             this.lblSenha.TabIndex = 6;
@@ -81,7 +80,7 @@
             this.lblLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(118, 48);
+            this.lblLogin.Location = new System.Drawing.Point(350, 48);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(71, 25);
             this.lblLogin.TabIndex = 7;
@@ -100,14 +99,14 @@
             this.gpbLogin.Controls.Add(this.btnLogar);
             this.gpbLogin.Location = new System.Drawing.Point(256, 77);
             this.gpbLogin.Name = "gpbLogin";
-            this.gpbLogin.Size = new System.Drawing.Size(336, 330);
+            this.gpbLogin.Size = new System.Drawing.Size(800, 561);
             this.gpbLogin.TabIndex = 8;
             this.gpbLogin.TabStop = false;
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEmail.Location = new System.Drawing.Point(82, 111);
+            this.txtEmail.Location = new System.Drawing.Point(314, 111);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(208, 20);
             this.txtEmail.TabIndex = 1;
@@ -115,7 +114,7 @@
             // txtSenha
             // 
             this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtSenha.Location = new System.Drawing.Point(82, 161);
+            this.txtSenha.Location = new System.Drawing.Point(314, 161);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(208, 20);
             this.txtSenha.TabIndex = 2;
@@ -130,24 +129,14 @@
             this.npgsqlCommandBuilder2.QuotePrefix = "\"";
             this.npgsqlCommandBuilder2.QuoteSuffix = "\"";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.CornerRadius = 10;
-            this.groupBox1.Location = new System.Drawing.Point(28, 101);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.gpbLogin);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmLogin";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
@@ -168,7 +157,6 @@
         private System.Windows.Forms.TextBox txtEmail;
         private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder1;
         private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder2;
-        private RoundedGroupBox groupBox1;
     }
 }
 
