@@ -37,6 +37,7 @@ namespace tccCsharp
                 RGPProjeto1.Visible = true;
                 projeto1 = projetos[X + 0];
                 lblNomeP1.Text = projeto1.nome_projeto;
+                lblDescricaoP1.Text = projeto1.descricao_breve;
             }
             else
             {
@@ -49,6 +50,7 @@ namespace tccCsharp
                 RGPProjeto2.Visible = true;
                 projeto2 = projetos[X + 1];
                 lblNomeP2.Text = projeto2.nome_projeto;
+                lblDescricaoP2.Text = projeto2.descricao_breve;
             }
             else
             {
@@ -61,6 +63,7 @@ namespace tccCsharp
                 RGPProjeto3.Visible = true;
                 projeto3 = projetos[X + 2];
                 lblNomeP3.Text = projeto3.nome_projeto;
+                lblDescricaoP3.Text = projeto3.descricao_breve;
             }
             else
             {
@@ -69,7 +72,7 @@ namespace tccCsharp
 
         }
 
-        private void frmPerfil_Load(object sender, EventArgs e)
+        public void doDesing()
         {
             WindowState = FormWindowState.Maximized;
             TLP_Mãe.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
@@ -98,9 +101,9 @@ namespace tccCsharp
             RGBCommits.BackgroundColor = Color.Transparent;
             RGBCommits.ForeColor = Color.Transparent;
             lblCommits.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-            lblNCommits.ForeColor= Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNCommits.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblAtivoDesde.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-            lblAMD.ForeColor= Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblAMD.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
             RGPProjeto1.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             RGPProjeto2.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
@@ -144,21 +147,21 @@ namespace tccCsharp
 
             opcAvatar.Height = TLPAvatar.Height / 2;
             opcAvatar.Width = opcAvatar.Height;
+        }
 
-
-            /*refresh_projects(Program.projetos);
+        private void frmPerfil_Load(object sender, EventArgs e)
+        {
+            refresh_projects(Program.projetos);
+            doDesing();
 
             User usuario = new User();
             Banco.CarregaPerfil(usuario);
             lblNome.Text = usuario.nome.ToString();
             lblBio.Text = usuario.bio.ToString();
-            lblAvatar.Text =  usuario.avatar.ToString();
             lblNaturalidade.Text = usuario.naturalidade.ToString();
-            lblNascimento.Text = usuario.nascimento.ToShortDateString();
-            lblInscricao.Text = usuario.inscricao.ToShortDateString();
+            lblAMD.Text = usuario.inscricao.ToShortDateString();
             lblEmail.Text = usuario.email.ToString();
-            lblTelefone.Text = usuario.telefone.ToString();
-            lblCommits.Text = usuario.commits.ToString();*/
+            lblCommits.Text = usuario.commits.ToString();
         }
 
         private void btnAvancar_Click(object sender, EventArgs e)
