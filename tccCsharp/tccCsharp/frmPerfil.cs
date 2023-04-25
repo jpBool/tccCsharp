@@ -147,6 +147,12 @@ namespace tccCsharp
 
             opcAvatar.Height = TLPAvatar.Height / 2;
             opcAvatar.Width = opcAvatar.Height;
+
+            RGBMenu1.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            RGBMenu1.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            OPBLogout._borderwidth = 5;
+            OPBLogout._bordercolor = Color.Black;
+            OPBLogout.BackColor = Color.White;  
         }
 
         private void frmPerfil_Load(object sender, EventArgs e)
@@ -178,12 +184,7 @@ namespace tccCsharp
 
 
 
-        private void btnLogoff_Click(object sender, EventArgs e)
-        {
-            Program.projetos.Clear();
-            Program.id_usuario = 0;
-            this.Close();
-        }
+
 
         private void btnAdicionar_MouseEnter(object sender, EventArgs e)
         {
@@ -198,6 +199,34 @@ namespace tccCsharp
         }
 
 
+        private void ovalPictureBox1_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
+
+
+
+        private void OPBLogout_MouseEnter(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 55;
+            OPBLogout.Width = 55;
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void OPBLogout_MouseLeave(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 48;
+            OPBLogout.Width = 48;
+            OPBLogout._bordercolor = Color.Black;
+        }
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+   
+    
 
 }
