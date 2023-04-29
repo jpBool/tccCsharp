@@ -57,6 +57,11 @@
             this.RGBNeta2 = new tccCsharp.RoundedGroupBox();
             this.TLP_Neta2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBBio = new tccCsharp.RoundedGroupBox();
+            this.opbRecarregar = new tccCsharp.OvalPictureBox();
+            this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
+            this.opbExcluir = new tccCsharp.OvalPictureBox();
+            this.opbEditar = new tccCsharp.OvalPictureBox();
+            this.opbCompartilhar = new tccCsharp.OvalPictureBox();
             this.lblBio = new System.Windows.Forms.Label();
             this.RGBNaturalidade = new tccCsharp.RoundedGroupBox();
             this.lblNaturalidade = new System.Windows.Forms.Label();
@@ -99,6 +104,11 @@
             this.RGBNeta2.SuspendLayout();
             this.TLP_Neta2.SuspendLayout();
             this.RGBBio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).BeginInit();
             this.RGBNaturalidade.SuspendLayout();
             this.RGBNeta1.SuspendLayout();
             this.TLP_Neta1.SuspendLayout();
@@ -523,6 +533,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBBio.BackgroundColor = System.Drawing.Color.White;
             this.RGBBio.BorderWidth = 1F;
+            this.RGBBio.Controls.Add(this.opbRecarregar);
+            this.RGBBio.Controls.Add(this.opbConfiguracoes);
+            this.RGBBio.Controls.Add(this.opbExcluir);
+            this.RGBBio.Controls.Add(this.opbEditar);
+            this.RGBBio.Controls.Add(this.opbCompartilhar);
             this.RGBBio.Controls.Add(this.lblBio);
             this.RGBBio.CornerRadius = 10;
             this.RGBBio.Location = new System.Drawing.Point(30, 91);
@@ -531,6 +546,67 @@
             this.RGBBio.Size = new System.Drawing.Size(526, 99);
             this.RGBBio.TabIndex = 4;
             this.RGBBio.TabStop = false;
+            // 
+            // opbRecarregar
+            // 
+            this.opbRecarregar._bordercolor = System.Drawing.Color.Red;
+            this.opbRecarregar._borderwidth = 3F;
+            this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
+            this.opbRecarregar.Location = new System.Drawing.Point(275, 35);
+            this.opbRecarregar.Name = "opbRecarregar";
+            this.opbRecarregar.Size = new System.Drawing.Size(48, 48);
+            this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbRecarregar.TabIndex = 7;
+            this.opbRecarregar.TabStop = false;
+            // 
+            // opbConfiguracoes
+            // 
+            this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
+            this.opbConfiguracoes._borderwidth = 3F;
+            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
+            this.opbConfiguracoes.Location = new System.Drawing.Point(212, 35);
+            this.opbConfiguracoes.Name = "opbConfiguracoes";
+            this.opbConfiguracoes.Size = new System.Drawing.Size(48, 48);
+            this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbConfiguracoes.TabIndex = 6;
+            this.opbConfiguracoes.TabStop = false;
+            // 
+            // opbExcluir
+            // 
+            this.opbExcluir._bordercolor = System.Drawing.Color.Red;
+            this.opbExcluir._borderwidth = 3F;
+            this.opbExcluir.Image = global::tccCsharp.Properties.Resources.excluir;
+            this.opbExcluir.Location = new System.Drawing.Point(23, 35);
+            this.opbExcluir.Name = "opbExcluir";
+            this.opbExcluir.Size = new System.Drawing.Size(48, 48);
+            this.opbExcluir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbExcluir.TabIndex = 5;
+            this.opbExcluir.TabStop = false;
+            // 
+            // opbEditar
+            // 
+            this.opbEditar._bordercolor = System.Drawing.Color.Red;
+            this.opbEditar._borderwidth = 3F;
+            this.opbEditar.Image = global::tccCsharp.Properties.Resources.editar;
+            this.opbEditar.Location = new System.Drawing.Point(146, 35);
+            this.opbEditar.Name = "opbEditar";
+            this.opbEditar.Size = new System.Drawing.Size(48, 48);
+            this.opbEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbEditar.TabIndex = 4;
+            this.opbEditar.TabStop = false;
+            // 
+            // opbCompartilhar
+            // 
+            this.opbCompartilhar._bordercolor = System.Drawing.Color.Red;
+            this.opbCompartilhar._borderwidth = 3F;
+            this.opbCompartilhar.Image = global::tccCsharp.Properties.Resources.compartilhar;
+            this.opbCompartilhar.Location = new System.Drawing.Point(83, 35);
+            this.opbCompartilhar.Name = "opbCompartilhar";
+            this.opbCompartilhar.Size = new System.Drawing.Size(48, 48);
+            this.opbCompartilhar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbCompartilhar.TabIndex = 3;
+            this.opbCompartilhar.TabStop = false;
+            this.opbCompartilhar.Click += new System.EventHandler(this.opbCompartilhar_Click);
             // 
             // lblBio
             // 
@@ -876,6 +952,7 @@
             this.lblAdicionar.Size = new System.Drawing.Size(193, 20);
             this.lblAdicionar.TabIndex = 32;
             this.lblAdicionar.Text = "Adicionar novo projeto";
+            this.lblAdicionar.Click += new System.EventHandler(this.lblAdicionar_Click);
             this.lblAdicionar.MouseEnter += new System.EventHandler(this.btnAdicionar_MouseEnter);
             this.lblAdicionar.MouseLeave += new System.EventHandler(this.btnAdicionar_MouseLeave);
             // 
@@ -974,6 +1051,11 @@
             this.TLP_Neta2.ResumeLayout(false);
             this.RGBBio.ResumeLayout(false);
             this.RGBBio.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).EndInit();
             this.RGBNaturalidade.ResumeLayout(false);
             this.RGBNaturalidade.PerformLayout();
             this.RGBNeta1.ResumeLayout(false);
@@ -1057,5 +1139,10 @@
         private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Button btnRecarregar;
         private OvalPictureBox OPBLogout;
+        private OvalPictureBox opbCompartilhar;
+        private OvalPictureBox opbEditar;
+        private OvalPictureBox opbExcluir;
+        private OvalPictureBox opbConfiguracoes;
+        private OvalPictureBox opbRecarregar;
     }
 }

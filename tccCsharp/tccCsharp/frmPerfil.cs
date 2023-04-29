@@ -221,7 +221,87 @@ namespace tccCsharp
             OPBLogout.Width = 48;
             OPBLogout._bordercolor = Color.Black;
         }
+
+        private void opbRecarregar_MouseEnter(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 55;
+            OPBLogout.Width = 55;
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void opbRecarregar_MouseLeave(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 48;
+            OPBLogout.Width = 48;
+            OPBLogout._bordercolor = Color.Black;
+        }
+
+        private void opbConfiguracoes_MouseEnter(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 55;
+            OPBLogout.Width = 55;
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void opbConfiguracoes_MouseLeave(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 48;
+            OPBLogout.Width = 48;
+            OPBLogout._bordercolor = Color.Black;
+        }
+
+        private void opbEditar_MouseEnter(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 55;
+            OPBLogout.Width = 55;
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void opbEditar_MouseLeave(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 48;
+            OPBLogout.Width = 48;
+            OPBLogout._bordercolor = Color.Black;
+        }
+
+        private void opbCompartilhar_MouseEnter(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 55;
+            OPBLogout.Width = 55;
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void opbCompartilhar_MouseLeave(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 48;
+            OPBLogout.Width = 48;
+            OPBLogout._bordercolor = Color.Black;
+        }
+
+        private void opbExcluir_MouseEnter(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 55;
+            OPBLogout.Width = 55;
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void opbExcluir_MouseLeave(object sender, EventArgs e)
+        {
+            OPBLogout.Height = 48;
+            OPBLogout.Width = 48;
+            OPBLogout._bordercolor = Color.Black;
+        }
         private void OPBLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAdicionar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void opbCompartilhar_Click(object sender, EventArgs e)
         {
 
         }
