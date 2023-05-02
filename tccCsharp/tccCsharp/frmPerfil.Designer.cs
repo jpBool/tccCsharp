@@ -582,6 +582,8 @@
             this.opbExcluir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbExcluir.TabIndex = 5;
             this.opbExcluir.TabStop = false;
+            this.opbExcluir.MouseEnter += new System.EventHandler(this.opbExcluir_MouseEnter);
+            this.opbExcluir.MouseLeave += new System.EventHandler(this.opbExcluir_MouseLeave);
             // 
             // opbEditar
             // 
