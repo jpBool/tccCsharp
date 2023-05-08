@@ -113,6 +113,12 @@
     <Compile Include="frmPerfil.Designer.cs">
       <DependentUpon>frmPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPersonalizacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonalizacao.Designer.cs">
+      <DependentUpon>frmPersonalizacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="OvalPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPerfil.resx">
       <DependentUpon>frmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonalizacao.resx">
+      <DependentUpon>frmPersonalizacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

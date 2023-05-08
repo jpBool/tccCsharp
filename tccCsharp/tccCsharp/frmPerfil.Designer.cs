@@ -558,6 +558,9 @@
             this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbRecarregar.TabIndex = 7;
             this.opbRecarregar.TabStop = false;
+            this.opbRecarregar.Click += new System.EventHandler(this.opbRecarregar_Click);
+            this.opbRecarregar.MouseLeave += new System.EventHandler(this.opbRecarregar_MouseLeave);
+            this.opbRecarregar.MouseHover += new System.EventHandler(this.opbRecarregar_MouseEnter);
             // 
             // opbConfiguracoes
             // 
@@ -570,6 +573,9 @@
             this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbConfiguracoes.TabIndex = 6;
             this.opbConfiguracoes.TabStop = false;
+            this.opbConfiguracoes.Click += new System.EventHandler(this.opbConfiguracoes_Click);
+            this.opbConfiguracoes.MouseEnter += new System.EventHandler(this.opbConfiguracoes_MouseEnter);
+            this.opbConfiguracoes.MouseLeave += new System.EventHandler(this.opbCompartilhar_MouseLeave);
             // 
             // opbExcluir
             // 
@@ -582,6 +588,7 @@
             this.opbExcluir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbExcluir.TabIndex = 5;
             this.opbExcluir.TabStop = false;
+            this.opbExcluir.Click += new System.EventHandler(this.opbExcluir_Click);
             this.opbExcluir.MouseEnter += new System.EventHandler(this.opbExcluir_MouseEnter);
             this.opbExcluir.MouseLeave += new System.EventHandler(this.opbExcluir_MouseLeave);
             // 
@@ -596,6 +603,9 @@
             this.opbEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbEditar.TabIndex = 4;
             this.opbEditar.TabStop = false;
+            this.opbEditar.Click += new System.EventHandler(this.opbEditar_Click);
+            this.opbEditar.MouseEnter += new System.EventHandler(this.opbEditar_MouseEnter);
+            this.opbEditar.MouseLeave += new System.EventHandler(this.opbEditar_MouseLeave);
             // 
             // opbCompartilhar
             // 
@@ -609,6 +619,8 @@
             this.opbCompartilhar.TabIndex = 3;
             this.opbCompartilhar.TabStop = false;
             this.opbCompartilhar.Click += new System.EventHandler(this.opbCompartilhar_Click);
+            this.opbCompartilhar.MouseEnter += new System.EventHandler(this.opbCompartilhar_MouseEnter);
+            this.opbCompartilhar.MouseLeave += new System.EventHandler(this.opbCompartilhar_MouseLeave);
             // 
             // lblBio
             // 
