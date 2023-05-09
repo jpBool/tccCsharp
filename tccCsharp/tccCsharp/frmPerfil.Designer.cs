@@ -575,7 +575,7 @@
             this.opbConfiguracoes.TabStop = false;
             this.opbConfiguracoes.Click += new System.EventHandler(this.opbConfiguracoes_Click);
             this.opbConfiguracoes.MouseEnter += new System.EventHandler(this.opbConfiguracoes_MouseEnter);
-            this.opbConfiguracoes.MouseLeave += new System.EventHandler(this.opbCompartilhar_MouseLeave);
+            this.opbConfiguracoes.MouseLeave += new System.EventHandler(this.opbConfiguracoes_MouseLeave);
             // 
             // opbExcluir
             // 

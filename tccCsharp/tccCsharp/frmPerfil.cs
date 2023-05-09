@@ -243,12 +243,7 @@ namespace tccCsharp
             opbConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
-        private void opbConfiguracoes_MouseLeave(object sender, EventArgs e)
-        {
-            opbConfiguracoes.Height = 48;
-            opbConfiguracoes.Width = 48;
-            opbConfiguracoes._bordercolor = Color.Black;
-        }
+
 
         private void opbEditar_MouseEnter(object sender, EventArgs e)
         {
@@ -271,12 +266,7 @@ namespace tccCsharp
             opbCompartilhar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
-        private void opbCompartilhar_MouseLeave(object sender, EventArgs e)
-        {
-            opbCompartilhar.Height = 48;
-            opbCompartilhar.Width = 48;
-            opbCompartilhar._bordercolor = Color.Black;
-        }
+
 
         private void opbExcluir_MouseEnter(object sender, EventArgs e)
         {
@@ -293,7 +283,7 @@ namespace tccCsharp
         }
         private void OPBLogout_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lblAdicionar_Click(object sender, EventArgs e)
@@ -325,7 +315,98 @@ namespace tccCsharp
 
         private void opbRecarregar_Click(object sender, EventArgs e)
         {
+            TLP_Mãe.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]); //ok
+            TLP_Filha1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            TLP_Filha2.BackColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
+            TLPMenu2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
 
+            RGBNeta1.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGBNeta1.CornerRadius = 20;
+
+            RGBNeta2.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGBNeta2.CornerRadius = 20;
+
+            RGBSeguidores.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBSeguidores.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblSeguidores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNSeguidores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            RGBSeguidores.CornerRadius = 20;
+
+            RGBSeguindo.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            RGBSeguindo.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            lblSeguindo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            lblNSeguindo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            RGBSeguindo.CornerRadius = 20;
+
+            RGBCommits.BackgroundColor = Color.Transparent;
+            RGBCommits.ForeColor = Color.Transparent;
+            lblCommits.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNCommits.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblAtivoDesde.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblAMD.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGPProjeto1.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGPProjeto2.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGPProjeto3.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            RGPProjeto1.CornerRadius = 20;
+            RGPProjeto2.CornerRadius = 20;
+            RGPProjeto3.CornerRadius = 20;
+            RGPProjeto1.BorderWidth = 2;
+            RGPProjeto2.BorderWidth = 2;
+            RGPProjeto3.BorderWidth = 2;
+
+            RGBNaturalidade.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBNaturalidade.CornerRadius = 20;
+            RGBNaturalidade.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblNaturalidade.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGBBio.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBBio.CornerRadius = 20;
+            RGBBio.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblBio.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+
+            RGBDescricaoP1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBDescricaoP1.CornerRadius = 20;
+            RGBDescricaoP1.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblDescricaoP1.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGBDescricaoP2.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBDescricaoP2.CornerRadius = 20;
+            RGBDescricaoP2.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblDescricaoP2.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGBDescricaoP3.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBDescricaoP3.CornerRadius = 20;
+            RGBDescricaoP3.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            lblDescricaoP3.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            RGBAdicionar.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            lblAdicionar.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            lblAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+
+            opcAvatar.Height = TLPAvatar.Height / 2;
+            opcAvatar.Width = opcAvatar.Height;
+
+            RGBMenu1.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            RGBMenu1.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            OPBLogout._borderwidth = 5;
+            OPBLogout._bordercolor = Color.Black;
+            OPBLogout.BackColor = Color.White;
+        }
+
+        private void opbConfiguracoes_MouseLeave(object sender, EventArgs e)
+        {
+            opbConfiguracoes.Height = 48;
+            opbConfiguracoes.Width = 48;
+            opbConfiguracoes._bordercolor = Color.Black;
+        }
+
+        private void opbCompartilhar_MouseLeave(object sender, EventArgs e)
+        {
+            opbCompartilhar.Height = 48;
+            opbCompartilhar.Width = 48;
+            opbCompartilhar._bordercolor = Color.Black;
         }
     }
    

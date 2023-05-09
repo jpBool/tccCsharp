@@ -26,7 +26,9 @@ namespace tccCsharp
         {
             if(cldPersonalizacao.ShowDialog() == DialogResult.OK)
             {
-                this.BackColor = cldPersonalizacao.Color;
+                Program.Cor1[0] = cldPersonalizacao.Color.R;
+                Program.Cor1[1] = cldPersonalizacao.Color.G;
+                Program.Cor1[2] = cldPersonalizacao.Color.B;
             }
             
         }
