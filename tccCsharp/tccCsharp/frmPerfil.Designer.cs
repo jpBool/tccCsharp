@@ -371,6 +371,7 @@
             this.btnExcluir2.TabIndex = 27;
             this.btnExcluir2.Text = "Excluir";
             this.btnExcluir2.UseVisualStyleBackColor = true;
+            this.btnExcluir2.Click += new System.EventHandler(this.btnExcluir2_Click);
             // 
             // btnCompartilhar2
             // 

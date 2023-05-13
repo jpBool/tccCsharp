@@ -1,6 +1,6 @@
 ﻿namespace tccCsharp
 {
-    partial class frmAcessibilidade
+    partial class frmConfiguracoes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.btnPersonalizacao = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // frmAcessibilidade
+            // btnPersonalizacao
+            // 
+            this.btnPersonalizacao.Location = new System.Drawing.Point(72, 59);
+            this.btnPersonalizacao.Name = "btnPersonalizacao";
+            this.btnPersonalizacao.Size = new System.Drawing.Size(75, 23);
+            this.btnPersonalizacao.TabIndex = 0;
+            this.btnPersonalizacao.Text = "Personalizar";
+            this.btnPersonalizacao.UseVisualStyleBackColor = true;
+            this.btnPersonalizacao.Click += new System.EventHandler(this.btnPersonalizacao_Click);
+            // 
+            // frmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmAcessibilidade";
-            this.Text = "frmAcessibilidade";
-            this.Load += new System.EventHandler(this.frmAcessibilidade_Load);
+            this.Controls.Add(this.btnPersonalizacao);
+            this.Name = "frmConfiguracoes";
+            this.Text = "frmConfiguracoes";
+            this.Load += new System.EventHandler(this.frmConfiguracoes_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button btnPersonalizacao;
     }
 }

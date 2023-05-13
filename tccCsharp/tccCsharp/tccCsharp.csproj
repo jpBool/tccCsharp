@@ -101,6 +101,12 @@
     <Compile Include="frmAcessibilidade.Designer.cs">
       <DependentUpon>frmAcessibilidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConfiguracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracoes.Designer.cs">
+      <DependentUpon>frmConfiguracoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="frmAcessibilidade.resx">
       <DependentUpon>frmAcessibilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracoes.resx">
+      <DependentUpon>frmConfiguracoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

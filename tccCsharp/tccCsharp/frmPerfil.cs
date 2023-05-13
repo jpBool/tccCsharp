@@ -309,8 +309,11 @@ namespace tccCsharp
         private void opbConfiguracoes_Click(object sender, EventArgs e)
         {
             //apenas teste
-            frmPersonalizacao formP = new frmPersonalizacao();
-            formP.ShowDialog();
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
         }
 
         private void opbRecarregar_Click(object sender, EventArgs e)
@@ -407,6 +410,11 @@ namespace tccCsharp
             opbCompartilhar.Height = 48;
             opbCompartilhar.Width = 48;
             opbCompartilhar._bordercolor = Color.Black;
+        }
+
+        private void btnExcluir2_Click(object sender, EventArgs e)
+        {
+
         }
     }
    

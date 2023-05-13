@@ -16,5 +16,10 @@ namespace tccCsharp
         {
             InitializeComponent();
         }
+
+        private void frmAcessibilidade_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
