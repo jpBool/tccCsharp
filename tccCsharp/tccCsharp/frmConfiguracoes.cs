@@ -19,13 +19,38 @@ namespace tccCsharp
 
         private void frmConfiguracoes_Load(object sender, EventArgs e)
         {
+            //cldPersonalizacao = new ColorDialog();
+            //cldPersonalizacao = new ColorDialog();
+        }
+
+        private void btnAltTamFont_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPersonalizacao_MouseEnter(object sender, EventArgs e)
+        {
 
         }
 
         private void btnPersonalizacao_Click(object sender, EventArgs e)
         {
-            frmPersonalizacao formP = new frmPersonalizacao();
-            formP.ShowDialog();
+            //frmPersonalizacao formP = new frmPersonalizacao();
+            //formP.ShowDialog();
+
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
+                Program.Cor1[0] = cldPersonalizacao.Color.R;
+                Program.Cor1[1] = cldPersonalizacao.Color.G;
+                Program.Cor1[2] = cldPersonalizacao.Color.B;
+            }
+        }
+
+        private void btnPersonalizacao_MouseLeave(object sender, EventArgs e)
+        {
+
         }
     }
+
+        
 }

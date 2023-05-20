@@ -19,16 +19,16 @@ namespace tccCsharp
 
         private void frmPersonalizacao_Load(object sender, EventArgs e)
         {
-            cldPersonalizacao = new ColorDialog();
+            cldAcessibilidade = new ColorDialog();
         }
 
         private void btnSelecaoCorP_Click(object sender, EventArgs e)
         {
-            if(cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            if(cldAcessibilidade.ShowDialog() == DialogResult.OK)
             {
-                Program.Cor1[0] = cldPersonalizacao.Color.R;
-                Program.Cor1[1] = cldPersonalizacao.Color.G;
-                Program.Cor1[2] = cldPersonalizacao.Color.B;
+                Program.Cor1[0] = cldAcessibilidade.Color.R;
+                Program.Cor1[1] = cldAcessibilidade.Color.G;
+                Program.Cor1[2] = cldAcessibilidade.Color.B;
             }
             
         }

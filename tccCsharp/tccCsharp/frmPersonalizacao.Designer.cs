@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSelecaoCorP = new System.Windows.Forms.Button();
-            this.cldPersonalizacao = new System.Windows.Forms.ColorDialog();
+            this.btnSelecaoDaltonismo = new System.Windows.Forms.Button();
+            this.cldAcessibilidade = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
-            // btnSelecaoCorP
+            // btnSelecaoDaltonismo
             // 
-            this.btnSelecaoCorP.Location = new System.Drawing.Point(21, 24);
-            this.btnSelecaoCorP.Name = "btnSelecaoCorP";
-            this.btnSelecaoCorP.Size = new System.Drawing.Size(136, 23);
-            this.btnSelecaoCorP.TabIndex = 0;
-            this.btnSelecaoCorP.Text = "Selecione a cor desejada";
-            this.btnSelecaoCorP.UseVisualStyleBackColor = true;
-            this.btnSelecaoCorP.Click += new System.EventHandler(this.btnSelecaoCorP_Click);
+            this.btnSelecaoDaltonismo.Location = new System.Drawing.Point(21, 24);
+            this.btnSelecaoDaltonismo.Name = "btnSelecaoDaltonismo";
+            this.btnSelecaoDaltonismo.Size = new System.Drawing.Size(136, 23);
+            this.btnSelecaoDaltonismo.TabIndex = 0;
+            this.btnSelecaoDaltonismo.Text = "Selecione a cor desejada";
+            this.btnSelecaoDaltonismo.UseVisualStyleBackColor = true;
+            this.btnSelecaoDaltonismo.Click += new System.EventHandler(this.btnSelecaoCorP_Click);
             // 
             // frmPersonalizacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSelecaoCorP);
+            this.Controls.Add(this.btnSelecaoDaltonismo);
             this.Name = "frmPersonalizacao";
             this.Text = "frmPersonalizacao";
             this.Load += new System.EventHandler(this.frmPersonalizacao_Load);
@@ -57,7 +57,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSelecaoCorP;
-        private System.Windows.Forms.ColorDialog cldPersonalizacao;
+        private System.Windows.Forms.Button btnSelecaoDaltonismo;
+        private System.Windows.Forms.ColorDialog cldAcessibilidade;
     }
 }
