@@ -85,7 +85,27 @@ namespace tccCsharp
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void lblCor1_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCor1_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCor2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCor2_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCor2_MouseEnter(object sender, EventArgs e)
         {
 
         }
