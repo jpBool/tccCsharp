@@ -94,12 +94,14 @@ namespace tccCsharp
             // 
             this.lblCor1.AutoSize = true;
             this.lblCor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCor1.Location = new System.Drawing.Point(24, 103);
             this.lblCor1.Name = "lblCor1";
-            this.lblCor1.Size = new System.Drawing.Size(19, 13);
+            this.lblCor1.Size = new System.Drawing.Size(21, 15);
             this.lblCor1.TabIndex = 8;
             this.lblCor1.Text = "    ";
             this.lblCor1.Click += new System.EventHandler(this.lblCor1_Click);
+            this.lblCor1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCor1_MouseClick);
             this.lblCor1.MouseEnter += new System.EventHandler(this.lblCor1_MouseEnter);
             this.lblCor1.MouseLeave += new System.EventHandler(this.lblCor1_MouseLeave);
             // 
@@ -107,22 +109,29 @@ namespace tccCsharp
             // 
             this.lblCor3.AutoSize = true;
             this.lblCor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCor3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCor3.Location = new System.Drawing.Point(24, 153);
             this.lblCor3.Name = "lblCor3";
-            this.lblCor3.Size = new System.Drawing.Size(19, 13);
+            this.lblCor3.Size = new System.Drawing.Size(21, 15);
             this.lblCor3.TabIndex = 9;
             this.lblCor3.Text = "    ";
+            this.lblCor3.Click += new System.EventHandler(this.lblCor3_Click);
+            this.lblCor3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCor3_MouseClick);
+            this.lblCor3.MouseEnter += new System.EventHandler(this.lblCor3_MouseEnter);
+            this.lblCor3.MouseLeave += new System.EventHandler(this.lblCor3_MouseLeave);
             // 
             // lblCor2
             // 
             this.lblCor2.AutoSize = true;
             this.lblCor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCor2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCor2.Location = new System.Drawing.Point(24, 128);
             this.lblCor2.Name = "lblCor2";
-            this.lblCor2.Size = new System.Drawing.Size(19, 13);
+            this.lblCor2.Size = new System.Drawing.Size(21, 15);
             this.lblCor2.TabIndex = 10;
             this.lblCor2.Text = "    ";
             this.lblCor2.Click += new System.EventHandler(this.lblCor2_Click);
+            this.lblCor2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCor2_MouseClick);
             this.lblCor2.MouseEnter += new System.EventHandler(this.lblCor2_MouseEnter);
             this.lblCor2.MouseLeave += new System.EventHandler(this.lblCor2_MouseLeave);
             // 
@@ -130,29 +139,40 @@ namespace tccCsharp
             // 
             this.lblCorAviso.AutoSize = true;
             this.lblCorAviso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCorAviso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCorAviso.Location = new System.Drawing.Point(24, 253);
             this.lblCorAviso.Name = "lblCorAviso";
-            this.lblCorAviso.Size = new System.Drawing.Size(19, 13);
+            this.lblCorAviso.Size = new System.Drawing.Size(21, 15);
             this.lblCorAviso.TabIndex = 11;
             this.lblCorAviso.Text = "    ";
+            this.lblCorAviso.Click += new System.EventHandler(this.lblCorAviso_Click);
+            this.lblCorAviso.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCorAviso_MouseClick);
+            this.lblCorAviso.MouseEnter += new System.EventHandler(this.lblCorAviso_MouseEnter);
+            this.lblCorAviso.MouseLeave += new System.EventHandler(this.lblCorAviso_MouseLeave);
             // 
             // lblCor4
             // 
             this.lblCor4.AutoSize = true;
             this.lblCor4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCor4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCor4.Location = new System.Drawing.Point(24, 178);
             this.lblCor4.Name = "lblCor4";
-            this.lblCor4.Size = new System.Drawing.Size(19, 13);
+            this.lblCor4.Size = new System.Drawing.Size(21, 15);
             this.lblCor4.TabIndex = 12;
             this.lblCor4.Text = "    ";
+            this.lblCor4.Click += new System.EventHandler(this.lblCor4_Click);
+            this.lblCor4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCor4_MouseClick);
+            this.lblCor4.MouseEnter += new System.EventHandler(this.lblCor4_MouseEnter);
+            this.lblCor4.MouseLeave += new System.EventHandler(this.lblCor4_MouseLeave);
             // 
             // lblCor6
             // 
             this.lblCor6.AutoSize = true;
             this.lblCor6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCor6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCor6.Location = new System.Drawing.Point(24, 228);
             this.lblCor6.Name = "lblCor6";
-            this.lblCor6.Size = new System.Drawing.Size(19, 13);
+            this.lblCor6.Size = new System.Drawing.Size(21, 15);
             this.lblCor6.TabIndex = 13;
             this.lblCor6.Text = "    ";
             // 
@@ -160,9 +180,10 @@ namespace tccCsharp
             // 
             this.lblCor5.AutoSize = true;
             this.lblCor5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCor5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCor5.Location = new System.Drawing.Point(24, 203);
             this.lblCor5.Name = "lblCor5";
-            this.lblCor5.Size = new System.Drawing.Size(19, 13);
+            this.lblCor5.Size = new System.Drawing.Size(21, 15);
             this.lblCor5.TabIndex = 14;
             this.lblCor5.Text = "    ";
             // 

@@ -176,6 +176,7 @@
             this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.5F));
             this.TLP_Mãe.Size = new System.Drawing.Size(1267, 685);
             this.TLP_Mãe.TabIndex = 46;
+            this.TLP_Mãe.Paint += new System.Windows.Forms.PaintEventHandler(this.TLP_Mãe_Paint);
             // 
             // TLP_Filha2
             // 
