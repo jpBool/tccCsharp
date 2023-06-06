@@ -421,6 +421,11 @@ namespace tccCsharp
         {
 
         }
+
+        private void btnCompartilhar2_Click(object sender, EventArgs e)
+        {
+            RGBNeta1.Font = new Font("Arial", 18);
+        }
     }
    
     

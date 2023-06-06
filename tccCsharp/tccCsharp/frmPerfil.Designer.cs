@@ -384,6 +384,7 @@
             this.btnCompartilhar2.TabIndex = 28;
             this.btnCompartilhar2.Text = "Compartilhar";
             this.btnCompartilhar2.UseVisualStyleBackColor = true;
+            this.btnCompartilhar2.Click += new System.EventHandler(this.btnCompartilhar2_Click);
             // 
             // RGPProjeto1
             // 
@@ -859,7 +860,7 @@
             // 
             this.lblAMD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAMD.AutoSize = true;
-            this.lblAMD.Location = new System.Drawing.Point(118, 69);
+            this.lblAMD.Location = new System.Drawing.Point(147, 69);
             this.lblAMD.Name = "lblAMD";
             this.lblAMD.Size = new System.Drawing.Size(89, 20);
             this.lblAMD.TabIndex = 40;

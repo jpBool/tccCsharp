@@ -98,6 +98,7 @@
             this.btnLogar.Text = "Logar";
             this.btnLogar.UseVisualStyleBackColor = true;
             this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
+            this.btnLogar.Enter += new System.EventHandler(this.btnLogar_Click);
             // 
             // txtEmail
             // 

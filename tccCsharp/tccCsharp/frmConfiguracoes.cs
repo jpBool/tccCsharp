@@ -20,6 +20,7 @@ namespace tccCsharp
 
         private void frmConfiguracoes_Load(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
             //cldPersonalizacao = new ColorDialog();
             //cldPersonalizacao = new ColorDialog()
             //;
@@ -35,10 +36,15 @@ namespace tccCsharp
 
         private void btnAltTamFont_Click(object sender, EventArgs e)
         {
-            this.Font = new Font("Arial", 24); //editar
+            
+            //n funciona
+            /*frmPerfil form = new frmPerfil();
+            form.Font = new Font("Arial", 28); *///n funciona
+            //this.Font = new Font("Arial", 24); //editar
             //Program.Font = new Font("Arial", 24);
             //receber pparametro do combo box
-
+            toggle = !toggle;
+            nudFonte.Visible = toggle;
         }
 
         private void btnPersonalizacao_MouseEnter(object sender, EventArgs e)
@@ -225,6 +231,11 @@ namespace tccCsharp
         private void lblCorAviso_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void nudFonte_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 

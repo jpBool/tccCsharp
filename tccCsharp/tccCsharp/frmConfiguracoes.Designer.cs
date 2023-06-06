@@ -34,7 +34,7 @@ namespace tccCsharp
             this.cldPersonalizacao = new System.Windows.Forms.ColorDialog();
             this.lblConfiguracoes = new System.Windows.Forms.Label();
             this.btnAltTamFont = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudFonte = new System.Windows.Forms.NumericUpDown();
             this.lblAcessibilidade = new System.Windows.Forms.Label();
             this.rgbPCores = new tccCsharp.RoundedGroupBox();
             this.lblDescC1 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@ namespace tccCsharp
             this.lblDescC7 = new System.Windows.Forms.Label();
             this.lblCor6 = new System.Windows.Forms.Label();
             this.lblCor5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudFonte)).BeginInit();
             this.rgbPCores.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,14 +72,17 @@ namespace tccCsharp
             // lblConfiguracoes
             // 
             this.lblConfiguracoes.AutoSize = true;
+            this.lblConfiguracoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfiguracoes.Location = new System.Drawing.Point(12, 192);
             this.lblConfiguracoes.Name = "lblConfiguracoes";
-            this.lblConfiguracoes.Size = new System.Drawing.Size(106, 13);
+            this.lblConfiguracoes.Size = new System.Drawing.Size(126, 13);
             this.lblConfiguracoes.TabIndex = 1;
             this.lblConfiguracoes.Text = "Configurações gerais";
             // 
             // btnAltTamFont
             // 
+            this.btnAltTamFont.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnAltTamFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAltTamFont.Location = new System.Drawing.Point(12, 58);
             this.btnAltTamFont.Name = "btnAltTamFont";
             this.btnAltTamFont.Size = new System.Drawing.Size(148, 23);
@@ -88,19 +91,37 @@ namespace tccCsharp
             this.btnAltTamFont.UseVisualStyleBackColor = true;
             this.btnAltTamFont.Click += new System.EventHandler(this.btnAltTamFont_Click);
             // 
-            // numericUpDown1
+            // nudFonte
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(12, 87);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown1.TabIndex = 7;
+            this.nudFonte.Location = new System.Drawing.Point(15, 87);
+            this.nudFonte.Maximum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.nudFonte.Minimum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.nudFonte.Name = "nudFonte";
+            this.nudFonte.Size = new System.Drawing.Size(52, 20);
+            this.nudFonte.TabIndex = 7;
+            this.nudFonte.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.nudFonte.Visible = false;
+            this.nudFonte.ValueChanged += new System.EventHandler(this.nudFonte_ValueChanged);
             // 
             // lblAcessibilidade
             // 
             this.lblAcessibilidade.AutoSize = true;
+            this.lblAcessibilidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAcessibilidade.Location = new System.Drawing.Point(12, 32);
             this.lblAcessibilidade.Name = "lblAcessibilidade";
-            this.lblAcessibilidade.Size = new System.Drawing.Size(74, 13);
+            this.lblAcessibilidade.Size = new System.Drawing.Size(88, 13);
             this.lblAcessibilidade.TabIndex = 24;
             this.lblAcessibilidade.Text = "Acessibilidade";
             // 
@@ -299,14 +320,14 @@ namespace tccCsharp
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblAcessibilidade);
             this.Controls.Add(this.rgbPCores);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nudFonte);
             this.Controls.Add(this.btnAltTamFont);
             this.Controls.Add(this.lblConfiguracoes);
             this.Controls.Add(this.btnPersonalizacao);
             this.Name = "frmConfiguracoes";
             this.Text = "frmConfiguracoes";
             this.Load += new System.EventHandler(this.frmConfiguracoes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudFonte)).EndInit();
             this.rgbPCores.ResumeLayout(false);
             this.rgbPCores.PerformLayout();
             this.ResumeLayout(false);
@@ -321,7 +342,7 @@ namespace tccCsharp
         private System.Windows.Forms.ColorDialog cldPersonalizacao;
         private System.Windows.Forms.Label lblConfiguracoes;
         private System.Windows.Forms.Button btnAltTamFont;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudFonte;
         private System.Windows.Forms.Label lblCor1;
         private System.Windows.Forms.Label lblCor3;
         private System.Windows.Forms.Label lblCor2;
