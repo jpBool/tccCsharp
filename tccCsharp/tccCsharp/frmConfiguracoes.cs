@@ -12,6 +12,7 @@ namespace tccCsharp
 {
     public partial class frmConfiguracoes : Form
     {
+        public bool toggle = false;
         public frmConfiguracoes()
         {
             InitializeComponent();
@@ -34,6 +35,9 @@ namespace tccCsharp
 
         private void btnAltTamFont_Click(object sender, EventArgs e)
         {
+            this.Font = new Font("Arial", 24); //editar
+            //Program.Font = new Font("Arial", 24);
+            //receber pparametro do combo box
 
         }
 
@@ -44,10 +48,12 @@ namespace tccCsharp
 
         private void btnPersonalizacao_Click(object sender, EventArgs e)
         {
+
             //frmPersonalizacao formP = new frmPersonalizacao();
             //formP.ShowDialog();
 
-            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            //NÃO APAGAR O TRECHO ABAIXO
+            /*if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
             {
                 //background superior azul escuro
                 Program.Cor1[0] = cldPersonalizacao.Color.R; 
@@ -70,16 +76,21 @@ namespace tccCsharp
                 Program.Cor4[2] = cldPersonalizacao.Color.B;
                   
                 //Não estao sendo usados 
-                /*Program.Cor5[0] = cldPersonalizacao.Color.R;
+                Program.Cor5[0] = cldPersonalizacao.Color.R;
                 Program.Cor5[1] = cldPersonalizacao.Color.G;
                 Program.Cor5[2] = cldPersonalizacao.Color.B;
 
                 Program.Cor6[0] = cldPersonalizacao.Color.R;
                 Program.Cor6[1] = cldPersonalizacao.Color.G;
-                Program.Cor6[2] = cldPersonalizacao.Color.B;*/
+                Program.Cor6[2] = cldPersonalizacao.Color.B;
 
                 //colocar cor do texto e aviso tbm?
+
             }
+            */
+            //rgbPCores.Visible= true;
+            toggle = !toggle;
+            rgbPCores.Visible = toggle;
         }
 
         private void btnPersonalizacao_MouseLeave(object sender, EventArgs e)
