@@ -189,3 +189,4 @@ C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccC
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmAcessibilidade.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmConfiguracoes.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmPersonalizacao.resources
+C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Projeto.resources
