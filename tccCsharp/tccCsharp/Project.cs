@@ -21,12 +21,13 @@ namespace tccCsharp
         public string link_youtube { get; set; }
         public int status { get; set; }
         public decimal porcentagem { get; set; }
-        public string imagem { get; set; }
         public DateTime data_criacao { get; set; }
         public DateTime data_atualizacao { get; set; }
         public int atualizador { get; set; }
         public bool excluido { get; set; }
         public string linguagem { get; set; }
         public DateTime previsao { get; set; }
+        public int numero_grupos { get; set; }
+        public int imagem { get; set; }
     }
 }

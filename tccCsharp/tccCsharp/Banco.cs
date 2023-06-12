@@ -148,7 +148,7 @@ namespace tccCsharp
             string sql;
             try
             {
-                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, imagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
+                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, imagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
 
                 
                 List<object> param = new List<object>();
@@ -199,10 +199,7 @@ namespace tccCsharp
                             linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
                         else
                             linha.porcentagem = 0;
-                            
-                        if (dr["imagem"] != DBNull.Value)
-                            linha.imagem = dr["imagem"].ToString();
-                        
+
                         linha.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
                         
                         if (dr["data_atualizacao"] != DBNull.Value)
@@ -219,7 +216,13 @@ namespace tccCsharp
                         if (dr["previsao"] != DBNull.Value)
                             linha.previsao = Convert.ToDateTime(dr["previsao"]);
 
-                        projetos.Add(linha);
+                        if (dr["num_grupos"] != DBNull.Value)
+                            linha.numero_grupos = Convert.ToInt32(dr["num_grupos"]);
+
+                        if (dr["imagem"] != DBNull.Value)
+                            linha.imagem = Convert.ToInt32(dr["imagem"]);
+
+                    projetos.Add(linha);
                     };
                     dr.Close();
                     return projetos;       
