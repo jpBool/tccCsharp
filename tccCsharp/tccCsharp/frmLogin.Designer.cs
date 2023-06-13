@@ -83,7 +83,6 @@
             this.lblLogin.Size = new System.Drawing.Size(87, 29);
             this.lblLogin.TabIndex = 7;
             this.lblLogin.Text = " Login";
-            this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // btnLogar
             // 

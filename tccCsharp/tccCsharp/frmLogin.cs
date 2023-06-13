@@ -58,31 +58,17 @@ namespace tccCsharp
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            DesignLogin();
+        }
+
+        public void DesignLogin()
+        {
             WindowState = FormWindowState.Maximized;
-            //tlpLogin.MaximumSize;
-            
-            
             rgbLogin.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             lblLogin.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             lblEmail.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             lblSenha.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             btnLogar.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-        }
-
-        public void DesignLogin()
-        {
-            //WindowState = FormWindowState.Maximized;
-            //tlpLogin.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblLogin_Click(object sender, EventArgs e)
-        {
-
         }
 
         

@@ -37,31 +37,23 @@
             this.lblDescricaoP3 = new System.Windows.Forms.Label();
             this.lblNomeP3 = new System.Windows.Forms.Label();
             this.btnEditar3 = new System.Windows.Forms.Button();
-            this.btnExcluir3 = new System.Windows.Forms.Button();
-            this.btnCompartilhar3 = new System.Windows.Forms.Button();
             this.RGPProjeto2 = new tccCsharp.RoundedGroupBox();
             this.RGBDescricaoP2 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP2 = new System.Windows.Forms.Label();
             this.lblNomeP2 = new System.Windows.Forms.Label();
             this.btnEditar2 = new System.Windows.Forms.Button();
-            this.btnExcluir2 = new System.Windows.Forms.Button();
-            this.btnCompartilhar2 = new System.Windows.Forms.Button();
             this.RGPProjeto1 = new tccCsharp.RoundedGroupBox();
             this.RGBDescricaoP1 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP1 = new System.Windows.Forms.Label();
             this.lblNomeP1 = new System.Windows.Forms.Label();
             this.btnEditar1 = new System.Windows.Forms.Button();
-            this.btnExcluir1 = new System.Windows.Forms.Button();
-            this.btnCompartilhar1 = new System.Windows.Forms.Button();
             this.TLP_Filha1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBNeta2 = new tccCsharp.RoundedGroupBox();
             this.TLP_Neta2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBBio = new tccCsharp.RoundedGroupBox();
             this.opbRecarregar = new tccCsharp.OvalPictureBox();
             this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
-            this.opbExcluir = new tccCsharp.OvalPictureBox();
             this.opbEditar = new tccCsharp.OvalPictureBox();
-            this.opbCompartilhar = new tccCsharp.OvalPictureBox();
             this.lblBio = new System.Windows.Forms.Label();
             this.RGBNaturalidade = new tccCsharp.RoundedGroupBox();
             this.lblNaturalidade = new System.Windows.Forms.Label();
@@ -106,9 +98,7 @@
             this.RGBBio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).BeginInit();
             this.RGBNaturalidade.SuspendLayout();
             this.RGBNeta1.SuspendLayout();
             this.TLP_Neta1.SuspendLayout();
@@ -176,7 +166,6 @@
             this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.5F));
             this.TLP_Mãe.Size = new System.Drawing.Size(1267, 685);
             this.TLP_Mãe.TabIndex = 46;
-            this.TLP_Mãe.Paint += new System.Windows.Forms.PaintEventHandler(this.TLP_Mãe_Paint);
             // 
             // TLP_Filha2
             // 
@@ -214,8 +203,6 @@
             this.RGPProjeto3.Controls.Add(this.RGBDescricaoP3);
             this.RGPProjeto3.Controls.Add(this.lblNomeP3);
             this.RGPProjeto3.Controls.Add(this.btnEditar3);
-            this.RGPProjeto3.Controls.Add(this.btnExcluir3);
-            this.RGPProjeto3.Controls.Add(this.btnCompartilhar3);
             this.RGPProjeto3.CornerRadius = 10;
             this.RGPProjeto3.Location = new System.Drawing.Point(898, 30);
             this.RGPProjeto3.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
@@ -263,36 +250,14 @@
             // 
             // btnEditar3
             // 
-            this.btnEditar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar3.AutoSize = true;
-            this.btnEditar3.Location = new System.Drawing.Point(151, 9);
+            this.btnEditar3.Location = new System.Drawing.Point(151, 237);
             this.btnEditar3.Name = "btnEditar3";
             this.btnEditar3.Size = new System.Drawing.Size(76, 30);
             this.btnEditar3.TabIndex = 29;
             this.btnEditar3.Text = "Editar";
             this.btnEditar3.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir3
-            // 
-            this.btnExcluir3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExcluir3.AutoSize = true;
-            this.btnExcluir3.Location = new System.Drawing.Point(6, 237);
-            this.btnExcluir3.Name = "btnExcluir3";
-            this.btnExcluir3.Size = new System.Drawing.Size(91, 30);
-            this.btnExcluir3.TabIndex = 27;
-            this.btnExcluir3.Text = "Excluir";
-            this.btnExcluir3.UseVisualStyleBackColor = true;
-            // 
-            // btnCompartilhar3
-            // 
-            this.btnCompartilhar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCompartilhar3.AutoSize = true;
-            this.btnCompartilhar3.Location = new System.Drawing.Point(105, 237);
-            this.btnCompartilhar3.Name = "btnCompartilhar3";
-            this.btnCompartilhar3.Size = new System.Drawing.Size(122, 30);
-            this.btnCompartilhar3.TabIndex = 28;
-            this.btnCompartilhar3.Text = "Compartilhar";
-            this.btnCompartilhar3.UseVisualStyleBackColor = true;
             // 
             // RGPProjeto2
             // 
@@ -304,8 +269,6 @@
             this.RGPProjeto2.Controls.Add(this.RGBDescricaoP2);
             this.RGPProjeto2.Controls.Add(this.lblNomeP2);
             this.RGPProjeto2.Controls.Add(this.btnEditar2);
-            this.RGPProjeto2.Controls.Add(this.btnExcluir2);
-            this.RGPProjeto2.Controls.Add(this.btnCompartilhar2);
             this.RGPProjeto2.CornerRadius = 10;
             this.RGPProjeto2.Location = new System.Drawing.Point(515, 30);
             this.RGPProjeto2.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
@@ -353,38 +316,14 @@
             // 
             // btnEditar2
             // 
-            this.btnEditar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar2.AutoSize = true;
-            this.btnEditar2.Location = new System.Drawing.Point(151, 9);
+            this.btnEditar2.Location = new System.Drawing.Point(151, 237);
             this.btnEditar2.Name = "btnEditar2";
             this.btnEditar2.Size = new System.Drawing.Size(76, 30);
             this.btnEditar2.TabIndex = 29;
             this.btnEditar2.Text = "Editar";
             this.btnEditar2.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir2
-            // 
-            this.btnExcluir2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExcluir2.AutoSize = true;
-            this.btnExcluir2.Location = new System.Drawing.Point(6, 237);
-            this.btnExcluir2.Name = "btnExcluir2";
-            this.btnExcluir2.Size = new System.Drawing.Size(91, 30);
-            this.btnExcluir2.TabIndex = 27;
-            this.btnExcluir2.Text = "Excluir";
-            this.btnExcluir2.UseVisualStyleBackColor = true;
-            this.btnExcluir2.Click += new System.EventHandler(this.btnExcluir2_Click);
-            // 
-            // btnCompartilhar2
-            // 
-            this.btnCompartilhar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCompartilhar2.AutoSize = true;
-            this.btnCompartilhar2.Location = new System.Drawing.Point(105, 237);
-            this.btnCompartilhar2.Name = "btnCompartilhar2";
-            this.btnCompartilhar2.Size = new System.Drawing.Size(122, 30);
-            this.btnCompartilhar2.TabIndex = 28;
-            this.btnCompartilhar2.Text = "Compartilhar";
-            this.btnCompartilhar2.UseVisualStyleBackColor = true;
-            this.btnCompartilhar2.Click += new System.EventHandler(this.btnCompartilhar2_Click);
             // 
             // RGPProjeto1
             // 
@@ -396,8 +335,6 @@
             this.RGPProjeto1.Controls.Add(this.RGBDescricaoP1);
             this.RGPProjeto1.Controls.Add(this.lblNomeP1);
             this.RGPProjeto1.Controls.Add(this.btnEditar1);
-            this.RGPProjeto1.Controls.Add(this.btnExcluir1);
-            this.RGPProjeto1.Controls.Add(this.btnCompartilhar1);
             this.RGPProjeto1.CornerRadius = 10;
             this.RGPProjeto1.Location = new System.Drawing.Point(132, 30);
             this.RGPProjeto1.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
@@ -445,36 +382,14 @@
             // 
             // btnEditar1
             // 
-            this.btnEditar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar1.AutoSize = true;
-            this.btnEditar1.Location = new System.Drawing.Point(151, 9);
+            this.btnEditar1.Location = new System.Drawing.Point(151, 237);
             this.btnEditar1.Name = "btnEditar1";
             this.btnEditar1.Size = new System.Drawing.Size(76, 30);
             this.btnEditar1.TabIndex = 35;
             this.btnEditar1.Text = "Editar";
             this.btnEditar1.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir1
-            // 
-            this.btnExcluir1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExcluir1.AutoSize = true;
-            this.btnExcluir1.Location = new System.Drawing.Point(6, 237);
-            this.btnExcluir1.Name = "btnExcluir1";
-            this.btnExcluir1.Size = new System.Drawing.Size(91, 30);
-            this.btnExcluir1.TabIndex = 33;
-            this.btnExcluir1.Text = "Excluir";
-            this.btnExcluir1.UseVisualStyleBackColor = true;
-            // 
-            // btnCompartilhar1
-            // 
-            this.btnCompartilhar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCompartilhar1.AutoSize = true;
-            this.btnCompartilhar1.Location = new System.Drawing.Point(105, 237);
-            this.btnCompartilhar1.Name = "btnCompartilhar1";
-            this.btnCompartilhar1.Size = new System.Drawing.Size(122, 30);
-            this.btnCompartilhar1.TabIndex = 34;
-            this.btnCompartilhar1.Text = "Compartilhar";
-            this.btnCompartilhar1.UseVisualStyleBackColor = true;
             // 
             // TLP_Filha1
             // 
@@ -538,9 +453,7 @@
             this.RGBBio.BorderWidth = 1F;
             this.RGBBio.Controls.Add(this.opbRecarregar);
             this.RGBBio.Controls.Add(this.opbConfiguracoes);
-            this.RGBBio.Controls.Add(this.opbExcluir);
             this.RGBBio.Controls.Add(this.opbEditar);
-            this.RGBBio.Controls.Add(this.opbCompartilhar);
             this.RGBBio.Controls.Add(this.lblBio);
             this.RGBBio.CornerRadius = 10;
             this.RGBBio.Location = new System.Drawing.Point(30, 91);
@@ -553,7 +466,7 @@
             // opbRecarregar
             // 
             this.opbRecarregar._bordercolor = System.Drawing.Color.Red;
-            this.opbRecarregar._borderwidth = 3F;
+            this.opbRecarregar._borderwidth = 5F;
             this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
             this.opbRecarregar.Location = new System.Drawing.Point(275, 35);
             this.opbRecarregar.Name = "opbRecarregar";
@@ -562,13 +475,13 @@
             this.opbRecarregar.TabIndex = 7;
             this.opbRecarregar.TabStop = false;
             this.opbRecarregar.Click += new System.EventHandler(this.opbRecarregar_Click);
+            this.opbRecarregar.MouseEnter += new System.EventHandler(this.opbRecarregar_MouseEnter);
             this.opbRecarregar.MouseLeave += new System.EventHandler(this.opbRecarregar_MouseLeave);
-            this.opbRecarregar.MouseHover += new System.EventHandler(this.opbRecarregar_MouseEnter);
             // 
             // opbConfiguracoes
             // 
             this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
-            this.opbConfiguracoes._borderwidth = 3F;
+            this.opbConfiguracoes._borderwidth = 5F;
             this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
             this.opbConfiguracoes.Location = new System.Drawing.Point(212, 35);
             this.opbConfiguracoes.Name = "opbConfiguracoes";
@@ -580,25 +493,10 @@
             this.opbConfiguracoes.MouseEnter += new System.EventHandler(this.opbConfiguracoes_MouseEnter);
             this.opbConfiguracoes.MouseLeave += new System.EventHandler(this.opbConfiguracoes_MouseLeave);
             // 
-            // opbExcluir
-            // 
-            this.opbExcluir._bordercolor = System.Drawing.Color.Red;
-            this.opbExcluir._borderwidth = 3F;
-            this.opbExcluir.Image = global::tccCsharp.Properties.Resources.excluir;
-            this.opbExcluir.Location = new System.Drawing.Point(23, 35);
-            this.opbExcluir.Name = "opbExcluir";
-            this.opbExcluir.Size = new System.Drawing.Size(48, 48);
-            this.opbExcluir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbExcluir.TabIndex = 5;
-            this.opbExcluir.TabStop = false;
-            this.opbExcluir.Click += new System.EventHandler(this.opbExcluir_Click);
-            this.opbExcluir.MouseEnter += new System.EventHandler(this.opbExcluir_MouseEnter);
-            this.opbExcluir.MouseLeave += new System.EventHandler(this.opbExcluir_MouseLeave);
-            // 
             // opbEditar
             // 
             this.opbEditar._bordercolor = System.Drawing.Color.Red;
-            this.opbEditar._borderwidth = 3F;
+            this.opbEditar._borderwidth = 5F;
             this.opbEditar.Image = global::tccCsharp.Properties.Resources.editar;
             this.opbEditar.Location = new System.Drawing.Point(146, 35);
             this.opbEditar.Name = "opbEditar";
@@ -606,24 +504,8 @@
             this.opbEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbEditar.TabIndex = 4;
             this.opbEditar.TabStop = false;
-            this.opbEditar.Click += new System.EventHandler(this.opbEditar_Click);
             this.opbEditar.MouseEnter += new System.EventHandler(this.opbEditar_MouseEnter);
             this.opbEditar.MouseLeave += new System.EventHandler(this.opbEditar_MouseLeave);
-            // 
-            // opbCompartilhar
-            // 
-            this.opbCompartilhar._bordercolor = System.Drawing.Color.Red;
-            this.opbCompartilhar._borderwidth = 3F;
-            this.opbCompartilhar.Image = global::tccCsharp.Properties.Resources.compartilhar;
-            this.opbCompartilhar.Location = new System.Drawing.Point(83, 35);
-            this.opbCompartilhar.Name = "opbCompartilhar";
-            this.opbCompartilhar.Size = new System.Drawing.Size(48, 48);
-            this.opbCompartilhar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbCompartilhar.TabIndex = 3;
-            this.opbCompartilhar.TabStop = false;
-            this.opbCompartilhar.Click += new System.EventHandler(this.opbCompartilhar_Click);
-            this.opbCompartilhar.MouseEnter += new System.EventHandler(this.opbCompartilhar_MouseEnter);
-            this.opbCompartilhar.MouseLeave += new System.EventHandler(this.opbCompartilhar_MouseLeave);
             // 
             // lblBio
             // 
@@ -969,7 +851,6 @@
             this.lblAdicionar.Size = new System.Drawing.Size(193, 20);
             this.lblAdicionar.TabIndex = 32;
             this.lblAdicionar.Text = "Adicionar novo projeto";
-            this.lblAdicionar.Click += new System.EventHandler(this.lblAdicionar_Click);
             this.lblAdicionar.MouseEnter += new System.EventHandler(this.btnAdicionar_MouseEnter);
             this.lblAdicionar.MouseLeave += new System.EventHandler(this.btnAdicionar_MouseLeave);
             // 
@@ -1002,7 +883,7 @@
             // OPBLogout
             // 
             this.OPBLogout._bordercolor = System.Drawing.Color.Red;
-            this.OPBLogout._borderwidth = 3F;
+            this.OPBLogout._borderwidth = 5F;
             this.OPBLogout.BackColor = System.Drawing.Color.White;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
             this.OPBLogout.Location = new System.Drawing.Point(59, 7);
@@ -1070,9 +951,7 @@
             this.RGBBio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).EndInit();
             this.RGBNaturalidade.ResumeLayout(false);
             this.RGBNaturalidade.PerformLayout();
             this.RGBNeta1.ResumeLayout(false);
@@ -1106,18 +985,12 @@
         private System.Windows.Forms.Label lblDescricaoP1;
         private System.Windows.Forms.Label lblNomeP1;
         private System.Windows.Forms.Button btnEditar1;
-        private System.Windows.Forms.Button btnExcluir1;
-        private System.Windows.Forms.Button btnCompartilhar1;
         private RoundedGroupBox RGPProjeto2;
         private System.Windows.Forms.Label lblNomeP2;
         private System.Windows.Forms.Button btnEditar2;
-        private System.Windows.Forms.Button btnExcluir2;
-        private System.Windows.Forms.Button btnCompartilhar2;
         private RoundedGroupBox RGPProjeto3;
         private System.Windows.Forms.Label lblNomeP3;
         private System.Windows.Forms.Button btnEditar3;
-        private System.Windows.Forms.Button btnExcluir3;
-        private System.Windows.Forms.Button btnCompartilhar3;
         private RoundedGroupBox RGBDescricaoP1;
         private RoundedGroupBox RGBDescricaoP3;
         private System.Windows.Forms.Label lblDescricaoP3;
@@ -1156,9 +1029,7 @@
         private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Button btnRecarregar;
         private OvalPictureBox OPBLogout;
-        private OvalPictureBox opbCompartilhar;
         private OvalPictureBox opbEditar;
-        private OvalPictureBox opbExcluir;
         private OvalPictureBox opbConfiguracoes;
         private OvalPictureBox opbRecarregar;
     }

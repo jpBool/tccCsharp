@@ -95,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Banco.cs" />
+    <Compile Include="Coisas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coisas.Designer.cs">
+      <DependentUpon>Coisas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAcessibilidade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="Coisas.resx">
+      <DependentUpon>Coisas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAcessibilidade.resx">
       <DependentUpon>frmAcessibilidade.cs</DependentUpon>
     </EmbeddedResource>
