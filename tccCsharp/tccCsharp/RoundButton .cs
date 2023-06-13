@@ -1,100 +1,97 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp
+public class RoundButton : Button
 {
-    public class RoundedButton : Button
+    private int borderRadius = 10; // Raio da borda
+    private int borderThickness = 2; // Espessura da borda
+    private Color borderColor = Color.Black; // Cor da borda
+    private Color buttonColor = Color.White; // Cor do botão
+
+    public int BorderRadius
     {
-        private int borderRadius = 10; // Raio das bordas
-        private int borderThickness = 2; // Espessura da borda
-        private Color borderColor = Color.Black; // Cor da borda
-        private Color backgroundColor = Color.White; // Cor do fundo
-
-        public int BorderRadius
+        get { return borderRadius; }
+        set
         {
-            get { return borderRadius; }
-            set
-            {
-                borderRadius = value;
-                Invalidate();
-            }
+            borderRadius = value;
+            Refresh();
+        }
+    }
+
+    public int BorderThickness
+    {
+        get { return borderThickness; }
+        set
+        {
+            borderThickness = value;
+            Refresh();
+        }
+    }
+
+    public Color BorderColor
+    {
+        get { return borderColor; }
+        set
+        {
+            borderColor = value;
+            Refresh();
+        }
+    }
+
+    public Color ButtonColor
+    {
+        get { return buttonColor; }
+        set
+        {
+            buttonColor = value;
+            Refresh();
+        }
+    }
+
+    protected override void OnPaint(PaintEventArgs e)
+    {
+        GraphicsPath path = new GraphicsPath();
+        path.AddArc(ClientRectangle.Left, ClientRectangle.Top, borderRadius, borderRadius, 180, 90);
+        path.AddArc(ClientRectangle.Right - borderRadius, ClientRectangle.Top, borderRadius, borderRadius, 270, 90);
+        path.AddArc(ClientRectangle.Right - borderRadius, ClientRectangle.Bottom - borderRadius, borderRadius, borderRadius, 0, 90);
+        path.AddArc(ClientRectangle.Left, ClientRectangle.Bottom - borderRadius, borderRadius, borderRadius, 90, 90);
+        path.CloseAllFigures();
+
+        Region = new Region(path);
+
+        e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+        // Desenhe o botão
+        using (SolidBrush brush = new SolidBrush(buttonColor))
+        {
+            e.Graphics.FillPath(brush, path);
         }
 
-        public int BorderThickness
+        // Desenhe a borda
+        using (Pen pen = new Pen(borderColor, borderThickness))
         {
-            get { return borderThickness; }
-            set
-            {
-                borderThickness = value;
-                Invalidate();
-            }
+            e.Graphics.DrawPath(pen, path);
         }
 
-        public Color BorderColor
+        // Desenhe o texto do botão
+        TextRenderer.DrawText(e.Graphics, Text, Font, ClientRectangle, ForeColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+    }
+
+    protected override void OnMouseDown(MouseEventArgs e)
+    {
+        // Verifique se o clique está dentro da área das bordas arredondadas
+        GraphicsPath path = new GraphicsPath();
+        path.AddArc(ClientRectangle.Left, ClientRectangle.Top, borderRadius, borderRadius, 180, 90);
+        path.AddArc(ClientRectangle.Right - borderRadius, ClientRectangle.Top, borderRadius, borderRadius, 270, 90);
+        path.AddArc(ClientRectangle.Right - borderRadius, ClientRectangle.Bottom - borderRadius, borderRadius, borderRadius, 0, 90);
+        path.AddArc(ClientRectangle.Left, ClientRectangle.Bottom - borderRadius, borderRadius, borderRadius, 90, 90);
+        path.CloseAllFigures();
+
+        if (path.IsVisible(e.Location))
         {
-            get { return borderColor; }
-            set
-            {
-                borderColor = value;
-                Invalidate();
-            }
-        }
-
-        public Color BackgroundColor
-        {
-            get { return backgroundColor; }
-            set
-            {
-                backgroundColor = value;
-                Invalidate();
-            }
-        }
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            base.OnPaint(e);
-            Graphics graphics = e.Graphics;
-
-
-            // Desenha o fundo arredondado
-            using (SolidBrush backgroundBrush = new SolidBrush(BackgroundColor))
-            {
-                RectangleF backgroundRect = new RectangleF(
-                    BorderThickness,
-                    BorderThickness,
-                    Width - (BorderThickness * 2),
-                    Height - (BorderThickness * 2)
-                );
-
-                graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                graphics.FillRectangle(backgroundBrush, backgroundRect);
-            }
-
-            // Desenha a borda arredondada
-            using (Pen borderPen = new Pen(BorderColor, BorderThickness))
-            {
-                RectangleF borderRect = new RectangleF(
-                    BorderThickness / 2,
-                    BorderThickness / 2,
-                    Width - BorderThickness,
-                    Height - BorderThickness
-                );
-
-                graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                graphics.DrawArc(borderPen, borderRect.X, borderRect.Y, BorderRadius, BorderRadius, 180, 90);
-                graphics.DrawArc(borderPen, borderRect.X + borderRect.Width - BorderRadius, borderRect.Y, BorderRadius, BorderRadius, 270, 90);
-                graphics.DrawArc(borderPen, borderRect.X, borderRect.Y + borderRect.Height - BorderRadius, BorderRadius, BorderRadius, 90, 90);
-                graphics.DrawArc(borderPen, borderRect.X + borderRect.Width - BorderRadius, borderRect.Y + borderRect.Height - BorderRadius, BorderRadius, BorderRadius, 0, 90);
-
-                graphics.DrawLine(borderPen, BorderThickness / 2 + BorderRadius / 2, BorderThickness / 2, Width - BorderThickness / 2 - BorderRadius / 2, BorderThickness / 2);
-                graphics.DrawLine(borderPen, Width - BorderThickness / 2, BorderThickness / 2 + BorderRadius / 2, Width - BorderThickness / 2, Height - BorderThickness / 2 - BorderRadius / 2);
-                graphics.DrawLine(borderPen, Width - BorderThickness / 2 - BorderRadius / 2, Height - BorderThickness / 2, BorderThickness / 2 + BorderRadius / 2, Height - BorderThickness / 2);
-                graphics.DrawLine(borderPen, BorderThickness / 2, Height - BorderThickness / 2 - BorderRadius / 2, BorderThickness / 2, BorderThickness / 2 + BorderRadius / 2);
-            }
-
-            // Desenha o texto do botão
-            TextRenderer.DrawText(graphics, Text, Font, ClientRectangle, ForeColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+            base.OnMouseDown(e);
         }
     }
 }

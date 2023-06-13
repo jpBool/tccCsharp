@@ -191,3 +191,8 @@ C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccC
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmPersonalizacao.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Projeto.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.Coisas.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.Coisas.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmAcessibilidade.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmConfiguracoes.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Projeto.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmPersonalizacao.resources

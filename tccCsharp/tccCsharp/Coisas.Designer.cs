@@ -28,15 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Coisas));
+            this.roundButton1 = new RoundButton();
             this.opbExcluir = new tccCsharp.OvalPictureBox();
             this.opbCompartilhar = new tccCsharp.OvalPictureBox();
-            this.Bot = new System.Windows.Forms.Label();
-            this.roundedButton1 = new WindowsFormsApp.RoundedButton();
-            this.roundedButton2 = new WindowsFormsApp.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BorderColor = System.Drawing.Color.Black;
+            this.roundButton1.BorderRadius = 25;
+            this.roundButton1.BorderThickness = 5;
+            this.roundButton1.ButtonColor = System.Drawing.Color.White;
+            this.roundButton1.Location = new System.Drawing.Point(112, 123);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(103, 38);
+            this.roundButton1.TabIndex = 8;
+            this.roundButton1.Text = "1";
+            this.roundButton1.UseVisualStyleBackColor = true;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+            this.roundButton1.MouseEnter += new System.EventHandler(this.roundButton1_MouseEnter);
+            this.roundButton1.MouseLeave += new System.EventHandler(this.roundButton1_MouseLeave);
             // 
             // opbExcluir
             // 
@@ -62,60 +75,12 @@
             this.opbCompartilhar.TabIndex = 6;
             this.opbCompartilhar.TabStop = false;
             // 
-            // Bot
-            // 
-            this.Bot.AutoSize = true;
-            this.Bot.Location = new System.Drawing.Point(435, 76);
-            this.Bot.Name = "Bot";
-            this.Bot.Size = new System.Drawing.Size(329, 91);
-            this.Bot.TabIndex = 9;
-            this.Bot.Text = resources.GetString("Bot.Text");
-            this.Bot.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.Magenta;
-            this.roundedButton1.BorderRadius = 50;
-            this.roundedButton1.BorderThickness = 6;
-            this.roundedButton1.FlatAppearance.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Location = new System.Drawing.Point(89, 76);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(121, 101);
-            this.roundedButton1.TabIndex = 10;
-            this.roundedButton1.Text = "roundedButton1";
-            this.roundedButton1.UseMnemonic = false;
-            this.roundedButton1.UseVisualStyleBackColor = true;
-            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton2.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton2.BorderRadius = 50;
-            this.roundedButton2.BorderThickness = 6;
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.roundedButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Location = new System.Drawing.Point(120, 282);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(124, 98);
-            this.roundedButton2.TabIndex = 11;
-            this.roundedButton2.Text = "roundedButton2";
-            this.roundedButton2.UseVisualStyleBackColor = true;
-            // 
             // Coisas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.roundedButton2);
-            this.Controls.Add(this.roundedButton1);
-            this.Controls.Add(this.Bot);
+            this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.opbExcluir);
             this.Controls.Add(this.opbCompartilhar);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -126,7 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -134,8 +98,6 @@
 
         private OvalPictureBox opbExcluir;
         private OvalPictureBox opbCompartilhar;
-        private System.Windows.Forms.Label Bot;
-        private WindowsFormsApp.RoundedButton roundedButton1;
-        private WindowsFormsApp.RoundedButton roundedButton2;
+        private RoundButton roundButton1;
     }
 }

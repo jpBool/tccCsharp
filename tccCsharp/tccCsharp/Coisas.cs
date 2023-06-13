@@ -22,14 +22,19 @@ namespace tccCsharp
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void roundButton1_Click(object sender, EventArgs e)
         {
-
+            roundButton1.Text = Convert.ToString(Convert.ToInt32(roundButton1.Text) + 1);
         }
 
-        private void roundedButton1_Click(object sender, EventArgs e)
+        private void roundButton1_MouseEnter(object sender, EventArgs e)
         {
-            roundedButton1.Text = "Botão funcional";
+            roundButton1.BorderColor = Color.Green;
+        }
+
+        private void roundButton1_MouseLeave(object sender, EventArgs e)
+        {
+            roundButton1.BorderColor = Color.Black;
         }
     }
 }
