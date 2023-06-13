@@ -16,5 +16,20 @@ namespace tccCsharp
         {
             InitializeComponent();
         }
+
+        private void Coisas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            roundedButton1.Text = "Botão funcional";
+        }
     }
 }
