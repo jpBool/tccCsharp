@@ -71,7 +71,7 @@ namespace tccCsharp
             }
         }
 
-        public void doDesing()
+        public void doDesign()
         {
             TLP_Mãe.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             TLP_Filha1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
@@ -160,7 +160,7 @@ namespace tccCsharp
         {
             refresh_projects(Program.projetos);
             WindowState = FormWindowState.Maximized;
-            doDesing();
+            doDesign();
 
             User usuario = new User();
             Banco.CarregaPerfil(usuario);
@@ -183,26 +183,22 @@ namespace tccCsharp
         private void OPBLogout_MouseEnter(object sender, EventArgs e)
         {
             OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            OPBLogout.Height++;
-            OPBLogout.Width++;
+            OPBLogout.Refresh();
         }
         private void opbConfiguracoes_MouseEnter(object sender, EventArgs e)
         {
             opbConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbConfiguracoes.Height++;
-            opbConfiguracoes.Width++;
+            opbConfiguracoes.Refresh();
         }
         private void opbEditar_MouseEnter(object sender, EventArgs e)
         {
             opbEditar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbEditar.Height++;
-            opbEditar.Width++;
+            opbEditar.Refresh();
         }
         private void opbRecarregar_MouseEnter(object sender, EventArgs e)
         {
             opbRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbRecarregar.Height++;
-            opbRecarregar.Width++;
+            opbRecarregar.Refresh();
         }
 
         //MOUSE LEAVE
@@ -214,26 +210,22 @@ namespace tccCsharp
         private void opbConfiguracoes_MouseLeave(object sender, EventArgs e)
         {
             opbConfiguracoes._bordercolor = Color.Black;
-            opbConfiguracoes.Height--;
-            opbConfiguracoes.Width--;
+            opbConfiguracoes.Refresh();
         }
         private void OPBLogout_MouseLeave(object sender, EventArgs e)
         {
             OPBLogout._bordercolor = Color.Black;
-            OPBLogout.Height--;
-            OPBLogout.Width--;
+            OPBLogout.Refresh();
         }
         private void opbRecarregar_MouseLeave(object sender, EventArgs e)
         {
             opbRecarregar._bordercolor = Color.Black;
-            opbRecarregar.Height--;
-            opbRecarregar.Width--;
+            opbRecarregar.Refresh();
         }
         private void opbEditar_MouseLeave(object sender, EventArgs e)
         {
             opbEditar._bordercolor = Color.Black;
-            opbEditar.Height--;
-            opbEditar.Width--;
+            opbEditar.Refresh();
         }
 
         //MOUSE CLiCK
@@ -264,7 +256,7 @@ namespace tccCsharp
         }
         private void opbRecarregar_Click(object sender, EventArgs e)
         {
-            doDesing();
+            doDesign();
         }
     }
 }

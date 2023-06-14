@@ -15,12 +15,13 @@ namespace tccCsharp
         public static int id_usuario = 0;
         public static List<Project> projetos = new List<Project>();
 
-        public static int[] Cor1 = new int[3] { 10, 6, 34 };
-        public static int[] Cor2 = new int[3] { 138, 182, 213 };
-        public static int[] Cor3 = new int[3] { 229, 241, 243 };
-        public static int[] Cor4 = new int[3] { 187, 225, 243 };
-        public static int[] Cor5 = new int[3] { 36, 42, 62 };
-        public static int[] Cor6 = new int[3] { 81, 56, 220 };
+        public static int[] Cor1 = new int[3] { 0, 0, 0 };
+        public static int[] Cor2 = new int[3] { 16, 39, 62 };
+        public static int[] Cor3 = new int[3] { 54, 78, 101 };
+        public static int[] Cor4 = new int[3] { 138, 182, 213 };
+        public static int[] Cor5 = new int[3] { 170, 210, 229 };
+        public static int[] Cor6 = new int[3] { 229, 241, 243 };
+        public static int[] cor7 = new int[3] { 255,255, 255 };
 
         public static int[] CorTexto1 = new int[3] { 0, 0, 0 };
         public static int[] CorTexto2 = new int[3] { 255, 255, 255 };
