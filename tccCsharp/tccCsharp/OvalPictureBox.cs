@@ -19,6 +19,8 @@ namespace tccCsharp
             g.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
             this.Region = new System.Drawing.Region(g);
 
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
             // Defina a cor e a espessura da borda
             Pen pen = new Pen(_bordercolor, _borderwidth);
 

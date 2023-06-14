@@ -17,11 +17,6 @@ namespace tccCsharp
             InitializeComponent();
         }
 
-        private void Coisas_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void roundButton1_Click(object sender, EventArgs e)
         {
             roundButton1.Text = Convert.ToString(Convert.ToInt32(roundButton1.Text) + 1);

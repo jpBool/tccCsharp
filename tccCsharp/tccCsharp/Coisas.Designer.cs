@@ -56,9 +56,9 @@
             this.opbExcluir._bordercolor = System.Drawing.Color.Red;
             this.opbExcluir._borderwidth = 3F;
             this.opbExcluir.Image = global::tccCsharp.Properties.Resources.excluir;
-            this.opbExcluir.Location = new System.Drawing.Point(346, 201);
+            this.opbExcluir.Location = new System.Drawing.Point(220, 201);
             this.opbExcluir.Name = "opbExcluir";
-            this.opbExcluir.Size = new System.Drawing.Size(48, 48);
+            this.opbExcluir.Size = new System.Drawing.Size(200, 200);
             this.opbExcluir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbExcluir.TabIndex = 7;
             this.opbExcluir.TabStop = false;
@@ -68,9 +68,9 @@
             this.opbCompartilhar._bordercolor = System.Drawing.Color.Red;
             this.opbCompartilhar._borderwidth = 3F;
             this.opbCompartilhar.Image = global::tccCsharp.Properties.Resources.compartilhar;
-            this.opbCompartilhar.Location = new System.Drawing.Point(406, 201);
+            this.opbCompartilhar.Location = new System.Drawing.Point(471, 201);
             this.opbCompartilhar.Name = "opbCompartilhar";
-            this.opbCompartilhar.Size = new System.Drawing.Size(48, 48);
+            this.opbCompartilhar.Size = new System.Drawing.Size(200, 200);
             this.opbCompartilhar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbCompartilhar.TabIndex = 6;
             this.opbCompartilhar.TabStop = false;
@@ -87,7 +87,6 @@
             this.ForeColor = System.Drawing.Color.Red;
             this.Name = "Coisas";
             this.Text = "Coisas";
-            this.Load += new System.EventHandler(this.Coisas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).EndInit();
             this.ResumeLayout(false);
