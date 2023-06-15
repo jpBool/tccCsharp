@@ -32,6 +32,17 @@
             this.TLPConteudo = new System.Windows.Forms.TableLayoutPanel();
             this.TLPFilho1 = new System.Windows.Forms.TableLayoutPanel();
             this.TLPNeto1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblAutores = new System.Windows.Forms.Label();
+            this.lblLinguagem = new System.Windows.Forms.Label();
+            this.lblBreve = new System.Windows.Forms.Label();
+            this.lblSite = new System.Windows.Forms.Label();
+            this.lblYoutube = new System.Windows.Forms.Label();
+            this.lblPalavras = new System.Windows.Forms.Label();
+            this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBPalavras = new tccCsharp.RoundedGroupBox();
             this.txtPalavras = new System.Windows.Forms.TextBox();
             this.RGBYoutube = new tccCsharp.RoundedGroupBox();
@@ -60,14 +71,6 @@
             this.txtNomeProjeto = new System.Windows.Forms.TextBox();
             this.lblcar1 = new System.Windows.Forms.Label();
             this.customLine1 = new CustomLine();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblAutores = new System.Windows.Forms.Label();
-            this.lblLinguagem = new System.Windows.Forms.Label();
-            this.lblBreve = new System.Windows.Forms.Label();
-            this.lblSite = new System.Windows.Forms.Label();
-            this.lblYoutube = new System.Windows.Forms.Label();
-            this.lblPalavras = new System.Windows.Forms.Label();
             this.RGBCampos = new tccCsharp.RoundedGroupBox();
             this.radioSim = new System.Windows.Forms.RadioButton();
             this.radioNão = new System.Windows.Forms.RadioButton();
@@ -76,9 +79,8 @@
             this.lblPublicar = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblPrevi = new System.Windows.Forms.Label();
-            this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtDetalhada = new System.Windows.Forms.TextBox();
             this.lblDetalhado = new System.Windows.Forms.Label();
             this.RGBModelos = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
@@ -88,20 +90,22 @@
             this.radioEquipes = new System.Windows.Forms.RadioButton();
             this.radioKanban = new System.Windows.Forms.RadioButton();
             this.radioScrum = new System.Windows.Forms.RadioButton();
-            this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
             this.btnCriar = new RoundButton();
             this.btnCancelar = new RoundButton();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
+            this.boxSemPrevisao = new System.Windows.Forms.CheckBox();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
             this.TLPNeto1.SuspendLayout();
+            this.TLPFilho2.SuspendLayout();
+            this.TLPHead2.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
             this.RGBPalavras.SuspendLayout();
             this.RGBYoutube.SuspendLayout();
             this.RGBSite.SuspendLayout();
@@ -111,13 +115,10 @@
             this.RGBEmail.SuspendLayout();
             this.RGBNome.SuspendLayout();
             this.RGBCampos.SuspendLayout();
-            this.TLPFilho2.SuspendLayout();
             this.RGBDetalhada.SuspendLayout();
             this.RGBModelos.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
-            this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
@@ -214,6 +215,167 @@
             this.TLPNeto1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.31578F));
             this.TLPNeto1.Size = new System.Drawing.Size(618, 408);
             this.TLPNeto1.TabIndex = 2;
+            // 
+            // lblNome
+            // 
+            this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(15, 5);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(115, 32);
+            this.lblNome.TabIndex = 1;
+            this.lblNome.Text = "Nome do Projeto:";
+            this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(15, 47);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(115, 32);
+            this.lblEmail.TabIndex = 2;
+            this.lblEmail.Text = "Email para Contato:";
+            this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAutores
+            // 
+            this.lblAutores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAutores.AutoSize = true;
+            this.lblAutores.Location = new System.Drawing.Point(15, 89);
+            this.lblAutores.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblAutores.Name = "lblAutores";
+            this.lblAutores.Size = new System.Drawing.Size(115, 32);
+            this.lblAutores.TabIndex = 3;
+            this.lblAutores.Text = "Nome dos Autores:";
+            this.lblAutores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblLinguagem
+            // 
+            this.lblLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLinguagem.AutoSize = true;
+            this.lblLinguagem.Location = new System.Drawing.Point(15, 131);
+            this.lblLinguagem.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblLinguagem.Name = "lblLinguagem";
+            this.lblLinguagem.Size = new System.Drawing.Size(115, 32);
+            this.lblLinguagem.TabIndex = 4;
+            this.lblLinguagem.Text = "Linguagem:";
+            this.lblLinguagem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblBreve
+            // 
+            this.lblBreve.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBreve.AutoSize = true;
+            this.lblBreve.Location = new System.Drawing.Point(15, 173);
+            this.lblBreve.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblBreve.Name = "lblBreve";
+            this.lblBreve.Size = new System.Drawing.Size(115, 32);
+            this.lblBreve.TabIndex = 5;
+            this.lblBreve.Text = "Descrição Breve:";
+            this.lblBreve.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblSite
+            // 
+            this.lblSite.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSite.AutoSize = true;
+            this.lblSite.Location = new System.Drawing.Point(15, 215);
+            this.lblSite.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblSite.Name = "lblSite";
+            this.lblSite.Size = new System.Drawing.Size(115, 32);
+            this.lblSite.TabIndex = 6;
+            this.lblSite.Text = "Link para Site:";
+            this.lblSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblYoutube
+            // 
+            this.lblYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblYoutube.AutoSize = true;
+            this.lblYoutube.Location = new System.Drawing.Point(15, 257);
+            this.lblYoutube.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblYoutube.Name = "lblYoutube";
+            this.lblYoutube.Size = new System.Drawing.Size(115, 32);
+            this.lblYoutube.TabIndex = 7;
+            this.lblYoutube.Text = "Link para Vídeo:";
+            this.lblYoutube.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblPalavras
+            // 
+            this.lblPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPalavras.AutoSize = true;
+            this.lblPalavras.Location = new System.Drawing.Point(15, 299);
+            this.lblPalavras.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblPalavras.Name = "lblPalavras";
+            this.lblPalavras.Size = new System.Drawing.Size(115, 104);
+            this.lblPalavras.TabIndex = 8;
+            this.lblPalavras.Text = "Palavras-Chave:";
+            this.lblPalavras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TLPFilho2
+            // 
+            this.TLPFilho2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPFilho2.ColumnCount = 1;
+            this.TLPFilho2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPFilho2.Controls.Add(this.RGBDetalhada, 0, 0);
+            this.TLPFilho2.Controls.Add(this.RGBModelos, 0, 1);
+            this.TLPFilho2.Location = new System.Drawing.Point(633, 3);
+            this.TLPFilho2.Name = "TLPFilho2";
+            this.TLPFilho2.RowCount = 2;
+            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.TLPFilho2.Size = new System.Drawing.Size(625, 553);
+            this.TLPFilho2.TabIndex = 2;
+            // 
+            // TLPHead2
+            // 
+            this.TLPHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead2.ColumnCount = 1;
+            this.TLPHead2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Controls.Add(this.RGBHead2, 0, 0);
+            this.TLPHead2.Location = new System.Drawing.Point(0, 60);
+            this.TLPHead2.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead2.Name = "TLPHead2";
+            this.TLPHead2.RowCount = 1;
+            this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Size = new System.Drawing.Size(1267, 60);
+            this.TLPHead2.TabIndex = 3;
+            // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.RGBHead1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1267, 60);
+            this.TLPHead1.TabIndex = 4;
             // 
             // RGBPalavras
             // 
@@ -578,118 +740,6 @@
             this.customLine1.TabIndex = 0;
             this.customLine1.Text = "customLine1";
             // 
-            // lblNome
-            // 
-            this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(15, 5);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(115, 32);
-            this.lblNome.TabIndex = 1;
-            this.lblNome.Text = "Nome do Projeto:";
-            this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(15, 47);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(115, 32);
-            this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Email para Contato:";
-            this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblAutores
-            // 
-            this.lblAutores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAutores.AutoSize = true;
-            this.lblAutores.Location = new System.Drawing.Point(15, 89);
-            this.lblAutores.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblAutores.Name = "lblAutores";
-            this.lblAutores.Size = new System.Drawing.Size(115, 32);
-            this.lblAutores.TabIndex = 3;
-            this.lblAutores.Text = "Nome dos Autores:";
-            this.lblAutores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblLinguagem
-            // 
-            this.lblLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLinguagem.AutoSize = true;
-            this.lblLinguagem.Location = new System.Drawing.Point(15, 131);
-            this.lblLinguagem.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblLinguagem.Name = "lblLinguagem";
-            this.lblLinguagem.Size = new System.Drawing.Size(115, 32);
-            this.lblLinguagem.TabIndex = 4;
-            this.lblLinguagem.Text = "Linguagem:";
-            this.lblLinguagem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblBreve
-            // 
-            this.lblBreve.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBreve.AutoSize = true;
-            this.lblBreve.Location = new System.Drawing.Point(15, 173);
-            this.lblBreve.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblBreve.Name = "lblBreve";
-            this.lblBreve.Size = new System.Drawing.Size(115, 32);
-            this.lblBreve.TabIndex = 5;
-            this.lblBreve.Text = "Descrição Breve:";
-            this.lblBreve.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblSite
-            // 
-            this.lblSite.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSite.AutoSize = true;
-            this.lblSite.Location = new System.Drawing.Point(15, 215);
-            this.lblSite.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblSite.Name = "lblSite";
-            this.lblSite.Size = new System.Drawing.Size(115, 32);
-            this.lblSite.TabIndex = 6;
-            this.lblSite.Text = "Link para Site:";
-            this.lblSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblYoutube
-            // 
-            this.lblYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblYoutube.AutoSize = true;
-            this.lblYoutube.Location = new System.Drawing.Point(15, 257);
-            this.lblYoutube.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblYoutube.Name = "lblYoutube";
-            this.lblYoutube.Size = new System.Drawing.Size(115, 32);
-            this.lblYoutube.TabIndex = 7;
-            this.lblYoutube.Text = "Link para Vídeo:";
-            this.lblYoutube.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblPalavras
-            // 
-            this.lblPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPalavras.AutoSize = true;
-            this.lblPalavras.Location = new System.Drawing.Point(15, 299);
-            this.lblPalavras.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblPalavras.Name = "lblPalavras";
-            this.lblPalavras.Size = new System.Drawing.Size(115, 104);
-            this.lblPalavras.TabIndex = 8;
-            this.lblPalavras.Text = "Palavras-Chave:";
-            this.lblPalavras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // RGBCampos
             // 
             this.RGBCampos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -699,6 +749,7 @@
             this.RGBCampos.BackColor = System.Drawing.Color.Transparent;
             this.RGBCampos.BackgroundColor = System.Drawing.Color.White;
             this.RGBCampos.BorderWidth = 2F;
+            this.RGBCampos.Controls.Add(this.boxSemPrevisao);
             this.RGBCampos.Controls.Add(this.radioSim);
             this.RGBCampos.Controls.Add(this.radioNão);
             this.RGBCampos.Controls.Add(this.comboStatus);
@@ -795,28 +846,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPrevi.AutoSize = true;
             this.lblPrevi.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrevi.Location = new System.Drawing.Point(25, 23);
+            this.lblPrevi.Location = new System.Drawing.Point(25, 19);
             this.lblPrevi.Name = "lblPrevi";
             this.lblPrevi.Size = new System.Drawing.Size(119, 13);
             this.lblPrevi.TabIndex = 0;
             this.lblPrevi.Text = "Previsão de Conclusão:";
-            // 
-            // TLPFilho2
-            // 
-            this.TLPFilho2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPFilho2.ColumnCount = 1;
-            this.TLPFilho2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPFilho2.Controls.Add(this.RGBDetalhada, 0, 0);
-            this.TLPFilho2.Controls.Add(this.RGBModelos, 0, 1);
-            this.TLPFilho2.Location = new System.Drawing.Point(633, 3);
-            this.TLPFilho2.Name = "TLPFilho2";
-            this.TLPFilho2.RowCount = 2;
-            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.TLPFilho2.Size = new System.Drawing.Size(625, 553);
-            this.TLPFilho2.TabIndex = 2;
             // 
             // RGBDetalhada
             // 
@@ -826,7 +860,7 @@
             this.RGBDetalhada.BackColor = System.Drawing.Color.Transparent;
             this.RGBDetalhada.BackgroundColor = System.Drawing.Color.White;
             this.RGBDetalhada.BorderWidth = 2F;
-            this.RGBDetalhada.Controls.Add(this.textBox9);
+            this.RGBDetalhada.Controls.Add(this.txtDetalhada);
             this.RGBDetalhada.Controls.Add(this.lblDetalhado);
             this.RGBDetalhada.CornerRadius = 20;
             this.RGBDetalhada.Location = new System.Drawing.Point(3, 3);
@@ -835,17 +869,17 @@
             this.RGBDetalhada.TabIndex = 0;
             this.RGBDetalhada.TabStop = false;
             // 
-            // textBox9
+            // txtDetalhada
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtDetalhada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(14, 31);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(595, 285);
-            this.textBox9.TabIndex = 4;
+            this.txtDetalhada.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalhada.Location = new System.Drawing.Point(14, 31);
+            this.txtDetalhada.Multiline = true;
+            this.txtDetalhada.Name = "txtDetalhada";
+            this.txtDetalhada.Size = new System.Drawing.Size(595, 285);
+            this.txtDetalhada.TabIndex = 4;
             // 
             // lblDetalhado
             // 
@@ -977,22 +1011,6 @@
             this.radioScrum.Text = "Modelo Scrum.";
             this.radioScrum.UseVisualStyleBackColor = false;
             // 
-            // TLPHead2
-            // 
-            this.TLPHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead2.ColumnCount = 1;
-            this.TLPHead2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead2.Controls.Add(this.RGBHead2, 0, 0);
-            this.TLPHead2.Location = new System.Drawing.Point(0, 60);
-            this.TLPHead2.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead2.Name = "TLPHead2";
-            this.TLPHead2.RowCount = 1;
-            this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead2.Size = new System.Drawing.Size(1267, 60);
-            this.TLPHead2.TabIndex = 3;
-            // 
             // RGBHead2
             // 
             this.RGBHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1025,6 +1043,7 @@
             this.btnCriar.TabIndex = 1;
             this.btnCriar.Text = "CRIAR PROJETO";
             this.btnCriar.UseVisualStyleBackColor = true;
+            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             this.btnCriar.MouseEnter += new System.EventHandler(this.btnCriar_MouseEnter);
             this.btnCriar.MouseLeave += new System.EventHandler(this.btnCriar_MouseLeave);
             // 
@@ -1043,22 +1062,6 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.MouseEnter += new System.EventHandler(this.btnCancelar_MouseEnter);
             this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
-            // 
-            // TLPHead1
-            // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.RGBHead1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1267, 60);
-            this.TLPHead1.TabIndex = 4;
             // 
             // RGBHead1
             // 
@@ -1143,13 +1146,24 @@
             this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
             this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
             // 
+            // boxSemPrevisao
+            // 
+            this.boxSemPrevisao.AutoSize = true;
+            this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
+            this.boxSemPrevisao.Name = "boxSemPrevisao";
+            this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
+            this.boxSemPrevisao.TabIndex = 7;
+            this.boxSemPrevisao.Text = "Sem Previsão.";
+            this.boxSemPrevisao.UseVisualStyleBackColor = true;
+            this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
+            // 
             // frmCriar_Projeto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
-            this.MinimumSize = new System.Drawing.Size(1280, 688);
+            this.MinimumSize = new System.Drawing.Size(1278, 678);
             this.Name = "frmCriar_Projeto";
             this.Text = "frmCriar_Projeto";
             this.Load += new System.EventHandler(this.frmCriar_Projeto_Load);
@@ -1159,6 +1173,11 @@
             this.TLPFilho1.PerformLayout();
             this.TLPNeto1.ResumeLayout(false);
             this.TLPNeto1.PerformLayout();
+            this.TLPFilho2.ResumeLayout(false);
+            this.TLPHead2.ResumeLayout(false);
+            this.TLPHead2.PerformLayout();
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
             this.RGBPalavras.ResumeLayout(false);
             this.RGBPalavras.PerformLayout();
             this.RGBYoutube.ResumeLayout(false);
@@ -1177,17 +1196,12 @@
             this.RGBNome.PerformLayout();
             this.RGBCampos.ResumeLayout(false);
             this.RGBCampos.PerformLayout();
-            this.TLPFilho2.ResumeLayout(false);
             this.RGBDetalhada.ResumeLayout(false);
             this.RGBDetalhada.PerformLayout();
             this.RGBModelos.ResumeLayout(false);
             this.TLPOpcoes.ResumeLayout(false);
             this.TLPOpcoes.PerformLayout();
-            this.TLPHead2.ResumeLayout(false);
-            this.TLPHead2.PerformLayout();
             this.RGBHead2.ResumeLayout(false);
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
             this.RGBHead1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
@@ -1251,7 +1265,7 @@
         private System.Windows.Forms.RadioButton radioNão;
         private System.Windows.Forms.ComboBox comboStatus;
         private System.Windows.Forms.DateTimePicker dtpPrevisao;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtDetalhada;
         private System.Windows.Forms.Label lblDetalhado;
         private System.Windows.Forms.RadioButton radioPrazos;
         private System.Windows.Forms.RadioButton radioEquipes;
@@ -1269,5 +1283,6 @@
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.CheckBox boxSemPrevisao;
     }
 }

@@ -76,6 +76,11 @@ namespace tccCsharp
             lblTitulo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
+        public string PalavrasChave()
+        {
+            return null;
+        }
+
         private void frmCriar_Projeto_Load(object sender, EventArgs e)
         {
             TLP_Mãe.Font = new Font("Arial", 9);
@@ -148,6 +153,90 @@ namespace tccCsharp
         private void btnCancelar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCriar_Click(object sender, EventArgs e)
+        {
+            Project Novo = new Project();
+
+            if (String.IsNullOrEmpty(txtNomeProjeto.Text))
+                return;
+            else
+                Novo.nome_projeto = txtNomeProjeto.Text;
+
+            if (String.IsNullOrEmpty(txtEmail.Text))
+                Novo.email_contato = null;
+            else
+                Novo.email_contato = txtEmail.Text;
+
+            if (String.IsNullOrEmpty(txtAutores.Text))
+                Novo.autores = null;
+            else
+                Novo.autores = txtAutores.Text;
+
+            if (String.IsNullOrEmpty(txtLinguagem.Text))
+                Novo.linguagem = null;
+            else Novo.linguagem = txtLinguagem.Text;
+
+            if (String.IsNullOrEmpty(txtDescricaoBreve.Text))
+                return;
+            else
+                Novo.descricao_breve = txtDescricaoBreve.Text;
+
+            if (String.IsNullOrEmpty(txtSite.Text))
+                Novo.link_site = null;
+            else
+                Novo.link_site = txtSite.Text;
+
+            if (String.IsNullOrEmpty(txtVideo.Text))
+                Novo.link_youtube = null;
+            else 
+                Novo.link_youtube = txtVideo.Text;
+
+            if (String.IsNullOrEmpty(txtPalavras.Text))
+                Novo.palavras_chave = null;
+            else
+                Novo.palavras_chave = PalavrasChave();
+
+            if (boxSemPrevisao.Checked == true)
+                Novo.previsao = new DateTime(0, 1, 1);
+            else
+                Novo.previsao = dtpPrevisao.Value;
+
+            Novo.status = comboStatus.SelectedIndex;
+
+            if (radioSim.Checked == true)
+                Novo.publico = true;
+            else
+                Novo.publico = false;
+
+            if (String.IsNullOrEmpty(txtDetalhada.Text))
+                Novo.descricao_detalhada = null;
+            else
+                Novo.descricao_detalhada = txtDetalhada.Text;
+
+            if (Program.id_usuario == 0)
+            {
+                MessageBox.Show("Ocorreu um erro ao resgatar suas informações!!!", "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+                Novo.id_criador = Program.id_usuario;
+
+            Novo.porcentagem = 0;
+            Novo.data_criacao = DateTime.Today;
+            Novo.data_atualizacao = DateTime.Today;
+            Novo.atualizador = Program.id_usuario;
+            Novo.excluido = false;
+            Novo.numero_grupos = 0;
+        }
+
+        private void boxSemPrevisao_CheckedChanged(object sender, EventArgs e)
+        { 
+            if (boxSemPrevisao.Checked == true)
+                dtpPrevisao.Visible = false;
+            else
+                dtpPrevisao.Visible = true;
         }
     }
 }

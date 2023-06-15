@@ -148,7 +148,7 @@ namespace tccCsharp
             string sql;
             try
             {
-                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, imagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
+                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
 
                 
                 List<object> param = new List<object>();
@@ -219,9 +219,6 @@ namespace tccCsharp
                         if (dr["num_grupos"] != DBNull.Value)
                             linha.numero_grupos = Convert.ToInt32(dr["num_grupos"]);
 
-                        if (dr["imagem"] != DBNull.Value)
-                            linha.imagem = Convert.ToInt32(dr["imagem"]);
-
                     projetos.Add(linha);
                     };
                     dr.Close();
@@ -234,7 +231,59 @@ namespace tccCsharp
             }
         }
 
+        public static void InserirProjeto(Project Novo)
+        {
+            try
+            {
+                conectar();
+                String sql = "INSERT INTO gp2_projetos (id_criador, autores, email_contato, nome_projeto, ";
+                sql += "palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, ";
+                sql += "link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, ";
+                sql += "excluido, linguagem, previsao, num_grupos) VALUES (";
+                //
+                //sql += Novo.id_criador.ToString() + ", ";
 
+                List<object> Valor = new List<object>();
+                Valor.Add(Novo.id_criador);
+                Valor.Add(Novo.autores);
+                Valor.Add(Novo.email_contato);
+                Valor.Add(Novo.nome_projeto);
+                Valor.Add(Novo.palavras_chave);
+                Valor.Add(Novo.publico);
+                Valor.Add(Novo.descricao_breve);
+                Valor.Add(Novo.descricao_detalhada);
+                Valor.Add(Novo.link_site);
+                Valor.Add(Novo.link_youtube);
+                Valor.Add(Novo.status);
+                Valor.Add(Novo.porcentagem);
+                Valor.Add(Novo.data_criacao);
+                Valor.Add(Novo.data_atualizacao);
+                Valor.Add(Novo.atualizador);
+                Valor.Add(Novo.excluido);
+                Valor.Add(Novo.linguagem);
+                Valor.Add(Novo.previsao);
+                Valor.Add(Novo.numero_grupos);
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+
+                int i = 1;
+                foreach (object Values in Valor)
+                    cmd.Parameters.AddWithValue(i++.ToString(), Valor);
+                //return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+
+                
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                throw new ApplicationException(ex.Message);
+            }
+            finally
+            {
+                desconectar();
+            }
+        }
 
 
 
@@ -251,23 +300,7 @@ namespace tccCsharp
          * 
         //Executa uma query no banco de dados. (Sem retorno)
         // insert - update - delete
-        public static void executar(string sql)
-        {
-            try
-            {
-                conectar();
-                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                cmd.ExecuteNonQuery();
-            }
-            catch (NpgsqlException ex)
-            {
-                throw new ApplicationException(ex.Message);
-            }
-            finally
-            {
-                desconectar();
-            }
-        }
+        
         //Executa uma query no banco de dados com parametros
         public static void executar(string sql, List<object> parametros)
         {
