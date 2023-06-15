@@ -239,45 +239,36 @@ namespace tccCsharp
                 String sql = "INSERT INTO gp2_projetos (id_criador, autores, email_contato, nome_projeto, ";
                 sql += "palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, ";
                 sql += "link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, ";
-                sql += "excluido, linguagem, previsao, num_grupos) VALUES (";
-                //
-                //sql += Novo.id_criador.ToString() + ", ";
-
-                List<object> Valor = new List<object>();
-                Valor.Add(Novo.id_criador);
-                Valor.Add(Novo.autores);
-                Valor.Add(Novo.email_contato);
-                Valor.Add(Novo.nome_projeto);
-                Valor.Add(Novo.palavras_chave);
-                Valor.Add(Novo.publico);
-                Valor.Add(Novo.descricao_breve);
-                Valor.Add(Novo.descricao_detalhada);
-                Valor.Add(Novo.link_site);
-                Valor.Add(Novo.link_youtube);
-                Valor.Add(Novo.status);
-                Valor.Add(Novo.porcentagem);
-                Valor.Add(Novo.data_criacao);
-                Valor.Add(Novo.data_atualizacao);
-                Valor.Add(Novo.atualizador);
-                Valor.Add(Novo.excluido);
-                Valor.Add(Novo.linguagem);
-                Valor.Add(Novo.previsao);
-                Valor.Add(Novo.numero_grupos);
+                sql += "excluido, linguagem, previsao, num_grupos) VALUES ";
+                sql += "(@1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15, @16, @17, @18, @19)";
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-
-                int i = 1;
-                foreach (object Values in Valor)
-                    cmd.Parameters.AddWithValue(i++.ToString(), Valor);
-                //return cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                
+                cmd.Parameters.AddWithValue("@1", Novo.id_criador);
+                cmd.Parameters.AddWithValue("@2", String.IsNullOrEmpty(Novo.autores) ? (object)DBNull.Value : (object)Novo.autores);
+                cmd.Parameters.AddWithValue("@3", String.IsNullOrEmpty(Novo.email_contato) ? (object)DBNull.Value : (object)Novo.email_contato);
+                cmd.Parameters.AddWithValue("@4", Novo.nome_projeto);
+                cmd.Parameters.AddWithValue("@5", String.IsNullOrEmpty(Novo.palavras_chave) ? (object)DBNull.Value : (object)Novo.palavras_chave);
+                cmd.Parameters.AddWithValue("@6", Novo.publico);
+                cmd.Parameters.AddWithValue("@7", Novo.descricao_breve);
+                cmd.Parameters.AddWithValue("@8", String.IsNullOrEmpty(Novo.descricao_detalhada) ? (object)DBNull.Value : (object)Novo.descricao_detalhada);
+                cmd.Parameters.AddWithValue("@9", String.IsNullOrEmpty(Novo.link_site) ? (object)DBNull.Value : (object)Novo.link_site);
+                cmd.Parameters.AddWithValue("@10", String.IsNullOrEmpty(Novo.link_youtube) ? (object)DBNull.Value : (object)Novo.link_youtube);
+                cmd.Parameters.AddWithValue("@11", (Novo.status == 0 ? (object)DBNull.Value : (object)Novo.status));
+                cmd.Parameters.AddWithValue("@12", Novo.porcentagem);
+                cmd.Parameters.AddWithValue("@13", Novo.data_criacao);
+                cmd.Parameters.AddWithValue("@14", Novo.data_atualizacao);
+                cmd.Parameters.AddWithValue("@15", Novo.atualizador);
+                cmd.Parameters.AddWithValue("@16", Novo.excluido);
+                cmd.Parameters.AddWithValue("@17", String.IsNullOrEmpty(Novo.linguagem) ? (object)DBNull.Value : (object)Novo.linguagem);
+                cmd.Parameters.AddWithValue("@18", Novo.previsao == new DateTime(1, 1, 1) ? (object)DBNull.Value : (object)Novo.previsao);
+                cmd.Parameters.AddWithValue("@19", Novo.numero_grupos);
 
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Projeto criado com sucesso");
             }
             catch (NpgsqlException ex)
             {
-                throw new ApplicationException(ex.Message);
+                MessageBox.Show("Ocorreu um criar o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {

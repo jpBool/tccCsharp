@@ -199,11 +199,12 @@ namespace tccCsharp
                 Novo.palavras_chave = PalavrasChave();
 
             if (boxSemPrevisao.Checked == true)
-                Novo.previsao = new DateTime(0, 1, 1);
+                Novo.previsao = new DateTime(1, 1, 1);
             else
                 Novo.previsao = dtpPrevisao.Value;
 
-            Novo.status = comboStatus.SelectedIndex;
+            //Novo.status = comboStatus.SelectedIndex;
+            Novo.status = 0;
 
             if (radioSim.Checked == true)
                 Novo.publico = true;
@@ -225,10 +226,13 @@ namespace tccCsharp
 
             Novo.porcentagem = 0;
             Novo.data_criacao = DateTime.Today;
-            Novo.data_atualizacao = DateTime.Today;
+            Novo.data_atualizacao = DateTime.Now;
             Novo.atualizador = Program.id_usuario;
             Novo.excluido = false;
             Novo.numero_grupos = 0;
+
+            Banco.InserirProjeto(Novo);
+            this.Close();
         }
 
         private void boxSemPrevisao_CheckedChanged(object sender, EventArgs e)

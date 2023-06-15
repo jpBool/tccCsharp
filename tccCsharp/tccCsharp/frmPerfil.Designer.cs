@@ -851,6 +851,7 @@
             this.lblAdicionar.Size = new System.Drawing.Size(193, 20);
             this.lblAdicionar.TabIndex = 32;
             this.lblAdicionar.Text = "Adicionar novo projeto";
+            this.lblAdicionar.Click += new System.EventHandler(this.lblAdicionar_Click);
             this.lblAdicionar.MouseEnter += new System.EventHandler(this.btnAdicionar_MouseEnter);
             this.lblAdicionar.MouseLeave += new System.EventHandler(this.btnAdicionar_MouseLeave);
             // 

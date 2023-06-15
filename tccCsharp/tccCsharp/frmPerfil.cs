@@ -258,5 +258,16 @@ namespace tccCsharp
         {
             doDesign();
         }
+
+        private void lblAdicionar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmCriar_Projeto splash = new frmCriar_Projeto();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+                this.Close();
+            else
+                this.Visible = true;
+        }
     }
 }
