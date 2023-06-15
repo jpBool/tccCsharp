@@ -247,10 +247,7 @@
             // 
             // RGBYoutube
             // 
-            this.RGBYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBYoutube.AutoSize = true;
+            this.RGBYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBYoutube.BackColor = System.Drawing.Color.Transparent;
             this.RGBYoutube.BackgroundColor = System.Drawing.Color.White;
             this.RGBYoutube.BorderWidth = 2F;
@@ -258,7 +255,6 @@
             this.RGBYoutube.Controls.Add(this.customLine7);
             this.RGBYoutube.CornerRadius = 12;
             this.RGBYoutube.Location = new System.Drawing.Point(138, 255);
-            this.RGBYoutube.MaximumSize = new System.Drawing.Size(0, 40);
             this.RGBYoutube.Name = "RGBYoutube";
             this.RGBYoutube.Size = new System.Drawing.Size(477, 36);
             this.RGBYoutube.TabIndex = 14;
@@ -290,10 +286,7 @@
             // 
             // RGBSite
             // 
-            this.RGBSite.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBSite.AutoSize = true;
+            this.RGBSite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBSite.BackColor = System.Drawing.Color.Transparent;
             this.RGBSite.BackgroundColor = System.Drawing.Color.White;
             this.RGBSite.BorderWidth = 2F;
@@ -301,7 +294,6 @@
             this.RGBSite.Controls.Add(this.customLine6);
             this.RGBSite.CornerRadius = 12;
             this.RGBSite.Location = new System.Drawing.Point(138, 213);
-            this.RGBSite.MaximumSize = new System.Drawing.Size(0, 40);
             this.RGBSite.Name = "RGBSite";
             this.RGBSite.Size = new System.Drawing.Size(477, 36);
             this.RGBSite.TabIndex = 13;
@@ -333,10 +325,7 @@
             // 
             // RGBBreve
             // 
-            this.RGBBreve.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBBreve.AutoSize = true;
+            this.RGBBreve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBBreve.BackColor = System.Drawing.Color.Transparent;
             this.RGBBreve.BackgroundColor = System.Drawing.Color.White;
             this.RGBBreve.BorderWidth = 2F;
@@ -345,7 +334,6 @@
             this.RGBBreve.Controls.Add(this.customLine5);
             this.RGBBreve.CornerRadius = 12;
             this.RGBBreve.Location = new System.Drawing.Point(138, 171);
-            this.RGBBreve.MaximumSize = new System.Drawing.Size(0, 40);
             this.RGBBreve.Name = "RGBBreve";
             this.RGBBreve.Size = new System.Drawing.Size(477, 36);
             this.RGBBreve.TabIndex = 12;
@@ -388,10 +376,7 @@
             // 
             // RGBLinguagem
             // 
-            this.RGBLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBLinguagem.AutoSize = true;
+            this.RGBLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBLinguagem.BackColor = System.Drawing.Color.Transparent;
             this.RGBLinguagem.BackgroundColor = System.Drawing.Color.White;
             this.RGBLinguagem.BorderWidth = 2F;
@@ -400,7 +385,6 @@
             this.RGBLinguagem.Controls.Add(this.customLine4);
             this.RGBLinguagem.CornerRadius = 12;
             this.RGBLinguagem.Location = new System.Drawing.Point(138, 129);
-            this.RGBLinguagem.MaximumSize = new System.Drawing.Size(0, 40);
             this.RGBLinguagem.Name = "RGBLinguagem";
             this.RGBLinguagem.Size = new System.Drawing.Size(477, 36);
             this.RGBLinguagem.TabIndex = 11;
@@ -443,10 +427,7 @@
             // 
             // RGBAutores
             // 
-            this.RGBAutores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBAutores.AutoSize = true;
+            this.RGBAutores.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBAutores.BackColor = System.Drawing.Color.Transparent;
             this.RGBAutores.BackgroundColor = System.Drawing.Color.White;
             this.RGBAutores.BorderWidth = 2F;
@@ -455,7 +436,6 @@
             this.RGBAutores.Controls.Add(this.customLine3);
             this.RGBAutores.CornerRadius = 12;
             this.RGBAutores.Location = new System.Drawing.Point(138, 87);
-            this.RGBAutores.MaximumSize = new System.Drawing.Size(0, 40);
             this.RGBAutores.Name = "RGBAutores";
             this.RGBAutores.Size = new System.Drawing.Size(477, 36);
             this.RGBAutores.TabIndex = 10;
@@ -498,10 +478,7 @@
             // 
             // RGBEmail
             // 
-            this.RGBEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBEmail.AutoSize = true;
+            this.RGBEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBEmail.BackColor = System.Drawing.Color.Transparent;
             this.RGBEmail.BackgroundColor = System.Drawing.Color.White;
             this.RGBEmail.BorderWidth = 2F;
@@ -510,7 +487,6 @@
             this.RGBEmail.Controls.Add(this.customLine2);
             this.RGBEmail.CornerRadius = 12;
             this.RGBEmail.Location = new System.Drawing.Point(138, 45);
-            this.RGBEmail.MaximumSize = new System.Drawing.Size(0, 40);
             this.RGBEmail.Name = "RGBEmail";
             this.RGBEmail.Size = new System.Drawing.Size(477, 36);
             this.RGBEmail.TabIndex = 9;
@@ -553,10 +529,7 @@
             // 
             // RGBNome
             // 
-            this.RGBNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBNome.AutoSize = true;
+            this.RGBNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBNome.BackColor = System.Drawing.Color.Transparent;
             this.RGBNome.BackgroundColor = System.Drawing.Color.White;
             this.RGBNome.BorderWidth = 2F;
@@ -565,7 +538,6 @@
             this.RGBNome.Controls.Add(this.customLine1);
             this.RGBNome.CornerRadius = 12;
             this.RGBNome.Location = new System.Drawing.Point(138, 3);
-            this.RGBNome.MaximumSize = new System.Drawing.Size(0, 40);
             this.RGBNome.Name = "RGBNome";
             this.RGBNome.Size = new System.Drawing.Size(477, 36);
             this.RGBNome.TabIndex = 0;
@@ -811,7 +783,7 @@
             this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblStatus.Location = new System.Drawing.Point(25, 52);
+            this.lblStatus.Location = new System.Drawing.Point(25, 55);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(91, 13);
             this.lblStatus.TabIndex = 1;
@@ -924,7 +896,7 @@
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.Size = new System.Drawing.Size(554, 192);
+            this.TLPOpcoes.Size = new System.Drawing.Size(529, 192);
             this.TLPOpcoes.TabIndex = 8;
             // 
             // lblModelos
@@ -1044,7 +1016,7 @@
             this.btnCriar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCriar.BorderColor = System.Drawing.Color.Black;
-            this.btnCriar.BorderRadius = 25;
+            this.btnCriar.BorderRadius = 20;
             this.btnCriar.BorderThickness = 4;
             this.btnCriar.ButtonColor = System.Drawing.Color.White;
             this.btnCriar.Location = new System.Drawing.Point(1095, 8);
@@ -1060,7 +1032,7 @@
             // 
             this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnCancelar.BorderColor = System.Drawing.Color.Black;
-            this.btnCancelar.BorderRadius = 25;
+            this.btnCancelar.BorderRadius = 20;
             this.btnCancelar.BorderThickness = 4;
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(910, 8);

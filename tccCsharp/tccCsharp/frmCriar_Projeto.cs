@@ -144,5 +144,10 @@ namespace tccCsharp
             OPBConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBConfiguracoes.Refresh();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
