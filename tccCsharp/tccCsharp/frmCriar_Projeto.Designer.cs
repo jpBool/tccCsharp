@@ -32,17 +32,6 @@
             this.TLPConteudo = new System.Windows.Forms.TableLayoutPanel();
             this.TLPFilho1 = new System.Windows.Forms.TableLayoutPanel();
             this.TLPNeto1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblAutores = new System.Windows.Forms.Label();
-            this.lblLinguagem = new System.Windows.Forms.Label();
-            this.lblBreve = new System.Windows.Forms.Label();
-            this.lblSite = new System.Windows.Forms.Label();
-            this.lblYoutube = new System.Windows.Forms.Label();
-            this.lblPalavras = new System.Windows.Forms.Label();
-            this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBPalavras = new tccCsharp.RoundedGroupBox();
             this.txtPalavras = new System.Windows.Forms.TextBox();
             this.RGBYoutube = new tccCsharp.RoundedGroupBox();
@@ -71,7 +60,16 @@
             this.txtNomeProjeto = new System.Windows.Forms.TextBox();
             this.lblcar1 = new System.Windows.Forms.Label();
             this.customLine1 = new CustomLine();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblAutores = new System.Windows.Forms.Label();
+            this.lblLinguagem = new System.Windows.Forms.Label();
+            this.lblBreve = new System.Windows.Forms.Label();
+            this.lblSite = new System.Windows.Forms.Label();
+            this.lblYoutube = new System.Windows.Forms.Label();
+            this.lblPalavras = new System.Windows.Forms.Label();
             this.RGBCampos = new tccCsharp.RoundedGroupBox();
+            this.boxSemPrevisao = new System.Windows.Forms.CheckBox();
             this.radioSim = new System.Windows.Forms.RadioButton();
             this.radioNão = new System.Windows.Forms.RadioButton();
             this.comboStatus = new System.Windows.Forms.ComboBox();
@@ -79,6 +77,7 @@
             this.lblPublicar = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblPrevi = new System.Windows.Forms.Label();
+            this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
             this.txtDetalhada = new System.Windows.Forms.TextBox();
             this.lblDetalhado = new System.Windows.Forms.Label();
@@ -90,22 +89,20 @@
             this.radioEquipes = new System.Windows.Forms.RadioButton();
             this.radioKanban = new System.Windows.Forms.RadioButton();
             this.radioScrum = new System.Windows.Forms.RadioButton();
+            this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
             this.btnCriar = new RoundButton();
             this.btnCancelar = new RoundButton();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
-            this.boxSemPrevisao = new System.Windows.Forms.CheckBox();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
             this.TLPNeto1.SuspendLayout();
-            this.TLPFilho2.SuspendLayout();
-            this.TLPHead2.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
             this.RGBPalavras.SuspendLayout();
             this.RGBYoutube.SuspendLayout();
             this.RGBSite.SuspendLayout();
@@ -115,10 +112,13 @@
             this.RGBEmail.SuspendLayout();
             this.RGBNome.SuspendLayout();
             this.RGBCampos.SuspendLayout();
+            this.TLPFilho2.SuspendLayout();
             this.RGBDetalhada.SuspendLayout();
             this.RGBModelos.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
+            this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
@@ -216,6 +216,401 @@
             this.TLPNeto1.Size = new System.Drawing.Size(618, 408);
             this.TLPNeto1.TabIndex = 2;
             // 
+            // RGBPalavras
+            // 
+            this.RGBPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBPalavras.AutoSize = true;
+            this.RGBPalavras.BackColor = System.Drawing.Color.Transparent;
+            this.RGBPalavras.BackgroundColor = System.Drawing.Color.White;
+            this.RGBPalavras.BorderWidth = 2F;
+            this.RGBPalavras.Controls.Add(this.txtPalavras);
+            this.RGBPalavras.CornerRadius = 12;
+            this.RGBPalavras.Location = new System.Drawing.Point(138, 297);
+            this.RGBPalavras.Name = "RGBPalavras";
+            this.RGBPalavras.Size = new System.Drawing.Size(477, 108);
+            this.RGBPalavras.TabIndex = 15;
+            this.RGBPalavras.TabStop = false;
+            // 
+            // txtPalavras
+            // 
+            this.txtPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPalavras.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPalavras.ForeColor = System.Drawing.Color.Gray;
+            this.txtPalavras.Location = new System.Drawing.Point(10, 8);
+            this.txtPalavras.MaxLength = 500;
+            this.txtPalavras.Multiline = true;
+            this.txtPalavras.Name = "txtPalavras";
+            this.txtPalavras.Size = new System.Drawing.Size(459, 89);
+            this.txtPalavras.TabIndex = 0;
+            this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
+            this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
+            this.txtPalavras.Leave += new System.EventHandler(this.txtPalavras_Leave);
+            // 
+            // RGBYoutube
+            // 
+            this.RGBYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBYoutube.BackColor = System.Drawing.Color.Transparent;
+            this.RGBYoutube.BackgroundColor = System.Drawing.Color.White;
+            this.RGBYoutube.BorderWidth = 2F;
+            this.RGBYoutube.Controls.Add(this.txtVideo);
+            this.RGBYoutube.Controls.Add(this.customLine7);
+            this.RGBYoutube.CornerRadius = 12;
+            this.RGBYoutube.Location = new System.Drawing.Point(138, 255);
+            this.RGBYoutube.Name = "RGBYoutube";
+            this.RGBYoutube.Size = new System.Drawing.Size(477, 36);
+            this.RGBYoutube.TabIndex = 14;
+            this.RGBYoutube.TabStop = false;
+            // 
+            // txtVideo
+            // 
+            this.txtVideo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtVideo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtVideo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVideo.ForeColor = System.Drawing.Color.Gray;
+            this.txtVideo.Location = new System.Drawing.Point(8, 6);
+            this.txtVideo.MaxLength = 50;
+            this.txtVideo.Name = "txtVideo";
+            this.txtVideo.Size = new System.Drawing.Size(461, 19);
+            this.txtVideo.TabIndex = 5;
+            this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
+            this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
+            this.txtVideo.Leave += new System.EventHandler(this.txtVideo_Leave);
+            // 
+            // customLine7
+            // 
+            this.customLine7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine7.LineColor = System.Drawing.Color.Black;
+            this.customLine7.LineWidth = 3;
+            this.customLine7.Location = new System.Drawing.Point(8, 26);
+            this.customLine7.Name = "customLine7";
+            this.customLine7.Size = new System.Drawing.Size(461, 3);
+            this.customLine7.TabIndex = 3;
+            this.customLine7.Text = "customLine7";
+            // 
+            // RGBSite
+            // 
+            this.RGBSite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBSite.BackColor = System.Drawing.Color.Transparent;
+            this.RGBSite.BackgroundColor = System.Drawing.Color.White;
+            this.RGBSite.BorderWidth = 2F;
+            this.RGBSite.Controls.Add(this.txtSite);
+            this.RGBSite.Controls.Add(this.customLine6);
+            this.RGBSite.CornerRadius = 12;
+            this.RGBSite.Location = new System.Drawing.Point(138, 213);
+            this.RGBSite.Name = "RGBSite";
+            this.RGBSite.Size = new System.Drawing.Size(477, 36);
+            this.RGBSite.TabIndex = 13;
+            this.RGBSite.TabStop = false;
+            // 
+            // txtSite
+            // 
+            this.txtSite.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSite.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSite.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSite.ForeColor = System.Drawing.Color.Gray;
+            this.txtSite.Location = new System.Drawing.Point(8, 6);
+            this.txtSite.MaxLength = 250;
+            this.txtSite.Name = "txtSite";
+            this.txtSite.Size = new System.Drawing.Size(461, 19);
+            this.txtSite.TabIndex = 5;
+            this.txtSite.Text = "Site do projeto";
+            this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
+            this.txtSite.Leave += new System.EventHandler(this.txtSite_Leave);
+            // 
+            // customLine6
+            // 
+            this.customLine6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine6.LineColor = System.Drawing.Color.Black;
+            this.customLine6.LineWidth = 3;
+            this.customLine6.Location = new System.Drawing.Point(8, 26);
+            this.customLine6.Name = "customLine6";
+            this.customLine6.Size = new System.Drawing.Size(461, 3);
+            this.customLine6.TabIndex = 3;
+            this.customLine6.Text = "customLine6";
+            // 
+            // RGBBreve
+            // 
+            this.RGBBreve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBBreve.BackColor = System.Drawing.Color.Transparent;
+            this.RGBBreve.BackgroundColor = System.Drawing.Color.White;
+            this.RGBBreve.BorderWidth = 2F;
+            this.RGBBreve.Controls.Add(this.txtDescricaoBreve);
+            this.RGBBreve.Controls.Add(this.lblcar5);
+            this.RGBBreve.Controls.Add(this.customLine5);
+            this.RGBBreve.CornerRadius = 12;
+            this.RGBBreve.Location = new System.Drawing.Point(138, 171);
+            this.RGBBreve.Name = "RGBBreve";
+            this.RGBBreve.Size = new System.Drawing.Size(477, 36);
+            this.RGBBreve.TabIndex = 12;
+            this.RGBBreve.TabStop = false;
+            // 
+            // txtDescricaoBreve
+            // 
+            this.txtDescricaoBreve.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDescricaoBreve.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescricaoBreve.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescricaoBreve.ForeColor = System.Drawing.Color.Gray;
+            this.txtDescricaoBreve.Location = new System.Drawing.Point(8, 6);
+            this.txtDescricaoBreve.MaxLength = 80;
+            this.txtDescricaoBreve.Name = "txtDescricaoBreve";
+            this.txtDescricaoBreve.Size = new System.Drawing.Size(400, 19);
+            this.txtDescricaoBreve.TabIndex = 5;
+            this.txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
+            this.txtDescricaoBreve.Enter += new System.EventHandler(this.txtDescricaoBreve_Enter);
+            this.txtDescricaoBreve.Leave += new System.EventHandler(this.txtDescricaoBreve_Leave);
+            // 
+            // lblcar5
+            // 
+            this.lblcar5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblcar5.AutoSize = true;
+            this.lblcar5.BackColor = System.Drawing.Color.Transparent;
+            this.lblcar5.Location = new System.Drawing.Point(420, 20);
+            this.lblcar5.Name = "lblcar5";
+            this.lblcar5.Size = new System.Drawing.Size(40, 13);
+            this.lblcar5.TabIndex = 4;
+            this.lblcar5.Text = "80 car.";
+            // 
+            // customLine5
+            // 
+            this.customLine5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine5.LineColor = System.Drawing.Color.Black;
+            this.customLine5.LineWidth = 3;
+            this.customLine5.Location = new System.Drawing.Point(8, 26);
+            this.customLine5.Name = "customLine5";
+            this.customLine5.Size = new System.Drawing.Size(400, 3);
+            this.customLine5.TabIndex = 3;
+            this.customLine5.Text = "customLine5";
+            // 
+            // RGBLinguagem
+            // 
+            this.RGBLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBLinguagem.BackColor = System.Drawing.Color.Transparent;
+            this.RGBLinguagem.BackgroundColor = System.Drawing.Color.White;
+            this.RGBLinguagem.BorderWidth = 2F;
+            this.RGBLinguagem.Controls.Add(this.txtLinguagem);
+            this.RGBLinguagem.Controls.Add(this.lblCar4);
+            this.RGBLinguagem.Controls.Add(this.customLine4);
+            this.RGBLinguagem.CornerRadius = 12;
+            this.RGBLinguagem.Location = new System.Drawing.Point(138, 129);
+            this.RGBLinguagem.Name = "RGBLinguagem";
+            this.RGBLinguagem.Size = new System.Drawing.Size(477, 36);
+            this.RGBLinguagem.TabIndex = 11;
+            this.RGBLinguagem.TabStop = false;
+            // 
+            // txtLinguagem
+            // 
+            this.txtLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLinguagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLinguagem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLinguagem.ForeColor = System.Drawing.Color.Gray;
+            this.txtLinguagem.Location = new System.Drawing.Point(8, 6);
+            this.txtLinguagem.MaxLength = 100;
+            this.txtLinguagem.Name = "txtLinguagem";
+            this.txtLinguagem.Size = new System.Drawing.Size(400, 19);
+            this.txtLinguagem.TabIndex = 5;
+            this.txtLinguagem.Text = "Linguagens de programação utilizadas";
+            this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
+            this.txtLinguagem.Leave += new System.EventHandler(this.txtLinguagem_Leave);
+            // 
+            // lblCar4
+            // 
+            this.lblCar4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblCar4.AutoSize = true;
+            this.lblCar4.BackColor = System.Drawing.Color.Transparent;
+            this.lblCar4.Location = new System.Drawing.Point(414, 20);
+            this.lblCar4.Name = "lblCar4";
+            this.lblCar4.Size = new System.Drawing.Size(46, 13);
+            this.lblCar4.TabIndex = 4;
+            this.lblCar4.Text = "100 car.";
+            // 
+            // customLine4
+            // 
+            this.customLine4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine4.LineColor = System.Drawing.Color.Black;
+            this.customLine4.LineWidth = 3;
+            this.customLine4.Location = new System.Drawing.Point(8, 26);
+            this.customLine4.Name = "customLine4";
+            this.customLine4.Size = new System.Drawing.Size(400, 3);
+            this.customLine4.TabIndex = 3;
+            this.customLine4.Text = "customLine4";
+            // 
+            // RGBAutores
+            // 
+            this.RGBAutores.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBAutores.BackColor = System.Drawing.Color.Transparent;
+            this.RGBAutores.BackgroundColor = System.Drawing.Color.White;
+            this.RGBAutores.BorderWidth = 2F;
+            this.RGBAutores.Controls.Add(this.txtAutores);
+            this.RGBAutores.Controls.Add(this.lblCar3);
+            this.RGBAutores.Controls.Add(this.customLine3);
+            this.RGBAutores.CornerRadius = 12;
+            this.RGBAutores.Location = new System.Drawing.Point(138, 87);
+            this.RGBAutores.Name = "RGBAutores";
+            this.RGBAutores.Size = new System.Drawing.Size(477, 36);
+            this.RGBAutores.TabIndex = 10;
+            this.RGBAutores.TabStop = false;
+            // 
+            // txtAutores
+            // 
+            this.txtAutores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAutores.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutores.ForeColor = System.Drawing.Color.Gray;
+            this.txtAutores.Location = new System.Drawing.Point(8, 6);
+            this.txtAutores.MaxLength = 150;
+            this.txtAutores.Name = "txtAutores";
+            this.txtAutores.Size = new System.Drawing.Size(400, 19);
+            this.txtAutores.TabIndex = 5;
+            this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
+            this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
+            this.txtAutores.Leave += new System.EventHandler(this.txtAutores_Leave);
+            // 
+            // lblCar3
+            // 
+            this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblCar3.AutoSize = true;
+            this.lblCar3.BackColor = System.Drawing.Color.Transparent;
+            this.lblCar3.Location = new System.Drawing.Point(414, 16);
+            this.lblCar3.Name = "lblCar3";
+            this.lblCar3.Size = new System.Drawing.Size(46, 13);
+            this.lblCar3.TabIndex = 4;
+            this.lblCar3.Text = "150 car.";
+            // 
+            // customLine3
+            // 
+            this.customLine3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine3.LineColor = System.Drawing.Color.Black;
+            this.customLine3.LineWidth = 3;
+            this.customLine3.Location = new System.Drawing.Point(8, 26);
+            this.customLine3.Name = "customLine3";
+            this.customLine3.Size = new System.Drawing.Size(400, 3);
+            this.customLine3.TabIndex = 3;
+            this.customLine3.Text = "customLine3";
+            // 
+            // RGBEmail
+            // 
+            this.RGBEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBEmail.BackColor = System.Drawing.Color.Transparent;
+            this.RGBEmail.BackgroundColor = System.Drawing.Color.White;
+            this.RGBEmail.BorderWidth = 2F;
+            this.RGBEmail.Controls.Add(this.txtEmail);
+            this.RGBEmail.Controls.Add(this.lblcar2);
+            this.RGBEmail.Controls.Add(this.customLine2);
+            this.RGBEmail.CornerRadius = 12;
+            this.RGBEmail.Location = new System.Drawing.Point(138, 45);
+            this.RGBEmail.Name = "RGBEmail";
+            this.RGBEmail.Size = new System.Drawing.Size(477, 36);
+            this.RGBEmail.TabIndex = 9;
+            this.RGBEmail.TabStop = false;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.Gray;
+            this.txtEmail.Location = new System.Drawing.Point(8, 6);
+            this.txtEmail.MaxLength = 256;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(400, 19);
+            this.txtEmail.TabIndex = 5;
+            this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
+            this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
+            // 
+            // lblcar2
+            // 
+            this.lblcar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblcar2.AutoSize = true;
+            this.lblcar2.BackColor = System.Drawing.Color.Transparent;
+            this.lblcar2.Location = new System.Drawing.Point(414, 18);
+            this.lblcar2.Name = "lblcar2";
+            this.lblcar2.Size = new System.Drawing.Size(46, 13);
+            this.lblcar2.TabIndex = 4;
+            this.lblcar2.Text = "256 car.";
+            // 
+            // customLine2
+            // 
+            this.customLine2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine2.LineColor = System.Drawing.Color.Black;
+            this.customLine2.LineWidth = 3;
+            this.customLine2.Location = new System.Drawing.Point(8, 26);
+            this.customLine2.Name = "customLine2";
+            this.customLine2.Size = new System.Drawing.Size(400, 3);
+            this.customLine2.TabIndex = 3;
+            this.customLine2.Text = "customLine2";
+            // 
+            // RGBNome
+            // 
+            this.RGBNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBNome.BackColor = System.Drawing.Color.Transparent;
+            this.RGBNome.BackgroundColor = System.Drawing.Color.White;
+            this.RGBNome.BorderWidth = 2F;
+            this.RGBNome.Controls.Add(this.txtNomeProjeto);
+            this.RGBNome.Controls.Add(this.lblcar1);
+            this.RGBNome.Controls.Add(this.customLine1);
+            this.RGBNome.CornerRadius = 12;
+            this.RGBNome.Location = new System.Drawing.Point(138, 3);
+            this.RGBNome.Name = "RGBNome";
+            this.RGBNome.Size = new System.Drawing.Size(477, 36);
+            this.RGBNome.TabIndex = 0;
+            this.RGBNome.TabStop = false;
+            // 
+            // txtNomeProjeto
+            // 
+            this.txtNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNomeProjeto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNomeProjeto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeProjeto.ForeColor = System.Drawing.Color.Gray;
+            this.txtNomeProjeto.Location = new System.Drawing.Point(8, 8);
+            this.txtNomeProjeto.MaxLength = 20;
+            this.txtNomeProjeto.Name = "txtNomeProjeto";
+            this.txtNomeProjeto.Size = new System.Drawing.Size(400, 19);
+            this.txtNomeProjeto.TabIndex = 2;
+            this.txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
+            this.txtNomeProjeto.Enter += new System.EventHandler(this.txtNomeProjeto_Enter);
+            this.txtNomeProjeto.Leave += new System.EventHandler(this.txtNomeProjeto_Leave);
+            // 
+            // lblcar1
+            // 
+            this.lblcar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblcar1.AutoSize = true;
+            this.lblcar1.BackColor = System.Drawing.Color.Transparent;
+            this.lblcar1.Location = new System.Drawing.Point(420, 18);
+            this.lblcar1.Name = "lblcar1";
+            this.lblcar1.Size = new System.Drawing.Size(40, 13);
+            this.lblcar1.TabIndex = 1;
+            this.lblcar1.Text = "20 car.";
+            // 
+            // customLine1
+            // 
+            this.customLine1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine1.LineColor = System.Drawing.Color.Black;
+            this.customLine1.LineWidth = 3;
+            this.customLine1.Location = new System.Drawing.Point(8, 28);
+            this.customLine1.Name = "customLine1";
+            this.customLine1.Size = new System.Drawing.Size(400, 3);
+            this.customLine1.TabIndex = 0;
+            this.customLine1.Text = "customLine1";
+            // 
             // lblNome
             // 
             this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -241,7 +636,7 @@
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(115, 32);
             this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Email para Contato:";
+            this.lblEmail.Text = "E-mail para Contato:";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblAutores
@@ -328,418 +723,6 @@
             this.lblPalavras.Text = "Palavras-Chave:";
             this.lblPalavras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TLPFilho2
-            // 
-            this.TLPFilho2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPFilho2.ColumnCount = 1;
-            this.TLPFilho2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPFilho2.Controls.Add(this.RGBDetalhada, 0, 0);
-            this.TLPFilho2.Controls.Add(this.RGBModelos, 0, 1);
-            this.TLPFilho2.Location = new System.Drawing.Point(633, 3);
-            this.TLPFilho2.Name = "TLPFilho2";
-            this.TLPFilho2.RowCount = 2;
-            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.TLPFilho2.Size = new System.Drawing.Size(625, 553);
-            this.TLPFilho2.TabIndex = 2;
-            // 
-            // TLPHead2
-            // 
-            this.TLPHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead2.ColumnCount = 1;
-            this.TLPHead2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead2.Controls.Add(this.RGBHead2, 0, 0);
-            this.TLPHead2.Location = new System.Drawing.Point(0, 60);
-            this.TLPHead2.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead2.Name = "TLPHead2";
-            this.TLPHead2.RowCount = 1;
-            this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead2.Size = new System.Drawing.Size(1267, 60);
-            this.TLPHead2.TabIndex = 3;
-            // 
-            // TLPHead1
-            // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.RGBHead1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1267, 60);
-            this.TLPHead1.TabIndex = 4;
-            // 
-            // RGBPalavras
-            // 
-            this.RGBPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBPalavras.AutoSize = true;
-            this.RGBPalavras.BackColor = System.Drawing.Color.Transparent;
-            this.RGBPalavras.BackgroundColor = System.Drawing.Color.White;
-            this.RGBPalavras.BorderWidth = 2F;
-            this.RGBPalavras.Controls.Add(this.txtPalavras);
-            this.RGBPalavras.CornerRadius = 12;
-            this.RGBPalavras.Location = new System.Drawing.Point(138, 297);
-            this.RGBPalavras.Name = "RGBPalavras";
-            this.RGBPalavras.Size = new System.Drawing.Size(477, 108);
-            this.RGBPalavras.TabIndex = 15;
-            this.RGBPalavras.TabStop = false;
-            // 
-            // txtPalavras
-            // 
-            this.txtPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPalavras.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPalavras.Location = new System.Drawing.Point(10, 8);
-            this.txtPalavras.MaxLength = 500;
-            this.txtPalavras.Multiline = true;
-            this.txtPalavras.Name = "txtPalavras";
-            this.txtPalavras.Size = new System.Drawing.Size(459, 89);
-            this.txtPalavras.TabIndex = 0;
-            // 
-            // RGBYoutube
-            // 
-            this.RGBYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBYoutube.BackColor = System.Drawing.Color.Transparent;
-            this.RGBYoutube.BackgroundColor = System.Drawing.Color.White;
-            this.RGBYoutube.BorderWidth = 2F;
-            this.RGBYoutube.Controls.Add(this.txtVideo);
-            this.RGBYoutube.Controls.Add(this.customLine7);
-            this.RGBYoutube.CornerRadius = 12;
-            this.RGBYoutube.Location = new System.Drawing.Point(138, 255);
-            this.RGBYoutube.Name = "RGBYoutube";
-            this.RGBYoutube.Size = new System.Drawing.Size(477, 36);
-            this.RGBYoutube.TabIndex = 14;
-            this.RGBYoutube.TabStop = false;
-            // 
-            // txtVideo
-            // 
-            this.txtVideo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtVideo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtVideo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVideo.Location = new System.Drawing.Point(8, 6);
-            this.txtVideo.MaxLength = 50;
-            this.txtVideo.Name = "txtVideo";
-            this.txtVideo.Size = new System.Drawing.Size(461, 19);
-            this.txtVideo.TabIndex = 5;
-            // 
-            // customLine7
-            // 
-            this.customLine7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine7.LineColor = System.Drawing.Color.Black;
-            this.customLine7.LineWidth = 3;
-            this.customLine7.Location = new System.Drawing.Point(8, 26);
-            this.customLine7.Name = "customLine7";
-            this.customLine7.Size = new System.Drawing.Size(461, 3);
-            this.customLine7.TabIndex = 3;
-            this.customLine7.Text = "customLine7";
-            // 
-            // RGBSite
-            // 
-            this.RGBSite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBSite.BackColor = System.Drawing.Color.Transparent;
-            this.RGBSite.BackgroundColor = System.Drawing.Color.White;
-            this.RGBSite.BorderWidth = 2F;
-            this.RGBSite.Controls.Add(this.txtSite);
-            this.RGBSite.Controls.Add(this.customLine6);
-            this.RGBSite.CornerRadius = 12;
-            this.RGBSite.Location = new System.Drawing.Point(138, 213);
-            this.RGBSite.Name = "RGBSite";
-            this.RGBSite.Size = new System.Drawing.Size(477, 36);
-            this.RGBSite.TabIndex = 13;
-            this.RGBSite.TabStop = false;
-            // 
-            // txtSite
-            // 
-            this.txtSite.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSite.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSite.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSite.Location = new System.Drawing.Point(8, 6);
-            this.txtSite.MaxLength = 250;
-            this.txtSite.Name = "txtSite";
-            this.txtSite.Size = new System.Drawing.Size(461, 19);
-            this.txtSite.TabIndex = 5;
-            // 
-            // customLine6
-            // 
-            this.customLine6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine6.LineColor = System.Drawing.Color.Black;
-            this.customLine6.LineWidth = 3;
-            this.customLine6.Location = new System.Drawing.Point(8, 26);
-            this.customLine6.Name = "customLine6";
-            this.customLine6.Size = new System.Drawing.Size(461, 3);
-            this.customLine6.TabIndex = 3;
-            this.customLine6.Text = "customLine6";
-            // 
-            // RGBBreve
-            // 
-            this.RGBBreve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBBreve.BackColor = System.Drawing.Color.Transparent;
-            this.RGBBreve.BackgroundColor = System.Drawing.Color.White;
-            this.RGBBreve.BorderWidth = 2F;
-            this.RGBBreve.Controls.Add(this.txtDescricaoBreve);
-            this.RGBBreve.Controls.Add(this.lblcar5);
-            this.RGBBreve.Controls.Add(this.customLine5);
-            this.RGBBreve.CornerRadius = 12;
-            this.RGBBreve.Location = new System.Drawing.Point(138, 171);
-            this.RGBBreve.Name = "RGBBreve";
-            this.RGBBreve.Size = new System.Drawing.Size(477, 36);
-            this.RGBBreve.TabIndex = 12;
-            this.RGBBreve.TabStop = false;
-            // 
-            // txtDescricaoBreve
-            // 
-            this.txtDescricaoBreve.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescricaoBreve.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescricaoBreve.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricaoBreve.Location = new System.Drawing.Point(8, 6);
-            this.txtDescricaoBreve.MaxLength = 80;
-            this.txtDescricaoBreve.Name = "txtDescricaoBreve";
-            this.txtDescricaoBreve.Size = new System.Drawing.Size(400, 19);
-            this.txtDescricaoBreve.TabIndex = 5;
-            // 
-            // lblcar5
-            // 
-            this.lblcar5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblcar5.AutoSize = true;
-            this.lblcar5.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar5.Location = new System.Drawing.Point(420, 20);
-            this.lblcar5.Name = "lblcar5";
-            this.lblcar5.Size = new System.Drawing.Size(40, 13);
-            this.lblcar5.TabIndex = 4;
-            this.lblcar5.Text = "80 car.";
-            // 
-            // customLine5
-            // 
-            this.customLine5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine5.LineColor = System.Drawing.Color.Black;
-            this.customLine5.LineWidth = 3;
-            this.customLine5.Location = new System.Drawing.Point(8, 26);
-            this.customLine5.Name = "customLine5";
-            this.customLine5.Size = new System.Drawing.Size(400, 3);
-            this.customLine5.TabIndex = 3;
-            this.customLine5.Text = "customLine5";
-            // 
-            // RGBLinguagem
-            // 
-            this.RGBLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBLinguagem.BackColor = System.Drawing.Color.Transparent;
-            this.RGBLinguagem.BackgroundColor = System.Drawing.Color.White;
-            this.RGBLinguagem.BorderWidth = 2F;
-            this.RGBLinguagem.Controls.Add(this.txtLinguagem);
-            this.RGBLinguagem.Controls.Add(this.lblCar4);
-            this.RGBLinguagem.Controls.Add(this.customLine4);
-            this.RGBLinguagem.CornerRadius = 12;
-            this.RGBLinguagem.Location = new System.Drawing.Point(138, 129);
-            this.RGBLinguagem.Name = "RGBLinguagem";
-            this.RGBLinguagem.Size = new System.Drawing.Size(477, 36);
-            this.RGBLinguagem.TabIndex = 11;
-            this.RGBLinguagem.TabStop = false;
-            // 
-            // txtLinguagem
-            // 
-            this.txtLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLinguagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLinguagem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLinguagem.Location = new System.Drawing.Point(8, 6);
-            this.txtLinguagem.MaxLength = 100;
-            this.txtLinguagem.Name = "txtLinguagem";
-            this.txtLinguagem.Size = new System.Drawing.Size(400, 19);
-            this.txtLinguagem.TabIndex = 5;
-            // 
-            // lblCar4
-            // 
-            this.lblCar4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblCar4.AutoSize = true;
-            this.lblCar4.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar4.Location = new System.Drawing.Point(414, 20);
-            this.lblCar4.Name = "lblCar4";
-            this.lblCar4.Size = new System.Drawing.Size(46, 13);
-            this.lblCar4.TabIndex = 4;
-            this.lblCar4.Text = "100 car.";
-            // 
-            // customLine4
-            // 
-            this.customLine4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine4.LineColor = System.Drawing.Color.Black;
-            this.customLine4.LineWidth = 3;
-            this.customLine4.Location = new System.Drawing.Point(8, 26);
-            this.customLine4.Name = "customLine4";
-            this.customLine4.Size = new System.Drawing.Size(400, 3);
-            this.customLine4.TabIndex = 3;
-            this.customLine4.Text = "customLine4";
-            // 
-            // RGBAutores
-            // 
-            this.RGBAutores.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBAutores.BackColor = System.Drawing.Color.Transparent;
-            this.RGBAutores.BackgroundColor = System.Drawing.Color.White;
-            this.RGBAutores.BorderWidth = 2F;
-            this.RGBAutores.Controls.Add(this.txtAutores);
-            this.RGBAutores.Controls.Add(this.lblCar3);
-            this.RGBAutores.Controls.Add(this.customLine3);
-            this.RGBAutores.CornerRadius = 12;
-            this.RGBAutores.Location = new System.Drawing.Point(138, 87);
-            this.RGBAutores.Name = "RGBAutores";
-            this.RGBAutores.Size = new System.Drawing.Size(477, 36);
-            this.RGBAutores.TabIndex = 10;
-            this.RGBAutores.TabStop = false;
-            // 
-            // txtAutores
-            // 
-            this.txtAutores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAutores.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutores.Location = new System.Drawing.Point(8, 6);
-            this.txtAutores.MaxLength = 150;
-            this.txtAutores.Name = "txtAutores";
-            this.txtAutores.Size = new System.Drawing.Size(400, 19);
-            this.txtAutores.TabIndex = 5;
-            // 
-            // lblCar3
-            // 
-            this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblCar3.AutoSize = true;
-            this.lblCar3.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar3.Location = new System.Drawing.Point(414, 16);
-            this.lblCar3.Name = "lblCar3";
-            this.lblCar3.Size = new System.Drawing.Size(46, 13);
-            this.lblCar3.TabIndex = 4;
-            this.lblCar3.Text = "150 car.";
-            // 
-            // customLine3
-            // 
-            this.customLine3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine3.LineColor = System.Drawing.Color.Black;
-            this.customLine3.LineWidth = 3;
-            this.customLine3.Location = new System.Drawing.Point(8, 26);
-            this.customLine3.Name = "customLine3";
-            this.customLine3.Size = new System.Drawing.Size(400, 3);
-            this.customLine3.TabIndex = 3;
-            this.customLine3.Text = "customLine3";
-            // 
-            // RGBEmail
-            // 
-            this.RGBEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBEmail.BackColor = System.Drawing.Color.Transparent;
-            this.RGBEmail.BackgroundColor = System.Drawing.Color.White;
-            this.RGBEmail.BorderWidth = 2F;
-            this.RGBEmail.Controls.Add(this.txtEmail);
-            this.RGBEmail.Controls.Add(this.lblcar2);
-            this.RGBEmail.Controls.Add(this.customLine2);
-            this.RGBEmail.CornerRadius = 12;
-            this.RGBEmail.Location = new System.Drawing.Point(138, 45);
-            this.RGBEmail.Name = "RGBEmail";
-            this.RGBEmail.Size = new System.Drawing.Size(477, 36);
-            this.RGBEmail.TabIndex = 9;
-            this.RGBEmail.TabStop = false;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(8, 6);
-            this.txtEmail.MaxLength = 256;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(400, 19);
-            this.txtEmail.TabIndex = 5;
-            // 
-            // lblcar2
-            // 
-            this.lblcar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblcar2.AutoSize = true;
-            this.lblcar2.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar2.Location = new System.Drawing.Point(414, 18);
-            this.lblcar2.Name = "lblcar2";
-            this.lblcar2.Size = new System.Drawing.Size(46, 13);
-            this.lblcar2.TabIndex = 4;
-            this.lblcar2.Text = "256 car.";
-            // 
-            // customLine2
-            // 
-            this.customLine2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine2.LineColor = System.Drawing.Color.Black;
-            this.customLine2.LineWidth = 3;
-            this.customLine2.Location = new System.Drawing.Point(8, 26);
-            this.customLine2.Name = "customLine2";
-            this.customLine2.Size = new System.Drawing.Size(400, 3);
-            this.customLine2.TabIndex = 3;
-            this.customLine2.Text = "customLine2";
-            // 
-            // RGBNome
-            // 
-            this.RGBNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBNome.BackColor = System.Drawing.Color.Transparent;
-            this.RGBNome.BackgroundColor = System.Drawing.Color.White;
-            this.RGBNome.BorderWidth = 2F;
-            this.RGBNome.Controls.Add(this.txtNomeProjeto);
-            this.RGBNome.Controls.Add(this.lblcar1);
-            this.RGBNome.Controls.Add(this.customLine1);
-            this.RGBNome.CornerRadius = 12;
-            this.RGBNome.Location = new System.Drawing.Point(138, 3);
-            this.RGBNome.Name = "RGBNome";
-            this.RGBNome.Size = new System.Drawing.Size(477, 36);
-            this.RGBNome.TabIndex = 0;
-            this.RGBNome.TabStop = false;
-            // 
-            // txtNomeProjeto
-            // 
-            this.txtNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNomeProjeto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomeProjeto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeProjeto.Location = new System.Drawing.Point(8, 8);
-            this.txtNomeProjeto.MaxLength = 20;
-            this.txtNomeProjeto.Name = "txtNomeProjeto";
-            this.txtNomeProjeto.Size = new System.Drawing.Size(400, 19);
-            this.txtNomeProjeto.TabIndex = 2;
-            // 
-            // lblcar1
-            // 
-            this.lblcar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblcar1.AutoSize = true;
-            this.lblcar1.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar1.Location = new System.Drawing.Point(420, 18);
-            this.lblcar1.Name = "lblcar1";
-            this.lblcar1.Size = new System.Drawing.Size(40, 13);
-            this.lblcar1.TabIndex = 1;
-            this.lblcar1.Text = "20 car.";
-            // 
-            // customLine1
-            // 
-            this.customLine1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine1.LineColor = System.Drawing.Color.Black;
-            this.customLine1.LineWidth = 3;
-            this.customLine1.Location = new System.Drawing.Point(8, 28);
-            this.customLine1.Name = "customLine1";
-            this.customLine1.Size = new System.Drawing.Size(400, 3);
-            this.customLine1.TabIndex = 0;
-            this.customLine1.Text = "customLine1";
-            // 
             // RGBCampos
             // 
             this.RGBCampos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -764,6 +747,17 @@
             this.RGBCampos.Size = new System.Drawing.Size(618, 109);
             this.RGBCampos.TabIndex = 3;
             this.RGBCampos.TabStop = false;
+            // 
+            // boxSemPrevisao
+            // 
+            this.boxSemPrevisao.AutoSize = true;
+            this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
+            this.boxSemPrevisao.Name = "boxSemPrevisao";
+            this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
+            this.boxSemPrevisao.TabIndex = 7;
+            this.boxSemPrevisao.Text = "Sem Previsão.";
+            this.boxSemPrevisao.UseVisualStyleBackColor = true;
+            this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
             // 
             // radioSim
             // 
@@ -852,6 +846,23 @@
             this.lblPrevi.TabIndex = 0;
             this.lblPrevi.Text = "Previsão de Conclusão:";
             // 
+            // TLPFilho2
+            // 
+            this.TLPFilho2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPFilho2.ColumnCount = 1;
+            this.TLPFilho2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPFilho2.Controls.Add(this.RGBDetalhada, 0, 0);
+            this.TLPFilho2.Controls.Add(this.RGBModelos, 0, 1);
+            this.TLPFilho2.Location = new System.Drawing.Point(633, 3);
+            this.TLPFilho2.Name = "TLPFilho2";
+            this.TLPFilho2.RowCount = 2;
+            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.TLPFilho2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.TLPFilho2.Size = new System.Drawing.Size(625, 553);
+            this.TLPFilho2.TabIndex = 2;
+            // 
             // RGBDetalhada
             // 
             this.RGBDetalhada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -875,11 +886,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDetalhada.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalhada.ForeColor = System.Drawing.Color.Gray;
             this.txtDetalhada.Location = new System.Drawing.Point(14, 31);
             this.txtDetalhada.Multiline = true;
             this.txtDetalhada.Name = "txtDetalhada";
             this.txtDetalhada.Size = new System.Drawing.Size(595, 285);
             this.txtDetalhada.TabIndex = 4;
+            this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
+    "horias...";
+            this.txtDetalhada.Enter += new System.EventHandler(this.txtDetalhada_Enter);
+            this.txtDetalhada.Leave += new System.EventHandler(this.txtDetalhada_Leave);
             // 
             // lblDetalhado
             // 
@@ -1011,6 +1027,22 @@
             this.radioScrum.Text = "Modelo Scrum.";
             this.radioScrum.UseVisualStyleBackColor = false;
             // 
+            // TLPHead2
+            // 
+            this.TLPHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead2.ColumnCount = 1;
+            this.TLPHead2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Controls.Add(this.RGBHead2, 0, 0);
+            this.TLPHead2.Location = new System.Drawing.Point(0, 60);
+            this.TLPHead2.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead2.Name = "TLPHead2";
+            this.TLPHead2.RowCount = 1;
+            this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Size = new System.Drawing.Size(1267, 60);
+            this.TLPHead2.TabIndex = 3;
+            // 
             // RGBHead2
             // 
             this.RGBHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1062,6 +1094,22 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.MouseEnter += new System.EventHandler(this.btnCancelar_MouseEnter);
             this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
+            // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.RGBHead1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1267, 60);
+            this.TLPHead1.TabIndex = 4;
             // 
             // RGBHead1
             // 
@@ -1146,17 +1194,6 @@
             this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
             this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
             // 
-            // boxSemPrevisao
-            // 
-            this.boxSemPrevisao.AutoSize = true;
-            this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
-            this.boxSemPrevisao.Name = "boxSemPrevisao";
-            this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
-            this.boxSemPrevisao.TabIndex = 7;
-            this.boxSemPrevisao.Text = "Sem Previsão.";
-            this.boxSemPrevisao.UseVisualStyleBackColor = true;
-            this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
-            // 
             // frmCriar_Projeto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1173,11 +1210,6 @@
             this.TLPFilho1.PerformLayout();
             this.TLPNeto1.ResumeLayout(false);
             this.TLPNeto1.PerformLayout();
-            this.TLPFilho2.ResumeLayout(false);
-            this.TLPHead2.ResumeLayout(false);
-            this.TLPHead2.PerformLayout();
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
             this.RGBPalavras.ResumeLayout(false);
             this.RGBPalavras.PerformLayout();
             this.RGBYoutube.ResumeLayout(false);
@@ -1196,12 +1228,17 @@
             this.RGBNome.PerformLayout();
             this.RGBCampos.ResumeLayout(false);
             this.RGBCampos.PerformLayout();
+            this.TLPFilho2.ResumeLayout(false);
             this.RGBDetalhada.ResumeLayout(false);
             this.RGBDetalhada.PerformLayout();
             this.RGBModelos.ResumeLayout(false);
             this.TLPOpcoes.ResumeLayout(false);
             this.TLPOpcoes.PerformLayout();
+            this.TLPHead2.ResumeLayout(false);
+            this.TLPHead2.PerformLayout();
             this.RGBHead2.ResumeLayout(false);
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
             this.RGBHead1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();

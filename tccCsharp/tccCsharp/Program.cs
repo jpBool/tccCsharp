@@ -27,6 +27,7 @@ namespace tccCsharp
         public static int[] CorTexto2 = new int[3] { 255, 255, 255 };
 
         public static int[] CorAviso1 = new int[3] { 204, 255, 51 };
+        public static int[] CorAviso2 = new int[3] { 242, 92, 84 };
 
         [STAThread]
         static void Main()
@@ -34,7 +35,7 @@ namespace tccCsharp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new frmCriar_Projeto());
+            Application.Run(new frmCriar_Projeto());
             Application.Run(new frmLogin());
             //Application.Run(new frmPersonalizacao());
         }

@@ -81,11 +81,326 @@ namespace tccCsharp
             return null;
         }
 
+        public void LimparCampos()
+        {
+            if (txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
+            {
+                txtNomeProjeto.Clear();
+                return;
+            }
+            if (txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
+            {
+                txtDescricaoBreve.Clear();
+                return;
+            }
+            if (txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
+            {
+                txtPalavras.Clear();
+            }
+            if (txtEmail.Text == "E-mail para que enteressados entrem em contato")
+            {
+                txtEmail.Clear();
+            }
+            if (txtAutores.Text == "Nome dos responsáveis pelo projeto")
+            {
+                txtAutores.Clear();
+            }
+            if (txtLinguagem.Text == "Linguagens de programação utilizadas")
+            {
+                txtLinguagem.Clear();
+            }
+            if (txtSite.Text == "Site do projeto")
+            {
+                txtSite.Clear();
+            }
+            if (txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
+            {
+                txtVideo.Clear();
+            }
+            if (txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
+            {
+                txtDetalhada.Clear();
+            }
+        }
+
         private void frmCriar_Projeto_Load(object sender, EventArgs e)
         {
             TLP_Mãe.Font = new Font("Arial", 9);
             WindowState = FormWindowState.Maximized;
             doDesign();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCriar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+            
+            Project Novo = new Project();
+
+            if (String.IsNullOrEmpty(txtNomeProjeto.Text))
+            {
+                txtNomeProjeto.Focus();
+                txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+            else
+                Novo.nome_projeto = txtNomeProjeto.Text;
+
+            if (String.IsNullOrEmpty(txtDescricaoBreve.Text))
+            {
+                txtDescricaoBreve.Focus();
+                txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+                customLine5.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+            else
+                Novo.descricao_breve = txtDescricaoBreve.Text;
+
+            if (String.IsNullOrEmpty(txtEmail.Text))
+                Novo.email_contato = null;
+            else
+                Novo.email_contato = txtEmail.Text;
+
+            if (String.IsNullOrEmpty(txtAutores.Text))
+                Novo.autores = null;
+            else
+                Novo.autores = txtAutores.Text;
+
+            if (String.IsNullOrEmpty(txtLinguagem.Text))
+                Novo.linguagem = null;
+            else Novo.linguagem = txtLinguagem.Text;
+
+            if (String.IsNullOrEmpty(txtSite.Text))
+                Novo.link_site = null;
+            else
+                Novo.link_site = txtSite.Text;
+
+            if (String.IsNullOrEmpty(txtVideo.Text))
+                Novo.link_youtube = null;
+            else 
+                Novo.link_youtube = txtVideo.Text;
+
+            if (String.IsNullOrEmpty(txtPalavras.Text))
+                Novo.palavras_chave = null;
+            else
+                Novo.palavras_chave = PalavrasChave();
+
+            if (boxSemPrevisao.Checked == true)
+                Novo.previsao = new DateTime(1, 1, 1);
+            else
+                Novo.previsao = dtpPrevisao.Value;
+
+            //Novo.status = comboStatus.SelectedIndex;
+            Novo.status = 0;
+
+            if (radioSim.Checked == true)
+                Novo.publico = true;
+            else
+                Novo.publico = false;
+
+            if (String.IsNullOrEmpty(txtDetalhada.Text))
+                Novo.descricao_detalhada = null;
+            else
+                Novo.descricao_detalhada = txtDetalhada.Text;
+
+            if (Program.id_usuario == 0)
+            {
+                MessageBox.Show("Ocorreu um erro ao resgatar suas informações!!!", "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+                Novo.id_criador = Program.id_usuario;
+
+            Novo.porcentagem = 0;
+            Novo.data_criacao = DateTime.Today;
+            Novo.data_atualizacao = DateTime.Now;
+            Novo.atualizador = Program.id_usuario;
+            Novo.excluido = false;
+            Novo.numero_grupos = 0;
+
+            //Banco.InserirProjeto(Novo);
+            this.Close();
+        }
+
+        private void boxSemPrevisao_CheckedChanged(object sender, EventArgs e)
+        { 
+            if (boxSemPrevisao.Checked == true)
+                dtpPrevisao.Visible = false;
+            else
+                dtpPrevisao.Visible = true;
+        }
+
+        //TEXTBOX FOCUS ENTER
+
+        private void txtPalavras_Enter(object sender, EventArgs e)
+        {
+            if (txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
+            {
+                txtPalavras.Clear();
+                txtPalavras.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtNomeProjeto_Enter(object sender, EventArgs e)
+        {
+            if (txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
+            {
+                txtNomeProjeto.Clear();
+                txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == "E-mail para que enteressados entrem em contato")
+            {
+                txtEmail.Clear();
+                txtEmail.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtAutores_Enter(object sender, EventArgs e)
+        {
+            if (txtAutores.Text == "Nome dos responsáveis pelo projeto")
+            {
+                txtAutores.Clear();
+                txtAutores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtLinguagem_Enter(object sender, EventArgs e)
+        {
+            if (txtLinguagem.Text == "Linguagens de programação utilizadas")
+            {
+                txtLinguagem.Clear();
+                txtLinguagem.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtDescricaoBreve_Enter(object sender, EventArgs e)
+        {
+            if (txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
+            {
+                txtDescricaoBreve.Clear();
+                txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtSite_Enter(object sender, EventArgs e)
+        {
+            if (txtSite.Text == "Site do projeto")
+            {
+                txtSite.Clear();
+                txtSite.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtVideo_Enter(object sender, EventArgs e)
+        {
+            if (txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
+            {
+                txtVideo.Clear();
+                txtVideo.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        private void txtDetalhada_Enter(object sender, EventArgs e)
+        {
+            if (txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
+            {
+                txtDetalhada.Clear();
+                txtDetalhada.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+        }
+
+        //TEXTBOX FOCUS LEAVE
+
+        private void txtPalavras_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtPalavras.Text))
+            {
+                txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
+                txtPalavras.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtNomeProjeto_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtNomeProjeto.Text))
+            {
+                txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
+                txtNomeProjeto.ForeColor = Color.Gray;
+            }
+            customLine1.LineColor = Color.Black;
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtEmail.Text))
+            {
+                txtEmail.Text = "E-mail para que enteressados entrem em contato";
+                txtEmail.ForeColor = Color.Gray;
+            }
+        }    
+
+        private void txtAutores_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtAutores.Text))
+            {
+                txtAutores.Text = "Nome dos responsáveis pelo projeto";
+                txtAutores.ForeColor = Color.Gray;
+            }
+        }
+       
+        private void txtLinguagem_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtLinguagem.Text))
+            {
+                txtLinguagem.Text = "Linguagens de programação utilizadas";
+                txtLinguagem.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtDescricaoBreve_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtDescricaoBreve.Text))
+            {
+                txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
+                txtDescricaoBreve.ForeColor = Color.Gray;
+            }
+            customLine5.LineColor = Color.Black;
+        }    
+
+        private void txtSite_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtSite.Text))
+            {
+                txtSite.Text = "Site do projeto";
+                txtSite.ForeColor = Color.Gray;
+            }
+        } 
+
+        private void txtVideo_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtVideo.Text))
+            {
+                txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
+                txtVideo.ForeColor = Color.Gray;
+            }
+        }    
+
+        private void txtDetalhada_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtDetalhada.Text))
+            {
+                txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...";
+                txtDetalhada.ForeColor = Color.Gray;
+            }
         }
 
         //MOUSE ENTER
@@ -148,99 +463,6 @@ namespace tccCsharp
         {
             OPBConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBConfiguracoes.Refresh();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCriar_Click(object sender, EventArgs e)
-        {
-            Project Novo = new Project();
-
-            if (String.IsNullOrEmpty(txtNomeProjeto.Text))
-                return;
-            else
-                Novo.nome_projeto = txtNomeProjeto.Text;
-
-            if (String.IsNullOrEmpty(txtEmail.Text))
-                Novo.email_contato = null;
-            else
-                Novo.email_contato = txtEmail.Text;
-
-            if (String.IsNullOrEmpty(txtAutores.Text))
-                Novo.autores = null;
-            else
-                Novo.autores = txtAutores.Text;
-
-            if (String.IsNullOrEmpty(txtLinguagem.Text))
-                Novo.linguagem = null;
-            else Novo.linguagem = txtLinguagem.Text;
-
-            if (String.IsNullOrEmpty(txtDescricaoBreve.Text))
-                return;
-            else
-                Novo.descricao_breve = txtDescricaoBreve.Text;
-
-            if (String.IsNullOrEmpty(txtSite.Text))
-                Novo.link_site = null;
-            else
-                Novo.link_site = txtSite.Text;
-
-            if (String.IsNullOrEmpty(txtVideo.Text))
-                Novo.link_youtube = null;
-            else 
-                Novo.link_youtube = txtVideo.Text;
-
-            if (String.IsNullOrEmpty(txtPalavras.Text))
-                Novo.palavras_chave = null;
-            else
-                Novo.palavras_chave = PalavrasChave();
-
-            if (boxSemPrevisao.Checked == true)
-                Novo.previsao = new DateTime(1, 1, 1);
-            else
-                Novo.previsao = dtpPrevisao.Value;
-
-            //Novo.status = comboStatus.SelectedIndex;
-            Novo.status = 0;
-
-            if (radioSim.Checked == true)
-                Novo.publico = true;
-            else
-                Novo.publico = false;
-
-            if (String.IsNullOrEmpty(txtDetalhada.Text))
-                Novo.descricao_detalhada = null;
-            else
-                Novo.descricao_detalhada = txtDetalhada.Text;
-
-            if (Program.id_usuario == 0)
-            {
-                MessageBox.Show("Ocorreu um erro ao resgatar suas informações!!!", "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else
-                Novo.id_criador = Program.id_usuario;
-
-            Novo.porcentagem = 0;
-            Novo.data_criacao = DateTime.Today;
-            Novo.data_atualizacao = DateTime.Now;
-            Novo.atualizador = Program.id_usuario;
-            Novo.excluido = false;
-            Novo.numero_grupos = 0;
-
-            Banco.InserirProjeto(Novo);
-            this.Close();
-        }
-
-        private void boxSemPrevisao_CheckedChanged(object sender, EventArgs e)
-        { 
-            if (boxSemPrevisao.Checked == true)
-                dtpPrevisao.Visible = false;
-            else
-                dtpPrevisao.Visible = true;
         }
     }
 }
