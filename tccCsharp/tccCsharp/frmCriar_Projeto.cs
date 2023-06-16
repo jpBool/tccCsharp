@@ -78,7 +78,51 @@ namespace tccCsharp
 
         public string PalavrasChave()
         {
-            return null;
+            String PalavrasEntra = txtPalavras.Text;
+            Boolean EspaçoDuplo = true;
+            Boolean InicioPalavra = true;
+            String Palavras = "";
+
+            PalavrasEntra = PalavrasEntra.Replace("\n", "");
+            PalavrasEntra = PalavrasEntra.Replace("\t", "");
+            PalavrasEntra = PalavrasEntra.Replace(";", " ");
+            PalavrasEntra = PalavrasEntra.Replace(",", "");
+            PalavrasEntra = PalavrasEntra.Replace(".", "");
+            PalavrasEntra = PalavrasEntra.Replace("'", "");
+            PalavrasEntra = PalavrasEntra.Replace("\"", "");
+
+            foreach (char c in PalavrasEntra)
+            {
+                if (c == ' ')
+                {
+                    if (EspaçoDuplo == false)
+                    {
+                        Palavras += c;
+                        InicioPalavra = true;
+                    }
+                    EspaçoDuplo = true;
+                }
+                else
+                {
+                    if (InicioPalavra == true)
+                    {
+                        Palavras += char.ToUpper(c);
+                    }
+                    else
+                    {
+                        Palavras += c;
+                    }
+                    EspaçoDuplo = false;
+                    InicioPalavra = false;
+                }
+            }
+
+            Palavras = Palavras.Replace(" ", "; ");
+            Palavras = Palavras.TrimEnd(' ');
+            Palavras = Palavras.TrimEnd(';');
+            Palavras += ".";
+
+            return Palavras;
         }
 
         public void LimparCampos()
@@ -326,6 +370,10 @@ namespace tccCsharp
             {
                 txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
                 txtPalavras.ForeColor = Color.Gray;
+            }
+            else
+            {
+                txtPalavras.Text = PalavrasChave();
             }
         }
 
