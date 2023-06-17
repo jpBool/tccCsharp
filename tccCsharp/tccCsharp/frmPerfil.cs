@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+#pragma warning disable IDE1006
+
 
 namespace tccCsharp
 {
@@ -19,7 +21,7 @@ namespace tccCsharp
             InitializeComponent();
         }
 
-        public void refresh_projects(List<Project> projetos)
+        public void Refresh_projects(List<Project> projetos)
         {
             if (X == 0)
                 btnVoltar.Enabled = false;
@@ -71,7 +73,7 @@ namespace tccCsharp
             }
         }
 
-        public void doDesign()
+        public void DoDesign()
         {
             TLP_Mãe.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             TLP_Filha1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
@@ -158,9 +160,9 @@ namespace tccCsharp
 
         private void frmPerfil_Load(object sender, EventArgs e)
         {
-            refresh_projects(Program.projetos);
+            Refresh_projects(Program.projetos);
             WindowState = FormWindowState.Maximized;
-            doDesign();
+            DoDesign();
 
             User usuario = new User();
             Banco.CarregaPerfil(usuario);
@@ -232,12 +234,12 @@ namespace tccCsharp
         private void btnAvancar_Click(object sender, EventArgs e)
         {
             X += 3;
-            refresh_projects(Program.projetos);
+            Refresh_projects(Program.projetos);
         }
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             X -= 3;
-            refresh_projects(Program.projetos);
+            Refresh_projects(Program.projetos);
         }
         private void OPBLogout_Click(object sender, EventArgs e)
         {
@@ -256,7 +258,7 @@ namespace tccCsharp
         }
         private void opbRecarregar_Click(object sender, EventArgs e)
         {
-            doDesign();
+            DoDesign();
         }
 
         private void lblAdicionar_Click(object sender, EventArgs e)

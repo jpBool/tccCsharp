@@ -1075,7 +1075,7 @@
             this.btnCriar.TabIndex = 1;
             this.btnCriar.Text = "CRIAR PROJETO";
             this.btnCriar.UseVisualStyleBackColor = true;
-            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
+            this.btnCriar.Click += new System.EventHandler(this.BtnCriar_Click);
             this.btnCriar.MouseEnter += new System.EventHandler(this.btnCriar_MouseEnter);
             this.btnCriar.MouseLeave += new System.EventHandler(this.btnCriar_MouseLeave);
             // 

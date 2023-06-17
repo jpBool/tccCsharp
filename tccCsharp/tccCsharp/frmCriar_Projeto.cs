@@ -7,18 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+#pragma warning disable IDE1006
 
 namespace tccCsharp
 {
     public partial class frmCriar_Projeto : Form
     {
-        List<GroupSteps> grupos = new List<GroupSteps>();
+        public List<GroupSteps> grupos = new List<GroupSteps>();
         public frmCriar_Projeto()
         {
             InitializeComponent();
         }
 
-        public void doDesign()
+        public void DoDesign()
         {
             TLPHead1.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             RGBHead1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -231,7 +232,7 @@ namespace tccCsharp
         {
             TLP_Mãe.Font = new Font("Arial", 9);
             WindowState = FormWindowState.Maximized;
-            doDesign();
+            DoDesign();
 
             if(Program.lista_status.Count == 0)
                 Program.lista_status = Banco.CarregaStatus();
@@ -241,7 +242,7 @@ namespace tccCsharp
             comboStatus.DisplayMember = "status";
         }
 
-        private void btnCriar_Click(object sender, EventArgs e)
+        private void BtnCriar_Click(object sender, EventArgs e)
         {
             LimparCampos();
             

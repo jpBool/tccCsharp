@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+#pragma warning disable IDE1006
 
 namespace tccCsharp
 {
@@ -30,7 +31,7 @@ namespace tccCsharp
             {
                 return;
             }
-            Program.id_usuario = Banco.logar(email, senha);
+            Program.id_usuario = Banco.Logar(email, senha);
             if(Program.id_usuario == 0)
             {
                 //E-mail ou senha incorretos

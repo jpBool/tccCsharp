@@ -78,7 +78,7 @@ namespace tccCsharp
             }
         }
 
-        public static int logar(string email, string senha)
+        public static int Logar(string email, string senha)
         {
             string sql;
             try
