@@ -12,6 +12,7 @@ namespace tccCsharp
 {
     public partial class frmCriar_Projeto : Form
     {
+        List<GroupSteps> grupos = new List<GroupSteps>();
         public frmCriar_Projeto()
         {
             InitializeComponent();
@@ -137,6 +138,11 @@ namespace tccCsharp
                 txtDescricaoBreve.Clear();
                 return;
             }
+            if (comboStatus.SelectedIndex == -1)
+            {
+                return;
+            }
+
             if (txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
             {
                 txtPalavras.Clear();
@@ -167,16 +173,84 @@ namespace tccCsharp
             }
         }
 
+        string JuntarGrupos(List<GroupSteps> grupos, string separador)
+        {
+            List<string> nomesGrupos = new List<string>();
+
+            foreach (var grupo in grupos)
+            {
+                nomesGrupos.Add(grupo.nome_grupo);
+            }
+
+            string resultado = string.Join(separador, nomesGrupos);
+
+            return resultado;
+        }
+
+        void AdicionarGrupo(string nomeGrupo, bool mostrarPorcentagem, int ordenador)
+        {
+            GroupSteps grupo = new GroupSteps()
+            {
+                id_projeto = Program.id_projeto_atual,
+                porcentagem = 0,
+                numero_etapas = 0,
+                excluido = false,
+                nome_grupo = nomeGrupo,
+                mostrar_porcentagem = mostrarPorcentagem,
+                ordenador = ordenador
+            };
+
+            grupos.Add(grupo);
+        }
+
+
+        public void ModelosEtapa ()
+        {
+            if (radioSemModelos.Checked == true)
+            {
+                AdicionarGrupo("Grupo 1", false, 1);
+            }
+            else if (radioKanban.Checked == true)
+            {
+                AdicionarGrupo("To Do", false, 1);
+                AdicionarGrupo("Doing", true, 2);
+                AdicionarGrupo("Testing", true, 3);
+                AdicionarGrupo("Done", false, 4);
+            }
+            else if (radioScrum.Checked == true)
+            {
+                AdicionarGrupo("Product Backlog", false, 1);
+                AdicionarGrupo("Sprint 1", true, 2);
+                AdicionarGrupo("Sprint 2", true, 3);
+            }
+            else if (radioEquipes.Checked == true)
+            {
+                AdicionarGrupo("Tarefas da equipe 1", true, 1);
+                AdicionarGrupo("Tarefas da equipe 2", true, 2);
+            }
+            else if (radioPrazos.Checked == true)
+            {
+                AdicionarGrupo("Tarefas dessa semana", true, 1);
+                AdicionarGrupo("Tarefas da próxima semana", true, 2);
+                AdicionarGrupo("Tarefas futuras", true, 3);
+                AdicionarGrupo("Tarefas concluídas", true, 4);
+            }
+
+            Banco.InserirMultiplo(grupos);
+        }
+
         private void frmCriar_Projeto_Load(object sender, EventArgs e)
         {
             TLP_Mãe.Font = new Font("Arial", 9);
             WindowState = FormWindowState.Maximized;
             doDesign();
-        }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
+            if(Program.lista_status.Count == 0)
+                Program.lista_status = Banco.CarregaStatus();
 
+            comboStatus.DataSource = Program.lista_status;
+            comboStatus.ValueMember = "id_status";
+            comboStatus.DisplayMember = "status";
         }
 
         private void btnCriar_Click(object sender, EventArgs e)
@@ -204,6 +278,16 @@ namespace tccCsharp
             }
             else
                 Novo.descricao_breve = txtDescricaoBreve.Text;
+
+            if (comboStatus.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecione um Status", "Criando Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                comboStatus.Focus();
+                return;
+            }
+                
+            else
+            Novo.status = comboStatus.SelectedIndex + 1;
 
             if (String.IsNullOrEmpty(txtEmail.Text))
                 Novo.email_contato = null;
@@ -239,9 +323,6 @@ namespace tccCsharp
             else
                 Novo.previsao = dtpPrevisao.Value;
 
-            //Novo.status = comboStatus.SelectedIndex;
-            Novo.status = 0;
-
             if (radioSim.Checked == true)
                 Novo.publico = true;
             else
@@ -267,7 +348,10 @@ namespace tccCsharp
             Novo.excluido = false;
             Novo.numero_grupos = 0;
 
-            //Banco.InserirProjeto(Novo);
+            Program.id_projeto_atual = Banco.InserirProjeto(Novo);
+            ModelosEtapa();
+
+            MessageBox.Show("Projeto criado com sucesso");
             this.Close();
         }
 
@@ -511,6 +595,12 @@ namespace tccCsharp
         {
             OPBConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBConfiguracoes.Refresh();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            ModelosEtapa();
+            txtDetalhada.Text = JuntarGrupos(grupos, " 8 ");
         }
     }
 }

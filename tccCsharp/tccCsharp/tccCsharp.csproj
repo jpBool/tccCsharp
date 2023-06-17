@@ -140,6 +140,7 @@
     <Compile Include="frmPersonalizacao.Designer.cs">
       <DependentUpon>frmPersonalizacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="GroupSteps.cs" />
     <Compile Include="OvalPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -152,6 +153,7 @@
     <Compile Include="RoundedGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Status.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Coisas.resx">
       <DependentUpon>Coisas.cs</DependentUpon>

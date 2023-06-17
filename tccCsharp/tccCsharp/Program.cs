@@ -14,6 +14,8 @@ namespace tccCsharp
         /// 
         public static int id_usuario = 0;
         public static List<Project> projetos = new List<Project>();
+        public static List<Status> lista_status = new List<Status>();
+        public static int id_projeto_atual;
 
         public static int[] Cor1 = new int[3] { 0, 0, 0 };
         public static int[] Cor2 = new int[3] { 16, 39, 62 };
@@ -35,7 +37,7 @@ namespace tccCsharp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new frmCriar_Projeto());
+            //Application.Run(new frmCriar_Projeto());
             Application.Run(new frmLogin());
             //Application.Run(new frmPersonalizacao());
         }

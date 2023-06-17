@@ -57,6 +57,21 @@ namespace tccCsharp
             }
             catch (NpgsqlException ex)
             {
+                throw new ApplicationException(ex.Message);
+            }
+        }
+
+        //Select simples retornando um DataReader
+        public static NpgsqlDataReader selecionar(string sql)
+        {
+            try
+            {
+                conectar();
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            }
+            catch (NpgsqlException ex)
+            {
                 desconectar();
                 throw new ApplicationException(ex.Message);
             }
@@ -80,21 +95,25 @@ namespace tccCsharp
                     MessageBox.Show("Bom dia " + dr["nome"].ToString() + " !!! Acesso autorizado ao sistema !!!");
                     int id = Convert.ToInt32(dr["id_usuario"]);
                     dr.Close();
-                    return id;                   
+                    return id;
                 }
                 else
                 {
-                    MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!","Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!", "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     dr.Close();
                     return 0;
-                    
+
                 }
-                
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro ao logar no sistema !!!" + "\n\nMais detalhes: " + ex.Message,"Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocorreu um erro ao logar no sistema !!!" + "\n\nMais detalhes: " + ex.Message, "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return -1;
+            }
+            finally
+            {
+                desconectar();
             }
         }
 
@@ -140,6 +159,10 @@ namespace tccCsharp
             {
                 MessageBox.Show("Ocorreu um erro ao carregar as informações do usuário !!!" + "\n\nMais detalhes: " + ex.Message, "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                desconectar();
+            }
             return usuario;
         }
 
@@ -150,89 +173,93 @@ namespace tccCsharp
             {
                 sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
 
-                
+
                 List<object> param = new List<object>();
                 param.Add(Program.id_usuario);
-               
+
                 NpgsqlDataReader dr = Banco.selecionar(sql, param);
-                
-              
-                    while(dr.Read())
-                    {
-                        Project linha = new Project();
-                        linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
-                        linha.id_criador = Convert.ToInt32(dr["id_criador"]);
-                        
-                        if (dr["autores"] != DBNull.Value)
-                            linha.autores = dr["autores"].ToString();
-                        
-                        if (dr["email_contato"] != DBNull.Value)
-                            linha.email_contato = dr["email_contato"].ToString();
-                        
-                        linha.nome_projeto = dr["nome_projeto"].ToString();
-                        
-                        if (dr["palavras_chave"] != DBNull.Value)
-                            linha.palavras_chave = dr["palavras_chave"].ToString();
-                        
-                        if (dr["publico"] != DBNull.Value)
-                            linha.publico = Convert.ToBoolean(dr["publico"]);
-                        else
-                            linha.publico = false;
-                        
-                        linha.descricao_breve = dr["descricao_breve"].ToString();
-                        
-                        if (dr["descricao_detalhada"] != DBNull.Value)
-                            linha.descricao_detalhada = dr["descricao_detalhada"].ToString();
-                        
-                        if (dr["link_site"] != DBNull.Value)
-                            linha.link_site = dr["link_site"].ToString();
-                        
-                        if (dr["link_youtube"] != DBNull.Value)
-                            linha.link_youtube = dr["link_youtube"].ToString();
-                            
-                        if (dr["status"] != DBNull.Value)
-                            linha.status = Convert.ToInt32(dr["status"]);
-                        else
-                            linha.status = 1;
-                       
-                        if (dr["porcentagem"] != DBNull.Value)
-                            linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
-                        else
-                            linha.porcentagem = 0;
 
-                        linha.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
-                        
-                        if (dr["data_atualizacao"] != DBNull.Value)
-                            linha.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
-                        
-                        if (dr["atualizador"] != DBNull.Value)
-                            linha.atualizador = Convert.ToInt32(dr["atualizador"]);
-                        
-                        linha.excluido = Convert.ToBoolean(dr["excluido"]);
-                        
-                        if (dr["linguagem"] != DBNull.Value)
-                            linha.linguagem = dr["linguagem"].ToString();
-                        
-                        if (dr["previsao"] != DBNull.Value)
-                            linha.previsao = Convert.ToDateTime(dr["previsao"]);
 
-                        if (dr["num_grupos"] != DBNull.Value)
-                            linha.numero_grupos = Convert.ToInt32(dr["num_grupos"]);
+                while (dr.Read())
+                {
+                    Project linha = new Project();
+                    linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
+                    linha.id_criador = Convert.ToInt32(dr["id_criador"]);
+
+                    if (dr["autores"] != DBNull.Value)
+                        linha.autores = dr["autores"].ToString();
+
+                    if (dr["email_contato"] != DBNull.Value)
+                        linha.email_contato = dr["email_contato"].ToString();
+
+                    linha.nome_projeto = dr["nome_projeto"].ToString();
+
+                    if (dr["palavras_chave"] != DBNull.Value)
+                        linha.palavras_chave = dr["palavras_chave"].ToString();
+
+                    if (dr["publico"] != DBNull.Value)
+                        linha.publico = Convert.ToBoolean(dr["publico"]);
+                    else
+                        linha.publico = false;
+
+                    linha.descricao_breve = dr["descricao_breve"].ToString();
+
+                    if (dr["descricao_detalhada"] != DBNull.Value)
+                        linha.descricao_detalhada = dr["descricao_detalhada"].ToString();
+
+                    if (dr["link_site"] != DBNull.Value)
+                        linha.link_site = dr["link_site"].ToString();
+
+                    if (dr["link_youtube"] != DBNull.Value)
+                        linha.link_youtube = dr["link_youtube"].ToString();
+
+                    if (dr["status"] != DBNull.Value)
+                        linha.status = Convert.ToInt32(dr["status"]);
+                    else
+                        linha.status = 1;
+
+                    if (dr["porcentagem"] != DBNull.Value)
+                        linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
+                    else
+                        linha.porcentagem = 0;
+
+                    linha.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
+
+                    if (dr["data_atualizacao"] != DBNull.Value)
+                        linha.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
+
+                    if (dr["atualizador"] != DBNull.Value)
+                        linha.atualizador = Convert.ToInt32(dr["atualizador"]);
+
+                    linha.excluido = Convert.ToBoolean(dr["excluido"]);
+
+                    if (dr["linguagem"] != DBNull.Value)
+                        linha.linguagem = dr["linguagem"].ToString();
+
+                    if (dr["previsao"] != DBNull.Value)
+                        linha.previsao = Convert.ToDateTime(dr["previsao"]);
+
+                    if (dr["num_grupos"] != DBNull.Value)
+                        linha.numero_grupos = Convert.ToInt32(dr["num_grupos"]);
 
                     projetos.Add(linha);
-                    };
-                    dr.Close();
-                    return projetos;       
+                };
+                dr.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ocorreu um erro ao carregar seus projetos!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return projetos;
             }
+            finally
+            {
+                desconectar();
+            }
+            return projetos;
         }
 
-        public static void InserirProjeto(Project Novo)
+        public static int InserirProjeto(Project Novo)
         {
+            int idInserido;
             try
             {
                 conectar();
@@ -240,7 +267,7 @@ namespace tccCsharp
                 sql += "palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, ";
                 sql += "link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, ";
                 sql += "excluido, linguagem, previsao, num_grupos) VALUES ";
-                sql += "(@1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15, @16, @17, @18, @19)";
+                sql += "(@1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15, @16, @17, @18, @19) RETURNING id_projeto";
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", Novo.id_criador);
@@ -263,8 +290,83 @@ namespace tccCsharp
                 cmd.Parameters.AddWithValue("@18", Novo.previsao == new DateTime(1, 1, 1) ? (object)DBNull.Value : (object)Novo.previsao);
                 cmd.Parameters.AddWithValue("@19", Novo.numero_grupos);
 
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Projeto criado com sucesso");
+                idInserido = Convert.ToInt32(cmd.ExecuteScalar());
+
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um criar o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                idInserido = 0;
+            }
+            finally
+            {
+                desconectar();
+            }
+            return idInserido;
+        }
+
+        public static List<Status> CarregaStatus()
+        {
+            string sql;
+
+            List<Status> list = new List<Status>();
+
+            try
+            {
+                sql = "SELECT id_status, status FROM gp2_status ORDER BY id_status ASC";
+
+                NpgsqlDataReader dr = Banco.selecionar(sql);
+
+                while (dr.Read())
+                {
+                    Status linha = new Status();
+                    linha.id_status = Convert.ToInt32(dr["id_status"]);
+                    linha.status = dr["status"].ToString();
+
+                    list.Add(linha);
+                };
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar informações essenciais!!!" + "\n\nMais detalhes: " + ex.Message, "Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                desconectar();
+            }
+            return list;
+        }
+        public static void InserirMultiplo(List<GroupSteps> Inserir)
+        {
+            try
+            {
+                conectar();
+                String sql = "INSERT INTO gp2_grupos_etapas (id_projeto, nome_grupo, porcentagem, mostrar_porcentagem, ordenador, excluido, num_etapas) VALUES( @1, @2, @3, @4, @5, @6, @7)";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                foreach (var grupo in Inserir)
+                {
+                    cmd.Parameters.AddWithValue("@1", grupo.id_projeto);
+                    cmd.Parameters.AddWithValue("@2", grupo.nome_grupo);
+                    cmd.Parameters.AddWithValue("@3", grupo.porcentagem);
+                    cmd.Parameters.AddWithValue("@4", grupo.mostrar_porcentagem);
+                    cmd.Parameters.AddWithValue("@5", grupo.ordenador);
+                    cmd.Parameters.AddWithValue("@6", grupo.excluido);
+                    cmd.Parameters.AddWithValue("@7", grupo.numero_etapas);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                String sql2 = "UPDATE gp2_projetos SET num_grupos = num_grupos + @1 WHERE id_projeto = @2;";
+                NpgsqlCommand cmd2 = new NpgsqlCommand(sql2, cn);
+                cmd2.Parameters.AddWithValue("@1", Inserir.Count);
+                cmd2.Parameters.AddWithValue("@2", Program.id_projeto_atual);
+                cmd2.ExecuteNonQuery();
+
+                String sql3 = "UPDATE gp2_usuarios	SET  commits = commits + 1 WHERE id_usuario = @1;";
+                NpgsqlCommand cmd3 = new NpgsqlCommand(sql3, cn);
+                cmd3.Parameters.AddWithValue("@1", Program.id_usuario);
+                cmd3.ExecuteNonQuery();
             }
             catch (NpgsqlException ex)
             {
@@ -275,11 +377,11 @@ namespace tccCsharp
                 desconectar();
             }
         }
+    }
+}
 
 
-
-
-
+       
 
 
 
@@ -291,13 +393,13 @@ namespace tccCsharp
          * 
         //Executa uma query no banco de dados. (Sem retorno)
         // insert - update - delete
-        
+
         //Executa uma query no banco de dados com parametros
         public static void executar(string sql, List<object> parametros)
         {
             try
             {
-                conectar();
+                //conectar();
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.CommandText = sql;
                 cmd.Connection = cn;
@@ -317,28 +419,14 @@ namespace tccCsharp
         }
 
 
-        //Select simples retornando um DataReader
-        public static NpgsqlDataReader selecionar(string sql)
-        {
-            try
-            {
-                conectar();
-                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                return cmd.ExecuteReader(CommandBehavior.CloseConnection);
-            }
-            catch (NpgsqlException ex)
-            {
-                desconectar();
-                throw new ApplicationException(ex.Message);
-            }
-        }
+
         //
         // Select retornando os dados em um DataTable
         public static DataTable selecionarDataTable(string sql)
         {
             try
             {
-                conectar();
+                //conectar();
                 // Cria o objeto DataTable
                 DataTable dt = new DataTable();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
@@ -359,7 +447,7 @@ namespace tccCsharp
         {
             try
             {
-                conectar();
+                //conectar();
                 // Cria o objeto DataSet
                 DataSet ds = new DataSet();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
@@ -380,7 +468,7 @@ namespace tccCsharp
         {
             try
             {
-                conectar();
+                //conectar();
                 // Cria o objeto DataSet
                 DataSet ds = new DataSet();
                 string sql = @"select " + campos + " from " + tabela;
@@ -403,5 +491,5 @@ namespace tccCsharp
             }
         }
         */
-    }
-}
+    
+
