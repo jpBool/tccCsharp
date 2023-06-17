@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 using Npgsql;
-
+#pragma warning disable IDE0028
+#pragma warning disable IDE0017
 
 namespace tccCsharp
 {
     internal class Banco
     {
-        static string stringConexao = "Server = pgsql.projetoscti.com.br; " +
+        static readonly string stringConexao = "Server = pgsql.projetoscti.com.br; " +
                                       "Database = projetoscti9; Port=5432;" +
                                       "User ID= projetoscti9; password = eq273b294;";
         static NpgsqlConnection cn;
 
-        public static void conectar()
+        public static void Conectar()
         {
             if (cn == null)
                 cn = new NpgsqlConnection();
@@ -34,7 +35,7 @@ namespace tccCsharp
                 throw new ApplicationException(ex.Message);
             }
         }
-        public static void desconectar()
+        public static void Desconectar()
         {
             cn.Close();// fecha a conexão com o banco de dados
             cn.Dispose(); // libera os recursos utilizados
@@ -42,11 +43,11 @@ namespace tccCsharp
         }
 
         //Select com parametros retornando um DataReader
-        public static NpgsqlDataReader selecionar(string sql, List<object> parametros)
+        public static NpgsqlDataReader Selecionar(string sql, List<object> parametros)
         {
             try
             {
-                conectar();
+                Conectar();
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.CommandText = sql;
                 cmd.Connection = cn;
@@ -62,17 +63,17 @@ namespace tccCsharp
         }
 
         //Select simples retornando um DataReader
-        public static NpgsqlDataReader selecionar(string sql)
+        public static NpgsqlDataReader Selecionar(string sql)
         {
             try
             {
-                conectar();
+                Conectar();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 return cmd.ExecuteReader(CommandBehavior.CloseConnection);
             }
             catch (NpgsqlException ex)
             {
-                desconectar();
+                Desconectar();
                 throw new ApplicationException(ex.Message);
             }
         }
@@ -89,7 +90,7 @@ namespace tccCsharp
                 param.Add(email);
                 param.Add(senha);
 
-                NpgsqlDataReader dr = Banco.selecionar(sql, param);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 if (dr.Read())
                 {
                     MessageBox.Show("Bom dia " + dr["nome"].ToString() + " !!! Acesso autorizado ao sistema !!!");
@@ -113,7 +114,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
         }
 
@@ -129,7 +130,7 @@ namespace tccCsharp
                 param.Add(Program.id_usuario);
 
 
-                NpgsqlDataReader dr = Banco.selecionar(sql, param);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 dr.Read();
                 usuario.nome = dr["nome"].ToString();
 
@@ -161,7 +162,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
             return usuario;
         }
@@ -177,7 +178,7 @@ namespace tccCsharp
                 List<object> param = new List<object>();
                 param.Add(Program.id_usuario);
 
-                NpgsqlDataReader dr = Banco.selecionar(sql, param);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
 
 
                 while (dr.Read())
@@ -252,7 +253,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
             return projetos;
         }
@@ -262,7 +263,7 @@ namespace tccCsharp
             int idInserido;
             try
             {
-                conectar();
+                Conectar();
                 String sql = "INSERT INTO gp2_projetos (id_criador, autores, email_contato, nome_projeto, ";
                 sql += "palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, ";
                 sql += "link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, ";
@@ -300,7 +301,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
             return idInserido;
         }
@@ -315,7 +316,7 @@ namespace tccCsharp
             {
                 sql = "SELECT id_status, status FROM gp2_status ORDER BY id_status ASC";
 
-                NpgsqlDataReader dr = Banco.selecionar(sql);
+                NpgsqlDataReader dr = Banco.Selecionar(sql);
 
                 while (dr.Read())
                 {
@@ -333,7 +334,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
             return list;
         }
@@ -341,11 +342,14 @@ namespace tccCsharp
         {
             try
             {
-                conectar();
-                String sql = "INSERT INTO gp2_grupos_etapas (id_projeto, nome_grupo, porcentagem, mostrar_porcentagem, ordenador, excluido, num_etapas) VALUES( @1, @2, @3, @4, @5, @6, @7)";
-                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                foreach (var grupo in Inserir)
+                Conectar();
+                
+                for (int i = 0; i < Inserir.Count; i++)
                 {
+                    String sql = "INSERT INTO gp2_grupos_etapas (id_projeto, nome_grupo, porcentagem, mostrar_porcentagem, ordenador, excluido, num_etapas) VALUES( @1, @2, @3, @4, @5, @6, @7)";
+                    NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                    GroupSteps grupo = new GroupSteps();
+                    grupo = Inserir[i];
                     cmd.Parameters.AddWithValue("@1", grupo.id_projeto);
                     cmd.Parameters.AddWithValue("@2", grupo.nome_grupo);
                     cmd.Parameters.AddWithValue("@3", grupo.porcentagem);
@@ -374,7 +378,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
         }
     }
@@ -399,7 +403,7 @@ namespace tccCsharp
         {
             try
             {
-                //conectar();
+                //Conectar();
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.CommandText = sql;
                 cmd.Connection = cn;
@@ -414,7 +418,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
         }
 
@@ -422,11 +426,11 @@ namespace tccCsharp
 
         //
         // Select retornando os dados em um DataTable
-        public static DataTable selecionarDataTable(string sql)
+        public static DataTable SelecionarDataTable(string sql)
         {
             try
             {
-                //conectar();
+                //Conectar();
                 // Cria o objeto DataTable
                 DataTable dt = new DataTable();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
@@ -440,14 +444,14 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
         }
-        public static DataSet selecionarDataSet(string sql)
+        public static DataSet SelecionarDataSet(string sql)
         {
             try
             {
-                //conectar();
+                //Conectar();
                 // Cria o objeto DataSet
                 DataSet ds = new DataSet();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
@@ -461,14 +465,14 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
         }
-        public static DataSet selecionarDataSet(string tabela, string campos, string where = "", string orderBy = "")
+        public static DataSet SelecionarDataSet(string tabela, string campos, string where = "", string orderBy = "")
         {
             try
             {
-                //conectar();
+                //Conectar();
                 // Cria o objeto DataSet
                 DataSet ds = new DataSet();
                 string sql = @"select " + campos + " from " + tabela;
@@ -487,7 +491,7 @@ namespace tccCsharp
             }
             finally
             {
-                desconectar();
+                Desconectar();
             }
         }
         */

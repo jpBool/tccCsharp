@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tccCsharp
 {
-    internal class GroupSteps
+    public class GroupSteps
     {
         //id_grupo, id_projeto, nome_grupo, porcentagem, mostrar_porcentagem, ordenador, excluido, num_etpas
         public int id_grupo { get; set; }

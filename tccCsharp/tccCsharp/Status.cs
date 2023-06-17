@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tccCsharp
 {
-    internal class Status
+    public class Status
     {
         public int id_status { get; set; }
         public string status { get; set; }

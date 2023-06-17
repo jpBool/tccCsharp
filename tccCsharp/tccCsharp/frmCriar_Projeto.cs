@@ -173,20 +173,6 @@ namespace tccCsharp
             }
         }
 
-        string JuntarGrupos(List<GroupSteps> grupos, string separador)
-        {
-            List<string> nomesGrupos = new List<string>();
-
-            foreach (var grupo in grupos)
-            {
-                nomesGrupos.Add(grupo.nome_grupo);
-            }
-
-            string resultado = string.Join(separador, nomesGrupos);
-
-            return resultado;
-        }
-
         void AdicionarGrupo(string nomeGrupo, bool mostrarPorcentagem, int ordenador)
         {
             GroupSteps grupo = new GroupSteps()
@@ -206,6 +192,8 @@ namespace tccCsharp
 
         public void ModelosEtapa ()
         {
+            grupos.Clear();
+            
             if (radioSemModelos.Checked == true)
             {
                 AdicionarGrupo("Grupo 1", false, 1);
@@ -351,8 +339,16 @@ namespace tccCsharp
             Program.id_projeto_atual = Banco.InserirProjeto(Novo);
             ModelosEtapa();
 
-            MessageBox.Show("Projeto criado com sucesso");
-            this.Close();
+            DialogResult resultado = MessageBox.Show("Projeto criado com sucesso!\nDeseja editar seu projeto agora?","Criando Projeto",MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else if (resultado == DialogResult.No)
+            {
+                Program.id_projeto_atual = 0;
+                this.Close();
+            }
         }
 
         private void boxSemPrevisao_CheckedChanged(object sender, EventArgs e)
@@ -599,8 +595,7 @@ namespace tccCsharp
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            ModelosEtapa();
-            txtDetalhada.Text = JuntarGrupos(grupos, " 8 ");
+            this.Close();
         }
     }
 }

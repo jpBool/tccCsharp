@@ -265,9 +265,23 @@ namespace tccCsharp
             frmCriar_Projeto splash = new frmCriar_Projeto();
             splash.ShowDialog();
             if (Program.id_usuario == 0)
+            {
                 this.Close();
+            }
             else
+            {
                 this.Visible = true;
+                if (Program.id_projeto_atual == 0)
+                {
+                    return;
+                }
+                else
+                {
+                    //Abrir frm Editar Projeto
+                    return;
+                }
+            }
+                
         }
     }
 }
