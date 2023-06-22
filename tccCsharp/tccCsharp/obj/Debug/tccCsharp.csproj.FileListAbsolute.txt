@@ -244,3 +244,5 @@ C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debu
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.csproj.CopyComplete
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.exe
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.pdb
+C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.Coisas.resources
+C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Projeto.resources

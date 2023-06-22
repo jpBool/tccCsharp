@@ -155,7 +155,7 @@ namespace tccCsharp
             
             opbRecarregar._bordercolor = Color.Black;
             opbConfiguracoes._bordercolor = Color.Black;
-            opbEditar._bordercolor = Color.Black;
+            opbEditarP3._bordercolor = Color.Black;
         }
 
         private void frmPerfil_Load(object sender, EventArgs e)
@@ -194,8 +194,8 @@ namespace tccCsharp
         }
         private void opbEditar_MouseEnter(object sender, EventArgs e)
         {
-            opbEditar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbEditar.Refresh();
+            opbEditarP3._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbEditarP3.Refresh();
         }
         private void opbRecarregar_MouseEnter(object sender, EventArgs e)
         {
@@ -226,8 +226,8 @@ namespace tccCsharp
         }
         private void opbEditar_MouseLeave(object sender, EventArgs e)
         {
-            opbEditar._bordercolor = Color.Black;
-            opbEditar.Refresh();
+            opbEditarP3._bordercolor = Color.Black;
+            opbEditarP3.Refresh();
         }
 
         //MOUSE CLiCK
@@ -284,6 +284,16 @@ namespace tccCsharp
                 }
             }
                 
+        }
+
+        private void RGBBio_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TLP_Neta2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
