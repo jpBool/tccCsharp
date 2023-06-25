@@ -31,27 +31,14 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnAvancar = new System.Windows.Forms.Button();
             this.TLP_Mãe = new System.Windows.Forms.TableLayoutPanel();
-            this.TLP_Filha2 = new System.Windows.Forms.TableLayoutPanel();
-            this.RGPProjeto3 = new tccCsharp.RoundedGroupBox();
-            this.RGBDescricaoP3 = new tccCsharp.RoundedGroupBox();
-            this.lblDescricaoP3 = new System.Windows.Forms.Label();
-            this.lblNomeP3 = new System.Windows.Forms.Label();
-            this.opbEditarP3 = new tccCsharp.OvalPictureBox();
-            this.RGPProjeto2 = new tccCsharp.RoundedGroupBox();
-            this.opbEditarP2 = new tccCsharp.OvalPictureBox();
-            this.RGBDescricaoP2 = new tccCsharp.RoundedGroupBox();
-            this.lblDescricaoP2 = new System.Windows.Forms.Label();
-            this.lblNomeP2 = new System.Windows.Forms.Label();
-            this.RGPProjeto1 = new tccCsharp.RoundedGroupBox();
-            this.opbEditarP1 = new tccCsharp.OvalPictureBox();
-            this.RGBDescricaoP1 = new tccCsharp.RoundedGroupBox();
-            this.lblDescricaoP1 = new System.Windows.Forms.Label();
-            this.lblNomeP1 = new System.Windows.Forms.Label();
             this.TLP_Filha1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBNeta2 = new tccCsharp.RoundedGroupBox();
             this.TLP_Neta2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBBio = new tccCsharp.RoundedGroupBox();
             this.lblBio = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAdicionar = new RoundButton();
+            this.roundButton2 = new RoundButton();
             this.RGBNeta1 = new tccCsharp.RoundedGroupBox();
             this.TLP_Neta1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -69,34 +56,36 @@
             this.lblAtivoDesde = new System.Windows.Forms.Label();
             this.TLPAvatar = new System.Windows.Forms.TableLayoutPanel();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
             this.opcAvatar = new tccCsharp.OvalPictureBox();
-            this.TLPMenu2 = new System.Windows.Forms.TableLayoutPanel();
-            this.RGBAdicionar = new tccCsharp.RoundedGroupBox();
-            this.lblAdicionar = new System.Windows.Forms.Label();
-            this.lblProjetos = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.RGBMenu1 = new tccCsharp.RoundedGroupBox();
             this.opbRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
             this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
-            this.roundButton1 = new RoundButton();
-            this.roundButton2 = new RoundButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.rgbProjetos = new tccCsharp.RoundedGroupBox();
+            this.TLP_Filha2 = new System.Windows.Forms.TableLayoutPanel();
+            this.RGPProjeto2 = new tccCsharp.RoundedGroupBox();
+            this.opbEditarP2 = new tccCsharp.OvalPictureBox();
+            this.RGBDescricaoP2 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoP2 = new System.Windows.Forms.Label();
+            this.lblNomeP2 = new System.Windows.Forms.Label();
+            this.RGPProjeto1 = new tccCsharp.RoundedGroupBox();
+            this.opbEditarP1 = new tccCsharp.OvalPictureBox();
+            this.RGBDescricaoP1 = new tccCsharp.RoundedGroupBox();
+            this.lblProjetos = new System.Windows.Forms.Label();
+            this.lblDescricaoP1 = new System.Windows.Forms.Label();
+            this.lblNomeP1 = new System.Windows.Forms.Label();
+            this.RGPProjeto3 = new tccCsharp.RoundedGroupBox();
+            this.RGBDescricaoP3 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoP3 = new System.Windows.Forms.Label();
+            this.lblNomeP3 = new System.Windows.Forms.Label();
+            this.opbEditarP3 = new tccCsharp.OvalPictureBox();
             this.TLP_Mãe.SuspendLayout();
-            this.TLP_Filha2.SuspendLayout();
-            this.RGPProjeto3.SuspendLayout();
-            this.RGBDescricaoP3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).BeginInit();
-            this.RGPProjeto2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).BeginInit();
-            this.RGBDescricaoP2.SuspendLayout();
-            this.RGPProjeto1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).BeginInit();
-            this.RGBDescricaoP1.SuspendLayout();
             this.TLP_Filha1.SuspendLayout();
             this.RGBNeta2.SuspendLayout();
             this.TLP_Neta2.SuspendLayout();
             this.RGBBio.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.RGBNeta1.SuspendLayout();
             this.TLP_Neta1.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
@@ -106,13 +95,21 @@
             this.RGBCommits.SuspendLayout();
             this.TLPAvatar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).BeginInit();
-            this.TLPMenu2.SuspendLayout();
-            this.RGBAdicionar.SuspendLayout();
             this.RGBMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.rgbProjetos.SuspendLayout();
+            this.TLP_Filha2.SuspendLayout();
+            this.RGPProjeto2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).BeginInit();
+            this.RGBDescricaoP2.SuspendLayout();
+            this.RGPProjeto1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).BeginInit();
+            this.RGBDescricaoP1.SuspendLayout();
+            this.RGPProjeto3.SuspendLayout();
+            this.RGBDescricaoP3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -121,7 +118,7 @@
             this.btnVoltar.AutoSize = true;
             this.btnVoltar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(3, 149);
+            this.btnVoltar.Location = new System.Drawing.Point(3, 106);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(35, 35);
             this.btnVoltar.TabIndex = 27;
@@ -135,7 +132,7 @@
             this.btnAvancar.AutoSize = true;
             this.btnAvancar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAvancar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvancar.Location = new System.Drawing.Point(1229, 149);
+            this.btnAvancar.Location = new System.Drawing.Point(1208, 106);
             this.btnAvancar.Name = "btnAvancar";
             this.btnAvancar.Size = new System.Drawing.Size(35, 35);
             this.btnAvancar.TabIndex = 28;
@@ -151,253 +148,20 @@
             this.TLP_Mãe.BackColor = System.Drawing.SystemColors.Control;
             this.TLP_Mãe.ColumnCount = 1;
             this.TLP_Mãe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLP_Mãe.Controls.Add(this.TLP_Filha2, 0, 3);
             this.TLP_Mãe.Controls.Add(this.TLP_Filha1, 0, 1);
-            this.TLP_Mãe.Controls.Add(this.TLPMenu2, 0, 2);
             this.TLP_Mãe.Controls.Add(this.RGBMenu1, 0, 0);
+            this.TLP_Mãe.Controls.Add(this.rgbProjetos, 0, 3);
             this.TLP_Mãe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TLP_Mãe.Location = new System.Drawing.Point(-2, -3);
             this.TLP_Mãe.Margin = new System.Windows.Forms.Padding(0);
             this.TLP_Mãe.Name = "TLP_Mãe";
             this.TLP_Mãe.RowCount = 4;
-            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.5F));
-            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.5F));
+            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.44444F));
+            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.555555F));
+            this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.88889F));
             this.TLP_Mãe.Size = new System.Drawing.Size(1267, 685);
             this.TLP_Mãe.TabIndex = 46;
-            // 
-            // TLP_Filha2
-            // 
-            this.TLP_Filha2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLP_Filha2.AutoSize = true;
-            this.TLP_Filha2.ColumnCount = 5;
-            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.545593F));
-            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.30395F));
-            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.30395F));
-            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.30092F));
-            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.545593F));
-            this.TLP_Filha2.Controls.Add(this.RGPProjeto3, 3, 0);
-            this.TLP_Filha2.Controls.Add(this.RGPProjeto2, 2, 0);
-            this.TLP_Filha2.Controls.Add(this.btnVoltar, 0, 0);
-            this.TLP_Filha2.Controls.Add(this.btnAvancar, 4, 0);
-            this.TLP_Filha2.Controls.Add(this.RGPProjeto1, 1, 0);
-            this.TLP_Filha2.Location = new System.Drawing.Point(0, 352);
-            this.TLP_Filha2.Margin = new System.Windows.Forms.Padding(0);
-            this.TLP_Filha2.Name = "TLP_Filha2";
-            this.TLP_Filha2.RowCount = 1;
-            this.TLP_Filha2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLP_Filha2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 333F));
-            this.TLP_Filha2.Size = new System.Drawing.Size(1267, 333);
-            this.TLP_Filha2.TabIndex = 47;
-            // 
-            // RGPProjeto3
-            // 
-            this.RGPProjeto3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGPProjeto3.BackgroundColor = System.Drawing.Color.White;
-            this.RGPProjeto3.BorderWidth = 1F;
-            this.RGPProjeto3.Controls.Add(this.RGBDescricaoP3);
-            this.RGPProjeto3.Controls.Add(this.lblNomeP3);
-            this.RGPProjeto3.Controls.Add(this.opbEditarP3);
-            this.RGPProjeto3.CornerRadius = 10;
-            this.RGPProjeto3.Location = new System.Drawing.Point(898, 30);
-            this.RGPProjeto3.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
-            this.RGPProjeto3.Name = "RGPProjeto3";
-            this.RGPProjeto3.Size = new System.Drawing.Size(233, 273);
-            this.RGPProjeto3.TabIndex = 33;
-            this.RGPProjeto3.TabStop = false;
-            // 
-            // RGBDescricaoP3
-            // 
-            this.RGBDescricaoP3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBDescricaoP3.BackColor = System.Drawing.Color.Transparent;
-            this.RGBDescricaoP3.BackgroundColor = System.Drawing.Color.White;
-            this.RGBDescricaoP3.BorderWidth = 1F;
-            this.RGBDescricaoP3.Controls.Add(this.lblDescricaoP3);
-            this.RGBDescricaoP3.CornerRadius = 10;
-            this.RGBDescricaoP3.Location = new System.Drawing.Point(25, 52);
-            this.RGBDescricaoP3.Margin = new System.Windows.Forms.Padding(0);
-            this.RGBDescricaoP3.Name = "RGBDescricaoP3";
-            this.RGBDescricaoP3.Size = new System.Drawing.Size(183, 150);
-            this.RGBDescricaoP3.TabIndex = 39;
-            this.RGBDescricaoP3.TabStop = false;
-            // 
-            // lblDescricaoP3
-            // 
-            this.lblDescricaoP3.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricaoP3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescricaoP3.Location = new System.Drawing.Point(3, 22);
-            this.lblDescricaoP3.Name = "lblDescricaoP3";
-            this.lblDescricaoP3.Size = new System.Drawing.Size(177, 125);
-            this.lblDescricaoP3.TabIndex = 36;
-            this.lblDescricaoP3.Text = "Descrição do projeto";
-            // 
-            // lblNomeP3
-            // 
-            this.lblNomeP3.AutoSize = true;
-            this.lblNomeP3.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeP3.Location = new System.Drawing.Point(6, 15);
-            this.lblNomeP3.Name = "lblNomeP3";
-            this.lblNomeP3.Size = new System.Drawing.Size(126, 20);
-            this.lblNomeP3.TabIndex = 31;
-            this.lblNomeP3.Text = "Nome do projeto";
-            // 
-            // opbEditarP3
-            // 
-            this.opbEditarP3._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP3._borderwidth = 5F;
-            this.opbEditarP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP3.Image = global::tccCsharp.Properties.Resources.editar;
-            this.opbEditarP3.Location = new System.Drawing.Point(179, 1);
-            this.opbEditarP3.Name = "opbEditarP3";
-            this.opbEditarP3.Size = new System.Drawing.Size(48, 48);
-            this.opbEditarP3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbEditarP3.TabIndex = 4;
-            this.opbEditarP3.TabStop = false;
-            this.opbEditarP3.MouseEnter += new System.EventHandler(this.opbEditar_MouseEnter);
-            this.opbEditarP3.MouseLeave += new System.EventHandler(this.opbEditar_MouseLeave);
-            // 
-            // RGPProjeto2
-            // 
-            this.RGPProjeto2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGPProjeto2.BackgroundColor = System.Drawing.Color.White;
-            this.RGPProjeto2.BorderWidth = 1F;
-            this.RGPProjeto2.Controls.Add(this.opbEditarP2);
-            this.RGPProjeto2.Controls.Add(this.RGBDescricaoP2);
-            this.RGPProjeto2.Controls.Add(this.lblNomeP2);
-            this.RGPProjeto2.CornerRadius = 10;
-            this.RGPProjeto2.Location = new System.Drawing.Point(515, 30);
-            this.RGPProjeto2.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
-            this.RGPProjeto2.Name = "RGPProjeto2";
-            this.RGPProjeto2.Size = new System.Drawing.Size(233, 273);
-            this.RGPProjeto2.TabIndex = 32;
-            this.RGPProjeto2.TabStop = false;
-            // 
-            // opbEditarP2
-            // 
-            this.opbEditarP2._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP2._borderwidth = 5F;
-            this.opbEditarP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP2.Image = global::tccCsharp.Properties.Resources.editar;
-            this.opbEditarP2.Location = new System.Drawing.Point(179, 1);
-            this.opbEditarP2.Name = "opbEditarP2";
-            this.opbEditarP2.Size = new System.Drawing.Size(48, 48);
-            this.opbEditarP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbEditarP2.TabIndex = 6;
-            this.opbEditarP2.TabStop = false;
-            // 
-            // RGBDescricaoP2
-            // 
-            this.RGBDescricaoP2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBDescricaoP2.BackColor = System.Drawing.Color.Transparent;
-            this.RGBDescricaoP2.BackgroundColor = System.Drawing.Color.White;
-            this.RGBDescricaoP2.BorderWidth = 1F;
-            this.RGBDescricaoP2.Controls.Add(this.lblDescricaoP2);
-            this.RGBDescricaoP2.CornerRadius = 10;
-            this.RGBDescricaoP2.Location = new System.Drawing.Point(31, 52);
-            this.RGBDescricaoP2.Margin = new System.Windows.Forms.Padding(0);
-            this.RGBDescricaoP2.Name = "RGBDescricaoP2";
-            this.RGBDescricaoP2.Size = new System.Drawing.Size(183, 150);
-            this.RGBDescricaoP2.TabIndex = 39;
-            this.RGBDescricaoP2.TabStop = false;
-            // 
-            // lblDescricaoP2
-            // 
-            this.lblDescricaoP2.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricaoP2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescricaoP2.Location = new System.Drawing.Point(3, 22);
-            this.lblDescricaoP2.Name = "lblDescricaoP2";
-            this.lblDescricaoP2.Size = new System.Drawing.Size(177, 125);
-            this.lblDescricaoP2.TabIndex = 36;
-            this.lblDescricaoP2.Text = "Descrição do projeto";
-            // 
-            // lblNomeP2
-            // 
-            this.lblNomeP2.AutoSize = true;
-            this.lblNomeP2.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeP2.Location = new System.Drawing.Point(6, 15);
-            this.lblNomeP2.Name = "lblNomeP2";
-            this.lblNomeP2.Size = new System.Drawing.Size(126, 20);
-            this.lblNomeP2.TabIndex = 31;
-            this.lblNomeP2.Text = "Nome do projeto";
-            // 
-            // RGPProjeto1
-            // 
-            this.RGPProjeto1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGPProjeto1.BackgroundColor = System.Drawing.Color.White;
-            this.RGPProjeto1.BorderWidth = 1F;
-            this.RGPProjeto1.Controls.Add(this.opbEditarP1);
-            this.RGPProjeto1.Controls.Add(this.RGBDescricaoP1);
-            this.RGPProjeto1.Controls.Add(this.lblNomeP1);
-            this.RGPProjeto1.CornerRadius = 10;
-            this.RGPProjeto1.Location = new System.Drawing.Point(132, 30);
-            this.RGPProjeto1.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
-            this.RGPProjeto1.Name = "RGPProjeto1";
-            this.RGPProjeto1.Size = new System.Drawing.Size(233, 273);
-            this.RGPProjeto1.TabIndex = 31;
-            this.RGPProjeto1.TabStop = false;
-            // 
-            // opbEditarP1
-            // 
-            this.opbEditarP1._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP1._borderwidth = 5F;
-            this.opbEditarP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP1.Image = global::tccCsharp.Properties.Resources.editar;
-            this.opbEditarP1.Location = new System.Drawing.Point(179, 1);
-            this.opbEditarP1.Name = "opbEditarP1";
-            this.opbEditarP1.Size = new System.Drawing.Size(48, 48);
-            this.opbEditarP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbEditarP1.TabIndex = 5;
-            this.opbEditarP1.TabStop = false;
-            // 
-            // RGBDescricaoP1
-            // 
-            this.RGBDescricaoP1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBDescricaoP1.BackColor = System.Drawing.Color.Transparent;
-            this.RGBDescricaoP1.BackgroundColor = System.Drawing.Color.White;
-            this.RGBDescricaoP1.BorderWidth = 1F;
-            this.RGBDescricaoP1.Controls.Add(this.lblDescricaoP1);
-            this.RGBDescricaoP1.CornerRadius = 10;
-            this.RGBDescricaoP1.Location = new System.Drawing.Point(26, 52);
-            this.RGBDescricaoP1.Margin = new System.Windows.Forms.Padding(0);
-            this.RGBDescricaoP1.Name = "RGBDescricaoP1";
-            this.RGBDescricaoP1.Size = new System.Drawing.Size(183, 150);
-            this.RGBDescricaoP1.TabIndex = 38;
-            this.RGBDescricaoP1.TabStop = false;
-            // 
-            // lblDescricaoP1
-            // 
-            this.lblDescricaoP1.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricaoP1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescricaoP1.Location = new System.Drawing.Point(3, 22);
-            this.lblDescricaoP1.Name = "lblDescricaoP1";
-            this.lblDescricaoP1.Size = new System.Drawing.Size(177, 125);
-            this.lblDescricaoP1.TabIndex = 36;
-            this.lblDescricaoP1.Text = "Descrição do projeto";
-            // 
-            // lblNomeP1
-            // 
-            this.lblNomeP1.AutoSize = true;
-            this.lblNomeP1.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeP1.Location = new System.Drawing.Point(6, 15);
-            this.lblNomeP1.Name = "lblNomeP1";
-            this.lblNomeP1.Size = new System.Drawing.Size(126, 20);
-            this.lblNomeP1.TabIndex = 37;
-            this.lblNomeP1.Text = "Nome do projeto";
             // 
             // TLP_Filha1
             // 
@@ -480,6 +244,49 @@
             this.lblBio.Size = new System.Drawing.Size(32, 20);
             this.lblBio.TabIndex = 2;
             this.lblBio.Text = "Bio";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btnAdicionar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.roundButton2, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 156);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(580, 40);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // btnAdicionar
+            // 
+            this.btnAdicionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAdicionar.BorderColor = System.Drawing.Color.Black;
+            this.btnAdicionar.BorderRadius = 10;
+            this.btnAdicionar.BorderThickness = 2;
+            this.btnAdicionar.ButtonColor = System.Drawing.Color.White;
+            this.btnAdicionar.Location = new System.Drawing.Point(313, 3);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(244, 34);
+            this.btnAdicionar.TabIndex = 5;
+            this.btnAdicionar.Text = "ADICIONAR NOVO PROJETO";
+            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            // 
+            // roundButton2
+            // 
+            this.roundButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.roundButton2.BorderColor = System.Drawing.Color.Black;
+            this.roundButton2.BorderRadius = 10;
+            this.roundButton2.BorderThickness = 2;
+            this.roundButton2.ButtonColor = System.Drawing.Color.White;
+            this.roundButton2.Location = new System.Drawing.Point(23, 3);
+            this.roundButton2.Name = "roundButton2";
+            this.roundButton2.Size = new System.Drawing.Size(244, 34);
+            this.roundButton2.TabIndex = 3;
+            this.roundButton2.Text = "EDITAR PERFIL";
+            this.roundButton2.UseVisualStyleBackColor = true;
             // 
             // RGBNeta1
             // 
@@ -724,16 +531,6 @@
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email";
             // 
-            // lblNome
-            // 
-            this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(118, 171);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(51, 21);
-            this.lblNome.TabIndex = 0;
-            this.lblNome.Text = "Nome";
-            // 
             // opcAvatar
             // 
             this.opcAvatar._bordercolor = System.Drawing.Color.Red;
@@ -747,61 +544,15 @@
             this.opcAvatar.TabIndex = 7;
             this.opcAvatar.TabStop = false;
             // 
-            // TLPMenu2
+            // lblNome
             // 
-            this.TLPMenu2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPMenu2.ColumnCount = 2;
-            this.TLPMenu2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMenu2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMenu2.Controls.Add(this.RGBAdicionar, 1, 0);
-            this.TLPMenu2.Controls.Add(this.lblProjetos, 0, 0);
-            this.TLPMenu2.Location = new System.Drawing.Point(0, 318);
-            this.TLPMenu2.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPMenu2.Name = "TLPMenu2";
-            this.TLPMenu2.RowCount = 1;
-            this.TLPMenu2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMenu2.Size = new System.Drawing.Size(1267, 34);
-            this.TLPMenu2.TabIndex = 48;
-            // 
-            // RGBAdicionar
-            // 
-            this.RGBAdicionar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.RGBAdicionar.BackColor = System.Drawing.Color.Transparent;
-            this.RGBAdicionar.BackgroundColor = System.Drawing.Color.White;
-            this.RGBAdicionar.BorderWidth = 1F;
-            this.RGBAdicionar.Controls.Add(this.lblAdicionar);
-            this.RGBAdicionar.CornerRadius = 10;
-            this.RGBAdicionar.Location = new System.Drawing.Point(1058, 3);
-            this.RGBAdicionar.Name = "RGBAdicionar";
-            this.RGBAdicionar.Size = new System.Drawing.Size(206, 28);
-            this.RGBAdicionar.TabIndex = 19;
-            this.RGBAdicionar.TabStop = false;
-            // 
-            // lblAdicionar
-            // 
-            this.lblAdicionar.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdicionar.Location = new System.Drawing.Point(7, 4);
-            this.lblAdicionar.Margin = new System.Windows.Forms.Padding(0);
-            this.lblAdicionar.Name = "lblAdicionar";
-            this.lblAdicionar.Size = new System.Drawing.Size(193, 20);
-            this.lblAdicionar.TabIndex = 32;
-            this.lblAdicionar.Text = "Adicionar novo projeto";
-            this.lblAdicionar.Click += new System.EventHandler(this.lblAdicionar_Click);
-            this.lblAdicionar.MouseEnter += new System.EventHandler(this.btnAdicionar_MouseEnter);
-            this.lblAdicionar.MouseLeave += new System.EventHandler(this.btnAdicionar_MouseLeave);
-            // 
-            // lblProjetos
-            // 
-            this.lblProjetos.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblProjetos.AutoSize = true;
-            this.lblProjetos.Location = new System.Drawing.Point(15, 7);
-            this.lblProjetos.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.lblProjetos.Name = "lblProjetos";
-            this.lblProjetos.Size = new System.Drawing.Size(112, 20);
-            this.lblProjetos.TabIndex = 15;
-            this.lblProjetos.Text = "Seus Projetos:";
+            this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(118, 171);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(51, 21);
+            this.lblNome.TabIndex = 0;
+            this.lblNome.Text = "Nome";
             // 
             // RGBMenu1
             // 
@@ -864,47 +615,263 @@
             this.opbConfiguracoes.MouseEnter += new System.EventHandler(this.opbConfiguracoes_MouseEnter);
             this.opbConfiguracoes.MouseLeave += new System.EventHandler(this.opbConfiguracoes_MouseLeave);
             // 
-            // roundButton1
+            // rgbProjetos
             // 
-            this.roundButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.roundButton1.BorderColor = System.Drawing.Color.Black;
-            this.roundButton1.BorderRadius = 10;
-            this.roundButton1.BorderThickness = 2;
-            this.roundButton1.ButtonColor = System.Drawing.Color.White;
-            this.roundButton1.Location = new System.Drawing.Point(313, 3);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(244, 34);
-            this.roundButton1.TabIndex = 5;
-            this.roundButton1.Text = "ADICIONAR NOVO PROJETO";
-            this.roundButton1.UseVisualStyleBackColor = true;
+            this.rgbProjetos.BackgroundColor = System.Drawing.Color.White;
+            this.rgbProjetos.BorderWidth = 1F;
+            this.rgbProjetos.Controls.Add(this.lblProjetos);
+            this.rgbProjetos.Controls.Add(this.TLP_Filha2);
+            this.rgbProjetos.CornerRadius = 10;
+            this.rgbProjetos.Location = new System.Drawing.Point(3, 355);
+            this.rgbProjetos.Name = "rgbProjetos";
+            this.rgbProjetos.Size = new System.Drawing.Size(1261, 327);
+            this.rgbProjetos.TabIndex = 50;
+            this.rgbProjetos.TabStop = false;
+            this.rgbProjetos.Text = "roundedGroupBox1";
             // 
-            // roundButton2
+            // TLP_Filha2
             // 
-            this.roundButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.roundButton2.BorderColor = System.Drawing.Color.Black;
-            this.roundButton2.BorderRadius = 10;
-            this.roundButton2.BorderThickness = 2;
-            this.roundButton2.ButtonColor = System.Drawing.Color.White;
-            this.roundButton2.Location = new System.Drawing.Point(23, 3);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(244, 34);
-            this.roundButton2.TabIndex = 3;
-            this.roundButton2.Text = "EDITAR PERFIL";
-            this.roundButton2.UseVisualStyleBackColor = true;
+            this.TLP_Filha2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLP_Filha2.AutoSize = true;
+            this.TLP_Filha2.ColumnCount = 5;
+            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.790725F));
+            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.80603F));
+            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.80626F));
+            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.80626F));
+            this.TLP_Filha2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.790725F));
+            this.TLP_Filha2.Controls.Add(this.RGPProjeto2, 2, 0);
+            this.TLP_Filha2.Controls.Add(this.btnVoltar, 0, 0);
+            this.TLP_Filha2.Controls.Add(this.btnAvancar, 4, 0);
+            this.TLP_Filha2.Controls.Add(this.RGPProjeto1, 1, 0);
+            this.TLP_Filha2.Controls.Add(this.RGPProjeto3, 3, 0);
+            this.TLP_Filha2.Location = new System.Drawing.Point(8, 54);
+            this.TLP_Filha2.Margin = new System.Windows.Forms.Padding(0);
+            this.TLP_Filha2.Name = "TLP_Filha2";
+            this.TLP_Filha2.RowCount = 1;
+            this.TLP_Filha2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLP_Filha2.Size = new System.Drawing.Size(1242, 266);
+            this.TLP_Filha2.TabIndex = 47;
+            this.TLP_Filha2.Paint += new System.Windows.Forms.PaintEventHandler(this.TLP_Filha2_Paint);
             // 
-            // tableLayoutPanel1
+            // RGPProjeto2
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.roundButton1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.roundButton2, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 156);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(580, 40);
-            this.tableLayoutPanel1.TabIndex = 5;
+            this.RGPProjeto2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGPProjeto2.BackgroundColor = System.Drawing.Color.White;
+            this.RGPProjeto2.BorderWidth = 1F;
+            this.RGPProjeto2.Controls.Add(this.opbEditarP2);
+            this.RGPProjeto2.Controls.Add(this.RGBDescricaoP2);
+            this.RGPProjeto2.Controls.Add(this.lblNomeP2);
+            this.RGPProjeto2.CornerRadius = 10;
+            this.RGPProjeto2.Location = new System.Drawing.Point(517, 30);
+            this.RGPProjeto2.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
+            this.RGPProjeto2.Name = "RGPProjeto2";
+            this.RGPProjeto2.Size = new System.Drawing.Size(208, 187);
+            this.RGPProjeto2.TabIndex = 32;
+            this.RGPProjeto2.TabStop = false;
+            // 
+            // opbEditarP2
+            // 
+            this.opbEditarP2._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP2._borderwidth = 5F;
+            this.opbEditarP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP2.Image = global::tccCsharp.Properties.Resources.editar;
+            this.opbEditarP2.Location = new System.Drawing.Point(154, 1);
+            this.opbEditarP2.Name = "opbEditarP2";
+            this.opbEditarP2.Size = new System.Drawing.Size(48, 48);
+            this.opbEditarP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbEditarP2.TabIndex = 6;
+            this.opbEditarP2.TabStop = false;
+            // 
+            // RGBDescricaoP2
+            // 
+            this.RGBDescricaoP2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBDescricaoP2.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoP2.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoP2.BorderWidth = 1F;
+            this.RGBDescricaoP2.Controls.Add(this.lblDescricaoP2);
+            this.RGBDescricaoP2.CornerRadius = 10;
+            this.RGBDescricaoP2.Location = new System.Drawing.Point(25, 52);
+            this.RGBDescricaoP2.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoP2.Name = "RGBDescricaoP2";
+            this.RGBDescricaoP2.Size = new System.Drawing.Size(158, 101);
+            this.RGBDescricaoP2.TabIndex = 39;
+            this.RGBDescricaoP2.TabStop = false;
+            // 
+            // lblDescricaoP2
+            // 
+            this.lblDescricaoP2.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoP2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoP2.Location = new System.Drawing.Point(3, 22);
+            this.lblDescricaoP2.Name = "lblDescricaoP2";
+            this.lblDescricaoP2.Size = new System.Drawing.Size(152, 76);
+            this.lblDescricaoP2.TabIndex = 36;
+            this.lblDescricaoP2.Text = "Descrição do projeto";
+            // 
+            // lblNomeP2
+            // 
+            this.lblNomeP2.AutoSize = true;
+            this.lblNomeP2.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeP2.Location = new System.Drawing.Point(6, 15);
+            this.lblNomeP2.Name = "lblNomeP2";
+            this.lblNomeP2.Size = new System.Drawing.Size(126, 20);
+            this.lblNomeP2.TabIndex = 31;
+            this.lblNomeP2.Text = "Nome do projeto";
+            // 
+            // RGPProjeto1
+            // 
+            this.RGPProjeto1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGPProjeto1.BackgroundColor = System.Drawing.Color.White;
+            this.RGPProjeto1.BorderWidth = 1F;
+            this.RGPProjeto1.Controls.Add(this.opbEditarP1);
+            this.RGPProjeto1.Controls.Add(this.RGBDescricaoP1);
+            this.RGPProjeto1.Controls.Add(this.lblNomeP1);
+            this.RGPProjeto1.CornerRadius = 10;
+            this.RGPProjeto1.Location = new System.Drawing.Point(159, 30);
+            this.RGPProjeto1.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
+            this.RGPProjeto1.Name = "RGPProjeto1";
+            this.RGPProjeto1.Size = new System.Drawing.Size(208, 187);
+            this.RGPProjeto1.TabIndex = 31;
+            this.RGPProjeto1.TabStop = false;
+            // 
+            // opbEditarP1
+            // 
+            this.opbEditarP1._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP1._borderwidth = 5F;
+            this.opbEditarP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP1.Image = global::tccCsharp.Properties.Resources.editar;
+            this.opbEditarP1.Location = new System.Drawing.Point(154, 1);
+            this.opbEditarP1.Name = "opbEditarP1";
+            this.opbEditarP1.Size = new System.Drawing.Size(48, 48);
+            this.opbEditarP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbEditarP1.TabIndex = 5;
+            this.opbEditarP1.TabStop = false;
+            // 
+            // RGBDescricaoP1
+            // 
+            this.RGBDescricaoP1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBDescricaoP1.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoP1.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoP1.BorderWidth = 1F;
+            this.RGBDescricaoP1.Controls.Add(this.lblDescricaoP1);
+            this.RGBDescricaoP1.CornerRadius = 10;
+            this.RGBDescricaoP1.Location = new System.Drawing.Point(27, 52);
+            this.RGBDescricaoP1.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoP1.Name = "RGBDescricaoP1";
+            this.RGBDescricaoP1.Size = new System.Drawing.Size(158, 101);
+            this.RGBDescricaoP1.TabIndex = 38;
+            this.RGBDescricaoP1.TabStop = false;
+            // 
+            // lblProjetos
+            // 
+            this.lblProjetos.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblProjetos.AutoSize = true;
+            this.lblProjetos.Location = new System.Drawing.Point(7, 25);
+            this.lblProjetos.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.lblProjetos.Name = "lblProjetos";
+            this.lblProjetos.Size = new System.Drawing.Size(112, 20);
+            this.lblProjetos.TabIndex = 15;
+            this.lblProjetos.Text = "Seus Projetos:";
+            // 
+            // lblDescricaoP1
+            // 
+            this.lblDescricaoP1.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoP1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoP1.Location = new System.Drawing.Point(3, 22);
+            this.lblDescricaoP1.Name = "lblDescricaoP1";
+            this.lblDescricaoP1.Size = new System.Drawing.Size(152, 76);
+            this.lblDescricaoP1.TabIndex = 36;
+            this.lblDescricaoP1.Text = "Descrição do projeto";
+            // 
+            // lblNomeP1
+            // 
+            this.lblNomeP1.AutoSize = true;
+            this.lblNomeP1.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeP1.Location = new System.Drawing.Point(6, 15);
+            this.lblNomeP1.Name = "lblNomeP1";
+            this.lblNomeP1.Size = new System.Drawing.Size(126, 20);
+            this.lblNomeP1.TabIndex = 37;
+            this.lblNomeP1.Text = "Nome do projeto";
+            // 
+            // RGPProjeto3
+            // 
+            this.RGPProjeto3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGPProjeto3.BackgroundColor = System.Drawing.Color.White;
+            this.RGPProjeto3.BorderWidth = 1F;
+            this.RGPProjeto3.Controls.Add(this.RGBDescricaoP3);
+            this.RGPProjeto3.Controls.Add(this.lblNomeP3);
+            this.RGPProjeto3.Controls.Add(this.opbEditarP3);
+            this.RGPProjeto3.CornerRadius = 10;
+            this.RGPProjeto3.Location = new System.Drawing.Point(875, 30);
+            this.RGPProjeto3.Margin = new System.Windows.Forms.Padding(75, 30, 75, 30);
+            this.RGPProjeto3.Name = "RGPProjeto3";
+            this.RGPProjeto3.Size = new System.Drawing.Size(208, 187);
+            this.RGPProjeto3.TabIndex = 33;
+            this.RGPProjeto3.TabStop = false;
+            // 
+            // RGBDescricaoP3
+            // 
+            this.RGBDescricaoP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBDescricaoP3.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoP3.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoP3.BorderWidth = 1F;
+            this.RGBDescricaoP3.Controls.Add(this.lblDescricaoP3);
+            this.RGBDescricaoP3.CornerRadius = 10;
+            this.RGBDescricaoP3.Location = new System.Drawing.Point(32, 52);
+            this.RGBDescricaoP3.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoP3.Name = "RGBDescricaoP3";
+            this.RGBDescricaoP3.Size = new System.Drawing.Size(158, 101);
+            this.RGBDescricaoP3.TabIndex = 39;
+            this.RGBDescricaoP3.TabStop = false;
+            // 
+            // lblDescricaoP3
+            // 
+            this.lblDescricaoP3.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoP3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoP3.Location = new System.Drawing.Point(3, 22);
+            this.lblDescricaoP3.Name = "lblDescricaoP3";
+            this.lblDescricaoP3.Size = new System.Drawing.Size(152, 76);
+            this.lblDescricaoP3.TabIndex = 36;
+            this.lblDescricaoP3.Text = "Descrição do projeto";
+            // 
+            // lblNomeP3
+            // 
+            this.lblNomeP3.AutoSize = true;
+            this.lblNomeP3.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeP3.Location = new System.Drawing.Point(6, 15);
+            this.lblNomeP3.Name = "lblNomeP3";
+            this.lblNomeP3.Size = new System.Drawing.Size(126, 20);
+            this.lblNomeP3.TabIndex = 31;
+            this.lblNomeP3.Text = "Nome do projeto";
+            // 
+            // opbEditarP3
+            // 
+            this.opbEditarP3._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP3._borderwidth = 5F;
+            this.opbEditarP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP3.Image = global::tccCsharp.Properties.Resources.editar;
+            this.opbEditarP3.Location = new System.Drawing.Point(154, 1);
+            this.opbEditarP3.Name = "opbEditarP3";
+            this.opbEditarP3.Size = new System.Drawing.Size(48, 48);
+            this.opbEditarP3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbEditarP3.TabIndex = 4;
+            this.opbEditarP3.TabStop = false;
+            this.opbEditarP3.MouseEnter += new System.EventHandler(this.opbEditar_MouseEnter);
+            this.opbEditarP3.MouseLeave += new System.EventHandler(this.opbEditar_MouseLeave);
             // 
             // frmPerfil
             // 
@@ -918,26 +885,12 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPerfil_Load);
             this.TLP_Mãe.ResumeLayout(false);
-            this.TLP_Mãe.PerformLayout();
-            this.TLP_Filha2.ResumeLayout(false);
-            this.TLP_Filha2.PerformLayout();
-            this.RGPProjeto3.ResumeLayout(false);
-            this.RGPProjeto3.PerformLayout();
-            this.RGBDescricaoP3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).EndInit();
-            this.RGPProjeto2.ResumeLayout(false);
-            this.RGPProjeto2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).EndInit();
-            this.RGBDescricaoP2.ResumeLayout(false);
-            this.RGPProjeto1.ResumeLayout(false);
-            this.RGPProjeto1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).EndInit();
-            this.RGBDescricaoP1.ResumeLayout(false);
             this.TLP_Filha1.ResumeLayout(false);
             this.RGBNeta2.ResumeLayout(false);
             this.TLP_Neta2.ResumeLayout(false);
             this.RGBBio.ResumeLayout(false);
             this.RGBBio.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.RGBNeta1.ResumeLayout(false);
             this.TLP_Neta1.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
@@ -949,14 +902,26 @@
             this.TLPAvatar.ResumeLayout(false);
             this.TLPAvatar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).EndInit();
-            this.TLPMenu2.ResumeLayout(false);
-            this.TLPMenu2.PerformLayout();
-            this.RGBAdicionar.ResumeLayout(false);
             this.RGBMenu1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.rgbProjetos.ResumeLayout(false);
+            this.rgbProjetos.PerformLayout();
+            this.TLP_Filha2.ResumeLayout(false);
+            this.TLP_Filha2.PerformLayout();
+            this.RGPProjeto2.ResumeLayout(false);
+            this.RGPProjeto2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).EndInit();
+            this.RGBDescricaoP2.ResumeLayout(false);
+            this.RGPProjeto1.ResumeLayout(false);
+            this.RGPProjeto1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).EndInit();
+            this.RGBDescricaoP1.ResumeLayout(false);
+            this.RGPProjeto3.ResumeLayout(false);
+            this.RGPProjeto3.PerformLayout();
+            this.RGBDescricaoP3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1001,10 +966,7 @@
         private System.Windows.Forms.TableLayoutPanel TLPAvatar;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.TableLayoutPanel TLPMenu2;
         private System.Windows.Forms.Label lblProjetos;
-        private RoundedGroupBox RGBAdicionar;
-        private System.Windows.Forms.Label lblAdicionar;
         private OvalPictureBox opcAvatar;
         private RoundedGroupBox RGBMenu1;
         private OvalPictureBox OPBLogout;
@@ -1014,7 +976,8 @@
         private OvalPictureBox opbEditarP2;
         private OvalPictureBox opbEditarP1;
         private RoundButton roundButton2;
-        private RoundButton roundButton1;
+        private RoundButton btnAdicionar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private RoundedGroupBox rgbProjetos;
     }
 }

@@ -78,7 +78,7 @@ namespace tccCsharp
             TLP_Mãe.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             TLP_Filha1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             TLP_Filha2.BackColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
-            TLPMenu2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            //TLPMenu2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
 
             RGBNeta1.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             RGBNeta1.CornerRadius = 20;
@@ -115,10 +115,10 @@ namespace tccCsharp
             RGPProjeto2.BorderWidth = 2;
             RGPProjeto3.BorderWidth = 2;
 
-            RGBNaturalidade.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            RGBNaturalidade.CornerRadius = 20;
-            RGBNaturalidade.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            lblNaturalidade.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            //RGBNaturalidade.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            //RGBNaturalidade.CornerRadius = 20;
+            //RGBNaturalidade.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            //lblNaturalidade.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
             RGBBio.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             RGBBio.CornerRadius = 20;
@@ -141,9 +141,9 @@ namespace tccCsharp
             RGBDescricaoP3.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             lblDescricaoP3.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
-            RGBAdicionar.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            lblAdicionar.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            lblAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            //RGBAdicionar.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            //lblAdicionar.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            //lblAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
             opcAvatar.Height = TLPAvatar.Height / 2;
             opcAvatar.Width = opcAvatar.Height;
@@ -168,7 +168,7 @@ namespace tccCsharp
             Banco.CarregaPerfil(usuario);
             lblNome.Text = usuario.nome.ToString();
             lblBio.Text = usuario.bio.ToString();
-            lblNaturalidade.Text = usuario.naturalidade.ToString();
+            //lblNaturalidade.Text = usuario.naturalidade.ToString();
             lblAMD.Text = usuario.inscricao.ToShortDateString();
             lblEmail.Text = usuario.email.ToString();
             lblCommits.Text = usuario.commits.ToString();
@@ -178,8 +178,8 @@ namespace tccCsharp
         //MOUSE ENTER
         private void btnAdicionar_MouseEnter(object sender, EventArgs e)
         {
-            lblAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            RGBAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            //lblAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            //RGBAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void OPBLogout_MouseEnter(object sender, EventArgs e)
@@ -206,8 +206,8 @@ namespace tccCsharp
         //MOUSE LEAVE
         private void btnAdicionar_MouseLeave(object sender, EventArgs e)
         {
-            lblAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            RGBAdicionar.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            //lblAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            //RGBAdicionar.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
         }
         private void opbConfiguracoes_MouseLeave(object sender, EventArgs e)
         {
@@ -292,6 +292,35 @@ namespace tccCsharp
         }
 
         private void TLP_Neta2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmCriar_Projeto splash = new frmCriar_Projeto();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                if (Program.id_projeto_atual == 0)
+                {
+                    return;
+                }
+                else
+                {
+                    //Abrir frm Editar Projeto
+                    return;
+                }
+            }
+        }
+
+        private void TLP_Filha2_Paint(object sender, PaintEventArgs e)
         {
 
         }
