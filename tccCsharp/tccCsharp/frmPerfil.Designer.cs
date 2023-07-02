@@ -32,13 +32,8 @@
             this.btnAvancar = new System.Windows.Forms.Button();
             this.TLP_Mãe = new System.Windows.Forms.TableLayoutPanel();
             this.TLP_Filha1 = new System.Windows.Forms.TableLayoutPanel();
-            this.RGBNeta2 = new tccCsharp.RoundedGroupBox();
-            this.TLP_Neta2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBBio = new tccCsharp.RoundedGroupBox();
             this.lblBio = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAdicionar = new RoundButton();
-            this.roundButton2 = new RoundButton();
             this.RGBNeta1 = new tccCsharp.RoundedGroupBox();
             this.TLP_Neta1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -80,12 +75,13 @@
             this.lblDescricaoP3 = new System.Windows.Forms.Label();
             this.lblNomeP3 = new System.Windows.Forms.Label();
             this.opbEditarP3 = new tccCsharp.OvalPictureBox();
+            this.TLP_Neta2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnEditarPerfil = new RoundButton();
+            this.btnAdicionar = new RoundButton();
             this.TLP_Mãe.SuspendLayout();
             this.TLP_Filha1.SuspendLayout();
-            this.RGBNeta2.SuspendLayout();
-            this.TLP_Neta2.SuspendLayout();
             this.RGBBio.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.RGBNeta1.SuspendLayout();
             this.TLP_Neta1.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
@@ -110,6 +106,8 @@
             this.RGPProjeto3.SuspendLayout();
             this.RGBDescricaoP3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).BeginInit();
+            this.TLP_Neta2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -171,8 +169,8 @@
             this.TLP_Filha1.ColumnCount = 2;
             this.TLP_Filha1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLP_Filha1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLP_Filha1.Controls.Add(this.RGBNeta2, 1, 0);
             this.TLP_Filha1.Controls.Add(this.RGBNeta1, 0, 0);
+            this.TLP_Filha1.Controls.Add(this.TLP_Neta2, 1, 0);
             this.TLP_Filha1.Location = new System.Drawing.Point(0, 64);
             this.TLP_Filha1.Margin = new System.Windows.Forms.Padding(0);
             this.TLP_Filha1.Name = "TLP_Filha1";
@@ -181,48 +179,9 @@
             this.TLP_Filha1.Size = new System.Drawing.Size(1267, 204);
             this.TLP_Filha1.TabIndex = 46;
             // 
-            // RGBNeta2
-            // 
-            this.RGBNeta2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBNeta2.BackgroundColor = System.Drawing.Color.White;
-            this.RGBNeta2.BorderWidth = 1F;
-            this.RGBNeta2.Controls.Add(this.TLP_Neta2);
-            this.RGBNeta2.CornerRadius = 10;
-            this.RGBNeta2.Location = new System.Drawing.Point(648, 0);
-            this.RGBNeta2.Margin = new System.Windows.Forms.Padding(15, 0, 15, 15);
-            this.RGBNeta2.Name = "RGBNeta2";
-            this.RGBNeta2.Size = new System.Drawing.Size(604, 189);
-            this.RGBNeta2.TabIndex = 2;
-            this.RGBNeta2.TabStop = false;
-            // 
-            // TLP_Neta2
-            // 
-            this.TLP_Neta2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLP_Neta2.BackColor = System.Drawing.Color.Transparent;
-            this.TLP_Neta2.ColumnCount = 1;
-            this.TLP_Neta2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLP_Neta2.Controls.Add(this.RGBBio, 0, 0);
-            this.TLP_Neta2.Controls.Add(this.tableLayoutPanel1, 0, 1);
-            this.TLP_Neta2.Location = new System.Drawing.Point(8, 8);
-            this.TLP_Neta2.Margin = new System.Windows.Forms.Padding(15);
-            this.TLP_Neta2.Name = "TLP_Neta2";
-            this.TLP_Neta2.RowCount = 2;
-            this.TLP_Neta2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.54546F));
-            this.TLP_Neta2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.45455F));
-            this.TLP_Neta2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TLP_Neta2.Size = new System.Drawing.Size(586, 174);
-            this.TLP_Neta2.TabIndex = 1;
-            this.TLP_Neta2.Paint += new System.Windows.Forms.PaintEventHandler(this.TLP_Neta2_Paint);
-            // 
             // RGBBio
             // 
-            this.RGBBio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBBio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBBio.BackgroundColor = System.Drawing.Color.White;
             this.RGBBio.BorderWidth = 1F;
             this.RGBBio.Controls.Add(this.lblBio);
@@ -230,7 +189,7 @@
             this.RGBBio.Location = new System.Drawing.Point(30, 25);
             this.RGBBio.Margin = new System.Windows.Forms.Padding(30, 25, 30, 30);
             this.RGBBio.Name = "RGBBio";
-            this.RGBBio.Size = new System.Drawing.Size(526, 66);
+            this.RGBBio.Size = new System.Drawing.Size(544, 75);
             this.RGBBio.TabIndex = 4;
             this.RGBBio.TabStop = false;
             this.RGBBio.Enter += new System.EventHandler(this.RGBBio_Enter);
@@ -239,54 +198,11 @@
             // 
             this.lblBio.AutoSize = true;
             this.lblBio.BackColor = System.Drawing.Color.Transparent;
-            this.lblBio.Location = new System.Drawing.Point(19, 11);
+            this.lblBio.Location = new System.Drawing.Point(6, 9);
             this.lblBio.Name = "lblBio";
             this.lblBio.Size = new System.Drawing.Size(32, 20);
             this.lblBio.TabIndex = 2;
             this.lblBio.Text = "Bio";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnAdicionar, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.roundButton2, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 124);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(580, 40);
-            this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // btnAdicionar
-            // 
-            this.btnAdicionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnAdicionar.BorderColor = System.Drawing.Color.Black;
-            this.btnAdicionar.BorderRadius = 10;
-            this.btnAdicionar.BorderThickness = 2;
-            this.btnAdicionar.ButtonColor = System.Drawing.Color.White;
-            this.btnAdicionar.Location = new System.Drawing.Point(313, 3);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(244, 34);
-            this.btnAdicionar.TabIndex = 5;
-            this.btnAdicionar.Text = "ADICIONAR NOVO PROJETO";
-            this.btnAdicionar.UseVisualStyleBackColor = true;
-            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
-            // 
-            // roundButton2
-            // 
-            this.roundButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.roundButton2.BorderColor = System.Drawing.Color.Black;
-            this.roundButton2.BorderRadius = 10;
-            this.roundButton2.BorderThickness = 2;
-            this.roundButton2.ButtonColor = System.Drawing.Color.White;
-            this.roundButton2.Location = new System.Drawing.Point(23, 3);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(244, 34);
-            this.roundButton2.TabIndex = 3;
-            this.roundButton2.Text = "EDITAR PERFIL";
-            this.roundButton2.UseVisualStyleBackColor = true;
             // 
             // RGBNeta1
             // 
@@ -622,6 +538,7 @@
             this.rgbProjetos.Controls.Add(this.lblProjetos);
             this.rgbProjetos.Controls.Add(this.TLP_Filha2);
             this.rgbProjetos.CornerRadius = 10;
+            this.rgbProjetos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rgbProjetos.Location = new System.Drawing.Point(3, 283);
             this.rgbProjetos.Name = "rgbProjetos";
             this.rgbProjetos.Size = new System.Drawing.Size(1261, 399);
@@ -638,6 +555,7 @@
             this.lblProjetos.Size = new System.Drawing.Size(112, 20);
             this.lblProjetos.TabIndex = 15;
             this.lblProjetos.Text = "Seus Projetos:";
+            this.lblProjetos.Click += new System.EventHandler(this.lblProjetos_Click);
             // 
             // TLP_Filha2
             // 
@@ -823,16 +741,18 @@
             // 
             // RGBDescricaoP3
             // 
-            this.RGBDescricaoP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBDescricaoP3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBDescricaoP3.BackColor = System.Drawing.Color.Transparent;
             this.RGBDescricaoP3.BackgroundColor = System.Drawing.Color.White;
             this.RGBDescricaoP3.BorderWidth = 1F;
             this.RGBDescricaoP3.Controls.Add(this.lblDescricaoP3);
             this.RGBDescricaoP3.CornerRadius = 10;
-            this.RGBDescricaoP3.Location = new System.Drawing.Point(25, 87);
+            this.RGBDescricaoP3.Location = new System.Drawing.Point(25, 52);
             this.RGBDescricaoP3.Margin = new System.Windows.Forms.Padding(0);
             this.RGBDescricaoP3.Name = "RGBDescricaoP3";
-            this.RGBDescricaoP3.Size = new System.Drawing.Size(196, 166);
+            this.RGBDescricaoP3.Size = new System.Drawing.Size(196, 235);
             this.RGBDescricaoP3.TabIndex = 39;
             this.RGBDescricaoP3.TabStop = false;
             // 
@@ -843,7 +763,7 @@
             this.lblDescricaoP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricaoP3.Location = new System.Drawing.Point(3, 22);
             this.lblDescricaoP3.Name = "lblDescricaoP3";
-            this.lblDescricaoP3.Size = new System.Drawing.Size(190, 141);
+            this.lblDescricaoP3.Size = new System.Drawing.Size(190, 210);
             this.lblDescricaoP3.TabIndex = 36;
             this.lblDescricaoP3.Text = "Descrição do projeto";
             // 
@@ -872,6 +792,68 @@
             this.opbEditarP3.MouseEnter += new System.EventHandler(this.opbEditar_MouseEnter);
             this.opbEditarP3.MouseLeave += new System.EventHandler(this.opbEditar_MouseLeave);
             // 
+            // TLP_Neta2
+            // 
+            this.TLP_Neta2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TLP_Neta2.BackColor = System.Drawing.Color.Transparent;
+            this.TLP_Neta2.ColumnCount = 1;
+            this.TLP_Neta2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLP_Neta2.Controls.Add(this.RGBBio, 0, 0);
+            this.TLP_Neta2.Controls.Add(this.tableLayoutPanel1, 0, 1);
+            this.TLP_Neta2.Location = new System.Drawing.Point(648, 15);
+            this.TLP_Neta2.Margin = new System.Windows.Forms.Padding(15);
+            this.TLP_Neta2.Name = "TLP_Neta2";
+            this.TLP_Neta2.RowCount = 2;
+            this.TLP_Neta2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.71265F));
+            this.TLP_Neta2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.28736F));
+            this.TLP_Neta2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TLP_Neta2.Size = new System.Drawing.Size(604, 174);
+            this.TLP_Neta2.TabIndex = 1;
+            this.TLP_Neta2.Paint += new System.Windows.Forms.PaintEventHandler(this.TLP_Neta2_Paint);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.50502F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.49498F));
+            this.tableLayoutPanel1.Controls.Add(this.btnAdicionar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnEditarPerfil, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 133);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(598, 38);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // btnEditarPerfil
+            // 
+            this.btnEditarPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnEditarPerfil.BorderColor = System.Drawing.Color.Black;
+            this.btnEditarPerfil.BorderRadius = 10;
+            this.btnEditarPerfil.BorderThickness = 2;
+            this.btnEditarPerfil.ButtonColor = System.Drawing.Color.White;
+            this.btnEditarPerfil.Location = new System.Drawing.Point(32, 3);
+            this.btnEditarPerfil.Name = "btnEditarPerfil";
+            this.btnEditarPerfil.Size = new System.Drawing.Size(244, 32);
+            this.btnEditarPerfil.TabIndex = 3;
+            this.btnEditarPerfil.Text = "EDITAR PERFIL";
+            this.btnEditarPerfil.UseVisualStyleBackColor = true;
+            // 
+            // btnAdicionar
+            // 
+            this.btnAdicionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAdicionar.BorderColor = System.Drawing.Color.Black;
+            this.btnAdicionar.BorderRadius = 10;
+            this.btnAdicionar.BorderThickness = 2;
+            this.btnAdicionar.ButtonColor = System.Drawing.Color.White;
+            this.btnAdicionar.Location = new System.Drawing.Point(331, 3);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(244, 32);
+            this.btnAdicionar.TabIndex = 5;
+            this.btnAdicionar.Text = "ADICIONAR NOVO PROJETO";
+            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -885,11 +867,8 @@
             this.Load += new System.EventHandler(this.frmPerfil_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLP_Filha1.ResumeLayout(false);
-            this.RGBNeta2.ResumeLayout(false);
-            this.TLP_Neta2.ResumeLayout(false);
             this.RGBBio.ResumeLayout(false);
             this.RGBBio.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.RGBNeta1.ResumeLayout(false);
             this.TLP_Neta1.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
@@ -921,6 +900,8 @@
             this.RGPProjeto3.PerformLayout();
             this.RGBDescricaoP3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).EndInit();
+            this.TLP_Neta2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -943,8 +924,6 @@
         private System.Windows.Forms.Label lblDescricaoP3;
         private RoundedGroupBox RGBDescricaoP2;
         private System.Windows.Forms.Label lblDescricaoP2;
-        private RoundedGroupBox RGBNeta2;
-        private System.Windows.Forms.TableLayoutPanel TLP_Neta2;
         private RoundedGroupBox RGBBio;
         private System.Windows.Forms.Label lblBio;
         private RoundedGroupBox RGBNeta1;
@@ -974,9 +953,10 @@
         private OvalPictureBox opbRecarregar;
         private OvalPictureBox opbEditarP2;
         private OvalPictureBox opbEditarP1;
-        private RoundButton roundButton2;
-        private RoundButton btnAdicionar;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private RoundedGroupBox rgbProjetos;
+        private System.Windows.Forms.TableLayoutPanel TLP_Neta2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private RoundButton btnAdicionar;
+        private RoundButton btnEditarPerfil;
     }
 }
