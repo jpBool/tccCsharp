@@ -110,9 +110,7 @@ namespace tccCsharp
             // 
             this.OPBLogout._bordercolor = System.Drawing.Color.Red;
             this.OPBLogout._borderwidth = 5F;
-            this.OPBLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPBLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OPBLogout.BackColor = System.Drawing.Color.White;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
             this.OPBLogout.Location = new System.Drawing.Point(777, 12);
@@ -126,9 +124,7 @@ namespace tccCsharp
             // 
             this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
             this.opbConfiguracoes._borderwidth = 5F;
-            this.opbConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbConfiguracoes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
             this.opbConfiguracoes.Location = new System.Drawing.Point(922, 12);
             this.opbConfiguracoes.Name = "opbConfiguracoes";
@@ -141,9 +137,7 @@ namespace tccCsharp
             // 
             this.opbRecarregar._bordercolor = System.Drawing.Color.Red;
             this.opbRecarregar._borderwidth = 5F;
-            this.opbRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbRecarregar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
             this.opbRecarregar.Location = new System.Drawing.Point(848, 12);
             this.opbRecarregar.Name = "opbRecarregar";
