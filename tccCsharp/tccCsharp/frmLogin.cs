@@ -17,6 +17,7 @@ namespace tccCsharp
         public frmLogin()
         {
             InitializeComponent();
+            lblAviso.Visible = false; //aqui
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace tccCsharp
             if(Program.id_usuario == 0)
             {
                 //E-mail ou senha incorretos
+                lblAviso.Visible = true; //aqui
                 return;
             }
             else if (Program.id_usuario == -1)
@@ -70,9 +72,33 @@ namespace tccCsharp
             lblEmail.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             lblSenha.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             btnLogar.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            lblAviso.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            lblAviso.ForeColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+            lblBoasVindas.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            lblBoasVindas.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblFacaLogin.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            lblFacaLogin.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
         }
 
-        
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAviso_Click(object sender, EventArgs e)
+        {
+            //Visible = false;
+        }
+
+        private void lblFacaLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rgbLogin_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

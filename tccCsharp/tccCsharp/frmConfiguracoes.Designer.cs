@@ -35,7 +35,6 @@ namespace tccCsharp
             this.lblConfiguracoes = new System.Windows.Forms.Label();
             this.btnAltTamFont = new System.Windows.Forms.Button();
             this.nudFonte = new System.Windows.Forms.NumericUpDown();
-            this.lblAcessibilidade = new System.Windows.Forms.Label();
             this.rgbPCores = new tccCsharp.RoundedGroupBox();
             this.lblDescC1 = new System.Windows.Forms.Label();
             this.lblDescC2 = new System.Windows.Forms.Label();
@@ -51,17 +50,29 @@ namespace tccCsharp
             this.lblDescC7 = new System.Windows.Forms.Label();
             this.lblCor6 = new System.Windows.Forms.Label();
             this.lblCor5 = new System.Windows.Forms.Label();
+            this.btnVoltar = new RoundButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roundButton1 = new RoundButton();
+            this.roundButton2 = new RoundButton();
+            this.opbRecarregar = new tccCsharp.OvalPictureBox();
+            this.OPBLogout = new tccCsharp.OvalPictureBox();
+            this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudFonte)).BeginInit();
             this.rgbPCores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPersonalizacao
             // 
             this.btnPersonalizacao.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnPersonalizacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonalizacao.Location = new System.Drawing.Point(12, 220);
+            this.btnPersonalizacao.Location = new System.Drawing.Point(42, 311);
             this.btnPersonalizacao.Name = "btnPersonalizacao";
-            this.btnPersonalizacao.Size = new System.Drawing.Size(102, 23);
+            this.btnPersonalizacao.Size = new System.Drawing.Size(143, 23);
             this.btnPersonalizacao.TabIndex = 0;
             this.btnPersonalizacao.Text = "Personalizar cores";
             this.btnPersonalizacao.UseVisualStyleBackColor = true;
@@ -72,18 +83,18 @@ namespace tccCsharp
             // lblConfiguracoes
             // 
             this.lblConfiguracoes.AutoSize = true;
-            this.lblConfiguracoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfiguracoes.Location = new System.Drawing.Point(12, 192);
+            this.lblConfiguracoes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfiguracoes.Location = new System.Drawing.Point(38, 153);
             this.lblConfiguracoes.Name = "lblConfiguracoes";
-            this.lblConfiguracoes.Size = new System.Drawing.Size(126, 13);
+            this.lblConfiguracoes.Size = new System.Drawing.Size(300, 19);
             this.lblConfiguracoes.TabIndex = 1;
-            this.lblConfiguracoes.Text = "Configurações gerais";
+            this.lblConfiguracoes.Text = "Configurações gerais e Acessibilidade";
             // 
             // btnAltTamFont
             // 
             this.btnAltTamFont.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnAltTamFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAltTamFont.Location = new System.Drawing.Point(12, 58);
+            this.btnAltTamFont.Location = new System.Drawing.Point(42, 221);
             this.btnAltTamFont.Name = "btnAltTamFont";
             this.btnAltTamFont.Size = new System.Drawing.Size(148, 23);
             this.btnAltTamFont.TabIndex = 2;
@@ -93,7 +104,7 @@ namespace tccCsharp
             // 
             // nudFonte
             // 
-            this.nudFonte.Location = new System.Drawing.Point(15, 87);
+            this.nudFonte.Location = new System.Drawing.Point(311, 219);
             this.nudFonte.Maximum = new decimal(new int[] {
             18,
             0,
@@ -115,16 +126,6 @@ namespace tccCsharp
             this.nudFonte.Visible = false;
             this.nudFonte.ValueChanged += new System.EventHandler(this.nudFonte_ValueChanged);
             // 
-            // lblAcessibilidade
-            // 
-            this.lblAcessibilidade.AutoSize = true;
-            this.lblAcessibilidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAcessibilidade.Location = new System.Drawing.Point(12, 32);
-            this.lblAcessibilidade.Name = "lblAcessibilidade";
-            this.lblAcessibilidade.Size = new System.Drawing.Size(88, 13);
-            this.lblAcessibilidade.TabIndex = 24;
-            this.lblAcessibilidade.Text = "Acessibilidade";
-            // 
             // rgbPCores
             // 
             this.rgbPCores.BackgroundColor = System.Drawing.Color.White;
@@ -144,7 +145,7 @@ namespace tccCsharp
             this.rgbPCores.Controls.Add(this.lblCor6);
             this.rgbPCores.Controls.Add(this.lblCor5);
             this.rgbPCores.CornerRadius = 10;
-            this.rgbPCores.Location = new System.Drawing.Point(357, 84);
+            this.rgbPCores.Location = new System.Drawing.Point(389, 131);
             this.rgbPCores.Name = "rgbPCores";
             this.rgbPCores.Size = new System.Drawing.Size(322, 262);
             this.rgbPCores.TabIndex = 23;
@@ -312,13 +313,121 @@ namespace tccCsharp
             this.lblCor5.TabIndex = 14;
             this.lblCor5.Text = "    ";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BorderColor = System.Drawing.Color.Black;
+            this.btnVoltar.BorderRadius = 10;
+            this.btnVoltar.BorderThickness = 2;
+            this.btnVoltar.ButtonColor = System.Drawing.Color.White;
+            this.btnVoltar.Location = new System.Drawing.Point(713, 415);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.TabIndex = 25;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(346, 37);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Configurações gerais";
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BorderColor = System.Drawing.Color.Black;
+            this.roundButton1.BorderRadius = 10;
+            this.roundButton1.BorderThickness = 2;
+            this.roundButton1.ButtonColor = System.Drawing.Color.White;
+            this.roundButton1.Location = new System.Drawing.Point(42, 263);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(143, 23);
+            this.roundButton1.TabIndex = 27;
+            this.roundButton1.Text = "Alterar o tamanho da fonte";
+            this.roundButton1.UseVisualStyleBackColor = true;
+            // 
+            // roundButton2
+            // 
+            this.roundButton2.BorderColor = System.Drawing.Color.Black;
+            this.roundButton2.BorderRadius = 10;
+            this.roundButton2.BorderThickness = 2;
+            this.roundButton2.ButtonColor = System.Drawing.Color.White;
+            this.roundButton2.Location = new System.Drawing.Point(42, 344);
+            this.roundButton2.Name = "roundButton2";
+            this.roundButton2.Size = new System.Drawing.Size(143, 23);
+            this.roundButton2.TabIndex = 28;
+            this.roundButton2.Text = "Personalizar cores";
+            this.roundButton2.UseVisualStyleBackColor = true;
+            // 
+            // opbRecarregar
+            // 
+            this.opbRecarregar._bordercolor = System.Drawing.Color.Red;
+            this.opbRecarregar._borderwidth = 5F;
+            this.opbRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
+            this.opbRecarregar.Location = new System.Drawing.Point(867, 5);
+            this.opbRecarregar.Name = "opbRecarregar";
+            this.opbRecarregar.Size = new System.Drawing.Size(48, 48);
+            this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbRecarregar.TabIndex = 31;
+            this.opbRecarregar.TabStop = false;
+            // 
+            // OPBLogout
+            // 
+            this.OPBLogout._bordercolor = System.Drawing.Color.Red;
+            this.OPBLogout._borderwidth = 5F;
+            this.OPBLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPBLogout.BackColor = System.Drawing.Color.White;
+            this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
+            this.OPBLogout.Location = new System.Drawing.Point(802, 5);
+            this.OPBLogout.Name = "OPBLogout";
+            this.OPBLogout.Size = new System.Drawing.Size(48, 48);
+            this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.OPBLogout.TabIndex = 29;
+            this.OPBLogout.TabStop = false;
+            // 
+            // opbConfiguracoes
+            // 
+            this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
+            this.opbConfiguracoes._borderwidth = 5F;
+            this.opbConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
+            this.opbConfiguracoes.Location = new System.Drawing.Point(930, 5);
+            this.opbConfiguracoes.Name = "opbConfiguracoes";
+            this.opbConfiguracoes.Size = new System.Drawing.Size(48, 48);
+            this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbConfiguracoes.TabIndex = 30;
+            this.opbConfiguracoes.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.OPBLogout);
+            this.groupBox1.Controls.Add(this.opbConfiguracoes);
+            this.groupBox1.Controls.Add(this.opbRecarregar);
+            this.groupBox1.Location = new System.Drawing.Point(0, 1);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(995, 59);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // frmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(182)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblAcessibilidade);
+            this.ClientSize = new System.Drawing.Size(992, 450);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.roundButton2);
+            this.Controls.Add(this.roundButton1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.rgbPCores);
             this.Controls.Add(this.nudFonte);
             this.Controls.Add(this.btnAltTamFont);
@@ -330,6 +439,10 @@ namespace tccCsharp
             ((System.ComponentModel.ISupportInitialize)(this.nudFonte)).EndInit();
             this.rgbPCores.ResumeLayout(false);
             this.rgbPCores.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,6 +471,13 @@ namespace tccCsharp
         private System.Windows.Forms.Label lblDescC3;
         private System.Windows.Forms.Label lblDescC2;
         private RoundedGroupBox rgbPCores;
-        private System.Windows.Forms.Label lblAcessibilidade;
+        private RoundButton btnVoltar;
+        private System.Windows.Forms.Label label1;
+        private RoundButton roundButton1;
+        private RoundButton roundButton2;
+        private OvalPictureBox opbRecarregar;
+        private OvalPictureBox OPBLogout;
+        private OvalPictureBox opbConfiguracoes;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

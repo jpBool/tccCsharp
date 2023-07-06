@@ -25,6 +25,7 @@ namespace tccCsharp
             //cldPersonalizacao = new ColorDialog();
             //cldPersonalizacao = new ColorDialog()
             //;
+            //frmConfiguracoes.BackgroundColor
             lblCor1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             //alterar a oartir daqui
             lblCor2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
