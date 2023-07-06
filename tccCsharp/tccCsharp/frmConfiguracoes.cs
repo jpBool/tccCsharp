@@ -34,19 +34,14 @@ namespace tccCsharp
             lblCor5.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             lblCor6.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             lblCorAviso.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnAltTamF.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnPersonalizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
         }
 
         private void btnAltTamFont_Click(object sender, EventArgs e)
         {
             
-            //n funciona
-            /*frmPerfil form = new frmPerfil();
-            form.Font = new Font("Arial", 28); *///n funciona
-            //this.Font = new Font("Arial", 24); //editar
-            //Program.Font = new Font("Arial", 24);
-            //receber pparametro do combo box
-            toggle = !toggle;
-            nudFonte.Visible = toggle;
+            
         }
 
         private void btnPersonalizacao_MouseEnter(object sender, EventArgs e)
@@ -57,48 +52,7 @@ namespace tccCsharp
         private void btnPersonalizacao_Click(object sender, EventArgs e)
         {
 
-            //frmPersonalizacao formP = new frmPersonalizacao();
-            //formP.ShowDialog();
-
-            //NÃO APAGAR O TRECHO ABAIXO
-            /*if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
-            {
-                //background superior azul escuro
-                Program.Cor1[0] = cldPersonalizacao.Color.R; 
-                Program.Cor1[1] = cldPersonalizacao.Color.G;
-                Program.Cor1[2] = cldPersonalizacao.Color.B;
-
-                //cores internas dos cards e outros elementos internos lavanda(azul ameno)
-                Program.Cor2[0] = cldPersonalizacao.Color.R;
-                Program.Cor2[1] = cldPersonalizacao.Color.G;
-                Program.Cor2[2] = cldPersonalizacao.Color.B;
-
-                //background inferior branco
-                Program.Cor3[0] = cldPersonalizacao.Color.R;
-                Program.Cor3[1] = cldPersonalizacao.Color.G;
-                Program.Cor3[2] = cldPersonalizacao.Color.B;
-
-                //cores dos cards azul claro
-                Program.Cor4[0] = cldPersonalizacao.Color.R;
-                Program.Cor4[1] = cldPersonalizacao.Color.G;
-                Program.Cor4[2] = cldPersonalizacao.Color.B;
-                  
-                //Não estao sendo usados 
-                Program.Cor5[0] = cldPersonalizacao.Color.R;
-                Program.Cor5[1] = cldPersonalizacao.Color.G;
-                Program.Cor5[2] = cldPersonalizacao.Color.B;
-
-                Program.Cor6[0] = cldPersonalizacao.Color.R;
-                Program.Cor6[1] = cldPersonalizacao.Color.G;
-                Program.Cor6[2] = cldPersonalizacao.Color.B;
-
-                //colocar cor do texto e aviso tbm?
-
-            }
-            */
-            //rgbPCores.Visible= true;
-            toggle = !toggle;
-            rgbPCores.Visible = toggle;
+            
         }
 
         private void btnPersonalizacao_MouseLeave(object sender, EventArgs e)
@@ -238,6 +192,69 @@ namespace tccCsharp
         private void nudFonte_ValueChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnAltTamF_Click(object sender, EventArgs e)
+        {
+            //n funciona
+            /*frmPerfil form = new frmPerfil();
+            form.Font = new Font("Arial", 28); *///n funciona
+            //this.Font = new Font("Arial", 24); //editar
+            //Program.Font = new Font("Arial", 24);
+            //receber pparametro do combo box
+            toggle = !toggle;
+            nudFonte.Visible = toggle;
+        }
+
+        private void btnPersonalizar_Click(object sender, EventArgs e)
+        {
+            //frmPersonalizacao formP = new frmPersonalizacao();
+            //formP.ShowDialog();
+
+            //NÃO APAGAR O TRECHO ABAIXO
+            /*if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
+                //background superior azul escuro
+                Program.Cor1[0] = cldPersonalizacao.Color.R; 
+                Program.Cor1[1] = cldPersonalizacao.Color.G;
+                Program.Cor1[2] = cldPersonalizacao.Color.B;
+
+                //cores internas dos cards e outros elementos internos lavanda(azul ameno)
+                Program.Cor2[0] = cldPersonalizacao.Color.R;
+                Program.Cor2[1] = cldPersonalizacao.Color.G;
+                Program.Cor2[2] = cldPersonalizacao.Color.B;
+
+                //background inferior branco
+                Program.Cor3[0] = cldPersonalizacao.Color.R;
+                Program.Cor3[1] = cldPersonalizacao.Color.G;
+                Program.Cor3[2] = cldPersonalizacao.Color.B;
+
+                //cores dos cards azul claro
+                Program.Cor4[0] = cldPersonalizacao.Color.R;
+                Program.Cor4[1] = cldPersonalizacao.Color.G;
+                Program.Cor4[2] = cldPersonalizacao.Color.B;
+                  
+                //Não estao sendo usados 
+                Program.Cor5[0] = cldPersonalizacao.Color.R;
+                Program.Cor5[1] = cldPersonalizacao.Color.G;
+                Program.Cor5[2] = cldPersonalizacao.Color.B;
+
+                Program.Cor6[0] = cldPersonalizacao.Color.R;
+                Program.Cor6[1] = cldPersonalizacao.Color.G;
+                Program.Cor6[2] = cldPersonalizacao.Color.B;
+
+                //colocar cor do texto e aviso tbm?
+
+            }
+            */
+            //rgbPCores.Visible= true;
+            toggle = !toggle;
+            rgbPCores.Visible = toggle;
+        }
+
+        private void opbRecarregar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
