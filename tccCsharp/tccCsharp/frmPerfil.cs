@@ -75,6 +75,10 @@ namespace tccCsharp
 
         public void DoDesign()
         {
+            TLPHead1.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBHead1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            RGBHead1.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+
             TLP_Mãe.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]); //cor anterior comentada
             TLP_Filha1.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             TLP_Filha2.BackColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
@@ -155,8 +159,6 @@ namespace tccCsharp
             opcAvatar.Height = TLPAvatar.Height / 2;
             opcAvatar.Width = opcAvatar.Height;
 
-            RGBMenu1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            RGBMenu1.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBLogout._bordercolor = Color.Black;
             OPBLogout.BackColor = Color.White;
             
@@ -325,16 +327,6 @@ namespace tccCsharp
                     return;
                 }
             }
-        }
-
-        private void TLP_Filha2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblProjetos_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

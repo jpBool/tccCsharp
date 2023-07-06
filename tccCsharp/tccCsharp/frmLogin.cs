@@ -20,45 +20,6 @@ namespace tccCsharp
             lblAviso.Visible = false; //aqui
         }
 
-        private void btnLogar_Click(object sender, EventArgs e)
-        {
-            string email = txtEmail.Text;
-            if (string.IsNullOrWhiteSpace(email) == true)
-            {
-                return;
-            }
-            string senha = txtSenha.Text;
-            if (string.IsNullOrWhiteSpace(senha) == true)
-            {
-                return;
-            }
-            Program.id_usuario = Banco.Logar(email, senha);
-            if(Program.id_usuario == 0)
-            {
-                //E-mail ou senha incorretos
-                lblAviso.Visible = true; //aqui
-                return;
-            }
-            else if (Program.id_usuario == -1)
-            {
-                //Aconteceu algum erro no banco
-                return;
-            }
-            else
-            {
-                txtSenha.Clear();
-                this.Visible = false;
-                Program.projetos = Banco.CarregarProjetos(Program.projetos);
-                frmPerfil splash = new frmPerfil();
-                splash.ShowDialog();
-                if (Program.id_usuario == 0)
-                this.Visible = true;
-                else
-                this.Close();
-            }
-
-        }
-
         private void frmLogin_Load(object sender, EventArgs e)
         {
             DesignLogin();
@@ -85,49 +46,42 @@ namespace tccCsharp
             tlpLoginBase3.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void btnLogar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblAviso_Click(object sender, EventArgs e)
-        {
-            //Visible = false;
-        }
-
-        private void lblFacaLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rgbLogin_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblEmail_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSenha_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblBoasVindas_Click(object sender, EventArgs e)
-        {
-
+            string email = txtEmail.Text;
+            if (string.IsNullOrWhiteSpace(email) == true)
+            {
+                return;
+            }
+            string senha = txtSenha.Text;
+            if (string.IsNullOrWhiteSpace(senha) == true)
+            {
+                return;
+            }
+            Program.id_usuario = Banco.Logar(email, senha);
+            if (Program.id_usuario == 0)
+            {
+                //E-mail ou senha incorretos
+                lblAviso.Visible = true; //aqui
+                return;
+            }
+            else if (Program.id_usuario == -1)
+            {
+                //Aconteceu algum erro no banco
+                return;
+            }
+            else
+            {
+                txtSenha.Clear();
+                this.Visible = false;
+                Program.projetos = Banco.CarregarProjetos(Program.projetos);
+                frmPerfil splash = new frmPerfil();
+                splash.ShowDialog();
+                if (Program.id_usuario == 0)
+                    this.Visible = true;
+                else
+                    this.Close();
+            }
         }
     }
 }

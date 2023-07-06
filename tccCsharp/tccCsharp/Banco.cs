@@ -93,14 +93,14 @@ namespace tccCsharp
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 if (dr.Read())
                 {
-                    MessageBox.Show("Bom dia " + dr["nome"].ToString() + " !!! Acesso autorizado ao sistema !!!");
+                    //MessageBox.Show("Bom dia " + dr["nome"].ToString() + " !!! Acesso autorizado ao sistema !!!");
                     int id = Convert.ToInt32(dr["id_usuario"]);
                     dr.Close();
                     return id;
                 }
                 else
                 {
-                    MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!", "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!", "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     dr.Close();
                     return 0;
 
