@@ -94,9 +94,6 @@ namespace tccCsharp
             RGBNeta1.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
             RGBNeta1.CornerRadius = 20;
 
-            //RGBNeta2.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-            //RGBNeta2.CornerRadius = 20;
-
             RGBSeguidores.BackgroundColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             RGBSeguidores.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             lblSeguidores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -133,10 +130,6 @@ namespace tccCsharp
             btnEditarPerfil.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnEditarPerfil.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
-            //RGBNaturalidade.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            //RGBNaturalidade.CornerRadius = 20;
-            //RGBNaturalidade.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            //lblNaturalidade.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
             RGBBio.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
             RGBBio.CornerRadius = 20;
@@ -159,16 +152,12 @@ namespace tccCsharp
             RGBDescricaoP3.ForeColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             lblDescricaoP3.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
-            //RGBAdicionar.BackgroundColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            //lblAdicionar.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            //lblAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-
             opcAvatar.Height = TLPAvatar.Height / 2;
             opcAvatar.Width = opcAvatar.Height;
 
             OPBLogout._bordercolor = Color.Black;
             OPBLogout.BackColor = Color.White;
-            
+
             opbRecarregar._bordercolor = Color.Black;
             opbConfiguracoes._bordercolor = Color.Black;
             opbEditarP3._bordercolor = Color.Black;
@@ -194,8 +183,8 @@ namespace tccCsharp
         //MOUSE ENTER
         private void btnAdicionar_MouseEnter(object sender, EventArgs e)
         {
-            //lblAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            //RGBAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAdicionar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void OPBLogout_MouseEnter(object sender, EventArgs e)
@@ -222,8 +211,8 @@ namespace tccCsharp
         //MOUSE LEAVE
         private void btnAdicionar_MouseLeave(object sender, EventArgs e)
         {
-            //lblAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            //RGBAdicionar.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnAdicionar.BorderColor = Color.Black;
+            btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
         private void opbConfiguracoes_MouseLeave(object sender, EventArgs e)
         {
@@ -352,6 +341,11 @@ namespace tccCsharp
             this.Visible = true;
             Program.projetos = Banco.CarregarProjetos(Program.projetos);
             Refresh_projects(Program.projetos);
+        }
+
+        private void opbEditarP1_MouseEnter(object sender, EventArgs e)
+        {
+
         }
     }
 }

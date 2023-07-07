@@ -489,8 +489,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdicionar.BorderColor = System.Drawing.Color.Black;
-            this.btnAdicionar.BorderRadius = 10;
-            this.btnAdicionar.BorderThickness = 2;
+            this.btnAdicionar.BorderRadius = 20;
+            this.btnAdicionar.BorderThickness = 4;
             this.btnAdicionar.ButtonColor = System.Drawing.Color.White;
             this.btnAdicionar.Location = new System.Drawing.Point(304, 3);
             this.btnAdicionar.Name = "btnAdicionar";
@@ -499,6 +499,8 @@
             this.btnAdicionar.Text = "ADICIONAR NOVO PROJETO";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            this.btnAdicionar.MouseEnter += new System.EventHandler(this.btnAdicionar_MouseEnter);
+            this.btnAdicionar.MouseLeave += new System.EventHandler(this.btnAdicionar_MouseLeave);
             // 
             // btnEditarPerfil
             // 
@@ -506,8 +508,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditarPerfil.BorderColor = System.Drawing.Color.Black;
-            this.btnEditarPerfil.BorderRadius = 10;
-            this.btnEditarPerfil.BorderThickness = 2;
+            this.btnEditarPerfil.BorderRadius = 20;
+            this.btnEditarPerfil.BorderThickness = 4;
             this.btnEditarPerfil.ButtonColor = System.Drawing.Color.White;
             this.btnEditarPerfil.Location = new System.Drawing.Point(3, 3);
             this.btnEditarPerfil.Name = "btnEditarPerfil";
@@ -851,6 +853,9 @@
             this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbRecarregar.TabIndex = 7;
             this.opbRecarregar.TabStop = false;
+            this.opbRecarregar.Click += new System.EventHandler(this.opbRecarregar_Click);
+            this.opbRecarregar.MouseEnter += new System.EventHandler(this.opbRecarregar_MouseEnter);
+            this.opbRecarregar.MouseLeave += new System.EventHandler(this.opbRecarregar_MouseLeave);
             // 
             // OPBLogout
             // 
@@ -866,6 +871,9 @@
             this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBLogout.TabIndex = 3;
             this.OPBLogout.TabStop = false;
+            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
+            this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
+            this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
             // 
             // opbConfiguracoes
             // 
@@ -881,6 +889,9 @@
             this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbConfiguracoes.TabIndex = 6;
             this.opbConfiguracoes.TabStop = false;
+            this.opbConfiguracoes.Click += new System.EventHandler(this.opbConfiguracoes_Click);
+            this.opbConfiguracoes.MouseEnter += new System.EventHandler(this.opbConfiguracoes_MouseEnter);
+            this.opbConfiguracoes.MouseLeave += new System.EventHandler(this.opbConfiguracoes_MouseLeave);
             // 
             // frmPerfil
             // 
