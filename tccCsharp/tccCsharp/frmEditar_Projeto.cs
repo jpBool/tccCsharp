@@ -7,14 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-#pragma warning disable IDE1006
 
 namespace tccCsharp
 {
-    public partial class frmCriar_Projeto : Form
+    public partial class frmEditar_Projeto : Form
     {
-        public List<GroupSteps> grupos = new List<GroupSteps>();
-        public frmCriar_Projeto()
+        public frmEditar_Projeto()
         {
             InitializeComponent();
         }
@@ -41,7 +39,7 @@ namespace tccCsharp
             RGBPalavras.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBCampos.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBDetalhada.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            RGBModelos.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            RGBButtons.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
             RGBNome.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             RGBEmail.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
@@ -53,7 +51,7 @@ namespace tccCsharp
             RGBPalavras.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             RGBCampos.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             RGBDetalhada.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            RGBModelos.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            RGBButtons.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
 
             txtNomeProjeto.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             txtEmail.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
@@ -67,9 +65,9 @@ namespace tccCsharp
             btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnCancelar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
 
-            btnCriar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
-            btnCriar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            btnCriar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnAtualizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnAtualizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
 
             OPBLogout._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -174,198 +172,110 @@ namespace tccCsharp
             }
         }
 
-        void AdicionarGrupo(string nomeGrupo, bool mostrarPorcentagem, int ordenador)
-        {
-            GroupSteps grupo = new GroupSteps()
-            {
-                id_projeto = Program.id_projeto_atual,
-                porcentagem = 0,
-                numero_etapas = 0,
-                excluido = false,
-                nome_grupo = nomeGrupo,
-                mostrar_porcentagem = mostrarPorcentagem,
-                ordenador = ordenador
-            };
-
-            grupos.Add(grupo);
-        }
-
-
-        public void ModelosEtapa ()
-        {
-            grupos.Clear();
-            
-            if (radioSemModelos.Checked == true)
-            {
-                AdicionarGrupo("Grupo 1", false, 1);
-            }
-            else if (radioKanban.Checked == true)
-            {
-                AdicionarGrupo("To Do", false, 1);
-                AdicionarGrupo("Doing", true, 2);
-                AdicionarGrupo("Testing", true, 3);
-                AdicionarGrupo("Done", false, 4);
-            }
-            else if (radioScrum.Checked == true)
-            {
-                AdicionarGrupo("Product Backlog", false, 1);
-                AdicionarGrupo("Sprint 1", true, 2);
-                AdicionarGrupo("Sprint 2", true, 3);
-            }
-            else if (radioEquipes.Checked == true)
-            {
-                AdicionarGrupo("Tarefas da equipe 1", true, 1);
-                AdicionarGrupo("Tarefas da equipe 2", true, 2);
-            }
-            else if (radioPrazos.Checked == true)
-            {
-                AdicionarGrupo("Tarefas dessa semana", true, 1);
-                AdicionarGrupo("Tarefas da próxima semana", true, 2);
-                AdicionarGrupo("Tarefas futuras", true, 3);
-                AdicionarGrupo("Tarefas concluídas", true, 4);
-            }
-
-            Banco.InserirMultiplo(grupos);
-        }
-
-        private void frmCriar_Projeto_Load(object sender, EventArgs e)
+        private void frmEditar_Projeto_Load(object sender, EventArgs e)
         {
             TLP_Mãe.Font = new Font("Arial", 9);
             WindowState = FormWindowState.Maximized;
-            DoDesign();
 
-            if(Program.lista_status.Count == 0)
+            if (Program.lista_status.Count == 0)
                 Program.lista_status = Banco.CarregaStatus();
 
             comboStatus.DataSource = Program.lista_status;
             comboStatus.ValueMember = "id_status";
             comboStatus.DisplayMember = "status";
-        }
 
-        private void BtnCriar_Click(object sender, EventArgs e)
-        {
-            LimparCampos();
-            
-            Project Novo = new Project();
+            Project editando = new Project();
+            editando = Banco.RecarregaSelecionado();
 
-            if (String.IsNullOrEmpty(txtNomeProjeto.Text))
+            txtNomeProjeto.Text = editando.nome_projeto;
+            txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            txtDescricaoBreve.Text = editando.descricao_breve;
+            txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            if (!String.IsNullOrEmpty(editando.email_contato))
             {
-                txtNomeProjeto.Focus();
-                txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                return;
+                txtEmail.Text = editando.email_contato;
+                txtEmail.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+
+            if (!String.IsNullOrEmpty(editando.autores))
+            {
+                txtAutores.Text = editando.autores;
+                txtAutores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+
+            if (!String.IsNullOrEmpty(editando.linguagem))
+            {
+                txtLinguagem.Text = editando.linguagem;
+                txtLinguagem.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+
+            if (!String.IsNullOrEmpty(editando.link_site))
+            {
+                txtSite.Text = editando.link_site;
+                txtSite.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+
+            if (!String.IsNullOrEmpty(editando.link_youtube))
+            {
+                txtVideo.Text = editando.link_youtube;
+                txtVideo.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+
+            if (!String.IsNullOrEmpty(editando.palavras_chave))
+            {
+                txtPalavras.Text = editando.palavras_chave;
+                txtPalavras.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+
+            if (!String.IsNullOrEmpty(editando.descricao_detalhada))
+            {
+                txtDetalhada.Text = editando.descricao_detalhada;
+                txtDetalhada.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            }
+
+            if (!editando.previsao.HasValue)
+            { 
+                boxSemPrevisao.Checked = true;
+                dtpPrevisao.Visible = false;
             }
             else
-                Novo.nome_projeto = txtNomeProjeto.Text;
-
-            if (String.IsNullOrEmpty(txtDescricaoBreve.Text))
             {
-                txtDescricaoBreve.Focus();
-                txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-                customLine5.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                return;
+                boxSemPrevisao.Checked = false;
+                dtpPrevisao.Visible = true;
+                dtpPrevisao.Value = Convert.ToDateTime(editando.previsao.Value);    
+            }
+            if (editando.publico == true)
+            {
+                radioSim.Checked = true;
             }
             else
-                Novo.descricao_breve = txtDescricaoBreve.Text;
-
-            if (comboStatus.SelectedIndex == -1)
             {
-                MessageBox.Show("Selecione um Status", "Criando Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                comboStatus.Focus();
-                return;
+                radioNão.Checked = true;
             }
-                
-            else
-            Novo.status = comboStatus.SelectedIndex + 1;
 
-            if (String.IsNullOrEmpty(txtEmail.Text))
-                Novo.email_contato = null;
-            else
-                Novo.email_contato = txtEmail.Text;
+            comboStatus.SelectedIndex = editando.status - 1;
 
-            if (String.IsNullOrEmpty(txtAutores.Text))
-                Novo.autores = null;
-            else
-                Novo.autores = txtAutores.Text;
-
-            if (String.IsNullOrEmpty(txtLinguagem.Text))
-                Novo.linguagem = null;
-            else Novo.linguagem = txtLinguagem.Text;
-
-            if (String.IsNullOrEmpty(txtSite.Text))
-                Novo.link_site = null;
-            else
-                Novo.link_site = txtSite.Text;
-
-            if (String.IsNullOrEmpty(txtVideo.Text))
-                Novo.link_youtube = null;
-            else 
-                Novo.link_youtube = txtVideo.Text;
-
-            if (String.IsNullOrEmpty(txtPalavras.Text))
-                Novo.palavras_chave = null;
-            else
-                Novo.palavras_chave = PalavrasChave();
-
-            if (boxSemPrevisao.Checked == true)
-                Novo.previsao = new DateTime(1, 1, 1);
-            else
-                Novo.previsao = dtpPrevisao.Value;
-
-            if (radioSim.Checked == true)
-                Novo.publico = true;
-            else
-                Novo.publico = false;
-
-            if (String.IsNullOrEmpty(txtDetalhada.Text))
-                Novo.descricao_detalhada = null;
-            else
-                Novo.descricao_detalhada = txtDetalhada.Text;
-
-            if (Program.id_usuario == 0)
-            {
-                MessageBox.Show("Ocorreu um erro ao resgatar suas informações!!!", "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else
-                Novo.id_criador = Program.id_usuario;
-
-            Novo.porcentagem = 0;
-            Novo.data_criacao = DateTime.Today;
-            Novo.data_atualizacao = DateTime.Now;
-            Novo.atualizador = Program.id_usuario;
-            Novo.excluido = false;
-            Novo.numero_grupos = 0;
-
-            Program.id_projeto_atual = Banco.InserirProjeto(Novo);
-            ModelosEtapa();
-
-            DialogResult resultado = MessageBox.Show("Projeto criado com sucesso!\nDeseja editar seu projeto agora?","Criando Projeto",MessageBoxButtons.YesNo);
-            if (resultado == DialogResult.Yes)
-            {
-                this.Close();
-            }
-            else if (resultado == DialogResult.No)
-            {
-                Program.id_projeto_atual = 0;
-                this.Close();
-            }
+            DoDesign();
         }
 
         private void boxSemPrevisao_CheckedChanged(object sender, EventArgs e)
-        { 
+        {
             if (boxSemPrevisao.Checked == true)
                 dtpPrevisao.Visible = false;
             else
                 dtpPrevisao.Visible = true;
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            return;
         }
 
-
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Program.id_projeto_atual = 0;
+            this.Close();
+        }
 
 
 
@@ -490,7 +400,7 @@ namespace tccCsharp
                 txtEmail.Text = "E-mail para que enteressados entrem em contato";
                 txtEmail.ForeColor = Color.Gray;
             }
-        }    
+        }
 
         private void txtAutores_Leave(object sender, EventArgs e)
         {
@@ -500,7 +410,7 @@ namespace tccCsharp
                 txtAutores.ForeColor = Color.Gray;
             }
         }
-       
+
         private void txtLinguagem_Leave(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(txtLinguagem.Text))
@@ -518,7 +428,7 @@ namespace tccCsharp
                 txtDescricaoBreve.ForeColor = Color.Gray;
             }
             customLine5.LineColor = Color.Black;
-        }    
+        }
 
         private void txtSite_Leave(object sender, EventArgs e)
         {
@@ -527,7 +437,7 @@ namespace tccCsharp
                 txtSite.Text = "Site do projeto";
                 txtSite.ForeColor = Color.Gray;
             }
-        } 
+        }
 
         private void txtVideo_Leave(object sender, EventArgs e)
         {
@@ -536,7 +446,7 @@ namespace tccCsharp
                 txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
                 txtVideo.ForeColor = Color.Gray;
             }
-        }    
+        }
 
         private void txtDetalhada_Leave(object sender, EventArgs e)
         {
@@ -554,10 +464,10 @@ namespace tccCsharp
             btnCancelar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
-        private void btnCriar_MouseEnter(object sender, EventArgs e)
+        private void btnAtualizar_MouseEnter(object sender, EventArgs e)
         {
-            btnCriar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnCriar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAtualizar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAtualizar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void OPBLogout_MouseEnter(object sender, EventArgs e)
@@ -585,10 +495,10 @@ namespace tccCsharp
             btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
-        private void btnCriar_MouseLeave(object sender, EventArgs e)
+        private void btnAtualizar_MouseLeave(object sender, EventArgs e)
         {
-            btnCriar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
-            btnCriar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnAtualizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
         private void OPBLogout_MouseLeave(object sender, EventArgs e)

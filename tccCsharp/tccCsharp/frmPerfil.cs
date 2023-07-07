@@ -73,6 +73,13 @@ namespace tccCsharp
             }
         }
 
+        public void SetSelecionado(List<Project> projetos, int num)
+        {
+            Project projeto_selecionado = new Project();
+            projeto_selecionado = projetos[X + num];
+            Program.id_projeto_atual = projeto_selecionado.id_projeto;
+        }
+
         public void DoDesign()
         {
             TLPHead1.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -316,16 +323,56 @@ namespace tccCsharp
             }
             else
             {
-                this.Visible = true;
                 if (Program.id_projeto_atual == 0)
                 {
+                    this.Visible = true;
                     return;
                 }
                 else
                 {
-                    //Abrir frm Editar Projeto
-                    return;
+                    frmEditar_Projeto splash2 = new frmEditar_Projeto();
+                    splash2.ShowDialog();
+                    if (Program.id_usuario == 0)
+                    {
+                        this.Close();
+                    }
                 }
+            }
+        }
+
+        private void opbEditarP1_Click(object sender, EventArgs e)
+        {
+            SetSelecionado(Program.projetos, 0);
+            this.Visible = false;
+            frmEditar_Projeto splash = new frmEditar_Projeto();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+        }
+
+        private void opbEditarP2_Click(object sender, EventArgs e)
+        {
+            SetSelecionado(Program.projetos, 1);
+            this.Visible = false;
+            frmEditar_Projeto splash = new frmEditar_Projeto();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+        }
+
+        private void opbEditarP3_Click(object sender, EventArgs e)
+        {
+            SetSelecionado(Program.projetos, 2);
+            this.Visible = false;
+            frmEditar_Projeto splash = new frmEditar_Projeto();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
             }
         }
     }

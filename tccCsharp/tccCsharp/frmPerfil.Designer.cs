@@ -599,6 +599,7 @@
             this.opbEditarP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbEditarP2.TabIndex = 6;
             this.opbEditarP2.TabStop = false;
+            this.opbEditarP2.Click += new System.EventHandler(this.opbEditarP2_Click);
             // 
             // RGBDescricaoP2
             // 
@@ -696,6 +697,7 @@
             this.opbEditarP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbEditarP1.TabIndex = 5;
             this.opbEditarP1.TabStop = false;
+            this.opbEditarP1.Click += new System.EventHandler(this.opbEditarP1_Click);
             // 
             // RGBDescricaoP1
             // 
@@ -803,6 +805,7 @@
             this.opbEditarP3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.opbEditarP3.TabIndex = 4;
             this.opbEditarP3.TabStop = false;
+            this.opbEditarP3.Click += new System.EventHandler(this.opbEditarP3_Click);
             this.opbEditarP3.MouseEnter += new System.EventHandler(this.opbEditar_MouseEnter);
             this.opbEditarP3.MouseLeave += new System.EventHandler(this.opbEditar_MouseLeave);
             // 

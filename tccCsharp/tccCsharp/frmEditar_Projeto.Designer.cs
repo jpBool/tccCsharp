@@ -1,6 +1,6 @@
 ﻿namespace tccCsharp
 {
-    partial class frmCriar_Projeto
+    partial class frmEditar_Projeto
     {
         /// <summary>
         /// Required designer variable.
@@ -81,18 +81,11 @@
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
             this.txtDetalhada = new System.Windows.Forms.TextBox();
             this.lblDetalhado = new System.Windows.Forms.Label();
-            this.RGBModelos = new tccCsharp.RoundedGroupBox();
-            this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
-            this.lblModelos = new System.Windows.Forms.Label();
-            this.radioPrazos = new System.Windows.Forms.RadioButton();
-            this.radioSemModelos = new System.Windows.Forms.RadioButton();
-            this.radioEquipes = new System.Windows.Forms.RadioButton();
-            this.radioKanban = new System.Windows.Forms.RadioButton();
-            this.radioScrum = new System.Windows.Forms.RadioButton();
+            this.RGBButtons = new tccCsharp.RoundedGroupBox();
+            this.btnAtualizar = new RoundButton();
+            this.btnCancelar = new RoundButton();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
-            this.btnCriar = new RoundButton();
-            this.btnCancelar = new RoundButton();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -114,10 +107,8 @@
             this.RGBCampos.SuspendLayout();
             this.TLPFilho2.SuspendLayout();
             this.RGBDetalhada.SuspendLayout();
-            this.RGBModelos.SuspendLayout();
-            this.TLPOpcoes.SuspendLayout();
+            this.RGBButtons.SuspendLayout();
             this.TLPHead2.SuspendLayout();
-            this.RGBHead2.SuspendLayout();
             this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
@@ -142,7 +133,7 @@
             this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLP_Mãe.Size = new System.Drawing.Size(1267, 685);
-            this.TLP_Mãe.TabIndex = 0;
+            this.TLP_Mãe.TabIndex = 1;
             // 
             // TLPConteudo
             // 
@@ -854,7 +845,7 @@
             this.TLPFilho2.ColumnCount = 1;
             this.TLPFilho2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPFilho2.Controls.Add(this.RGBDetalhada, 0, 0);
-            this.TLPFilho2.Controls.Add(this.RGBModelos, 0, 1);
+            this.TLPFilho2.Controls.Add(this.RGBButtons, 0, 1);
             this.TLPFilho2.Location = new System.Drawing.Point(633, 3);
             this.TLPFilho2.Name = "TLPFilho2";
             this.TLPFilho2.RowCount = 2;
@@ -907,125 +898,57 @@
             this.lblDetalhado.TabIndex = 3;
             this.lblDetalhado.Text = "Descrição Detalhada:";
             // 
-            // RGBModelos
+            // RGBButtons
             // 
-            this.RGBModelos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBModelos.BackgroundColor = System.Drawing.Color.White;
-            this.RGBModelos.BorderWidth = 2F;
-            this.RGBModelos.Controls.Add(this.TLPOpcoes);
-            this.RGBModelos.CornerRadius = 20;
-            this.RGBModelos.Location = new System.Drawing.Point(3, 346);
-            this.RGBModelos.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
-            this.RGBModelos.Name = "RGBModelos";
-            this.RGBModelos.Size = new System.Drawing.Size(619, 192);
-            this.RGBModelos.TabIndex = 1;
-            this.RGBModelos.TabStop = false;
+            this.RGBButtons.BackgroundColor = System.Drawing.Color.White;
+            this.RGBButtons.BorderWidth = 2F;
+            this.RGBButtons.Controls.Add(this.btnAtualizar);
+            this.RGBButtons.Controls.Add(this.btnCancelar);
+            this.RGBButtons.CornerRadius = 20;
+            this.RGBButtons.Location = new System.Drawing.Point(3, 346);
+            this.RGBButtons.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.RGBButtons.Name = "RGBButtons";
+            this.RGBButtons.Size = new System.Drawing.Size(619, 192);
+            this.RGBButtons.TabIndex = 1;
+            this.RGBButtons.TabStop = false;
             // 
-            // TLPOpcoes
+            // btnAtualizar
             // 
-            this.TLPOpcoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPOpcoes.BackColor = System.Drawing.Color.Transparent;
-            this.TLPOpcoes.ColumnCount = 1;
-            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPOpcoes.Controls.Add(this.lblModelos, 0, 0);
-            this.TLPOpcoes.Controls.Add(this.radioPrazos, 0, 5);
-            this.TLPOpcoes.Controls.Add(this.radioSemModelos, 0, 1);
-            this.TLPOpcoes.Controls.Add(this.radioEquipes, 0, 4);
-            this.TLPOpcoes.Controls.Add(this.radioKanban, 0, 2);
-            this.TLPOpcoes.Controls.Add(this.radioScrum, 0, 3);
-            this.TLPOpcoes.Location = new System.Drawing.Point(6, 0);
-            this.TLPOpcoes.Name = "TLPOpcoes";
-            this.TLPOpcoes.RowCount = 6;
-            this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.Size = new System.Drawing.Size(529, 192);
-            this.TLPOpcoes.TabIndex = 8;
+            this.btnAtualizar.BorderColor = System.Drawing.Color.Black;
+            this.btnAtualizar.BorderRadius = 20;
+            this.btnAtualizar.BorderThickness = 4;
+            this.btnAtualizar.ButtonColor = System.Drawing.Color.White;
+            this.btnAtualizar.Location = new System.Drawing.Point(459, 14);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(150, 37);
+            this.btnAtualizar.TabIndex = 3;
+            this.btnAtualizar.Text = "ATUALIZAR";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            this.btnAtualizar.MouseEnter += new System.EventHandler(this.btnAtualizar_MouseEnter);
+            this.btnAtualizar.MouseLeave += new System.EventHandler(this.btnAtualizar_MouseLeave);
             // 
-            // lblModelos
+            // btnCancelar
             // 
-            this.lblModelos.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblModelos.AutoSize = true;
-            this.lblModelos.BackColor = System.Drawing.Color.Transparent;
-            this.lblModelos.Location = new System.Drawing.Point(3, 9);
-            this.lblModelos.Name = "lblModelos";
-            this.lblModelos.Size = new System.Drawing.Size(212, 13);
-            this.lblModelos.TabIndex = 2;
-            this.lblModelos.Text = "Utilizar modelos de organização de etapas?";
-            // 
-            // radioPrazos
-            // 
-            this.radioPrazos.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioPrazos.AutoSize = true;
-            this.radioPrazos.BackColor = System.Drawing.Color.Transparent;
-            this.radioPrazos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioPrazos.Location = new System.Drawing.Point(3, 161);
-            this.radioPrazos.Name = "radioPrazos";
-            this.radioPrazos.Size = new System.Drawing.Size(143, 24);
-            this.radioPrazos.TabIndex = 7;
-            this.radioPrazos.Text = "Modelo de Prazos.";
-            this.radioPrazos.UseVisualStyleBackColor = false;
-            // 
-            // radioSemModelos
-            // 
-            this.radioSemModelos.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioSemModelos.AutoSize = true;
-            this.radioSemModelos.BackColor = System.Drawing.Color.Transparent;
-            this.radioSemModelos.Checked = true;
-            this.radioSemModelos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioSemModelos.Location = new System.Drawing.Point(3, 34);
-            this.radioSemModelos.Name = "radioSemModelos";
-            this.radioSemModelos.Size = new System.Drawing.Size(153, 24);
-            this.radioSemModelos.TabIndex = 3;
-            this.radioSemModelos.TabStop = true;
-            this.radioSemModelos.Text = "Não utilizar modelos.";
-            this.radioSemModelos.UseVisualStyleBackColor = false;
-            // 
-            // radioEquipes
-            // 
-            this.radioEquipes.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioEquipes.AutoSize = true;
-            this.radioEquipes.BackColor = System.Drawing.Color.Transparent;
-            this.radioEquipes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioEquipes.Location = new System.Drawing.Point(3, 127);
-            this.radioEquipes.Name = "radioEquipes";
-            this.radioEquipes.Size = new System.Drawing.Size(278, 24);
-            this.radioEquipes.TabIndex = 6;
-            this.radioEquipes.Text = "Modelo de Equipes de desenvolvimento.";
-            this.radioEquipes.UseVisualStyleBackColor = false;
-            // 
-            // radioKanban
-            // 
-            this.radioKanban.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioKanban.AutoSize = true;
-            this.radioKanban.BackColor = System.Drawing.Color.Transparent;
-            this.radioKanban.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioKanban.Location = new System.Drawing.Point(3, 65);
-            this.radioKanban.Name = "radioKanban";
-            this.radioKanban.Size = new System.Drawing.Size(126, 24);
-            this.radioKanban.TabIndex = 4;
-            this.radioKanban.Text = "Modelo Kanban.";
-            this.radioKanban.UseVisualStyleBackColor = false;
-            // 
-            // radioScrum
-            // 
-            this.radioScrum.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioScrum.AutoSize = true;
-            this.radioScrum.BackColor = System.Drawing.Color.Transparent;
-            this.radioScrum.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioScrum.Location = new System.Drawing.Point(3, 96);
-            this.radioScrum.Name = "radioScrum";
-            this.radioScrum.Size = new System.Drawing.Size(119, 24);
-            this.radioScrum.TabIndex = 5;
-            this.radioScrum.Text = "Modelo Scrum.";
-            this.radioScrum.UseVisualStyleBackColor = false;
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnCancelar.BorderColor = System.Drawing.Color.Black;
+            this.btnCancelar.BorderRadius = 20;
+            this.btnCancelar.BorderThickness = 4;
+            this.btnCancelar.ButtonColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(228, 14);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(150, 37);
+            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.Text = "SAIR SEM SALVAR";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.MouseEnter += new System.EventHandler(this.btnCancelar_MouseEnter);
+            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
             // 
             // TLPHead2
             // 
@@ -1052,49 +975,12 @@
             this.RGBHead2.BackColor = System.Drawing.Color.Transparent;
             this.RGBHead2.BackgroundColor = System.Drawing.Color.White;
             this.RGBHead2.BorderWidth = 1F;
-            this.RGBHead2.Controls.Add(this.btnCriar);
-            this.RGBHead2.Controls.Add(this.btnCancelar);
             this.RGBHead2.CornerRadius = 10;
             this.RGBHead2.Location = new System.Drawing.Point(3, 3);
             this.RGBHead2.Name = "RGBHead2";
             this.RGBHead2.Size = new System.Drawing.Size(1261, 54);
             this.RGBHead2.TabIndex = 3;
             this.RGBHead2.TabStop = false;
-            // 
-            // btnCriar
-            // 
-            this.btnCriar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCriar.BorderColor = System.Drawing.Color.Black;
-            this.btnCriar.BorderRadius = 20;
-            this.btnCriar.BorderThickness = 4;
-            this.btnCriar.ButtonColor = System.Drawing.Color.White;
-            this.btnCriar.Location = new System.Drawing.Point(1095, 8);
-            this.btnCriar.Name = "btnCriar";
-            this.btnCriar.Size = new System.Drawing.Size(150, 37);
-            this.btnCriar.TabIndex = 1;
-            this.btnCriar.Text = "CRIAR PROJETO";
-            this.btnCriar.UseVisualStyleBackColor = true;
-            this.btnCriar.Click += new System.EventHandler(this.BtnCriar_Click);
-            this.btnCriar.MouseEnter += new System.EventHandler(this.btnCriar_MouseEnter);
-            this.btnCriar.MouseLeave += new System.EventHandler(this.btnCriar_MouseLeave);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnCancelar.BorderColor = System.Drawing.Color.Black;
-            this.btnCancelar.BorderRadius = 20;
-            this.btnCancelar.BorderThickness = 4;
-            this.btnCancelar.ButtonColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(910, 8);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(150, 37);
-            this.btnCancelar.TabIndex = 0;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            this.btnCancelar.MouseEnter += new System.EventHandler(this.btnCancelar_MouseEnter);
-            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
             // 
             // TLPHead1
             // 
@@ -1134,15 +1020,15 @@
             // 
             // lblTitulo
             // 
-            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(442, 6);
+            this.lblTitulo.Location = new System.Drawing.Point(497, 6);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(386, 42);
+            this.lblTitulo.Size = new System.Drawing.Size(267, 42);
             this.lblTitulo.TabIndex = 11;
-            this.lblTitulo.Text = "CRIANDO NOVO PROJETO";
+            this.lblTitulo.Text = "EDITAR PROJETO";
             // 
             // OPBRecarregar
             // 
@@ -1195,16 +1081,16 @@
             this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
             this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
             // 
-            // frmCriar_Projeto
+            // frmEditar_Projeto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
             this.MinimumSize = new System.Drawing.Size(1280, 720);
-            this.Name = "frmCriar_Projeto";
-            this.Text = "frmCriar_Projeto";
-            this.Load += new System.EventHandler(this.frmCriar_Projeto_Load);
+            this.Name = "frmEditar_Projeto";
+            this.Text = "frmEditar_Projeto";
+            this.Load += new System.EventHandler(this.frmEditar_Projeto_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPConteudo.ResumeLayout(false);
             this.TLPFilho1.ResumeLayout(false);
@@ -1232,12 +1118,9 @@
             this.TLPFilho2.ResumeLayout(false);
             this.RGBDetalhada.ResumeLayout(false);
             this.RGBDetalhada.PerformLayout();
-            this.RGBModelos.ResumeLayout(false);
-            this.TLPOpcoes.ResumeLayout(false);
-            this.TLPOpcoes.PerformLayout();
+            this.RGBButtons.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
-            this.RGBHead2.ResumeLayout(false);
             this.TLPHead1.ResumeLayout(false);
             this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
@@ -1255,11 +1138,34 @@
         private System.Windows.Forms.TableLayoutPanel TLPConteudo;
         private System.Windows.Forms.TableLayoutPanel TLPFilho1;
         private System.Windows.Forms.TableLayoutPanel TLPNeto1;
-        private System.Windows.Forms.TableLayoutPanel TLPFilho2;
-        private RoundedGroupBox RGBDetalhada;
-        private RoundedGroupBox RGBModelos;
+        private RoundedGroupBox RGBPalavras;
+        private System.Windows.Forms.TextBox txtPalavras;
+        private RoundedGroupBox RGBYoutube;
+        private System.Windows.Forms.TextBox txtVideo;
+        private CustomLine customLine7;
+        private RoundedGroupBox RGBSite;
+        private System.Windows.Forms.TextBox txtSite;
+        private CustomLine customLine6;
+        private RoundedGroupBox RGBBreve;
+        private System.Windows.Forms.TextBox txtDescricaoBreve;
+        private System.Windows.Forms.Label lblcar5;
+        private CustomLine customLine5;
+        private RoundedGroupBox RGBLinguagem;
+        private System.Windows.Forms.TextBox txtLinguagem;
+        private System.Windows.Forms.Label lblCar4;
+        private CustomLine customLine4;
+        private RoundedGroupBox RGBAutores;
+        private System.Windows.Forms.TextBox txtAutores;
+        private System.Windows.Forms.Label lblCar3;
+        private CustomLine customLine3;
+        private RoundedGroupBox RGBEmail;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblcar2;
+        private CustomLine customLine2;
         private RoundedGroupBox RGBNome;
-        private RoundedGroupBox RGBCampos;
+        private System.Windows.Forms.TextBox txtNomeProjeto;
+        private System.Windows.Forms.Label lblcar1;
+        private CustomLine customLine1;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblAutores;
@@ -1268,59 +1174,29 @@
         private System.Windows.Forms.Label lblSite;
         private System.Windows.Forms.Label lblYoutube;
         private System.Windows.Forms.Label lblPalavras;
-        private RoundedGroupBox RGBBreve;
-        private RoundedGroupBox RGBLinguagem;
-        private RoundedGroupBox RGBAutores;
-        private RoundedGroupBox RGBEmail;
-        private RoundedGroupBox RGBPalavras;
-        private RoundedGroupBox RGBYoutube;
-        private RoundedGroupBox RGBSite;
-        private System.Windows.Forms.Label lblPublicar;
-        private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Label lblPrevi;
-        private System.Windows.Forms.Label lblModelos;
-        private CustomLine customLine1;
-        private System.Windows.Forms.TextBox txtNomeProjeto;
-        private System.Windows.Forms.Label lblcar1;
-        private System.Windows.Forms.TextBox txtPalavras;
-        private System.Windows.Forms.TextBox txtVideo;
-        private CustomLine customLine7;
-        private System.Windows.Forms.TextBox txtSite;
-        private CustomLine customLine6;
-        private System.Windows.Forms.TextBox txtDescricaoBreve;
-        private System.Windows.Forms.Label lblcar5;
-        private CustomLine customLine5;
-        private System.Windows.Forms.TextBox txtLinguagem;
-        private System.Windows.Forms.Label lblCar4;
-        private CustomLine customLine4;
-        private System.Windows.Forms.TextBox txtAutores;
-        private System.Windows.Forms.Label lblCar3;
-        private CustomLine customLine3;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lblcar2;
-        private CustomLine customLine2;
+        private RoundedGroupBox RGBCampos;
+        private System.Windows.Forms.CheckBox boxSemPrevisao;
         private System.Windows.Forms.RadioButton radioSim;
         private System.Windows.Forms.RadioButton radioNão;
         private System.Windows.Forms.ComboBox comboStatus;
         private System.Windows.Forms.DateTimePicker dtpPrevisao;
+        private System.Windows.Forms.Label lblPublicar;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblPrevi;
+        private System.Windows.Forms.TableLayoutPanel TLPFilho2;
+        private RoundedGroupBox RGBDetalhada;
         private System.Windows.Forms.TextBox txtDetalhada;
         private System.Windows.Forms.Label lblDetalhado;
-        private System.Windows.Forms.RadioButton radioPrazos;
-        private System.Windows.Forms.RadioButton radioEquipes;
-        private System.Windows.Forms.RadioButton radioScrum;
-        private System.Windows.Forms.RadioButton radioKanban;
-        private System.Windows.Forms.RadioButton radioSemModelos;
-        private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
+        private RoundedGroupBox RGBButtons;
         private System.Windows.Forms.TableLayoutPanel TLPHead2;
-        private System.Windows.Forms.TableLayoutPanel TLPHead1;
         private RoundedGroupBox RGBHead2;
+        private System.Windows.Forms.TableLayoutPanel TLPHead1;
         private RoundedGroupBox RGBHead1;
-        private RoundButton btnCriar;
-        private RoundButton btnCancelar;
+        private System.Windows.Forms.Label lblTitulo;
         private OvalPictureBox OPBRecarregar;
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
-        private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.CheckBox boxSemPrevisao;
+        private RoundButton btnAtualizar;
+        private RoundButton btnCancelar;
     }
 }

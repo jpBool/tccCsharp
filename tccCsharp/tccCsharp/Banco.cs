@@ -167,6 +167,93 @@ namespace tccCsharp
             return usuario;
         }
 
+        public static Project RecarregaSelecionado()
+        {
+            Project selecionado = new Project();
+            string sql;
+            try
+            {
+                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_projeto = @1 ";
+
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+
+                dr.Read();
+
+                selecionado.id_projeto = Convert.ToInt32(dr["id_projeto"]);
+                selecionado.id_criador = Convert.ToInt32(dr["id_criador"]);
+
+                if (dr["autores"] != DBNull.Value)
+                    selecionado.autores = dr["autores"].ToString();
+
+                if (dr["email_contato"] != DBNull.Value)
+                    selecionado.email_contato = dr["email_contato"].ToString();
+
+                selecionado.nome_projeto = dr["nome_projeto"].ToString();
+
+                if (dr["palavras_chave"] != DBNull.Value)
+                    selecionado.palavras_chave = dr["palavras_chave"].ToString();
+
+                if (dr["publico"] != DBNull.Value)
+                    selecionado.publico = Convert.ToBoolean(dr["publico"]);
+                else
+                    selecionado.publico = false;
+
+                selecionado.descricao_breve = dr["descricao_breve"].ToString();
+
+                if (dr["descricao_detalhada"] != DBNull.Value)
+                    selecionado.descricao_detalhada = dr["descricao_detalhada"].ToString();
+
+                if (dr["link_site"] != DBNull.Value)
+                    selecionado.link_site = dr["link_site"].ToString();
+
+                if (dr["link_youtube"] != DBNull.Value)
+                    selecionado.link_youtube = dr["link_youtube"].ToString();
+
+                if (dr["status"] != DBNull.Value)
+                    selecionado.status = Convert.ToInt32(dr["status"]);
+                else
+                    selecionado.status = 1;
+
+                if (dr["porcentagem"] != DBNull.Value)
+                    selecionado.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
+                else
+                    selecionado.porcentagem = 0;
+
+                selecionado.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
+
+                if (dr["data_atualizacao"] != DBNull.Value)
+                    selecionado.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
+
+                if (dr["atualizador"] != DBNull.Value)
+                    selecionado.atualizador = Convert.ToInt32(dr["atualizador"]);
+
+                selecionado.excluido = Convert.ToBoolean(dr["excluido"]);
+
+                if (dr["linguagem"] != DBNull.Value)
+                    selecionado.linguagem = dr["linguagem"].ToString();
+
+                if (dr["previsao"] != DBNull.Value)
+                    selecionado.previsao = Convert.ToDateTime(dr["previsao"]);
+
+                if (dr["num_grupos"] != DBNull.Value)
+                    selecionado.numero_grupos = Convert.ToInt32(dr["num_grupos"]);
+
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar esse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return selecionado;
+        }
+
         public static List<Project> CarregarProjetos(List<Project> projetos)
         {
             string sql;
