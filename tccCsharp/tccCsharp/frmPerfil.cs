@@ -275,41 +275,8 @@ namespace tccCsharp
         private void opbRecarregar_Click(object sender, EventArgs e)
         {
             DoDesign();
-        }
-
-        private void lblAdicionar_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            frmCriar_Projeto splash = new frmCriar_Projeto();
-            splash.ShowDialog();
-            if (Program.id_usuario == 0)
-            {
-                this.Close();
-            }
-            else
-            {
-                this.Visible = true;
-                if (Program.id_projeto_atual == 0)
-                {
-                    return;
-                }
-                else
-                {
-                    //Abrir frm Editar Projeto
-                    return;
-                }
-            }
-                
-        }
-
-        private void RGBBio_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TLP_Neta2_Paint(object sender, PaintEventArgs e)
-        {
-
+            Program.projetos = Banco.CarregarProjetos(Program.projetos);
+            Refresh_projects(Program.projetos);
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -326,7 +293,6 @@ namespace tccCsharp
                 if (Program.id_projeto_atual == 0)
                 {
                     this.Visible = true;
-                    return;
                 }
                 else
                 {
@@ -336,7 +302,10 @@ namespace tccCsharp
                     {
                         this.Close();
                     }
+                    this.Visible = true;
                 }
+                Program.projetos = Banco.CarregarProjetos(Program.projetos);
+                Refresh_projects(Program.projetos);
             }
         }
 
@@ -350,6 +319,9 @@ namespace tccCsharp
             {
                 this.Close();
             }
+            this.Visible = true;
+            Program.projetos = Banco.CarregarProjetos(Program.projetos);
+            Refresh_projects(Program.projetos);
         }
 
         private void opbEditarP2_Click(object sender, EventArgs e)
@@ -362,6 +334,9 @@ namespace tccCsharp
             {
                 this.Close();
             }
+            this.Visible = true;
+            Program.projetos = Banco.CarregarProjetos(Program.projetos);
+            Refresh_projects(Program.projetos);
         }
 
         private void opbEditarP3_Click(object sender, EventArgs e)
@@ -374,6 +349,9 @@ namespace tccCsharp
             {
                 this.Close();
             }
+            this.Visible = true;
+            Program.projetos = Banco.CarregarProjetos(Program.projetos);
+            Refresh_projects(Program.projetos);
         }
     }
 }

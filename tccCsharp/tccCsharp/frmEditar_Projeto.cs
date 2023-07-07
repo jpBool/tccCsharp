@@ -12,6 +12,8 @@ namespace tccCsharp
 {
     public partial class frmEditar_Projeto : Form
     {
+        public Project editando = new Project();
+
         public frmEditar_Projeto()
         {
             InitializeComponent();
@@ -69,11 +71,32 @@ namespace tccCsharp
             btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnAtualizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
 
+            btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnExcluir.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+
+            btnColaboradores.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnColaboradores.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnColaboradores.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+
+            btnImagens.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnImagens.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnImagens.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+
+            btnEtapas.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnEtapas.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnEtapas.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+
             OPBLogout._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBRecarregar._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
 
             lblTitulo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            lblPorcentagem.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblCriadoquando.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblCriador.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblAtualizadoquando.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblAtualizador.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
         }
 
         public string PalavrasChave()
@@ -125,53 +148,6 @@ namespace tccCsharp
             return Palavras;
         }
 
-        public void LimparCampos()
-        {
-            if (txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
-            {
-                txtNomeProjeto.Clear();
-                return;
-            }
-            if (txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
-            {
-                txtDescricaoBreve.Clear();
-                return;
-            }
-            if (comboStatus.SelectedIndex == -1)
-            {
-                return;
-            }
-
-            if (txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
-            {
-                txtPalavras.Clear();
-            }
-            if (txtEmail.Text == "E-mail para que enteressados entrem em contato")
-            {
-                txtEmail.Clear();
-            }
-            if (txtAutores.Text == "Nome dos responsáveis pelo projeto")
-            {
-                txtAutores.Clear();
-            }
-            if (txtLinguagem.Text == "Linguagens de programação utilizadas")
-            {
-                txtLinguagem.Clear();
-            }
-            if (txtSite.Text == "Site do projeto")
-            {
-                txtSite.Clear();
-            }
-            if (txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
-            {
-                txtVideo.Clear();
-            }
-            if (txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
-            {
-                txtDetalhada.Clear();
-            }
-        }
-
         private void frmEditar_Projeto_Load(object sender, EventArgs e)
         {
             TLP_Mãe.Font = new Font("Arial", 9);
@@ -184,7 +160,6 @@ namespace tccCsharp
             comboStatus.ValueMember = "id_status";
             comboStatus.DisplayMember = "status";
 
-            Project editando = new Project();
             editando = Banco.RecarregaSelecionado();
 
             txtNomeProjeto.Text = editando.nome_projeto;
@@ -268,7 +243,93 @@ namespace tccCsharp
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            return;
+
+            if (String.IsNullOrEmpty(txtNomeProjeto.Text) || txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
+            {
+                txtNomeProjeto.Focus();
+                txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+            else
+                editando.nome_projeto = txtNomeProjeto.Text;
+
+            if (String.IsNullOrEmpty(txtDescricaoBreve.Text) || txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
+            {
+                txtDescricaoBreve.Focus();
+                txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+                customLine5.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+            else
+                editando.descricao_breve = txtDescricaoBreve.Text;
+
+            if (comboStatus.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecione um Status", "Criando Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                comboStatus.Focus();
+                return;
+            }
+
+            else
+                editando.status = comboStatus.SelectedIndex + 1;
+
+            if (String.IsNullOrEmpty(txtEmail.Text) || txtEmail.Text == "E-mail para que enteressados entrem em contato")
+                editando.email_contato = null;
+            else
+                editando.email_contato = txtEmail.Text;
+
+            if (String.IsNullOrEmpty(txtAutores.Text) || txtAutores.Text == "Nome dos responsáveis pelo projeto")
+                editando.autores = null; 
+            else
+                editando.autores = txtAutores.Text;
+
+            if (String.IsNullOrEmpty(txtLinguagem.Text) || txtLinguagem.Text == "Linguagens de programação utilizadas")
+                editando.linguagem = null;
+            else editando.linguagem = txtLinguagem.Text;
+
+            if (String.IsNullOrEmpty(txtSite.Text) || txtSite.Text == "Site do projeto")
+                editando.link_site = null;
+            else
+                editando.link_site = txtSite.Text;
+
+            if (String.IsNullOrEmpty(txtVideo.Text) || txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
+                editando.link_youtube = null;
+            else
+                editando.link_youtube = txtVideo.Text;
+
+            if (String.IsNullOrEmpty(txtPalavras.Text) || txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
+                editando.palavras_chave = null;
+            else
+                editando.palavras_chave = PalavrasChave();
+
+            if (boxSemPrevisao.Checked == true)
+                editando.previsao = new DateTime(1, 1, 1);
+            else
+                editando.previsao = dtpPrevisao.Value;
+
+            if (radioSim.Checked == true)
+                editando.publico = true;
+            else
+                editando.publico = false;
+
+            if (String.IsNullOrEmpty(txtDetalhada.Text) || txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
+                editando.descricao_detalhada = null;
+            else
+                editando.descricao_detalhada = txtDetalhada.Text;
+
+            if (Program.id_usuario == 0)
+            {
+                MessageBox.Show("Ocorreu um erro ao resgatar suas informações!!!", "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+                editando.atualizador = Program.id_usuario;
+
+
+            editando.data_atualizacao = DateTime.Now;
+
+            Banco.AtulizarProjeto(editando);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -277,7 +338,19 @@ namespace tccCsharp
             this.Close();
         }
 
-
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja mesmo excluir seu projeto agora?", "Editando Projeto", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                Banco.ExcluirProjeto();
+                this.Close();
+            }
+            else if (resultado == DialogResult.No)
+            {
+                return;
+            }  
+        }
 
 
 
@@ -488,6 +561,12 @@ namespace tccCsharp
             OPBConfiguracoes.Refresh();
         }
 
+        private void btnExcluir_MouseEnter(object sender, EventArgs e)
+        {
+            btnExcluir.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
         //MOUSE LEAVE
         private void btnCancelar_MouseLeave(object sender, EventArgs e)
         {
@@ -518,5 +597,12 @@ namespace tccCsharp
             OPBConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBConfiguracoes.Refresh();
         }
+
+        private void btnExcluir_MouseLeave(object sender, EventArgs e)
+        {
+            btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
     }
 }

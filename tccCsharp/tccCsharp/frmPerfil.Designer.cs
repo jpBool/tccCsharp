@@ -438,7 +438,6 @@
             this.TLP_Neta2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TLP_Neta2.Size = new System.Drawing.Size(634, 204);
             this.TLP_Neta2.TabIndex = 1;
-            this.TLP_Neta2.Paint += new System.Windows.Forms.PaintEventHandler(this.TLP_Neta2_Paint);
             // 
             // RGBBio
             // 
@@ -455,7 +454,6 @@
             this.RGBBio.Size = new System.Drawing.Size(604, 132);
             this.RGBBio.TabIndex = 4;
             this.RGBBio.TabStop = false;
-            this.RGBBio.Enter += new System.EventHandler(this.RGBBio_Enter);
             // 
             // lblBio
             // 

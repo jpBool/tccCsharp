@@ -256,6 +256,7 @@ namespace tccCsharp
 
         public static List<Project> CarregarProjetos(List<Project> projetos)
         {
+            Program.projetos.Clear();
             string sql;
             try
             {
@@ -345,6 +346,48 @@ namespace tccCsharp
             return projetos;
         }
 
+        public static void AtulizarProjeto(Project Atualizar)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_projetos SET autores = @1, email_contato = @2, nome_projeto = @3, ";
+                sql += "palavras_chave = @4, publico = @5, descricao_breve = @6, descricao_detalhada = @7, link_site = @8, ";
+                sql += "link_youtube = @9, status = @10, porcentagem = @11, data_atualizacao = @12, atualizador = @13, ";
+                sql += "linguagem = @14, previsao = @15 WHERE id_projeto = @16 ";
+                
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", String.IsNullOrEmpty(Atualizar.autores) ? (object)DBNull.Value : (object)Atualizar.autores);
+                cmd.Parameters.AddWithValue("@2", String.IsNullOrEmpty(Atualizar.email_contato) ? (object)DBNull.Value : (object)Atualizar.email_contato);
+                cmd.Parameters.AddWithValue("@3", Atualizar.nome_projeto);
+                cmd.Parameters.AddWithValue("@4", String.IsNullOrEmpty(Atualizar.palavras_chave) ? (object)DBNull.Value : (object)Atualizar.palavras_chave);
+                cmd.Parameters.AddWithValue("@5", Atualizar.publico);
+                cmd.Parameters.AddWithValue("@6", Atualizar.descricao_breve);
+                cmd.Parameters.AddWithValue("@7", String.IsNullOrEmpty(Atualizar.descricao_detalhada) ? (object)DBNull.Value : (object)Atualizar.descricao_detalhada);
+                cmd.Parameters.AddWithValue("@8", String.IsNullOrEmpty(Atualizar.link_site) ? (object)DBNull.Value : (object)Atualizar.link_site);
+                cmd.Parameters.AddWithValue("@9", String.IsNullOrEmpty(Atualizar.link_youtube) ? (object)DBNull.Value : (object)Atualizar.link_youtube);
+                cmd.Parameters.AddWithValue("@10", (Atualizar.status == 0 ? (object)DBNull.Value : (object)Atualizar.status));
+                cmd.Parameters.AddWithValue("@11", Atualizar.porcentagem);
+                cmd.Parameters.AddWithValue("@12", Atualizar.data_atualizacao);
+                cmd.Parameters.AddWithValue("@13", Atualizar.atualizador);
+                cmd.Parameters.AddWithValue("@14", String.IsNullOrEmpty(Atualizar.linguagem) ? (object)DBNull.Value : (object)Atualizar.linguagem);
+                cmd.Parameters.AddWithValue("@15", Atualizar.previsao == new DateTime(1, 1, 1) ? (object)DBNull.Value : (object)Atualizar.previsao);
+                cmd.Parameters.AddWithValue("@16", Program.id_projeto_atual);
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+            }
+    }
+
         public static int InserirProjeto(Project Novo)
         {
             int idInserido;
@@ -383,7 +426,7 @@ namespace tccCsharp
             }
             catch (NpgsqlException ex)
             {
-                MessageBox.Show("Ocorreu um criar o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocorreu um erro ao criar o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 idInserido = 0;
             }
             finally
@@ -454,14 +497,50 @@ namespace tccCsharp
                 cmd2.Parameters.AddWithValue("@2", Program.id_projeto_atual);
                 cmd2.ExecuteNonQuery();
 
-                String sql3 = "UPDATE gp2_usuarios	SET  commits = commits + 1 WHERE id_usuario = @1;";
-                NpgsqlCommand cmd3 = new NpgsqlCommand(sql3, cn);
-                cmd3.Parameters.AddWithValue("@1", Program.id_usuario);
-                cmd3.ExecuteNonQuery();
             }
             catch (NpgsqlException ex)
             {
-                MessageBox.Show("Ocorreu um criar o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocorreu um erro ao criar o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+            }
+        }
+        public static void NewCommit()
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_usuarios	SET  commits = commits + 1 WHERE id_usuario = @1;";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", Program.id_usuario);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar suas informações !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+        public static void ExcluirProjeto()
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_projetos SET excluido = true WHERE id_projeto = @1;";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", Program.id_projeto_atual);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao excluir o projeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
