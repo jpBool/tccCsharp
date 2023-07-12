@@ -26,6 +26,17 @@ namespace tccCsharp
             //cldPersonalizacao = new ColorDialog()
             //;
             //frmConfiguracoes.BackgroundColor
+            DoDesign();
+        }
+
+        public void DoDesign()
+        {
+            //COMPONENTES DE AGRUPAMENTO
+            tlpBaseConfig1.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            rgbMenu.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            rgbMenu.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            
+            //LABELS
             lblCor1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             //alterar a oartir daqui
             lblCor2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -34,8 +45,14 @@ namespace tccCsharp
             lblCor5.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             lblCor6.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             lblCorAviso.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+
+            //BOTÕES
             btnAltTamF.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnAltTamF.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnPersonalizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnPersonalizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnTutoriais.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnTutoriais.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
         private void btnAltTamFont_Click(object sender, EventArgs e)
@@ -204,6 +221,7 @@ namespace tccCsharp
             //receber pparametro do combo box
             toggle = !toggle;
             nudFonte.Visible = toggle;
+            
         }
 
         private void btnPersonalizar_Click(object sender, EventArgs e)
@@ -253,6 +271,85 @@ namespace tccCsharp
         }
 
         private void opbRecarregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblConfiguracoes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblConfiguracoes_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnTutoriais_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
+
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tlpBaseConfig2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tlpBaseConfig3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rgbPCores_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void lblCor5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCor6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tlpBaseConfig4_Paint(object sender, PaintEventArgs e)
         {
 
         }
