@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 #pragma warning disable IDE1006
 
+//using System.Windows.Controls;
+
 namespace tccCsharp
 {
     public partial class frmConfiguracoes : Form
@@ -54,6 +56,45 @@ namespace tccCsharp
             btnTutoriais.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnTutoriais.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
+
+        private void TamanhoFonte()
+        {
+            //nudFonte = new nudFonte();
+            //nudFonte();
+            //nudFonte.Value = ;
+
+            //frmPersonalizacao formP = new frmPersonalizacao();
+            nudFonte.Value = 12;
+            nudFonte.Minimum = 12;
+            nudFonte.Maximum = 18;
+            //frmPerfil.DefaultFont.Size = num.value;
+            if (nudFonte.Value == 18)
+            {
+                
+                //frmPerfil.DefaultFont.Size = 13;
+
+                //frmPerfil.DefaultFont.Size("Arial", 24);
+
+                //frmPerfil.Default.Text.Size("Arial", 24);
+                
+                //this.Font = new Font("Arial", 18); //editar
+
+                //frmPerfil.ControlFont = new Font("Arial", 24);
+                //frmPerfil.setFont(new Font("Serif", Font.BOLD, 24));
+                //frmPerfil(new Font("Serif", Font.BOLD, 24));
+
+                //tlpBaseConfig1.Font = new Font("Arial", 18);
+
+
+                //Program.Font = new Font("Arial", 24);
+                //receber pparametro do combo box
+
+                //control.font?
+            }
+
+        }
+
+
 
         private void btnAltTamFont_Click(object sender, EventArgs e)
         {
@@ -216,6 +257,38 @@ namespace tccCsharp
             //n funciona
             /*frmPerfil form = new frmPerfil();
             form.Font = new Font("Arial", 28); *///n funciona
+
+            //frmConfigs
+            tlpBaseConfig1.Font = new Font("Arial", 24);
+            tlpBaseConfig2.Font = new Font("Arial", 24);
+            tlpBaseConfig3.Font = new Font("Arial", 24);
+            tlpBaseConfig4.Font = new Font("Arial", 24);
+
+            //frmPerfil
+            /*TLP_Mae.Font = new Font("Arial", 24);
+              TLP_Filha1.Font = new Font("Arial", 24);
+              TLP_Filha2.Font = new Font("Arial", 24);
+              TLP_Neta1.Font = new Font("Arial", 24);
+              TLP_Neta2.Font = new Font("Arial", 24);
+              TLPAvatar.Font = new Font("Arial", 24);
+              TLPHead1.Font = new Font("Arial", 24);
+              tlpOpcoes.Font = new Font("Arial", 24);
+            */
+
+            //frmLogin
+            /*
+            */
+
+            //frmCriar_Projeto
+            /*
+            */
+
+            //frmEditar_Projeto
+            /*
+            */
+
+
+
             //this.Font = new Font("Arial", 24); //editar
             //Program.Font = new Font("Arial", 24);
             //receber pparametro do combo box

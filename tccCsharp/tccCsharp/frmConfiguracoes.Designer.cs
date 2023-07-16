@@ -31,20 +31,23 @@ namespace tccCsharp
         private void InitializeComponent()
         {
             this.cldPersonalizacao = new System.Windows.Forms.ColorDialog();
-            this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
-            this.opbRecarregar = new tccCsharp.OvalPictureBox();
-            this.OPBLogout = new tccCsharp.OvalPictureBox();
             this.tlpBaseConfig1 = new System.Windows.Forms.TableLayoutPanel();
-            this.rgbMenu = new tccCsharp.RoundedGroupBox();
             this.tlpBaseConfig2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBaseConfig3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblConfiguracoes = new System.Windows.Forms.Label();
+            this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
+            this.nudFonte = new System.Windows.Forms.NumericUpDown();
+            this.rgbMenu = new tccCsharp.RoundedGroupBox();
+            this.OPBLogout = new tccCsharp.OvalPictureBox();
+            this.opbRecarregar = new tccCsharp.OvalPictureBox();
+            this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
             this.btnTutoriais = new RoundButton();
             this.btnAltTamF = new RoundButton();
             this.btnPersonalizar = new RoundButton();
-            this.lblConfiguracoes = new System.Windows.Forms.Label();
-            this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbPCores = new tccCsharp.RoundedGroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblDescC1 = new System.Windows.Forms.Label();
             this.lblDescC2 = new System.Windows.Forms.Label();
             this.lblCor1 = new System.Windows.Forms.Label();
@@ -59,63 +62,18 @@ namespace tccCsharp
             this.lblDescC7 = new System.Windows.Forms.Label();
             this.lblCor6 = new System.Windows.Forms.Label();
             this.lblCor5 = new System.Windows.Forms.Label();
-            this.nudFonte = new System.Windows.Forms.NumericUpDown();
             this.btnVoltar = new RoundButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
             this.tlpBaseConfig1.SuspendLayout();
-            this.rgbMenu.SuspendLayout();
             this.tlpBaseConfig2.SuspendLayout();
             this.tlpBaseConfig3.SuspendLayout();
             this.tlpBaseConfig4.SuspendLayout();
-            this.rgbPCores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudFonte)).BeginInit();
+            this.rgbMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
+            this.rgbPCores.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // opbConfiguracoes
-            // 
-            this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
-            this.opbConfiguracoes._borderwidth = 5F;
-            this.opbConfiguracoes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
-            this.opbConfiguracoes.Location = new System.Drawing.Point(926, 0);
-            this.opbConfiguracoes.Name = "opbConfiguracoes";
-            this.opbConfiguracoes.Size = new System.Drawing.Size(48, 48);
-            this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbConfiguracoes.TabIndex = 30;
-            this.opbConfiguracoes.TabStop = false;
-            // 
-            // opbRecarregar
-            // 
-            this.opbRecarregar._bordercolor = System.Drawing.Color.Red;
-            this.opbRecarregar._borderwidth = 5F;
-            this.opbRecarregar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
-            this.opbRecarregar.Location = new System.Drawing.Point(872, 0);
-            this.opbRecarregar.Name = "opbRecarregar";
-            this.opbRecarregar.Size = new System.Drawing.Size(48, 48);
-            this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbRecarregar.TabIndex = 31;
-            this.opbRecarregar.TabStop = false;
-            this.opbRecarregar.Click += new System.EventHandler(this.opbRecarregar_Click);
-            // 
-            // OPBLogout
-            // 
-            this.OPBLogout._bordercolor = System.Drawing.Color.Red;
-            this.OPBLogout._borderwidth = 5F;
-            this.OPBLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.OPBLogout.BackColor = System.Drawing.Color.White;
-            this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
-            this.OPBLogout.Location = new System.Drawing.Point(818, 0);
-            this.OPBLogout.Name = "OPBLogout";
-            this.OPBLogout.Size = new System.Drawing.Size(48, 48);
-            this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.OPBLogout.TabIndex = 29;
-            this.OPBLogout.TabStop = false;
-            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
             // 
             // tlpBaseConfig1
             // 
@@ -133,20 +91,6 @@ namespace tccCsharp
             this.tlpBaseConfig1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.31347F));
             this.tlpBaseConfig1.Size = new System.Drawing.Size(995, 453);
             this.tlpBaseConfig1.TabIndex = 35;
-            // 
-            // rgbMenu
-            // 
-            this.rgbMenu.BackgroundColor = System.Drawing.Color.White;
-            this.rgbMenu.BorderWidth = 1F;
-            this.rgbMenu.Controls.Add(this.OPBLogout);
-            this.rgbMenu.Controls.Add(this.opbRecarregar);
-            this.rgbMenu.Controls.Add(this.opbConfiguracoes);
-            this.rgbMenu.CornerRadius = 10;
-            this.rgbMenu.Location = new System.Drawing.Point(3, 3);
-            this.rgbMenu.Name = "rgbMenu";
-            this.rgbMenu.Size = new System.Drawing.Size(989, 53);
-            this.rgbMenu.TabIndex = 36;
-            this.rgbMenu.TabStop = false;
             // 
             // tlpBaseConfig2
             // 
@@ -172,7 +116,7 @@ namespace tccCsharp
             this.tlpBaseConfig3.ColumnCount = 3;
             this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.82353F));
             this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.17647F));
-            this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tlpBaseConfig3.Controls.Add(this.label1, 1, 1);
             this.tlpBaseConfig3.Controls.Add(this.btnTutoriais, 1, 7);
             this.tlpBaseConfig3.Controls.Add(this.btnAltTamF, 1, 6);
@@ -196,13 +140,130 @@ namespace tccCsharp
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(47, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(346, 37);
             this.label1.TabIndex = 28;
             this.label1.Text = "Configurações gerais";
+            // 
+            // lblConfiguracoes
+            // 
+            this.lblConfiguracoes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfiguracoes.Location = new System.Drawing.Point(47, 94);
+            this.lblConfiguracoes.Name = "lblConfiguracoes";
+            this.lblConfiguracoes.Size = new System.Drawing.Size(300, 19);
+            this.lblConfiguracoes.TabIndex = 27;
+            this.lblConfiguracoes.Text = "Configurações gerais e Acessibilidade";
+            this.lblConfiguracoes.Click += new System.EventHandler(this.lblConfiguracoes_Click);
+            // 
+            // tlpBaseConfig4
+            // 
+            this.tlpBaseConfig4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBaseConfig4.ColumnCount = 4;
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.93886F));
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.06113F));
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tlpBaseConfig4.Controls.Add(this.rgbPCores, 1, 1);
+            this.tlpBaseConfig4.Controls.Add(this.nudFonte, 0, 1);
+            this.tlpBaseConfig4.Controls.Add(this.btnVoltar, 1, 3);
+            this.tlpBaseConfig4.Location = new System.Drawing.Point(500, 11);
+            this.tlpBaseConfig4.Name = "tlpBaseConfig4";
+            this.tlpBaseConfig4.RowCount = 5;
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.605863F));
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.39413F));
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tlpBaseConfig4.Size = new System.Drawing.Size(486, 371);
+            this.tlpBaseConfig4.TabIndex = 33;
+            this.tlpBaseConfig4.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpBaseConfig4_Paint);
+            // 
+            // nudFonte
+            // 
+            this.nudFonte.Location = new System.Drawing.Point(3, 11);
+            this.nudFonte.Maximum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.nudFonte.Minimum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.nudFonte.Name = "nudFonte";
+            this.nudFonte.Size = new System.Drawing.Size(52, 20);
+            this.nudFonte.TabIndex = 7;
+            this.nudFonte.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.nudFonte.Visible = false;
+            this.nudFonte.ValueChanged += new System.EventHandler(this.nudFonte_ValueChanged);
+            // 
+            // rgbMenu
+            // 
+            this.rgbMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbMenu.BackgroundColor = System.Drawing.Color.White;
+            this.rgbMenu.BorderWidth = 1F;
+            this.rgbMenu.Controls.Add(this.OPBLogout);
+            this.rgbMenu.Controls.Add(this.opbRecarregar);
+            this.rgbMenu.Controls.Add(this.opbConfiguracoes);
+            this.rgbMenu.CornerRadius = 10;
+            this.rgbMenu.Location = new System.Drawing.Point(3, 3);
+            this.rgbMenu.Name = "rgbMenu";
+            this.rgbMenu.Size = new System.Drawing.Size(989, 55);
+            this.rgbMenu.TabIndex = 36;
+            this.rgbMenu.TabStop = false;
+            // 
+            // OPBLogout
+            // 
+            this.OPBLogout._bordercolor = System.Drawing.Color.Red;
+            this.OPBLogout._borderwidth = 5F;
+            this.OPBLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.OPBLogout.BackColor = System.Drawing.Color.White;
+            this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
+            this.OPBLogout.Location = new System.Drawing.Point(818, 1);
+            this.OPBLogout.Name = "OPBLogout";
+            this.OPBLogout.Size = new System.Drawing.Size(48, 48);
+            this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.OPBLogout.TabIndex = 29;
+            this.OPBLogout.TabStop = false;
+            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
+            // 
+            // opbRecarregar
+            // 
+            this.opbRecarregar._bordercolor = System.Drawing.Color.Red;
+            this.opbRecarregar._borderwidth = 5F;
+            this.opbRecarregar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
+            this.opbRecarregar.Location = new System.Drawing.Point(872, 1);
+            this.opbRecarregar.Name = "opbRecarregar";
+            this.opbRecarregar.Size = new System.Drawing.Size(48, 48);
+            this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbRecarregar.TabIndex = 31;
+            this.opbRecarregar.TabStop = false;
+            this.opbRecarregar.Click += new System.EventHandler(this.opbRecarregar_Click);
+            // 
+            // opbConfiguracoes
+            // 
+            this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
+            this.opbConfiguracoes._borderwidth = 5F;
+            this.opbConfiguracoes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
+            this.opbConfiguracoes.Location = new System.Drawing.Point(926, 1);
+            this.opbConfiguracoes.Name = "opbConfiguracoes";
+            this.opbConfiguracoes.Size = new System.Drawing.Size(48, 48);
+            this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbConfiguracoes.TabIndex = 30;
+            this.opbConfiguracoes.TabStop = false;
             // 
             // btnTutoriais
             // 
@@ -246,42 +307,6 @@ namespace tccCsharp
             this.btnPersonalizar.UseVisualStyleBackColor = true;
             this.btnPersonalizar.Click += new System.EventHandler(this.btnPersonalizar_Click);
             // 
-            // lblConfiguracoes
-            // 
-            this.lblConfiguracoes.AutoSize = true;
-            this.lblConfiguracoes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfiguracoes.Location = new System.Drawing.Point(47, 94);
-            this.lblConfiguracoes.Name = "lblConfiguracoes";
-            this.lblConfiguracoes.Size = new System.Drawing.Size(300, 19);
-            this.lblConfiguracoes.TabIndex = 27;
-            this.lblConfiguracoes.Text = "Configurações gerais e Acessibilidade";
-            this.lblConfiguracoes.Click += new System.EventHandler(this.lblConfiguracoes_Click);
-            // 
-            // tlpBaseConfig4
-            // 
-            this.tlpBaseConfig4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBaseConfig4.ColumnCount = 4;
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.93886F));
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.06113F));
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tlpBaseConfig4.Controls.Add(this.rgbPCores, 1, 1);
-            this.tlpBaseConfig4.Controls.Add(this.nudFonte, 0, 1);
-            this.tlpBaseConfig4.Controls.Add(this.btnVoltar, 1, 3);
-            this.tlpBaseConfig4.Location = new System.Drawing.Point(500, 11);
-            this.tlpBaseConfig4.Name = "tlpBaseConfig4";
-            this.tlpBaseConfig4.RowCount = 5;
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.605863F));
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.39413F));
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tlpBaseConfig4.Size = new System.Drawing.Size(486, 371);
-            this.tlpBaseConfig4.TabIndex = 33;
-            this.tlpBaseConfig4.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpBaseConfig4_Paint);
-            // 
             // rgbPCores
             // 
             this.rgbPCores.BackgroundColor = System.Drawing.Color.White;
@@ -303,7 +328,7 @@ namespace tccCsharp
             this.rgbPCores.Controls.Add(this.lblCor6);
             this.rgbPCores.Controls.Add(this.lblCor5);
             this.rgbPCores.CornerRadius = 10;
-            this.rgbPCores.Location = new System.Drawing.Point(77, 11);
+            this.rgbPCores.Location = new System.Drawing.Point(76, 11);
             this.rgbPCores.Name = "rgbPCores";
             this.rgbPCores.Size = new System.Drawing.Size(364, 289);
             this.rgbPCores.TabIndex = 23;
@@ -311,6 +336,26 @@ namespace tccCsharp
             this.rgbPCores.Text = "Personalização de cores";
             this.rgbPCores.Visible = false;
             this.rgbPCores.Enter += new System.EventHandler(this.rgbPCores_Enter);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(117, 203);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "label11";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Location = new System.Drawing.Point(92, 203);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 15);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "    ";
             // 
             // lblDescC1
             // 
@@ -459,30 +504,6 @@ namespace tccCsharp
             this.lblCor5.Text = "    ";
             this.lblCor5.Click += new System.EventHandler(this.lblCor5_Click);
             // 
-            // nudFonte
-            // 
-            this.nudFonte.Location = new System.Drawing.Point(3, 11);
-            this.nudFonte.Maximum = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            this.nudFonte.Minimum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.nudFonte.Name = "nudFonte";
-            this.nudFonte.Size = new System.Drawing.Size(52, 20);
-            this.nudFonte.TabIndex = 7;
-            this.nudFonte.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.nudFonte.Visible = false;
-            this.nudFonte.ValueChanged += new System.EventHandler(this.nudFonte_ValueChanged);
-            // 
             // btnVoltar
             // 
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -491,33 +512,13 @@ namespace tccCsharp
             this.btnVoltar.BorderRadius = 10;
             this.btnVoltar.BorderThickness = 2;
             this.btnVoltar.ButtonColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(390, 336);
+            this.btnVoltar.Location = new System.Drawing.Point(385, 336);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnVoltar.TabIndex = 25;
             this.btnVoltar.Text = "VOLTAR";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 203);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "label11";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(92, 203);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 15);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "    ";
             // 
             // frmConfiguracoes
             // 
@@ -529,18 +530,17 @@ namespace tccCsharp
             this.Name = "frmConfiguracoes";
             this.Text = "frmConfiguracoes";
             this.Load += new System.EventHandler(this.frmConfiguracoes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
             this.tlpBaseConfig1.ResumeLayout(false);
-            this.rgbMenu.ResumeLayout(false);
             this.tlpBaseConfig2.ResumeLayout(false);
             this.tlpBaseConfig3.ResumeLayout(false);
-            this.tlpBaseConfig3.PerformLayout();
             this.tlpBaseConfig4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nudFonte)).EndInit();
+            this.rgbMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
             this.rgbPCores.ResumeLayout(false);
             this.rgbPCores.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudFonte)).EndInit();
             this.ResumeLayout(false);
 
         }
