@@ -40,13 +40,16 @@ namespace tccCsharp
             
             //LABELS
             lblCor1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            //alterar a oartir daqui
             lblCor2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             lblCor3.BackColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
             lblCor4.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
-            lblCor5.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            lblCor6.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            lblCorAviso.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            lblCor5.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            lblCor6.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            lblCor7.BackColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+            lblCorAviso1.BackColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            lblCorAviso2.BackColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+            lblCorTexto1.BackColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblCorTexto2.BackColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
             //BOTÕES
             btnAltTamF.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -57,50 +60,6 @@ namespace tccCsharp
             btnTutoriais.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
-        private void TamanhoFonte()
-        {
-            //nudFonte = new nudFonte();
-            //nudFonte();
-            //nudFonte.Value = ;
-
-            //frmPersonalizacao formP = new frmPersonalizacao();
-            nudFonte.Value = 12;
-            nudFonte.Minimum = 12;
-            nudFonte.Maximum = 18;
-            //frmPerfil.DefaultFont.Size = num.value;
-            if (nudFonte.Value == 18)
-            {
-                
-                //frmPerfil.DefaultFont.Size = 13;
-
-                //frmPerfil.DefaultFont.Size("Arial", 24);
-
-                //frmPerfil.Default.Text.Size("Arial", 24);
-                
-                //this.Font = new Font("Arial", 18); //editar
-
-                //frmPerfil.ControlFont = new Font("Arial", 24);
-                //frmPerfil.setFont(new Font("Serif", Font.BOLD, 24));
-                //frmPerfil(new Font("Serif", Font.BOLD, 24));
-
-                //tlpBaseConfig1.Font = new Font("Arial", 18);
-
-
-                //Program.Font = new Font("Arial", 24);
-                //receber pparametro do combo box
-
-                //control.font?
-            }
-
-        }
-
-
-
-        private void btnAltTamFont_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
 
         private void btnPersonalizacao_MouseEnter(object sender, EventArgs e)
         {
@@ -130,16 +89,6 @@ namespace tccCsharp
 
         }
 
-        private void lblCor1_MouseLeave(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void lblCor1_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblCor2_Click(object sender, EventArgs e)
         {
             //cores internas dos cards e outros elementos internos lavanda(azul ameno)
@@ -151,55 +100,18 @@ namespace tccCsharp
 
             }
         }
-
-        private void lblCor2_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCor2_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCor1_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void lblCor3_Click(object sender, EventArgs e)
-        {      
+        {
             //background inferior branco
             if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
             {
-                
+
                 Program.Cor3[0] = cldPersonalizacao.Color.R;
                 Program.Cor3[1] = cldPersonalizacao.Color.G;
                 Program.Cor3[2] = cldPersonalizacao.Color.B;
 
             }
         }
-
-        private void lblCor3_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCor2_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void lblCor3_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCor3_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void lblCor4_Click(object sender, EventArgs e)
         {
             //cores dos cards azul claro
@@ -211,87 +123,127 @@ namespace tccCsharp
 
             }
         }
-
-        private void lblCor4_MouseLeave(object sender, EventArgs e)
+        private void lblCor5_Click(object sender, EventArgs e)
         {
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
 
+                Program.Cor5[0] = cldPersonalizacao.Color.R;
+                Program.Cor5[1] = cldPersonalizacao.Color.G;
+                Program.Cor5[2] = cldPersonalizacao.Color.B;
+
+            }
         }
 
-        private void lblCor4_MouseEnter(object sender, EventArgs e)
+        private void lblCor6_Click(object sender, EventArgs e)
         {
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
 
+                Program.Cor6[0] = cldPersonalizacao.Color.R;
+                Program.Cor6[1] = cldPersonalizacao.Color.G;
+                Program.Cor6[2] = cldPersonalizacao.Color.B;
+
+            }
         }
 
-        private void lblCor4_MouseClick(object sender, MouseEventArgs e)
+        private void lblCor7_Click(object sender, EventArgs e)
         {
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
 
+                Program.Cor7[0] = cldPersonalizacao.Color.R;
+                Program.Cor7[1] = cldPersonalizacao.Color.G;
+                Program.Cor7[2] = cldPersonalizacao.Color.B;
+
+            }
         }
 
-        private void lblCorAviso_Click(object sender, EventArgs e)
+        private void lblCorAviso1_Click(object sender, EventArgs e)
         {
-
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
+                Program.CorAviso1[0] = cldPersonalizacao.Color.R;
+                Program.CorAviso1[1] = cldPersonalizacao.Color.G;
+                Program.CorAviso1[2] = cldPersonalizacao.Color.B;
+            }
+           
         }
 
-        private void lblCorAviso_MouseLeave(object sender, EventArgs e)
+        private void lblCorAviso2_Click(object sender, EventArgs e)
         {
-
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
+                Program.CorAviso2[0] = cldPersonalizacao.Color.R;
+                Program.CorAviso2[1] = cldPersonalizacao.Color.G;
+                Program.CorAviso2[2] = cldPersonalizacao.Color.B;
+            }
+            
         }
 
-        private void lblCorAviso_MouseEnter(object sender, EventArgs e)
+        private void lblCorTexto1_Click(object sender, EventArgs e)
         {
-
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
+                Program.CorTexto1[0] = cldPersonalizacao.Color.R;
+                Program.CorTexto1[1] = cldPersonalizacao.Color.G;
+                Program.CorTexto1[2] = cldPersonalizacao.Color.B;
+            }
+            
         }
 
-        private void lblCorAviso_MouseClick(object sender, MouseEventArgs e)
+        private void lblCorTexto2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void nudFonte_ValueChanged(object sender, EventArgs e)
-        {
+            if (cldPersonalizacao.ShowDialog() == DialogResult.OK)
+            {
+                Program.CorTexto2[0] = cldPersonalizacao.Color.R;
+                Program.CorTexto2[1] = cldPersonalizacao.Color.G;
+                Program.CorTexto2[2] = cldPersonalizacao.Color.B;
+            }
             
         }
 
         private void btnAltTamF_Click(object sender, EventArgs e)
         {
-            //n funciona
-            /*frmPerfil form = new frmPerfil();
-            form.Font = new Font("Arial", 28); *///n funciona
+            FontDialog fd = new FontDialog();
+            if(fd.ShowDialog() == DialogResult.OK)
+            {
+                //frmPerfil.Font = fd.Font; //frms n possuem a definicao .Font??
+                //Program.Font = fd.Font; //program n contem uma definicao p .font
 
-            //frmConfigs
-            tlpBaseConfig1.Font = new Font("Arial", 24);
-            tlpBaseConfig2.Font = new Font("Arial", 24);
-            tlpBaseConfig3.Font = new Font("Arial", 24);
-            tlpBaseConfig4.Font = new Font("Arial", 24);
+                //frmConfigs
+                tlpBaseConfig1.Font = fd.Font;
+                tlpBaseConfig2.Font = fd.Font;
+                tlpBaseConfig3.Font = fd.Font;
+                tlpBaseConfig4.Font = fd.Font;
+                //teste
+                lblConfigsG.Font = fd.Font;
+                lblConfiguracoes.Font = fd.Font;
 
-            //frmPerfil
-            /*TLP_Mae.Font = new Font("Arial", 24);
-              TLP_Filha1.Font = new Font("Arial", 24);
-              TLP_Filha2.Font = new Font("Arial", 24);
-              TLP_Neta1.Font = new Font("Arial", 24);
-              TLP_Neta2.Font = new Font("Arial", 24);
-              TLPAvatar.Font = new Font("Arial", 24);
-              TLPHead1.Font = new Font("Arial", 24);
-              tlpOpcoes.Font = new Font("Arial", 24);
-            */
+                //frmPerfil
+                /*TLP_Mae.Font = fd.Font;
+                  TLP_Filha1.Font = fd.Font;
+                  TLP_Filha2.Font = fd.Font;
+                  TLP_Neta1.Font = fd.Font;
+                  TLP_Neta2.Font = fd.Font;
+                  TLPAvatar.Font = fd.Font;
+                  TLPHead1.Font = fd.Font;
+                  tlpOpcoes.Font = fd.Font;
+                */
 
-            //frmLogin
-            /*
-            */
+                //frmLogin
+                /*
+                */
 
-            //frmCriar_Projeto
-            /*
-            */
+                //frmCriar_Projeto
+                /*
+                */
 
-            //frmEditar_Projeto
-            /*
-            */
+                //frmEditar_Projeto
+                /*
+                */
+            }
 
-
-
-            //this.Font = new Font("Arial", 24); //editar
-            //Program.Font = new Font("Arial", 24);
-            //receber pparametro do combo box
             toggle = !toggle;
             nudFonte.Visible = toggle;
             
@@ -358,32 +310,10 @@ namespace tccCsharp
 
         }
 
-        private void lblConfiguracoes_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnTutoriais_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint_2(object sender, PaintEventArgs e)
-        {
-
-        }
-
-       
 
         private void OPBLogout_Click(object sender, EventArgs e)
         {
@@ -411,22 +341,17 @@ namespace tccCsharp
 
         }
 
-        
-        private void lblCor5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCor6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tlpBaseConfig4_Paint(object sender, PaintEventArgs e)
         {
 
         }
-    }
+
+        private void lblCorAviso_Click(object sender, EventArgs e)
+        {
+
+        }
 
         
+    }
+ 
 }

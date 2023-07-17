@@ -34,7 +34,7 @@ namespace tccCsharp
             this.tlpBaseConfig1 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBaseConfig2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBaseConfig3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblConfigsG = new System.Windows.Forms.Label();
             this.lblConfiguracoes = new System.Windows.Forms.Label();
             this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
             this.nudFonte = new System.Windows.Forms.NumericUpDown();
@@ -47,7 +47,7 @@ namespace tccCsharp
             this.btnPersonalizar = new RoundButton();
             this.rgbPCores = new tccCsharp.RoundedGroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCor7 = new System.Windows.Forms.Label();
             this.lblDescC1 = new System.Windows.Forms.Label();
             this.lblDescC2 = new System.Windows.Forms.Label();
             this.lblCor1 = new System.Windows.Forms.Label();
@@ -56,13 +56,19 @@ namespace tccCsharp
             this.lblDescC4 = new System.Windows.Forms.Label();
             this.lblCor2 = new System.Windows.Forms.Label();
             this.lblDescC5 = new System.Windows.Forms.Label();
-            this.lblCorAviso = new System.Windows.Forms.Label();
             this.lblDescC6 = new System.Windows.Forms.Label();
             this.lblCor4 = new System.Windows.Forms.Label();
-            this.lblDescC7 = new System.Windows.Forms.Label();
             this.lblCor6 = new System.Windows.Forms.Label();
             this.lblCor5 = new System.Windows.Forms.Label();
             this.btnVoltar = new RoundButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblCorAviso2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblCorTexto2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblCorTexto1 = new System.Windows.Forms.Label();
+            this.lblCorAviso1 = new System.Windows.Forms.Label();
             this.tlpBaseConfig1.SuspendLayout();
             this.tlpBaseConfig2.SuspendLayout();
             this.tlpBaseConfig3.SuspendLayout();
@@ -94,6 +100,9 @@ namespace tccCsharp
             // 
             // tlpBaseConfig2
             // 
+            this.tlpBaseConfig2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpBaseConfig2.ColumnCount = 2;
             this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.35389F));
             this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64611F));
@@ -104,7 +113,7 @@ namespace tccCsharp
             this.tlpBaseConfig2.RowCount = 2;
             this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.105263F));
             this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.89474F));
-            this.tlpBaseConfig2.Size = new System.Drawing.Size(989, 385);
+            this.tlpBaseConfig2.Size = new System.Drawing.Size(989, 386);
             this.tlpBaseConfig2.TabIndex = 35;
             this.tlpBaseConfig2.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpBaseConfig2_Paint);
             // 
@@ -116,41 +125,41 @@ namespace tccCsharp
             this.tlpBaseConfig3.ColumnCount = 3;
             this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.82353F));
             this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.17647F));
-            this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.tlpBaseConfig3.Controls.Add(this.label1, 1, 1);
+            this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
             this.tlpBaseConfig3.Controls.Add(this.btnTutoriais, 1, 7);
             this.tlpBaseConfig3.Controls.Add(this.btnAltTamF, 1, 6);
             this.tlpBaseConfig3.Controls.Add(this.btnPersonalizar, 1, 5);
+            this.tlpBaseConfig3.Controls.Add(this.lblConfigsG, 1, 1);
             this.tlpBaseConfig3.Controls.Add(this.lblConfiguracoes, 1, 3);
             this.tlpBaseConfig3.Location = new System.Drawing.Point(3, 11);
             this.tlpBaseConfig3.Name = "tlpBaseConfig3";
             this.tlpBaseConfig3.RowCount = 9;
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.26415F));
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.73585F));
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.63158F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.36842F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tlpBaseConfig3.Size = new System.Drawing.Size(491, 371);
+            this.tlpBaseConfig3.Size = new System.Drawing.Size(491, 372);
             this.tlpBaseConfig3.TabIndex = 33;
             this.tlpBaseConfig3.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpBaseConfig3_Paint);
             // 
-            // label1
+            // lblConfigsG
             // 
-            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 37);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Configurações gerais";
+            this.lblConfigsG.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfigsG.Location = new System.Drawing.Point(46, 17);
+            this.lblConfigsG.Name = "lblConfigsG";
+            this.lblConfigsG.Size = new System.Drawing.Size(346, 39);
+            this.lblConfigsG.TabIndex = 28;
+            this.lblConfigsG.Text = "Configurações gerais";
             // 
             // lblConfiguracoes
             // 
             this.lblConfiguracoes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfiguracoes.Location = new System.Drawing.Point(47, 94);
+            this.lblConfiguracoes.Location = new System.Drawing.Point(46, 74);
             this.lblConfiguracoes.Name = "lblConfiguracoes";
             this.lblConfiguracoes.Size = new System.Drawing.Size(300, 19);
             this.lblConfiguracoes.TabIndex = 27;
@@ -166,7 +175,7 @@ namespace tccCsharp
             this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.93886F));
             this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.06113F));
             this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
             this.tlpBaseConfig4.Controls.Add(this.rgbPCores, 1, 1);
             this.tlpBaseConfig4.Controls.Add(this.nudFonte, 0, 1);
             this.tlpBaseConfig4.Controls.Add(this.btnVoltar, 1, 3);
@@ -178,7 +187,7 @@ namespace tccCsharp
             this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
             this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tlpBaseConfig4.Size = new System.Drawing.Size(486, 371);
+            this.tlpBaseConfig4.Size = new System.Drawing.Size(486, 372);
             this.tlpBaseConfig4.TabIndex = 33;
             this.tlpBaseConfig4.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpBaseConfig4_Paint);
             // 
@@ -204,12 +213,10 @@ namespace tccCsharp
             0,
             0});
             this.nudFonte.Visible = false;
-            this.nudFonte.ValueChanged += new System.EventHandler(this.nudFonte_ValueChanged);
             // 
             // rgbMenu
             // 
-            this.rgbMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.rgbMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rgbMenu.BackgroundColor = System.Drawing.Color.White;
             this.rgbMenu.BorderWidth = 1F;
@@ -227,7 +234,8 @@ namespace tccCsharp
             // 
             this.OPBLogout._bordercolor = System.Drawing.Color.Red;
             this.OPBLogout._borderwidth = 5F;
-            this.OPBLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.OPBLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.OPBLogout.BackColor = System.Drawing.Color.White;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
             this.OPBLogout.Location = new System.Drawing.Point(818, 1);
@@ -242,7 +250,8 @@ namespace tccCsharp
             // 
             this.opbRecarregar._bordercolor = System.Drawing.Color.Red;
             this.opbRecarregar._borderwidth = 5F;
-            this.opbRecarregar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.opbRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
             this.opbRecarregar.Location = new System.Drawing.Point(872, 1);
             this.opbRecarregar.Name = "opbRecarregar";
@@ -256,7 +265,8 @@ namespace tccCsharp
             // 
             this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
             this.opbConfiguracoes._borderwidth = 5F;
-            this.opbConfiguracoes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.opbConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
             this.opbConfiguracoes.Location = new System.Drawing.Point(926, 1);
             this.opbConfiguracoes.Name = "opbConfiguracoes";
@@ -271,7 +281,7 @@ namespace tccCsharp
             this.btnTutoriais.BorderRadius = 10;
             this.btnTutoriais.BorderThickness = 2;
             this.btnTutoriais.ButtonColor = System.Drawing.Color.White;
-            this.btnTutoriais.Location = new System.Drawing.Point(47, 255);
+            this.btnTutoriais.Location = new System.Drawing.Point(46, 256);
             this.btnTutoriais.Name = "btnTutoriais";
             this.btnTutoriais.Size = new System.Drawing.Size(143, 23);
             this.btnTutoriais.TabIndex = 29;
@@ -285,7 +295,7 @@ namespace tccCsharp
             this.btnAltTamF.BorderRadius = 10;
             this.btnAltTamF.BorderThickness = 2;
             this.btnAltTamF.ButtonColor = System.Drawing.Color.White;
-            this.btnAltTamF.Location = new System.Drawing.Point(47, 204);
+            this.btnAltTamF.Location = new System.Drawing.Point(46, 205);
             this.btnAltTamF.Name = "btnAltTamF";
             this.btnAltTamF.Size = new System.Drawing.Size(143, 23);
             this.btnAltTamF.TabIndex = 27;
@@ -299,7 +309,7 @@ namespace tccCsharp
             this.btnPersonalizar.BorderRadius = 10;
             this.btnPersonalizar.BorderThickness = 2;
             this.btnPersonalizar.ButtonColor = System.Drawing.Color.White;
-            this.btnPersonalizar.Location = new System.Drawing.Point(47, 156);
+            this.btnPersonalizar.Location = new System.Drawing.Point(46, 151);
             this.btnPersonalizar.Name = "btnPersonalizar";
             this.btnPersonalizar.Size = new System.Drawing.Size(143, 23);
             this.btnPersonalizar.TabIndex = 28;
@@ -311,8 +321,16 @@ namespace tccCsharp
             // 
             this.rgbPCores.BackgroundColor = System.Drawing.Color.White;
             this.rgbPCores.BorderWidth = 1F;
+            this.rgbPCores.Controls.Add(this.label1);
+            this.rgbPCores.Controls.Add(this.lblCorAviso2);
+            this.rgbPCores.Controls.Add(this.label4);
+            this.rgbPCores.Controls.Add(this.lblCorTexto2);
+            this.rgbPCores.Controls.Add(this.label6);
+            this.rgbPCores.Controls.Add(this.label7);
+            this.rgbPCores.Controls.Add(this.lblCorTexto1);
+            this.rgbPCores.Controls.Add(this.lblCorAviso1);
             this.rgbPCores.Controls.Add(this.label2);
-            this.rgbPCores.Controls.Add(this.label3);
+            this.rgbPCores.Controls.Add(this.lblCor7);
             this.rgbPCores.Controls.Add(this.lblDescC1);
             this.rgbPCores.Controls.Add(this.lblDescC2);
             this.rgbPCores.Controls.Add(this.lblCor1);
@@ -321,10 +339,8 @@ namespace tccCsharp
             this.rgbPCores.Controls.Add(this.lblDescC4);
             this.rgbPCores.Controls.Add(this.lblCor2);
             this.rgbPCores.Controls.Add(this.lblDescC5);
-            this.rgbPCores.Controls.Add(this.lblCorAviso);
             this.rgbPCores.Controls.Add(this.lblDescC6);
             this.rgbPCores.Controls.Add(this.lblCor4);
-            this.rgbPCores.Controls.Add(this.lblDescC7);
             this.rgbPCores.Controls.Add(this.lblCor6);
             this.rgbPCores.Controls.Add(this.lblCor5);
             this.rgbPCores.CornerRadius = 10;
@@ -340,40 +356,41 @@ namespace tccCsharp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 203);
+            this.label2.Location = new System.Drawing.Point(43, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 24;
-            this.label2.Text = "label11";
+            this.label2.Text = "cor7";
             // 
-            // label3
+            // lblCor7
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(92, 203);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 15);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "    ";
+            this.lblCor7.AutoSize = true;
+            this.lblCor7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCor7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor7.Location = new System.Drawing.Point(18, 131);
+            this.lblCor7.Name = "lblCor7";
+            this.lblCor7.Size = new System.Drawing.Size(21, 15);
+            this.lblCor7.TabIndex = 23;
+            this.lblCor7.Text = "    ";
+            this.lblCor7.Click += new System.EventHandler(this.lblCor7_Click);
             // 
             // lblDescC1
             // 
             this.lblDescC1.AutoSize = true;
             this.lblDescC1.Location = new System.Drawing.Point(43, 71);
             this.lblDescC1.Name = "lblDescC1";
-            this.lblDescC1.Size = new System.Drawing.Size(153, 13);
+            this.lblDescC1.Size = new System.Drawing.Size(28, 13);
             this.lblDescC1.TabIndex = 15;
-            this.lblDescC1.Text = "(Parte superior do background)";
+            this.lblDescC1.Text = "cor1";
             // 
             // lblDescC2
             // 
             this.lblDescC2.AutoSize = true;
-            this.lblDescC2.Location = new System.Drawing.Point(43, 96);
+            this.lblDescC2.Location = new System.Drawing.Point(110, 71);
             this.lblDescC2.Name = "lblDescC2";
-            this.lblDescC2.Size = new System.Drawing.Size(260, 13);
+            this.lblDescC2.Size = new System.Drawing.Size(28, 13);
             this.lblDescC2.TabIndex = 22;
-            this.lblDescC2.Text = "(cores internas dos cards e outros elementos internos)";
+            this.lblDescC2.Text = "cor2";
             // 
             // lblCor1
             // 
@@ -390,18 +407,18 @@ namespace tccCsharp
             // lblDescC3
             // 
             this.lblDescC3.AutoSize = true;
-            this.lblDescC3.Location = new System.Drawing.Point(43, 121);
+            this.lblDescC3.Location = new System.Drawing.Point(182, 71);
             this.lblDescC3.Name = "lblDescC3";
-            this.lblDescC3.Size = new System.Drawing.Size(147, 13);
+            this.lblDescC3.Size = new System.Drawing.Size(28, 13);
             this.lblDescC3.TabIndex = 21;
-            this.lblDescC3.Text = "(Parte do background inferior)";
+            this.lblDescC3.Text = "cor3";
             // 
             // lblCor3
             // 
             this.lblCor3.AutoSize = true;
             this.lblCor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCor3.Location = new System.Drawing.Point(18, 121);
+            this.lblCor3.Location = new System.Drawing.Point(157, 71);
             this.lblCor3.Name = "lblCor3";
             this.lblCor3.Size = new System.Drawing.Size(21, 15);
             this.lblCor3.TabIndex = 9;
@@ -411,18 +428,18 @@ namespace tccCsharp
             // lblDescC4
             // 
             this.lblDescC4.AutoSize = true;
-            this.lblDescC4.Location = new System.Drawing.Point(43, 146);
+            this.lblDescC4.Location = new System.Drawing.Point(43, 101);
             this.lblDescC4.Name = "lblDescC4";
-            this.lblDescC4.Size = new System.Drawing.Size(88, 13);
+            this.lblDescC4.Size = new System.Drawing.Size(28, 13);
             this.lblDescC4.TabIndex = 20;
-            this.lblDescC4.Text = "(cores dos cards)";
+            this.lblDescC4.Text = "cor4";
             // 
             // lblCor2
             // 
             this.lblCor2.AutoSize = true;
             this.lblCor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCor2.Location = new System.Drawing.Point(18, 96);
+            this.lblCor2.Location = new System.Drawing.Point(85, 71);
             this.lblCor2.Name = "lblCor2";
             this.lblCor2.Size = new System.Drawing.Size(21, 15);
             this.lblCor2.TabIndex = 10;
@@ -432,60 +449,39 @@ namespace tccCsharp
             // lblDescC5
             // 
             this.lblDescC5.AutoSize = true;
-            this.lblDescC5.Location = new System.Drawing.Point(43, 203);
+            this.lblDescC5.Location = new System.Drawing.Point(110, 101);
             this.lblDescC5.Name = "lblDescC5";
-            this.lblDescC5.Size = new System.Drawing.Size(41, 13);
+            this.lblDescC5.Size = new System.Drawing.Size(28, 13);
             this.lblDescC5.TabIndex = 19;
-            this.lblDescC5.Text = "label11";
-            // 
-            // lblCorAviso
-            // 
-            this.lblCorAviso.AutoSize = true;
-            this.lblCorAviso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblCorAviso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCorAviso.Location = new System.Drawing.Point(92, 233);
-            this.lblCorAviso.Name = "lblCorAviso";
-            this.lblCorAviso.Size = new System.Drawing.Size(21, 15);
-            this.lblCorAviso.TabIndex = 11;
-            this.lblCorAviso.Text = "    ";
-            this.lblCorAviso.Click += new System.EventHandler(this.lblCorAviso_Click);
+            this.lblDescC5.Text = "cor5";
             // 
             // lblDescC6
             // 
             this.lblDescC6.AutoSize = true;
-            this.lblDescC6.Location = new System.Drawing.Point(43, 233);
+            this.lblDescC6.Location = new System.Drawing.Point(182, 101);
             this.lblDescC6.Name = "lblDescC6";
-            this.lblDescC6.Size = new System.Drawing.Size(41, 13);
+            this.lblDescC6.Size = new System.Drawing.Size(28, 13);
             this.lblDescC6.TabIndex = 18;
-            this.lblDescC6.Text = "label10";
+            this.lblDescC6.Text = "cor6";
             // 
             // lblCor4
             // 
             this.lblCor4.AutoSize = true;
             this.lblCor4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCor4.Location = new System.Drawing.Point(18, 146);
+            this.lblCor4.Location = new System.Drawing.Point(18, 101);
             this.lblCor4.Name = "lblCor4";
             this.lblCor4.Size = new System.Drawing.Size(21, 15);
             this.lblCor4.TabIndex = 12;
             this.lblCor4.Text = "    ";
             this.lblCor4.Click += new System.EventHandler(this.lblCor4_Click);
             // 
-            // lblDescC7
-            // 
-            this.lblDescC7.AutoSize = true;
-            this.lblDescC7.Location = new System.Drawing.Point(117, 233);
-            this.lblDescC7.Name = "lblDescC7";
-            this.lblDescC7.Size = new System.Drawing.Size(35, 13);
-            this.lblDescC7.TabIndex = 17;
-            this.lblDescC7.Text = "label9";
-            // 
             // lblCor6
             // 
             this.lblCor6.AutoSize = true;
             this.lblCor6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCor6.Location = new System.Drawing.Point(18, 233);
+            this.lblCor6.Location = new System.Drawing.Point(157, 101);
             this.lblCor6.Name = "lblCor6";
             this.lblCor6.Size = new System.Drawing.Size(21, 15);
             this.lblCor6.TabIndex = 13;
@@ -497,7 +493,7 @@ namespace tccCsharp
             this.lblCor5.AutoSize = true;
             this.lblCor5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCor5.Location = new System.Drawing.Point(18, 203);
+            this.lblCor5.Location = new System.Drawing.Point(85, 101);
             this.lblCor5.Name = "lblCor5";
             this.lblCor5.Size = new System.Drawing.Size(21, 15);
             this.lblCor5.TabIndex = 14;
@@ -512,13 +508,97 @@ namespace tccCsharp
             this.btnVoltar.BorderRadius = 10;
             this.btnVoltar.BorderThickness = 2;
             this.btnVoltar.ButtonColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(385, 336);
+            this.btnVoltar.Location = new System.Drawing.Point(384, 337);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnVoltar.TabIndex = 25;
             this.btnVoltar.Text = "VOLTAR";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(182, 216);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "corAviso2";
+            // 
+            // lblCorAviso2
+            // 
+            this.lblCorAviso2.AutoSize = true;
+            this.lblCorAviso2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCorAviso2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorAviso2.Location = new System.Drawing.Point(157, 216);
+            this.lblCorAviso2.Name = "lblCorAviso2";
+            this.lblCorAviso2.Size = new System.Drawing.Size(21, 15);
+            this.lblCorAviso2.TabIndex = 31;
+            this.lblCorAviso2.Text = "    ";
+            this.lblCorAviso2.Click += new System.EventHandler(this.lblCorAviso2_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(43, 216);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "corAviso1";
+            // 
+            // lblCorTexto2
+            // 
+            this.lblCorTexto2.AutoSize = true;
+            this.lblCorTexto2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCorTexto2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorTexto2.Location = new System.Drawing.Point(157, 246);
+            this.lblCorTexto2.Name = "lblCorTexto2";
+            this.lblCorTexto2.Size = new System.Drawing.Size(21, 15);
+            this.lblCorTexto2.TabIndex = 25;
+            this.lblCorTexto2.Text = "    ";
+            this.lblCorTexto2.Click += new System.EventHandler(this.lblCorTexto2_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(43, 246);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 13);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "corTexto1";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(182, 246);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "corTexto2";
+            // 
+            // lblCorTexto1
+            // 
+            this.lblCorTexto1.AutoSize = true;
+            this.lblCorTexto1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCorTexto1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorTexto1.Location = new System.Drawing.Point(18, 246);
+            this.lblCorTexto1.Name = "lblCorTexto1";
+            this.lblCorTexto1.Size = new System.Drawing.Size(21, 15);
+            this.lblCorTexto1.TabIndex = 26;
+            this.lblCorTexto1.Text = "    ";
+            this.lblCorTexto1.Click += new System.EventHandler(this.lblCorTexto1_Click);
+            // 
+            // lblCorAviso1
+            // 
+            this.lblCorAviso1.AutoSize = true;
+            this.lblCorAviso1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblCorAviso1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorAviso1.Location = new System.Drawing.Point(18, 216);
+            this.lblCorAviso1.Name = "lblCorAviso1";
+            this.lblCorAviso1.Size = new System.Drawing.Size(21, 15);
+            this.lblCorAviso1.TabIndex = 27;
+            this.lblCorAviso1.Text = "    ";
+            this.lblCorAviso1.Click += new System.EventHandler(this.lblCorAviso1_Click);
             // 
             // frmConfiguracoes
             // 
@@ -554,7 +634,7 @@ namespace tccCsharp
         private System.Windows.Forms.TableLayoutPanel tlpBaseConfig1;
         private System.Windows.Forms.TableLayoutPanel tlpBaseConfig2;
         private System.Windows.Forms.TableLayoutPanel tlpBaseConfig3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblConfigsG;
         private RoundButton btnTutoriais;
         private RoundButton btnAltTamF;
         private RoundButton btnPersonalizar;
@@ -569,16 +649,22 @@ namespace tccCsharp
         private System.Windows.Forms.Label lblDescC4;
         private System.Windows.Forms.Label lblCor2;
         private System.Windows.Forms.Label lblDescC5;
-        private System.Windows.Forms.Label lblCorAviso;
         private System.Windows.Forms.Label lblDescC6;
         private System.Windows.Forms.Label lblCor4;
-        private System.Windows.Forms.Label lblDescC7;
         private System.Windows.Forms.Label lblCor6;
         private System.Windows.Forms.Label lblCor5;
         private System.Windows.Forms.NumericUpDown nudFonte;
         private RoundButton btnVoltar;
         private RoundedGroupBox rgbMenu;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCor7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCorAviso2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCorTexto2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblCorTexto1;
+        private System.Windows.Forms.Label lblCorAviso1;
     }
 }
