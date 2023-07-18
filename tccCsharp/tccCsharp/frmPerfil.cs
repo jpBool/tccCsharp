@@ -124,7 +124,7 @@ namespace tccCsharp
             RGPProjeto2.BorderWidth = 2;
             RGPProjeto3.BorderWidth = 2;
 
-            //pq esses btns n mudam de cor?
+            
             btnAdicionar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnEditarPerfil.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -161,6 +161,14 @@ namespace tccCsharp
             opbRecarregar._bordercolor = Color.Black;
             opbConfiguracoes._bordercolor = Color.Black;
             opbEditarP3._bordercolor = Color.Black;
+
+            //teste
+            lblNome.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblEmail.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblProjetos.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNomeP1.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNomeP2.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblNomeP3.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
         }
 
         private void frmPerfil_Load(object sender, EventArgs e)

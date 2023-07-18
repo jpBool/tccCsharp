@@ -44,6 +44,12 @@ namespace tccCsharp
             tlpLoginBase.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             tlpLoginBase2.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             tlpLoginBase3.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+
+            //teste
+            lblLogin.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblEmail.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblSenha.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            btnLogar.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -82,6 +88,11 @@ namespace tccCsharp
                 else
                     this.Close();
             }
+        }
+
+        private void tlpLoginBase3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
