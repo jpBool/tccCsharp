@@ -545,14 +545,56 @@ namespace tccCsharp
             finally
             {
                 Desconectar();
+                Banco.NewCommit();
             }
+        }
+
+        public static Head CabecalhoProjeto()
+        {
+            Head selecionado = new Head();
+            string sql;
+            try
+            {
+                sql = "SELECT T1.data_criacao, T2.nome AS \"criador\", CAST(T1.data_atualizacao AS DATE), T3.nome AS \"atualizador\", CAST(T1.porcentagem AS INT) ";
+                sql += "FROM gp2_projetos T1 INNER JOIN gp2_usuarios T2 ON T1.id_criador = T2.id_usuario INNER JOIN gp2_usuarios T3 ON T1.atualizador = T3.id_usuario ";
+                sql += "WHERE T1.id_projeto = @1 ";
+
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+
+                dr.Read();
+
+                selecionado.criacao = Convert.ToDateTime(dr["data_criacao"]);
+                selecionado.criador_nome = Convert.ToString(dr["criador"]);
+                selecionado.atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
+                selecionado.atualizador_nome = Convert.ToString(dr["atualizador"]);
+                selecionado.porcentagem_int = Convert.ToInt32(dr["porcentagem"]);
+
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar esse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return selecionado;
+
         }
     }
 }
 
 
-       
 
+/*SELECT T1.data_criacao, T2.nome AS "criador", CAST(T1.data_atualizacao AS DATE), T3.nome AS "atualizador",
+CAST(T1.porcentagem AS INT)
+FROM gp2_projetos T1
+INNER JOIN gp2_usuarios T2 ON T1.id_criador = T2.id_usuario
+INNER JOIN gp2_usuarios T3 ON T1.atualizador = T3.id_usuario*/
 
 
 
@@ -661,5 +703,5 @@ namespace tccCsharp
             }
         }
         */
-    
+
 

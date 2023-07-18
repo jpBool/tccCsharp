@@ -147,6 +147,7 @@
       <DependentUpon>frmPersonalizacao.cs</DependentUpon>
     </Compile>
     <Compile Include="GroupSteps.cs" />
+    <Compile Include="Head.cs" />
     <Compile Include="OvalPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>

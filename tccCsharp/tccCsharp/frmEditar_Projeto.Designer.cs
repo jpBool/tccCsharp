@@ -1159,7 +1159,7 @@
             this.lblCriador.Size = new System.Drawing.Size(235, 26);
             this.lblCriador.TabIndex = 1;
             this.lblCriador.Text = "Criador:";
-            this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCriadoquando
             // 
@@ -1172,7 +1172,7 @@
             this.lblCriadoquando.Size = new System.Drawing.Size(235, 25);
             this.lblCriadoquando.TabIndex = 0;
             this.lblCriadoquando.Text = "Criado em";
-            this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TLPAtualizacao
             // 
@@ -1203,7 +1203,7 @@
             this.lblAtualizador.Size = new System.Drawing.Size(238, 26);
             this.lblAtualizador.TabIndex = 3;
             this.lblAtualizador.Text = "Atualizado por:";
-            this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblAtualizadoquando
             // 
@@ -1216,7 +1216,7 @@
             this.lblAtualizadoquando.Size = new System.Drawing.Size(238, 25);
             this.lblAtualizadoquando.TabIndex = 2;
             this.lblAtualizadoquando.Text = "Atualizado em";
-            this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblPorcentagem
             // 

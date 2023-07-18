@@ -13,6 +13,7 @@ namespace tccCsharp
     public partial class frmEditar_Projeto : Form
     {
         public Project editando = new Project();
+        public Head cabecalho = new Head();
 
         public frmEditar_Projeto()
         {
@@ -161,6 +162,13 @@ namespace tccCsharp
             comboStatus.DisplayMember = "status";
 
             editando = Banco.RecarregaSelecionado();
+            cabecalho = Banco.CabecalhoProjeto();
+
+            lblCriadoquando.Text = "Criado em  " + Convert.ToDateTime(cabecalho.criacao).ToShortDateString();
+            lblCriador.Text = "Criador: " + cabecalho.criador_nome;
+            lblAtualizadoquando.Text = "Atualizado em " + Convert.ToDateTime(cabecalho.atualizacao).ToShortDateString();
+            lblAtualizador.Text = "Atualizador: " + cabecalho.atualizador_nome;
+            lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
 
             txtNomeProjeto.Text = editando.nome_projeto;
             txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -603,6 +611,5 @@ namespace tccCsharp
             btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
-
     }
 }
