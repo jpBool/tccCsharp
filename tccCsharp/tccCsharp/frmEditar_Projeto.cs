@@ -98,6 +98,12 @@ namespace tccCsharp
             lblCriador.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblAtualizadoquando.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblAtualizador.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            groupPorcentagem.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+            groupPorcentagem.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
+            groupPorcentagem2.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+
         }
 
         public string PalavrasChave()
@@ -169,6 +175,15 @@ namespace tccCsharp
             lblAtualizadoquando.Text = "Atualizado em " + Convert.ToDateTime(cabecalho.atualizacao).ToShortDateString();
             lblAtualizador.Text = "Atualizador: " + cabecalho.atualizador_nome;
             lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
+            
+            if (cabecalho.porcentagem_int == 100)
+                groupPorcentagem2.Width = groupPorcentagem.Width;
+            else
+            {
+                groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
+                if (groupPorcentagem2.Width < 45)
+                    groupPorcentagem2.Width = 45;
+            }
 
             txtNomeProjeto.Text = editando.nome_projeto;
             txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -610,6 +625,18 @@ namespace tccCsharp
         {
             btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
+        {
+            if (cabecalho.porcentagem_int == 100)
+                groupPorcentagem2.Width = groupPorcentagem.Width;
+            else
+            {
+                groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
+                if (groupPorcentagem2.Width < 45)
+                    groupPorcentagem2.Width = 45;
+            }
         }
     }
 }

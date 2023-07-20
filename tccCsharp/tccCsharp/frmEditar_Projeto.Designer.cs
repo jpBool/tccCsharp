@@ -100,6 +100,8 @@
             this.lblAtualizador = new System.Windows.Forms.Label();
             this.lblAtualizadoquando = new System.Windows.Forms.Label();
             this.lblPorcentagem = new System.Windows.Forms.Label();
+            this.groupPorcentagem = new tccCsharp.CustomGroupBox();
+            this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -129,6 +131,7 @@
             this.TLPInfoshead.SuspendLayout();
             this.TLPCriacao.SuspendLayout();
             this.TLPAtualizacao.SuspendLayout();
+            this.groupPorcentagem.SuspendLayout();
             this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
@@ -1123,6 +1126,7 @@
             this.TLPInfoshead.Controls.Add(this.TLPCriacao, 2, 0);
             this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 3, 0);
             this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
+            this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
             this.TLPInfoshead.Location = new System.Drawing.Point(6, 3);
             this.TLPInfoshead.Name = "TLPInfoshead";
             this.TLPInfoshead.RowCount = 1;
@@ -1231,6 +1235,35 @@
             this.lblPorcentagem.TabIndex = 2;
             this.lblPorcentagem.Text = "%";
             this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupPorcentagem
+            // 
+            this.groupPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPorcentagem.BackgroundColor = System.Drawing.Color.White;
+            this.groupPorcentagem.BorderWidth = 1F;
+            this.groupPorcentagem.Controls.Add(this.groupPorcentagem2);
+            this.groupPorcentagem.CornerRadius = 22;
+            this.groupPorcentagem.Location = new System.Drawing.Point(3, 3);
+            this.groupPorcentagem.Name = "groupPorcentagem";
+            this.groupPorcentagem.Size = new System.Drawing.Size(613, 45);
+            this.groupPorcentagem.TabIndex = 3;
+            this.groupPorcentagem.TabStop = false;
+            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
+            // 
+            // groupPorcentagem2
+            // 
+            this.groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.groupPorcentagem2.BorderWidth = 1F;
+            this.groupPorcentagem2.CornerRadius = 22;
+            this.groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.groupPorcentagem2.Name = "groupPorcentagem2";
+            this.groupPorcentagem2.Size = new System.Drawing.Size(45, 45);
+            this.groupPorcentagem2.TabIndex = 0;
+            this.groupPorcentagem2.TabStop = false;
             // 
             // TLPHead1
             // 
@@ -1380,6 +1413,7 @@
             this.TLPCriacao.PerformLayout();
             this.TLPAtualizacao.ResumeLayout(false);
             this.TLPAtualizacao.PerformLayout();
+            this.groupPorcentagem.ResumeLayout(false);
             this.TLPHead1.ResumeLayout(false);
             this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
@@ -1471,5 +1505,7 @@
         private System.Windows.Forms.Label lblAtualizador;
         private System.Windows.Forms.Label lblAtualizadoquando;
         private System.Windows.Forms.Label lblPorcentagem;
+        private CustomGroupBox groupPorcentagem;
+        private CustomGroupBox groupPorcentagem2;
     }
 }

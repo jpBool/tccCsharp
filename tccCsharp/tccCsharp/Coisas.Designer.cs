@@ -31,6 +31,7 @@
             this.roundButton1 = new RoundButton();
             this.opbExcluir = new tccCsharp.OvalPictureBox();
             this.opbCompartilhar = new tccCsharp.OvalPictureBox();
+            this.customGroupBox1 = new tccCsharp.CustomGroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).BeginInit();
             this.SuspendLayout();
@@ -75,11 +76,23 @@
             this.opbCompartilhar.TabIndex = 6;
             this.opbCompartilhar.TabStop = false;
             // 
+            // customGroupBox1
+            // 
+            this.customGroupBox1.BackgroundColor = System.Drawing.Color.White;
+            this.customGroupBox1.BorderWidth = 1F;
+            this.customGroupBox1.CornerRadius = 41;
+            this.customGroupBox1.Location = new System.Drawing.Point(443, 51);
+            this.customGroupBox1.Name = "customGroupBox1";
+            this.customGroupBox1.Size = new System.Drawing.Size(200, 83);
+            this.customGroupBox1.TabIndex = 9;
+            this.customGroupBox1.TabStop = false;
+            // 
             // Coisas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.customGroupBox1);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.opbExcluir);
             this.Controls.Add(this.opbCompartilhar);
@@ -98,5 +111,6 @@
         private OvalPictureBox opbExcluir;
         private OvalPictureBox opbCompartilhar;
         private RoundButton roundButton1;
+        private CustomGroupBox customGroupBox1;
     }
 }
