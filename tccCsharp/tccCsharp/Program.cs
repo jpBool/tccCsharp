@@ -37,9 +37,11 @@ namespace tccCsharp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new frmCriar_Projeto());
+            Application.Run(new frmEtapas());
             Application.Run(new frmLogin());
             //Application.Run(new frmPersonalizacao());
+
+            
         }
 
     }

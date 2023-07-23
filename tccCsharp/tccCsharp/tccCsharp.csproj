@@ -107,6 +107,12 @@
     <Compile Include="CustomLine.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="frmEtapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEtapas.Designer.cs">
+      <DependentUpon>frmEtapas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAcessibilidade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditar_Projeto.resx">
       <DependentUpon>frmEditar_Projeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEtapas.resx">
+      <DependentUpon>frmEtapas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
