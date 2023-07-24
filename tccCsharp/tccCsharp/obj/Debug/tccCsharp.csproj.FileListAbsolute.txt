@@ -253,3 +253,4 @@ C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCshar
 C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Projeto.resources
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Projeto.resources
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEtapas.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEtapas.resources

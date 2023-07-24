@@ -32,34 +32,44 @@
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
+            this.btnADDEtapa = new RoundButton();
+            this.BtnADDGrupo = new RoundButton();
             this.lblPorcentagem = new System.Windows.Forms.Label();
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.BtnVoltar = new RoundButton();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
-            this.TLPBody = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPConteudo = new System.Windows.Forms.TableLayoutPanel();
             this.RGBGrupos = new tccCsharp.RoundedGroupBox();
             this.TLPGrupos = new System.Windows.Forms.TableLayoutPanel();
-            this.roundedGroupBox12 = new tccCsharp.RoundedGroupBox();
+            this.GPBGrupo1 = new tccCsharp.RoundedGroupBox();
+            this.customGroupBox13 = new tccCsharp.CustomGroupBox();
+            this.customGroupBox14 = new tccCsharp.CustomGroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.ovalPictureBox6 = new tccCsharp.OvalPictureBox();
             this.BtnBaixo = new System.Windows.Forms.Button();
             this.BtnCima = new System.Windows.Forms.Button();
+            this.GPBGrupo2 = new tccCsharp.RoundedGroupBox();
+            this.customGroupBox15 = new tccCsharp.CustomGroupBox();
+            this.customGroupBox16 = new tccCsharp.CustomGroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.ovalPictureBox7 = new tccCsharp.OvalPictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBEtapas2 = new tccCsharp.RoundedGroupBox();
             this.TLPEtapas2 = new System.Windows.Forms.TableLayoutPanel();
-            this.roundedGroupBox6 = new tccCsharp.RoundedGroupBox();
+            this.GPBEtapa22 = new tccCsharp.RoundedGroupBox();
             this.customGroupBox9 = new tccCsharp.CustomGroupBox();
             this.customGroupBox10 = new tccCsharp.CustomGroupBox();
             this.roundedGroupBox10 = new tccCsharp.RoundedGroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.ovalPictureBox4 = new tccCsharp.OvalPictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.roundedGroupBox5 = new tccCsharp.RoundedGroupBox();
+            this.GPBEtapa21 = new tccCsharp.RoundedGroupBox();
             this.customGroupBox7 = new tccCsharp.CustomGroupBox();
             this.customGroupBox8 = new tccCsharp.CustomGroupBox();
             this.roundedGroupBox9 = new tccCsharp.RoundedGroupBox();
@@ -67,7 +77,7 @@
             this.ovalPictureBox3 = new tccCsharp.OvalPictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BtnDireita2 = new System.Windows.Forms.Button();
-            this.roundedGroupBox4 = new tccCsharp.RoundedGroupBox();
+            this.GPBEtapa23 = new tccCsharp.RoundedGroupBox();
             this.customGroupBox11 = new tccCsharp.CustomGroupBox();
             this.customGroupBox12 = new tccCsharp.CustomGroupBox();
             this.roundedGroupBox11 = new tccCsharp.RoundedGroupBox();
@@ -77,14 +87,14 @@
             this.BtnEsquerda2 = new System.Windows.Forms.Button();
             this.RGBEtapas1 = new tccCsharp.RoundedGroupBox();
             this.TLPEtapas1 = new System.Windows.Forms.TableLayoutPanel();
-            this.roundedGroupBox3 = new tccCsharp.RoundedGroupBox();
+            this.GPBEtapa13 = new tccCsharp.RoundedGroupBox();
             this.customGroupBox5 = new tccCsharp.CustomGroupBox();
             this.customGroupBox6 = new tccCsharp.CustomGroupBox();
             this.roundedGroupBox8 = new tccCsharp.RoundedGroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ovalPictureBox2 = new tccCsharp.OvalPictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.roundedGroupBox2 = new tccCsharp.RoundedGroupBox();
+            this.GPBEtapa12 = new tccCsharp.RoundedGroupBox();
             this.customGroupBox3 = new tccCsharp.CustomGroupBox();
             this.customGroupBox4 = new tccCsharp.CustomGroupBox();
             this.roundedGroupBox7 = new tccCsharp.RoundedGroupBox();
@@ -93,23 +103,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BtnEsquerda1 = new System.Windows.Forms.Button();
             this.BtnDireita1 = new System.Windows.Forms.Button();
-            this.roundedGroupBox1 = new tccCsharp.RoundedGroupBox();
+            this.GPBEtapa11 = new tccCsharp.RoundedGroupBox();
             this.customGroupBox1 = new tccCsharp.CustomGroupBox();
             this.customGroupBox2 = new tccCsharp.CustomGroupBox();
             this.RGBDescricaoP1 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP1 = new System.Windows.Forms.Label();
             this.opbEditarP1 = new tccCsharp.OvalPictureBox();
             this.lblNomeP1 = new System.Windows.Forms.Label();
-            this.customGroupBox13 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox14 = new tccCsharp.CustomGroupBox();
-            this.roundedGroupBox13 = new tccCsharp.RoundedGroupBox();
-            this.ovalPictureBox7 = new tccCsharp.OvalPictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.customGroupBox15 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox16 = new tccCsharp.CustomGroupBox();
-            this.roundButton1 = new RoundButton();
-            this.roundButton2 = new RoundButton();
-            this.roundButton3 = new RoundButton();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -120,44 +120,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
-            this.TLPBody.SuspendLayout();
+            this.TLPConteudo.SuspendLayout();
             this.RGBGrupos.SuspendLayout();
             this.TLPGrupos.SuspendLayout();
-            this.roundedGroupBox12.SuspendLayout();
+            this.GPBGrupo1.SuspendLayout();
+            this.customGroupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).BeginInit();
+            this.GPBGrupo2.SuspendLayout();
+            this.customGroupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.RGBEtapas2.SuspendLayout();
             this.TLPEtapas2.SuspendLayout();
-            this.roundedGroupBox6.SuspendLayout();
+            this.GPBEtapa22.SuspendLayout();
             this.customGroupBox9.SuspendLayout();
             this.roundedGroupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox4)).BeginInit();
-            this.roundedGroupBox5.SuspendLayout();
+            this.GPBEtapa21.SuspendLayout();
             this.customGroupBox7.SuspendLayout();
             this.roundedGroupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).BeginInit();
-            this.roundedGroupBox4.SuspendLayout();
+            this.GPBEtapa23.SuspendLayout();
             this.customGroupBox11.SuspendLayout();
             this.roundedGroupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox5)).BeginInit();
             this.RGBEtapas1.SuspendLayout();
             this.TLPEtapas1.SuspendLayout();
-            this.roundedGroupBox3.SuspendLayout();
+            this.GPBEtapa13.SuspendLayout();
             this.customGroupBox5.SuspendLayout();
             this.roundedGroupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).BeginInit();
-            this.roundedGroupBox2.SuspendLayout();
+            this.GPBEtapa12.SuspendLayout();
             this.customGroupBox3.SuspendLayout();
             this.roundedGroupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).BeginInit();
-            this.roundedGroupBox1.SuspendLayout();
+            this.GPBEtapa11.SuspendLayout();
             this.customGroupBox1.SuspendLayout();
             this.RGBDescricaoP1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).BeginInit();
-            this.customGroupBox13.SuspendLayout();
-            this.roundedGroupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).BeginInit();
-            this.customGroupBox15.SuspendLayout();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -169,7 +169,7 @@
             this.TLP_Mãe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLP_Mãe.Controls.Add(this.TLPHead2, 0, 1);
             this.TLP_Mãe.Controls.Add(this.TLPHead1, 0, 0);
-            this.TLP_Mãe.Controls.Add(this.TLPBody, 0, 2);
+            this.TLP_Mãe.Controls.Add(this.TLPConteudo, 0, 2);
             this.TLP_Mãe.Location = new System.Drawing.Point(-1, -2);
             this.TLP_Mãe.Name = "TLP_Mãe";
             this.TLP_Mãe.RowCount = 3;
@@ -223,17 +223,51 @@
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.TLPInfoshead.Controls.Add(this.roundButton3, 4, 0);
-            this.TLPInfoshead.Controls.Add(this.roundButton2, 3, 0);
+            this.TLPInfoshead.Controls.Add(this.btnADDEtapa, 4, 0);
+            this.TLPInfoshead.Controls.Add(this.BtnADDGrupo, 3, 0);
             this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 0, 0);
             this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
-            this.TLPInfoshead.Controls.Add(this.roundButton1, 2, 0);
+            this.TLPInfoshead.Controls.Add(this.BtnVoltar, 2, 0);
             this.TLPInfoshead.Location = new System.Drawing.Point(6, 3);
             this.TLPInfoshead.Name = "TLPInfoshead";
             this.TLPInfoshead.RowCount = 1;
             this.TLPInfoshead.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPInfoshead.Size = new System.Drawing.Size(1239, 51);
             this.TLPInfoshead.TabIndex = 0;
+            // 
+            // btnADDEtapa
+            // 
+            this.btnADDEtapa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnADDEtapa.BorderColor = System.Drawing.Color.Black;
+            this.btnADDEtapa.BorderRadius = 20;
+            this.btnADDEtapa.BorderThickness = 2;
+            this.btnADDEtapa.ButtonColor = System.Drawing.Color.White;
+            this.btnADDEtapa.Location = new System.Drawing.Point(1036, 8);
+            this.btnADDEtapa.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.btnADDEtapa.Name = "btnADDEtapa";
+            this.btnADDEtapa.Size = new System.Drawing.Size(193, 35);
+            this.btnADDEtapa.TabIndex = 7;
+            this.btnADDEtapa.Text = "roundButton3";
+            this.btnADDEtapa.UseVisualStyleBackColor = true;
+            // 
+            // BtnADDGrupo
+            // 
+            this.BtnADDGrupo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnADDGrupo.BorderColor = System.Drawing.Color.Black;
+            this.BtnADDGrupo.BorderRadius = 20;
+            this.BtnADDGrupo.BorderThickness = 2;
+            this.BtnADDGrupo.ButtonColor = System.Drawing.Color.White;
+            this.BtnADDGrupo.Location = new System.Drawing.Point(826, 8);
+            this.BtnADDGrupo.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.BtnADDGrupo.Name = "BtnADDGrupo";
+            this.BtnADDGrupo.Size = new System.Drawing.Size(190, 35);
+            this.BtnADDGrupo.TabIndex = 6;
+            this.BtnADDGrupo.Text = "ADICIONAR GRUPO";
+            this.BtnADDGrupo.UseVisualStyleBackColor = true;
             // 
             // lblPorcentagem
             // 
@@ -276,6 +310,23 @@
             this.groupPorcentagem2.Size = new System.Drawing.Size(45, 45);
             this.groupPorcentagem2.TabIndex = 0;
             this.groupPorcentagem2.TabStop = false;
+            // 
+            // BtnVoltar
+            // 
+            this.BtnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnVoltar.BorderColor = System.Drawing.Color.Black;
+            this.BtnVoltar.BorderRadius = 20;
+            this.BtnVoltar.BorderThickness = 2;
+            this.BtnVoltar.ButtonColor = System.Drawing.Color.White;
+            this.BtnVoltar.Location = new System.Drawing.Point(628, 8);
+            this.BtnVoltar.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.Size = new System.Drawing.Size(178, 35);
+            this.BtnVoltar.TabIndex = 5;
+            this.BtnVoltar.Text = "VOLTAR";
+            this.BtnVoltar.UseVisualStyleBackColor = true;
             // 
             // TLPHead1
             // 
@@ -370,22 +421,22 @@
             this.OPBLogout.TabIndex = 8;
             this.OPBLogout.TabStop = false;
             // 
-            // TLPBody
+            // TLPConteudo
             // 
-            this.TLPBody.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TLPConteudo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPBody.ColumnCount = 2;
-            this.TLPBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.TLPBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76F));
-            this.TLPBody.Controls.Add(this.RGBGrupos, 0, 0);
-            this.TLPBody.Controls.Add(this.tableLayoutPanel2, 1, 0);
-            this.TLPBody.Location = new System.Drawing.Point(3, 123);
-            this.TLPBody.Name = "TLPBody";
-            this.TLPBody.RowCount = 1;
-            this.TLPBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPBody.Size = new System.Drawing.Size(1261, 559);
-            this.TLPBody.TabIndex = 5;
+            this.TLPConteudo.ColumnCount = 2;
+            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76F));
+            this.TLPConteudo.Controls.Add(this.RGBGrupos, 0, 0);
+            this.TLPConteudo.Controls.Add(this.tableLayoutPanel2, 1, 0);
+            this.TLPConteudo.Location = new System.Drawing.Point(3, 123);
+            this.TLPConteudo.Name = "TLPConteudo";
+            this.TLPConteudo.RowCount = 1;
+            this.TLPConteudo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPConteudo.Size = new System.Drawing.Size(1261, 559);
+            this.TLPConteudo.TabIndex = 5;
             // 
             // RGBGrupos
             // 
@@ -408,12 +459,13 @@
             this.TLPGrupos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPGrupos.BackColor = System.Drawing.Color.Transparent;
             this.TLPGrupos.ColumnCount = 1;
             this.TLPGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPGrupos.Controls.Add(this.roundedGroupBox12, 0, 1);
+            this.TLPGrupos.Controls.Add(this.GPBGrupo1, 0, 1);
             this.TLPGrupos.Controls.Add(this.BtnBaixo, 0, 4);
             this.TLPGrupos.Controls.Add(this.BtnCima, 0, 0);
-            this.TLPGrupos.Controls.Add(this.roundedGroupBox13, 0, 3);
+            this.TLPGrupos.Controls.Add(this.GPBGrupo2, 0, 3);
             this.TLPGrupos.Location = new System.Drawing.Point(28, 3);
             this.TLPGrupos.Name = "TLPGrupos";
             this.TLPGrupos.RowCount = 5;
@@ -426,23 +478,52 @@
             this.TLPGrupos.Size = new System.Drawing.Size(233, 532);
             this.TLPGrupos.TabIndex = 1;
             // 
-            // roundedGroupBox12
+            // GPBGrupo1
             // 
-            this.roundedGroupBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GPBGrupo1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox12.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox12.BorderWidth = 1F;
-            this.roundedGroupBox12.Controls.Add(this.customGroupBox13);
-            this.roundedGroupBox12.Controls.Add(this.label11);
-            this.roundedGroupBox12.Controls.Add(this.ovalPictureBox6);
-            this.roundedGroupBox12.CornerRadius = 10;
-            this.roundedGroupBox12.Location = new System.Drawing.Point(20, 56);
-            this.roundedGroupBox12.Margin = new System.Windows.Forms.Padding(20, 3, 20, 35);
-            this.roundedGroupBox12.Name = "roundedGroupBox12";
-            this.roundedGroupBox12.Size = new System.Drawing.Size(193, 153);
-            this.roundedGroupBox12.TabIndex = 2;
-            this.roundedGroupBox12.TabStop = false;
+            this.GPBGrupo1.BackgroundColor = System.Drawing.Color.White;
+            this.GPBGrupo1.BorderWidth = 1F;
+            this.GPBGrupo1.Controls.Add(this.customGroupBox13);
+            this.GPBGrupo1.Controls.Add(this.label11);
+            this.GPBGrupo1.Controls.Add(this.ovalPictureBox6);
+            this.GPBGrupo1.CornerRadius = 20;
+            this.GPBGrupo1.Location = new System.Drawing.Point(20, 56);
+            this.GPBGrupo1.Margin = new System.Windows.Forms.Padding(20, 3, 20, 35);
+            this.GPBGrupo1.Name = "GPBGrupo1";
+            this.GPBGrupo1.Size = new System.Drawing.Size(193, 153);
+            this.GPBGrupo1.TabIndex = 2;
+            this.GPBGrupo1.TabStop = false;
+            // 
+            // customGroupBox13
+            // 
+            this.customGroupBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customGroupBox13.BackColor = System.Drawing.Color.Transparent;
+            this.customGroupBox13.BackgroundColor = System.Drawing.Color.White;
+            this.customGroupBox13.BorderWidth = 1F;
+            this.customGroupBox13.Controls.Add(this.customGroupBox14);
+            this.customGroupBox13.CornerRadius = 14;
+            this.customGroupBox13.Location = new System.Drawing.Point(17, 120);
+            this.customGroupBox13.Name = "customGroupBox13";
+            this.customGroupBox13.Size = new System.Drawing.Size(163, 28);
+            this.customGroupBox13.TabIndex = 42;
+            this.customGroupBox13.TabStop = false;
+            // 
+            // customGroupBox14
+            // 
+            this.customGroupBox14.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.customGroupBox14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.customGroupBox14.BackColor = System.Drawing.Color.Transparent;
+            this.customGroupBox14.BackgroundColor = System.Drawing.Color.Silver;
+            this.customGroupBox14.BorderWidth = 1F;
+            this.customGroupBox14.CornerRadius = 14;
+            this.customGroupBox14.Location = new System.Drawing.Point(0, 0);
+            this.customGroupBox14.Name = "customGroupBox14";
+            this.customGroupBox14.Size = new System.Drawing.Size(28, 28);
+            this.customGroupBox14.TabIndex = 0;
+            this.customGroupBox14.TabStop = false;
             // 
             // label11
             // 
@@ -492,6 +573,77 @@
             this.BtnCima.Text = "^";
             this.BtnCima.UseVisualStyleBackColor = true;
             // 
+            // GPBGrupo2
+            // 
+            this.GPBGrupo2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GPBGrupo2.BackgroundColor = System.Drawing.Color.White;
+            this.GPBGrupo2.BorderWidth = 1F;
+            this.GPBGrupo2.Controls.Add(this.customGroupBox15);
+            this.GPBGrupo2.Controls.Add(this.label12);
+            this.GPBGrupo2.Controls.Add(this.ovalPictureBox7);
+            this.GPBGrupo2.CornerRadius = 20;
+            this.GPBGrupo2.Location = new System.Drawing.Point(20, 321);
+            this.GPBGrupo2.Margin = new System.Windows.Forms.Padding(20, 35, 20, 3);
+            this.GPBGrupo2.Name = "GPBGrupo2";
+            this.GPBGrupo2.Size = new System.Drawing.Size(193, 153);
+            this.GPBGrupo2.TabIndex = 3;
+            this.GPBGrupo2.TabStop = false;
+            // 
+            // customGroupBox15
+            // 
+            this.customGroupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customGroupBox15.BackColor = System.Drawing.Color.Transparent;
+            this.customGroupBox15.BackgroundColor = System.Drawing.Color.White;
+            this.customGroupBox15.BorderWidth = 1F;
+            this.customGroupBox15.Controls.Add(this.customGroupBox16);
+            this.customGroupBox15.CornerRadius = 14;
+            this.customGroupBox15.Location = new System.Drawing.Point(15, 120);
+            this.customGroupBox15.Name = "customGroupBox15";
+            this.customGroupBox15.Size = new System.Drawing.Size(163, 28);
+            this.customGroupBox15.TabIndex = 43;
+            this.customGroupBox15.TabStop = false;
+            // 
+            // customGroupBox16
+            // 
+            this.customGroupBox16.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.customGroupBox16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.customGroupBox16.BackColor = System.Drawing.Color.Transparent;
+            this.customGroupBox16.BackgroundColor = System.Drawing.Color.Silver;
+            this.customGroupBox16.BorderWidth = 1F;
+            this.customGroupBox16.CornerRadius = 14;
+            this.customGroupBox16.Location = new System.Drawing.Point(0, 0);
+            this.customGroupBox16.Name = "customGroupBox16";
+            this.customGroupBox16.Size = new System.Drawing.Size(28, 28);
+            this.customGroupBox16.TabIndex = 0;
+            this.customGroupBox16.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Location = new System.Drawing.Point(54, 70);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(85, 13);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Nome do projeto";
+            // 
+            // ovalPictureBox7
+            // 
+            this.ovalPictureBox7._bordercolor = System.Drawing.Color.Red;
+            this.ovalPictureBox7._borderwidth = 5F;
+            this.ovalPictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ovalPictureBox7.Image = global::tccCsharp.Properties.Resources.editar;
+            this.ovalPictureBox7.Location = new System.Drawing.Point(152, 3);
+            this.ovalPictureBox7.Name = "ovalPictureBox7";
+            this.ovalPictureBox7.Size = new System.Drawing.Size(35, 35);
+            this.ovalPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ovalPictureBox7.TabIndex = 41;
+            this.ovalPictureBox7.TabStop = false;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -530,16 +682,17 @@
             this.TLPEtapas2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPEtapas2.BackColor = System.Drawing.Color.Transparent;
             this.TLPEtapas2.ColumnCount = 5;
             this.TLPEtapas2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.TLPEtapas2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.TLPEtapas2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.TLPEtapas2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.TLPEtapas2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.TLPEtapas2.Controls.Add(this.roundedGroupBox6, 0, 0);
-            this.TLPEtapas2.Controls.Add(this.roundedGroupBox5, 0, 0);
+            this.TLPEtapas2.Controls.Add(this.GPBEtapa22, 0, 0);
+            this.TLPEtapas2.Controls.Add(this.GPBEtapa21, 0, 0);
             this.TLPEtapas2.Controls.Add(this.BtnDireita2, 4, 0);
-            this.TLPEtapas2.Controls.Add(this.roundedGroupBox4, 1, 0);
+            this.TLPEtapas2.Controls.Add(this.GPBEtapa23, 1, 0);
             this.TLPEtapas2.Controls.Add(this.BtnEsquerda2, 0, 0);
             this.TLPEtapas2.Location = new System.Drawing.Point(5, 9);
             this.TLPEtapas2.Name = "TLPEtapas2";
@@ -549,24 +702,24 @@
             this.TLPEtapas2.Size = new System.Drawing.Size(924, 241);
             this.TLPEtapas2.TabIndex = 1;
             // 
-            // roundedGroupBox6
+            // GPBEtapa22
             // 
-            this.roundedGroupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GPBEtapa22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox6.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox6.BorderWidth = 1F;
-            this.roundedGroupBox6.Controls.Add(this.customGroupBox9);
-            this.roundedGroupBox6.Controls.Add(this.roundedGroupBox10);
-            this.roundedGroupBox6.Controls.Add(this.ovalPictureBox4);
-            this.roundedGroupBox6.Controls.Add(this.label8);
-            this.roundedGroupBox6.CornerRadius = 20;
-            this.roundedGroupBox6.Location = new System.Drawing.Point(361, 10);
-            this.roundedGroupBox6.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.roundedGroupBox6.Name = "roundedGroupBox6";
-            this.roundedGroupBox6.Size = new System.Drawing.Size(198, 221);
-            this.roundedGroupBox6.TabIndex = 5;
-            this.roundedGroupBox6.TabStop = false;
+            this.GPBEtapa22.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa22.BorderWidth = 1F;
+            this.GPBEtapa22.Controls.Add(this.customGroupBox9);
+            this.GPBEtapa22.Controls.Add(this.roundedGroupBox10);
+            this.GPBEtapa22.Controls.Add(this.ovalPictureBox4);
+            this.GPBEtapa22.Controls.Add(this.label8);
+            this.GPBEtapa22.CornerRadius = 20;
+            this.GPBEtapa22.Location = new System.Drawing.Point(361, 10);
+            this.GPBEtapa22.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa22.Name = "GPBEtapa22";
+            this.GPBEtapa22.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa22.TabIndex = 5;
+            this.GPBEtapa22.TabStop = false;
             // 
             // customGroupBox9
             // 
@@ -648,24 +801,24 @@
             this.label8.TabIndex = 42;
             this.label8.Text = "Nome do projeto";
             // 
-            // roundedGroupBox5
+            // GPBEtapa21
             // 
-            this.roundedGroupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GPBEtapa21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox5.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox5.BorderWidth = 1F;
-            this.roundedGroupBox5.Controls.Add(this.customGroupBox7);
-            this.roundedGroupBox5.Controls.Add(this.roundedGroupBox9);
-            this.roundedGroupBox5.Controls.Add(this.ovalPictureBox3);
-            this.roundedGroupBox5.Controls.Add(this.label6);
-            this.roundedGroupBox5.CornerRadius = 20;
-            this.roundedGroupBox5.Location = new System.Drawing.Point(103, 10);
-            this.roundedGroupBox5.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.roundedGroupBox5.Name = "roundedGroupBox5";
-            this.roundedGroupBox5.Size = new System.Drawing.Size(198, 221);
-            this.roundedGroupBox5.TabIndex = 4;
-            this.roundedGroupBox5.TabStop = false;
+            this.GPBEtapa21.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa21.BorderWidth = 1F;
+            this.GPBEtapa21.Controls.Add(this.customGroupBox7);
+            this.GPBEtapa21.Controls.Add(this.roundedGroupBox9);
+            this.GPBEtapa21.Controls.Add(this.ovalPictureBox3);
+            this.GPBEtapa21.Controls.Add(this.label6);
+            this.GPBEtapa21.CornerRadius = 20;
+            this.GPBEtapa21.Location = new System.Drawing.Point(103, 10);
+            this.GPBEtapa21.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa21.Name = "GPBEtapa21";
+            this.GPBEtapa21.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa21.TabIndex = 4;
+            this.GPBEtapa21.TabStop = false;
             // 
             // customGroupBox7
             // 
@@ -759,24 +912,24 @@
             this.BtnDireita2.Text = ">";
             this.BtnDireita2.UseVisualStyleBackColor = true;
             // 
-            // roundedGroupBox4
+            // GPBEtapa23
             // 
-            this.roundedGroupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GPBEtapa23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox4.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox4.BorderWidth = 1F;
-            this.roundedGroupBox4.Controls.Add(this.customGroupBox11);
-            this.roundedGroupBox4.Controls.Add(this.roundedGroupBox11);
-            this.roundedGroupBox4.Controls.Add(this.ovalPictureBox5);
-            this.roundedGroupBox4.Controls.Add(this.label10);
-            this.roundedGroupBox4.CornerRadius = 20;
-            this.roundedGroupBox4.Location = new System.Drawing.Point(619, 10);
-            this.roundedGroupBox4.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.roundedGroupBox4.Name = "roundedGroupBox4";
-            this.roundedGroupBox4.Size = new System.Drawing.Size(198, 221);
-            this.roundedGroupBox4.TabIndex = 3;
-            this.roundedGroupBox4.TabStop = false;
+            this.GPBEtapa23.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa23.BorderWidth = 1F;
+            this.GPBEtapa23.Controls.Add(this.customGroupBox11);
+            this.GPBEtapa23.Controls.Add(this.roundedGroupBox11);
+            this.GPBEtapa23.Controls.Add(this.ovalPictureBox5);
+            this.GPBEtapa23.Controls.Add(this.label10);
+            this.GPBEtapa23.CornerRadius = 20;
+            this.GPBEtapa23.Location = new System.Drawing.Point(619, 10);
+            this.GPBEtapa23.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa23.Name = "GPBEtapa23";
+            this.GPBEtapa23.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa23.TabIndex = 3;
+            this.GPBEtapa23.TabStop = false;
             // 
             // customGroupBox11
             // 
@@ -891,43 +1044,44 @@
             this.TLPEtapas1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPEtapas1.BackColor = System.Drawing.Color.Transparent;
             this.TLPEtapas1.ColumnCount = 5;
             this.TLPEtapas1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.TLPEtapas1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.TLPEtapas1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.TLPEtapas1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.TLPEtapas1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.TLPEtapas1.Controls.Add(this.roundedGroupBox3, 3, 0);
-            this.TLPEtapas1.Controls.Add(this.roundedGroupBox2, 2, 0);
+            this.TLPEtapas1.Controls.Add(this.GPBEtapa13, 3, 0);
+            this.TLPEtapas1.Controls.Add(this.GPBEtapa12, 2, 0);
             this.TLPEtapas1.Controls.Add(this.BtnEsquerda1, 0, 0);
             this.TLPEtapas1.Controls.Add(this.BtnDireita1, 4, 0);
-            this.TLPEtapas1.Controls.Add(this.roundedGroupBox1, 1, 0);
+            this.TLPEtapas1.Controls.Add(this.GPBEtapa11, 1, 0);
             this.TLPEtapas1.Location = new System.Drawing.Point(6, 9);
             this.TLPEtapas1.Name = "TLPEtapas1";
             this.TLPEtapas1.RowCount = 1;
             this.TLPEtapas1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPEtapas1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TLPEtapas1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 241F));
             this.TLPEtapas1.Size = new System.Drawing.Size(924, 241);
             this.TLPEtapas1.TabIndex = 0;
             // 
-            // roundedGroupBox3
+            // GPBEtapa13
             // 
-            this.roundedGroupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GPBEtapa13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox3.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox3.BorderWidth = 1F;
-            this.roundedGroupBox3.Controls.Add(this.customGroupBox5);
-            this.roundedGroupBox3.Controls.Add(this.roundedGroupBox8);
-            this.roundedGroupBox3.Controls.Add(this.ovalPictureBox2);
-            this.roundedGroupBox3.Controls.Add(this.label4);
-            this.roundedGroupBox3.CornerRadius = 20;
-            this.roundedGroupBox3.Location = new System.Drawing.Point(619, 10);
-            this.roundedGroupBox3.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.roundedGroupBox3.Name = "roundedGroupBox3";
-            this.roundedGroupBox3.Size = new System.Drawing.Size(198, 221);
-            this.roundedGroupBox3.TabIndex = 4;
-            this.roundedGroupBox3.TabStop = false;
+            this.GPBEtapa13.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa13.BorderWidth = 1F;
+            this.GPBEtapa13.Controls.Add(this.customGroupBox5);
+            this.GPBEtapa13.Controls.Add(this.roundedGroupBox8);
+            this.GPBEtapa13.Controls.Add(this.ovalPictureBox2);
+            this.GPBEtapa13.Controls.Add(this.label4);
+            this.GPBEtapa13.CornerRadius = 20;
+            this.GPBEtapa13.Location = new System.Drawing.Point(619, 10);
+            this.GPBEtapa13.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa13.Name = "GPBEtapa13";
+            this.GPBEtapa13.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa13.TabIndex = 4;
+            this.GPBEtapa13.TabStop = false;
             // 
             // customGroupBox5
             // 
@@ -1009,24 +1163,24 @@
             this.label4.TabIndex = 42;
             this.label4.Text = "Nome do projeto";
             // 
-            // roundedGroupBox2
+            // GPBEtapa12
             // 
-            this.roundedGroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GPBEtapa12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox2.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox2.BorderWidth = 1F;
-            this.roundedGroupBox2.Controls.Add(this.customGroupBox3);
-            this.roundedGroupBox2.Controls.Add(this.roundedGroupBox7);
-            this.roundedGroupBox2.Controls.Add(this.ovalPictureBox1);
-            this.roundedGroupBox2.Controls.Add(this.label2);
-            this.roundedGroupBox2.CornerRadius = 20;
-            this.roundedGroupBox2.Location = new System.Drawing.Point(361, 10);
-            this.roundedGroupBox2.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.roundedGroupBox2.Name = "roundedGroupBox2";
-            this.roundedGroupBox2.Size = new System.Drawing.Size(198, 221);
-            this.roundedGroupBox2.TabIndex = 3;
-            this.roundedGroupBox2.TabStop = false;
+            this.GPBEtapa12.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa12.BorderWidth = 1F;
+            this.GPBEtapa12.Controls.Add(this.customGroupBox3);
+            this.GPBEtapa12.Controls.Add(this.roundedGroupBox7);
+            this.GPBEtapa12.Controls.Add(this.ovalPictureBox1);
+            this.GPBEtapa12.Controls.Add(this.label2);
+            this.GPBEtapa12.CornerRadius = 20;
+            this.GPBEtapa12.Location = new System.Drawing.Point(361, 10);
+            this.GPBEtapa12.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa12.Name = "GPBEtapa12";
+            this.GPBEtapa12.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa12.TabIndex = 3;
+            this.GPBEtapa12.TabStop = false;
             // 
             // customGroupBox3
             // 
@@ -1132,24 +1286,24 @@
             this.BtnDireita1.Text = ">";
             this.BtnDireita1.UseVisualStyleBackColor = true;
             // 
-            // roundedGroupBox1
+            // GPBEtapa11
             // 
-            this.roundedGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GPBEtapa11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox1.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox1.BorderWidth = 1F;
-            this.roundedGroupBox1.Controls.Add(this.customGroupBox1);
-            this.roundedGroupBox1.Controls.Add(this.RGBDescricaoP1);
-            this.roundedGroupBox1.Controls.Add(this.opbEditarP1);
-            this.roundedGroupBox1.Controls.Add(this.lblNomeP1);
-            this.roundedGroupBox1.CornerRadius = 20;
-            this.roundedGroupBox1.Location = new System.Drawing.Point(103, 10);
-            this.roundedGroupBox1.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.roundedGroupBox1.Name = "roundedGroupBox1";
-            this.roundedGroupBox1.Size = new System.Drawing.Size(198, 221);
-            this.roundedGroupBox1.TabIndex = 2;
-            this.roundedGroupBox1.TabStop = false;
+            this.GPBEtapa11.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa11.BorderWidth = 1F;
+            this.GPBEtapa11.Controls.Add(this.customGroupBox1);
+            this.GPBEtapa11.Controls.Add(this.RGBDescricaoP1);
+            this.GPBEtapa11.Controls.Add(this.opbEditarP1);
+            this.GPBEtapa11.Controls.Add(this.lblNomeP1);
+            this.GPBEtapa11.CornerRadius = 20;
+            this.GPBEtapa11.Location = new System.Drawing.Point(103, 10);
+            this.GPBEtapa11.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa11.Name = "GPBEtapa11";
+            this.GPBEtapa11.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa11.TabIndex = 2;
+            this.GPBEtapa11.TabStop = false;
             // 
             // customGroupBox1
             // 
@@ -1231,166 +1385,16 @@
             this.lblNomeP1.TabIndex = 38;
             this.lblNomeP1.Text = "Nome do projeto";
             // 
-            // customGroupBox13
-            // 
-            this.customGroupBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox13.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox13.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox13.BorderWidth = 1F;
-            this.customGroupBox13.Controls.Add(this.customGroupBox14);
-            this.customGroupBox13.CornerRadius = 14;
-            this.customGroupBox13.Location = new System.Drawing.Point(17, 120);
-            this.customGroupBox13.Name = "customGroupBox13";
-            this.customGroupBox13.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox13.TabIndex = 42;
-            this.customGroupBox13.TabStop = false;
-            // 
-            // customGroupBox14
-            // 
-            this.customGroupBox14.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox14.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox14.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox14.BorderWidth = 1F;
-            this.customGroupBox14.CornerRadius = 14;
-            this.customGroupBox14.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox14.Name = "customGroupBox14";
-            this.customGroupBox14.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox14.TabIndex = 0;
-            this.customGroupBox14.TabStop = false;
-            // 
-            // roundedGroupBox13
-            // 
-            this.roundedGroupBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox13.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox13.BorderWidth = 1F;
-            this.roundedGroupBox13.Controls.Add(this.customGroupBox15);
-            this.roundedGroupBox13.Controls.Add(this.label12);
-            this.roundedGroupBox13.Controls.Add(this.ovalPictureBox7);
-            this.roundedGroupBox13.CornerRadius = 10;
-            this.roundedGroupBox13.Location = new System.Drawing.Point(20, 321);
-            this.roundedGroupBox13.Margin = new System.Windows.Forms.Padding(20, 35, 20, 3);
-            this.roundedGroupBox13.Name = "roundedGroupBox13";
-            this.roundedGroupBox13.Size = new System.Drawing.Size(193, 153);
-            this.roundedGroupBox13.TabIndex = 3;
-            this.roundedGroupBox13.TabStop = false;
-            // 
-            // ovalPictureBox7
-            // 
-            this.ovalPictureBox7._bordercolor = System.Drawing.Color.Red;
-            this.ovalPictureBox7._borderwidth = 5F;
-            this.ovalPictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ovalPictureBox7.Image = global::tccCsharp.Properties.Resources.editar;
-            this.ovalPictureBox7.Location = new System.Drawing.Point(152, 3);
-            this.ovalPictureBox7.Name = "ovalPictureBox7";
-            this.ovalPictureBox7.Size = new System.Drawing.Size(35, 35);
-            this.ovalPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ovalPictureBox7.TabIndex = 41;
-            this.ovalPictureBox7.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(54, 70);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 13);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "Nome do projeto";
-            // 
-            // customGroupBox15
-            // 
-            this.customGroupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox15.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox15.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox15.BorderWidth = 1F;
-            this.customGroupBox15.Controls.Add(this.customGroupBox16);
-            this.customGroupBox15.CornerRadius = 14;
-            this.customGroupBox15.Location = new System.Drawing.Point(15, 120);
-            this.customGroupBox15.Name = "customGroupBox15";
-            this.customGroupBox15.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox15.TabIndex = 43;
-            this.customGroupBox15.TabStop = false;
-            // 
-            // customGroupBox16
-            // 
-            this.customGroupBox16.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox16.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox16.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox16.BorderWidth = 1F;
-            this.customGroupBox16.CornerRadius = 14;
-            this.customGroupBox16.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox16.Name = "customGroupBox16";
-            this.customGroupBox16.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox16.TabIndex = 0;
-            this.customGroupBox16.TabStop = false;
-            // 
-            // roundButton1
-            // 
-            this.roundButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundButton1.BorderColor = System.Drawing.Color.Black;
-            this.roundButton1.BorderRadius = 10;
-            this.roundButton1.BorderThickness = 2;
-            this.roundButton1.ButtonColor = System.Drawing.Color.White;
-            this.roundButton1.Location = new System.Drawing.Point(628, 8);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(178, 35);
-            this.roundButton1.TabIndex = 5;
-            this.roundButton1.Text = "roundButton1";
-            this.roundButton1.UseVisualStyleBackColor = true;
-            // 
-            // roundButton2
-            // 
-            this.roundButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundButton2.BorderColor = System.Drawing.Color.Black;
-            this.roundButton2.BorderRadius = 10;
-            this.roundButton2.BorderThickness = 2;
-            this.roundButton2.ButtonColor = System.Drawing.Color.White;
-            this.roundButton2.Location = new System.Drawing.Point(826, 8);
-            this.roundButton2.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(190, 35);
-            this.roundButton2.TabIndex = 6;
-            this.roundButton2.Text = "roundButton2";
-            this.roundButton2.UseVisualStyleBackColor = true;
-            // 
-            // roundButton3
-            // 
-            this.roundButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundButton3.BorderColor = System.Drawing.Color.Black;
-            this.roundButton3.BorderRadius = 10;
-            this.roundButton3.BorderThickness = 2;
-            this.roundButton3.ButtonColor = System.Drawing.Color.White;
-            this.roundButton3.Location = new System.Drawing.Point(1036, 8);
-            this.roundButton3.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.roundButton3.Name = "roundButton3";
-            this.roundButton3.Size = new System.Drawing.Size(193, 35);
-            this.roundButton3.TabIndex = 7;
-            this.roundButton3.Text = "roundButton3";
-            this.roundButton3.UseVisualStyleBackColor = true;
-            // 
             // frmEtapas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
-            this.MinimumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1278, 678);
             this.Name = "frmEtapas";
             this.Text = "Etapas do Projeto";
+            this.Load += new System.EventHandler(this.frmEtapas_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
@@ -1405,52 +1409,52 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
-            this.TLPBody.ResumeLayout(false);
+            this.TLPConteudo.ResumeLayout(false);
             this.RGBGrupos.ResumeLayout(false);
             this.TLPGrupos.ResumeLayout(false);
-            this.roundedGroupBox12.ResumeLayout(false);
-            this.roundedGroupBox12.PerformLayout();
+            this.GPBGrupo1.ResumeLayout(false);
+            this.GPBGrupo1.PerformLayout();
+            this.customGroupBox13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).EndInit();
+            this.GPBGrupo2.ResumeLayout(false);
+            this.GPBGrupo2.PerformLayout();
+            this.customGroupBox15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.RGBEtapas2.ResumeLayout(false);
             this.TLPEtapas2.ResumeLayout(false);
-            this.roundedGroupBox6.ResumeLayout(false);
-            this.roundedGroupBox6.PerformLayout();
+            this.GPBEtapa22.ResumeLayout(false);
+            this.GPBEtapa22.PerformLayout();
             this.customGroupBox9.ResumeLayout(false);
             this.roundedGroupBox10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox4)).EndInit();
-            this.roundedGroupBox5.ResumeLayout(false);
-            this.roundedGroupBox5.PerformLayout();
+            this.GPBEtapa21.ResumeLayout(false);
+            this.GPBEtapa21.PerformLayout();
             this.customGroupBox7.ResumeLayout(false);
             this.roundedGroupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).EndInit();
-            this.roundedGroupBox4.ResumeLayout(false);
-            this.roundedGroupBox4.PerformLayout();
+            this.GPBEtapa23.ResumeLayout(false);
+            this.GPBEtapa23.PerformLayout();
             this.customGroupBox11.ResumeLayout(false);
             this.roundedGroupBox11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox5)).EndInit();
             this.RGBEtapas1.ResumeLayout(false);
             this.TLPEtapas1.ResumeLayout(false);
-            this.roundedGroupBox3.ResumeLayout(false);
-            this.roundedGroupBox3.PerformLayout();
+            this.GPBEtapa13.ResumeLayout(false);
+            this.GPBEtapa13.PerformLayout();
             this.customGroupBox5.ResumeLayout(false);
             this.roundedGroupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).EndInit();
-            this.roundedGroupBox2.ResumeLayout(false);
-            this.roundedGroupBox2.PerformLayout();
+            this.GPBEtapa12.ResumeLayout(false);
+            this.GPBEtapa12.PerformLayout();
             this.customGroupBox3.ResumeLayout(false);
             this.roundedGroupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).EndInit();
-            this.roundedGroupBox1.ResumeLayout(false);
-            this.roundedGroupBox1.PerformLayout();
+            this.GPBEtapa11.ResumeLayout(false);
+            this.GPBEtapa11.PerformLayout();
             this.customGroupBox1.ResumeLayout(false);
             this.RGBDescricaoP1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).EndInit();
-            this.customGroupBox13.ResumeLayout(false);
-            this.roundedGroupBox13.ResumeLayout(false);
-            this.roundedGroupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).EndInit();
-            this.customGroupBox15.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1470,7 +1474,7 @@
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.Label lblPorcentagem;
-        private System.Windows.Forms.TableLayoutPanel TLPBody;
+        private System.Windows.Forms.TableLayoutPanel TLPConteudo;
         private RoundedGroupBox RGBGrupos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private RoundedGroupBox RGBEtapas2;
@@ -1480,16 +1484,16 @@
         private System.Windows.Forms.Button BtnBaixo;
         private System.Windows.Forms.Button BtnCima;
         private System.Windows.Forms.TableLayoutPanel TLPEtapas2;
-        private RoundedGroupBox roundedGroupBox6;
-        private RoundedGroupBox roundedGroupBox5;
+        private RoundedGroupBox GPBEtapa22;
+        private RoundedGroupBox GPBEtapa21;
         private System.Windows.Forms.Button BtnDireita2;
-        private RoundedGroupBox roundedGroupBox4;
+        private RoundedGroupBox GPBEtapa23;
         private System.Windows.Forms.Button BtnEsquerda2;
-        private RoundedGroupBox roundedGroupBox3;
-        private RoundedGroupBox roundedGroupBox2;
+        private RoundedGroupBox GPBEtapa13;
+        private RoundedGroupBox GPBEtapa12;
         private System.Windows.Forms.Button BtnEsquerda1;
         private System.Windows.Forms.Button BtnDireita1;
-        private RoundedGroupBox roundedGroupBox1;
+        private RoundedGroupBox GPBEtapa11;
         private System.Windows.Forms.Label lblNomeP1;
         private OvalPictureBox opbEditarP1;
         private RoundedGroupBox RGBDescricaoP1;
@@ -1526,15 +1530,15 @@
         private System.Windows.Forms.Label label1;
         private OvalPictureBox ovalPictureBox1;
         private System.Windows.Forms.Label label2;
-        private RoundedGroupBox roundedGroupBox12;
+        private RoundedGroupBox GPBGrupo1;
         private System.Windows.Forms.Label label11;
         private OvalPictureBox ovalPictureBox6;
-        private RoundButton roundButton3;
-        private RoundButton roundButton2;
-        private RoundButton roundButton1;
+        private RoundButton btnADDEtapa;
+        private RoundButton BtnADDGrupo;
+        private RoundButton BtnVoltar;
         private CustomGroupBox customGroupBox13;
         private CustomGroupBox customGroupBox14;
-        private RoundedGroupBox roundedGroupBox13;
+        private RoundedGroupBox GPBGrupo2;
         private CustomGroupBox customGroupBox15;
         private CustomGroupBox customGroupBox16;
         private System.Windows.Forms.Label label12;
