@@ -18,5 +18,6 @@ namespace tccCsharp
         public int numero_etapas { get; set; }
         public bool excluido { get; set; }
 
+        public List<Step> etapas { get; set; }
     }
 }

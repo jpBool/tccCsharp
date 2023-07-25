@@ -48,68 +48,68 @@
             this.RGBGrupos = new tccCsharp.RoundedGroupBox();
             this.TLPGrupos = new System.Windows.Forms.TableLayoutPanel();
             this.GPBGrupo1 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox13 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox14 = new tccCsharp.CustomGroupBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.Grupo1groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Grupo1groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.lblTituloGrupo1 = new System.Windows.Forms.Label();
             this.ovalPictureBox6 = new tccCsharp.OvalPictureBox();
             this.BtnBaixo = new System.Windows.Forms.Button();
             this.BtnCima = new System.Windows.Forms.Button();
             this.GPBGrupo2 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox15 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox16 = new tccCsharp.CustomGroupBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.Grupo2groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Grupo2groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.lblTituloGrupo2 = new System.Windows.Forms.Label();
             this.ovalPictureBox7 = new tccCsharp.OvalPictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBEtapas2 = new tccCsharp.RoundedGroupBox();
             this.TLPEtapas2 = new System.Windows.Forms.TableLayoutPanel();
             this.GPBEtapa22 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox9 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox10 = new tccCsharp.CustomGroupBox();
-            this.roundedGroupBox10 = new tccCsharp.RoundedGroupBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.Etapa22groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa21groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa22 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa22 = new System.Windows.Forms.Label();
             this.ovalPictureBox4 = new tccCsharp.OvalPictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblNomeEtapa22 = new System.Windows.Forms.Label();
             this.GPBEtapa21 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox7 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox8 = new tccCsharp.CustomGroupBox();
-            this.roundedGroupBox9 = new tccCsharp.RoundedGroupBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Etapa21groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa22groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa21 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa21 = new System.Windows.Forms.Label();
             this.ovalPictureBox3 = new tccCsharp.OvalPictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblNomeEtapa21 = new System.Windows.Forms.Label();
             this.BtnDireita2 = new System.Windows.Forms.Button();
             this.GPBEtapa23 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox11 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox12 = new tccCsharp.CustomGroupBox();
-            this.roundedGroupBox11 = new tccCsharp.RoundedGroupBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Etapa23groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa23groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa23 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa23 = new System.Windows.Forms.Label();
             this.ovalPictureBox5 = new tccCsharp.OvalPictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblNomeEtapa23 = new System.Windows.Forms.Label();
             this.BtnEsquerda2 = new System.Windows.Forms.Button();
             this.RGBEtapas1 = new tccCsharp.RoundedGroupBox();
             this.TLPEtapas1 = new System.Windows.Forms.TableLayoutPanel();
             this.GPBEtapa13 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox5 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox6 = new tccCsharp.CustomGroupBox();
-            this.roundedGroupBox8 = new tccCsharp.RoundedGroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Etapa13groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa13groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa13 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa13 = new System.Windows.Forms.Label();
             this.ovalPictureBox2 = new tccCsharp.OvalPictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblNomeEtapa13 = new System.Windows.Forms.Label();
             this.GPBEtapa12 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox3 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox4 = new tccCsharp.CustomGroupBox();
-            this.roundedGroupBox7 = new tccCsharp.RoundedGroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Etapa12groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa12groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa12 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa12 = new System.Windows.Forms.Label();
             this.ovalPictureBox1 = new tccCsharp.OvalPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNomeEtapa12 = new System.Windows.Forms.Label();
             this.BtnEsquerda1 = new System.Windows.Forms.Button();
             this.BtnDireita1 = new System.Windows.Forms.Button();
             this.GPBEtapa11 = new tccCsharp.RoundedGroupBox();
-            this.customGroupBox1 = new tccCsharp.CustomGroupBox();
-            this.customGroupBox2 = new tccCsharp.CustomGroupBox();
-            this.RGBDescricaoP1 = new tccCsharp.RoundedGroupBox();
-            this.lblDescricaoP1 = new System.Windows.Forms.Label();
+            this.Etapa11groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa11groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa11 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa11 = new System.Windows.Forms.Label();
             this.opbEditarP1 = new tccCsharp.OvalPictureBox();
-            this.lblNomeP1 = new System.Windows.Forms.Label();
+            this.lblNomeEtapa11 = new System.Windows.Forms.Label();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -124,39 +124,39 @@
             this.RGBGrupos.SuspendLayout();
             this.TLPGrupos.SuspendLayout();
             this.GPBGrupo1.SuspendLayout();
-            this.customGroupBox13.SuspendLayout();
+            this.Grupo1groupPorcentagem1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).BeginInit();
             this.GPBGrupo2.SuspendLayout();
-            this.customGroupBox15.SuspendLayout();
+            this.Grupo2groupPorcentagem1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.RGBEtapas2.SuspendLayout();
             this.TLPEtapas2.SuspendLayout();
             this.GPBEtapa22.SuspendLayout();
-            this.customGroupBox9.SuspendLayout();
-            this.roundedGroupBox10.SuspendLayout();
+            this.Etapa22groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox4)).BeginInit();
             this.GPBEtapa21.SuspendLayout();
-            this.customGroupBox7.SuspendLayout();
-            this.roundedGroupBox9.SuspendLayout();
+            this.Etapa21groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).BeginInit();
             this.GPBEtapa23.SuspendLayout();
-            this.customGroupBox11.SuspendLayout();
-            this.roundedGroupBox11.SuspendLayout();
+            this.Etapa23groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox5)).BeginInit();
             this.RGBEtapas1.SuspendLayout();
             this.TLPEtapas1.SuspendLayout();
             this.GPBEtapa13.SuspendLayout();
-            this.customGroupBox5.SuspendLayout();
-            this.roundedGroupBox8.SuspendLayout();
+            this.Etapa13groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).BeginInit();
             this.GPBEtapa12.SuspendLayout();
-            this.customGroupBox3.SuspendLayout();
-            this.roundedGroupBox7.SuspendLayout();
+            this.Etapa12groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).BeginInit();
             this.GPBEtapa11.SuspendLayout();
-            this.customGroupBox1.SuspendLayout();
-            this.RGBDescricaoP1.SuspendLayout();
+            this.Etapa11groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -249,7 +249,7 @@
             this.btnADDEtapa.Name = "btnADDEtapa";
             this.btnADDEtapa.Size = new System.Drawing.Size(193, 35);
             this.btnADDEtapa.TabIndex = 7;
-            this.btnADDEtapa.Text = "roundButton3";
+            this.btnADDEtapa.Text = "ADICIONAR ETAPA";
             this.btnADDEtapa.UseVisualStyleBackColor = true;
             // 
             // BtnADDGrupo
@@ -369,10 +369,10 @@
             this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(344, 4);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(547, 42);
+            this.lblTitulo.Size = new System.Drawing.Size(653, 39);
             this.lblTitulo.TabIndex = 11;
             this.lblTitulo.Text = "ETAPAS DO PROJETO PLACEHOLDER";
             // 
@@ -485,8 +485,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBGrupo1.BackgroundColor = System.Drawing.Color.White;
             this.GPBGrupo1.BorderWidth = 1F;
-            this.GPBGrupo1.Controls.Add(this.customGroupBox13);
-            this.GPBGrupo1.Controls.Add(this.label11);
+            this.GPBGrupo1.Controls.Add(this.Grupo1groupPorcentagem1);
+            this.GPBGrupo1.Controls.Add(this.lblTituloGrupo1);
             this.GPBGrupo1.Controls.Add(this.ovalPictureBox6);
             this.GPBGrupo1.CornerRadius = 20;
             this.GPBGrupo1.Location = new System.Drawing.Point(20, 56);
@@ -496,45 +496,45 @@
             this.GPBGrupo1.TabIndex = 2;
             this.GPBGrupo1.TabStop = false;
             // 
-            // customGroupBox13
+            // Grupo1groupPorcentagem1
             // 
-            this.customGroupBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Grupo1groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox13.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox13.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox13.BorderWidth = 1F;
-            this.customGroupBox13.Controls.Add(this.customGroupBox14);
-            this.customGroupBox13.CornerRadius = 14;
-            this.customGroupBox13.Location = new System.Drawing.Point(17, 120);
-            this.customGroupBox13.Name = "customGroupBox13";
-            this.customGroupBox13.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox13.TabIndex = 42;
-            this.customGroupBox13.TabStop = false;
+            this.Grupo1groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Grupo1groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Grupo1groupPorcentagem1.BorderWidth = 1F;
+            this.Grupo1groupPorcentagem1.Controls.Add(this.Grupo1groupPorcentagem2);
+            this.Grupo1groupPorcentagem1.CornerRadius = 14;
+            this.Grupo1groupPorcentagem1.Location = new System.Drawing.Point(17, 120);
+            this.Grupo1groupPorcentagem1.Name = "Grupo1groupPorcentagem1";
+            this.Grupo1groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Grupo1groupPorcentagem1.TabIndex = 42;
+            this.Grupo1groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox14
+            // Grupo1groupPorcentagem2
             // 
-            this.customGroupBox14.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox14.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox14.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox14.BorderWidth = 1F;
-            this.customGroupBox14.CornerRadius = 14;
-            this.customGroupBox14.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox14.Name = "customGroupBox14";
-            this.customGroupBox14.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox14.TabIndex = 0;
-            this.customGroupBox14.TabStop = false;
+            this.Grupo1groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Grupo1groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Grupo1groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Grupo1groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Grupo1groupPorcentagem2.BorderWidth = 1F;
+            this.Grupo1groupPorcentagem2.CornerRadius = 14;
+            this.Grupo1groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Grupo1groupPorcentagem2.Name = "Grupo1groupPorcentagem2";
+            this.Grupo1groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Grupo1groupPorcentagem2.TabIndex = 0;
+            this.Grupo1groupPorcentagem2.TabStop = false;
             // 
-            // label11
+            // lblTituloGrupo1
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(54, 66);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 13);
-            this.label11.TabIndex = 41;
-            this.label11.Text = "Nome do projeto";
+            this.lblTituloGrupo1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTituloGrupo1.AutoSize = true;
+            this.lblTituloGrupo1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTituloGrupo1.Location = new System.Drawing.Point(54, 66);
+            this.lblTituloGrupo1.Name = "lblTituloGrupo1";
+            this.lblTituloGrupo1.Size = new System.Drawing.Size(85, 13);
+            this.lblTituloGrupo1.TabIndex = 41;
+            this.lblTituloGrupo1.Text = "Nome do projeto";
             // 
             // ovalPictureBox6
             // 
@@ -580,8 +580,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBGrupo2.BackgroundColor = System.Drawing.Color.White;
             this.GPBGrupo2.BorderWidth = 1F;
-            this.GPBGrupo2.Controls.Add(this.customGroupBox15);
-            this.GPBGrupo2.Controls.Add(this.label12);
+            this.GPBGrupo2.Controls.Add(this.Grupo2groupPorcentagem1);
+            this.GPBGrupo2.Controls.Add(this.lblTituloGrupo2);
             this.GPBGrupo2.Controls.Add(this.ovalPictureBox7);
             this.GPBGrupo2.CornerRadius = 20;
             this.GPBGrupo2.Location = new System.Drawing.Point(20, 321);
@@ -591,45 +591,45 @@
             this.GPBGrupo2.TabIndex = 3;
             this.GPBGrupo2.TabStop = false;
             // 
-            // customGroupBox15
+            // Grupo2groupPorcentagem1
             // 
-            this.customGroupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Grupo2groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox15.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox15.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox15.BorderWidth = 1F;
-            this.customGroupBox15.Controls.Add(this.customGroupBox16);
-            this.customGroupBox15.CornerRadius = 14;
-            this.customGroupBox15.Location = new System.Drawing.Point(15, 120);
-            this.customGroupBox15.Name = "customGroupBox15";
-            this.customGroupBox15.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox15.TabIndex = 43;
-            this.customGroupBox15.TabStop = false;
+            this.Grupo2groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Grupo2groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Grupo2groupPorcentagem1.BorderWidth = 1F;
+            this.Grupo2groupPorcentagem1.Controls.Add(this.Grupo2groupPorcentagem2);
+            this.Grupo2groupPorcentagem1.CornerRadius = 14;
+            this.Grupo2groupPorcentagem1.Location = new System.Drawing.Point(15, 120);
+            this.Grupo2groupPorcentagem1.Name = "Grupo2groupPorcentagem1";
+            this.Grupo2groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Grupo2groupPorcentagem1.TabIndex = 43;
+            this.Grupo2groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox16
+            // Grupo2groupPorcentagem2
             // 
-            this.customGroupBox16.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox16.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox16.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox16.BorderWidth = 1F;
-            this.customGroupBox16.CornerRadius = 14;
-            this.customGroupBox16.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox16.Name = "customGroupBox16";
-            this.customGroupBox16.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox16.TabIndex = 0;
-            this.customGroupBox16.TabStop = false;
+            this.Grupo2groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Grupo2groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Grupo2groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Grupo2groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Grupo2groupPorcentagem2.BorderWidth = 1F;
+            this.Grupo2groupPorcentagem2.CornerRadius = 14;
+            this.Grupo2groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Grupo2groupPorcentagem2.Name = "Grupo2groupPorcentagem2";
+            this.Grupo2groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Grupo2groupPorcentagem2.TabIndex = 0;
+            this.Grupo2groupPorcentagem2.TabStop = false;
             // 
-            // label12
+            // lblTituloGrupo2
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(54, 70);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 13);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "Nome do projeto";
+            this.lblTituloGrupo2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTituloGrupo2.AutoSize = true;
+            this.lblTituloGrupo2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTituloGrupo2.Location = new System.Drawing.Point(54, 70);
+            this.lblTituloGrupo2.Name = "lblTituloGrupo2";
+            this.lblTituloGrupo2.Size = new System.Drawing.Size(85, 13);
+            this.lblTituloGrupo2.TabIndex = 42;
+            this.lblTituloGrupo2.Text = "Nome do projeto";
             // 
             // ovalPictureBox7
             // 
@@ -709,10 +709,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBEtapa22.BackgroundColor = System.Drawing.Color.White;
             this.GPBEtapa22.BorderWidth = 1F;
-            this.GPBEtapa22.Controls.Add(this.customGroupBox9);
-            this.GPBEtapa22.Controls.Add(this.roundedGroupBox10);
+            this.GPBEtapa22.Controls.Add(this.Etapa22groupPorcentagem1);
+            this.GPBEtapa22.Controls.Add(this.RGBDescricaoEtapa22);
             this.GPBEtapa22.Controls.Add(this.ovalPictureBox4);
-            this.GPBEtapa22.Controls.Add(this.label8);
+            this.GPBEtapa22.Controls.Add(this.lblNomeEtapa22);
             this.GPBEtapa22.CornerRadius = 20;
             this.GPBEtapa22.Location = new System.Drawing.Point(361, 10);
             this.GPBEtapa22.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
@@ -721,62 +721,62 @@
             this.GPBEtapa22.TabIndex = 5;
             this.GPBEtapa22.TabStop = false;
             // 
-            // customGroupBox9
+            // Etapa22groupPorcentagem1
             // 
-            this.customGroupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Etapa22groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox9.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox9.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox9.BorderWidth = 1F;
-            this.customGroupBox9.Controls.Add(this.customGroupBox10);
-            this.customGroupBox9.CornerRadius = 14;
-            this.customGroupBox9.Location = new System.Drawing.Point(14, 189);
-            this.customGroupBox9.Name = "customGroupBox9";
-            this.customGroupBox9.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox9.TabIndex = 45;
-            this.customGroupBox9.TabStop = false;
+            this.Etapa22groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa22groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa22groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa22groupPorcentagem1.Controls.Add(this.Etapa21groupPorcentagem2);
+            this.Etapa22groupPorcentagem1.CornerRadius = 14;
+            this.Etapa22groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
+            this.Etapa22groupPorcentagem1.Name = "Etapa22groupPorcentagem1";
+            this.Etapa22groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Etapa22groupPorcentagem1.TabIndex = 45;
+            this.Etapa22groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox10
+            // Etapa21groupPorcentagem2
             // 
-            this.customGroupBox10.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox10.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox10.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox10.BorderWidth = 1F;
-            this.customGroupBox10.CornerRadius = 14;
-            this.customGroupBox10.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox10.Name = "customGroupBox10";
-            this.customGroupBox10.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox10.TabIndex = 0;
-            this.customGroupBox10.TabStop = false;
+            this.Etapa21groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa21groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa21groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa21groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa21groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa21groupPorcentagem2.CornerRadius = 14;
+            this.Etapa21groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa21groupPorcentagem2.Name = "Etapa21groupPorcentagem2";
+            this.Etapa21groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa21groupPorcentagem2.TabIndex = 0;
+            this.Etapa21groupPorcentagem2.TabStop = false;
             // 
-            // roundedGroupBox10
+            // RGBDescricaoEtapa22
             // 
-            this.roundedGroupBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDescricaoEtapa22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox10.BackColor = System.Drawing.Color.Transparent;
-            this.roundedGroupBox10.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox10.BorderWidth = 1F;
-            this.roundedGroupBox10.Controls.Add(this.label7);
-            this.roundedGroupBox10.CornerRadius = 10;
-            this.roundedGroupBox10.Location = new System.Drawing.Point(11, 41);
-            this.roundedGroupBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedGroupBox10.Name = "roundedGroupBox10";
-            this.roundedGroupBox10.Size = new System.Drawing.Size(169, 142);
-            this.roundedGroupBox10.TabIndex = 44;
-            this.roundedGroupBox10.TabStop = false;
+            this.RGBDescricaoEtapa22.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa22.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa22.BorderWidth = 1F;
+            this.RGBDescricaoEtapa22.Controls.Add(this.lblDescricaoEtapa22);
+            this.RGBDescricaoEtapa22.CornerRadius = 20;
+            this.RGBDescricaoEtapa22.Location = new System.Drawing.Point(11, 41);
+            this.RGBDescricaoEtapa22.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa22.Name = "RGBDescricaoEtapa22";
+            this.RGBDescricaoEtapa22.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa22.TabIndex = 44;
+            this.RGBDescricaoEtapa22.TabStop = false;
             // 
-            // label7
+            // lblDescricaoEtapa22
             // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 123);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Descrição do projeto";
+            this.lblDescricaoEtapa22.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa22.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa22.Name = "lblDescricaoEtapa22";
+            this.lblDescricaoEtapa22.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa22.TabIndex = 36;
+            this.lblDescricaoEtapa22.Text = "Descrição do projeto";
             // 
             // ovalPictureBox4
             // 
@@ -791,15 +791,15 @@
             this.ovalPictureBox4.TabIndex = 43;
             this.ovalPictureBox4.TabStop = false;
             // 
-            // label8
+            // lblNomeEtapa22
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(8, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 13);
-            this.label8.TabIndex = 42;
-            this.label8.Text = "Nome do projeto";
+            this.lblNomeEtapa22.AutoSize = true;
+            this.lblNomeEtapa22.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa22.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeEtapa22.Name = "lblNomeEtapa22";
+            this.lblNomeEtapa22.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa22.TabIndex = 42;
+            this.lblNomeEtapa22.Text = "Nome do projeto";
             // 
             // GPBEtapa21
             // 
@@ -808,10 +808,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBEtapa21.BackgroundColor = System.Drawing.Color.White;
             this.GPBEtapa21.BorderWidth = 1F;
-            this.GPBEtapa21.Controls.Add(this.customGroupBox7);
-            this.GPBEtapa21.Controls.Add(this.roundedGroupBox9);
+            this.GPBEtapa21.Controls.Add(this.Etapa21groupPorcentagem1);
+            this.GPBEtapa21.Controls.Add(this.RGBDescricaoEtapa21);
             this.GPBEtapa21.Controls.Add(this.ovalPictureBox3);
-            this.GPBEtapa21.Controls.Add(this.label6);
+            this.GPBEtapa21.Controls.Add(this.lblNomeEtapa21);
             this.GPBEtapa21.CornerRadius = 20;
             this.GPBEtapa21.Location = new System.Drawing.Point(103, 10);
             this.GPBEtapa21.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
@@ -820,62 +820,62 @@
             this.GPBEtapa21.TabIndex = 4;
             this.GPBEtapa21.TabStop = false;
             // 
-            // customGroupBox7
+            // Etapa21groupPorcentagem1
             // 
-            this.customGroupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Etapa21groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox7.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox7.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox7.BorderWidth = 1F;
-            this.customGroupBox7.Controls.Add(this.customGroupBox8);
-            this.customGroupBox7.CornerRadius = 14;
-            this.customGroupBox7.Location = new System.Drawing.Point(14, 189);
-            this.customGroupBox7.Name = "customGroupBox7";
-            this.customGroupBox7.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox7.TabIndex = 45;
-            this.customGroupBox7.TabStop = false;
+            this.Etapa21groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa21groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa21groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa21groupPorcentagem1.Controls.Add(this.Etapa22groupPorcentagem2);
+            this.Etapa21groupPorcentagem1.CornerRadius = 14;
+            this.Etapa21groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
+            this.Etapa21groupPorcentagem1.Name = "Etapa21groupPorcentagem1";
+            this.Etapa21groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Etapa21groupPorcentagem1.TabIndex = 45;
+            this.Etapa21groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox8
+            // Etapa22groupPorcentagem2
             // 
-            this.customGroupBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox8.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox8.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox8.BorderWidth = 1F;
-            this.customGroupBox8.CornerRadius = 14;
-            this.customGroupBox8.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox8.Name = "customGroupBox8";
-            this.customGroupBox8.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox8.TabIndex = 0;
-            this.customGroupBox8.TabStop = false;
+            this.Etapa22groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa22groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa22groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa22groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa22groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa22groupPorcentagem2.CornerRadius = 14;
+            this.Etapa22groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa22groupPorcentagem2.Name = "Etapa22groupPorcentagem2";
+            this.Etapa22groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa22groupPorcentagem2.TabIndex = 0;
+            this.Etapa22groupPorcentagem2.TabStop = false;
             // 
-            // roundedGroupBox9
+            // RGBDescricaoEtapa21
             // 
-            this.roundedGroupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDescricaoEtapa21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox9.BackColor = System.Drawing.Color.Transparent;
-            this.roundedGroupBox9.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox9.BorderWidth = 1F;
-            this.roundedGroupBox9.Controls.Add(this.label5);
-            this.roundedGroupBox9.CornerRadius = 10;
-            this.roundedGroupBox9.Location = new System.Drawing.Point(11, 41);
-            this.roundedGroupBox9.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedGroupBox9.Name = "roundedGroupBox9";
-            this.roundedGroupBox9.Size = new System.Drawing.Size(169, 142);
-            this.roundedGroupBox9.TabIndex = 44;
-            this.roundedGroupBox9.TabStop = false;
+            this.RGBDescricaoEtapa21.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa21.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa21.BorderWidth = 1F;
+            this.RGBDescricaoEtapa21.Controls.Add(this.lblDescricaoEtapa21);
+            this.RGBDescricaoEtapa21.CornerRadius = 20;
+            this.RGBDescricaoEtapa21.Location = new System.Drawing.Point(11, 41);
+            this.RGBDescricaoEtapa21.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa21.Name = "RGBDescricaoEtapa21";
+            this.RGBDescricaoEtapa21.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa21.TabIndex = 44;
+            this.RGBDescricaoEtapa21.TabStop = false;
             // 
-            // label5
+            // lblDescricaoEtapa21
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 123);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Descrição do projeto";
+            this.lblDescricaoEtapa21.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa21.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa21.Name = "lblDescricaoEtapa21";
+            this.lblDescricaoEtapa21.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa21.TabIndex = 36;
+            this.lblDescricaoEtapa21.Text = "Descrição do projeto";
             // 
             // ovalPictureBox3
             // 
@@ -890,15 +890,15 @@
             this.ovalPictureBox3.TabIndex = 43;
             this.ovalPictureBox3.TabStop = false;
             // 
-            // label6
+            // lblNomeEtapa21
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(8, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 13);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Nome do projeto";
+            this.lblNomeEtapa21.AutoSize = true;
+            this.lblNomeEtapa21.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa21.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeEtapa21.Name = "lblNomeEtapa21";
+            this.lblNomeEtapa21.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa21.TabIndex = 42;
+            this.lblNomeEtapa21.Text = "Nome do projeto";
             // 
             // BtnDireita2
             // 
@@ -919,10 +919,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBEtapa23.BackgroundColor = System.Drawing.Color.White;
             this.GPBEtapa23.BorderWidth = 1F;
-            this.GPBEtapa23.Controls.Add(this.customGroupBox11);
-            this.GPBEtapa23.Controls.Add(this.roundedGroupBox11);
+            this.GPBEtapa23.Controls.Add(this.Etapa23groupPorcentagem1);
+            this.GPBEtapa23.Controls.Add(this.RGBDescricaoEtapa23);
             this.GPBEtapa23.Controls.Add(this.ovalPictureBox5);
-            this.GPBEtapa23.Controls.Add(this.label10);
+            this.GPBEtapa23.Controls.Add(this.lblNomeEtapa23);
             this.GPBEtapa23.CornerRadius = 20;
             this.GPBEtapa23.Location = new System.Drawing.Point(619, 10);
             this.GPBEtapa23.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
@@ -931,62 +931,62 @@
             this.GPBEtapa23.TabIndex = 3;
             this.GPBEtapa23.TabStop = false;
             // 
-            // customGroupBox11
+            // Etapa23groupPorcentagem1
             // 
-            this.customGroupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Etapa23groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox11.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox11.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox11.BorderWidth = 1F;
-            this.customGroupBox11.Controls.Add(this.customGroupBox12);
-            this.customGroupBox11.CornerRadius = 14;
-            this.customGroupBox11.Location = new System.Drawing.Point(14, 189);
-            this.customGroupBox11.Name = "customGroupBox11";
-            this.customGroupBox11.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox11.TabIndex = 45;
-            this.customGroupBox11.TabStop = false;
+            this.Etapa23groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa23groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa23groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa23groupPorcentagem1.Controls.Add(this.Etapa23groupPorcentagem2);
+            this.Etapa23groupPorcentagem1.CornerRadius = 14;
+            this.Etapa23groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
+            this.Etapa23groupPorcentagem1.Name = "Etapa23groupPorcentagem1";
+            this.Etapa23groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Etapa23groupPorcentagem1.TabIndex = 45;
+            this.Etapa23groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox12
+            // Etapa23groupPorcentagem2
             // 
-            this.customGroupBox12.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox12.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox12.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox12.BorderWidth = 1F;
-            this.customGroupBox12.CornerRadius = 14;
-            this.customGroupBox12.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox12.Name = "customGroupBox12";
-            this.customGroupBox12.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox12.TabIndex = 0;
-            this.customGroupBox12.TabStop = false;
+            this.Etapa23groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa23groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa23groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa23groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa23groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa23groupPorcentagem2.CornerRadius = 14;
+            this.Etapa23groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa23groupPorcentagem2.Name = "Etapa23groupPorcentagem2";
+            this.Etapa23groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa23groupPorcentagem2.TabIndex = 0;
+            this.Etapa23groupPorcentagem2.TabStop = false;
             // 
-            // roundedGroupBox11
+            // RGBDescricaoEtapa23
             // 
-            this.roundedGroupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDescricaoEtapa23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox11.BackColor = System.Drawing.Color.Transparent;
-            this.roundedGroupBox11.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox11.BorderWidth = 1F;
-            this.roundedGroupBox11.Controls.Add(this.label9);
-            this.roundedGroupBox11.CornerRadius = 10;
-            this.roundedGroupBox11.Location = new System.Drawing.Point(11, 41);
-            this.roundedGroupBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedGroupBox11.Name = "roundedGroupBox11";
-            this.roundedGroupBox11.Size = new System.Drawing.Size(169, 142);
-            this.roundedGroupBox11.TabIndex = 44;
-            this.roundedGroupBox11.TabStop = false;
+            this.RGBDescricaoEtapa23.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa23.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa23.BorderWidth = 1F;
+            this.RGBDescricaoEtapa23.Controls.Add(this.lblDescricaoEtapa23);
+            this.RGBDescricaoEtapa23.CornerRadius = 20;
+            this.RGBDescricaoEtapa23.Location = new System.Drawing.Point(11, 41);
+            this.RGBDescricaoEtapa23.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa23.Name = "RGBDescricaoEtapa23";
+            this.RGBDescricaoEtapa23.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa23.TabIndex = 44;
+            this.RGBDescricaoEtapa23.TabStop = false;
             // 
-            // label9
+            // lblDescricaoEtapa23
             // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(163, 123);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Descrição do projeto";
+            this.lblDescricaoEtapa23.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa23.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa23.Name = "lblDescricaoEtapa23";
+            this.lblDescricaoEtapa23.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa23.TabIndex = 36;
+            this.lblDescricaoEtapa23.Text = "Descrição do projeto";
             // 
             // ovalPictureBox5
             // 
@@ -1001,15 +1001,15 @@
             this.ovalPictureBox5.TabIndex = 43;
             this.ovalPictureBox5.TabStop = false;
             // 
-            // label10
+            // lblNomeEtapa23
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(8, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 13);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Nome do projeto";
+            this.lblNomeEtapa23.AutoSize = true;
+            this.lblNomeEtapa23.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa23.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeEtapa23.Name = "lblNomeEtapa23";
+            this.lblNomeEtapa23.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa23.TabIndex = 42;
+            this.lblNomeEtapa23.Text = "Nome do projeto";
             // 
             // BtnEsquerda2
             // 
@@ -1071,10 +1071,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBEtapa13.BackgroundColor = System.Drawing.Color.White;
             this.GPBEtapa13.BorderWidth = 1F;
-            this.GPBEtapa13.Controls.Add(this.customGroupBox5);
-            this.GPBEtapa13.Controls.Add(this.roundedGroupBox8);
+            this.GPBEtapa13.Controls.Add(this.Etapa13groupPorcentagem1);
+            this.GPBEtapa13.Controls.Add(this.RGBDescricaoEtapa13);
             this.GPBEtapa13.Controls.Add(this.ovalPictureBox2);
-            this.GPBEtapa13.Controls.Add(this.label4);
+            this.GPBEtapa13.Controls.Add(this.lblNomeEtapa13);
             this.GPBEtapa13.CornerRadius = 20;
             this.GPBEtapa13.Location = new System.Drawing.Point(619, 10);
             this.GPBEtapa13.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
@@ -1083,62 +1083,62 @@
             this.GPBEtapa13.TabIndex = 4;
             this.GPBEtapa13.TabStop = false;
             // 
-            // customGroupBox5
+            // Etapa13groupPorcentagem1
             // 
-            this.customGroupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Etapa13groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox5.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox5.BorderWidth = 1F;
-            this.customGroupBox5.Controls.Add(this.customGroupBox6);
-            this.customGroupBox5.CornerRadius = 14;
-            this.customGroupBox5.Location = new System.Drawing.Point(14, 189);
-            this.customGroupBox5.Name = "customGroupBox5";
-            this.customGroupBox5.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox5.TabIndex = 45;
-            this.customGroupBox5.TabStop = false;
+            this.Etapa13groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa13groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa13groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa13groupPorcentagem1.Controls.Add(this.Etapa13groupPorcentagem2);
+            this.Etapa13groupPorcentagem1.CornerRadius = 14;
+            this.Etapa13groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
+            this.Etapa13groupPorcentagem1.Name = "Etapa13groupPorcentagem1";
+            this.Etapa13groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Etapa13groupPorcentagem1.TabIndex = 45;
+            this.Etapa13groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox6
+            // Etapa13groupPorcentagem2
             // 
-            this.customGroupBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox6.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox6.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox6.BorderWidth = 1F;
-            this.customGroupBox6.CornerRadius = 14;
-            this.customGroupBox6.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox6.Name = "customGroupBox6";
-            this.customGroupBox6.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox6.TabIndex = 0;
-            this.customGroupBox6.TabStop = false;
+            this.Etapa13groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa13groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa13groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa13groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa13groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa13groupPorcentagem2.CornerRadius = 14;
+            this.Etapa13groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa13groupPorcentagem2.Name = "Etapa13groupPorcentagem2";
+            this.Etapa13groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa13groupPorcentagem2.TabIndex = 0;
+            this.Etapa13groupPorcentagem2.TabStop = false;
             // 
-            // roundedGroupBox8
+            // RGBDescricaoEtapa13
             // 
-            this.roundedGroupBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDescricaoEtapa13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox8.BackColor = System.Drawing.Color.Transparent;
-            this.roundedGroupBox8.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox8.BorderWidth = 1F;
-            this.roundedGroupBox8.Controls.Add(this.label3);
-            this.roundedGroupBox8.CornerRadius = 10;
-            this.roundedGroupBox8.Location = new System.Drawing.Point(11, 41);
-            this.roundedGroupBox8.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedGroupBox8.Name = "roundedGroupBox8";
-            this.roundedGroupBox8.Size = new System.Drawing.Size(169, 142);
-            this.roundedGroupBox8.TabIndex = 44;
-            this.roundedGroupBox8.TabStop = false;
+            this.RGBDescricaoEtapa13.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa13.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa13.BorderWidth = 1F;
+            this.RGBDescricaoEtapa13.Controls.Add(this.lblDescricaoEtapa13);
+            this.RGBDescricaoEtapa13.CornerRadius = 20;
+            this.RGBDescricaoEtapa13.Location = new System.Drawing.Point(11, 41);
+            this.RGBDescricaoEtapa13.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa13.Name = "RGBDescricaoEtapa13";
+            this.RGBDescricaoEtapa13.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa13.TabIndex = 44;
+            this.RGBDescricaoEtapa13.TabStop = false;
             // 
-            // label3
+            // lblDescricaoEtapa13
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 123);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Descrição do projeto";
+            this.lblDescricaoEtapa13.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa13.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa13.Name = "lblDescricaoEtapa13";
+            this.lblDescricaoEtapa13.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa13.TabIndex = 36;
+            this.lblDescricaoEtapa13.Text = "Descrição do projeto";
             // 
             // ovalPictureBox2
             // 
@@ -1153,15 +1153,15 @@
             this.ovalPictureBox2.TabIndex = 43;
             this.ovalPictureBox2.TabStop = false;
             // 
-            // label4
+            // lblNomeEtapa13
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(8, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 13);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Nome do projeto";
+            this.lblNomeEtapa13.AutoSize = true;
+            this.lblNomeEtapa13.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa13.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeEtapa13.Name = "lblNomeEtapa13";
+            this.lblNomeEtapa13.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa13.TabIndex = 42;
+            this.lblNomeEtapa13.Text = "Nome do projeto";
             // 
             // GPBEtapa12
             // 
@@ -1170,10 +1170,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBEtapa12.BackgroundColor = System.Drawing.Color.White;
             this.GPBEtapa12.BorderWidth = 1F;
-            this.GPBEtapa12.Controls.Add(this.customGroupBox3);
-            this.GPBEtapa12.Controls.Add(this.roundedGroupBox7);
+            this.GPBEtapa12.Controls.Add(this.Etapa12groupPorcentagem1);
+            this.GPBEtapa12.Controls.Add(this.RGBDescricaoEtapa12);
             this.GPBEtapa12.Controls.Add(this.ovalPictureBox1);
-            this.GPBEtapa12.Controls.Add(this.label2);
+            this.GPBEtapa12.Controls.Add(this.lblNomeEtapa12);
             this.GPBEtapa12.CornerRadius = 20;
             this.GPBEtapa12.Location = new System.Drawing.Point(361, 10);
             this.GPBEtapa12.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
@@ -1182,62 +1182,62 @@
             this.GPBEtapa12.TabIndex = 3;
             this.GPBEtapa12.TabStop = false;
             // 
-            // customGroupBox3
+            // Etapa12groupPorcentagem1
             // 
-            this.customGroupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Etapa12groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox3.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox3.BorderWidth = 1F;
-            this.customGroupBox3.Controls.Add(this.customGroupBox4);
-            this.customGroupBox3.CornerRadius = 14;
-            this.customGroupBox3.Location = new System.Drawing.Point(14, 189);
-            this.customGroupBox3.Name = "customGroupBox3";
-            this.customGroupBox3.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox3.TabIndex = 45;
-            this.customGroupBox3.TabStop = false;
+            this.Etapa12groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa12groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa12groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa12groupPorcentagem1.Controls.Add(this.Etapa12groupPorcentagem2);
+            this.Etapa12groupPorcentagem1.CornerRadius = 14;
+            this.Etapa12groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
+            this.Etapa12groupPorcentagem1.Name = "Etapa12groupPorcentagem1";
+            this.Etapa12groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Etapa12groupPorcentagem1.TabIndex = 45;
+            this.Etapa12groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox4
+            // Etapa12groupPorcentagem2
             // 
-            this.customGroupBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox4.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox4.BorderWidth = 1F;
-            this.customGroupBox4.CornerRadius = 14;
-            this.customGroupBox4.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox4.Name = "customGroupBox4";
-            this.customGroupBox4.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox4.TabIndex = 0;
-            this.customGroupBox4.TabStop = false;
+            this.Etapa12groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa12groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa12groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa12groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa12groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa12groupPorcentagem2.CornerRadius = 14;
+            this.Etapa12groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa12groupPorcentagem2.Name = "Etapa12groupPorcentagem2";
+            this.Etapa12groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa12groupPorcentagem2.TabIndex = 0;
+            this.Etapa12groupPorcentagem2.TabStop = false;
             // 
-            // roundedGroupBox7
+            // RGBDescricaoEtapa12
             // 
-            this.roundedGroupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDescricaoEtapa12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox7.BackColor = System.Drawing.Color.Transparent;
-            this.roundedGroupBox7.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox7.BorderWidth = 1F;
-            this.roundedGroupBox7.Controls.Add(this.label1);
-            this.roundedGroupBox7.CornerRadius = 10;
-            this.roundedGroupBox7.Location = new System.Drawing.Point(11, 41);
-            this.roundedGroupBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedGroupBox7.Name = "roundedGroupBox7";
-            this.roundedGroupBox7.Size = new System.Drawing.Size(169, 142);
-            this.roundedGroupBox7.TabIndex = 44;
-            this.roundedGroupBox7.TabStop = false;
+            this.RGBDescricaoEtapa12.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa12.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa12.BorderWidth = 1F;
+            this.RGBDescricaoEtapa12.Controls.Add(this.lblDescricaoEtapa12);
+            this.RGBDescricaoEtapa12.CornerRadius = 20;
+            this.RGBDescricaoEtapa12.Location = new System.Drawing.Point(11, 41);
+            this.RGBDescricaoEtapa12.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa12.Name = "RGBDescricaoEtapa12";
+            this.RGBDescricaoEtapa12.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa12.TabIndex = 44;
+            this.RGBDescricaoEtapa12.TabStop = false;
             // 
-            // label1
+            // lblDescricaoEtapa12
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 123);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Descrição do projeto";
+            this.lblDescricaoEtapa12.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa12.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa12.Name = "lblDescricaoEtapa12";
+            this.lblDescricaoEtapa12.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa12.TabIndex = 36;
+            this.lblDescricaoEtapa12.Text = "Descrição do projeto";
             // 
             // ovalPictureBox1
             // 
@@ -1252,15 +1252,15 @@
             this.ovalPictureBox1.TabIndex = 43;
             this.ovalPictureBox1.TabStop = false;
             // 
-            // label2
+            // lblNomeEtapa12
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(8, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Nome do projeto";
+            this.lblNomeEtapa12.AutoSize = true;
+            this.lblNomeEtapa12.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa12.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeEtapa12.Name = "lblNomeEtapa12";
+            this.lblNomeEtapa12.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa12.TabIndex = 42;
+            this.lblNomeEtapa12.Text = "Nome do projeto";
             // 
             // BtnEsquerda1
             // 
@@ -1293,10 +1293,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBEtapa11.BackgroundColor = System.Drawing.Color.White;
             this.GPBEtapa11.BorderWidth = 1F;
-            this.GPBEtapa11.Controls.Add(this.customGroupBox1);
-            this.GPBEtapa11.Controls.Add(this.RGBDescricaoP1);
+            this.GPBEtapa11.Controls.Add(this.Etapa11groupPorcentagem1);
+            this.GPBEtapa11.Controls.Add(this.RGBDescricaoEtapa11);
             this.GPBEtapa11.Controls.Add(this.opbEditarP1);
-            this.GPBEtapa11.Controls.Add(this.lblNomeP1);
+            this.GPBEtapa11.Controls.Add(this.lblNomeEtapa11);
             this.GPBEtapa11.CornerRadius = 20;
             this.GPBEtapa11.Location = new System.Drawing.Point(103, 10);
             this.GPBEtapa11.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
@@ -1305,62 +1305,62 @@
             this.GPBEtapa11.TabIndex = 2;
             this.GPBEtapa11.TabStop = false;
             // 
-            // customGroupBox1
+            // Etapa11groupPorcentagem1
             // 
-            this.customGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Etapa11groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox1.BackgroundColor = System.Drawing.Color.White;
-            this.customGroupBox1.BorderWidth = 1F;
-            this.customGroupBox1.Controls.Add(this.customGroupBox2);
-            this.customGroupBox1.CornerRadius = 14;
-            this.customGroupBox1.Location = new System.Drawing.Point(17, 188);
-            this.customGroupBox1.Name = "customGroupBox1";
-            this.customGroupBox1.Size = new System.Drawing.Size(163, 28);
-            this.customGroupBox1.TabIndex = 41;
-            this.customGroupBox1.TabStop = false;
+            this.Etapa11groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa11groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa11groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa11groupPorcentagem1.Controls.Add(this.Etapa11groupPorcentagem2);
+            this.Etapa11groupPorcentagem1.CornerRadius = 14;
+            this.Etapa11groupPorcentagem1.Location = new System.Drawing.Point(17, 188);
+            this.Etapa11groupPorcentagem1.Name = "Etapa11groupPorcentagem1";
+            this.Etapa11groupPorcentagem1.Size = new System.Drawing.Size(163, 28);
+            this.Etapa11groupPorcentagem1.TabIndex = 41;
+            this.Etapa11groupPorcentagem1.TabStop = false;
             // 
-            // customGroupBox2
+            // Etapa11groupPorcentagem2
             // 
-            this.customGroupBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.customGroupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.customGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.customGroupBox2.BackgroundColor = System.Drawing.Color.Silver;
-            this.customGroupBox2.BorderWidth = 1F;
-            this.customGroupBox2.CornerRadius = 14;
-            this.customGroupBox2.Location = new System.Drawing.Point(0, 0);
-            this.customGroupBox2.Name = "customGroupBox2";
-            this.customGroupBox2.Size = new System.Drawing.Size(28, 28);
-            this.customGroupBox2.TabIndex = 0;
-            this.customGroupBox2.TabStop = false;
+            this.Etapa11groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa11groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa11groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa11groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa11groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa11groupPorcentagem2.CornerRadius = 14;
+            this.Etapa11groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa11groupPorcentagem2.Name = "Etapa11groupPorcentagem2";
+            this.Etapa11groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa11groupPorcentagem2.TabIndex = 0;
+            this.Etapa11groupPorcentagem2.TabStop = false;
             // 
-            // RGBDescricaoP1
+            // RGBDescricaoEtapa11
             // 
-            this.RGBDescricaoP1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDescricaoEtapa11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBDescricaoP1.BackColor = System.Drawing.Color.Transparent;
-            this.RGBDescricaoP1.BackgroundColor = System.Drawing.Color.White;
-            this.RGBDescricaoP1.BorderWidth = 1F;
-            this.RGBDescricaoP1.Controls.Add(this.lblDescricaoP1);
-            this.RGBDescricaoP1.CornerRadius = 10;
-            this.RGBDescricaoP1.Location = new System.Drawing.Point(14, 40);
-            this.RGBDescricaoP1.Margin = new System.Windows.Forms.Padding(0);
-            this.RGBDescricaoP1.Name = "RGBDescricaoP1";
-            this.RGBDescricaoP1.Size = new System.Drawing.Size(169, 142);
-            this.RGBDescricaoP1.TabIndex = 40;
-            this.RGBDescricaoP1.TabStop = false;
+            this.RGBDescricaoEtapa11.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa11.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa11.BorderWidth = 1F;
+            this.RGBDescricaoEtapa11.Controls.Add(this.lblDescricaoEtapa11);
+            this.RGBDescricaoEtapa11.CornerRadius = 20;
+            this.RGBDescricaoEtapa11.Location = new System.Drawing.Point(14, 40);
+            this.RGBDescricaoEtapa11.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa11.Name = "RGBDescricaoEtapa11";
+            this.RGBDescricaoEtapa11.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa11.TabIndex = 40;
+            this.RGBDescricaoEtapa11.TabStop = false;
             // 
-            // lblDescricaoP1
+            // lblDescricaoEtapa11
             // 
-            this.lblDescricaoP1.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricaoP1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescricaoP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricaoP1.Location = new System.Drawing.Point(3, 16);
-            this.lblDescricaoP1.Name = "lblDescricaoP1";
-            this.lblDescricaoP1.Size = new System.Drawing.Size(163, 123);
-            this.lblDescricaoP1.TabIndex = 36;
-            this.lblDescricaoP1.Text = "Descrição do projeto";
+            this.lblDescricaoEtapa11.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa11.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa11.Name = "lblDescricaoEtapa11";
+            this.lblDescricaoEtapa11.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa11.TabIndex = 36;
+            this.lblDescricaoEtapa11.Text = "Descrição do projeto";
             // 
             // opbEditarP1
             // 
@@ -1375,15 +1375,15 @@
             this.opbEditarP1.TabIndex = 39;
             this.opbEditarP1.TabStop = false;
             // 
-            // lblNomeP1
+            // lblNomeEtapa11
             // 
-            this.lblNomeP1.AutoSize = true;
-            this.lblNomeP1.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeP1.Location = new System.Drawing.Point(11, 15);
-            this.lblNomeP1.Name = "lblNomeP1";
-            this.lblNomeP1.Size = new System.Drawing.Size(85, 13);
-            this.lblNomeP1.TabIndex = 38;
-            this.lblNomeP1.Text = "Nome do projeto";
+            this.lblNomeEtapa11.AutoSize = true;
+            this.lblNomeEtapa11.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa11.Location = new System.Drawing.Point(11, 15);
+            this.lblNomeEtapa11.Name = "lblNomeEtapa11";
+            this.lblNomeEtapa11.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa11.TabIndex = 38;
+            this.lblNomeEtapa11.Text = "Nome do projeto";
             // 
             // frmEtapas
             // 
@@ -1414,46 +1414,46 @@
             this.TLPGrupos.ResumeLayout(false);
             this.GPBGrupo1.ResumeLayout(false);
             this.GPBGrupo1.PerformLayout();
-            this.customGroupBox13.ResumeLayout(false);
+            this.Grupo1groupPorcentagem1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox6)).EndInit();
             this.GPBGrupo2.ResumeLayout(false);
             this.GPBGrupo2.PerformLayout();
-            this.customGroupBox15.ResumeLayout(false);
+            this.Grupo2groupPorcentagem1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox7)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.RGBEtapas2.ResumeLayout(false);
             this.TLPEtapas2.ResumeLayout(false);
             this.GPBEtapa22.ResumeLayout(false);
             this.GPBEtapa22.PerformLayout();
-            this.customGroupBox9.ResumeLayout(false);
-            this.roundedGroupBox10.ResumeLayout(false);
+            this.Etapa22groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa22.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox4)).EndInit();
             this.GPBEtapa21.ResumeLayout(false);
             this.GPBEtapa21.PerformLayout();
-            this.customGroupBox7.ResumeLayout(false);
-            this.roundedGroupBox9.ResumeLayout(false);
+            this.Etapa21groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa21.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).EndInit();
             this.GPBEtapa23.ResumeLayout(false);
             this.GPBEtapa23.PerformLayout();
-            this.customGroupBox11.ResumeLayout(false);
-            this.roundedGroupBox11.ResumeLayout(false);
+            this.Etapa23groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa23.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox5)).EndInit();
             this.RGBEtapas1.ResumeLayout(false);
             this.TLPEtapas1.ResumeLayout(false);
             this.GPBEtapa13.ResumeLayout(false);
             this.GPBEtapa13.PerformLayout();
-            this.customGroupBox5.ResumeLayout(false);
-            this.roundedGroupBox8.ResumeLayout(false);
+            this.Etapa13groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).EndInit();
             this.GPBEtapa12.ResumeLayout(false);
             this.GPBEtapa12.PerformLayout();
-            this.customGroupBox3.ResumeLayout(false);
-            this.roundedGroupBox7.ResumeLayout(false);
+            this.Etapa12groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).EndInit();
             this.GPBEtapa11.ResumeLayout(false);
             this.GPBEtapa11.PerformLayout();
-            this.customGroupBox1.ResumeLayout(false);
-            this.RGBDescricaoP1.ResumeLayout(false);
+            this.Etapa11groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1494,54 +1494,54 @@
         private System.Windows.Forms.Button BtnEsquerda1;
         private System.Windows.Forms.Button BtnDireita1;
         private RoundedGroupBox GPBEtapa11;
-        private System.Windows.Forms.Label lblNomeP1;
+        private System.Windows.Forms.Label lblNomeEtapa11;
         private OvalPictureBox opbEditarP1;
-        private RoundedGroupBox RGBDescricaoP1;
-        private System.Windows.Forms.Label lblDescricaoP1;
-        private CustomGroupBox customGroupBox1;
-        private CustomGroupBox customGroupBox2;
-        private CustomGroupBox customGroupBox9;
-        private CustomGroupBox customGroupBox10;
-        private RoundedGroupBox roundedGroupBox10;
-        private System.Windows.Forms.Label label7;
+        private RoundedGroupBox RGBDescricaoEtapa11;
+        private System.Windows.Forms.Label lblDescricaoEtapa11;
+        private CustomGroupBox Etapa11groupPorcentagem1;
+        private CustomGroupBox Etapa11groupPorcentagem2;
+        private CustomGroupBox Etapa22groupPorcentagem1;
+        private CustomGroupBox Etapa21groupPorcentagem2;
+        private RoundedGroupBox RGBDescricaoEtapa22;
+        private System.Windows.Forms.Label lblDescricaoEtapa22;
         private OvalPictureBox ovalPictureBox4;
-        private System.Windows.Forms.Label label8;
-        private CustomGroupBox customGroupBox7;
-        private CustomGroupBox customGroupBox8;
-        private RoundedGroupBox roundedGroupBox9;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblNomeEtapa22;
+        private CustomGroupBox Etapa21groupPorcentagem1;
+        private CustomGroupBox Etapa22groupPorcentagem2;
+        private RoundedGroupBox RGBDescricaoEtapa21;
+        private System.Windows.Forms.Label lblDescricaoEtapa21;
         private OvalPictureBox ovalPictureBox3;
-        private System.Windows.Forms.Label label6;
-        private CustomGroupBox customGroupBox11;
-        private CustomGroupBox customGroupBox12;
-        private RoundedGroupBox roundedGroupBox11;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblNomeEtapa21;
+        private CustomGroupBox Etapa23groupPorcentagem1;
+        private CustomGroupBox Etapa23groupPorcentagem2;
+        private RoundedGroupBox RGBDescricaoEtapa23;
+        private System.Windows.Forms.Label lblDescricaoEtapa23;
         private OvalPictureBox ovalPictureBox5;
-        private System.Windows.Forms.Label label10;
-        private CustomGroupBox customGroupBox5;
-        private CustomGroupBox customGroupBox6;
-        private RoundedGroupBox roundedGroupBox8;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblNomeEtapa23;
+        private CustomGroupBox Etapa13groupPorcentagem1;
+        private CustomGroupBox Etapa13groupPorcentagem2;
+        private RoundedGroupBox RGBDescricaoEtapa13;
+        private System.Windows.Forms.Label lblDescricaoEtapa13;
         private OvalPictureBox ovalPictureBox2;
-        private System.Windows.Forms.Label label4;
-        private CustomGroupBox customGroupBox3;
-        private CustomGroupBox customGroupBox4;
-        private RoundedGroupBox roundedGroupBox7;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNomeEtapa13;
+        private CustomGroupBox Etapa12groupPorcentagem1;
+        private CustomGroupBox Etapa12groupPorcentagem2;
+        private RoundedGroupBox RGBDescricaoEtapa12;
+        private System.Windows.Forms.Label lblDescricaoEtapa12;
         private OvalPictureBox ovalPictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNomeEtapa12;
         private RoundedGroupBox GPBGrupo1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblTituloGrupo1;
         private OvalPictureBox ovalPictureBox6;
         private RoundButton btnADDEtapa;
         private RoundButton BtnADDGrupo;
         private RoundButton BtnVoltar;
-        private CustomGroupBox customGroupBox13;
-        private CustomGroupBox customGroupBox14;
+        private CustomGroupBox Grupo1groupPorcentagem1;
+        private CustomGroupBox Grupo1groupPorcentagem2;
         private RoundedGroupBox GPBGrupo2;
-        private CustomGroupBox customGroupBox15;
-        private CustomGroupBox customGroupBox16;
-        private System.Windows.Forms.Label label12;
+        private CustomGroupBox Grupo2groupPorcentagem1;
+        private CustomGroupBox Grupo2groupPorcentagem2;
+        private System.Windows.Forms.Label lblTituloGrupo2;
         private OvalPictureBox ovalPictureBox7;
     }
 }

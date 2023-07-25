@@ -170,6 +170,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Status.cs" />
+    <Compile Include="Step.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Coisas.resx">
       <DependentUpon>Coisas.cs</DependentUpon>

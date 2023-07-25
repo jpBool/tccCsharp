@@ -585,6 +585,23 @@ namespace tccCsharp
             return selecionado;
 
         }
+
+        public static List<GroupSteps> CarregarEtapas(List<GroupSteps> grupos)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar esse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return grupos;
+        }
     }
 }
 

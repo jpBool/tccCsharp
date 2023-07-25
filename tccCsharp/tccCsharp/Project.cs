@@ -28,5 +28,7 @@ namespace tccCsharp
         public string linguagem { get; set; }
         public DateTime? previsao { get; set; }
         public int numero_grupos { get; set; }
+
+        public List<GroupSteps> Grupos { get; set; }
     }
 }
