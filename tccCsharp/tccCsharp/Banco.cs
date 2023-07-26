@@ -591,12 +591,11 @@ namespace tccCsharp
             try
             {
                 string sql;
-                sql = "SELECT G* FROM gp2_grupos_etapas G WHERE id_projeto = @1";
+                sql = "SELECT G.* FROM gp2_grupos_etapas G WHERE id_projeto = @1 AND excluido = FALSE";
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
 
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-
 
                 while (dr.Read())
                 {
@@ -608,12 +607,20 @@ namespace tccCsharp
                     linha.mostrar_porcentagem = Convert.ToBoolean(dr["porcentagem"]);
                     linha.ordenador = Convert.ToInt32(dr["ordenador"]);
                     linha.excluido = Convert.ToBoolean(dr["excluido"]);
-                    linha.numero_etapas = Convert.ToInt32(dr["numero_etapas"]);
+                    linha.numero_etapas = Convert.ToInt32(dr["num_etapas"]);
+                    
+                    grupos.Add(linha);
+                }
+                dr.Close();
 
+                for(int i = 0; i < grupos.Count; i++)
+                {
                     string sql2;
-                    sql2 = "SELECT E* FROM gp2_etapas E WHERE id_grupo = @1";
+                    sql2 = "SELECT E.* FROM gp2_etapas E WHERE id_grupo = @1 AND excluido = FALSE";
                     List<object> param2 = new List<object>();
-                    param2.Add(linha.id_grupo);
+                    param2.Add(grupos[i].id_grupo);
+
+                    grupos[i].etapas = new List<Step>();
 
                     NpgsqlDataReader dr2 = Banco.Selecionar(sql2, param2);
                     while (dr2.Read())
@@ -624,18 +631,48 @@ namespace tccCsharp
                         entrelinha.nome_etapa = Convert.ToString(dr2["nome_etapa"]);
                         entrelinha.peso = Convert.ToInt32(dr2["peso"]);
                         entrelinha.porcentagem = Convert.ToDecimal(dr2["porcentagem"]);
-                        
+
                         if (dr2["descricao_etapa"] != DBNull.Value)
                             entrelinha.descricao_etapa = Convert.ToString(dr2["descricao_etapa"]);
 
                         if (dr2["status"] != DBNull.Value)
-                                entrelinha.status = Convert.ToInt32(dr2["status"]);
+                            entrelinha.status = Convert.ToInt32(dr2["status"]);
 
+                        if (dr2["prioridade"] != DBNull.Value)
+                            entrelinha.prioridade = Convert.ToInt32(dr2["prioridade"]);
 
+                        if (dr2["ordenador"] != DBNull.Value)
+                            entrelinha.ordenador = Convert.ToInt32(dr2["ordenador"]);
 
+                        if (dr2["responsavel"] != DBNull.Value)
+                            entrelinha.responsavel = Convert.ToString(dr2["responsavel"]);
 
+                        if (dr2["email_responsavel"] != DBNull.Value)
+                            entrelinha.email_responsavel = Convert.ToString(dr2["email_responsavel"]);
+
+                        if (dr2["impedimento"] != DBNull.Value)
+                            entrelinha.impedimento = Convert.ToBoolean(dr2["impedimento"]);
+
+                        if (dr2["descricao_impedimento"] != DBNull.Value)
+                            entrelinha.descricao_impedimento = Convert.ToString(dr2["descricao_impedimento"]);
+
+                        if (dr2["data_criacao"] != DBNull.Value)
+                            entrelinha.data_criacao = Convert.ToDateTime(dr2["data_criacao"]);
+
+                        if (dr2["data_atualizacao"] != DBNull.Value)
+                            entrelinha.data_atualizacao = Convert.ToDateTime(dr2["data_atualizacao"]);
+
+                        if (dr2["atualizador"] != DBNull.Value)
+                            entrelinha.atualizador = Convert.ToInt32(dr2["atualizador"]);
+
+                        if (dr2["excluido"] != DBNull.Value)
+                            entrelinha.excluido = Convert.ToBoolean(dr2["excluido"]);
+
+                        grupos[i].etapas.Add(entrelinha);
                     }
+                    dr2.Close();
                 }
+                
             }
             catch (Exception ex)
             {

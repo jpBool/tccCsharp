@@ -12,6 +12,7 @@ namespace tccCsharp
 {
     public partial class frmEtapas : Form
     {
+        List<GroupSteps> grupos = new List<GroupSteps>();
         public frmEtapas()
         {
             InitializeComponent();
@@ -80,6 +81,14 @@ namespace tccCsharp
             private void frmEtapas_Load(object sender, EventArgs e)
         {
             DoDesign();
+            Banco.CarregarEtapas(grupos);
+
+            lblTituloGrupo1.Text = grupos[0].nome_grupo;
+            lblTituloGrupo2.Text = grupos[1].nome_grupo;
+
+            lblNomeEtapa11.Text = grupos[0].etapas[0].nome_etapa;
+            lblNomeEtapa12.Text = grupos[0].etapas[1].nome_etapa;
+            lblNomeEtapa21.Text = grupos[1].etapas[0].nome_etapa;
         }
     }
 }
