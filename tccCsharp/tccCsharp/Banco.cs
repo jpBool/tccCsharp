@@ -590,7 +590,52 @@ namespace tccCsharp
         {
             try
             {
+                string sql;
+                sql = "SELECT G* FROM gp2_grupos_etapas G WHERE id_projeto = @1";
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
 
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+
+
+                while (dr.Read())
+                {
+                    GroupSteps linha = new GroupSteps();
+                    linha.id_grupo = Convert.ToInt32(dr["id_grupo"]);
+                    linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
+                    linha.nome_grupo = Convert.ToString(dr["nome_grupo"]);
+                    linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
+                    linha.mostrar_porcentagem = Convert.ToBoolean(dr["porcentagem"]);
+                    linha.ordenador = Convert.ToInt32(dr["ordenador"]);
+                    linha.excluido = Convert.ToBoolean(dr["excluido"]);
+                    linha.numero_etapas = Convert.ToInt32(dr["numero_etapas"]);
+
+                    string sql2;
+                    sql2 = "SELECT E* FROM gp2_etapas E WHERE id_grupo = @1";
+                    List<object> param2 = new List<object>();
+                    param2.Add(linha.id_grupo);
+
+                    NpgsqlDataReader dr2 = Banco.Selecionar(sql2, param2);
+                    while (dr2.Read())
+                    {
+                        Step entrelinha = new Step();
+                        entrelinha.id_etapa = Convert.ToInt32(dr2["id_etapa"]);
+                        entrelinha.id_grupo = Convert.ToInt32(dr2["id_grupo"]);
+                        entrelinha.nome_etapa = Convert.ToString(dr2["nome_etapa"]);
+                        entrelinha.peso = Convert.ToInt32(dr2["peso"]);
+                        entrelinha.porcentagem = Convert.ToDecimal(dr2["porcentagem"]);
+                        
+                        if (dr2["descricao_etapa"] != DBNull.Value)
+                            entrelinha.descricao_etapa = Convert.ToString(dr2["descricao_etapa"]);
+
+                        if (dr2["status"] != DBNull.Value)
+                                entrelinha.status = Convert.ToInt32(dr2["status"]);
+
+
+
+
+                    }
+                }
             }
             catch (Exception ex)
             {
