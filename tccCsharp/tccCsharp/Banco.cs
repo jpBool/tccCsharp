@@ -85,7 +85,6 @@ namespace tccCsharp
             {
                 sql = "select id_usuario,nome from gp2_usuarios ";
                 sql += " where email = @1 and senha = @2 and excluido = false";
-
                 List<object> param = new List<object>();
                 param.Add(email);
                 param.Add(senha);
@@ -103,9 +102,7 @@ namespace tccCsharp
                     //MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!", "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     dr.Close();
                     return 0;
-
                 }
-
             }
             catch (Exception ex)
             {
@@ -129,31 +126,18 @@ namespace tccCsharp
                 List<object> param = new List<object>();
                 param.Add(Program.id_usuario);
 
-
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 dr.Read();
                 usuario.nome = dr["nome"].ToString();
-
-                if (dr["bio"] != DBNull.Value)
-                    usuario.bio = dr["bio"].ToString();
-
-                if (dr["avatar"] != DBNull.Value)
-                    usuario.avatar = Convert.ToInt32(dr["avatar"]);
-
-                if (dr["naturalidade"] != DBNull.Value)
-                    usuario.naturalidade = dr["naturalidade"].ToString();
-
-                if (dr["nascimento"] != DBNull.Value)
-                    usuario.nascimento = Convert.ToDateTime(dr["nascimento"]);
-
+                usuario.bio = dr["bio"] != DBNull.Value ? dr["bio"].ToString():null;
+                usuario.avatar = dr["avatar"] != DBNull.Value ? Convert.ToInt32(dr["avatar"]) : 0;
+                usuario.naturalidade = dr["naturalidade"] != DBNull.Value ? dr["naturalidade"].ToString() : null;
                 usuario.inscricao = Convert.ToDateTime(dr["inscricao"]);
                 usuario.email = dr["email"].ToString();
-
-                if (dr["telefone"] != DBNull.Value)
-                    usuario.telefone = dr["telefone"].ToString();
-
-                if (dr["commits"] != DBNull.Value)
-                    usuario.commits = Convert.ToInt32(dr["commits"]);
+                usuario.telefone = dr["telefone"] != DBNull.Value ? dr["telefone"].ToString() : null;
+                usuario.commits = dr["commits"] != DBNull.Value ? Convert.ToInt32(dr["commits"]) : 0;
+                if (dr["nascimento"] != DBNull.Value)
+                    usuario.nascimento = Convert.ToDateTime(dr["nascimento"]);
                 dr.Close();
             }
             catch (Exception ex)
@@ -174,72 +158,33 @@ namespace tccCsharp
             try
             {
                 sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_projeto = @1 ";
-
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
 
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-
                 dr.Read();
-
                 selecionado.id_projeto = Convert.ToInt32(dr["id_projeto"]);
                 selecionado.id_criador = Convert.ToInt32(dr["id_criador"]);
-
-                if (dr["autores"] != DBNull.Value)
-                    selecionado.autores = dr["autores"].ToString();
-
-                if (dr["email_contato"] != DBNull.Value)
-                    selecionado.email_contato = dr["email_contato"].ToString();
-
+                selecionado.autores = dr["autores"] != DBNull.Value ? dr["autores"].ToString() : null;
+                selecionado.email_contato = dr["email_contato"] != DBNull.Value ? dr["email_contato"].ToString() : null;
                 selecionado.nome_projeto = dr["nome_projeto"].ToString();
-
-                if (dr["palavras_chave"] != DBNull.Value)
-                    selecionado.palavras_chave = dr["palavras_chave"].ToString();
-
-                if (dr["publico"] != DBNull.Value)
-                    selecionado.publico = Convert.ToBoolean(dr["publico"]);
-                else
-                    selecionado.publico = false;
-
+                selecionado.palavras_chave = dr["palavras_chave"] != DBNull.Value ? dr["palavras_chave"].ToString() : null;
+                selecionado.publico = dr["publico"] != DBNull.Value ? Convert.ToBoolean(dr["publico"]) : false;
                 selecionado.descricao_breve = dr["descricao_breve"].ToString();
-
-                if (dr["descricao_detalhada"] != DBNull.Value)
-                    selecionado.descricao_detalhada = dr["descricao_detalhada"].ToString();
-
-                if (dr["link_site"] != DBNull.Value)
-                    selecionado.link_site = dr["link_site"].ToString();
-
-                if (dr["link_youtube"] != DBNull.Value)
-                    selecionado.link_youtube = dr["link_youtube"].ToString();
-
-                if (dr["status"] != DBNull.Value)
-                    selecionado.status = Convert.ToInt32(dr["status"]);
-                else
-                    selecionado.status = 1;
-
-                if (dr["porcentagem"] != DBNull.Value)
-                    selecionado.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
-                else
-                    selecionado.porcentagem = 0;
-
-                selecionado.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
-
-                if (dr["data_atualizacao"] != DBNull.Value)
-                    selecionado.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
-
-                if (dr["atualizador"] != DBNull.Value)
-                    selecionado.atualizador = Convert.ToInt32(dr["atualizador"]);
-
+                selecionado.descricao_detalhada = dr["descricao_detalhada"] != DBNull.Value ? dr["descricao_detalhada"].ToString() : null;
+                selecionado.link_site = dr["link_site"] != DBNull.Value ? dr["link_site"].ToString() : null;
+                selecionado.link_youtube = dr["link_youtube"] != DBNull.Value ? dr["link_youtube"].ToString() : null;
+                selecionado.status = dr["status"] != DBNull.Value ? Convert.ToInt32(dr["status"]) : 1;
+                selecionado.porcentagem = dr["porcentagem"] != DBNull.Value ? Convert.ToDecimal(dr["porcentagem"]) : 0;
                 selecionado.excluido = Convert.ToBoolean(dr["excluido"]);
-
-                if (dr["linguagem"] != DBNull.Value)
-                    selecionado.linguagem = dr["linguagem"].ToString();
-
+                selecionado.linguagem = dr["linguagem"] != DBNull.Value ? dr["linguagem"].ToString() : null;
+                selecionado.numero_grupos = dr["num_grupos"] != DBNull.Value ? Convert.ToInt32(dr["num_grupos"]) : 0;
                 if (dr["previsao"] != DBNull.Value)
                     selecionado.previsao = Convert.ToDateTime(dr["previsao"]);
-
-                if (dr["num_grupos"] != DBNull.Value)
-                    selecionado.numero_grupos = Convert.ToInt32(dr["num_grupos"]);
+                if (dr["atualizador"] != DBNull.Value)
+                    selecionado.atualizador = Convert.ToInt32(dr["atualizador"]);
+                if (dr["data_atualizacao"] != DBNull.Value)
+                    selecionado.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
 
                 dr.Close();
             }
@@ -261,76 +206,36 @@ namespace tccCsharp
             try
             {
                 sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
-
-
                 List<object> param = new List<object>();
                 param.Add(Program.id_usuario);
 
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-
-
                 while (dr.Read())
                 {
                     Project linha = new Project();
                     linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
                     linha.id_criador = Convert.ToInt32(dr["id_criador"]);
-
-                    if (dr["autores"] != DBNull.Value)
-                        linha.autores = dr["autores"].ToString();
-
-                    if (dr["email_contato"] != DBNull.Value)
-                        linha.email_contato = dr["email_contato"].ToString();
-
+                    linha.autores = dr["autores"] != DBNull.Value ? dr["autores"].ToString() : null;
+                    linha.email_contato = dr["email_contato"] != DBNull.Value ? dr["email_contato"].ToString() : null;
                     linha.nome_projeto = dr["nome_projeto"].ToString();
-
-                    if (dr["palavras_chave"] != DBNull.Value)
-                        linha.palavras_chave = dr["palavras_chave"].ToString();
-
-                    if (dr["publico"] != DBNull.Value)
-                        linha.publico = Convert.ToBoolean(dr["publico"]);
-                    else
-                        linha.publico = false;
-
+                    linha.palavras_chave = dr["palavras_chave"] != DBNull.Value ? dr["palavras_chave"].ToString() : null;
+                    linha.publico = dr["publico"] != DBNull.Value ? Convert.ToBoolean(dr["publico"]) : false;
                     linha.descricao_breve = dr["descricao_breve"].ToString();
-
-                    if (dr["descricao_detalhada"] != DBNull.Value)
-                        linha.descricao_detalhada = dr["descricao_detalhada"].ToString();
-
-                    if (dr["link_site"] != DBNull.Value)
-                        linha.link_site = dr["link_site"].ToString();
-
-                    if (dr["link_youtube"] != DBNull.Value)
-                        linha.link_youtube = dr["link_youtube"].ToString();
-
-                    if (dr["status"] != DBNull.Value)
-                        linha.status = Convert.ToInt32(dr["status"]);
-                    else
-                        linha.status = 1;
-
-                    if (dr["porcentagem"] != DBNull.Value)
-                        linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
-                    else
-                        linha.porcentagem = 0;
-
+                    linha.descricao_detalhada = dr["descricao_detalhada"] != DBNull.Value ? dr["descricao_detalhada"].ToString() : null;
+                    linha.link_site = dr["link_site"] != DBNull.Value ? dr["link_site"].ToString() : null;
+                    linha.link_youtube = dr["link_youtube"] != DBNull.Value ? dr["link_youtube"].ToString() : null;
+                    linha.status = dr["status"] != DBNull.Value ? Convert.ToInt32(dr["status"]) : 1;
+                    linha.porcentagem = dr["porcentagem"] != DBNull.Value ? Convert.ToDecimal(dr["porcentagem"]) : 0;
                     linha.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
-
-                    if (dr["data_atualizacao"] != DBNull.Value)
-                        linha.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
-
-                    if (dr["atualizador"] != DBNull.Value)
-                        linha.atualizador = Convert.ToInt32(dr["atualizador"]);
-
                     linha.excluido = Convert.ToBoolean(dr["excluido"]);
-
-                    if (dr["linguagem"] != DBNull.Value)
-                        linha.linguagem = dr["linguagem"].ToString();
-
+                    linha.linguagem = dr["linguagem"] != DBNull.Value ? dr["linguagem"].ToString() : null;
+                    linha.numero_grupos = dr["num_grupos"] != DBNull.Value ? Convert.ToInt32(dr["num_grupos"]) : 0;
                     if (dr["previsao"] != DBNull.Value)
                         linha.previsao = Convert.ToDateTime(dr["previsao"]);
-
-                    if (dr["num_grupos"] != DBNull.Value)
-                        linha.numero_grupos = Convert.ToInt32(dr["num_grupos"]);
-
+                    if (dr["atualizador"] != DBNull.Value)
+                        linha.atualizador = Convert.ToInt32(dr["atualizador"]);
+                    if (dr["data_atualizacao"] != DBNull.Value)
+                        linha.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
                     projetos.Add(linha);
                 };
                 dr.Close();
@@ -356,7 +261,6 @@ namespace tccCsharp
                 sql += "link_youtube = @9, status = @10, porcentagem = @11, data_atualizacao = @12, atualizador = @13, ";
                 sql += "linguagem = @14, previsao = @15 WHERE id_projeto = @16 ";
                 
-
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", String.IsNullOrEmpty(Atualizar.autores) ? (object)DBNull.Value : (object)Atualizar.autores);
                 cmd.Parameters.AddWithValue("@2", String.IsNullOrEmpty(Atualizar.email_contato) ? (object)DBNull.Value : (object)Atualizar.email_contato);
@@ -386,7 +290,7 @@ namespace tccCsharp
                 Desconectar();
                 Banco.NewCommit();
             }
-    }
+        }
 
         public static int InserirProjeto(Project Novo)
         {
@@ -422,7 +326,6 @@ namespace tccCsharp
                 cmd.Parameters.AddWithValue("@19", Novo.numero_grupos);
 
                 idInserido = Convert.ToInt32(cmd.ExecuteScalar());
-
             }
             catch (NpgsqlException ex)
             {
@@ -438,16 +341,11 @@ namespace tccCsharp
 
         public static List<Status> CarregaStatus()
         {
-            string sql;
-
+            string sql = "SELECT id_status, status FROM gp2_status ORDER BY id_status ASC"; ;
             List<Status> list = new List<Status>();
-
             try
             {
-                sql = "SELECT id_status, status FROM gp2_status ORDER BY id_status ASC";
-
                 NpgsqlDataReader dr = Banco.Selecionar(sql);
-
                 while (dr.Read())
                 {
                     Status linha = new Status();
@@ -473,7 +371,6 @@ namespace tccCsharp
             try
             {
                 Conectar();
-                
                 for (int i = 0; i < Inserir.Count; i++)
                 {
                     String sql = "INSERT INTO gp2_grupos_etapas (id_projeto, nome_grupo, porcentagem, mostrar_porcentagem, ordenador, excluido, num_etapas) VALUES( @1, @2, @3, @4, @5, @6, @7)";
@@ -487,16 +384,13 @@ namespace tccCsharp
                     cmd.Parameters.AddWithValue("@5", grupo.ordenador);
                     cmd.Parameters.AddWithValue("@6", grupo.excluido);
                     cmd.Parameters.AddWithValue("@7", grupo.numero_etapas);
-
                     cmd.ExecuteNonQuery();
                 }
-
                 String sql2 = "UPDATE gp2_projetos SET num_grupos = num_grupos + @1 WHERE id_projeto = @2;";
                 NpgsqlCommand cmd2 = new NpgsqlCommand(sql2, cn);
                 cmd2.Parameters.AddWithValue("@1", Inserir.Count);
                 cmd2.Parameters.AddWithValue("@2", Program.id_projeto_atual);
                 cmd2.ExecuteNonQuery();
-
             }
             catch (NpgsqlException ex)
             {
@@ -563,15 +457,12 @@ namespace tccCsharp
                 param.Add(Program.id_projeto_atual);
 
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-
                 dr.Read();
-
                 selecionado.criacao = Convert.ToDateTime(dr["data_criacao"]);
                 selecionado.criador_nome = Convert.ToString(dr["criador"]);
                 selecionado.atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
                 selecionado.atualizador_nome = Convert.ToString(dr["atualizador"]);
                 selecionado.porcentagem_int = Convert.ToInt32(dr["porcentagem"]);
-
                 dr.Close();
             }
             catch (Exception ex)
@@ -583,7 +474,6 @@ namespace tccCsharp
                 Desconectar();
             }
             return selecionado;
-
         }
 
         public static List<GroupSteps> CarregarEtapas(List<GroupSteps> grupos)
@@ -596,7 +486,6 @@ namespace tccCsharp
                 param.Add(Program.id_projeto_atual);
 
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-
                 while (dr.Read())
                 {
                     GroupSteps linha = new GroupSteps();
@@ -608,7 +497,6 @@ namespace tccCsharp
                     linha.ordenador = Convert.ToInt32(dr["ordenador"]);
                     linha.excluido = Convert.ToBoolean(dr["excluido"]);
                     linha.numero_etapas = Convert.ToInt32(dr["num_etapas"]);
-                    
                     grupos.Add(linha);
                 }
                 dr.Close();
@@ -621,7 +509,6 @@ namespace tccCsharp
                     param2.Add(grupos[i].id_grupo);
 
                     grupos[i].etapas = new List<Step>();
-
                     NpgsqlDataReader dr2 = Banco.Selecionar(sql2, param2);
                     while (dr2.Read())
                     {
@@ -631,48 +518,25 @@ namespace tccCsharp
                         entrelinha.nome_etapa = Convert.ToString(dr2["nome_etapa"]);
                         entrelinha.peso = Convert.ToInt32(dr2["peso"]);
                         entrelinha.porcentagem = Convert.ToDecimal(dr2["porcentagem"]);
-
-                        if (dr2["descricao_etapa"] != DBNull.Value)
-                            entrelinha.descricao_etapa = Convert.ToString(dr2["descricao_etapa"]);
-
-                        if (dr2["status"] != DBNull.Value)
-                            entrelinha.status = Convert.ToInt32(dr2["status"]);
-
-                        if (dr2["prioridade"] != DBNull.Value)
-                            entrelinha.prioridade = Convert.ToInt32(dr2["prioridade"]);
-
-                        if (dr2["ordenador"] != DBNull.Value)
-                            entrelinha.ordenador = Convert.ToInt32(dr2["ordenador"]);
-
-                        if (dr2["responsavel"] != DBNull.Value)
-                            entrelinha.responsavel = Convert.ToString(dr2["responsavel"]);
-
-                        if (dr2["email_responsavel"] != DBNull.Value)
-                            entrelinha.email_responsavel = Convert.ToString(dr2["email_responsavel"]);
-
-                        if (dr2["impedimento"] != DBNull.Value)
-                            entrelinha.impedimento = Convert.ToBoolean(dr2["impedimento"]);
-
-                        if (dr2["descricao_impedimento"] != DBNull.Value)
-                            entrelinha.descricao_impedimento = Convert.ToString(dr2["descricao_impedimento"]);
-
-                        if (dr2["data_criacao"] != DBNull.Value)
-                            entrelinha.data_criacao = Convert.ToDateTime(dr2["data_criacao"]);
-
+                        entrelinha.data_criacao = Convert.ToDateTime(dr2["data_criacao"]);
+                        entrelinha.descricao_etapa = dr2["descricao_etapa"] != DBNull.Value ? Convert.ToString(dr2["descricao_etapa"]) : null;
+                        entrelinha.status = dr2["status"] != DBNull.Value ? Convert.ToInt32(dr2["status"]) : 1;
+                        entrelinha.prioridade = dr2["prioridade"] != DBNull.Value ? Convert.ToInt32(dr2["prioridade"]) : 1;
+                        entrelinha.ordenador = dr2["ordenador"] != DBNull.Value ? Convert.ToInt32(dr2["ordenador"]) : 1;
+                        entrelinha.responsavel = dr2["responsavel"] != DBNull.Value ? Convert.ToString(dr2["responsavel"]) : null;
+                        entrelinha.email_responsavel = dr2["email_responsavel"] != DBNull.Value ? Convert.ToString(dr2["email_responsavel"]) : null;
+                        entrelinha.impedimento = dr2["impedimento"] != DBNull.Value ? Convert.ToBoolean(dr2["impedimento"]) : false;
+                        entrelinha.descricao_impedimento = dr2["descricao_impedimento"] != DBNull.Value ? Convert.ToString(dr2["descricao_impedimento"]) : null;
+                        entrelinha.excluido = dr2["excluido"] != DBNull.Value ? Convert.ToBoolean(dr2["excluido"]) : false;
                         if (dr2["data_atualizacao"] != DBNull.Value)
                             entrelinha.data_atualizacao = Convert.ToDateTime(dr2["data_atualizacao"]);
 
                         if (dr2["atualizador"] != DBNull.Value)
                             entrelinha.atualizador = Convert.ToInt32(dr2["atualizador"]);
-
-                        if (dr2["excluido"] != DBNull.Value)
-                            entrelinha.excluido = Convert.ToBoolean(dr2["excluido"]);
-
                         grupos[i].etapas.Add(entrelinha);
                     }
                     dr2.Close();
                 }
-                
             }
             catch (Exception ex)
             {
