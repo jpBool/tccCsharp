@@ -350,10 +350,5 @@ namespace tccCsharp
             Program.projetos = Banco.CarregarProjetos(Program.projetos);
             Refresh_projects(Program.projetos);
         }
-
-        private void opbEditarP1_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -92,22 +92,22 @@
             this.btnImagens = new RoundButton();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
+            this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCriador = new System.Windows.Forms.Label();
+            this.lblCriadoquando = new System.Windows.Forms.Label();
+            this.TLPAtualizacao = new System.Windows.Forms.TableLayoutPanel();
+            this.lblAtualizador = new System.Windows.Forms.Label();
+            this.lblAtualizadoquando = new System.Windows.Forms.Label();
+            this.lblPorcentagem = new System.Windows.Forms.Label();
+            this.groupPorcentagem = new tccCsharp.CustomGroupBox();
+            this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
-            this.groupPorcentagem = new tccCsharp.CustomGroupBox();
-            this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
-            this.lblPorcentagem = new System.Windows.Forms.Label();
-            this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPAtualizacao = new System.Windows.Forms.TableLayoutPanel();
-            this.lblAtualizador = new System.Windows.Forms.Label();
-            this.lblAtualizadoquando = new System.Windows.Forms.Label();
-            this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
-            this.lblCriador = new System.Windows.Forms.Label();
-            this.lblCriadoquando = new System.Windows.Forms.Label();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
@@ -128,15 +128,15 @@
             this.TLPButtons2.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
+            this.TLPInfoshead.SuspendLayout();
+            this.TLPCriacao.SuspendLayout();
+            this.TLPAtualizacao.SuspendLayout();
+            this.groupPorcentagem.SuspendLayout();
             this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
-            this.groupPorcentagem.SuspendLayout();
-            this.TLPInfoshead.SuspendLayout();
-            this.TLPAtualizacao.SuspendLayout();
-            this.TLPCriacao.SuspendLayout();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -252,7 +252,7 @@
             this.txtPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPalavras.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPalavras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPalavras.ForeColor = System.Drawing.Color.Gray;
             this.txtPalavras.Location = new System.Drawing.Point(10, 8);
             this.txtPalavras.MaxLength = 500;
@@ -284,7 +284,7 @@
             this.txtVideo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtVideo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtVideo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVideo.ForeColor = System.Drawing.Color.Gray;
             this.txtVideo.Location = new System.Drawing.Point(8, 6);
             this.txtVideo.MaxLength = 50;
@@ -327,7 +327,7 @@
             this.txtSite.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSite.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSite.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSite.ForeColor = System.Drawing.Color.Gray;
             this.txtSite.Location = new System.Drawing.Point(8, 6);
             this.txtSite.MaxLength = 250;
@@ -371,7 +371,7 @@
             this.txtDescricaoBreve.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescricaoBreve.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescricaoBreve.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescricaoBreve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricaoBreve.ForeColor = System.Drawing.Color.Gray;
             this.txtDescricaoBreve.Location = new System.Drawing.Point(8, 6);
             this.txtDescricaoBreve.MaxLength = 80;
@@ -426,7 +426,7 @@
             this.txtLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLinguagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLinguagem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLinguagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLinguagem.ForeColor = System.Drawing.Color.Gray;
             this.txtLinguagem.Location = new System.Drawing.Point(8, 6);
             this.txtLinguagem.MaxLength = 100;
@@ -481,7 +481,7 @@
             this.txtAutores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAutores.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAutores.ForeColor = System.Drawing.Color.Gray;
             this.txtAutores.Location = new System.Drawing.Point(8, 6);
             this.txtAutores.MaxLength = 150;
@@ -536,7 +536,7 @@
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail.Location = new System.Drawing.Point(8, 6);
             this.txtEmail.MaxLength = 256;
@@ -591,7 +591,7 @@
             this.txtNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeProjeto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomeProjeto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeProjeto.ForeColor = System.Drawing.Color.Gray;
             this.txtNomeProjeto.Location = new System.Drawing.Point(8, 8);
             this.txtNomeProjeto.MaxLength = 20;
@@ -779,10 +779,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioSim.AutoSize = true;
             this.radioSim.BackColor = System.Drawing.Color.Transparent;
-            this.radioSim.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSim.Location = new System.Drawing.Point(443, 71);
             this.radioSim.Name = "radioSim";
-            this.radioSim.Size = new System.Drawing.Size(50, 24);
+            this.radioSim.Size = new System.Drawing.Size(54, 24);
             this.radioSim.TabIndex = 6;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
@@ -794,10 +794,10 @@
             this.radioNão.AutoSize = true;
             this.radioNão.BackColor = System.Drawing.Color.Transparent;
             this.radioNão.Checked = true;
-            this.radioNão.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioNão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
-            this.radioNão.Size = new System.Drawing.Size(51, 24);
+            this.radioNão.Size = new System.Drawing.Size(56, 24);
             this.radioNão.TabIndex = 5;
             this.radioNão.TabStop = true;
             this.radioNão.Text = "Não";
@@ -806,7 +806,7 @@
             // comboStatus
             // 
             this.comboStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboStatus.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboStatus.FormattingEnabled = true;
             this.comboStatus.Location = new System.Drawing.Point(349, 40);
             this.comboStatus.Name = "comboStatus";
@@ -817,7 +817,7 @@
             // 
             this.dtpPrevisao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpPrevisao.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpPrevisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpPrevisao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpPrevisao.Location = new System.Drawing.Point(349, 10);
             this.dtpPrevisao.Name = "dtpPrevisao";
@@ -899,7 +899,7 @@
             this.txtDetalhada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDetalhada.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDetalhada.ForeColor = System.Drawing.Color.Gray;
             this.txtDetalhada.Location = new System.Drawing.Point(14, 31);
             this.txtDetalhada.Multiline = true;
@@ -975,6 +975,7 @@
             this.btnEtapas.TabIndex = 5;
             this.btnEtapas.Text = "GERENCIAR ETAPAS DO PROJETO";
             this.btnEtapas.UseVisualStyleBackColor = true;
+            this.btnEtapas.Click += new System.EventHandler(this.btnEtapas_Click);
             // 
             // TLPButtons2
             // 
@@ -1113,6 +1114,159 @@
             this.RGBHead2.TabIndex = 3;
             this.RGBHead2.TabStop = false;
             // 
+            // TLPInfoshead
+            // 
+            this.TLPInfoshead.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPInfoshead.ColumnCount = 5;
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
+            this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
+            this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
+            this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
+            this.TLPInfoshead.Location = new System.Drawing.Point(6, 3);
+            this.TLPInfoshead.Name = "TLPInfoshead";
+            this.TLPInfoshead.RowCount = 1;
+            this.TLPInfoshead.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPInfoshead.Size = new System.Drawing.Size(1239, 51);
+            this.TLPInfoshead.TabIndex = 0;
+            // 
+            // TLPCriacao
+            // 
+            this.TLPCriacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPCriacao.ColumnCount = 1;
+            this.TLPCriacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPCriacao.Controls.Add(this.lblCriador, 0, 1);
+            this.TLPCriacao.Controls.Add(this.lblCriadoquando, 0, 0);
+            this.TLPCriacao.Location = new System.Drawing.Point(790, 0);
+            this.TLPCriacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.TLPCriacao.Name = "TLPCriacao";
+            this.TLPCriacao.RowCount = 2;
+            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPCriacao.Size = new System.Drawing.Size(219, 51);
+            this.TLPCriacao.TabIndex = 6;
+            // 
+            // lblCriador
+            // 
+            this.lblCriador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriador.AutoSize = true;
+            this.lblCriador.Location = new System.Drawing.Point(3, 25);
+            this.lblCriador.Name = "lblCriador";
+            this.lblCriador.Size = new System.Drawing.Size(213, 26);
+            this.lblCriador.TabIndex = 1;
+            this.lblCriador.Text = "Criador:";
+            this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCriadoquando
+            // 
+            this.lblCriadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriadoquando.AutoSize = true;
+            this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
+            this.lblCriadoquando.Name = "lblCriadoquando";
+            this.lblCriadoquando.Size = new System.Drawing.Size(213, 25);
+            this.lblCriadoquando.TabIndex = 0;
+            this.lblCriadoquando.Text = "Criado em";
+            this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TLPAtualizacao
+            // 
+            this.TLPAtualizacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPAtualizacao.ColumnCount = 1;
+            this.TLPAtualizacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPAtualizacao.Controls.Add(this.lblAtualizador, 0, 1);
+            this.TLPAtualizacao.Controls.Add(this.lblAtualizadoquando, 0, 0);
+            this.TLPAtualizacao.Location = new System.Drawing.Point(1015, 0);
+            this.TLPAtualizacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.TLPAtualizacao.Name = "TLPAtualizacao";
+            this.TLPAtualizacao.RowCount = 2;
+            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPAtualizacao.Size = new System.Drawing.Size(221, 51);
+            this.TLPAtualizacao.TabIndex = 5;
+            // 
+            // lblAtualizador
+            // 
+            this.lblAtualizador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizador.AutoSize = true;
+            this.lblAtualizador.Location = new System.Drawing.Point(3, 25);
+            this.lblAtualizador.Name = "lblAtualizador";
+            this.lblAtualizador.Size = new System.Drawing.Size(215, 26);
+            this.lblAtualizador.TabIndex = 3;
+            this.lblAtualizador.Text = "Atualizado por:";
+            this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAtualizadoquando
+            // 
+            this.lblAtualizadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizadoquando.AutoSize = true;
+            this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
+            this.lblAtualizadoquando.Name = "lblAtualizadoquando";
+            this.lblAtualizadoquando.Size = new System.Drawing.Size(215, 25);
+            this.lblAtualizadoquando.TabIndex = 2;
+            this.lblAtualizadoquando.Text = "Atualizado em";
+            this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblPorcentagem
+            // 
+            this.lblPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagem.AutoSize = true;
+            this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentagem.Location = new System.Drawing.Point(566, 0);
+            this.lblPorcentagem.Name = "lblPorcentagem";
+            this.lblPorcentagem.Size = new System.Drawing.Size(106, 51);
+            this.lblPorcentagem.TabIndex = 2;
+            this.lblPorcentagem.Text = "%";
+            this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupPorcentagem
+            // 
+            this.groupPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPorcentagem.BackgroundColor = System.Drawing.Color.White;
+            this.groupPorcentagem.BorderWidth = 1F;
+            this.groupPorcentagem.Controls.Add(this.groupPorcentagem2);
+            this.groupPorcentagem.CornerRadius = 22;
+            this.groupPorcentagem.Location = new System.Drawing.Point(3, 3);
+            this.groupPorcentagem.Name = "groupPorcentagem";
+            this.groupPorcentagem.Size = new System.Drawing.Size(557, 45);
+            this.groupPorcentagem.TabIndex = 3;
+            this.groupPorcentagem.TabStop = false;
+            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
+            // 
+            // groupPorcentagem2
+            // 
+            this.groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.groupPorcentagem2.BorderWidth = 1F;
+            this.groupPorcentagem2.CornerRadius = 22;
+            this.groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.groupPorcentagem2.Name = "groupPorcentagem2";
+            this.groupPorcentagem2.Size = new System.Drawing.Size(45, 45);
+            this.groupPorcentagem2.TabIndex = 0;
+            this.groupPorcentagem2.TabStop = false;
+            // 
             // TLPHead1
             // 
             this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1154,10 +1308,10 @@
             this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(497, 6);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(267, 42);
+            this.lblTitulo.Size = new System.Drawing.Size(316, 39);
             this.lblTitulo.TabIndex = 11;
             this.lblTitulo.Text = "EDITAR PROJETO";
             // 
@@ -1212,159 +1366,6 @@
             this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
             this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
             // 
-            // groupPorcentagem
-            // 
-            this.groupPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupPorcentagem.BackgroundColor = System.Drawing.Color.White;
-            this.groupPorcentagem.BorderWidth = 1F;
-            this.groupPorcentagem.Controls.Add(this.groupPorcentagem2);
-            this.groupPorcentagem.CornerRadius = 22;
-            this.groupPorcentagem.Location = new System.Drawing.Point(3, 3);
-            this.groupPorcentagem.Name = "groupPorcentagem";
-            this.groupPorcentagem.Size = new System.Drawing.Size(557, 45);
-            this.groupPorcentagem.TabIndex = 3;
-            this.groupPorcentagem.TabStop = false;
-            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
-            // 
-            // groupPorcentagem2
-            // 
-            this.groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
-            this.groupPorcentagem2.BorderWidth = 1F;
-            this.groupPorcentagem2.CornerRadius = 22;
-            this.groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
-            this.groupPorcentagem2.Name = "groupPorcentagem2";
-            this.groupPorcentagem2.Size = new System.Drawing.Size(45, 45);
-            this.groupPorcentagem2.TabIndex = 0;
-            this.groupPorcentagem2.TabStop = false;
-            // 
-            // lblPorcentagem
-            // 
-            this.lblPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPorcentagem.AutoSize = true;
-            this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(566, 0);
-            this.lblPorcentagem.Name = "lblPorcentagem";
-            this.lblPorcentagem.Size = new System.Drawing.Size(106, 51);
-            this.lblPorcentagem.TabIndex = 2;
-            this.lblPorcentagem.Text = "%";
-            this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TLPInfoshead
-            // 
-            this.TLPInfoshead.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPInfoshead.ColumnCount = 5;
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
-            this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
-            this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
-            this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
-            this.TLPInfoshead.Location = new System.Drawing.Point(6, 3);
-            this.TLPInfoshead.Name = "TLPInfoshead";
-            this.TLPInfoshead.RowCount = 1;
-            this.TLPInfoshead.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPInfoshead.Size = new System.Drawing.Size(1239, 51);
-            this.TLPInfoshead.TabIndex = 0;
-            // 
-            // TLPAtualizacao
-            // 
-            this.TLPAtualizacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPAtualizacao.ColumnCount = 1;
-            this.TLPAtualizacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.Controls.Add(this.lblAtualizador, 0, 1);
-            this.TLPAtualizacao.Controls.Add(this.lblAtualizadoquando, 0, 0);
-            this.TLPAtualizacao.Location = new System.Drawing.Point(1015, 0);
-            this.TLPAtualizacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.TLPAtualizacao.Name = "TLPAtualizacao";
-            this.TLPAtualizacao.RowCount = 2;
-            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.Size = new System.Drawing.Size(221, 51);
-            this.TLPAtualizacao.TabIndex = 5;
-            // 
-            // lblAtualizador
-            // 
-            this.lblAtualizador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAtualizador.AutoSize = true;
-            this.lblAtualizador.Location = new System.Drawing.Point(3, 25);
-            this.lblAtualizador.Name = "lblAtualizador";
-            this.lblAtualizador.Size = new System.Drawing.Size(215, 26);
-            this.lblAtualizador.TabIndex = 3;
-            this.lblAtualizador.Text = "Atualizado por:";
-            this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblAtualizadoquando
-            // 
-            this.lblAtualizadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAtualizadoquando.AutoSize = true;
-            this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
-            this.lblAtualizadoquando.Name = "lblAtualizadoquando";
-            this.lblAtualizadoquando.Size = new System.Drawing.Size(215, 25);
-            this.lblAtualizadoquando.TabIndex = 2;
-            this.lblAtualizadoquando.Text = "Atualizado em";
-            this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TLPCriacao
-            // 
-            this.TLPCriacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPCriacao.ColumnCount = 1;
-            this.TLPCriacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.Controls.Add(this.lblCriador, 0, 1);
-            this.TLPCriacao.Controls.Add(this.lblCriadoquando, 0, 0);
-            this.TLPCriacao.Location = new System.Drawing.Point(790, 0);
-            this.TLPCriacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.TLPCriacao.Name = "TLPCriacao";
-            this.TLPCriacao.RowCount = 2;
-            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.Size = new System.Drawing.Size(219, 51);
-            this.TLPCriacao.TabIndex = 6;
-            // 
-            // lblCriador
-            // 
-            this.lblCriador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCriador.AutoSize = true;
-            this.lblCriador.Location = new System.Drawing.Point(3, 25);
-            this.lblCriador.Name = "lblCriador";
-            this.lblCriador.Size = new System.Drawing.Size(213, 26);
-            this.lblCriador.TabIndex = 1;
-            this.lblCriador.Text = "Criador:";
-            this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblCriadoquando
-            // 
-            this.lblCriadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCriadoquando.AutoSize = true;
-            this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
-            this.lblCriadoquando.Name = "lblCriadoquando";
-            this.lblCriadoquando.Size = new System.Drawing.Size(213, 25);
-            this.lblCriadoquando.TabIndex = 0;
-            this.lblCriadoquando.Text = "Criado em";
-            this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // frmEditar_Projeto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1408,6 +1409,13 @@
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
             this.RGBHead2.ResumeLayout(false);
+            this.TLPInfoshead.ResumeLayout(false);
+            this.TLPInfoshead.PerformLayout();
+            this.TLPCriacao.ResumeLayout(false);
+            this.TLPCriacao.PerformLayout();
+            this.TLPAtualizacao.ResumeLayout(false);
+            this.TLPAtualizacao.PerformLayout();
+            this.groupPorcentagem.ResumeLayout(false);
             this.TLPHead1.ResumeLayout(false);
             this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
@@ -1415,13 +1423,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
-            this.groupPorcentagem.ResumeLayout(false);
-            this.TLPInfoshead.ResumeLayout(false);
-            this.TLPInfoshead.PerformLayout();
-            this.TLPAtualizacao.ResumeLayout(false);
-            this.TLPAtualizacao.PerformLayout();
-            this.TLPCriacao.ResumeLayout(false);
-            this.TLPCriacao.PerformLayout();
             this.ResumeLayout(false);
 
         }

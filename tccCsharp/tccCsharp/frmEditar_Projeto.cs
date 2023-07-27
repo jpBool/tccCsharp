@@ -638,5 +638,35 @@ namespace tccCsharp
                     groupPorcentagem2.Width = 45;
             }
         }
+
+        private void btnEtapas_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmEtapas splash = new frmEtapas();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                cabecalho = Banco.CabecalhoProjeto();
+                lblCriadoquando.Text = "Criado em  " + Convert.ToDateTime(cabecalho.criacao).ToShortDateString();
+                lblCriador.Text = "Criador: " + cabecalho.criador_nome;
+                lblAtualizadoquando.Text = "Atualizado em " + Convert.ToDateTime(cabecalho.atualizacao).ToShortDateString();
+                lblAtualizador.Text = "Atualizador: " + cabecalho.atualizador_nome;
+                lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
+
+                if (cabecalho.porcentagem_int == 100)
+                    groupPorcentagem2.Width = groupPorcentagem.Width;
+                else
+                {
+                    groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
+                    if (groupPorcentagem2.Width < 45)
+                        groupPorcentagem2.Width = 45;
+                }
+            }
+        }
     }
 }
