@@ -365,7 +365,26 @@ namespace tccCsharp
             this.Close();
         }
 
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
 
+        private void OPBConfiguracoes_Click_1(object sender, EventArgs e)
+        {
+            //apenas teste
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
+        }
+        private void OPBRecarregar_Click(object sender, EventArgs e)
+        {
+            DoDesign();
+        }
 
 
 

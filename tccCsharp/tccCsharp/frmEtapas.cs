@@ -94,12 +94,31 @@ namespace tccCsharp
             else
                 BtnBaixo.Enabled = true;
 
+            if (x1 == 0)
+                BtnEsquerda1.Enabled = false;
+            else
+                BtnEsquerda1.Enabled = true;
+
+            if (x2 == 0)
+                BtnEsquerda2.Enabled = false; 
+            else
+                BtnEsquerda2.Enabled = true;
+
+
             GroupSteps grupo1 = new GroupSteps();
             if (grupos.Count > y + 0)
             {
                 GPBGrupo1.Visible = true;
                 grupo1 = grupos[y + 0];
                 lblTituloGrupo1.Text = grupo1.nome_grupo;
+                if (grupo1.etapas.Count <= x1 + 3)
+                {
+                    BtnDireita1.Enabled = false;
+                }
+                else
+                {
+                    BtnDireita1.Enabled = true;
+                }
                 // porcentagem do grupo 1
 
                 Step etapa11 = new Step();
@@ -158,6 +177,14 @@ namespace tccCsharp
                 GPBGrupo2.Visible = true;
                 grupo2 = grupos[y + 1];
                 lblTituloGrupo2.Text = grupo2.nome_grupo;
+                if (grupo2.etapas.Count <= x2 + 3)
+                {
+                    BtnDireita2.Enabled = false;
+                }
+                else
+                {
+                    BtnDireita2.Enabled = true;
+                }
                 // porcentagem grupo 2 
 
                 Step etapa21 = new Step();
@@ -220,8 +247,75 @@ namespace tccCsharp
             DoDesign();
             Banco.CarregarEtapas(grupos);
             Refresh_steps();
-
-            //Desabilitar avançar e voltar
         }
+
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
+
+        private void OPBRecarregar_Click(object sender, EventArgs e)
+        {
+            DoDesign();
+            Banco.CarregarEtapas(grupos);
+            Refresh_steps();
+        }
+
+        private void OPBConfiguracoes_Click(object sender, EventArgs e)
+        {
+            //apenas teste
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
+        }
+
+
+        ///////////////////Botões de movimentação
+        private void BtnCima_Click(object sender, EventArgs e)
+        {
+            y -= 2;
+            Refresh_steps();
+        }
+
+        private void BtnBaixo_Click(object sender, EventArgs e)
+        {
+            y += 2;
+            Refresh_steps();
+        }
+
+        private void BtnEsquerda1_Click(object sender, EventArgs e)
+        {
+            x1 -= 3;
+            Refresh_steps();
+        }
+
+        private void BtnDireita1_Click(object sender, EventArgs e)
+        {
+            x1 += 3;
+            Refresh_steps();
+        }
+
+        private void BtnEsquerda2_Click(object sender, EventArgs e)
+        {
+            x2 -= 3;
+            Refresh_steps();
+        }
+
+        private void BtnDireita2_Click(object sender, EventArgs e)
+        {
+            x2 += 3;
+            Refresh_steps();
+        }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
     }
 }

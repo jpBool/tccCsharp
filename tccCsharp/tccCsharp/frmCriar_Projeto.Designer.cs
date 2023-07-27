@@ -238,7 +238,7 @@
             this.txtPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPalavras.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPalavras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPalavras.ForeColor = System.Drawing.Color.Gray;
             this.txtPalavras.Location = new System.Drawing.Point(10, 8);
             this.txtPalavras.MaxLength = 500;
@@ -270,7 +270,7 @@
             this.txtVideo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtVideo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtVideo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVideo.ForeColor = System.Drawing.Color.Gray;
             this.txtVideo.Location = new System.Drawing.Point(8, 6);
             this.txtVideo.MaxLength = 50;
@@ -313,7 +313,7 @@
             this.txtSite.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSite.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSite.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSite.ForeColor = System.Drawing.Color.Gray;
             this.txtSite.Location = new System.Drawing.Point(8, 6);
             this.txtSite.MaxLength = 250;
@@ -357,7 +357,7 @@
             this.txtDescricaoBreve.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescricaoBreve.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescricaoBreve.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescricaoBreve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricaoBreve.ForeColor = System.Drawing.Color.Gray;
             this.txtDescricaoBreve.Location = new System.Drawing.Point(8, 6);
             this.txtDescricaoBreve.MaxLength = 80;
@@ -412,7 +412,7 @@
             this.txtLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLinguagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLinguagem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLinguagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLinguagem.ForeColor = System.Drawing.Color.Gray;
             this.txtLinguagem.Location = new System.Drawing.Point(8, 6);
             this.txtLinguagem.MaxLength = 100;
@@ -467,7 +467,7 @@
             this.txtAutores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAutores.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAutores.ForeColor = System.Drawing.Color.Gray;
             this.txtAutores.Location = new System.Drawing.Point(8, 6);
             this.txtAutores.MaxLength = 150;
@@ -522,7 +522,7 @@
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail.Location = new System.Drawing.Point(8, 6);
             this.txtEmail.MaxLength = 256;
@@ -577,7 +577,7 @@
             this.txtNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeProjeto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomeProjeto.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeProjeto.ForeColor = System.Drawing.Color.Gray;
             this.txtNomeProjeto.Location = new System.Drawing.Point(8, 8);
             this.txtNomeProjeto.MaxLength = 20;
@@ -765,10 +765,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioSim.AutoSize = true;
             this.radioSim.BackColor = System.Drawing.Color.Transparent;
-            this.radioSim.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSim.Location = new System.Drawing.Point(443, 71);
             this.radioSim.Name = "radioSim";
-            this.radioSim.Size = new System.Drawing.Size(50, 24);
+            this.radioSim.Size = new System.Drawing.Size(54, 24);
             this.radioSim.TabIndex = 6;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
@@ -780,10 +780,10 @@
             this.radioNão.AutoSize = true;
             this.radioNão.BackColor = System.Drawing.Color.Transparent;
             this.radioNão.Checked = true;
-            this.radioNão.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioNão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
-            this.radioNão.Size = new System.Drawing.Size(51, 24);
+            this.radioNão.Size = new System.Drawing.Size(56, 24);
             this.radioNão.TabIndex = 5;
             this.radioNão.TabStop = true;
             this.radioNão.Text = "Não";
@@ -792,7 +792,7 @@
             // comboStatus
             // 
             this.comboStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboStatus.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboStatus.FormattingEnabled = true;
             this.comboStatus.Location = new System.Drawing.Point(349, 40);
             this.comboStatus.Name = "comboStatus";
@@ -803,7 +803,7 @@
             // 
             this.dtpPrevisao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpPrevisao.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpPrevisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpPrevisao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpPrevisao.Location = new System.Drawing.Point(349, 10);
             this.dtpPrevisao.Name = "dtpPrevisao";
@@ -885,7 +885,7 @@
             this.txtDetalhada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDetalhada.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDetalhada.ForeColor = System.Drawing.Color.Gray;
             this.txtDetalhada.Location = new System.Drawing.Point(14, 31);
             this.txtDetalhada.Multiline = true;
@@ -965,10 +965,10 @@
             this.radioPrazos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioPrazos.AutoSize = true;
             this.radioPrazos.BackColor = System.Drawing.Color.Transparent;
-            this.radioPrazos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioPrazos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioPrazos.Location = new System.Drawing.Point(3, 161);
             this.radioPrazos.Name = "radioPrazos";
-            this.radioPrazos.Size = new System.Drawing.Size(143, 24);
+            this.radioPrazos.Size = new System.Drawing.Size(158, 24);
             this.radioPrazos.TabIndex = 7;
             this.radioPrazos.Text = "Modelo de Prazos.";
             this.radioPrazos.UseVisualStyleBackColor = false;
@@ -979,10 +979,10 @@
             this.radioSemModelos.AutoSize = true;
             this.radioSemModelos.BackColor = System.Drawing.Color.Transparent;
             this.radioSemModelos.Checked = true;
-            this.radioSemModelos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioSemModelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSemModelos.Location = new System.Drawing.Point(3, 34);
             this.radioSemModelos.Name = "radioSemModelos";
-            this.radioSemModelos.Size = new System.Drawing.Size(153, 24);
+            this.radioSemModelos.Size = new System.Drawing.Size(173, 24);
             this.radioSemModelos.TabIndex = 3;
             this.radioSemModelos.TabStop = true;
             this.radioSemModelos.Text = "Não utilizar modelos.";
@@ -993,10 +993,10 @@
             this.radioEquipes.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioEquipes.AutoSize = true;
             this.radioEquipes.BackColor = System.Drawing.Color.Transparent;
-            this.radioEquipes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioEquipes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioEquipes.Location = new System.Drawing.Point(3, 127);
             this.radioEquipes.Name = "radioEquipes";
-            this.radioEquipes.Size = new System.Drawing.Size(278, 24);
+            this.radioEquipes.Size = new System.Drawing.Size(311, 24);
             this.radioEquipes.TabIndex = 6;
             this.radioEquipes.Text = "Modelo de Equipes de desenvolvimento.";
             this.radioEquipes.UseVisualStyleBackColor = false;
@@ -1006,10 +1006,10 @@
             this.radioKanban.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioKanban.AutoSize = true;
             this.radioKanban.BackColor = System.Drawing.Color.Transparent;
-            this.radioKanban.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioKanban.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioKanban.Location = new System.Drawing.Point(3, 65);
             this.radioKanban.Name = "radioKanban";
-            this.radioKanban.Size = new System.Drawing.Size(126, 24);
+            this.radioKanban.Size = new System.Drawing.Size(142, 24);
             this.radioKanban.TabIndex = 4;
             this.radioKanban.Text = "Modelo Kanban.";
             this.radioKanban.UseVisualStyleBackColor = false;
@@ -1019,10 +1019,10 @@
             this.radioScrum.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioScrum.AutoSize = true;
             this.radioScrum.BackColor = System.Drawing.Color.Transparent;
-            this.radioScrum.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioScrum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioScrum.Location = new System.Drawing.Point(3, 96);
             this.radioScrum.Name = "radioScrum";
-            this.radioScrum.Size = new System.Drawing.Size(119, 24);
+            this.radioScrum.Size = new System.Drawing.Size(133, 24);
             this.radioScrum.TabIndex = 5;
             this.radioScrum.Text = "Modelo Scrum.";
             this.radioScrum.UseVisualStyleBackColor = false;
@@ -1137,10 +1137,10 @@
             this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(442, 6);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(386, 42);
+            this.lblTitulo.Size = new System.Drawing.Size(460, 39);
             this.lblTitulo.TabIndex = 11;
             this.lblTitulo.Text = "CRIANDO NOVO PROJETO";
             // 
@@ -1158,6 +1158,7 @@
             this.OPBRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBRecarregar.TabIndex = 10;
             this.OPBRecarregar.TabStop = false;
+            this.OPBRecarregar.Click += new System.EventHandler(this.OPBRecarregar_Click);
             this.OPBRecarregar.MouseEnter += new System.EventHandler(this.OPBRecarregar_MouseEnter);
             this.OPBRecarregar.MouseLeave += new System.EventHandler(this.OPBRecarregar_MouseLeave);
             // 
@@ -1175,6 +1176,7 @@
             this.OPBConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBConfiguracoes.TabIndex = 9;
             this.OPBConfiguracoes.TabStop = false;
+            this.OPBConfiguracoes.Click += new System.EventHandler(this.OPBConfiguracoes_Click_1);
             this.OPBConfiguracoes.MouseEnter += new System.EventHandler(this.OPBConfiguracoes_MouseEnter);
             this.OPBConfiguracoes.MouseLeave += new System.EventHandler(this.OPBConfiguracoes_MouseLeave);
             // 
@@ -1192,6 +1194,7 @@
             this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBLogout.TabIndex = 8;
             this.OPBLogout.TabStop = false;
+            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
             this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
             this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
             // 

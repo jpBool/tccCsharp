@@ -327,6 +327,7 @@
             this.BtnVoltar.TabIndex = 5;
             this.BtnVoltar.Text = "VOLTAR";
             this.BtnVoltar.UseVisualStyleBackColor = true;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
             // 
             // TLPHead1
             // 
@@ -390,6 +391,7 @@
             this.OPBRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBRecarregar.TabIndex = 10;
             this.OPBRecarregar.TabStop = false;
+            this.OPBRecarregar.Click += new System.EventHandler(this.OPBRecarregar_Click);
             // 
             // OPBConfiguracoes
             // 
@@ -405,6 +407,7 @@
             this.OPBConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBConfiguracoes.TabIndex = 9;
             this.OPBConfiguracoes.TabStop = false;
+            this.OPBConfiguracoes.Click += new System.EventHandler(this.OPBConfiguracoes_Click);
             // 
             // OPBLogout
             // 
@@ -420,6 +423,7 @@
             this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBLogout.TabIndex = 8;
             this.OPBLogout.TabStop = false;
+            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
             // 
             // TLPConteudo
             // 
@@ -560,6 +564,7 @@
             this.BtnBaixo.TabIndex = 2;
             this.BtnBaixo.Text = "V";
             this.BtnBaixo.UseVisualStyleBackColor = true;
+            this.BtnBaixo.Click += new System.EventHandler(this.BtnBaixo_Click);
             // 
             // BtnCima
             // 
@@ -572,6 +577,7 @@
             this.BtnCima.TabIndex = 1;
             this.BtnCima.Text = "^";
             this.BtnCima.UseVisualStyleBackColor = true;
+            this.BtnCima.Click += new System.EventHandler(this.BtnCima_Click);
             // 
             // GPBGrupo2
             // 
@@ -911,6 +917,7 @@
             this.BtnDireita2.TabIndex = 2;
             this.BtnDireita2.Text = ">";
             this.BtnDireita2.UseVisualStyleBackColor = true;
+            this.BtnDireita2.Click += new System.EventHandler(this.BtnDireita2_Click);
             // 
             // GPBEtapa23
             // 
@@ -1022,6 +1029,7 @@
             this.BtnEsquerda2.TabIndex = 1;
             this.BtnEsquerda2.Text = "<";
             this.BtnEsquerda2.UseVisualStyleBackColor = true;
+            this.BtnEsquerda2.Click += new System.EventHandler(this.BtnEsquerda2_Click);
             // 
             // RGBEtapas1
             // 
@@ -1273,6 +1281,7 @@
             this.BtnEsquerda1.TabIndex = 0;
             this.BtnEsquerda1.Text = "<";
             this.BtnEsquerda1.UseVisualStyleBackColor = true;
+            this.BtnEsquerda1.Click += new System.EventHandler(this.BtnEsquerda1_Click);
             // 
             // BtnDireita1
             // 
@@ -1285,6 +1294,7 @@
             this.BtnDireita1.TabIndex = 1;
             this.BtnDireita1.Text = ">";
             this.BtnDireita1.UseVisualStyleBackColor = true;
+            this.BtnDireita1.Click += new System.EventHandler(this.BtnDireita1_Click);
             // 
             // GPBEtapa11
             // 

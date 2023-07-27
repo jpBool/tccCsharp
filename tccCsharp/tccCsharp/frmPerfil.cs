@@ -317,6 +317,7 @@ namespace tccCsharp
                 this.Close();
             }
             this.Visible = true;
+            Program.id_projeto_atual = 0;
             Program.projetos = Banco.CarregarProjetos(Program.projetos);
             Refresh_projects(Program.projetos);
         }
@@ -332,6 +333,7 @@ namespace tccCsharp
                 this.Close();
             }
             this.Visible = true;
+            Program.id_projeto_atual = 0;
             Program.projetos = Banco.CarregarProjetos(Program.projetos);
             Refresh_projects(Program.projetos);
         }
@@ -347,6 +349,7 @@ namespace tccCsharp
                 this.Close();
             }
             this.Visible = true;
+            Program.id_projeto_atual = 0;
             Program.projetos = Banco.CarregarProjetos(Program.projetos);
             Refresh_projects(Program.projetos);
         }

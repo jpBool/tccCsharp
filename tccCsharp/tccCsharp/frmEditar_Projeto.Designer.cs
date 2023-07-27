@@ -976,6 +976,8 @@
             this.btnEtapas.Text = "GERENCIAR ETAPAS DO PROJETO";
             this.btnEtapas.UseVisualStyleBackColor = true;
             this.btnEtapas.Click += new System.EventHandler(this.btnEtapas_Click);
+            this.btnEtapas.MouseEnter += new System.EventHandler(this.btnEtapas_MouseEnter);
+            this.btnEtapas.MouseLeave += new System.EventHandler(this.btnEtapas_MouseLeave);
             // 
             // TLPButtons2
             // 
@@ -1329,6 +1331,7 @@
             this.OPBRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBRecarregar.TabIndex = 10;
             this.OPBRecarregar.TabStop = false;
+            this.OPBRecarregar.Click += new System.EventHandler(this.OPBRecarregar_Click);
             this.OPBRecarregar.MouseEnter += new System.EventHandler(this.OPBRecarregar_MouseEnter);
             this.OPBRecarregar.MouseLeave += new System.EventHandler(this.OPBRecarregar_MouseLeave);
             // 
@@ -1346,6 +1349,7 @@
             this.OPBConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBConfiguracoes.TabIndex = 9;
             this.OPBConfiguracoes.TabStop = false;
+            this.OPBConfiguracoes.Click += new System.EventHandler(this.OPBConfiguracoes_Click);
             this.OPBConfiguracoes.MouseEnter += new System.EventHandler(this.OPBConfiguracoes_MouseEnter);
             this.OPBConfiguracoes.MouseLeave += new System.EventHandler(this.OPBConfiguracoes_MouseLeave);
             // 
@@ -1363,6 +1367,7 @@
             this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.OPBLogout.TabIndex = 8;
             this.OPBLogout.TabStop = false;
+            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
             this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
             this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
             // 

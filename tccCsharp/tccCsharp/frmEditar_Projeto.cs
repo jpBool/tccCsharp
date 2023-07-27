@@ -155,27 +155,15 @@ namespace tccCsharp
             return Palavras;
         }
 
-        private void frmEditar_Projeto_Load(object sender, EventArgs e)
+        private void AtualizaCabecalho()
         {
-            TLP_Mãe.Font = new Font("Arial", 9);
-            WindowState = FormWindowState.Maximized;
-
-            if (Program.lista_status.Count == 0)
-                Program.lista_status = Banco.CarregaStatus();
-
-            comboStatus.DataSource = Program.lista_status;
-            comboStatus.ValueMember = "id_status";
-            comboStatus.DisplayMember = "status";
-
-            editando = Banco.RecarregaSelecionado();
             cabecalho = Banco.CabecalhoProjeto();
-
             lblCriadoquando.Text = "Criado em  " + Convert.ToDateTime(cabecalho.criacao).ToShortDateString();
             lblCriador.Text = "Criador: " + cabecalho.criador_nome;
             lblAtualizadoquando.Text = "Atualizado em " + Convert.ToDateTime(cabecalho.atualizacao).ToShortDateString();
             lblAtualizador.Text = "Atualizador: " + cabecalho.atualizador_nome;
             lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
-            
+
             if (cabecalho.porcentagem_int == 100)
                 groupPorcentagem2.Width = groupPorcentagem.Width;
             else
@@ -184,6 +172,11 @@ namespace tccCsharp
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
             }
+        }
+
+        private void AtualizaCampos()
+        {
+            editando = Banco.RecarregaSelecionado();
 
             txtNomeProjeto.Text = editando.nome_projeto;
             txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -232,7 +225,7 @@ namespace tccCsharp
             }
 
             if (!editando.previsao.HasValue)
-            { 
+            {
                 boxSemPrevisao.Checked = true;
                 dtpPrevisao.Visible = false;
             }
@@ -240,7 +233,7 @@ namespace tccCsharp
             {
                 boxSemPrevisao.Checked = false;
                 dtpPrevisao.Visible = true;
-                dtpPrevisao.Value = Convert.ToDateTime(editando.previsao.Value);    
+                dtpPrevisao.Value = Convert.ToDateTime(editando.previsao.Value);
             }
             if (editando.publico == true)
             {
@@ -252,7 +245,22 @@ namespace tccCsharp
             }
 
             comboStatus.SelectedIndex = editando.status - 1;
+        }
 
+        private void frmEditar_Projeto_Load(object sender, EventArgs e)
+        {
+            TLP_Mãe.Font = new Font("Arial", 9);
+            WindowState = FormWindowState.Maximized;
+
+            if (Program.lista_status.Count == 0)
+                Program.lista_status = Banco.CarregaStatus();
+
+            comboStatus.DataSource = Program.lista_status;
+            comboStatus.ValueMember = "id_status";
+            comboStatus.DisplayMember = "status";
+
+            AtualizaCabecalho();
+            AtualizaCampos();
             DoDesign();
         }
 
@@ -375,9 +383,57 @@ namespace tccCsharp
             }  
         }
 
+        private void btnEtapas_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmEtapas splash = new frmEtapas();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+            }
+        }
 
+        private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
+        {
+            if (cabecalho.porcentagem_int == 100)
+                groupPorcentagem2.Width = groupPorcentagem.Width;
+            else
+            {
+                groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
+                if (groupPorcentagem2.Width < 45)
+                    groupPorcentagem2.Width = 45;
+            }
+        }
 
+        private void OPBRecarregar_Click(object sender, EventArgs e)
+        {
+            AtualizaCabecalho();
+            AtualizaCampos();
+            DoDesign();
+        }
 
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
+
+        private void OPBConfiguracoes_Click(object sender, EventArgs e)
+        {
+            //apenas teste
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
+        }
 
 
 
@@ -553,6 +609,7 @@ namespace tccCsharp
             }
         }
 
+
         //MOUSE ENTER
         private void btnCancelar_MouseEnter(object sender, EventArgs e)
         {
@@ -588,6 +645,12 @@ namespace tccCsharp
         {
             btnExcluir.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             btnExcluir.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void btnEtapas_MouseEnter(object sender, EventArgs e)
+        {
+            btnEtapas.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnEtapas.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         //MOUSE LEAVE
@@ -627,46 +690,11 @@ namespace tccCsharp
             btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
-        private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
+        private void btnEtapas_MouseLeave(object sender, EventArgs e)
         {
-            if (cabecalho.porcentagem_int == 100)
-                groupPorcentagem2.Width = groupPorcentagem.Width;
-            else
-            {
-                groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
-                if (groupPorcentagem2.Width < 45)
-                    groupPorcentagem2.Width = 45;
-            }
+            btnEtapas.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnEtapas.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
-        private void btnEtapas_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            frmEtapas splash = new frmEtapas();
-            splash.ShowDialog();
-            if (Program.id_usuario == 0)
-            {
-                this.Close();
-            }
-            else
-            {
-                this.Visible = true;
-                cabecalho = Banco.CabecalhoProjeto();
-                lblCriadoquando.Text = "Criado em  " + Convert.ToDateTime(cabecalho.criacao).ToShortDateString();
-                lblCriador.Text = "Criador: " + cabecalho.criador_nome;
-                lblAtualizadoquando.Text = "Atualizado em " + Convert.ToDateTime(cabecalho.atualizacao).ToShortDateString();
-                lblAtualizador.Text = "Atualizador: " + cabecalho.atualizador_nome;
-                lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
-
-                if (cabecalho.porcentagem_int == 100)
-                    groupPorcentagem2.Width = groupPorcentagem.Width;
-                else
-                {
-                    groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
-                    if (groupPorcentagem2.Width < 45)
-                        groupPorcentagem2.Width = 45;
-                }
-            }
-        }
     }
 }
