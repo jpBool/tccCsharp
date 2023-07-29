@@ -168,7 +168,7 @@ namespace tccCsharp
                 groupPorcentagem2.Width = groupPorcentagem.Width;
             else
             {
-                groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
+                groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
             }
@@ -405,7 +405,7 @@ namespace tccCsharp
                 groupPorcentagem2.Width = groupPorcentagem.Width;
             else
             {
-                groupPorcentagem2.Width = ((groupPorcentagem.Width / 100) * cabecalho.porcentagem_int);
+                groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
             }

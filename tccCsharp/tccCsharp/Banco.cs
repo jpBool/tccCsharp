@@ -481,7 +481,7 @@ namespace tccCsharp
             try
             {
                 string sql;
-                sql = "SELECT G.* FROM gp2_grupos_etapas G WHERE id_projeto = @1 AND excluido = FALSE";
+                sql = "SELECT G.* FROM gp2_grupos_etapas G WHERE id_projeto = @1 AND excluido = FALSE ORDER BY ordenador";
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
 
@@ -504,7 +504,7 @@ namespace tccCsharp
                 for(int i = 0; i < grupos.Count; i++)
                 {
                     string sql2;
-                    sql2 = "SELECT E.* FROM gp2_etapas E WHERE id_grupo = @1 AND excluido = FALSE";
+                    sql2 = "SELECT E.* FROM gp2_etapas E WHERE id_grupo = @1 AND excluido = FALSE ORDER BY ordenador";
                     List<object> param2 = new List<object>();
                     param2.Add(grupos[i].id_grupo);
 

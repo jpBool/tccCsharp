@@ -13,6 +13,7 @@ namespace tccCsharp
     public partial class frmEtapas : Form
     {
         List<GroupSteps> grupos = new List<GroupSteps>();
+        public Head cabecalho = new Head();
         int y = 0;
         int x1 = 0;
         int x2 = 0;
@@ -34,9 +35,8 @@ namespace tccCsharp
             RGBHead2.ForeColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
 
             groupPorcentagem.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
-            //groupPorcentagem.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
-            //groupPorcentagem2.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            lblPorcentagem.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
             TLPConteudo.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
@@ -77,8 +77,8 @@ namespace tccCsharp
             Etapa11groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
             Etapa12groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
             Etapa13groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
-            Etapa21groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
             Etapa22groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
+            Etapa21groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
             Etapa23groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
         }
 
@@ -119,7 +119,15 @@ namespace tccCsharp
                 {
                     BtnDireita1.Enabled = true;
                 }
-                // porcentagem do grupo 1
+                lblPorcentagemGP1.Text = Convert.ToInt32(grupo1.porcentagem).ToString() + "%";
+                if (Convert.ToInt32(grupo1.porcentagem) == 100)
+                    Grupo1groupPorcentagem2.Width = Grupo1groupPorcentagem1.Width;
+                else
+                {
+                    Grupo1groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Grupo1groupPorcentagem1.Width) / 100) * Convert.ToDouble(grupo1.porcentagem));
+                    if (Grupo1groupPorcentagem2.Width < 28)
+                        Grupo1groupPorcentagem2.Width = 28;
+                }
 
                 Step etapa11 = new Step();
                 if(grupo1.etapas.Count > x1 + 0)
@@ -128,7 +136,17 @@ namespace tccCsharp
                     etapa11 = grupo1.etapas[x1 + 0];
                     lblNomeEtapa11.Text = etapa11.nome_etapa;
                     lblDescricaoEtapa11.Text = etapa11.descricao_etapa;
-                    // porcentagem etapa 11
+                    lblPorcentagemET11.Text = Convert.ToInt32(etapa11.porcentagem).ToString() + "%";
+
+                    if (Convert.ToInt32(etapa11.porcentagem) == 100)
+                        Etapa11groupPorcentagem2.Width = Etapa11groupPorcentagem1.Width;
+                    else
+                    {
+                        Etapa11groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Etapa11groupPorcentagem1.Width) / 100) * Convert.ToDouble(etapa11.porcentagem));
+                        if (Etapa11groupPorcentagem2.Width < 28)
+                            Etapa11groupPorcentagem2.Width = 28;
+                    }
+
                 }
                 else
                 {
@@ -142,7 +160,17 @@ namespace tccCsharp
                     etapa12 = grupo1.etapas[x1 + 1];
                     lblNomeEtapa12.Text = etapa12.nome_etapa;
                     lblDescricaoEtapa12.Text = etapa12.descricao_etapa;
-                    // porcentagem etapa 12
+                    lblPorcentagemET12.Text = Convert.ToInt32(etapa12.porcentagem).ToString() + "%";
+                    
+                    if (Convert.ToInt32(etapa12.porcentagem) == 100)
+                        Etapa12groupPorcentagem2.Width = Etapa12groupPorcentagem1.Width;
+                    else
+                    {
+                        Etapa12groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Etapa12groupPorcentagem1.Width) / 100) * Convert.ToDouble(etapa12.porcentagem));
+                        if (Etapa12groupPorcentagem2.Width < 28)
+                            Etapa12groupPorcentagem2.Width = 28;
+                    }
+
                 }
                 else
                 {
@@ -156,7 +184,16 @@ namespace tccCsharp
                     etapa13 = grupo1.etapas[x1 + 2];
                     lblNomeEtapa13.Text = etapa13.nome_etapa;
                     lblDescricaoEtapa13.Text = etapa13.descricao_etapa;
-                    // porcentagem etapa 13
+                    lblPorcentagemET13.Text = Convert.ToInt32(etapa13.porcentagem).ToString() + "%";
+
+                    if (Convert.ToInt32(etapa13.porcentagem) == 100)
+                        Etapa13groupPorcentagem2.Width = Etapa13groupPorcentagem1.Width;
+                    else
+                    {
+                        Etapa13groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Etapa13groupPorcentagem1.Width) / 100) * Convert.ToDouble(etapa13.porcentagem));
+                        if (Etapa13groupPorcentagem2.Width < 28)
+                            Etapa13groupPorcentagem2.Width = 28;
+                    }
                 }
                 else
                 {
@@ -185,7 +222,15 @@ namespace tccCsharp
                 {
                     BtnDireita2.Enabled = true;
                 }
-                // porcentagem grupo 2 
+                lblPorcentagemGP2.Text = Convert.ToInt32(grupo2.porcentagem).ToString() + "%";
+                if (Convert.ToInt32(grupo2.porcentagem) == 100)
+                    Grupo2groupPorcentagem2.Width = Grupo2groupPorcentagem1.Width;
+                else
+                {
+                    Grupo2groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Grupo2groupPorcentagem1.Width) / 100) * Convert.ToDouble(grupo2.porcentagem));
+                    if (Grupo2groupPorcentagem2.Width < 28)
+                        Grupo2groupPorcentagem2.Width = 28;
+                }
 
                 Step etapa21 = new Step();
                 if (grupo2.etapas.Count > x2 + 0)
@@ -194,7 +239,16 @@ namespace tccCsharp
                     etapa21 = grupo2.etapas[x2 + 0];
                     lblNomeEtapa21.Text = etapa21.nome_etapa;
                     lblDescricaoEtapa21.Text = etapa21.descricao_etapa;
-                    // porcentagem etapa 21
+                    lblPorcentagemET21.Text = Convert.ToInt32(etapa21.porcentagem).ToString() + "%";
+
+                    if (Convert.ToInt32(etapa21.porcentagem) == 100)
+                        Etapa21groupPorcentagem2.Width = Etapa21groupPorcentagem1.Width;
+                    else
+                    {
+                        Etapa21groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Etapa21groupPorcentagem1.Width) / 100) * Convert.ToDouble(etapa21.porcentagem));
+                        if (Etapa21groupPorcentagem2.Width < 28)
+                            Etapa21groupPorcentagem2.Width = 28;
+                    }
                 }
                 else
                 {
@@ -208,7 +262,16 @@ namespace tccCsharp
                     etapa22 = grupo2.etapas[x2 + 1];
                     lblNomeEtapa22.Text = etapa22.nome_etapa;
                     lblDescricaoEtapa22.Text = etapa22.descricao_etapa;
-                    // porcentagem etapa 22
+                    lblPorcentagemET22.Text = Convert.ToInt32(etapa22.porcentagem).ToString() + "%";
+
+                    if (Convert.ToInt32(etapa22.porcentagem) == 100)
+                        Etapa22groupPorcentagem2.Width = Etapa22groupPorcentagem1.Width;
+                    else
+                    {
+                        Etapa22groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Etapa22groupPorcentagem1.Width) / 100) * Convert.ToDouble(etapa22.porcentagem));
+                        if (Etapa22groupPorcentagem2.Width < 28)
+                            Etapa22groupPorcentagem2.Width = 28;
+                    }
                 }
                 else
                 {
@@ -222,7 +285,16 @@ namespace tccCsharp
                     etapa23 = grupo2.etapas[x2 + 2];
                     lblNomeEtapa23.Text = etapa23.nome_etapa;
                     lblDescricaoEtapa23.Text = etapa23.descricao_etapa;
-                    // porcentagem etapa 23
+                    lblPorcentagemET23.Text = Convert.ToInt32(etapa23.porcentagem).ToString() + "%";
+
+                    if (Convert.ToInt32(etapa23.porcentagem) == 100)
+                        Etapa23groupPorcentagem2.Width = Etapa23groupPorcentagem1.Width;
+                    else
+                    {
+                        Etapa23groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Etapa23groupPorcentagem1.Width) / 100) * Convert.ToDouble(etapa23.porcentagem));
+                        if (Etapa23groupPorcentagem2.Width < 28)
+                            Etapa23groupPorcentagem2.Width = 28;
+                    }
                 }
                 else
                 {
@@ -247,6 +319,18 @@ namespace tccCsharp
             DoDesign();
             Banco.CarregarEtapas(grupos);
             Refresh_steps();
+            cabecalho = Banco.CabecalhoProjeto();
+
+            lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
+
+            if (cabecalho.porcentagem_int == 100)
+                groupPorcentagem2.Width = groupPorcentagem.Width;
+            else
+            {
+                groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
+                if (groupPorcentagem2.Width < 45)
+                    groupPorcentagem2.Width = 45;
+            }
         }
 
         private void OPBLogout_Click(object sender, EventArgs e)
@@ -316,6 +400,22 @@ namespace tccCsharp
             this.Close();
         }
 
-        
+        private void frmEtapas_SizeChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void frmEtapas_Resize(object sender, EventArgs e)
+        {
+            if (cabecalho.porcentagem_int == 100)
+                groupPorcentagem2.Width = groupPorcentagem.Width;
+            else
+            {
+                groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
+                if (groupPorcentagem2.Width < 45)
+                    groupPorcentagem2.Width = 45;
+            }
+            Refresh_steps();
+        }
     }
 }
