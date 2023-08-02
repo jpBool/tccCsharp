@@ -1082,6 +1082,7 @@
             this.btnImagens.TabIndex = 4;
             this.btnImagens.Text = "GERENCIAR IMAGENS DO PROJETO";
             this.btnImagens.UseVisualStyleBackColor = true;
+            this.btnImagens.Click += new System.EventHandler(this.btnImagens_Click);
             // 
             // TLPHead2
             // 

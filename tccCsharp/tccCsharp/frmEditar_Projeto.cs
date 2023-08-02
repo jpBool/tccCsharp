@@ -696,5 +696,10 @@ namespace tccCsharp
             btnEtapas.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
+        private void btnImagens_Click(object sender, EventArgs e)
+        {
+            frmGerenciamentoImagens formGImagens = new frmGerenciamentoImagens();
+            formGImagens.ShowDialog();
+        }
     }
 }

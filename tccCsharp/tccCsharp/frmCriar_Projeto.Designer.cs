@@ -475,6 +475,7 @@
             this.txtAutores.Size = new System.Drawing.Size(400, 19);
             this.txtAutores.TabIndex = 5;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
+            this.txtAutores.TextChanged += new System.EventHandler(this.txtAutores_TextChanged);
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
             this.txtAutores.Leave += new System.EventHandler(this.txtAutores_Leave);
             // 
