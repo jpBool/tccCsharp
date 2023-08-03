@@ -17,6 +17,15 @@ namespace tccCsharp
             InitializeComponent();
         }
 
-        
+        private void frmGerenciamentoImagens_Load(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            //DoDesign();
+        }
+
+        public void DoDesign()
+        {
+
+        }
     }
 }

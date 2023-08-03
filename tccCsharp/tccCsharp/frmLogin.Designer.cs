@@ -178,11 +178,11 @@
             // 
             this.lblAviso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblAviso.AutoSize = true;
-            this.lblAviso.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAviso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAviso.ForeColor = System.Drawing.Color.Red;
-            this.lblAviso.Location = new System.Drawing.Point(102, 264);
+            this.lblAviso.Location = new System.Drawing.Point(66, 264);
             this.lblAviso.Name = "lblAviso";
-            this.lblAviso.Size = new System.Drawing.Size(236, 39);
+            this.lblAviso.Size = new System.Drawing.Size(309, 39);
             this.lblAviso.TabIndex = 8;
             this.lblAviso.Text = "Email ou senha inválidos. Digite novamente";
             // 
@@ -196,7 +196,7 @@
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.73016F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tlpLoginBase3.Controls.Add(this.lblEmail, 1, 1);
             this.tlpLoginBase3.Controls.Add(this.lblSenha, 1, 3);
             this.tlpLoginBase3.Controls.Add(this.txtEmail, 3, 1);
@@ -243,7 +243,7 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmail.Location = new System.Drawing.Point(129, 38);
+            this.txtEmail.Location = new System.Drawing.Point(128, 38);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(244, 20);
             this.txtEmail.TabIndex = 1;
@@ -252,7 +252,7 @@
             // 
             this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSenha.Location = new System.Drawing.Point(129, 93);
+            this.txtSenha.Location = new System.Drawing.Point(128, 93);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(244, 20);
             this.txtSenha.TabIndex = 2;
