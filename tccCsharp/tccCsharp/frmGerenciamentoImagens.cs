@@ -13,16 +13,18 @@ namespace tccCsharp
 {
     public partial class frmGerenciamentoImagens : Form
     {
+        //public string arquivo;
         public frmGerenciamentoImagens()
         {
             InitializeComponent();
+            
         }
 
         private void frmGerenciamentoImagens_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
             DoDesign();
-
+            //ObterArquivos();
         }
 
         private void ObterArquivos(string rota)
@@ -32,16 +34,16 @@ namespace tccCsharp
             int i = 0;
             foreach(string arquivo in arquivos)
             {
-                var pcbUpload = new PictureBox();
-                pcbUpload.Size = new Size(150, 150);
-                pcbUpload.SizeMode = PictureBoxSizeMode.Zoom;
-                pcbUpload.Image = Image.FromFile(arquivo);
-                pcbUpload.Tag = arquivo;
-                pcbUpload.Click += picture_Click;
+                var pictureBox = new PictureBox();
+                pictureBox.Size = new Size(150, 150);
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                pictureBox.Image = Image.FromFile(arquivo);
+                pictureBox.Tag = arquivo;
+                pictureBox.Click += pcbUpload_Click; //picture_Click;
 
                 lblStatus.Text = arquivo;
                 lblStatus.Refresh();
-                flpImagens.Controls.Add(pcbUpload);
+                flpImagens.Controls.Add(pictureBox);
 
                 i++;
             }
@@ -51,13 +53,30 @@ namespace tccCsharp
 
         private void picture_Click(object sender, EventArgs e)
         {
-            PictureBox pict = (PictureBox)sender;   //PAREI AQUI
-            MessageBox.Show("Abrir arquivo");
+            //
         }
 
         private void pcbUpload_Click(object sender, EventArgs e)
         {
             var folderBrowser = new FolderBrowserDialog();
+
+
+            PictureBox pict = (PictureBox)sender;   //PAREI AQUI
+
+            //string pictName = pict.Name;
+            string arquivo = pict.Tag.ToString();
+            //MessageBox.Show($"Picture {pictName} \nArquivo: {arquivo}");
+            //int a = 2;
+
+            using (var frm = new frmImagem(arquivo))
+            {
+                frm.ShowDialog();
+            }
+            //DESCOMENTAR ESSE
+
+            //frmImagem frm = new frmImagem();
+            //frm.ShowDialog();
+            
         }
 
         public void DoDesign()

@@ -143,6 +143,12 @@
     <Compile Include="frmGerenciamentoImagens.Designer.cs">
       <DependentUpon>frmGerenciamentoImagens.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmImagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImagem.Designer.cs">
+      <DependentUpon>frmImagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGerenciamentoImagens.resx">
       <DependentUpon>frmGerenciamentoImagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImagem.resx">
+      <DependentUpon>frmImagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
