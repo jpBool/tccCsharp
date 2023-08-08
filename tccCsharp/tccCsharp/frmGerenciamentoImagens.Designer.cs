@@ -55,6 +55,7 @@
             this.lblCar3 = new System.Windows.Forms.Label();
             this.customLine3 = new CustomLine();
             this.rgbUpload = new tccCsharp.RoundedGroupBox();
+            this.btnUpload = new RoundButton();
             this.pcbUpload = new System.Windows.Forms.PictureBox();
             this.rgbNomeImagem = new tccCsharp.RoundedGroupBox();
             this.txtNomeImagem = new System.Windows.Forms.TextBox();
@@ -73,7 +74,7 @@
             this.rgbImagensP = new tccCsharp.RoundedGroupBox();
             this.lblStatus = new System.Windows.Forms.Label();
             this.flpImagens = new System.Windows.Forms.FlowLayoutPanel();
-            this.pict = new System.Windows.Forms.PictureBox();
+            this.pcbImagem = new System.Windows.Forms.PictureBox();
             this.lblImagens = new System.Windows.Forms.Label();
             this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
@@ -86,7 +87,6 @@
             this.lblPorcentagem = new System.Windows.Forms.Label();
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.tlpBase2.SuspendLayout();
             this.tlpBase3.SuspendLayout();
             this.tlpBase5.SuspendLayout();
@@ -107,13 +107,12 @@
             this.tlpBaseOpcoes2.SuspendLayout();
             this.rgbImagensP.SuspendLayout();
             this.flpImagens.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbImagem)).BeginInit();
             this.rgbHeadImgs2.SuspendLayout();
             this.TLPInfoshead.SuspendLayout();
             this.TLPCriacao.SuspendLayout();
             this.TLPAtualizacao.SuspendLayout();
             this.groupPorcentagem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpBase2
@@ -495,7 +494,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rgbUpload.BackgroundColor = System.Drawing.Color.White;
             this.rgbUpload.BorderWidth = 1F;
-            this.rgbUpload.Controls.Add(this.pict);
+            this.rgbUpload.Controls.Add(this.btnUpload);
             this.rgbUpload.Controls.Add(this.pcbUpload);
             this.rgbUpload.CornerRadius = 10;
             this.rgbUpload.Location = new System.Drawing.Point(163, 62);
@@ -504,6 +503,21 @@
             this.rgbUpload.TabIndex = 5;
             this.rgbUpload.TabStop = false;
             // 
+            // btnUpload
+            // 
+            this.btnUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpload.BorderColor = System.Drawing.Color.Black;
+            this.btnUpload.BorderRadius = 10;
+            this.btnUpload.BorderThickness = 2;
+            this.btnUpload.ButtonColor = System.Drawing.Color.White;
+            this.btnUpload.Location = new System.Drawing.Point(8, 150);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload.TabIndex = 1;
+            this.btnUpload.Text = "UPLOAD";
+            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
             // pcbUpload
             // 
             this.pcbUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -511,7 +525,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pcbUpload.Location = new System.Drawing.Point(6, 6);
             this.pcbUpload.Name = "pcbUpload";
-            this.pcbUpload.Size = new System.Drawing.Size(445, 167);
+            this.pcbUpload.Size = new System.Drawing.Size(445, 141);
             this.pcbUpload.TabIndex = 0;
             this.pcbUpload.TabStop = false;
             this.pcbUpload.Click += new System.EventHandler(this.pcbUpload_Click);
@@ -749,6 +763,8 @@
             // 
             // lblStatus
             // 
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.Location = new System.Drawing.Point(7, 299);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(610, 19);
@@ -759,19 +775,21 @@
             this.flpImagens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flpImagens.Controls.Add(this.pictureBox);
+            this.flpImagens.AutoScroll = true;
+            this.flpImagens.Controls.Add(this.pcbImagem);
             this.flpImagens.Location = new System.Drawing.Point(7, 45);
             this.flpImagens.Name = "flpImagens";
             this.flpImagens.Size = new System.Drawing.Size(610, 251);
             this.flpImagens.TabIndex = 1;
             // 
-            // pict
+            // pcbImagem
             // 
-            this.pict.Location = new System.Drawing.Point(185, 79);
-            this.pict.Name = "pict";
-            this.pict.Size = new System.Drawing.Size(100, 50);
-            this.pict.TabIndex = 0;
-            this.pict.TabStop = false;
+            this.pcbImagem.Location = new System.Drawing.Point(3, 3);
+            this.pcbImagem.Name = "pcbImagem";
+            this.pcbImagem.Size = new System.Drawing.Size(100, 80);
+            this.pcbImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbImagem.TabIndex = 2;
+            this.pcbImagem.TabStop = false;
             // 
             // lblImagens
             // 
@@ -951,14 +969,6 @@
             this.groupPorcentagem2.TabIndex = 0;
             this.groupPorcentagem2.TabStop = false;
             // 
-            // pictureBox
-            // 
-            this.pictureBox.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox.TabIndex = 2;
-            this.pictureBox.TabStop = false;
-            // 
             // frmGerenciamentoImagens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -997,7 +1007,7 @@
             this.rgbImagensP.ResumeLayout(false);
             this.rgbImagensP.PerformLayout();
             this.flpImagens.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbImagem)).EndInit();
             this.rgbHeadImgs2.ResumeLayout(false);
             this.TLPInfoshead.ResumeLayout(false);
             this.TLPInfoshead.PerformLayout();
@@ -1006,7 +1016,6 @@
             this.TLPAtualizacao.ResumeLayout(false);
             this.TLPAtualizacao.PerformLayout();
             this.groupPorcentagem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1070,7 +1079,7 @@
         private System.Windows.Forms.RadioButton radSim;
         private System.Windows.Forms.PictureBox pcbUpload;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.PictureBox pict;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox pcbImagem;
+        private RoundButton btnUpload;
     }
 }

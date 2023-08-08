@@ -29,21 +29,21 @@ namespace tccCsharp
 
         private void ObterArquivos(string rota)
         {
-            var arquivos = Directory.GetFiles(rota, "*.jpg");
+            var arquivos = Directory.GetFiles(rota, "*.jpg"); //MUDAR PARA OPEN FILE DIALOG
 
             int i = 0;
             foreach(string arquivo in arquivos)
             {
-                var pictureBox = new PictureBox();
-                pictureBox.Size = new Size(150, 150);
-                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureBox.Image = Image.FromFile(arquivo);
-                pictureBox.Tag = arquivo;
-                pictureBox.Click += pcbUpload_Click; //picture_Click;
+                var pcbImagem = new PictureBox();
+                pcbImagem.Size = new Size(150, 150);
+                pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
+                pcbImagem.Image = Image.FromFile(arquivo); //MUDAR PARA OPEN FILE DIALOG???
+                pcbImagem.Tag = arquivo;
+                pcbImagem.Click += pcbUpload_Click; 
 
                 lblStatus.Text = arquivo;
                 lblStatus.Refresh();
-                flpImagens.Controls.Add(pictureBox);
+                flpImagens.Controls.Add(pcbImagem);
 
                 i++;
             }
@@ -51,32 +51,29 @@ namespace tccCsharp
             lblStatus.Text = $"{i} arquivos encontrados";
         }
 
-        private void picture_Click(object sender, EventArgs e)
+        private void btnUpload_Click(object sender, EventArgs e)
         {
-            //
+            var folderBrowser = new FolderBrowserDialog(); //MUDAR PARA OPEN FILE DIALOG
+
+            if (folderBrowser.ShowDialog() == DialogResult.OK) //MUDAR PARA OPEN FILE DIALOG
+            {
+                ObterArquivos(folderBrowser.SelectedPath); //MUDAR PARA OPEN FILE DIALOG
+            }
         }
 
+        
         private void pcbUpload_Click(object sender, EventArgs e)
         {
-            var folderBrowser = new FolderBrowserDialog();
-
-
-            PictureBox pict = (PictureBox)sender;   //PAREI AQUI
-
+            
+            PictureBox pict = (PictureBox)sender; 
             //string pictName = pict.Name;
             string arquivo = pict.Tag.ToString();
             //MessageBox.Show($"Picture {pictName} \nArquivo: {arquivo}");
-            //int a = 2;
 
             using (var frm = new frmImagem(arquivo))
             {
                 frm.ShowDialog();
             }
-            //DESCOMENTAR ESSE
-
-            //frmImagem frm = new frmImagem();
-            //frm.ShowDialog();
-            
         }
 
         public void DoDesign()

@@ -29,7 +29,7 @@ namespace tccCsharp
 
         private void frmImagem_Load(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }
