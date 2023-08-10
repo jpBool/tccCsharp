@@ -27,41 +27,54 @@ namespace tccCsharp
             //ObterArquivos();
         }
 
-        private void ObterArquivos(string rota)
+        private void ObterArquivos(string[] rota)
         {
-            var arquivos = Directory.GetFiles(rota, "*.jpg"); //MUDAR PARA OPEN FILE DIALOG
-
-            int i = 0;
-            foreach(string arquivo in arquivos)
+            //string[] arquivos = Directory.GetFiles(rota); //, "*.jpg"); //MUDAR PARA OPEN FILE DIALOG
+            //string[] arquivos = Directory.GetFiles(rota, "*.jpg, .png, .jpeg"); //MUDAR PARA OPEN FILE DIALOG
+            
+            
+            for(int i = 0; i < rota.Length; i++) 
             {
                 var pcbImagem = new PictureBox();
                 pcbImagem.Size = new Size(150, 150);
                 pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
-                pcbImagem.Image = Image.FromFile(arquivo); //MUDAR PARA OPEN FILE DIALOG???
-                pcbImagem.Tag = arquivo;
-                pcbImagem.Click += pcbUpload_Click; 
+                //pcbImagem.Image = Image.FromFile(arquivo); //MUDAR PARA OPEN FILE DIALOG???
+                pcbImagem.Tag = rota[i];
+                pcbImagem.Click += pcbUpload_Click;
+                pcbImagem.ImageLocation = rota[i];
 
-                lblStatus.Text = arquivo;
+                lblStatus.Text = rota[i];
                 lblStatus.Refresh();
+                pcbUpload.Controls.Add(pcbImagem);
                 flpImagens.Controls.Add(pcbImagem);
+                
+                
+              } 
 
-                i++;
-            }
-
-            lblStatus.Text = $"{i} arquivos encontrados";
+            //lblStatus.Text = $"{i} arquivos encontrados";
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
-            var folderBrowser = new FolderBrowserDialog(); //MUDAR PARA OPEN FILE DIALOG
+            /*var folderBrowser = new FolderBrowserDialog(); //MUDAR PARA OPEN FILE DIALOG
 
             if (folderBrowser.ShowDialog() == DialogResult.OK) //MUDAR PARA OPEN FILE DIALOG
             {
                 ObterArquivos(folderBrowser.SelectedPath); //MUDAR PARA OPEN FILE DIALOG
+            }*/
+
+            var openFile = new OpenFileDialog(); //MUDAR PARA OPEN FILE DIALOG
+            openFile.Multiselect = true;
+            if (openFile.ShowDialog() == DialogResult.OK) //MUDAR PARA OPEN FILE DIALOG
+            {
+                string sFileName = openFile.FileName;
+                lblTest.Text = sFileName;
+                string[] arrAllFiles = openFile.FileNames;
+                ObterArquivos(arrAllFiles); //MUDAR PARA OPEN FILE DIALOG
             }
         }
 
-        
+
         private void pcbUpload_Click(object sender, EventArgs e)
         {
             
