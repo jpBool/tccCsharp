@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.picImagem = new System.Windows.Forms.PictureBox();
-            this.btnExcluir = new RoundButton();
             this.btnGerenciarImg = new RoundButton();
+            this.btnExcluir = new RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.picImagem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,20 +42,6 @@
             this.picImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImagem.TabIndex = 0;
             this.picImagem.TabStop = false;
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
-            this.btnExcluir.BorderRadius = 10;
-            this.btnExcluir.BorderThickness = 2;
-            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
-            this.btnExcluir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(504, 415);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(110, 23);
-            this.btnExcluir.TabIndex = 1;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnGerenciarImg
             // 
@@ -70,6 +56,21 @@
             this.btnGerenciarImg.TabIndex = 2;
             this.btnGerenciarImg.Text = "Editar";
             this.btnGerenciarImg.UseVisualStyleBackColor = true;
+            this.btnGerenciarImg.Click += new System.EventHandler(this.btnGerenciarImg_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
+            this.btnExcluir.BorderRadius = 10;
+            this.btnExcluir.BorderThickness = 2;
+            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(504, 415);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(110, 23);
+            this.btnExcluir.TabIndex = 1;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // frmImagem
             // 

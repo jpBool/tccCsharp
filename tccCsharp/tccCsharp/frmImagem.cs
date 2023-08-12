@@ -31,5 +31,14 @@ namespace tccCsharp
         {
             //
         }
+
+        private void btnGerenciarImg_Click(object sender, EventArgs e)
+        {
+            frmGerenciamentoImagens frmGImagens = new frmGerenciamentoImagens();
+            frmGImagens.ShowDialog();
+
+            //frmGerenciamentoImagens(picImagem);
+            
+        }
     }
 }
