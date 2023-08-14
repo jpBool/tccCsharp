@@ -129,7 +129,7 @@ namespace tccCsharp
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 dr.Read();
                 usuario.nome = dr["nome"].ToString();
-                usuario.bio = dr["bio"] != DBNull.Value ? dr["bio"].ToString():null;
+                usuario.bio = dr["bio"] != DBNull.Value ? dr["bio"].ToString() : null;
                 usuario.avatar = dr["avatar"] != DBNull.Value ? Convert.ToInt32(dr["avatar"]) : 0;
                 usuario.naturalidade = dr["naturalidade"] != DBNull.Value ? dr["naturalidade"].ToString() : null;
                 usuario.inscricao = Convert.ToDateTime(dr["inscricao"]);
@@ -260,7 +260,7 @@ namespace tccCsharp
                 sql += "palavras_chave = @4, publico = @5, descricao_breve = @6, descricao_detalhada = @7, link_site = @8, ";
                 sql += "link_youtube = @9, status = @10, porcentagem = @11, data_atualizacao = @12, atualizador = @13, ";
                 sql += "linguagem = @14, previsao = @15 WHERE id_projeto = @16 ";
-                
+
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", String.IsNullOrEmpty(Atualizar.autores) ? (object)DBNull.Value : (object)Atualizar.autores);
                 cmd.Parameters.AddWithValue("@2", String.IsNullOrEmpty(Atualizar.email_contato) ? (object)DBNull.Value : (object)Atualizar.email_contato);
@@ -501,7 +501,7 @@ namespace tccCsharp
                 }
                 dr.Close();
 
-                for(int i = 0; i < grupos.Count; i++)
+                for (int i = 0; i < grupos.Count; i++)
                 {
                     string sql2;
                     sql2 = "SELECT E.* FROM gp2_etapas E WHERE id_grupo = @1 AND excluido = FALSE ORDER BY ordenador";
@@ -540,7 +540,7 @@ namespace tccCsharp
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro ao carregar esse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocorreu um erro ao carregar esse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -548,9 +548,43 @@ namespace tccCsharp
             }
             return grupos;
         }
-    }
-}
 
+        public static List<Photo> CarregaImagens(List<Photo> imagens)
+        {
+            try
+            {
+                string sql;
+                sql = "SELECT * FROM gp2_imagens WHERE id_projeto = @1";
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                while (dr.Read())
+                {
+                    Photo linha = new Photo();
+                    linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
+                    linha.id_imagem = Convert.ToInt32(dr["id_imagem"]);
+                    linha.nome = Convert.ToString(dr["nome"]);
+                    linha.descricao_imagem = Convert.ToString(dr["descricao_imagem"]);
+                    linha.diretorio = Convert.ToString(dr["diretorio"]);
+                    linha.imagem_principal = Convert.ToBoolean(dr["imagem_principal"]);
+                    imagens.Add(linha);
+                }
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar as imagens desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar imagens", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return imagens;
+        }
+    } 
+}
 
 
 /*SELECT T1.data_criacao, T2.nome AS "criador", CAST(T1.data_atualizacao AS DATE), T3.nome AS "atualizador",

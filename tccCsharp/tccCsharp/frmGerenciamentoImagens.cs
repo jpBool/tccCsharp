@@ -15,6 +15,7 @@ namespace tccCsharp
     {
         public Head cabecalho = new Head();
         public Project projeto_editado = new Project();
+        List<Photo> Imagens = new List<Photo>();
 
         //public string arquivo;
         public frmGerenciamentoImagens()
@@ -28,9 +29,11 @@ namespace tccCsharp
             WindowState = FormWindowState.Maximized;
             DoDesign();
             projeto_editado = Banco.RecarregaSelecionado();
+            Imagens = Banco.CarregaImagens(Imagens);
+
             AtualizaCabecalho();
             //ObterArquivos();
-            pcbUpload.Visible = false;
+            pcbUpload.Visible = true;
         }
 
         private void AtualizaCabecalho()
@@ -71,8 +74,8 @@ namespace tccCsharp
 
                 lblStatus.Text = rota[i];
                 lblStatus.Refresh();
-                //flpImagens.Controls.Add(pcbImagem);
-                flpUpload.Controls.Add(pcbImagem);
+                flpImagens.Controls.Add(pcbImagem);
+                //flpUpload.Controls.Add(pcbImagem);
 
 
             } 
@@ -102,13 +105,15 @@ namespace tccCsharp
 
         private void pcbImagem_Click(object sender, EventArgs e)
         {
-            
+            pcbUpload.Image = pcbImagem.Image; //MEXENDO AQUI
         }
 
 
         private void pcbUpload_Click(object sender, EventArgs e)
         {
-            PictureBox pict = (PictureBox)sender;
+            //flpUpload.Controls.Add(pcbImagem);
+
+            /*PictureBox pict = (PictureBox)sender;
             //string pictName = pict.Name;
             string arquivo = pict.Tag.ToString();
             //MessageBox.Show($"Picture {pictName} \nArquivo: {arquivo}");
@@ -117,7 +122,7 @@ namespace tccCsharp
             {
                 frm.ShowDialog(); //tinha mexido aqui
             }
-            
+            */
         }
 
         public void DoDesign()
@@ -201,6 +206,21 @@ namespace tccCsharp
 
         }
 
-        
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Photo Foto = new Photo();
+            Foto.descricao_imagem = txtDescricaoImg.Text;
+            Foto.nome = txtNomeImagem.Text;
+            Foto.id_projeto = projeto_editado.id_projeto;
+            if (radSim.Checked == true)
+            {
+                // desceecionar todos os ouros
+                Foto.imagem_principal = true;
+            }
+            else
+            {
+                Foto.imagem_principal = false;
+            }
+        }
     }
 }

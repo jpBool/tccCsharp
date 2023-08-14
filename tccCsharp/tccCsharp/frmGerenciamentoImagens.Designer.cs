@@ -330,6 +330,7 @@
             // 
             // pcbUpload
             // 
+            this.pcbUpload.BackColor = System.Drawing.SystemColors.Highlight;
             this.pcbUpload.Location = new System.Drawing.Point(3, 3);
             this.pcbUpload.Name = "pcbUpload";
             this.pcbUpload.Size = new System.Drawing.Size(100, 80);
@@ -457,6 +458,7 @@
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblImagemPrincipal
             // 
@@ -679,6 +681,7 @@
             // 
             // pcbImagem
             // 
+            this.pcbImagem.BackColor = System.Drawing.SystemColors.Highlight;
             this.pcbImagem.Location = new System.Drawing.Point(3, 3);
             this.pcbImagem.Name = "pcbImagem";
             this.pcbImagem.Size = new System.Drawing.Size(100, 80);

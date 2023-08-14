@@ -172,6 +172,7 @@
     <Compile Include="OvalPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Photo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
