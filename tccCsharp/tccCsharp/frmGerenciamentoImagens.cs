@@ -9,6 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace tccCsharp
 {
@@ -312,27 +313,29 @@ namespace tccCsharp
             {
                 Foto.imagem_principal = false;
             }
-
-            string ftpServerUrl = "200.145.153.91"; // Substitua pelo URL do servidor FTP
             string username = "matheussoares"; // Substitua pelo seu nome de usuário FTP
             string password = "cti"; // Substitua pela sua senha FTP
 
-            string remoteFilePath = "/"; // Caminho remoto onde a imagem será salva no servidor FTP
-            string localFilePath = pcbUpload.ImageLocation.ToString(); // Caminho local da imagem carregada
+            string remoteFilePath = "/public_sites/matheussoares/imagens/"; // Caminho remoto onde a imagem será salva no servidor FTP
+            string localFilePath = pcbUpload.ImageLocation; // Caminho local da imagem carregada
+
 
             using (WebClient webClient = new WebClient())
             {
-                webClient.Credentials = new NetworkCredential(username, password);
+                try
+                {
+                    webClient.Credentials = new NetworkCredential(username, password);
 
-                
-                
-                    webClient.UploadFile("teste", localFilePath);
+                    string remoteFileUrl = "ftp://200.145.153.91" + remoteFilePath + "teste.png";
+
+                    webClient.UploadFile(remoteFileUrl, "STOR", localFilePath);
+
                     MessageBox.Show("Imagem enviada para o servidor FTP com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
-                /*catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao enviar a imagem para o servidor FTP: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                } */
+                }
             }
         }
     }
