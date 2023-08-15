@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using Renci.SshNet;
 
 namespace tccCsharp
 {
@@ -313,29 +314,38 @@ namespace tccCsharp
             {
                 Foto.imagem_principal = false;
             }
-            string username = "matheussoares"; // Substitua pelo seu nome de usuário FTP
-            string password = "cti"; // Substitua pela sua senha FTP
-
-            string remoteFilePath = "/public_sites/matheussoares/imagens/"; // Caminho remoto onde a imagem será salva no servidor FTP
-            string localFilePath = pcbUpload.ImageLocation; // Caminho local da imagem carregada
 
 
-            using (WebClient webClient = new WebClient())
+            string localFilePath = pcbUpload.ImageLocation.ToString();
+            string remoteFilePath = "/public_sites/matheussoares/imagens";
+            string remoteServer = "200.145.153.91";
+            string remoteUsername = "matheussoares";
+            string remotePassword = "cti"; 
+            Random random = new Random();
+            
+
+            try
             {
-                try
+                using (var sshClient = new ScpClient(remoteServer, remoteUsername, remotePassword))
                 {
-                    webClient.Credentials = new NetworkCredential(username, password);
-
-                    string remoteFileUrl = "ftp://200.145.153.91" + remoteFilePath + "teste.png";
-
-                    webClient.UploadFile(remoteFileUrl, "STOR", localFilePath);
-
-                    MessageBox.Show("Imagem enviada para o servidor FTP com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    sshClient.Connect();
+                    if (sshClient.IsConnected)
+                    {
+                        using (var fileStream = System.IO.File.OpenRead(localFilePath))
+                        {
+                            sshClient.Upload(fileStream, remoteFilePath + "/" + random.Next().ToString() + ".jpg"); ;
+                        }
+                        MessageBox.Show("Upload concluído com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possível conectar ao servidor remoto.");
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro ao enviar a imagem para o servidor FTP: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro durante o upload: " + ex.Message);
             }
         }
     }

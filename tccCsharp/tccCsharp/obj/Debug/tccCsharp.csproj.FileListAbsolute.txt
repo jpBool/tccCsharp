@@ -262,3 +262,7 @@ C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccC
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEtapas.resources
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoImagens.resources
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmImagem.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoImagens.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmImagem.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.dll
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.xml
