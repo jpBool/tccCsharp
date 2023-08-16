@@ -20,6 +20,7 @@ namespace tccCsharp
         public Head cabecalho = new Head();
         public Project projeto_editado = new Project();
         List<Photo> Imagens = new List<Photo>();
+        bool EditandoImagem;
 
         //public string arquivo;
         public frmGerenciamentoImagens()
@@ -40,8 +41,10 @@ namespace tccCsharp
             //ObterArquivos();
             pcbUpload.Visible = true;
             
-            CarregarTudo();
-            //LoadImag();
+            for(int i = 0; i < Imagens.Count; i++)
+            {
+                CarregarImagem(Imagens[i]);
+            }
         }
 
 
@@ -66,19 +69,22 @@ namespace tccCsharp
             }
         }
 
-        private void LoadImag()
+        private void CarregarImagem(Photo img)
         {
-            string imageUrl = "http://200.145.153.91/matheussoares/crunchyroll.png"; // Substitua com o URL da imagem desejada
-
+            var pcbImagem = new PictureBox();
+            pcbImagem.Size = new Size(150, 150);
+            pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
+            pcbImagem.BackColor = Color.Blue;
+            pcbImagem.Tag = img;
             try
             {
                 using (WebClient webClient = new WebClient())
                 {
-                    byte[] imageBytes = webClient.DownloadData(imageUrl);
+                    byte[] imageBytes = webClient.DownloadData(img.diretorio);
                     using (var stream = new System.IO.MemoryStream(imageBytes))
                     {
                         System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
-                        pcbUpload.Image = image;
+                        pcbImagem.Image = image;
                     }
                 }
             }
@@ -86,125 +92,31 @@ namespace tccCsharp
             {
                 MessageBox.Show("Erro ao carregar a imagem: " + ex.Message);
             }
-        }
-
-
-
-        private void ObterArquivos(string rota)
-        {
-
-            var pcbImagem = new PictureBox();
-            pcbImagem.Size = new Size(150, 150);
-            pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
-
-            Photo img = new Photo();
-            img.diretorio = rota;
-
-            pcbImagem.Tag = img;
-            pcbImagem.ImageLocation = rota;
-
-            lblStatus.Text = rota;
-            lblStatus.Refresh();
             flpImagens.Controls.Add(pcbImagem);
 
-            // Associação do evento de clique usando uma expressão lambda
             pcbImagem.Click += (sender, e) =>
             {
-                // Aqui você pode escrever o código que será executado quando o PictureBox for clicado
+
                 PictureBox clickedPictureBox = sender as PictureBox;
                 if (clickedPictureBox != null)
                 {
-                    pcbUpload.Image = clickedPictureBox.Image;
-
-                    // Recuperar o objeto armazenado na propriedade Tag do PictureBox
                     object foto = clickedPictureBox.Tag;
-
-                    // Verificar se o objeto é do tipo Photo antes de usar suas propriedades
                     if (foto is Photo photoObj)
                     {
-                        // Atribuir o nome da foto à propriedade Text do TextBox
-                        txtNomeImagem.Text = photoObj.nome;
-                    }
-                    else
-                    {
-                        txtNomeImagem.Text = "Objeto inválido na propriedade Tag";
-                    }
-                }
-
-
-            };
-
-        }
-
-        private void CarregarTudo()
-        {
-            for (int i = 0; i < Imagens.Count; i++)
-            {
-                var pcbImagem = new PictureBox();
-                pcbImagem.Size = new Size(150, 150);
-                pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
-                pcbImagem.BackColor = Color.Blue;
-
-                Photo img = new Photo();
-                img = Imagens[i];
-
-
-                pcbImagem.Tag = img;
-                try
-                {
-                    using (WebClient webClient = new WebClient())
-                    {
-                        byte[] imageBytes = webClient.DownloadData(img.diretorio);
-                        using (var stream = new System.IO.MemoryStream(imageBytes))
-                        {
-                            System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
-                            pcbImagem.Image = image;
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro ao carregar a imagem: " + ex.Message);
-                }
-                flpImagens.Controls.Add(pcbImagem);
-
-                // Associação do evento de clique usando uma expressão lambda
-                pcbImagem.Click += (sender, e) =>
-                {
-                    // Aqui você pode escrever o código que será executado quando o PictureBox for clicado
-                    PictureBox clickedPictureBox = sender as PictureBox;
-                    if (clickedPictureBox != null)
-                    {
+                        EditandoImagem = true;
                         pcbUpload.Image = clickedPictureBox.Image;
-
-                        // Recuperar o objeto armazenado na propriedade Tag do PictureBox
-                        object foto = clickedPictureBox.Tag;
-
-                        // Verificar se o objeto é do tipo Photo antes de usar suas propriedades
-                        if (foto is Photo photoObj)
-                        {
-                            // Atribuir o nome da foto à propriedade Text do TextBox
-                            txtNomeImagem.Text = photoObj.nome;
-                            txtDescricaoImg.Text = photoObj.descricao_imagem;
-                        }
+                        txtNomeImagem.Text = photoObj.nome;
+                        txtDescricaoImg.Text = photoObj.descricao_imagem;
                     }
-                };
-            }
+                }
+            };
         }
 
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
-            /*var folderBrowser = new FolderBrowserDialog(); //MUDAR PARA OPEN FILE DIALOG
-
-            if (folderBrowser.ShowDialog() == DialogResult.OK) //MUDAR PARA OPEN FILE DIALOG
-            {
-                ObterArquivos(folderBrowser.SelectedPath); //MUDAR PARA OPEN FILE DIALOG
-            }*/
-
-            var openFile = new OpenFileDialog(); //MUDAR PARA OPEN FILE DIALOG
-            //openFile.Multiselect = true;
-            if (openFile.ShowDialog() == DialogResult.OK) //MUDAR PARA OPEN FILE DIALOG
+            var openFile = new OpenFileDialog(); 
+            if (openFile.ShowDialog() == DialogResult.OK) 
             {
                 string selectedFileName = openFile.FileName;
                 pcbUpload.Tag = selectedFileName;
@@ -371,50 +283,7 @@ namespace tccCsharp
             txtDescricaoImg.Text = string.Empty;
             pcbUpload.Image = null;
             Imagens = Banco.CarregaImagens(Imagens);
-
-            var pcbImagem = new PictureBox();
-            pcbImagem.Size = new Size(150, 150);
-            pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
-            pcbImagem.BackColor = Color.Blue;
-            pcbImagem.Tag = Foto;
-            try
-            {
-                using (WebClient webClient = new WebClient())
-                {
-                    byte[] imageBytes = webClient.DownloadData(Foto.diretorio);
-                    using (var stream = new System.IO.MemoryStream(imageBytes))
-                    {
-                        System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
-                        pcbImagem.Image = image;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao carregar a imagem: " + ex.Message);
-            }
-            flpImagens.Controls.Add(pcbImagem);
-
-            // Associação do evento de clique usando uma expressão lambda
-            pcbImagem.Click += (clickSender, clickEvent) =>
-            {
-                PictureBox clickedPictureBox = clickSender as PictureBox;
-                if (clickedPictureBox != null)
-                {
-                    pcbUpload.Image = clickedPictureBox.Image;
-
-                    // Recuperar o objeto armazenado na propriedade Tag do PictureBox
-                    object foto = clickedPictureBox.Tag;
-
-                    // Verificar se o objeto é do tipo Photo antes de usar suas propriedades
-                    if (foto is Photo photoObj)
-                    {
-                        // Atribuir o nome da foto à propriedade Text do TextBox
-                        txtNomeImagem.Text = photoObj.nome;
-                        txtDescricaoImg.Text = photoObj.descricao_imagem;
-                    }
-                }
-            };
+            CarregarImagem(Foto);
 
         }
     }

@@ -554,7 +554,7 @@ namespace tccCsharp
             try
             {
                 string sql;
-                sql = "SELECT * FROM gp2_imagens WHERE id_projeto = @1";
+                sql = "SELECT * FROM gp2_imagens WHERE id_projeto = @1 ORDER BY id_imagem ASC";
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
 
