@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using Renci.SshNet;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace tccCsharp
 {
@@ -76,7 +77,7 @@ namespace tccCsharp
                     byte[] imageBytes = webClient.DownloadData(imageUrl);
                     using (var stream = new System.IO.MemoryStream(imageBytes))
                     {
-                        Image image = Image.FromStream(stream);
+                        System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
                         pcbUpload.Image = image;
                     }
                 }
@@ -156,7 +157,7 @@ namespace tccCsharp
                         byte[] imageBytes = webClient.DownloadData(img.diretorio);
                         using (var stream = new System.IO.MemoryStream(imageBytes))
                         {
-                            Image image = Image.FromStream(stream);
+                            System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
                             pcbImagem.Image = image;
                         }
                     }
@@ -186,13 +187,6 @@ namespace tccCsharp
                             txtNomeImagem.Text = photoObj.nome;
                             txtDescricaoImg.Text = photoObj.descricao_imagem;
                         }
-                        else
-                        {
-                            txtNomeImagem.Text = "Objeto inválido na propriedade Tag";
-                            txtDescricaoImg.Text = "Objeto inválido na propriedade Tag";
-                        }
-
-
                     }
                 };
             }
@@ -301,28 +295,49 @@ namespace tccCsharp
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(txtNomeImagem.Text) == true)
+            {
+                customLine2.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                customLine2.Invalidate();
+                txtNomeImagem.Focus();
+                return;
+            }
+            if (String.IsNullOrEmpty(txtDescricaoImg.Text) == true)
+            {
+                customLine3.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                customLine3.Invalidate();
+                txtDescricaoImg.Focus();
+                return;
+            }
+            if (pcbUpload.Image == null)
+            {
+                pcbUpload.BackColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+
             Photo Foto = new Photo();
             Foto.descricao_imagem = txtDescricaoImg.Text;
             Foto.nome = txtNomeImagem.Text;
             Foto.id_projeto = projeto_editado.id_projeto;
             if (radSim.Checked == true)
             {
-                // desceecionar todos os ouros
+                Banco.AlteraPrincipal();
                 Foto.imagem_principal = true;
             }
             else
             {
                 Foto.imagem_principal = false;
             }
+            Foto.diretorio = "Vazio";
 
+            int IdImagem = Banco.InsereImagem(Foto);
 
             string localFilePath = pcbUpload.ImageLocation.ToString();
             string remoteFilePath = "/public_sites/matheussoares/imagens";
             string remoteServer = "200.145.153.91";
             string remoteUsername = "matheussoares";
-            string remotePassword = "cti"; 
-            Random random = new Random();
-            
+            string remotePassword = "cti";
+
 
             try
             {
@@ -333,20 +348,74 @@ namespace tccCsharp
                     {
                         using (var fileStream = System.IO.File.OpenRead(localFilePath))
                         {
-                            sshClient.Upload(fileStream, remoteFilePath + "/" + random.Next().ToString() + ".jpg"); ;
+                            sshClient.Upload(fileStream, remoteFilePath + "/Imagem" + IdImagem + ".jpg"); ;
                         }
                         MessageBox.Show("Upload concluído com sucesso!");
+                        Banco.AlteraDiretorio(IdImagem, "http://200.145.153.91" + "/matheussoares/imagens/Imagem" + IdImagem + ".jpg");
+                        Foto.diretorio = "http://200.145.153.91" + "/matheussoares/imagens/Imagem" + IdImagem + ".jpg";
                     }
                     else
                     {
                         MessageBox.Show("Não foi possível conectar ao servidor remoto.");
+                        Banco.DeleteImagem(IdImagem);
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro durante o upload: " + ex.Message);
+                Banco.DeleteImagem(IdImagem);
             }
+
+            txtNomeImagem.Text = string.Empty;
+            txtDescricaoImg.Text = string.Empty;
+            pcbUpload.Image = null;
+            Imagens = Banco.CarregaImagens(Imagens);
+
+            var pcbImagem = new PictureBox();
+            pcbImagem.Size = new Size(150, 150);
+            pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
+            pcbImagem.BackColor = Color.Blue;
+            pcbImagem.Tag = Foto;
+            try
+            {
+                using (WebClient webClient = new WebClient())
+                {
+                    byte[] imageBytes = webClient.DownloadData(Foto.diretorio);
+                    using (var stream = new System.IO.MemoryStream(imageBytes))
+                    {
+                        System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
+                        pcbImagem.Image = image;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar a imagem: " + ex.Message);
+            }
+            flpImagens.Controls.Add(pcbImagem);
+
+            // Associação do evento de clique usando uma expressão lambda
+            pcbImagem.Click += (clickSender, clickEvent) =>
+            {
+                PictureBox clickedPictureBox = clickSender as PictureBox;
+                if (clickedPictureBox != null)
+                {
+                    pcbUpload.Image = clickedPictureBox.Image;
+
+                    // Recuperar o objeto armazenado na propriedade Tag do PictureBox
+                    object foto = clickedPictureBox.Tag;
+
+                    // Verificar se o objeto é do tipo Photo antes de usar suas propriedades
+                    if (foto is Photo photoObj)
+                    {
+                        // Atribuir o nome da foto à propriedade Text do TextBox
+                        txtNomeImagem.Text = photoObj.nome;
+                        txtDescricaoImg.Text = photoObj.descricao_imagem;
+                    }
+                }
+            };
+
         }
     }
 }

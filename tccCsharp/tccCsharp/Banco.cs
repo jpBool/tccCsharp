@@ -583,6 +583,99 @@ namespace tccCsharp
             }
             return imagens;
         }
+
+        public static int InsereImagem(Photo foto)
+        {
+            int idInserido = 0;
+            try 
+            {
+                Conectar();
+                String sql = "INSERT INTO gp2_imagens (id_projeto, diretorio, nome, descricao_imagem, imagem_principal) VALUES ";
+                sql += "(@1, @2, @3, @4, @5) RETURNING id_imagem";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", Program.id_projeto_atual);
+                cmd.Parameters.AddWithValue("@2", foto.diretorio);
+                cmd.Parameters.AddWithValue("@3", foto.nome);
+                cmd.Parameters.AddWithValue("@4", foto.descricao_imagem);
+                cmd.Parameters.AddWithValue("@5", foto.imagem_principal);
+
+                idInserido = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (Exception  ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return idInserido;
+        }
+
+        public static void DeleteImagem(int Idimagem)
+        {
+            try
+            {
+                Conectar();
+                String sql = "DELETE FROM gp2_imagens WHERE id_imagem = @1";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1",Idimagem);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+        public static void AlteraDiretorio(int Idimagem, string diretorio)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE  gp2_imagens SET diretorio = @1 WHERE id_imagem = @2";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", diretorio);
+                cmd.Parameters.AddWithValue("@2", Idimagem);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+        public static void AlteraPrincipal()
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE  gp2_imagens SET imagem_principal = FALSE WHERE id_projeto = @1";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", Program.id_projeto_atual);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
     } 
 }
 

@@ -194,9 +194,10 @@
             this.lblNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblNomeProjeto.AutoSize = true;
-            this.lblNomeProjeto.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeProjeto.Location = new System.Drawing.Point(15, 4);
             this.lblNomeProjeto.Name = "lblNomeProjeto";
-            this.lblNomeProjeto.Size = new System.Drawing.Size(35, 13);
+            this.lblNomeProjeto.Size = new System.Drawing.Size(93, 33);
             this.lblNomeProjeto.TabIndex = 0;
             this.lblNomeProjeto.Text = "Nome";
             // 
@@ -264,13 +265,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescricaoImg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescricaoImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricaoImg.ForeColor = System.Drawing.Color.Gray;
+            this.txtDescricaoImg.ForeColor = System.Drawing.Color.Black;
             this.txtDescricaoImg.Location = new System.Drawing.Point(8, 14);
             this.txtDescricaoImg.MaxLength = 20;
             this.txtDescricaoImg.Name = "txtDescricaoImg";
             this.txtDescricaoImg.Size = new System.Drawing.Size(377, 19);
             this.txtDescricaoImg.TabIndex = 2;
-            this.txtDescricaoImg.Text = "Digite a descrição da imagem (Obrigatório)";
             // 
             // lblCar3
             // 
@@ -362,13 +362,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeImagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeImagem.ForeColor = System.Drawing.Color.Gray;
+            this.txtNomeImagem.ForeColor = System.Drawing.Color.Black;
             this.txtNomeImagem.Location = new System.Drawing.Point(8, 11);
             this.txtNomeImagem.MaxLength = 20;
             this.txtNomeImagem.Name = "txtNomeImagem";
             this.txtNomeImagem.Size = new System.Drawing.Size(377, 19);
             this.txtNomeImagem.TabIndex = 2;
-            this.txtNomeImagem.Text = "Digite o nome da imagem (Obrigatório)";
             // 
             // lblCar2
             // 
@@ -459,6 +458,7 @@
             // radNao
             // 
             this.radNao.AutoSize = true;
+            this.radNao.Checked = true;
             this.radNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radNao.Location = new System.Drawing.Point(308, 17);
             this.radNao.Name = "radNao";
