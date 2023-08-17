@@ -21,6 +21,8 @@ namespace tccCsharp
         public Project projeto_editado = new Project();
         List<Photo> Imagens = new List<Photo>();
         bool EditandoImagem;
+        System.Drawing.Image verifica;
+
 
         //public string arquivo;
         public frmGerenciamentoImagens()
@@ -105,8 +107,20 @@ namespace tccCsharp
                     {
                         EditandoImagem = true;
                         pcbUpload.Image = clickedPictureBox.Image;
+                        pcbUpload.Tag = photoObj;
                         txtNomeImagem.Text = photoObj.nome;
                         txtDescricaoImg.Text = photoObj.descricao_imagem;
+                        verifica = pcbImagem.Image;
+                        if (photoObj.imagem_principal == true)
+                        {
+                            radSim.Checked = true;
+                            radNao.Checked = false;
+                        }
+                        else
+                        {
+                            radSim.Checked = false;
+                            radNao.Checked = true;
+                        }
                     }
                 }
             };
@@ -207,83 +221,136 @@ namespace tccCsharp
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtNomeImagem.Text) == true)
+            if (EditandoImagem == false)
             {
-                customLine2.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                customLine2.Invalidate();
-                txtNomeImagem.Focus();
-                return;
-            }
-            if (String.IsNullOrEmpty(txtDescricaoImg.Text) == true)
-            {
-                customLine3.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                customLine3.Invalidate();
-                txtDescricaoImg.Focus();
-                return;
-            }
-            if (pcbUpload.Image == null)
-            {
-                pcbUpload.BackColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                return;
-            }
+                if (String.IsNullOrEmpty(txtNomeImagem.Text) == true)
+                {
+                    customLine2.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                    customLine2.Invalidate();
+                    txtNomeImagem.Focus();
+                    return;
+                }
+                if (String.IsNullOrEmpty(txtDescricaoImg.Text) == true)
+                {
+                    customLine3.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                    customLine3.Invalidate();
+                    txtDescricaoImg.Focus();
+                    return;
+                }
+                if (pcbUpload.Image == null)
+                {
+                    pcbUpload.BackColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                    return;
+                }
 
-            Photo Foto = new Photo();
-            Foto.descricao_imagem = txtDescricaoImg.Text;
-            Foto.nome = txtNomeImagem.Text;
-            Foto.id_projeto = projeto_editado.id_projeto;
-            if (radSim.Checked == true)
-            {
-                Banco.AlteraPrincipal();
-                Foto.imagem_principal = true;
+                Photo Foto = new Photo();
+                Foto.descricao_imagem = txtDescricaoImg.Text;
+                Foto.nome = txtNomeImagem.Text;
+                Foto.id_projeto = projeto_editado.id_projeto;
+                if (radSim.Checked == true)
+                {
+                    Banco.AlteraPrincipal();
+                    Foto.imagem_principal = true;
+                }
+                else
+                {
+                    Foto.imagem_principal = false;
+                }
+                Foto.diretorio = "Vazio";
+
+                int IdImagem = Banco.InsereImagem(Foto);
+
+                string localFilePath = pcbUpload.ImageLocation.ToString();
+                string remoteFilePath = "/public_sites/matheussoares/imagens";
+                string remoteServer = "200.145.153.91";
+                string remoteUsername = "matheussoares";
+                string remotePassword = "cti";
+
+
+                try
+                {
+                    using (var sshClient = new ScpClient(remoteServer, remoteUsername, remotePassword))
+                    {
+                        sshClient.Connect();
+                        if (sshClient.IsConnected)
+                        {
+                            using (var fileStream = System.IO.File.OpenRead(localFilePath))
+                            {
+                                sshClient.Upload(fileStream, remoteFilePath + "/Imagem" + IdImagem + ".jpg"); ;
+                            }
+                            MessageBox.Show("Upload concluído com sucesso!");
+                            Banco.AlteraDiretorio(IdImagem, "http://200.145.153.91" + "/matheussoares/imagens/Imagem" + IdImagem + ".jpg");
+                            Foto.diretorio = "http://200.145.153.91" + "/matheussoares/imagens/Imagem" + IdImagem + ".jpg";
+                        }
+                        else
+                        {
+                            MessageBox.Show("Não foi possível conectar ao servidor remoto.");
+                            Banco.DeleteImagem(IdImagem);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro durante o upload: " + ex.Message);
+                    Banco.DeleteImagem(IdImagem);
+                }
+
+                txtNomeImagem.Text = string.Empty;
+                txtDescricaoImg.Text = string.Empty;
+                pcbUpload.Image = null;
+                Imagens = Banco.CarregaImagens(Imagens);
+                CarregarImagem(Foto);
+
             }
             else
             {
-                Foto.imagem_principal = false;
-            }
-            Foto.diretorio = "Vazio";
-
-            int IdImagem = Banco.InsereImagem(Foto);
-
-            string localFilePath = pcbUpload.ImageLocation.ToString();
-            string remoteFilePath = "/public_sites/matheussoares/imagens";
-            string remoteServer = "200.145.153.91";
-            string remoteUsername = "matheussoares";
-            string remotePassword = "cti";
-
-
-            try
-            {
-                using (var sshClient = new ScpClient(remoteServer, remoteUsername, remotePassword))
+                if (String.IsNullOrEmpty(txtNomeImagem.Text) == true)
                 {
-                    sshClient.Connect();
-                    if (sshClient.IsConnected)
-                    {
-                        using (var fileStream = System.IO.File.OpenRead(localFilePath))
-                        {
-                            sshClient.Upload(fileStream, remoteFilePath + "/Imagem" + IdImagem + ".jpg"); ;
-                        }
-                        MessageBox.Show("Upload concluído com sucesso!");
-                        Banco.AlteraDiretorio(IdImagem, "http://200.145.153.91" + "/matheussoares/imagens/Imagem" + IdImagem + ".jpg");
-                        Foto.diretorio = "http://200.145.153.91" + "/matheussoares/imagens/Imagem" + IdImagem + ".jpg";
-                    }
-                    else
-                    {
-                        MessageBox.Show("Não foi possível conectar ao servidor remoto.");
-                        Banco.DeleteImagem(IdImagem);
-                    }
+                    customLine2.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                    customLine2.Invalidate();
+                    txtNomeImagem.Focus();
+                    return;
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro durante o upload: " + ex.Message);
-                Banco.DeleteImagem(IdImagem);
-            }
+                if (String.IsNullOrEmpty(txtDescricaoImg.Text) == true)
+                {
+                    customLine3.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                    customLine3.Invalidate();
+                    txtDescricaoImg.Focus();
+                    return;
+                }
+                if (pcbUpload.Image == null)
+                {
+                    pcbUpload.BackColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                    return;
+                }
 
-            txtNomeImagem.Text = string.Empty;
-            txtDescricaoImg.Text = string.Empty;
-            pcbUpload.Image = null;
-            Imagens = Banco.CarregaImagens(Imagens);
-            CarregarImagem(Foto);
+                string descri = txtDescricaoImg.Text;
+                string nome = txtNomeImagem.Text;
+                bool principal;
+                if (radSim.Checked == true)
+                {
+                    Banco.AlteraPrincipal();
+                    principal = true;
+                }
+                else
+                {
+                    principal = false;
+                }
+                int idImagem = 0; // Vai dar erro
+
+                if (verifica == pcbUpload.Image)//Imagem continua a mesma
+                {
+                    Banco.UpdateImagem(nome, descri, principal, idImagem);
+                }
+                
+                else//Imagem mudou
+                {
+                    Banco.UpdateImagem(nome, descri, principal, idImagem);
+
+                    //Muda no FTP
+                }
+                EditandoImagem = false;
+            }
 
         }
     }

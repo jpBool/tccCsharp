@@ -676,6 +676,30 @@ namespace tccCsharp
                 Desconectar();
             }
         }
+
+        public static void UpdateImagem(string nome, string descri, bool principal, int IdImagem)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE  gp2_imagens SET nome = @1, descricao_imagem = @2, imagem_principal = @3 WHERE id_projeto = @4";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", nome);
+                cmd.Parameters.AddWithValue("@2", descri);
+                cmd.Parameters.AddWithValue("@3", principal);
+                cmd.Parameters.AddWithValue("@4", IdImagem);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
     } 
 }
 
