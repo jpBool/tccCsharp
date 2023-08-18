@@ -133,7 +133,6 @@ namespace tccCsharp
             if (openFile.ShowDialog() == DialogResult.OK) 
             {
                 string selectedFileName = openFile.FileName;
-                pcbUpload.Tag = selectedFileName;
                 pcbUpload.ImageLocation = selectedFileName;
             }
         }
@@ -336,7 +335,17 @@ namespace tccCsharp
                 {
                     principal = false;
                 }
-                int idImagem = 0; // Vai dar erro
+
+                int idImagem = 0;
+                object foto = pcbUpload.Tag;
+                if (foto is Photo photoObj)
+                {
+                     idImagem = photoObj.id_imagem;
+                }
+                else
+                {
+                    //erro grave
+                }
 
                 if (verifica == pcbUpload.Image)//Imagem continua a mesma
                 {
@@ -346,7 +355,6 @@ namespace tccCsharp
                 else//Imagem mudou
                 {
                     Banco.UpdateImagem(nome, descri, principal, idImagem);
-
                     //Muda no FTP
                 }
                 EditandoImagem = false;
