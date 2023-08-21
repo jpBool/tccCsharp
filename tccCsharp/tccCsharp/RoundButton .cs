@@ -10,6 +10,12 @@ public class RoundButton : Button
     private Color borderColor = Color.Black; // Cor da borda
     private Color buttonColor = Color.White; // Cor do botão
 
+    private Color bordaPrincippal = Color.Black;
+    private Color bordaHoover = Color.Green;
+    private Color textoPrincipal = Color.Black;
+    private bool autoHoover = false;
+
+
     public int BorderRadius
     {
         get { return borderRadius; }
@@ -40,6 +46,36 @@ public class RoundButton : Button
         }
     }
 
+    public Color BordaPrincipal
+    {
+        get { return bordaPrincippal; }
+        set
+        {
+            bordaPrincippal = value;
+            Refresh();
+        }
+    }
+
+    public Color TextoPrincipal
+    {
+        get { return textoPrincipal; }
+        set
+        {
+            textoPrincipal = value;
+            Refresh();
+        }
+    }
+
+    public Color BordaHoover
+    {
+        get { return bordaHoover; }
+        set
+        {
+            bordaHoover = value;
+            Refresh();
+        }
+    }
+
     public Color ButtonColor
     {
         get { return buttonColor; }
@@ -47,6 +83,15 @@ public class RoundButton : Button
         {
             buttonColor = value;
             Refresh();
+        }
+    }
+
+    public bool AutoHoover
+    {
+        get { return autoHoover; }
+        set
+        {
+            autoHoover = value;
         }
     }
 
@@ -92,6 +137,36 @@ public class RoundButton : Button
         if (path.IsVisible(e.Location))
         {
             base.OnMouseDown(e);
+        }
+    }
+
+    protected override void OnMouseEnter(EventArgs e)
+    {
+        if (AutoHoover == true)
+        {
+            BordaPrincipal = BorderColor;
+            TextoPrincipal = ForeColor;
+            BorderColor = BordaHoover;
+            ForeColor = BordaHoover;
+            Refresh();
+        }
+        else
+        {
+            base.OnMouseEnter(e);
+        }
+    }
+
+    protected override void OnMouseLeave(EventArgs e)
+    {
+        if (AutoHoover == true)
+        {
+            BorderColor = BordaPrincipal;
+            ForeColor = TextoPrincipal;
+            Refresh();
+        }
+        else
+        {
+            base.OnMouseLeave(e);
         }
     }
 }

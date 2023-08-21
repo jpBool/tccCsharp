@@ -155,12 +155,29 @@ namespace tccCsharp
             opcAvatar.Height = TLPAvatar.Height / 2;
             opcAvatar.Width = opcAvatar.Height;
 
-            OPBLogout._bordercolor = Color.Black;
-            OPBLogout.BackColor = Color.White;
 
-            opbRecarregar._bordercolor = Color.Black;
-            opbConfiguracoes._bordercolor = Color.Black;
-            opbEditarP3._bordercolor = Color.Black;
+            opbLogout._bordercolor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            opbRecarregar._bordercolor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            opbConfiguracoes._bordercolor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            opbEditarP3._bordercolor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            opbEditarP1._bordercolor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            opbEditarP1._bordercolor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+
+            opbLogout.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbRecarregar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbConfiguracoes.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbEditarP3.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbEditarP1.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbEditarP1.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+
+            opbLogout.AutoHoover = true;
+            opbRecarregar.AutoHoover = true;
+            opbConfiguracoes.AutoHoover = true;
+            opbEditarP3.AutoHoover = true;
+            opbEditarP1.AutoHoover = true;
+            opbEditarP1.AutoHoover = true;
+
+
 
             //teste
             lblNome.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -188,60 +205,7 @@ namespace tccCsharp
         }
         //BOTÔES 
 
-        //MOUSE ENTER
-        private void btnAdicionar_MouseEnter(object sender, EventArgs e)
-        {
-            btnAdicionar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-        }
-
-        private void OPBLogout_MouseEnter(object sender, EventArgs e)
-        {
-            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            OPBLogout.Refresh();
-        }
-        private void opbConfiguracoes_MouseEnter(object sender, EventArgs e)
-        {
-            opbConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbConfiguracoes.Refresh();
-        }
-        private void opbEditar_MouseEnter(object sender, EventArgs e)
-        {
-            opbEditarP3._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbEditarP3.Refresh();
-        }
-        private void opbRecarregar_MouseEnter(object sender, EventArgs e)
-        {
-            opbRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbRecarregar.Refresh();
-        }
-
-        //MOUSE LEAVE
-        private void btnAdicionar_MouseLeave(object sender, EventArgs e)
-        {
-            btnAdicionar.BorderColor = Color.Black;
-            btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-        }
-        private void opbConfiguracoes_MouseLeave(object sender, EventArgs e)
-        {
-            opbConfiguracoes._bordercolor = Color.Black;
-            opbConfiguracoes.Refresh();
-        }
-        private void OPBLogout_MouseLeave(object sender, EventArgs e)
-        {
-            OPBLogout._bordercolor = Color.Black;
-            OPBLogout.Refresh();
-        }
-        private void opbRecarregar_MouseLeave(object sender, EventArgs e)
-        {
-            opbRecarregar._bordercolor = Color.Black;
-            opbRecarregar.Refresh();
-        }
-        private void opbEditar_MouseLeave(object sender, EventArgs e)
-        {
-            opbEditarP3._bordercolor = Color.Black;
-            opbEditarP3.Refresh();
-        }
+        
 
         //MOUSE CLiCK
         private void btnAvancar_Click(object sender, EventArgs e)

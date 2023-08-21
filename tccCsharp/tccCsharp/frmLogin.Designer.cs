@@ -196,7 +196,7 @@
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.73016F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tlpLoginBase3.Controls.Add(this.lblEmail, 1, 1);
             this.tlpLoginBase3.Controls.Add(this.lblSenha, 1, 3);
             this.tlpLoginBase3.Controls.Add(this.txtEmail, 3, 1);
@@ -220,7 +220,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.White;
             this.lblEmail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(48, 35);
+            this.lblEmail.Location = new System.Drawing.Point(47, 35);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(57, 26);
             this.lblEmail.TabIndex = 5;
@@ -233,7 +233,7 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.White;
             this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(48, 90);
+            this.lblSenha.Location = new System.Drawing.Point(47, 90);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(57, 22);
             this.lblSenha.TabIndex = 6;
@@ -243,7 +243,7 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmail.Location = new System.Drawing.Point(126, 38);
+            this.txtEmail.Location = new System.Drawing.Point(125, 38);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(244, 20);
             this.txtEmail.TabIndex = 1;
@@ -252,7 +252,7 @@
             // 
             this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSenha.Location = new System.Drawing.Point(126, 93);
+            this.txtSenha.Location = new System.Drawing.Point(125, 93);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(244, 20);
             this.txtSenha.TabIndex = 2;
@@ -273,17 +273,21 @@
             // btnLogar
             // 
             this.btnLogar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnLogar.AutoHoover = true;
             this.btnLogar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLogar.BorderColor = System.Drawing.Color.Transparent;
-            this.btnLogar.BorderRadius = 30;
-            this.btnLogar.BorderThickness = 2;
+            this.btnLogar.BordaHoover = System.Drawing.Color.Green;
+            this.btnLogar.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnLogar.BorderColor = System.Drawing.Color.Black;
+            this.btnLogar.BorderRadius = 20;
+            this.btnLogar.BorderThickness = 4;
             this.btnLogar.ButtonColor = System.Drawing.Color.White;
             this.btnLogar.Font = new System.Drawing.Font("Arial", 12F);
-            this.btnLogar.Location = new System.Drawing.Point(159, 306);
+            this.btnLogar.Location = new System.Drawing.Point(136, 306);
             this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(122, 34);
+            this.btnLogar.Size = new System.Drawing.Size(169, 34);
             this.btnLogar.TabIndex = 10;
-            this.btnLogar.Text = "Entrar";
+            this.btnLogar.Text = "ENTRAR";
+            this.btnLogar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnLogar.UseVisualStyleBackColor = true;
             this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
             // 

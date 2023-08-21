@@ -11,6 +11,42 @@ namespace tccCsharp
         public Color _bordercolor { get; set; } = Color.Red;
 
         public float _borderwidth { get; set; } = 3;
+
+
+        private Color bordaPrincippal = Color.Black;
+        private Color bordaHoover = Color.Green;
+        private bool autoHoover = false;
+
+        public Color BordaPrincipal
+        {
+            get { return bordaPrincippal; }
+            set
+            {
+                bordaPrincippal = value;
+                Refresh();
+            }
+        }
+
+        public Color BordaHoover
+        {
+            get { return bordaHoover; }
+            set
+            {
+                bordaHoover = value;
+                Refresh();
+            }
+        }
+
+        public bool AutoHoover
+        {
+            get { return autoHoover; }
+            set
+            {
+                autoHoover = value;
+            }
+        }
+
+
         protected override void OnPaint(PaintEventArgs e)
         {
             
@@ -29,7 +65,34 @@ namespace tccCsharp
 
             base.OnPaint(e);
         }
+
+        protected override void OnMouseEnter(EventArgs e)
+        {
+            if (AutoHoover == true)
+            {
+                BordaPrincipal = _bordercolor;
+                _bordercolor = BordaHoover;
+                ForeColor = BordaHoover;
+                Refresh();
+            }
+            else
+            {
+                base.OnMouseEnter(e);
+            }
+        }
+
+        protected override void OnMouseLeave(EventArgs e)
+        {
+            if (AutoHoover == true)
+            {
+                _bordercolor = BordaPrincipal;
+                Refresh();
+            }
+            else
+            {
+                base.OnMouseLeave(e);
+            }
+        }
     }
-    
 }
 
