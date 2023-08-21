@@ -76,7 +76,8 @@ namespace tccCsharp
             var pcbImagem = new PictureBox();
             pcbImagem.Size = new Size(150, 150);
             pcbImagem.SizeMode = PictureBoxSizeMode.Zoom;
-            pcbImagem.BackColor = Color.Blue;
+            pcbImagem.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            pcbImagem.BorderStyle = BorderStyle.FixedSingle;
             pcbImagem.Tag = img;
             try
             {
@@ -156,17 +157,9 @@ namespace tccCsharp
             lblNomeProjeto.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
             //BOTOES
-            btnAtualizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
-            btnCancelar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-
-            btnGerenciarColaboradores.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnGerenciarColaboradores.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-
-            btnGerenciarEtapasP.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnGerenciarEtapasP.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnSairSSalvar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnSairSSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
             btnLimparForm.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnLimparForm.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
@@ -177,6 +170,9 @@ namespace tccCsharp
             btnSalvar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
+            btnExcluir.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+
             //COMPONENTES DE AGRUPAMENTO
             rgbDescricaoImg.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             //rgbDescricaoImg.BackColor = 
@@ -186,9 +182,13 @@ namespace tccCsharp
             TLPHead1.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             //rgbHeadImgs1.BackColor = 
 
+            TLPHead2.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            rgbHeadImgs2.ForeColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             rgbHeadImgs2.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             //rgbHeadImgs2.BackColor = 
             TLPInfoshead.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            TLPInfoshead.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
 
             rgbImagensP.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             //rgbImagensP.BackColor = 
@@ -202,12 +202,10 @@ namespace tccCsharp
 
             rgbOpcoes.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             //rgbOpcoes.BackColor = 
-            tlpBaseOpcoes1.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            tlpBaseOpcoes2.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
             rgbUpload.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             //rgbUpload.BackColor = 
-            pcbUpload.BackColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+            pcbUpload.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
             //Porcentagem
             groupPorcentagem.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
@@ -351,15 +349,98 @@ namespace tccCsharp
                 {
                     Banco.UpdateImagem(nome, descri, principal, idImagem);
                 }
-                
                 else//Imagem mudou
                 {
                     Banco.UpdateImagem(nome, descri, principal, idImagem);
-                    //Muda no FTP
+
+                    string localFilePath = pcbUpload.ImageLocation.ToString();
+                    string remoteFilePath = "/public_sites/matheussoares/imagens";
+                    string remoteServer = "200.145.153.91";
+                    string remoteUsername = "matheussoares";
+                    string remotePassword = "cti";
+
+                    try
+                    {
+                        using (var sshClient = new ScpClient(remoteServer, remoteUsername, remotePassword))
+                        {
+                            sshClient.Connect();
+                            if (sshClient.IsConnected)
+                            {
+                                using (var fileStream = System.IO.File.OpenRead(localFilePath))
+                                {
+                                    sshClient.Upload(fileStream, remoteFilePath + "/Imagem" + idImagem + ".jpg"); 
+                                }
+                                MessageBox.Show("Upload concluído com sucesso!");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Não foi possível conectar ao servidor remoto.");
+                                Banco.DeleteImagem(idImagem);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro durante o upload: " + ex.Message);
+                        Banco.DeleteImagem(idImagem);
+                    }
+                    flpImagens.Controls.Clear();
+                    Imagens.Clear();
+                    Imagens = Banco.CarregaImagens(Imagens);
+                    for (int i = 0; i < Imagens.Count; i++)
+                    {
+                        CarregarImagem(Imagens[i]);
+                    }
                 }
                 EditandoImagem = false;
             }
 
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (EditandoImagem == true)
+            {
+                //exclui
+                int idImagem = 0;
+                object foto = pcbUpload.Tag;
+                if (foto is Photo photoObj)
+                {
+                    idImagem = photoObj.id_imagem;
+                    Banco.DeleteImagem(idImagem);
+                    flpImagens.Controls.Clear();
+                    Imagens.Clear();
+                    Imagens = Banco.CarregaImagens(Imagens);
+                    for (int i = 0; i < Imagens.Count; i++)
+                    {
+                        CarregarImagem(Imagens[i]);
+                    }
+                }
+                else
+                {
+                    //erro grave
+                }
+
+            }
+            pcbUpload.Image = null;
+            pcbUpload.Tag = null;
+            txtDescricaoImg.Text = string.Empty;
+            txtNomeImagem.Text = string.Empty;
+            EditandoImagem = false;
+        }
+
+        private void btnLimparForm_Click(object sender, EventArgs e)
+        {
+            pcbUpload.Image = null;
+            pcbUpload.Tag = null;
+            txtDescricaoImg.Text = string.Empty;
+            txtNomeImagem.Text = string.Empty;
+            EditandoImagem = false;
+        }
+
+        private void btnSairSSalvar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

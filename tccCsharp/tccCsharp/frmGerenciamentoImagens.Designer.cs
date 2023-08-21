@@ -38,8 +38,8 @@
             this.lblNomeImagem = new System.Windows.Forms.Label();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.rgbDescricaoImg = new tccCsharp.RoundedGroupBox();
-            this.txtDescricaoImg = new System.Windows.Forms.TextBox();
             this.lblCar3 = new System.Windows.Forms.Label();
+            this.txtDescricaoImg = new System.Windows.Forms.TextBox();
             this.customLine3 = new CustomLine();
             this.rgbUpload = new tccCsharp.RoundedGroupBox();
             this.pcbUpload = new System.Windows.Forms.PictureBox();
@@ -49,25 +49,26 @@
             this.lblCar2 = new System.Windows.Forms.Label();
             this.customLine2 = new CustomLine();
             this.tlpBase6 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnExcluir = new RoundButton();
             this.btnLimparForm = new RoundButton();
-            this.btnSalvar = new RoundButton();
             this.lblImagemPrincipal = new System.Windows.Forms.Label();
             this.radNao = new System.Windows.Forms.RadioButton();
             this.radSim = new System.Windows.Forms.RadioButton();
+            this.btnSalvar = new RoundButton();
             this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
-            this.tlpBaseOpcoes1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnGerenciarColaboradores = new RoundButton();
-            this.btnGerenciarEtapasP = new RoundButton();
-            this.tlpBaseOpcoes2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCancelar = new RoundButton();
             this.btnSairSSalvar = new RoundButton();
-            this.btnAtualizar = new RoundButton();
             this.rgbImagensP = new tccCsharp.RoundedGroupBox();
-            this.lblStatus = new System.Windows.Forms.Label();
             this.flpImagens = new System.Windows.Forms.FlowLayoutPanel();
             this.lblImagens = new System.Windows.Forms.Label();
             this.tlpBase1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.ovalPictureBox1 = new tccCsharp.OvalPictureBox();
+            this.ovalPictureBox2 = new tccCsharp.OvalPictureBox();
+            this.ovalPictureBox3 = new tccCsharp.OvalPictureBox();
+            this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
+            this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
             this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
@@ -76,15 +77,9 @@
             this.TLPAtualizacao = new System.Windows.Forms.TableLayoutPanel();
             this.lblAtualizador = new System.Windows.Forms.Label();
             this.lblAtualizadoquando = new System.Windows.Forms.Label();
-            this.lblPorcentagem = new System.Windows.Forms.Label();
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
-            this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
-            this.ovalPictureBox3 = new tccCsharp.OvalPictureBox();
-            this.ovalPictureBox2 = new tccCsharp.OvalPictureBox();
-            this.ovalPictureBox1 = new tccCsharp.OvalPictureBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblPorcentagem = new System.Windows.Forms.Label();
             this.tlpBase2.SuspendLayout();
             this.tlpBase3.SuspendLayout();
             this.tlpBase5.SuspendLayout();
@@ -96,20 +91,19 @@
             this.tlpBase6.SuspendLayout();
             this.tlpBase4.SuspendLayout();
             this.rgbOpcoes.SuspendLayout();
-            this.tlpBaseOpcoes1.SuspendLayout();
-            this.tlpBaseOpcoes2.SuspendLayout();
             this.rgbImagensP.SuspendLayout();
             this.tlpBase1.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).BeginInit();
+            this.rgbHeadImgs1.SuspendLayout();
+            this.TLPHead2.SuspendLayout();
             this.rgbHeadImgs2.SuspendLayout();
             this.TLPInfoshead.SuspendLayout();
             this.TLPCriacao.SuspendLayout();
             this.TLPAtualizacao.SuspendLayout();
             this.groupPorcentagem.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
-            this.rgbHeadImgs1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpBase2
@@ -151,7 +145,7 @@
             this.tlpBase5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase5.BackColor = System.Drawing.SystemColors.Control;
+            this.tlpBase5.BackColor = System.Drawing.Color.Transparent;
             this.tlpBase5.ColumnCount = 2;
             this.tlpBase5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.48672F));
             this.tlpBase5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.51328F));
@@ -166,11 +160,11 @@
             this.tlpBase5.Location = new System.Drawing.Point(3, 3);
             this.tlpBase5.Name = "tlpBase5";
             this.tlpBase5.RowCount = 5;
-            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.088773F));
-            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.53264F));
-            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.78068F));
-            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.53264F));
-            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.06527F));
+            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.040816F));
+            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.20408F));
+            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.34694F));
+            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.20408F));
+            this.tlpBase5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.20408F));
             this.tlpBase5.Size = new System.Drawing.Size(617, 412);
             this.tlpBase5.TabIndex = 0;
             // 
@@ -185,7 +179,7 @@
             this.rgbNomeP.CornerRadius = 12;
             this.rgbNomeP.Location = new System.Drawing.Point(160, 11);
             this.rgbNomeP.Name = "rgbNomeP";
-            this.rgbNomeP.Size = new System.Drawing.Size(454, 40);
+            this.rgbNomeP.Size = new System.Drawing.Size(454, 36);
             this.rgbNomeP.TabIndex = 1;
             this.rgbNomeP.TabStop = false;
             // 
@@ -194,18 +188,19 @@
             this.lblNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblNomeProjeto.AutoSize = true;
-            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeProjeto.Location = new System.Drawing.Point(15, 4);
             this.lblNomeProjeto.Name = "lblNomeProjeto";
-            this.lblNomeProjeto.Size = new System.Drawing.Size(93, 33);
+            this.lblNomeProjeto.Size = new System.Drawing.Size(79, 29);
             this.lblNomeProjeto.TabIndex = 0;
             this.lblNomeProjeto.Text = "Nome";
             // 
             // lblProjeto
             // 
+            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblProjeto.AutoSize = true;
             this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjeto.Location = new System.Drawing.Point(3, 8);
+            this.lblProjeto.Location = new System.Drawing.Point(47, 19);
             this.lblProjeto.Name = "lblProjeto";
             this.lblProjeto.Size = new System.Drawing.Size(63, 20);
             this.lblProjeto.TabIndex = 0;
@@ -213,9 +208,10 @@
             // 
             // lblUpload
             // 
+            this.lblUpload.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUpload.AutoSize = true;
             this.lblUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpload.Location = new System.Drawing.Point(3, 59);
+            this.lblUpload.Location = new System.Drawing.Point(46, 178);
             this.lblUpload.Name = "lblUpload";
             this.lblUpload.Size = new System.Drawing.Size(64, 20);
             this.lblUpload.TabIndex = 1;
@@ -223,9 +219,10 @@
             // 
             // lblNomeImagem
             // 
+            this.lblNomeImagem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNomeImagem.AutoSize = true;
             this.lblNomeImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeImagem.Location = new System.Drawing.Point(3, 255);
+            this.lblNomeImagem.Location = new System.Drawing.Point(10, 338);
             this.lblNomeImagem.Name = "lblNomeImagem";
             this.lblNomeImagem.Size = new System.Drawing.Size(137, 20);
             this.lblNomeImagem.TabIndex = 2;
@@ -233,9 +230,10 @@
             // 
             // lblDescricao
             // 
+            this.lblDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(3, 306);
+            this.lblDescricao.Location = new System.Drawing.Point(36, 380);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(84, 20);
             this.lblDescricao.TabIndex = 3;
@@ -249,15 +247,26 @@
             this.rgbDescricaoImg.BackColor = System.Drawing.Color.Transparent;
             this.rgbDescricaoImg.BackgroundColor = System.Drawing.Color.White;
             this.rgbDescricaoImg.BorderWidth = 2F;
-            this.rgbDescricaoImg.Controls.Add(this.txtDescricaoImg);
             this.rgbDescricaoImg.Controls.Add(this.lblCar3);
+            this.rgbDescricaoImg.Controls.Add(this.txtDescricaoImg);
             this.rgbDescricaoImg.Controls.Add(this.customLine3);
             this.rgbDescricaoImg.CornerRadius = 12;
-            this.rgbDescricaoImg.Location = new System.Drawing.Point(160, 309);
+            this.rgbDescricaoImg.Location = new System.Drawing.Point(160, 372);
             this.rgbDescricaoImg.Name = "rgbDescricaoImg";
-            this.rgbDescricaoImg.Size = new System.Drawing.Size(454, 100);
+            this.rgbDescricaoImg.Size = new System.Drawing.Size(454, 37);
             this.rgbDescricaoImg.TabIndex = 4;
             this.rgbDescricaoImg.TabStop = false;
+            // 
+            // lblCar3
+            // 
+            this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblCar3.AutoSize = true;
+            this.lblCar3.BackColor = System.Drawing.Color.Transparent;
+            this.lblCar3.Location = new System.Drawing.Point(397, 15);
+            this.lblCar3.Name = "lblCar3";
+            this.lblCar3.Size = new System.Drawing.Size(46, 13);
+            this.lblCar3.TabIndex = 3;
+            this.lblCar3.Text = "300 car.";
             // 
             // txtDescricaoImg
             // 
@@ -266,22 +275,11 @@
             this.txtDescricaoImg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescricaoImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricaoImg.ForeColor = System.Drawing.Color.Black;
-            this.txtDescricaoImg.Location = new System.Drawing.Point(8, 14);
-            this.txtDescricaoImg.MaxLength = 20;
+            this.txtDescricaoImg.Location = new System.Drawing.Point(8, 9);
+            this.txtDescricaoImg.MaxLength = 300;
             this.txtDescricaoImg.Name = "txtDescricaoImg";
             this.txtDescricaoImg.Size = new System.Drawing.Size(377, 19);
             this.txtDescricaoImg.TabIndex = 2;
-            // 
-            // lblCar3
-            // 
-            this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblCar3.AutoSize = true;
-            this.lblCar3.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar3.Location = new System.Drawing.Point(397, 16);
-            this.lblCar3.Name = "lblCar3";
-            this.lblCar3.Size = new System.Drawing.Size(40, 13);
-            this.lblCar3.TabIndex = 1;
-            this.lblCar3.Text = "20 car.";
             // 
             // customLine3
             // 
@@ -289,7 +287,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customLine3.LineColor = System.Drawing.Color.Black;
             this.customLine3.LineWidth = 3;
-            this.customLine3.Location = new System.Drawing.Point(8, 34);
+            this.customLine3.Location = new System.Drawing.Point(8, 29);
             this.customLine3.Name = "customLine3";
             this.customLine3.Size = new System.Drawing.Size(377, 3);
             this.customLine3.TabIndex = 0;
@@ -305,9 +303,9 @@
             this.rgbUpload.Controls.Add(this.pcbUpload);
             this.rgbUpload.Controls.Add(this.btnUpload);
             this.rgbUpload.CornerRadius = 10;
-            this.rgbUpload.Location = new System.Drawing.Point(160, 62);
+            this.rgbUpload.Location = new System.Drawing.Point(160, 53);
             this.rgbUpload.Name = "rgbUpload";
-            this.rgbUpload.Size = new System.Drawing.Size(454, 190);
+            this.rgbUpload.Size = new System.Drawing.Size(454, 271);
             this.rgbUpload.TabIndex = 5;
             this.rgbUpload.TabStop = false;
             // 
@@ -319,7 +317,7 @@
             this.pcbUpload.BackColor = System.Drawing.SystemColors.Highlight;
             this.pcbUpload.Location = new System.Drawing.Point(6, 10);
             this.pcbUpload.Name = "pcbUpload";
-            this.pcbUpload.Size = new System.Drawing.Size(442, 145);
+            this.pcbUpload.Size = new System.Drawing.Size(442, 226);
             this.pcbUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbUpload.TabIndex = 2;
             this.pcbUpload.TabStop = false;
@@ -331,7 +329,7 @@
             this.btnUpload.BorderRadius = 10;
             this.btnUpload.BorderThickness = 2;
             this.btnUpload.ButtonColor = System.Drawing.Color.White;
-            this.btnUpload.Location = new System.Drawing.Point(8, 161);
+            this.btnUpload.Location = new System.Drawing.Point(8, 242);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
             this.btnUpload.TabIndex = 1;
@@ -341,7 +339,8 @@
             // 
             // rgbNomeImagem
             // 
-            this.rgbNomeImagem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.rgbNomeImagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rgbNomeImagem.BackColor = System.Drawing.Color.Transparent;
             this.rgbNomeImagem.BackgroundColor = System.Drawing.Color.White;
@@ -350,9 +349,9 @@
             this.rgbNomeImagem.Controls.Add(this.lblCar2);
             this.rgbNomeImagem.Controls.Add(this.customLine2);
             this.rgbNomeImagem.CornerRadius = 12;
-            this.rgbNomeImagem.Location = new System.Drawing.Point(160, 258);
+            this.rgbNomeImagem.Location = new System.Drawing.Point(160, 330);
             this.rgbNomeImagem.Name = "rgbNomeImagem";
-            this.rgbNomeImagem.Size = new System.Drawing.Size(454, 39);
+            this.rgbNomeImagem.Size = new System.Drawing.Size(454, 36);
             this.rgbNomeImagem.TabIndex = 3;
             this.rgbNomeImagem.TabStop = false;
             // 
@@ -363,8 +362,8 @@
             this.txtNomeImagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeImagem.ForeColor = System.Drawing.Color.Black;
-            this.txtNomeImagem.Location = new System.Drawing.Point(8, 11);
-            this.txtNomeImagem.MaxLength = 20;
+            this.txtNomeImagem.Location = new System.Drawing.Point(8, 8);
+            this.txtNomeImagem.MaxLength = 40;
             this.txtNomeImagem.Name = "txtNomeImagem";
             this.txtNomeImagem.Size = new System.Drawing.Size(377, 19);
             this.txtNomeImagem.TabIndex = 2;
@@ -374,11 +373,11 @@
             this.lblCar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCar2.AutoSize = true;
             this.lblCar2.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar2.Location = new System.Drawing.Point(397, 20);
+            this.lblCar2.Location = new System.Drawing.Point(397, 13);
             this.lblCar2.Name = "lblCar2";
             this.lblCar2.Size = new System.Drawing.Size(40, 13);
             this.lblCar2.TabIndex = 1;
-            this.lblCar2.Text = "20 car.";
+            this.lblCar2.Text = "40 car.";
             // 
             // customLine2
             // 
@@ -386,7 +385,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customLine2.LineColor = System.Drawing.Color.Black;
             this.customLine2.LineWidth = 3;
-            this.customLine2.Location = new System.Drawing.Point(8, 31);
+            this.customLine2.Location = new System.Drawing.Point(8, 28);
             this.customLine2.Name = "customLine2";
             this.customLine2.Size = new System.Drawing.Size(377, 3);
             this.customLine2.TabIndex = 0;
@@ -401,11 +400,12 @@
             this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.45697F));
             this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.20969F));
             this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tlpBase6.Controls.Add(this.btnExcluir, 0, 2);
             this.tlpBase6.Controls.Add(this.btnLimparForm, 0, 2);
-            this.tlpBase6.Controls.Add(this.btnSalvar, 1, 2);
             this.tlpBase6.Controls.Add(this.lblImagemPrincipal, 0, 1);
             this.tlpBase6.Controls.Add(this.radNao, 1, 1);
             this.tlpBase6.Controls.Add(this.radSim, 2, 1);
+            this.tlpBase6.Controls.Add(this.btnSalvar, 2, 2);
             this.tlpBase6.Location = new System.Drawing.Point(3, 421);
             this.tlpBase6.Name = "tlpBase6";
             this.tlpBase6.RowCount = 3;
@@ -414,6 +414,22 @@
             this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.tlpBase6.Size = new System.Drawing.Size(617, 119);
             this.tlpBase6.TabIndex = 1;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
+            this.btnExcluir.BorderRadius = 10;
+            this.btnExcluir.BorderThickness = 2;
+            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(313, 72);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(89, 29);
+            this.btnExcluir.TabIndex = 9;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimparForm
             // 
@@ -429,22 +445,7 @@
             this.btnLimparForm.TabIndex = 5;
             this.btnLimparForm.Text = "LIMPAR FORMULÁRIO";
             this.btnLimparForm.UseVisualStyleBackColor = true;
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalvar.BorderColor = System.Drawing.Color.Black;
-            this.btnSalvar.BorderRadius = 10;
-            this.btnSalvar.BorderThickness = 2;
-            this.btnSalvar.ButtonColor = System.Drawing.Color.White;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(313, 72);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(89, 29);
-            this.btnSalvar.TabIndex = 6;
-            this.btnSalvar.Text = "SALVAR";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnLimparForm.Click += new System.EventHandler(this.btnLimparForm_Click);
             // 
             // lblImagemPrincipal
             // 
@@ -480,6 +481,21 @@
             this.radSim.Text = "Sim";
             this.radSim.UseVisualStyleBackColor = true;
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BorderColor = System.Drawing.Color.Black;
+            this.btnSalvar.BorderRadius = 10;
+            this.btnSalvar.BorderThickness = 2;
+            this.btnSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(414, 72);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(89, 29);
+            this.btnSalvar.TabIndex = 6;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
             // tlpBase4
             // 
             this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -487,14 +503,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpBase4.ColumnCount = 1;
             this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 2);
+            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
             this.tlpBase4.Controls.Add(this.rgbImagensP, 0, 0);
             this.tlpBase4.Location = new System.Drawing.Point(632, 3);
             this.tlpBase4.Name = "tlpBase4";
-            this.tlpBase4.RowCount = 3;
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.44086F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.225806F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tlpBase4.RowCount = 2;
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpBase4.Size = new System.Drawing.Size(623, 543);
             this.tlpBase4.TabIndex = 1;
             // 
@@ -505,98 +521,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rgbOpcoes.BackgroundColor = System.Drawing.Color.White;
             this.rgbOpcoes.BorderWidth = 1F;
-            this.rgbOpcoes.Controls.Add(this.tlpBaseOpcoes1);
+            this.rgbOpcoes.Controls.Add(this.btnSairSSalvar);
             this.rgbOpcoes.CornerRadius = 10;
-            this.rgbOpcoes.Location = new System.Drawing.Point(3, 364);
+            this.rgbOpcoes.Location = new System.Drawing.Point(3, 491);
             this.rgbOpcoes.Name = "rgbOpcoes";
-            this.rgbOpcoes.Size = new System.Drawing.Size(617, 176);
+            this.rgbOpcoes.Size = new System.Drawing.Size(617, 49);
             this.rgbOpcoes.TabIndex = 0;
             this.rgbOpcoes.TabStop = false;
-            // 
-            // tlpBaseOpcoes1
-            // 
-            this.tlpBaseOpcoes1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBaseOpcoes1.ColumnCount = 1;
-            this.tlpBaseOpcoes1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBaseOpcoes1.Controls.Add(this.btnGerenciarColaboradores, 0, 1);
-            this.tlpBaseOpcoes1.Controls.Add(this.btnGerenciarEtapasP, 0, 2);
-            this.tlpBaseOpcoes1.Controls.Add(this.tlpBaseOpcoes2, 0, 0);
-            this.tlpBaseOpcoes1.Location = new System.Drawing.Point(7, 11);
-            this.tlpBaseOpcoes1.Name = "tlpBaseOpcoes1";
-            this.tlpBaseOpcoes1.RowCount = 3;
-            this.tlpBaseOpcoes1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.69231F));
-            this.tlpBaseOpcoes1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.97436F));
-            this.tlpBaseOpcoes1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tlpBaseOpcoes1.Size = new System.Drawing.Size(601, 159);
-            this.tlpBaseOpcoes1.TabIndex = 0;
-            // 
-            // btnGerenciarColaboradores
-            // 
-            this.btnGerenciarColaboradores.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerenciarColaboradores.BorderColor = System.Drawing.Color.Black;
-            this.btnGerenciarColaboradores.BorderRadius = 10;
-            this.btnGerenciarColaboradores.BorderThickness = 2;
-            this.btnGerenciarColaboradores.ButtonColor = System.Drawing.Color.White;
-            this.btnGerenciarColaboradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerenciarColaboradores.Location = new System.Drawing.Point(3, 60);
-            this.btnGerenciarColaboradores.Name = "btnGerenciarColaboradores";
-            this.btnGerenciarColaboradores.Size = new System.Drawing.Size(595, 36);
-            this.btnGerenciarColaboradores.TabIndex = 13;
-            this.btnGerenciarColaboradores.Text = "GERENCIAR COLABORADORES DO PROJETO";
-            this.btnGerenciarColaboradores.UseVisualStyleBackColor = true;
-            // 
-            // btnGerenciarEtapasP
-            // 
-            this.btnGerenciarEtapasP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerenciarEtapasP.BorderColor = System.Drawing.Color.Black;
-            this.btnGerenciarEtapasP.BorderRadius = 10;
-            this.btnGerenciarEtapasP.BorderThickness = 2;
-            this.btnGerenciarEtapasP.ButtonColor = System.Drawing.Color.White;
-            this.btnGerenciarEtapasP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerenciarEtapasP.Location = new System.Drawing.Point(3, 114);
-            this.btnGerenciarEtapasP.Name = "btnGerenciarEtapasP";
-            this.btnGerenciarEtapasP.Size = new System.Drawing.Size(595, 36);
-            this.btnGerenciarEtapasP.TabIndex = 11;
-            this.btnGerenciarEtapasP.Text = "GERENCIAR ETAPAS DO PROJETO";
-            this.btnGerenciarEtapasP.UseVisualStyleBackColor = true;
-            // 
-            // tlpBaseOpcoes2
-            // 
-            this.tlpBaseOpcoes2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBaseOpcoes2.ColumnCount = 3;
-            this.tlpBaseOpcoes2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tlpBaseOpcoes2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tlpBaseOpcoes2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tlpBaseOpcoes2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBaseOpcoes2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBaseOpcoes2.Controls.Add(this.btnCancelar, 0, 0);
-            this.tlpBaseOpcoes2.Controls.Add(this.btnSairSSalvar, 1, 0);
-            this.tlpBaseOpcoes2.Controls.Add(this.btnAtualizar, 2, 0);
-            this.tlpBaseOpcoes2.Location = new System.Drawing.Point(3, 3);
-            this.tlpBaseOpcoes2.Name = "tlpBaseOpcoes2";
-            this.tlpBaseOpcoes2.RowCount = 1;
-            this.tlpBaseOpcoes2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBaseOpcoes2.Size = new System.Drawing.Size(595, 45);
-            this.tlpBaseOpcoes2.TabIndex = 14;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.BorderColor = System.Drawing.Color.Black;
-            this.btnCancelar.BorderRadius = 10;
-            this.btnCancelar.BorderThickness = 2;
-            this.btnCancelar.ButtonColor = System.Drawing.Color.White;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(3, 4);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(192, 36);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnSairSSalvar
             // 
@@ -606,27 +537,13 @@
             this.btnSairSSalvar.BorderThickness = 2;
             this.btnSairSSalvar.ButtonColor = System.Drawing.Color.White;
             this.btnSairSSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSairSSalvar.Location = new System.Drawing.Point(201, 4);
+            this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
             this.btnSairSSalvar.Name = "btnSairSSalvar";
-            this.btnSairSSalvar.Size = new System.Drawing.Size(192, 36);
-            this.btnSairSSalvar.TabIndex = 10;
-            this.btnSairSSalvar.Text = "SAIR SEM SALVAR";
+            this.btnSairSSalvar.Size = new System.Drawing.Size(595, 36);
+            this.btnSairSSalvar.TabIndex = 12;
+            this.btnSairSSalvar.Text = "VOLTAR PARA O GERENCIAMENTO DO PROJETO";
             this.btnSairSSalvar.UseVisualStyleBackColor = true;
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAtualizar.BorderColor = System.Drawing.Color.Black;
-            this.btnAtualizar.BorderRadius = 10;
-            this.btnAtualizar.BorderThickness = 2;
-            this.btnAtualizar.ButtonColor = System.Drawing.Color.White;
-            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(399, 4);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(193, 36);
-            this.btnAtualizar.TabIndex = 12;
-            this.btnAtualizar.Text = "ATUALIZAR";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnSairSSalvar.Click += new System.EventHandler(this.btnSairSSalvar_Click);
             // 
             // rgbImagensP
             // 
@@ -635,24 +552,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rgbImagensP.BackgroundColor = System.Drawing.Color.White;
             this.rgbImagensP.BorderWidth = 1F;
-            this.rgbImagensP.Controls.Add(this.lblStatus);
             this.rgbImagensP.Controls.Add(this.flpImagens);
             this.rgbImagensP.Controls.Add(this.lblImagens);
             this.rgbImagensP.CornerRadius = 10;
             this.rgbImagensP.Location = new System.Drawing.Point(3, 3);
             this.rgbImagensP.Name = "rgbImagensP";
-            this.rgbImagensP.Size = new System.Drawing.Size(617, 338);
+            this.rgbImagensP.Size = new System.Drawing.Size(617, 482);
             this.rgbImagensP.TabIndex = 1;
             this.rgbImagensP.TabStop = false;
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblStatus.Location = new System.Drawing.Point(7, 312);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(601, 19);
-            this.lblStatus.TabIndex = 2;
             // 
             // flpImagens
             // 
@@ -662,7 +569,7 @@
             this.flpImagens.AutoScroll = true;
             this.flpImagens.Location = new System.Drawing.Point(7, 45);
             this.flpImagens.Name = "flpImagens";
-            this.flpImagens.Size = new System.Drawing.Size(601, 264);
+            this.flpImagens.Size = new System.Drawing.Size(601, 431);
             this.flpImagens.TabIndex = 1;
             // 
             // lblImagens
@@ -682,8 +589,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpBase1.ColumnCount = 1;
             this.tlpBase1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBase1.Controls.Add(this.TLPHead2, 0, 1);
             this.tlpBase1.Controls.Add(this.tlpBase2, 0, 2);
-            this.tlpBase1.Controls.Add(this.rgbHeadImgs2, 0, 1);
             this.tlpBase1.Controls.Add(this.TLPHead1, 0, 0);
             this.tlpBase1.Location = new System.Drawing.Point(0, 0);
             this.tlpBase1.Name = "tlpBase1";
@@ -693,6 +600,104 @@
             this.tlpBase1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpBase1.Size = new System.Drawing.Size(1264, 681);
             this.tlpBase1.TabIndex = 5;
+            // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
+            this.TLPHead1.TabIndex = 7;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(360, 6);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(547, 39);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "GERENCIAMENTO DE IMAGENS";
+            // 
+            // ovalPictureBox1
+            // 
+            this.ovalPictureBox1._bordercolor = System.Drawing.Color.Red;
+            this.ovalPictureBox1._borderwidth = 3F;
+            this.ovalPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ovalPictureBox1.Location = new System.Drawing.Point(1193, 0);
+            this.ovalPictureBox1.Name = "ovalPictureBox1";
+            this.ovalPictureBox1.Size = new System.Drawing.Size(48, 50);
+            this.ovalPictureBox1.TabIndex = 1;
+            this.ovalPictureBox1.TabStop = false;
+            // 
+            // ovalPictureBox2
+            // 
+            this.ovalPictureBox2._bordercolor = System.Drawing.Color.Red;
+            this.ovalPictureBox2._borderwidth = 3F;
+            this.ovalPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ovalPictureBox2.Location = new System.Drawing.Point(1139, 0);
+            this.ovalPictureBox2.Name = "ovalPictureBox2";
+            this.ovalPictureBox2.Size = new System.Drawing.Size(48, 50);
+            this.ovalPictureBox2.TabIndex = 2;
+            this.ovalPictureBox2.TabStop = false;
+            // 
+            // ovalPictureBox3
+            // 
+            this.ovalPictureBox3._bordercolor = System.Drawing.Color.Red;
+            this.ovalPictureBox3._borderwidth = 3F;
+            this.ovalPictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ovalPictureBox3.Location = new System.Drawing.Point(1085, 0);
+            this.ovalPictureBox3.Name = "ovalPictureBox3";
+            this.ovalPictureBox3.Size = new System.Drawing.Size(48, 50);
+            this.ovalPictureBox3.TabIndex = 3;
+            this.ovalPictureBox3.TabStop = false;
+            // 
+            // rgbHeadImgs1
+            // 
+            this.rgbHeadImgs1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbHeadImgs1.AutoSize = true;
+            this.rgbHeadImgs1.BackgroundColor = System.Drawing.Color.White;
+            this.rgbHeadImgs1.BorderWidth = 1F;
+            this.rgbHeadImgs1.Controls.Add(this.ovalPictureBox3);
+            this.rgbHeadImgs1.Controls.Add(this.ovalPictureBox2);
+            this.rgbHeadImgs1.Controls.Add(this.ovalPictureBox1);
+            this.rgbHeadImgs1.Controls.Add(this.lblTitulo);
+            this.rgbHeadImgs1.CornerRadius = 10;
+            this.rgbHeadImgs1.Location = new System.Drawing.Point(3, 3);
+            this.rgbHeadImgs1.Name = "rgbHeadImgs1";
+            this.rgbHeadImgs1.Size = new System.Drawing.Size(1258, 54);
+            this.rgbHeadImgs1.TabIndex = 6;
+            this.rgbHeadImgs1.TabStop = false;
+            // 
+            // TLPHead2
+            // 
+            this.TLPHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead2.ColumnCount = 1;
+            this.TLPHead2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Controls.Add(this.rgbHeadImgs2, 0, 0);
+            this.TLPHead2.Location = new System.Drawing.Point(0, 60);
+            this.TLPHead2.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead2.Name = "TLPHead2";
+            this.TLPHead2.RowCount = 1;
+            this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Size = new System.Drawing.Size(1264, 66);
+            this.TLPHead2.TabIndex = 11;
             // 
             // rgbHeadImgs2
             // 
@@ -704,10 +709,10 @@
             this.rgbHeadImgs2.BorderWidth = 1F;
             this.rgbHeadImgs2.Controls.Add(this.TLPInfoshead);
             this.rgbHeadImgs2.CornerRadius = 10;
-            this.rgbHeadImgs2.Location = new System.Drawing.Point(3, 63);
+            this.rgbHeadImgs2.Location = new System.Drawing.Point(3, 3);
             this.rgbHeadImgs2.Name = "rgbHeadImgs2";
             this.rgbHeadImgs2.Size = new System.Drawing.Size(1258, 60);
-            this.rgbHeadImgs2.TabIndex = 6;
+            this.rgbHeadImgs2.TabIndex = 7;
             this.rgbHeadImgs2.TabStop = false;
             // 
             // TLPInfoshead
@@ -723,8 +728,8 @@
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
             this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
             this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
-            this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
             this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
+            this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
             this.TLPInfoshead.Location = new System.Drawing.Point(6, 5);
             this.TLPInfoshead.Name = "TLPInfoshead";
             this.TLPInfoshead.RowCount = 1;
@@ -820,20 +825,6 @@
             this.lblAtualizadoquando.Text = "Atualizado em";
             this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblPorcentagem
-            // 
-            this.lblPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPorcentagem.AutoSize = true;
-            this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(569, 0);
-            this.lblPorcentagem.Name = "lblPorcentagem";
-            this.lblPorcentagem.Size = new System.Drawing.Size(107, 49);
-            this.lblPorcentagem.TabIndex = 2;
-            this.lblPorcentagem.Text = "%";
-            this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // groupPorcentagem
             // 
             this.groupPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -863,87 +854,19 @@
             this.groupPorcentagem2.TabIndex = 0;
             this.groupPorcentagem2.TabStop = false;
             // 
-            // TLPHead1
+            // lblPorcentagem
             // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
-            this.TLPHead1.TabIndex = 7;
-            // 
-            // rgbHeadImgs1
-            // 
-            this.rgbHeadImgs1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbHeadImgs1.AutoSize = true;
-            this.rgbHeadImgs1.BackgroundColor = System.Drawing.Color.White;
-            this.rgbHeadImgs1.BorderWidth = 1F;
-            this.rgbHeadImgs1.Controls.Add(this.ovalPictureBox3);
-            this.rgbHeadImgs1.Controls.Add(this.ovalPictureBox2);
-            this.rgbHeadImgs1.Controls.Add(this.ovalPictureBox1);
-            this.rgbHeadImgs1.Controls.Add(this.lblTitulo);
-            this.rgbHeadImgs1.CornerRadius = 10;
-            this.rgbHeadImgs1.Location = new System.Drawing.Point(3, 3);
-            this.rgbHeadImgs1.Name = "rgbHeadImgs1";
-            this.rgbHeadImgs1.Size = new System.Drawing.Size(1258, 54);
-            this.rgbHeadImgs1.TabIndex = 6;
-            this.rgbHeadImgs1.TabStop = false;
-            // 
-            // ovalPictureBox3
-            // 
-            this.ovalPictureBox3._bordercolor = System.Drawing.Color.Red;
-            this.ovalPictureBox3._borderwidth = 3F;
-            this.ovalPictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ovalPictureBox3.Location = new System.Drawing.Point(1085, 0);
-            this.ovalPictureBox3.Name = "ovalPictureBox3";
-            this.ovalPictureBox3.Size = new System.Drawing.Size(48, 50);
-            this.ovalPictureBox3.TabIndex = 3;
-            this.ovalPictureBox3.TabStop = false;
-            // 
-            // ovalPictureBox2
-            // 
-            this.ovalPictureBox2._bordercolor = System.Drawing.Color.Red;
-            this.ovalPictureBox2._borderwidth = 3F;
-            this.ovalPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ovalPictureBox2.Location = new System.Drawing.Point(1139, 0);
-            this.ovalPictureBox2.Name = "ovalPictureBox2";
-            this.ovalPictureBox2.Size = new System.Drawing.Size(48, 50);
-            this.ovalPictureBox2.TabIndex = 2;
-            this.ovalPictureBox2.TabStop = false;
-            // 
-            // ovalPictureBox1
-            // 
-            this.ovalPictureBox1._bordercolor = System.Drawing.Color.Red;
-            this.ovalPictureBox1._borderwidth = 3F;
-            this.ovalPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ovalPictureBox1.Location = new System.Drawing.Point(1193, 0);
-            this.ovalPictureBox1.Name = "ovalPictureBox1";
-            this.ovalPictureBox1.Size = new System.Drawing.Size(48, 50);
-            this.ovalPictureBox1.TabIndex = 1;
-            this.ovalPictureBox1.TabStop = false;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(360, 6);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(547, 39);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "GERENCIAMENTO DE IMAGENS";
+            this.lblPorcentagem.AutoSize = true;
+            this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentagem.Location = new System.Drawing.Point(569, 0);
+            this.lblPorcentagem.Name = "lblPorcentagem";
+            this.lblPorcentagem.Size = new System.Drawing.Size(107, 49);
+            this.lblPorcentagem.TabIndex = 2;
+            this.lblPorcentagem.Text = "%";
+            this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmGerenciamentoImagens
             // 
@@ -972,12 +895,18 @@
             this.tlpBase6.PerformLayout();
             this.tlpBase4.ResumeLayout(false);
             this.rgbOpcoes.ResumeLayout(false);
-            this.tlpBaseOpcoes1.ResumeLayout(false);
-            this.tlpBaseOpcoes2.ResumeLayout(false);
             this.rgbImagensP.ResumeLayout(false);
             this.rgbImagensP.PerformLayout();
             this.tlpBase1.ResumeLayout(false);
-            this.tlpBase1.PerformLayout();
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).EndInit();
+            this.rgbHeadImgs1.ResumeLayout(false);
+            this.rgbHeadImgs1.PerformLayout();
+            this.TLPHead2.ResumeLayout(false);
+            this.TLPHead2.PerformLayout();
             this.rgbHeadImgs2.ResumeLayout(false);
             this.TLPInfoshead.ResumeLayout(false);
             this.TLPInfoshead.PerformLayout();
@@ -986,13 +915,6 @@
             this.TLPAtualizacao.ResumeLayout(false);
             this.TLPAtualizacao.PerformLayout();
             this.groupPorcentagem.ResumeLayout(false);
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
-            this.rgbHeadImgs1.ResumeLayout(false);
-            this.rgbHeadImgs1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1002,11 +924,6 @@
         private System.Windows.Forms.TableLayoutPanel tlpBase2;
         private System.Windows.Forms.TableLayoutPanel tlpBase4;
         private RoundedGroupBox rgbOpcoes;
-        private RoundButton btnGerenciarColaboradores;
-        private RoundButton btnCancelar;
-        private RoundButton btnGerenciarEtapasP;
-        private RoundButton btnAtualizar;
-        private RoundButton btnSairSSalvar;
         private RoundedGroupBox rgbImagensP;
         private System.Windows.Forms.Label lblImagens;
         private System.Windows.Forms.TableLayoutPanel tlpBase3;
@@ -1027,13 +944,24 @@
         private RoundedGroupBox rgbNomeP;
         private RoundedGroupBox rgbDescricaoImg;
         private System.Windows.Forms.TextBox txtDescricaoImg;
-        private System.Windows.Forms.Label lblCar3;
         private CustomLine customLine3;
         private RoundedGroupBox rgbUpload;
         private System.Windows.Forms.TableLayoutPanel tlpBase1;
         private System.Windows.Forms.FlowLayoutPanel flpImagens;
-        private System.Windows.Forms.TableLayoutPanel tlpBaseOpcoes1;
-        private System.Windows.Forms.TableLayoutPanel tlpBaseOpcoes2;
+        private System.Windows.Forms.RadioButton radSim;
+        private RoundButton btnUpload;
+        private System.Windows.Forms.Label lblNomeProjeto;
+        private System.Windows.Forms.PictureBox pcbUpload;
+        private RoundButton btnExcluir;
+        private RoundButton btnSairSSalvar;
+        private System.Windows.Forms.Label lblCar3;
+        private System.Windows.Forms.TableLayoutPanel TLPHead1;
+        private RoundedGroupBox rgbHeadImgs1;
+        private OvalPictureBox ovalPictureBox3;
+        private OvalPictureBox ovalPictureBox2;
+        private OvalPictureBox ovalPictureBox1;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.TableLayoutPanel TLPHead2;
         private RoundedGroupBox rgbHeadImgs2;
         private System.Windows.Forms.TableLayoutPanel TLPInfoshead;
         private System.Windows.Forms.TableLayoutPanel TLPCriacao;
@@ -1042,19 +970,8 @@
         private System.Windows.Forms.TableLayoutPanel TLPAtualizacao;
         private System.Windows.Forms.Label lblAtualizador;
         private System.Windows.Forms.Label lblAtualizadoquando;
-        private System.Windows.Forms.Label lblPorcentagem;
         private CustomGroupBox groupPorcentagem;
         private CustomGroupBox groupPorcentagem2;
-        private System.Windows.Forms.RadioButton radSim;
-        private System.Windows.Forms.Label lblStatus;
-        private RoundButton btnUpload;
-        private System.Windows.Forms.Label lblNomeProjeto;
-        private System.Windows.Forms.TableLayoutPanel TLPHead1;
-        private RoundedGroupBox rgbHeadImgs1;
-        private OvalPictureBox ovalPictureBox3;
-        private OvalPictureBox ovalPictureBox2;
-        private OvalPictureBox ovalPictureBox1;
-        private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.PictureBox pcbUpload;
+        private System.Windows.Forms.Label lblPorcentagem;
     }
 }

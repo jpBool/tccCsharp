@@ -100,6 +100,7 @@
             this.ForeColor = System.Drawing.Color.Red;
             this.Name = "Coisas";
             this.Text = "Coisas";
+            this.Load += new System.EventHandler(this.Coisas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opbExcluir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbCompartilhar)).EndInit();
             this.ResumeLayout(false);

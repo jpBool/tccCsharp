@@ -31,5 +31,10 @@ namespace tccCsharp
         {
             roundButton1.BorderColor = Color.Black;
         }
+
+        private void Coisas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
