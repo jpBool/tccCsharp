@@ -47,7 +47,6 @@
             this.lblAtivoDesde = new System.Windows.Forms.Label();
             this.TLPAvatar = new System.Windows.Forms.TableLayoutPanel();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.opcAvatar = new tccCsharp.OvalPictureBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.TLP_Neta2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBBio = new tccCsharp.RoundedGroupBox();
@@ -59,14 +58,12 @@
             this.lblProjetos = new System.Windows.Forms.Label();
             this.TLP_Filha2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGPProjeto2 = new tccCsharp.RoundedGroupBox();
-            this.opbEditarP2 = new tccCsharp.OvalPictureBox();
             this.RGBDescricaoP2 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP2 = new System.Windows.Forms.Label();
             this.lblNomeP2 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnAvancar = new System.Windows.Forms.Button();
             this.RGPProjeto1 = new tccCsharp.RoundedGroupBox();
-            this.opbEditarP1 = new tccCsharp.OvalPictureBox();
             this.RGBDescricaoP1 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP1 = new System.Windows.Forms.Label();
             this.lblNomeP1 = new System.Windows.Forms.Label();
@@ -74,9 +71,12 @@
             this.RGBDescricaoP3 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP3 = new System.Windows.Forms.Label();
             this.lblNomeP3 = new System.Windows.Forms.Label();
-            this.opbEditarP3 = new tccCsharp.OvalPictureBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
+            this.opcAvatar = new tccCsharp.OvalPictureBox();
+            this.opbEditarP2 = new tccCsharp.OvalPictureBox();
+            this.opbEditarP1 = new tccCsharp.OvalPictureBox();
+            this.opbEditarP3 = new tccCsharp.OvalPictureBox();
             this.opbRecarregar = new tccCsharp.OvalPictureBox();
             this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
             this.opbLogout = new tccCsharp.OvalPictureBox();
@@ -90,23 +90,23 @@
             this.RGBSeguidores.SuspendLayout();
             this.RGBCommits.SuspendLayout();
             this.TLPAvatar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).BeginInit();
             this.TLP_Neta2.SuspendLayout();
             this.RGBBio.SuspendLayout();
             this.tlpOpcoes.SuspendLayout();
             this.rgbProjetos.SuspendLayout();
             this.TLP_Filha2.SuspendLayout();
             this.RGPProjeto2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).BeginInit();
             this.RGBDescricaoP2.SuspendLayout();
             this.RGPProjeto1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).BeginInit();
             this.RGBDescricaoP1.SuspendLayout();
             this.RGPProjeto3.SuspendLayout();
             this.RGBDescricaoP3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).BeginInit();
             this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogout)).BeginInit();
@@ -162,10 +162,10 @@
             this.RGBNeta1.BorderWidth = 1F;
             this.RGBNeta1.Controls.Add(this.TLP_Neta1);
             this.RGBNeta1.CornerRadius = 10;
-            this.RGBNeta1.Location = new System.Drawing.Point(15, 0);
-            this.RGBNeta1.Margin = new System.Windows.Forms.Padding(15, 0, 15, 15);
+            this.RGBNeta1.Location = new System.Drawing.Point(15, 10);
+            this.RGBNeta1.Margin = new System.Windows.Forms.Padding(15, 10, 15, 15);
             this.RGBNeta1.Name = "RGBNeta1";
-            this.RGBNeta1.Size = new System.Drawing.Size(603, 190);
+            this.RGBNeta1.Size = new System.Drawing.Size(603, 180);
             this.RGBNeta1.TabIndex = 3;
             this.RGBNeta1.TabStop = false;
             // 
@@ -185,7 +185,7 @@
             this.TLP_Neta1.Name = "TLP_Neta1";
             this.TLP_Neta1.RowCount = 1;
             this.TLP_Neta1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLP_Neta1.Size = new System.Drawing.Size(589, 175);
+            this.TLP_Neta1.Size = new System.Drawing.Size(589, 165);
             this.TLP_Neta1.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -202,7 +202,7 @@
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(289, 169);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(289, 159);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // tableLayoutPanel9
@@ -219,7 +219,7 @@
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(283, 78);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(283, 73);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // RGBSeguindo
@@ -236,7 +236,7 @@
             this.RGBSeguindo.Location = new System.Drawing.Point(151, 10);
             this.RGBSeguindo.Margin = new System.Windows.Forms.Padding(10);
             this.RGBSeguindo.Name = "RGBSeguindo";
-            this.RGBSeguindo.Size = new System.Drawing.Size(122, 58);
+            this.RGBSeguindo.Size = new System.Drawing.Size(122, 53);
             this.RGBSeguindo.TabIndex = 10;
             this.RGBSeguindo.TabStop = false;
             // 
@@ -245,7 +245,7 @@
             this.lblNSeguindo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNSeguindo.BackColor = System.Drawing.Color.Transparent;
-            this.lblNSeguindo.Location = new System.Drawing.Point(8, 32);
+            this.lblNSeguindo.Location = new System.Drawing.Point(8, 27);
             this.lblNSeguindo.Name = "lblNSeguindo";
             this.lblNSeguindo.Size = new System.Drawing.Size(110, 20);
             this.lblNSeguindo.TabIndex = 52;
@@ -261,7 +261,7 @@
             this.lblSeguindo.Location = new System.Drawing.Point(30, 9);
             this.lblSeguindo.Margin = new System.Windows.Forms.Padding(50);
             this.lblSeguindo.Name = "lblSeguindo";
-            this.lblSeguindo.Size = new System.Drawing.Size(66, 20);
+            this.lblSeguindo.Size = new System.Drawing.Size(66, 15);
             this.lblSeguindo.TabIndex = 50;
             this.lblSeguindo.Text = "(num)";
             this.lblSeguindo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -279,7 +279,7 @@
             this.RGBSeguidores.Location = new System.Drawing.Point(10, 10);
             this.RGBSeguidores.Margin = new System.Windows.Forms.Padding(10);
             this.RGBSeguidores.Name = "RGBSeguidores";
-            this.RGBSeguidores.Size = new System.Drawing.Size(121, 58);
+            this.RGBSeguidores.Size = new System.Drawing.Size(121, 53);
             this.RGBSeguidores.TabIndex = 0;
             this.RGBSeguidores.TabStop = false;
             // 
@@ -288,7 +288,7 @@
             this.lblNSeguidores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNSeguidores.BackColor = System.Drawing.Color.Transparent;
-            this.lblNSeguidores.Location = new System.Drawing.Point(6, 32);
+            this.lblNSeguidores.Location = new System.Drawing.Point(6, 27);
             this.lblNSeguidores.Name = "lblNSeguidores";
             this.lblNSeguidores.Size = new System.Drawing.Size(109, 20);
             this.lblNSeguidores.TabIndex = 51;
@@ -303,7 +303,7 @@
             this.lblSeguidores.BackColor = System.Drawing.Color.Transparent;
             this.lblSeguidores.Location = new System.Drawing.Point(26, 9);
             this.lblSeguidores.Name = "lblSeguidores";
-            this.lblSeguidores.Size = new System.Drawing.Size(67, 20);
+            this.lblSeguidores.Size = new System.Drawing.Size(67, 15);
             this.lblSeguidores.TabIndex = 49;
             this.lblSeguidores.Text = "(num)";
             this.lblSeguidores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,9 +321,9 @@
             this.RGBCommits.Controls.Add(this.lblAMD);
             this.RGBCommits.Controls.Add(this.lblAtivoDesde);
             this.RGBCommits.CornerRadius = 10;
-            this.RGBCommits.Location = new System.Drawing.Point(3, 87);
+            this.RGBCommits.Location = new System.Drawing.Point(3, 82);
             this.RGBCommits.Name = "RGBCommits";
-            this.RGBCommits.Size = new System.Drawing.Size(283, 79);
+            this.RGBCommits.Size = new System.Drawing.Size(283, 74);
             this.RGBCommits.TabIndex = 2;
             this.RGBCommits.TabStop = false;
             // 
@@ -331,7 +331,7 @@
             // 
             this.lblNCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNCommits.AutoSize = true;
-            this.lblNCommits.Location = new System.Drawing.Point(137, 6);
+            this.lblNCommits.Location = new System.Drawing.Point(137, 3);
             this.lblNCommits.Name = "lblNCommits";
             this.lblNCommits.Size = new System.Drawing.Size(68, 20);
             this.lblNCommits.TabIndex = 41;
@@ -341,7 +341,7 @@
             // 
             this.lblCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCommits.AutoSize = true;
-            this.lblCommits.Location = new System.Drawing.Point(17, 6);
+            this.lblCommits.Location = new System.Drawing.Point(17, 3);
             this.lblCommits.Name = "lblCommits";
             this.lblCommits.Size = new System.Drawing.Size(114, 20);
             this.lblCommits.TabIndex = 38;
@@ -351,7 +351,7 @@
             // 
             this.lblAMD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAMD.AutoSize = true;
-            this.lblAMD.Location = new System.Drawing.Point(119, 58);
+            this.lblAMD.Location = new System.Drawing.Point(119, 55);
             this.lblAMD.Name = "lblAMD";
             this.lblAMD.Size = new System.Drawing.Size(89, 20);
             this.lblAMD.TabIndex = 40;
@@ -361,7 +361,7 @@
             // 
             this.lblAtivoDesde.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAtivoDesde.AutoSize = true;
-            this.lblAtivoDesde.Location = new System.Drawing.Point(17, 58);
+            this.lblAtivoDesde.Location = new System.Drawing.Point(17, 55);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
             this.lblAtivoDesde.Size = new System.Drawing.Size(96, 20);
             this.lblAtivoDesde.TabIndex = 39;
@@ -383,42 +383,26 @@
             this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TLPAvatar.Size = new System.Drawing.Size(288, 169);
+            this.TLPAvatar.Size = new System.Drawing.Size(288, 159);
             this.TLPAvatar.TabIndex = 0;
             // 
             // lblEmail
             // 
             this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(120, 151);
+            this.lblEmail.Location = new System.Drawing.Point(120, 142);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(48, 18);
+            this.lblEmail.Size = new System.Drawing.Size(48, 17);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email";
-            // 
-            // opcAvatar
-            // 
-            this.opcAvatar._bordercolor = System.Drawing.Color.Red;
-            this.opcAvatar._borderwidth = 3F;
-            this.opcAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.opcAvatar.AutoHoover = false;
-            this.opcAvatar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.opcAvatar.BordaHoover = System.Drawing.Color.Green;
-            this.opcAvatar.BordaPrincipal = System.Drawing.Color.Black;
-            this.opcAvatar.Image = global::tccCsharp.Properties.Resources.Classic_Chess_King_Black;
-            this.opcAvatar.Location = new System.Drawing.Point(54, 3);
-            this.opcAvatar.Name = "opcAvatar";
-            this.opcAvatar.Size = new System.Drawing.Size(180, 128);
-            this.opcAvatar.TabIndex = 7;
-            this.opcAvatar.TabStop = false;
             // 
             // lblNome
             // 
             this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(118, 135);
+            this.lblNome.Location = new System.Drawing.Point(118, 127);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(51, 16);
+            this.lblNome.Size = new System.Drawing.Size(51, 15);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome";
             // 
@@ -451,10 +435,10 @@
             this.RGBBio.BorderWidth = 1F;
             this.RGBBio.Controls.Add(this.lblBio);
             this.RGBBio.CornerRadius = 10;
-            this.RGBBio.Location = new System.Drawing.Point(15, 0);
-            this.RGBBio.Margin = new System.Windows.Forms.Padding(15, 0, 15, 15);
+            this.RGBBio.Location = new System.Drawing.Point(15, 10);
+            this.RGBBio.Margin = new System.Windows.Forms.Padding(15, 10, 15, 15);
             this.RGBBio.Name = "RGBBio";
-            this.RGBBio.Size = new System.Drawing.Size(604, 132);
+            this.RGBBio.Size = new System.Drawing.Size(604, 122);
             this.RGBBio.TabIndex = 4;
             this.RGBBio.TabStop = false;
             // 
@@ -596,23 +580,6 @@
             this.RGPProjeto2.TabIndex = 32;
             this.RGPProjeto2.TabStop = false;
             // 
-            // opbEditarP2
-            // 
-            this.opbEditarP2._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP2._borderwidth = 5F;
-            this.opbEditarP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP2.AutoHoover = false;
-            this.opbEditarP2.BordaHoover = System.Drawing.Color.Green;
-            this.opbEditarP2.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbEditarP2.Image = global::tccCsharp.Properties.Resources.editar;
-            this.opbEditarP2.Location = new System.Drawing.Point(294, 1);
-            this.opbEditarP2.Name = "opbEditarP2";
-            this.opbEditarP2.Size = new System.Drawing.Size(48, 48);
-            this.opbEditarP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbEditarP2.TabIndex = 6;
-            this.opbEditarP2.TabStop = false;
-            this.opbEditarP2.Click += new System.EventHandler(this.opbEditarP2_Click);
-            // 
             // RGBDescricaoP2
             // 
             this.RGBDescricaoP2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -696,23 +663,6 @@
             this.RGPProjeto1.Size = new System.Drawing.Size(348, 311);
             this.RGPProjeto1.TabIndex = 31;
             this.RGPProjeto1.TabStop = false;
-            // 
-            // opbEditarP1
-            // 
-            this.opbEditarP1._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP1._borderwidth = 5F;
-            this.opbEditarP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP1.AutoHoover = false;
-            this.opbEditarP1.BordaHoover = System.Drawing.Color.Green;
-            this.opbEditarP1.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbEditarP1.Image = global::tccCsharp.Properties.Resources.editar;
-            this.opbEditarP1.Location = new System.Drawing.Point(294, 1);
-            this.opbEditarP1.Name = "opbEditarP1";
-            this.opbEditarP1.Size = new System.Drawing.Size(48, 48);
-            this.opbEditarP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbEditarP1.TabIndex = 5;
-            this.opbEditarP1.TabStop = false;
-            this.opbEditarP1.Click += new System.EventHandler(this.opbEditarP1_Click);
             // 
             // RGBDescricaoP1
             // 
@@ -808,23 +758,6 @@
             this.lblNomeP3.TabIndex = 31;
             this.lblNomeP3.Text = "Nome do projeto";
             // 
-            // opbEditarP3
-            // 
-            this.opbEditarP3._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP3._borderwidth = 5F;
-            this.opbEditarP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP3.AutoHoover = false;
-            this.opbEditarP3.BordaHoover = System.Drawing.Color.Green;
-            this.opbEditarP3.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbEditarP3.Image = global::tccCsharp.Properties.Resources.editar;
-            this.opbEditarP3.Location = new System.Drawing.Point(294, 1);
-            this.opbEditarP3.Name = "opbEditarP3";
-            this.opbEditarP3.Size = new System.Drawing.Size(48, 48);
-            this.opbEditarP3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.opbEditarP3.TabIndex = 4;
-            this.opbEditarP3.TabStop = false;
-            this.opbEditarP3.Click += new System.EventHandler(this.opbEditarP3_Click);
-            // 
             // TLPHead1
             // 
             this.TLPHead1.ColumnCount = 1;
@@ -832,13 +765,13 @@
             this.TLPHead1.Controls.Add(this.RGBHead1, 0, 0);
             this.TLPHead1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
             this.TLPHead1.Name = "TLPHead1";
             this.TLPHead1.RowCount = 1;
             this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.TLPHead1.Size = new System.Drawing.Size(1267, 52);
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TLPHead1.Size = new System.Drawing.Size(1267, 60);
             this.TLPHead1.TabIndex = 51;
             // 
             // RGBHead1
@@ -856,9 +789,79 @@
             this.RGBHead1.CornerRadius = 10;
             this.RGBHead1.Location = new System.Drawing.Point(3, 3);
             this.RGBHead1.Name = "RGBHead1";
-            this.RGBHead1.Size = new System.Drawing.Size(1261, 46);
+            this.RGBHead1.Size = new System.Drawing.Size(1261, 54);
             this.RGBHead1.TabIndex = 5;
             this.RGBHead1.TabStop = false;
+            // 
+            // opcAvatar
+            // 
+            this.opcAvatar._bordercolor = System.Drawing.Color.Red;
+            this.opcAvatar._borderwidth = 3F;
+            this.opcAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.opcAvatar.AutoHoover = false;
+            this.opcAvatar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.opcAvatar.BordaHoover = System.Drawing.Color.Green;
+            this.opcAvatar.BordaPrincipal = System.Drawing.Color.Black;
+            this.opcAvatar.Image = global::tccCsharp.Properties.Resources.Classic_Chess_King_Black;
+            this.opcAvatar.Location = new System.Drawing.Point(54, 3);
+            this.opcAvatar.Name = "opcAvatar";
+            this.opcAvatar.Size = new System.Drawing.Size(180, 121);
+            this.opcAvatar.TabIndex = 7;
+            this.opcAvatar.TabStop = false;
+            // 
+            // opbEditarP2
+            // 
+            this.opbEditarP2._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP2._borderwidth = 5F;
+            this.opbEditarP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP2.AutoHoover = false;
+            this.opbEditarP2.BackColor = System.Drawing.Color.Transparent;
+            this.opbEditarP2.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP2.BordaPrincipal = System.Drawing.Color.Black;
+            this.opbEditarP2.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+            this.opbEditarP2.Location = new System.Drawing.Point(294, 1);
+            this.opbEditarP2.Name = "opbEditarP2";
+            this.opbEditarP2.Size = new System.Drawing.Size(48, 48);
+            this.opbEditarP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbEditarP2.TabIndex = 6;
+            this.opbEditarP2.TabStop = false;
+            this.opbEditarP2.Click += new System.EventHandler(this.opbEditarP2_Click);
+            // 
+            // opbEditarP1
+            // 
+            this.opbEditarP1._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP1._borderwidth = 5F;
+            this.opbEditarP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP1.AutoHoover = false;
+            this.opbEditarP1.BackColor = System.Drawing.Color.Transparent;
+            this.opbEditarP1.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP1.BordaPrincipal = System.Drawing.Color.Black;
+            this.opbEditarP1.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+            this.opbEditarP1.Location = new System.Drawing.Point(294, 1);
+            this.opbEditarP1.Name = "opbEditarP1";
+            this.opbEditarP1.Size = new System.Drawing.Size(48, 48);
+            this.opbEditarP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbEditarP1.TabIndex = 5;
+            this.opbEditarP1.TabStop = false;
+            this.opbEditarP1.Click += new System.EventHandler(this.opbEditarP1_Click);
+            // 
+            // opbEditarP3
+            // 
+            this.opbEditarP3._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP3._borderwidth = 5F;
+            this.opbEditarP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP3.AutoHoover = false;
+            this.opbEditarP3.BackColor = System.Drawing.Color.Transparent;
+            this.opbEditarP3.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP3.BordaPrincipal = System.Drawing.Color.Black;
+            this.opbEditarP3.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+            this.opbEditarP3.Location = new System.Drawing.Point(294, 1);
+            this.opbEditarP3.Name = "opbEditarP3";
+            this.opbEditarP3.Size = new System.Drawing.Size(48, 48);
+            this.opbEditarP3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbEditarP3.TabIndex = 4;
+            this.opbEditarP3.TabStop = false;
+            this.opbEditarP3.Click += new System.EventHandler(this.opbEditarP3_Click);
             // 
             // opbRecarregar
             // 
@@ -867,14 +870,14 @@
             this.opbRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.opbRecarregar.AutoHoover = false;
-            this.opbRecarregar.BackColor = System.Drawing.Color.White;
+            this.opbRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.opbRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.opbRecarregar.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
-            this.opbRecarregar.Location = new System.Drawing.Point(1123, 1);
+            this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+            this.opbRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.opbRecarregar.Name = "opbRecarregar";
-            this.opbRecarregar.Size = new System.Drawing.Size(48, 44);
-            this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbRecarregar.Size = new System.Drawing.Size(48, 48);
+            this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbRecarregar.TabIndex = 10;
             this.opbRecarregar.TabStop = false;
             // 
@@ -885,14 +888,14 @@
             this.opbConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.opbConfiguracoes.AutoHoover = false;
-            this.opbConfiguracoes.BackColor = System.Drawing.Color.White;
+            this.opbConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.opbConfiguracoes.BordaHoover = System.Drawing.Color.Green;
             this.opbConfiguracoes.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
-            this.opbConfiguracoes.Location = new System.Drawing.Point(1186, 1);
+            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+            this.opbConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.opbConfiguracoes.Name = "opbConfiguracoes";
-            this.opbConfiguracoes.Size = new System.Drawing.Size(48, 44);
-            this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbConfiguracoes.Size = new System.Drawing.Size(48, 48);
+            this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbConfiguracoes.TabIndex = 9;
             this.opbConfiguracoes.TabStop = false;
             // 
@@ -903,14 +906,14 @@
             this.opbLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.opbLogout.AutoHoover = false;
-            this.opbLogout.BackColor = System.Drawing.Color.White;
+            this.opbLogout.BackColor = System.Drawing.Color.Transparent;
             this.opbLogout.BordaHoover = System.Drawing.Color.Green;
             this.opbLogout.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbLogout.Image = global::tccCsharp.Properties.Resources._logout_;
-            this.opbLogout.Location = new System.Drawing.Point(1054, 1);
+            this.opbLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+            this.opbLogout.Location = new System.Drawing.Point(1054, 4);
             this.opbLogout.Name = "opbLogout";
-            this.opbLogout.Size = new System.Drawing.Size(48, 44);
-            this.opbLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.opbLogout.Size = new System.Drawing.Size(48, 48);
+            this.opbLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbLogout.TabIndex = 8;
             this.opbLogout.TabStop = false;
             // 
@@ -937,7 +940,6 @@
             this.RGBCommits.PerformLayout();
             this.TLPAvatar.ResumeLayout(false);
             this.TLPAvatar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).EndInit();
             this.TLP_Neta2.ResumeLayout(false);
             this.RGBBio.ResumeLayout(false);
             this.RGBBio.PerformLayout();
@@ -948,19 +950,20 @@
             this.TLP_Filha2.PerformLayout();
             this.RGPProjeto2.ResumeLayout(false);
             this.RGPProjeto2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).EndInit();
             this.RGBDescricaoP2.ResumeLayout(false);
             this.RGPProjeto1.ResumeLayout(false);
             this.RGPProjeto1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).EndInit();
             this.RGBDescricaoP1.ResumeLayout(false);
             this.RGPProjeto3.ResumeLayout(false);
             this.RGPProjeto3.PerformLayout();
             this.RGBDescricaoP3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).EndInit();
             this.TLPHead1.ResumeLayout(false);
             this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogout)).EndInit();
@@ -973,7 +976,6 @@
         private System.Windows.Forms.Button btnAvancar;
         private System.Windows.Forms.TableLayoutPanel TLP_Mãe;
         private System.Windows.Forms.TableLayoutPanel TLP_Filha2;
-        private System.Windows.Forms.TableLayoutPanel TLP_Filha1;
         private RoundedGroupBox RGPProjeto1;
         private System.Windows.Forms.Label lblDescricaoP1;
         private System.Windows.Forms.Label lblNomeP1;
@@ -986,8 +988,13 @@
         private System.Windows.Forms.Label lblDescricaoP3;
         private RoundedGroupBox RGBDescricaoP2;
         private System.Windows.Forms.Label lblDescricaoP2;
-        private RoundedGroupBox RGBBio;
-        private System.Windows.Forms.Label lblBio;
+        private System.Windows.Forms.Label lblProjetos;
+        private OvalPictureBox opbEditarP3;
+        private OvalPictureBox opbEditarP2;
+        private OvalPictureBox opbEditarP1;
+        private RoundedGroupBox rgbProjetos;
+        private System.Windows.Forms.TableLayoutPanel TLPHead1;
+        private System.Windows.Forms.TableLayoutPanel TLP_Filha1;
         private RoundedGroupBox RGBNeta1;
         private System.Windows.Forms.TableLayoutPanel TLP_Neta1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
@@ -1005,18 +1012,14 @@
         private System.Windows.Forms.Label lblAtivoDesde;
         private System.Windows.Forms.TableLayoutPanel TLPAvatar;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Label lblProjetos;
         private OvalPictureBox opcAvatar;
-        private OvalPictureBox opbEditarP3;
-        private OvalPictureBox opbEditarP2;
-        private OvalPictureBox opbEditarP1;
-        private RoundedGroupBox rgbProjetos;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TableLayoutPanel TLP_Neta2;
+        private RoundedGroupBox RGBBio;
+        private System.Windows.Forms.Label lblBio;
         private System.Windows.Forms.TableLayoutPanel tlpOpcoes;
         private RoundButton btnAdicionar;
         private RoundButton btnEditarPerfil;
-        private System.Windows.Forms.TableLayoutPanel TLPHead1;
         private RoundedGroupBox RGBHead1;
         private OvalPictureBox opbRecarregar;
         private OvalPictureBox opbConfiguracoes;

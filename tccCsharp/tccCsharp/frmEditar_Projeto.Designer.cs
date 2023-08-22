@@ -103,11 +103,11 @@
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
-            this.OPBLogout = new tccCsharp.OvalPictureBox();
-            this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
-            this.OPBRecarregar = new tccCsharp.OvalPictureBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.OPBRecarregar = new tccCsharp.OvalPictureBox();
+            this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
+            this.OPBLogout = new tccCsharp.OvalPictureBox();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
@@ -133,10 +133,10 @@
             this.TLPAtualizacao.SuspendLayout();
             this.groupPorcentagem.SuspendLayout();
             this.TLPHead1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             this.RGBHead1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -150,6 +150,7 @@
             this.TLP_Mãe.Controls.Add(this.TLPHead2, 0, 1);
             this.TLP_Mãe.Controls.Add(this.TLPHead1, 0, 0);
             this.TLP_Mãe.Location = new System.Drawing.Point(-2, -3);
+            this.TLP_Mãe.Margin = new System.Windows.Forms.Padding(0);
             this.TLP_Mãe.Name = "TLP_Mãe";
             this.TLP_Mãe.RowCount = 3;
             this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
@@ -980,8 +981,6 @@
             this.btnEtapas.TextoPrincipal = System.Drawing.Color.Black;
             this.btnEtapas.UseVisualStyleBackColor = true;
             this.btnEtapas.Click += new System.EventHandler(this.btnEtapas_Click);
-            this.btnEtapas.MouseEnter += new System.EventHandler(this.btnEtapas_MouseEnter);
-            this.btnEtapas.MouseLeave += new System.EventHandler(this.btnEtapas_MouseLeave);
             // 
             // TLPButtons2
             // 
@@ -1022,8 +1021,6 @@
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            this.btnExcluir.MouseEnter += new System.EventHandler(this.btnExcluir_MouseEnter);
-            this.btnExcluir.MouseLeave += new System.EventHandler(this.btnExcluir_MouseLeave);
             // 
             // btnAtualizar
             // 
@@ -1044,8 +1041,6 @@
             this.btnAtualizar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
-            this.btnAtualizar.MouseEnter += new System.EventHandler(this.btnAtualizar_MouseEnter);
-            this.btnAtualizar.MouseLeave += new System.EventHandler(this.btnAtualizar_MouseLeave);
             // 
             // btnCancelar
             // 
@@ -1066,9 +1061,6 @@
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            this.btnCancelar.MouseEnter += new System.EventHandler(this.btnCancelar_MouseEnter);
-            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
-            // 
             // btnColaboradores
             // 
             this.btnColaboradores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1310,81 +1302,6 @@
             this.TLPHead1.Size = new System.Drawing.Size(1267, 60);
             this.TLPHead1.TabIndex = 4;
             // 
-            // OPBLogout
-            // 
-            this.OPBLogout._bordercolor = System.Drawing.Color.Red;
-            this.OPBLogout._borderwidth = 5F;
-            this.OPBLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.OPBLogout.AutoHoover = false;
-            this.OPBLogout.BackColor = System.Drawing.Color.White;
-            this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
-            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Black;
-            this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
-            this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
-            this.OPBLogout.Name = "OPBLogout";
-            this.OPBLogout.Size = new System.Drawing.Size(48, 48);
-            this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.OPBLogout.TabIndex = 8;
-            this.OPBLogout.TabStop = false;
-            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
-            this.OPBLogout.MouseEnter += new System.EventHandler(this.OPBLogout_MouseEnter);
-            this.OPBLogout.MouseLeave += new System.EventHandler(this.OPBLogout_MouseLeave);
-            // 
-            // OPBConfiguracoes
-            // 
-            this.OPBConfiguracoes._bordercolor = System.Drawing.Color.Red;
-            this.OPBConfiguracoes._borderwidth = 5F;
-            this.OPBConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.OPBConfiguracoes.AutoHoover = false;
-            this.OPBConfiguracoes.BackColor = System.Drawing.Color.White;
-            this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
-            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Black;
-            this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
-            this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
-            this.OPBConfiguracoes.Name = "OPBConfiguracoes";
-            this.OPBConfiguracoes.Size = new System.Drawing.Size(48, 48);
-            this.OPBConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.OPBConfiguracoes.TabIndex = 9;
-            this.OPBConfiguracoes.TabStop = false;
-            this.OPBConfiguracoes.Click += new System.EventHandler(this.OPBConfiguracoes_Click);
-            this.OPBConfiguracoes.MouseEnter += new System.EventHandler(this.OPBConfiguracoes_MouseEnter);
-            this.OPBConfiguracoes.MouseLeave += new System.EventHandler(this.OPBConfiguracoes_MouseLeave);
-            // 
-            // OPBRecarregar
-            // 
-            this.OPBRecarregar._bordercolor = System.Drawing.Color.Red;
-            this.OPBRecarregar._borderwidth = 5F;
-            this.OPBRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.OPBRecarregar.AutoHoover = false;
-            this.OPBRecarregar.BackColor = System.Drawing.Color.White;
-            this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
-            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Black;
-            this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
-            this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
-            this.OPBRecarregar.Name = "OPBRecarregar";
-            this.OPBRecarregar.Size = new System.Drawing.Size(48, 48);
-            this.OPBRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.OPBRecarregar.TabIndex = 10;
-            this.OPBRecarregar.TabStop = false;
-            this.OPBRecarregar.Click += new System.EventHandler(this.OPBRecarregar_Click);
-            this.OPBRecarregar.MouseEnter += new System.EventHandler(this.OPBRecarregar_MouseEnter);
-            this.OPBRecarregar.MouseLeave += new System.EventHandler(this.OPBRecarregar_MouseLeave);
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(497, 6);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(316, 39);
-            this.lblTitulo.TabIndex = 11;
-            this.lblTitulo.Text = "EDITAR PROJETO";
-            // 
             // RGBHead1
             // 
             this.RGBHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1404,6 +1321,75 @@
             this.RGBHead1.Size = new System.Drawing.Size(1261, 54);
             this.RGBHead1.TabIndex = 4;
             this.RGBHead1.TabStop = false;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(497, 6);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(316, 39);
+            this.lblTitulo.TabIndex = 11;
+            this.lblTitulo.Text = "EDITAR PROJETO";
+            // 
+            // OPBRecarregar
+            // 
+            this.OPBRecarregar._bordercolor = System.Drawing.Color.Red;
+            this.OPBRecarregar._borderwidth = 5F;
+            this.OPBRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPBRecarregar.AutoHoover = false;
+            this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
+            this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+            this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
+            this.OPBRecarregar.Name = "OPBRecarregar";
+            this.OPBRecarregar.Size = new System.Drawing.Size(48, 48);
+            this.OPBRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OPBRecarregar.TabIndex = 10;
+            this.OPBRecarregar.TabStop = false;
+            this.OPBRecarregar.Click += new System.EventHandler(this.OPBRecarregar_Click);
+            // 
+            // OPBConfiguracoes
+            // 
+            this.OPBConfiguracoes._bordercolor = System.Drawing.Color.Red;
+            this.OPBConfiguracoes._borderwidth = 5F;
+            this.OPBConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPBConfiguracoes.AutoHoover = false;
+            this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
+            this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
+            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+            this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
+            this.OPBConfiguracoes.Name = "OPBConfiguracoes";
+            this.OPBConfiguracoes.Size = new System.Drawing.Size(48, 48);
+            this.OPBConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OPBConfiguracoes.TabIndex = 9;
+            this.OPBConfiguracoes.TabStop = false;
+            this.OPBConfiguracoes.Click += new System.EventHandler(this.OPBConfiguracoes_Click);
+            // 
+            // OPBLogout
+            // 
+            this.OPBLogout._bordercolor = System.Drawing.Color.Red;
+            this.OPBLogout._borderwidth = 5F;
+            this.OPBLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPBLogout.AutoHoover = false;
+            this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
+            this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+            this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
+            this.OPBLogout.Name = "OPBLogout";
+            this.OPBLogout.Size = new System.Drawing.Size(48, 48);
+            this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OPBLogout.TabIndex = 8;
+            this.OPBLogout.TabStop = false;
+            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
             // 
             // frmEditar_Projeto
             // 
@@ -1457,11 +1443,11 @@
             this.groupPorcentagem.ResumeLayout(false);
             this.TLPHead1.ResumeLayout(false);
             this.TLPHead1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             this.RGBHead1.ResumeLayout(false);
             this.RGBHead1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
             this.ResumeLayout(false);
 
         }
