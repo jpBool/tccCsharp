@@ -24,14 +24,14 @@ namespace tccCsharp
         public void Refresh_projects(List<Project> projetos)
         {
             if (X == 0)
-                btnVoltar.Enabled = false;
+                OPBLeft.Visible = false;
             else
-                btnVoltar.Enabled = true;
+                OPBLeft.Visible = true;
 
             if (projetos.Count() <= X + 3)
-                btnAvancar.Enabled = false;
+                OPBRight.Visible = false;
             else
-                btnAvancar.Enabled = true;
+                OPBRight.Visible = true;
 
             Project projeto1 = new Project();
             if (projetos.Count > X + 0)
@@ -164,23 +164,28 @@ namespace tccCsharp
             opbRecarregar._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             opbConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             opbEditarP3._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            opbEditarP2._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             opbEditarP1._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            opbEditarP1._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            OPBLeft._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            OPBRight._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
             opbLogout.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             opbRecarregar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             opbConfiguracoes.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             opbEditarP3.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbEditarP2.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             opbEditarP1.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            opbEditarP1.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBLeft.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBRight.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
 
             opbLogout.AutoHoover = true;
             opbRecarregar.AutoHoover = true;
             opbConfiguracoes.AutoHoover = true;
             opbEditarP3.AutoHoover = true;
+            opbEditarP2.AutoHoover = true;
             opbEditarP1.AutoHoover = true;
-            opbEditarP1.AutoHoover = true;
-
+            OPBLeft.AutoHoover = true;
+            OPBRight.AutoHoover = true;
 
 
             //teste
@@ -212,37 +217,6 @@ namespace tccCsharp
         
 
         //MOUSE CLiCK
-        private void btnAvancar_Click(object sender, EventArgs e)
-        {
-            X += 3;
-            Refresh_projects(Program.projetos);
-        }
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            X -= 3;
-            Refresh_projects(Program.projetos);
-        }
-        private void OPBLogout_Click(object sender, EventArgs e)
-        {
-            Program.projetos.Clear();
-            Program.id_usuario = 0;
-            this.Close();
-        }
-        private void opbConfiguracoes_Click(object sender, EventArgs e)
-        {
-            //apenas teste
-            frmConfiguracoes formC = new frmConfiguracoes();
-            formC.ShowDialog();
-
-            /*frmPersonalizacao formP = new frmPersonalizacao();
-            formP.ShowDialog();*/
-        }
-        private void opbRecarregar_Click(object sender, EventArgs e)
-        {
-            DoDesign();
-            Program.projetos = Banco.CarregarProjetos(Program.projetos);
-            Refresh_projects(Program.projetos);
-        }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
@@ -320,6 +294,38 @@ namespace tccCsharp
             Program.id_projeto_atual = 0;
             Program.projetos = Banco.CarregarProjetos(Program.projetos);
             Refresh_projects(Program.projetos);
+        }
+
+        private void ovalPictureBox1_Click(object sender, EventArgs e)
+        {
+            X += 3;
+            Refresh_projects(Program.projetos);
+        }
+
+        private void ovalPictureBox2_Click(object sender, EventArgs e)
+        {
+            X -= 3;
+            Refresh_projects(Program.projetos);
+        }
+
+        private void opbConfiguracoes_Click_1(object sender, EventArgs e)
+        {
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+        }
+
+        private void opbRecarregar_Click_1(object sender, EventArgs e)
+        {
+            DoDesign();
+            Program.projetos = Banco.CarregarProjetos(Program.projetos);
+            Refresh_projects(Program.projetos);
+        }
+
+        private void opbLogout_Click_1(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
         }
     }
 }

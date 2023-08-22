@@ -157,21 +157,35 @@ namespace tccCsharp
             lblNomeProjeto.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
             //BOTOES
-
+            btnSairSSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnSairSSalvar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnSairSSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnSairSSalvar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnSairSSalvar.AutoHoover = true;
 
+            btnLimparForm.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnLimparForm.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnLimparForm.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnLimparForm.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnLimparForm.AutoHoover = true;
 
-            btnSairSSalvar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnSairSSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-
+            btnSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnSalvar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnSalvar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnSalvar.AutoHoover = true;
 
+            btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnExcluir.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnExcluir.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnExcluir.AutoHoover = true;
+
+            btnUpload.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnUpload.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnUpload.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnUpload.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnUpload.AutoHoover = true;
 
             //COMPONENTES DE AGRUPAMENTO
             rgbDescricaoImg.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
@@ -350,7 +364,7 @@ namespace tccCsharp
                 }
                 else
                 {
-                    //erro grave
+                    MessageBox.Show("Tem alguma coisa errada sua mula");
                 }
 
                 if (verifica == pcbUpload.Image)//Imagem continua a mesma
@@ -392,15 +406,18 @@ namespace tccCsharp
                         MessageBox.Show("Erro durante o upload: " + ex.Message);
                         Banco.DeleteImagem(idImagem);
                     }
-                    flpImagens.Controls.Clear();
-                    Imagens.Clear();
-                    Imagens = Banco.CarregaImagens(Imagens);
-                    for (int i = 0; i < Imagens.Count; i++)
-                    {
-                        CarregarImagem(Imagens[i]);
-                    }
+                }
+                flpImagens.Controls.Clear();
+                Imagens.Clear();
+                Imagens = Banco.CarregaImagens(Imagens);
+                for (int i = 0; i < Imagens.Count; i++)
+                {
+                    CarregarImagem(Imagens[i]);
                 }
                 EditandoImagem = false;
+                pcbUpload.Image = null;
+                txtDescricaoImg.Text = string.Empty;
+                txtNomeImagem.Text = string.Empty;
             }
 
         }
@@ -426,7 +443,7 @@ namespace tccCsharp
                 }
                 else
                 {
-                    //erro grave
+                    MessageBox.Show("Tem alguma coisa errada sua mula");
                 }
 
             }

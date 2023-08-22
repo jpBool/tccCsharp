@@ -76,10 +76,10 @@
             this.lblPorcentagem = new System.Windows.Forms.Label();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.tlpBase2.SuspendLayout();
             this.tlpBase3.SuspendLayout();
             this.tlpBase5.SuspendLayout();
@@ -324,15 +324,15 @@
             // 
             // btnUpload
             // 
-            this.btnUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpload.AutoHoover = false;
             this.btnUpload.BordaHoover = System.Drawing.Color.Green;
             this.btnUpload.BordaPrincipal = System.Drawing.Color.Black;
             this.btnUpload.BorderColor = System.Drawing.Color.Black;
-            this.btnUpload.BorderRadius = 10;
-            this.btnUpload.BorderThickness = 2;
+            this.btnUpload.BorderRadius = 20;
+            this.btnUpload.BorderThickness = 4;
             this.btnUpload.ButtonColor = System.Drawing.Color.White;
-            this.btnUpload.Location = new System.Drawing.Point(8, 242);
+            this.btnUpload.Location = new System.Drawing.Point(373, 242);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
             this.btnUpload.TabIndex = 1;
@@ -426,13 +426,13 @@
             this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
             this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.BorderColor = System.Drawing.Color.Black;
-            this.btnExcluir.BorderRadius = 10;
-            this.btnExcluir.BorderThickness = 2;
+            this.btnExcluir.BorderRadius = 20;
+            this.btnExcluir.BorderThickness = 4;
             this.btnExcluir.ButtonColor = System.Drawing.Color.White;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Location = new System.Drawing.Point(313, 72);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(89, 29);
+            this.btnExcluir.Size = new System.Drawing.Size(89, 36);
             this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
@@ -446,13 +446,13 @@
             this.btnLimparForm.BordaHoover = System.Drawing.Color.Green;
             this.btnLimparForm.BordaPrincipal = System.Drawing.Color.Black;
             this.btnLimparForm.BorderColor = System.Drawing.Color.Black;
-            this.btnLimparForm.BorderRadius = 10;
-            this.btnLimparForm.BorderThickness = 2;
+            this.btnLimparForm.BorderRadius = 20;
+            this.btnLimparForm.BorderThickness = 4;
             this.btnLimparForm.ButtonColor = System.Drawing.Color.White;
             this.btnLimparForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimparForm.Location = new System.Drawing.Point(107, 72);
             this.btnLimparForm.Name = "btnLimparForm";
-            this.btnLimparForm.Size = new System.Drawing.Size(195, 29);
+            this.btnLimparForm.Size = new System.Drawing.Size(195, 36);
             this.btnLimparForm.TabIndex = 5;
             this.btnLimparForm.Text = "LIMPAR FORMULÁRIO";
             this.btnLimparForm.TextoPrincipal = System.Drawing.Color.Black;
@@ -499,13 +499,13 @@
             this.btnSalvar.BordaHoover = System.Drawing.Color.Green;
             this.btnSalvar.BordaPrincipal = System.Drawing.Color.Black;
             this.btnSalvar.BorderColor = System.Drawing.Color.Black;
-            this.btnSalvar.BorderRadius = 10;
-            this.btnSalvar.BorderThickness = 2;
+            this.btnSalvar.BorderRadius = 20;
+            this.btnSalvar.BorderThickness = 4;
             this.btnSalvar.ButtonColor = System.Drawing.Color.White;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(414, 72);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(89, 29);
+            this.btnSalvar.Size = new System.Drawing.Size(89, 36);
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
@@ -552,8 +552,8 @@
             this.btnSairSSalvar.BordaHoover = System.Drawing.Color.Green;
             this.btnSairSSalvar.BordaPrincipal = System.Drawing.Color.Black;
             this.btnSairSSalvar.BorderColor = System.Drawing.Color.Black;
-            this.btnSairSSalvar.BorderRadius = 10;
-            this.btnSairSSalvar.BorderThickness = 2;
+            this.btnSairSSalvar.BorderRadius = 20;
+            this.btnSairSSalvar.BorderThickness = 4;
             this.btnSairSSalvar.ButtonColor = System.Drawing.Color.White;
             this.btnSairSSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
@@ -842,17 +842,6 @@
             this.rgbHeadImgs1.TabIndex = 6;
             this.rgbHeadImgs1.TabStop = false;
             // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(360, 6);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(547, 39);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "GERENCIAMENTO DE IMAGENS";
-            // 
             // OPBRecarregar
             // 
             this.OPBRecarregar._bordercolor = System.Drawing.Color.Red;
@@ -906,6 +895,17 @@
             this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OPBLogout.TabIndex = 11;
             this.OPBLogout.TabStop = false;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(360, 6);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(547, 39);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "GERENCIAMENTO DE IMAGENS";
             // 
             // frmGerenciamentoImagens
             // 

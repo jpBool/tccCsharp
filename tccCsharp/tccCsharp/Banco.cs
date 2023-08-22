@@ -682,7 +682,7 @@ namespace tccCsharp
             try
             {
                 Conectar();
-                String sql = "UPDATE  gp2_imagens SET nome = @1, descricao_imagem = @2, imagem_principal = @3 WHERE id_projeto = @4";
+                String sql = "UPDATE  gp2_imagens SET nome = @1, descricao_imagem = @2, imagem_principal = @3 WHERE id_imagem = @4";
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", nome);

@@ -153,6 +153,16 @@ namespace tccCsharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Left_Black {
+            get {
+                object obj = ResourceManager.GetObject("Left_Black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logout_Black {
             get {
                 object obj = ResourceManager.GetObject("Logout_Black", resourceCulture);
@@ -196,6 +206,16 @@ namespace tccCsharp.Properties {
         internal static System.Drawing.Bitmap Refresh_White {
             get {
                 object obj = ResourceManager.GetObject("Refresh_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Right_Black {
+            get {
+                object obj = ResourceManager.GetObject("Right_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
