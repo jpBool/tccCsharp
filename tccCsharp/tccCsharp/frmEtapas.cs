@@ -130,24 +130,24 @@ namespace tccCsharp
         public void Refresh_steps()
         {
             if (y == 0)
-                BtnCima.Enabled = false;
+                OPBUp.Visible = false;
             else
-                BtnCima.Enabled = true;
+                OPBUp.Visible = true;
 
             if (grupos.Count() <= y + 2)
-                BtnBaixo.Enabled = false;
+                OPBDown.Visible = false;
             else
-                BtnBaixo.Enabled = true;
+                OPBDown.Visible = true;
 
             if (x1 == 0)
-                BtnEsquerda1.Enabled = false;
+                OPBLeft1.Visible = false;
             else
-                BtnEsquerda1.Enabled = true;
+                OPBLeft1.Visible = true;
 
             if (x2 == 0)
-                BtnEsquerda2.Enabled = false; 
+                OPBLeft2.Visible = false; 
             else
-                BtnEsquerda2.Enabled = true;
+                OPBLeft2.Visible = true;
 
 
             GroupSteps grupo1 = new GroupSteps();
@@ -158,11 +158,11 @@ namespace tccCsharp
                 lblTituloGrupo1.Text = grupo1.nome_grupo;
                 if (grupo1.etapas.Count <= x1 + 3)
                 {
-                    BtnDireita1.Enabled = false;
+                    OPBRight1.Visible = false;
                 }
                 else
                 {
-                    BtnDireita1.Enabled = true;
+                    OPBRight1.Visible = true;
                 }
                 lblPorcentagemGP1.Text = Convert.ToInt32(grupo1.porcentagem).ToString() + "%";
                 if (Convert.ToInt32(grupo1.porcentagem) == 100)
@@ -261,11 +261,11 @@ namespace tccCsharp
                 lblTituloGrupo2.Text = grupo2.nome_grupo;
                 if (grupo2.etapas.Count <= x2 + 3)
                 {
-                    BtnDireita2.Enabled = false;
+                    OPBRight2.Visible = false;
                 }
                 else
                 {
-                    BtnDireita2.Enabled = true;
+                    OPBRight2.Visible = true;
                 }
                 lblPorcentagemGP2.Text = Convert.ToInt32(grupo2.porcentagem).ToString() + "%";
                 if (Convert.ToInt32(grupo2.porcentagem) == 100)
@@ -404,50 +404,10 @@ namespace tccCsharp
 
 
         ///////////////////Botões de movimentação
-        private void BtnCima_Click(object sender, EventArgs e)
-        {
-            y -= 2;
-            Refresh_steps();
-        }
-
-        private void BtnBaixo_Click(object sender, EventArgs e)
-        {
-            y += 2;
-            Refresh_steps();
-        }
-
-        private void BtnEsquerda1_Click(object sender, EventArgs e)
-        {
-            x1 -= 3;
-            Refresh_steps();
-        }
-
-        private void BtnDireita1_Click(object sender, EventArgs e)
-        {
-            x1 += 3;
-            Refresh_steps();
-        }
-
-        private void BtnEsquerda2_Click(object sender, EventArgs e)
-        {
-            x2 -= 3;
-            Refresh_steps();
-        }
-
-        private void BtnDireita2_Click(object sender, EventArgs e)
-        {
-            x2 += 3;
-            Refresh_steps();
-        }
 
         private void BtnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void frmEtapas_SizeChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void frmEtapas_Resize(object sender, EventArgs e)
@@ -460,6 +420,42 @@ namespace tccCsharp
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
             }
+            Refresh_steps();
+        }
+
+        private void OPBRight1_Click(object sender, EventArgs e)
+        {
+            x1 += 3;
+            Refresh_steps();
+        }
+
+        private void OPBRight2_Click(object sender, EventArgs e)
+        {
+            x2 += 3;
+            Refresh_steps();
+        }
+
+        private void OPBLeft1_Click_1(object sender, EventArgs e)
+        {
+            x1 -= 3;
+            Refresh_steps();
+        }
+
+        private void OPBLeft2_Click(object sender, EventArgs e)
+        {
+            x2 -= 3;
+            Refresh_steps();
+        }
+
+        private void OPBDown_Click(object sender, EventArgs e)
+        {
+            y += 2;
+            Refresh_steps();
+        }
+
+        private void OPBUp_Click(object sender, EventArgs e)
+        {
+            y -= 2;
             Refresh_steps();
         }
     }
