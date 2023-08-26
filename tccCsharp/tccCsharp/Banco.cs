@@ -733,6 +733,27 @@ namespace tccCsharp
             return grupos;
         }
 
+        public static void AdicionaOrdenador(int id_projeto, int ordenadorAcima)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_grupos_etapas	SET  ordenador = ordenador + 1 WHERE id_projeto = @1 AND ordenador >= @2;";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", id_projeto);
+                cmd.Parameters.AddWithValue("@2", ordenadorAcima);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar suas informações !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
     } 
 }
 

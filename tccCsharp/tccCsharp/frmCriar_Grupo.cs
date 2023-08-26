@@ -109,9 +109,7 @@ namespace tccCsharp
             {
                 TLPEntreGrupos.Visible = true;
 
-                List<GroupSteps> gruposDepois = new List<GroupSteps>(grupos); // Cópia profunda
-                gruposDepois.RemoveAt(grupos.Count - 1);
-                comboDepois.DataSource = gruposDepois;
+                comboDepois.DataSource = grupos;
                 comboDepois.ValueMember = "ordenador";
                 comboDepois.DisplayMember = "nome_grupo";
                 comboDepois.SelectedIndex = 0;
@@ -138,6 +136,7 @@ namespace tccCsharp
             radMeio.Checked = true;
             radFim.Checked = false;
             TLPSelecionaCombo.Enabled = true;
+            comboDepois.SelectedIndex = 0;
         }
 
         private void radFim_Click(object sender, EventArgs e)
@@ -158,6 +157,69 @@ namespace tccCsharp
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
             }
+        }
+
+        private void comboDepois_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = comboDepois.SelectedIndex;
+            int lastIndex = comboDepois.Items.Count - 1;
+
+            if (selectedIndex == lastIndex)
+            {
+                radFim.Checked = true;
+                radMeio.Checked = false;
+                TLPSelecionaCombo.Enabled = false;
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCriar_Click(object sender, EventArgs e)
+        {
+            if (txtNomeGrupo.Text == null)
+            {
+                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+                
+
+            GroupSteps novogrupo = new GroupSteps();
+            novogrupo.id_projeto = Program.id_projeto_atual;
+            novogrupo.nome_grupo = txtNomeGrupo.Text;
+            novogrupo.porcentagem = 0;
+            if (BoxSim.Checked == true)
+                novogrupo.mostrar_porcentagem = true;
+            else
+                novogrupo.mostrar_porcentagem = false;
+
+            if (radInicio.Checked == true)
+            {
+                Banco.AdicionaOrdenador(Program.id_projeto_atual, 1);
+                novogrupo.ordenador = 1;
+            }
+            else if (radFim.Checked == true)
+            {
+                int last = grupos.Count();
+                novogrupo.ordenador = grupos[last - 1].ordenador + 1;  
+            }
+            else
+            {
+                int mid = Convert.ToInt32(comboDepois.ValueMember) + 1;
+                Banco.AdicionaOrdenador(Program.id_projeto_atual, mid);
+                novogrupo.ordenador = mid;
+            }
+            novogrupo.excluido = false;
+            novogrupo.numero_etapas = 0;
+
+            //Banco.insetrtgrupo(novogrupo)
+        }
+
+        private void txtNomeGrupo_Leave(object sender, EventArgs e)
+        {
+            customLine1.LineColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
         }
     }
 }

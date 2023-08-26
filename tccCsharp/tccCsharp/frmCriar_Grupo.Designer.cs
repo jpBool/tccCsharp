@@ -583,7 +583,7 @@
             this.TLPSelecionaCombo.Name = "TLPSelecionaCombo";
             this.TLPSelecionaCombo.RowCount = 1;
             this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
             this.TLPSelecionaCombo.Size = new System.Drawing.Size(358, 72);
             this.TLPSelecionaCombo.TabIndex = 0;
             // 
@@ -605,6 +605,7 @@
             this.comboDepois.Name = "comboDepois";
             this.comboDepois.Size = new System.Drawing.Size(121, 21);
             this.comboDepois.TabIndex = 2;
+            this.comboDepois.SelectedIndexChanged += new System.EventHandler(this.comboDepois_SelectedIndexChanged);
             // 
             // radInicio
             // 
@@ -682,6 +683,7 @@
             this.txtNomeGrupo.Name = "txtNomeGrupo";
             this.txtNomeGrupo.Size = new System.Drawing.Size(538, 19);
             this.txtNomeGrupo.TabIndex = 2;
+            this.txtNomeGrupo.Leave += new System.EventHandler(this.txtNomeGrupo_Leave);
             // 
             // lblcar1
             // 
@@ -773,6 +775,7 @@
             this.btnCriar.Text = "CRIAR GRUPO";
             this.btnCriar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCriar.UseVisualStyleBackColor = true;
+            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // btnCancelar
             // 
@@ -791,6 +794,7 @@
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmCriar_Grupo
             // 
