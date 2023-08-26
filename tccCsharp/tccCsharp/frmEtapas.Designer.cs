@@ -65,6 +65,24 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBEtapas2 = new tccCsharp.RoundedGroupBox();
             this.TLPEtapas2 = new System.Windows.Forms.TableLayoutPanel();
+            this.OPBLeft2 = new tccCsharp.OvalPictureBox();
+            this.GPBEtapa23 = new tccCsharp.RoundedGroupBox();
+            this.lblPorcentagemET23 = new System.Windows.Forms.Label();
+            this.Etapa23groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa23groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa23 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa23 = new System.Windows.Forms.Label();
+            this.opbEditarP23 = new tccCsharp.OvalPictureBox();
+            this.lblNomeEtapa23 = new System.Windows.Forms.Label();
+            this.OPBRight2 = new tccCsharp.OvalPictureBox();
+            this.GPBEtapa22 = new tccCsharp.RoundedGroupBox();
+            this.lblPorcentagemET22 = new System.Windows.Forms.Label();
+            this.Etapa22groupPorcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Etapa22groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.RGBDescricaoEtapa22 = new tccCsharp.RoundedGroupBox();
+            this.lblDescricaoEtapa22 = new System.Windows.Forms.Label();
+            this.opbEditarP22 = new tccCsharp.OvalPictureBox();
+            this.lblNomeEtapa22 = new System.Windows.Forms.Label();
             this.GPBEtapa21 = new tccCsharp.RoundedGroupBox();
             this.lblPorcentagemET21 = new System.Windows.Forms.Label();
             this.Etapa21groupPorcentagem1 = new tccCsharp.CustomGroupBox();
@@ -73,7 +91,6 @@
             this.lblDescricaoEtapa21 = new System.Windows.Forms.Label();
             this.opbEditarP21 = new tccCsharp.OvalPictureBox();
             this.lblNomeEtapa21 = new System.Windows.Forms.Label();
-            this.OPBRight2 = new tccCsharp.OvalPictureBox();
             this.RGBEtapas1 = new tccCsharp.RoundedGroupBox();
             this.TLPEtapas1 = new System.Windows.Forms.TableLayoutPanel();
             this.OPBLeft1 = new tccCsharp.OvalPictureBox();
@@ -102,23 +119,6 @@
             this.lblDescricaoEtapa11 = new System.Windows.Forms.Label();
             this.opbEditarP11 = new tccCsharp.OvalPictureBox();
             this.lblNomeEtapa11 = new System.Windows.Forms.Label();
-            this.GPBEtapa22 = new tccCsharp.RoundedGroupBox();
-            this.lblPorcentagemET22 = new System.Windows.Forms.Label();
-            this.Etapa22groupPorcentagem1 = new tccCsharp.CustomGroupBox();
-            this.Etapa22groupPorcentagem2 = new tccCsharp.CustomGroupBox();
-            this.RGBDescricaoEtapa22 = new tccCsharp.RoundedGroupBox();
-            this.lblDescricaoEtapa22 = new System.Windows.Forms.Label();
-            this.opbEditarP22 = new tccCsharp.OvalPictureBox();
-            this.lblNomeEtapa22 = new System.Windows.Forms.Label();
-            this.GPBEtapa23 = new tccCsharp.RoundedGroupBox();
-            this.lblPorcentagemET23 = new System.Windows.Forms.Label();
-            this.Etapa23groupPorcentagem1 = new tccCsharp.CustomGroupBox();
-            this.Etapa23groupPorcentagem2 = new tccCsharp.CustomGroupBox();
-            this.RGBDescricaoEtapa23 = new tccCsharp.RoundedGroupBox();
-            this.lblDescricaoEtapa23 = new System.Windows.Forms.Label();
-            this.opbEditarP23 = new tccCsharp.OvalPictureBox();
-            this.lblNomeEtapa23 = new System.Windows.Forms.Label();
-            this.OPBLeft2 = new tccCsharp.OvalPictureBox();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -143,11 +143,20 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.RGBEtapas2.SuspendLayout();
             this.TLPEtapas2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLeft2)).BeginInit();
+            this.GPBEtapa23.SuspendLayout();
+            this.Etapa23groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBRight2)).BeginInit();
+            this.GPBEtapa22.SuspendLayout();
+            this.Etapa22groupPorcentagem1.SuspendLayout();
+            this.RGBDescricaoEtapa22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP22)).BeginInit();
             this.GPBEtapa21.SuspendLayout();
             this.Etapa21groupPorcentagem1.SuspendLayout();
             this.RGBDescricaoEtapa21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBRight2)).BeginInit();
             this.RGBEtapas1.SuspendLayout();
             this.TLPEtapas1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLeft1)).BeginInit();
@@ -164,15 +173,6 @@
             this.Etapa11groupPorcentagem1.SuspendLayout();
             this.RGBDescricaoEtapa11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP11)).BeginInit();
-            this.GPBEtapa22.SuspendLayout();
-            this.Etapa22groupPorcentagem1.SuspendLayout();
-            this.RGBDescricaoEtapa22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP22)).BeginInit();
-            this.GPBEtapa23.SuspendLayout();
-            this.Etapa23groupPorcentagem1.SuspendLayout();
-            this.RGBDescricaoEtapa23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBLeft2)).BeginInit();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -291,6 +291,7 @@
             this.BtnADDGrupo.Text = "ADICIONAR GRUPO";
             this.BtnADDGrupo.TextoPrincipal = System.Drawing.Color.Black;
             this.BtnADDGrupo.UseVisualStyleBackColor = true;
+            this.BtnADDGrupo.Click += new System.EventHandler(this.BtnADDGrupo_Click);
             // 
             // lblPorcentagem
             // 
@@ -320,6 +321,7 @@
             this.groupPorcentagem.Size = new System.Drawing.Size(489, 45);
             this.groupPorcentagem.TabIndex = 3;
             this.groupPorcentagem.TabStop = false;
+            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
             // 
             // groupPorcentagem2
             // 
@@ -782,6 +784,267 @@
             this.TLPEtapas2.Size = new System.Drawing.Size(924, 241);
             this.TLPEtapas2.TabIndex = 1;
             // 
+            // OPBLeft2
+            // 
+            this.OPBLeft2._bordercolor = System.Drawing.Color.Red;
+            this.OPBLeft2._borderwidth = 5F;
+            this.OPBLeft2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.OPBLeft2.AutoHoover = false;
+            this.OPBLeft2.BackColor = System.Drawing.Color.Transparent;
+            this.OPBLeft2.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLeft2.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBLeft2.Image = global::tccCsharp.Properties.Resources.Left_Black;
+            this.OPBLeft2.Location = new System.Drawing.Point(22, 96);
+            this.OPBLeft2.Name = "OPBLeft2";
+            this.OPBLeft2.Size = new System.Drawing.Size(48, 48);
+            this.OPBLeft2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OPBLeft2.TabIndex = 56;
+            this.OPBLeft2.TabStop = false;
+            // 
+            // GPBEtapa23
+            // 
+            this.GPBEtapa23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GPBEtapa23.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa23.BorderWidth = 1F;
+            this.GPBEtapa23.Controls.Add(this.lblPorcentagemET23);
+            this.GPBEtapa23.Controls.Add(this.Etapa23groupPorcentagem1);
+            this.GPBEtapa23.Controls.Add(this.RGBDescricaoEtapa23);
+            this.GPBEtapa23.Controls.Add(this.opbEditarP23);
+            this.GPBEtapa23.Controls.Add(this.lblNomeEtapa23);
+            this.GPBEtapa23.CornerRadius = 20;
+            this.GPBEtapa23.Location = new System.Drawing.Point(619, 10);
+            this.GPBEtapa23.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa23.Name = "GPBEtapa23";
+            this.GPBEtapa23.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa23.TabIndex = 55;
+            this.GPBEtapa23.TabStop = false;
+            // 
+            // lblPorcentagemET23
+            // 
+            this.lblPorcentagemET23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagemET23.AutoSize = true;
+            this.lblPorcentagemET23.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET23.Name = "lblPorcentagemET23";
+            this.lblPorcentagemET23.Size = new System.Drawing.Size(33, 13);
+            this.lblPorcentagemET23.TabIndex = 48;
+            this.lblPorcentagemET23.Text = "100%";
+            // 
+            // Etapa23groupPorcentagem1
+            // 
+            this.Etapa23groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Etapa23groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa23groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa23groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa23groupPorcentagem1.Controls.Add(this.Etapa23groupPorcentagem2);
+            this.Etapa23groupPorcentagem1.CornerRadius = 14;
+            this.Etapa23groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
+            this.Etapa23groupPorcentagem1.Name = "Etapa23groupPorcentagem1";
+            this.Etapa23groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Etapa23groupPorcentagem1.TabIndex = 45;
+            this.Etapa23groupPorcentagem1.TabStop = false;
+            // 
+            // Etapa23groupPorcentagem2
+            // 
+            this.Etapa23groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa23groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa23groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa23groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa23groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa23groupPorcentagem2.CornerRadius = 14;
+            this.Etapa23groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa23groupPorcentagem2.Name = "Etapa23groupPorcentagem2";
+            this.Etapa23groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa23groupPorcentagem2.TabIndex = 0;
+            this.Etapa23groupPorcentagem2.TabStop = false;
+            // 
+            // RGBDescricaoEtapa23
+            // 
+            this.RGBDescricaoEtapa23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBDescricaoEtapa23.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa23.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa23.BorderWidth = 1F;
+            this.RGBDescricaoEtapa23.Controls.Add(this.lblDescricaoEtapa23);
+            this.RGBDescricaoEtapa23.CornerRadius = 20;
+            this.RGBDescricaoEtapa23.Location = new System.Drawing.Point(11, 41);
+            this.RGBDescricaoEtapa23.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa23.Name = "RGBDescricaoEtapa23";
+            this.RGBDescricaoEtapa23.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa23.TabIndex = 44;
+            this.RGBDescricaoEtapa23.TabStop = false;
+            // 
+            // lblDescricaoEtapa23
+            // 
+            this.lblDescricaoEtapa23.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa23.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa23.Name = "lblDescricaoEtapa23";
+            this.lblDescricaoEtapa23.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa23.TabIndex = 36;
+            this.lblDescricaoEtapa23.Text = "Descrição do projeto";
+            // 
+            // opbEditarP23
+            // 
+            this.opbEditarP23._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP23._borderwidth = 5F;
+            this.opbEditarP23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP23.AutoHoover = false;
+            this.opbEditarP23.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP23.BordaPrincipal = System.Drawing.Color.Black;
+            this.opbEditarP23.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+            this.opbEditarP23.Location = new System.Drawing.Point(156, 3);
+            this.opbEditarP23.Name = "opbEditarP23";
+            this.opbEditarP23.Size = new System.Drawing.Size(35, 35);
+            this.opbEditarP23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbEditarP23.TabIndex = 43;
+            this.opbEditarP23.TabStop = false;
+            // 
+            // lblNomeEtapa23
+            // 
+            this.lblNomeEtapa23.AutoSize = true;
+            this.lblNomeEtapa23.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa23.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeEtapa23.Name = "lblNomeEtapa23";
+            this.lblNomeEtapa23.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa23.TabIndex = 42;
+            this.lblNomeEtapa23.Text = "Nome do projeto";
+            // 
+            // OPBRight2
+            // 
+            this.OPBRight2._bordercolor = System.Drawing.Color.Red;
+            this.OPBRight2._borderwidth = 5F;
+            this.OPBRight2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.OPBRight2.AutoHoover = false;
+            this.OPBRight2.BackColor = System.Drawing.Color.Transparent;
+            this.OPBRight2.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRight2.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBRight2.Image = global::tccCsharp.Properties.Resources.Right_Black;
+            this.OPBRight2.Location = new System.Drawing.Point(850, 96);
+            this.OPBRight2.Name = "OPBRight2";
+            this.OPBRight2.Size = new System.Drawing.Size(48, 48);
+            this.OPBRight2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OPBRight2.TabIndex = 48;
+            this.OPBRight2.TabStop = false;
+            this.OPBRight2.Click += new System.EventHandler(this.OPBRight2_Click);
+            // 
+            // GPBEtapa22
+            // 
+            this.GPBEtapa22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GPBEtapa22.BackgroundColor = System.Drawing.Color.White;
+            this.GPBEtapa22.BorderWidth = 1F;
+            this.GPBEtapa22.Controls.Add(this.lblPorcentagemET22);
+            this.GPBEtapa22.Controls.Add(this.Etapa22groupPorcentagem1);
+            this.GPBEtapa22.Controls.Add(this.RGBDescricaoEtapa22);
+            this.GPBEtapa22.Controls.Add(this.opbEditarP22);
+            this.GPBEtapa22.Controls.Add(this.lblNomeEtapa22);
+            this.GPBEtapa22.CornerRadius = 20;
+            this.GPBEtapa22.Location = new System.Drawing.Point(361, 10);
+            this.GPBEtapa22.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.GPBEtapa22.Name = "GPBEtapa22";
+            this.GPBEtapa22.Size = new System.Drawing.Size(198, 221);
+            this.GPBEtapa22.TabIndex = 53;
+            this.GPBEtapa22.TabStop = false;
+            // 
+            // lblPorcentagemET22
+            // 
+            this.lblPorcentagemET22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagemET22.AutoSize = true;
+            this.lblPorcentagemET22.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET22.Name = "lblPorcentagemET22";
+            this.lblPorcentagemET22.Size = new System.Drawing.Size(33, 13);
+            this.lblPorcentagemET22.TabIndex = 48;
+            this.lblPorcentagemET22.Text = "100%";
+            // 
+            // Etapa22groupPorcentagem1
+            // 
+            this.Etapa22groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Etapa22groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa22groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Etapa22groupPorcentagem1.BorderWidth = 1F;
+            this.Etapa22groupPorcentagem1.Controls.Add(this.Etapa22groupPorcentagem2);
+            this.Etapa22groupPorcentagem1.CornerRadius = 14;
+            this.Etapa22groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
+            this.Etapa22groupPorcentagem1.Name = "Etapa22groupPorcentagem1";
+            this.Etapa22groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Etapa22groupPorcentagem1.TabIndex = 45;
+            this.Etapa22groupPorcentagem1.TabStop = false;
+            // 
+            // Etapa22groupPorcentagem2
+            // 
+            this.Etapa22groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Etapa22groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Etapa22groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Etapa22groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Etapa22groupPorcentagem2.BorderWidth = 1F;
+            this.Etapa22groupPorcentagem2.CornerRadius = 14;
+            this.Etapa22groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Etapa22groupPorcentagem2.Name = "Etapa22groupPorcentagem2";
+            this.Etapa22groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Etapa22groupPorcentagem2.TabIndex = 0;
+            this.Etapa22groupPorcentagem2.TabStop = false;
+            // 
+            // RGBDescricaoEtapa22
+            // 
+            this.RGBDescricaoEtapa22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBDescricaoEtapa22.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescricaoEtapa22.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescricaoEtapa22.BorderWidth = 1F;
+            this.RGBDescricaoEtapa22.Controls.Add(this.lblDescricaoEtapa22);
+            this.RGBDescricaoEtapa22.CornerRadius = 20;
+            this.RGBDescricaoEtapa22.Location = new System.Drawing.Point(11, 41);
+            this.RGBDescricaoEtapa22.Margin = new System.Windows.Forms.Padding(0);
+            this.RGBDescricaoEtapa22.Name = "RGBDescricaoEtapa22";
+            this.RGBDescricaoEtapa22.Size = new System.Drawing.Size(169, 142);
+            this.RGBDescricaoEtapa22.TabIndex = 44;
+            this.RGBDescricaoEtapa22.TabStop = false;
+            // 
+            // lblDescricaoEtapa22
+            // 
+            this.lblDescricaoEtapa22.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescricaoEtapa22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoEtapa22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoEtapa22.Location = new System.Drawing.Point(3, 16);
+            this.lblDescricaoEtapa22.Name = "lblDescricaoEtapa22";
+            this.lblDescricaoEtapa22.Size = new System.Drawing.Size(163, 123);
+            this.lblDescricaoEtapa22.TabIndex = 36;
+            this.lblDescricaoEtapa22.Text = "Descrição do projeto";
+            // 
+            // opbEditarP22
+            // 
+            this.opbEditarP22._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarP22._borderwidth = 5F;
+            this.opbEditarP22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarP22.AutoHoover = false;
+            this.opbEditarP22.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP22.BordaPrincipal = System.Drawing.Color.Black;
+            this.opbEditarP22.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+            this.opbEditarP22.Location = new System.Drawing.Point(156, 3);
+            this.opbEditarP22.Name = "opbEditarP22";
+            this.opbEditarP22.Size = new System.Drawing.Size(35, 35);
+            this.opbEditarP22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbEditarP22.TabIndex = 43;
+            this.opbEditarP22.TabStop = false;
+            // 
+            // lblNomeEtapa22
+            // 
+            this.lblNomeEtapa22.AutoSize = true;
+            this.lblNomeEtapa22.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeEtapa22.Location = new System.Drawing.Point(8, 16);
+            this.lblNomeEtapa22.Name = "lblNomeEtapa22";
+            this.lblNomeEtapa22.Size = new System.Drawing.Size(85, 13);
+            this.lblNomeEtapa22.TabIndex = 42;
+            this.lblNomeEtapa22.Text = "Nome do projeto";
+            // 
             // GPBEtapa21
             // 
             this.GPBEtapa21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -894,24 +1157,6 @@
             this.lblNomeEtapa21.Size = new System.Drawing.Size(85, 13);
             this.lblNomeEtapa21.TabIndex = 42;
             this.lblNomeEtapa21.Text = "Nome do projeto";
-            // 
-            // OPBRight2
-            // 
-            this.OPBRight2._bordercolor = System.Drawing.Color.Red;
-            this.OPBRight2._borderwidth = 5F;
-            this.OPBRight2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.OPBRight2.AutoHoover = false;
-            this.OPBRight2.BackColor = System.Drawing.Color.Transparent;
-            this.OPBRight2.BordaHoover = System.Drawing.Color.Green;
-            this.OPBRight2.BordaPrincipal = System.Drawing.Color.Black;
-            this.OPBRight2.Image = global::tccCsharp.Properties.Resources.Right_Black;
-            this.OPBRight2.Location = new System.Drawing.Point(850, 96);
-            this.OPBRight2.Name = "OPBRight2";
-            this.OPBRight2.Size = new System.Drawing.Size(48, 48);
-            this.OPBRight2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.OPBRight2.TabIndex = 48;
-            this.OPBRight2.TabStop = false;
-            this.OPBRight2.Click += new System.EventHandler(this.OPBRight2_Click);
             // 
             // RGBEtapas1
             // 
@@ -1329,249 +1574,6 @@
             this.lblNomeEtapa11.TabIndex = 38;
             this.lblNomeEtapa11.Text = "Nome do projeto";
             // 
-            // GPBEtapa22
-            // 
-            this.GPBEtapa22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GPBEtapa22.BackgroundColor = System.Drawing.Color.White;
-            this.GPBEtapa22.BorderWidth = 1F;
-            this.GPBEtapa22.Controls.Add(this.lblPorcentagemET22);
-            this.GPBEtapa22.Controls.Add(this.Etapa22groupPorcentagem1);
-            this.GPBEtapa22.Controls.Add(this.RGBDescricaoEtapa22);
-            this.GPBEtapa22.Controls.Add(this.opbEditarP22);
-            this.GPBEtapa22.Controls.Add(this.lblNomeEtapa22);
-            this.GPBEtapa22.CornerRadius = 20;
-            this.GPBEtapa22.Location = new System.Drawing.Point(361, 10);
-            this.GPBEtapa22.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.GPBEtapa22.Name = "GPBEtapa22";
-            this.GPBEtapa22.Size = new System.Drawing.Size(198, 221);
-            this.GPBEtapa22.TabIndex = 53;
-            this.GPBEtapa22.TabStop = false;
-            // 
-            // lblPorcentagemET22
-            // 
-            this.lblPorcentagemET22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPorcentagemET22.AutoSize = true;
-            this.lblPorcentagemET22.Location = new System.Drawing.Point(160, 196);
-            this.lblPorcentagemET22.Name = "lblPorcentagemET22";
-            this.lblPorcentagemET22.Size = new System.Drawing.Size(33, 13);
-            this.lblPorcentagemET22.TabIndex = 48;
-            this.lblPorcentagemET22.Text = "100%";
-            // 
-            // Etapa22groupPorcentagem1
-            // 
-            this.Etapa22groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Etapa22groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
-            this.Etapa22groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
-            this.Etapa22groupPorcentagem1.BorderWidth = 1F;
-            this.Etapa22groupPorcentagem1.Controls.Add(this.Etapa22groupPorcentagem2);
-            this.Etapa22groupPorcentagem1.CornerRadius = 14;
-            this.Etapa22groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
-            this.Etapa22groupPorcentagem1.Name = "Etapa22groupPorcentagem1";
-            this.Etapa22groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
-            this.Etapa22groupPorcentagem1.TabIndex = 45;
-            this.Etapa22groupPorcentagem1.TabStop = false;
-            // 
-            // Etapa22groupPorcentagem2
-            // 
-            this.Etapa22groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Etapa22groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Etapa22groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
-            this.Etapa22groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
-            this.Etapa22groupPorcentagem2.BorderWidth = 1F;
-            this.Etapa22groupPorcentagem2.CornerRadius = 14;
-            this.Etapa22groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
-            this.Etapa22groupPorcentagem2.Name = "Etapa22groupPorcentagem2";
-            this.Etapa22groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
-            this.Etapa22groupPorcentagem2.TabIndex = 0;
-            this.Etapa22groupPorcentagem2.TabStop = false;
-            // 
-            // RGBDescricaoEtapa22
-            // 
-            this.RGBDescricaoEtapa22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBDescricaoEtapa22.BackColor = System.Drawing.Color.Transparent;
-            this.RGBDescricaoEtapa22.BackgroundColor = System.Drawing.Color.White;
-            this.RGBDescricaoEtapa22.BorderWidth = 1F;
-            this.RGBDescricaoEtapa22.Controls.Add(this.lblDescricaoEtapa22);
-            this.RGBDescricaoEtapa22.CornerRadius = 20;
-            this.RGBDescricaoEtapa22.Location = new System.Drawing.Point(11, 41);
-            this.RGBDescricaoEtapa22.Margin = new System.Windows.Forms.Padding(0);
-            this.RGBDescricaoEtapa22.Name = "RGBDescricaoEtapa22";
-            this.RGBDescricaoEtapa22.Size = new System.Drawing.Size(169, 142);
-            this.RGBDescricaoEtapa22.TabIndex = 44;
-            this.RGBDescricaoEtapa22.TabStop = false;
-            // 
-            // lblDescricaoEtapa22
-            // 
-            this.lblDescricaoEtapa22.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricaoEtapa22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescricaoEtapa22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricaoEtapa22.Location = new System.Drawing.Point(3, 16);
-            this.lblDescricaoEtapa22.Name = "lblDescricaoEtapa22";
-            this.lblDescricaoEtapa22.Size = new System.Drawing.Size(163, 123);
-            this.lblDescricaoEtapa22.TabIndex = 36;
-            this.lblDescricaoEtapa22.Text = "Descrição do projeto";
-            // 
-            // opbEditarP22
-            // 
-            this.opbEditarP22._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP22._borderwidth = 5F;
-            this.opbEditarP22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP22.AutoHoover = false;
-            this.opbEditarP22.BordaHoover = System.Drawing.Color.Green;
-            this.opbEditarP22.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbEditarP22.Image = global::tccCsharp.Properties.Resources.Edit_Black;
-            this.opbEditarP22.Location = new System.Drawing.Point(156, 3);
-            this.opbEditarP22.Name = "opbEditarP22";
-            this.opbEditarP22.Size = new System.Drawing.Size(35, 35);
-            this.opbEditarP22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.opbEditarP22.TabIndex = 43;
-            this.opbEditarP22.TabStop = false;
-            // 
-            // lblNomeEtapa22
-            // 
-            this.lblNomeEtapa22.AutoSize = true;
-            this.lblNomeEtapa22.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeEtapa22.Location = new System.Drawing.Point(8, 16);
-            this.lblNomeEtapa22.Name = "lblNomeEtapa22";
-            this.lblNomeEtapa22.Size = new System.Drawing.Size(85, 13);
-            this.lblNomeEtapa22.TabIndex = 42;
-            this.lblNomeEtapa22.Text = "Nome do projeto";
-            // 
-            // GPBEtapa23
-            // 
-            this.GPBEtapa23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GPBEtapa23.BackgroundColor = System.Drawing.Color.White;
-            this.GPBEtapa23.BorderWidth = 1F;
-            this.GPBEtapa23.Controls.Add(this.lblPorcentagemET23);
-            this.GPBEtapa23.Controls.Add(this.Etapa23groupPorcentagem1);
-            this.GPBEtapa23.Controls.Add(this.RGBDescricaoEtapa23);
-            this.GPBEtapa23.Controls.Add(this.opbEditarP23);
-            this.GPBEtapa23.Controls.Add(this.lblNomeEtapa23);
-            this.GPBEtapa23.CornerRadius = 20;
-            this.GPBEtapa23.Location = new System.Drawing.Point(619, 10);
-            this.GPBEtapa23.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.GPBEtapa23.Name = "GPBEtapa23";
-            this.GPBEtapa23.Size = new System.Drawing.Size(198, 221);
-            this.GPBEtapa23.TabIndex = 55;
-            this.GPBEtapa23.TabStop = false;
-            // 
-            // lblPorcentagemET23
-            // 
-            this.lblPorcentagemET23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPorcentagemET23.AutoSize = true;
-            this.lblPorcentagemET23.Location = new System.Drawing.Point(160, 196);
-            this.lblPorcentagemET23.Name = "lblPorcentagemET23";
-            this.lblPorcentagemET23.Size = new System.Drawing.Size(33, 13);
-            this.lblPorcentagemET23.TabIndex = 48;
-            this.lblPorcentagemET23.Text = "100%";
-            // 
-            // Etapa23groupPorcentagem1
-            // 
-            this.Etapa23groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Etapa23groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
-            this.Etapa23groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
-            this.Etapa23groupPorcentagem1.BorderWidth = 1F;
-            this.Etapa23groupPorcentagem1.Controls.Add(this.Etapa23groupPorcentagem2);
-            this.Etapa23groupPorcentagem1.CornerRadius = 14;
-            this.Etapa23groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
-            this.Etapa23groupPorcentagem1.Name = "Etapa23groupPorcentagem1";
-            this.Etapa23groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
-            this.Etapa23groupPorcentagem1.TabIndex = 45;
-            this.Etapa23groupPorcentagem1.TabStop = false;
-            // 
-            // Etapa23groupPorcentagem2
-            // 
-            this.Etapa23groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Etapa23groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Etapa23groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
-            this.Etapa23groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
-            this.Etapa23groupPorcentagem2.BorderWidth = 1F;
-            this.Etapa23groupPorcentagem2.CornerRadius = 14;
-            this.Etapa23groupPorcentagem2.Location = new System.Drawing.Point(0, 0);
-            this.Etapa23groupPorcentagem2.Name = "Etapa23groupPorcentagem2";
-            this.Etapa23groupPorcentagem2.Size = new System.Drawing.Size(28, 28);
-            this.Etapa23groupPorcentagem2.TabIndex = 0;
-            this.Etapa23groupPorcentagem2.TabStop = false;
-            // 
-            // RGBDescricaoEtapa23
-            // 
-            this.RGBDescricaoEtapa23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBDescricaoEtapa23.BackColor = System.Drawing.Color.Transparent;
-            this.RGBDescricaoEtapa23.BackgroundColor = System.Drawing.Color.White;
-            this.RGBDescricaoEtapa23.BorderWidth = 1F;
-            this.RGBDescricaoEtapa23.Controls.Add(this.lblDescricaoEtapa23);
-            this.RGBDescricaoEtapa23.CornerRadius = 20;
-            this.RGBDescricaoEtapa23.Location = new System.Drawing.Point(11, 41);
-            this.RGBDescricaoEtapa23.Margin = new System.Windows.Forms.Padding(0);
-            this.RGBDescricaoEtapa23.Name = "RGBDescricaoEtapa23";
-            this.RGBDescricaoEtapa23.Size = new System.Drawing.Size(169, 142);
-            this.RGBDescricaoEtapa23.TabIndex = 44;
-            this.RGBDescricaoEtapa23.TabStop = false;
-            // 
-            // lblDescricaoEtapa23
-            // 
-            this.lblDescricaoEtapa23.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricaoEtapa23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescricaoEtapa23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricaoEtapa23.Location = new System.Drawing.Point(3, 16);
-            this.lblDescricaoEtapa23.Name = "lblDescricaoEtapa23";
-            this.lblDescricaoEtapa23.Size = new System.Drawing.Size(163, 123);
-            this.lblDescricaoEtapa23.TabIndex = 36;
-            this.lblDescricaoEtapa23.Text = "Descrição do projeto";
-            // 
-            // opbEditarP23
-            // 
-            this.opbEditarP23._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarP23._borderwidth = 5F;
-            this.opbEditarP23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarP23.AutoHoover = false;
-            this.opbEditarP23.BordaHoover = System.Drawing.Color.Green;
-            this.opbEditarP23.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbEditarP23.Image = global::tccCsharp.Properties.Resources.Edit_Black;
-            this.opbEditarP23.Location = new System.Drawing.Point(156, 3);
-            this.opbEditarP23.Name = "opbEditarP23";
-            this.opbEditarP23.Size = new System.Drawing.Size(35, 35);
-            this.opbEditarP23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.opbEditarP23.TabIndex = 43;
-            this.opbEditarP23.TabStop = false;
-            // 
-            // lblNomeEtapa23
-            // 
-            this.lblNomeEtapa23.AutoSize = true;
-            this.lblNomeEtapa23.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeEtapa23.Location = new System.Drawing.Point(8, 16);
-            this.lblNomeEtapa23.Name = "lblNomeEtapa23";
-            this.lblNomeEtapa23.Size = new System.Drawing.Size(85, 13);
-            this.lblNomeEtapa23.TabIndex = 42;
-            this.lblNomeEtapa23.Text = "Nome do projeto";
-            // 
-            // OPBLeft2
-            // 
-            this.OPBLeft2._bordercolor = System.Drawing.Color.Red;
-            this.OPBLeft2._borderwidth = 5F;
-            this.OPBLeft2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.OPBLeft2.AutoHoover = false;
-            this.OPBLeft2.BackColor = System.Drawing.Color.Transparent;
-            this.OPBLeft2.BordaHoover = System.Drawing.Color.Green;
-            this.OPBLeft2.BordaPrincipal = System.Drawing.Color.Black;
-            this.OPBLeft2.Image = global::tccCsharp.Properties.Resources.Left_Black;
-            this.OPBLeft2.Location = new System.Drawing.Point(22, 96);
-            this.OPBLeft2.Name = "OPBLeft2";
-            this.OPBLeft2.Size = new System.Drawing.Size(48, 48);
-            this.OPBLeft2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.OPBLeft2.TabIndex = 56;
-            this.OPBLeft2.TabStop = false;
-            // 
             // frmEtapas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1613,12 +1615,23 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.RGBEtapas2.ResumeLayout(false);
             this.TLPEtapas2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.OPBLeft2)).EndInit();
+            this.GPBEtapa23.ResumeLayout(false);
+            this.GPBEtapa23.PerformLayout();
+            this.Etapa23groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OPBRight2)).EndInit();
+            this.GPBEtapa22.ResumeLayout(false);
+            this.GPBEtapa22.PerformLayout();
+            this.Etapa22groupPorcentagem1.ResumeLayout(false);
+            this.RGBDescricaoEtapa22.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP22)).EndInit();
             this.GPBEtapa21.ResumeLayout(false);
             this.GPBEtapa21.PerformLayout();
             this.Etapa21groupPorcentagem1.ResumeLayout(false);
             this.RGBDescricaoEtapa21.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBRight2)).EndInit();
             this.RGBEtapas1.ResumeLayout(false);
             this.TLPEtapas1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.OPBLeft1)).EndInit();
@@ -1638,17 +1651,6 @@
             this.Etapa11groupPorcentagem1.ResumeLayout(false);
             this.RGBDescricaoEtapa11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP11)).EndInit();
-            this.GPBEtapa22.ResumeLayout(false);
-            this.GPBEtapa22.PerformLayout();
-            this.Etapa22groupPorcentagem1.ResumeLayout(false);
-            this.RGBDescricaoEtapa22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP22)).EndInit();
-            this.GPBEtapa23.ResumeLayout(false);
-            this.GPBEtapa23.PerformLayout();
-            this.Etapa23groupPorcentagem1.ResumeLayout(false);
-            this.RGBDescricaoEtapa23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.opbEditarP23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OPBLeft2)).EndInit();
             this.ResumeLayout(false);
 
         }

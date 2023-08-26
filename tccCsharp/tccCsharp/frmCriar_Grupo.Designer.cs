@@ -55,13 +55,11 @@
             this.RGBDados2 = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.radFim = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPEntreGrupos = new System.Windows.Forms.TableLayoutPanel();
             this.radMeio = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPSelecionaCombo = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboDepois = new System.Windows.Forms.ComboBox();
             this.radInicio = new System.Windows.Forms.RadioButton();
             this.lblPosicao = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -91,8 +89,8 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.RGBDados2.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.TLPEntreGrupos.SuspendLayout();
+            this.TLPSelecionaCombo.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.RGBNome.SuspendLayout();
             this.RGBDados4.SuspendLayout();
@@ -290,6 +288,7 @@
             this.groupPorcentagem.Size = new System.Drawing.Size(557, 45);
             this.groupPorcentagem.TabIndex = 3;
             this.groupPorcentagem.TabStop = false;
+            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
             // 
             // groupPorcentagem2
             // 
@@ -515,7 +514,7 @@
             this.TLPOpcoes.ColumnCount = 1;
             this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPOpcoes.Controls.Add(this.radFim, 0, 2);
-            this.TLPOpcoes.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.TLPOpcoes.Controls.Add(this.TLPEntreGrupos, 0, 1);
             this.TLPOpcoes.Controls.Add(this.radInicio, 0, 0);
             this.TLPOpcoes.Location = new System.Drawing.Point(18, 45);
             this.TLPOpcoes.Name = "TLPOpcoes";
@@ -536,24 +535,25 @@
             this.radFim.TabIndex = 2;
             this.radFim.Text = "No Final";
             this.radFim.UseVisualStyleBackColor = true;
+            this.radFim.Click += new System.EventHandler(this.radFim_Click);
             // 
-            // tableLayoutPanel3
+            // TLPEntreGrupos
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TLPEntreGrupos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.radMeio, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(1, 47);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(715, 72);
-            this.tableLayoutPanel3.TabIndex = 0;
+            this.TLPEntreGrupos.ColumnCount = 2;
+            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPEntreGrupos.Controls.Add(this.radMeio, 0, 0);
+            this.TLPEntreGrupos.Controls.Add(this.TLPSelecionaCombo, 1, 0);
+            this.TLPEntreGrupos.Location = new System.Drawing.Point(1, 47);
+            this.TLPEntreGrupos.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPEntreGrupos.Name = "TLPEntreGrupos";
+            this.TLPEntreGrupos.RowCount = 1;
+            this.TLPEntreGrupos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPEntreGrupos.Size = new System.Drawing.Size(715, 72);
+            this.TLPEntreGrupos.TabIndex = 0;
             // 
             // radMeio
             // 
@@ -566,65 +566,45 @@
             this.radMeio.TabStop = true;
             this.radMeio.Text = "Entre os grupos existentes";
             this.radMeio.UseVisualStyleBackColor = true;
+            this.radMeio.Click += new System.EventHandler(this.radMeio_Click);
             // 
-            // tableLayoutPanel4
+            // TLPSelecionaCombo
             // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TLPSelecionaCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.comboBox1, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.comboBox2, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(357, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(358, 72);
-            this.tableLayoutPanel4.TabIndex = 0;
+            this.TLPSelecionaCombo.ColumnCount = 2;
+            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.TLPSelecionaCombo.Controls.Add(this.label1, 0, 0);
+            this.TLPSelecionaCombo.Controls.Add(this.comboDepois, 1, 0);
+            this.TLPSelecionaCombo.Location = new System.Drawing.Point(357, 0);
+            this.TLPSelecionaCombo.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPSelecionaCombo.Name = "TLPSelecionaCombo";
+            this.TLPSelecionaCombo.RowCount = 1;
+            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TLPSelecionaCombo.Size = new System.Drawing.Size(358, 72);
+            this.TLPSelecionaCombo.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 11);
+            this.label1.Location = new System.Drawing.Point(26, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Depois do Grupo:";
             // 
-            // label2
+            // comboDepois
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Antes do Grupo:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(146, 7);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(146, 43);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 3;
+            this.comboDepois.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboDepois.FormattingEnabled = true;
+            this.comboDepois.Location = new System.Drawing.Point(146, 25);
+            this.comboDepois.Name = "comboDepois";
+            this.comboDepois.Size = new System.Drawing.Size(121, 21);
+            this.comboDepois.TabIndex = 2;
             // 
             // radInicio
             // 
@@ -638,6 +618,7 @@
             this.radInicio.TabStop = true;
             this.radInicio.Text = "No Início";
             this.radInicio.UseVisualStyleBackColor = true;
+            this.radInicio.Click += new System.EventHandler(this.radInicio_Click);
             // 
             // lblPosicao
             // 
@@ -847,10 +828,10 @@
             this.RGBDados2.PerformLayout();
             this.TLPOpcoes.ResumeLayout(false);
             this.TLPOpcoes.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.TLPEntreGrupos.ResumeLayout(false);
+            this.TLPEntreGrupos.PerformLayout();
+            this.TLPSelecionaCombo.ResumeLayout(false);
+            this.TLPSelecionaCombo.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.RGBNome.ResumeLayout(false);
@@ -894,20 +875,18 @@
         private System.Windows.Forms.Label lblNome;
         private RoundedGroupBox RGBDados4;
         private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel TLPEntreGrupos;
+        private System.Windows.Forms.TableLayoutPanel TLPSelecionaCombo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox BoxSim;
         private System.Windows.Forms.RadioButton radFim;
         private System.Windows.Forms.RadioButton radMeio;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radInicio;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private RoundButton btnCriar;
         private RoundButton btnCancelar;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboDepois;
     }
 }

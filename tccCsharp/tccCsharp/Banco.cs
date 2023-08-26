@@ -700,6 +700,39 @@ namespace tccCsharp
                 Desconectar();
             }
         }
+
+        public static List<GroupSteps> ConsultaGrupos()
+        {
+            List<GroupSteps> grupos = new List<GroupSteps>();
+            try
+            {
+                string sql;
+                sql = "SELECT * FROM gp2_grupos_etapas WHERE id_projeto = @1 ORDER BY ordenador ASC";
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                while (dr.Read())
+                {
+                    GroupSteps linha = new GroupSteps();
+                    linha.ordenador = Convert.ToInt32(dr["ordenador"]);
+                    linha.nome_grupo = Convert.ToString(dr["nome_grupo"]);
+                    grupos.Add(linha);
+                }
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar os grupos desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar imagens", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return grupos;
+        }
+
     } 
 }
 

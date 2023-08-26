@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace tccCsharp
 {
     public partial class frmCriar_Grupo : Form
     {
         public Head cabecalho = new Head();
+        public List<GroupSteps> grupos = new List<GroupSteps>();
+
         public frmCriar_Grupo()
         {
             InitializeComponent();
@@ -95,7 +98,66 @@ namespace tccCsharp
         {
             this.WindowState = FormWindowState.Maximized;
             DoDesign();
+            AtualizaCabecalho();
+            grupos = Banco.ConsultaGrupos();
+
+            if (grupos.Count < 2)
+            {
+                TLPEntreGrupos.Visible = false;
+            }
+            else
+            {
+                TLPEntreGrupos.Visible = true;
+
+                List<GroupSteps> gruposDepois = new List<GroupSteps>(grupos); // Cópia profunda
+                gruposDepois.RemoveAt(grupos.Count - 1);
+                comboDepois.DataSource = gruposDepois;
+                comboDepois.ValueMember = "ordenador";
+                comboDepois.DisplayMember = "nome_grupo";
+                comboDepois.SelectedIndex = 0;
+            }
+
+            if(radMeio.Checked == false)
+            {
+                TLPSelecionaCombo.Enabled = false;
+            }
+
         }
 
+        private void radInicio_Click(object sender, EventArgs e)
+        {
+            radInicio.Checked = true;
+            radMeio.Checked = false;
+            radFim.Checked = false;
+            TLPSelecionaCombo.Enabled = false;
+        }
+
+        private void radMeio_Click(object sender, EventArgs e)
+        {
+            radInicio.Checked = false;
+            radMeio.Checked = true;
+            radFim.Checked = false;
+            TLPSelecionaCombo.Enabled = true;
+        }
+
+        private void radFim_Click(object sender, EventArgs e)
+        {
+            radInicio.Checked = false;
+            radMeio.Checked = false;
+            radFim.Checked = true;
+            TLPSelecionaCombo.Enabled = false;
+        }
+
+        private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
+        {
+            if (cabecalho.porcentagem_int == 100)
+                groupPorcentagem2.Width = groupPorcentagem.Width;
+            else
+            {
+                groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
+                if (groupPorcentagem2.Width < 45)
+                    groupPorcentagem2.Width = 45;
+            }
+        }
     }
 }

@@ -631,8 +631,20 @@ namespace tccCsharp
 
         private void btnImagens_Click(object sender, EventArgs e)
         {
-            frmGerenciamentoImagens formGImagens = new frmGerenciamentoImagens();
-            formGImagens.ShowDialog();
+            this.Visible = false;
+            frmGerenciamentoImagens splash = new frmGerenciamentoImagens();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+            }
         }
+
+        
     }
 }
