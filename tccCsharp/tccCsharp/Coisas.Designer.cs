@@ -56,7 +56,6 @@
             // 
             this.opbExcluir._bordercolor = System.Drawing.Color.Red;
             this.opbExcluir._borderwidth = 3F;
-            this.opbExcluir.Image = global::tccCsharp.Properties.Resources.excluir;
             this.opbExcluir.Location = new System.Drawing.Point(220, 201);
             this.opbExcluir.Name = "opbExcluir";
             this.opbExcluir.Size = new System.Drawing.Size(200, 200);
@@ -68,7 +67,6 @@
             // 
             this.opbCompartilhar._bordercolor = System.Drawing.Color.Red;
             this.opbCompartilhar._borderwidth = 3F;
-            this.opbCompartilhar.Image = global::tccCsharp.Properties.Resources.compartilhar;
             this.opbCompartilhar.Location = new System.Drawing.Point(471, 201);
             this.opbCompartilhar.Name = "opbCompartilhar";
             this.opbCompartilhar.Size = new System.Drawing.Size(200, 200);

@@ -63,29 +63,9 @@ namespace tccCsharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _logout_ {
-            get {
-                object obj = ResourceManager.GetObject("_logout_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Classic_Chess_King_Black {
             get {
                 object obj = ResourceManager.GetObject("Classic_Chess_King_Black", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap compartilhar {
-            get {
-                object obj = ResourceManager.GetObject("compartilhar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +93,9 @@ namespace tccCsharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap configuracoes {
+        internal static System.Drawing.Bitmap Down_Black {
             get {
-                object obj = ResourceManager.GetObject("configuracoes", resourceCulture);
+                object obj = ResourceManager.GetObject("Down_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +103,9 @@ namespace tccCsharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Down_Black {
+        internal static System.Drawing.Bitmap Down_White {
             get {
-                object obj = ResourceManager.GetObject("Down_Black", resourceCulture);
+                object obj = ResourceManager.GetObject("Down_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,19 +123,9 @@ namespace tccCsharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap editar {
+        internal static System.Drawing.Bitmap Edit_White {
             get {
-                object obj = ResourceManager.GetObject("editar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap excluir {
-            get {
-                object obj = ResourceManager.GetObject("excluir", resourceCulture);
+                object obj = ResourceManager.GetObject("Edit_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +136,16 @@ namespace tccCsharp.Properties {
         internal static System.Drawing.Bitmap Left_Black {
             get {
                 object obj = ResourceManager.GetObject("Left_Black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Left_White {
+            get {
+                object obj = ResourceManager.GetObject("Left_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,16 +166,6 @@ namespace tccCsharp.Properties {
         internal static System.Drawing.Bitmap Logout_White {
             get {
                 object obj = ResourceManager.GetObject("Logout_White", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap recarregar {
-            get {
-                object obj = ResourceManager.GetObject("recarregar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +203,29 @@ namespace tccCsharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Right_White {
+            get {
+                object obj = ResourceManager.GetObject("Right_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Up_Black {
             get {
                 object obj = ResourceManager.GetObject("Up_Black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Up_White {
+            get {
+                object obj = ResourceManager.GetObject("Up_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

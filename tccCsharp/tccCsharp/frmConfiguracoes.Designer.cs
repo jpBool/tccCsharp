@@ -249,7 +249,6 @@ namespace tccCsharp
             this.OPBLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OPBLogout.BackColor = System.Drawing.Color.White;
-            this.OPBLogout.Image = global::tccCsharp.Properties.Resources._logout_;
             this.OPBLogout.Location = new System.Drawing.Point(818, 1);
             this.OPBLogout.Name = "OPBLogout";
             this.OPBLogout.Size = new System.Drawing.Size(48, 48);
@@ -265,7 +264,6 @@ namespace tccCsharp
             this.opbRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.opbRecarregar.BackColor = System.Drawing.Color.White;
-            this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.recarregar;
             this.opbRecarregar.Location = new System.Drawing.Point(872, 1);
             this.opbRecarregar.Name = "opbRecarregar";
             this.opbRecarregar.Size = new System.Drawing.Size(48, 48);
@@ -281,7 +279,6 @@ namespace tccCsharp
             this.opbConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.opbConfiguracoes.BackColor = System.Drawing.Color.White;
-            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.configuracoes;
             this.opbConfiguracoes.Location = new System.Drawing.Point(926, 1);
             this.opbConfiguracoes.Name = "opbConfiguracoes";
             this.opbConfiguracoes.Size = new System.Drawing.Size(48, 48);
