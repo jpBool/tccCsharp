@@ -7,18 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace tccCsharp
 {
-    public partial class frmCriar_Grupo : Form
+    public partial class frmEditar_Grupo : Form
     {
         public Head cabecalho = new Head();
         public List<GroupSteps> grupos = new List<GroupSteps>();
+        public int IdGrupo;
+        public GroupSteps grupoEditando = new GroupSteps();
 
-        public frmCriar_Grupo()
+        public frmEditar_Grupo(int IdRecebido)
         {
             InitializeComponent();
+            IdGrupo = IdRecebido;
         }
 
         private void DoDesign()
@@ -67,13 +69,12 @@ namespace tccCsharp
             btnCancelar.AutoHoover = true;
             btnCancelar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
 
-            btnCriar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
-            btnCriar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            btnCriar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnCriar.AutoHoover = true;
-            btnCriar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAtualizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnAtualizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnAtualizar.AutoHoover = true;
+            btnAtualizar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
-
 
         private void AtualizaCabecalho()
         {
@@ -94,12 +95,12 @@ namespace tccCsharp
             }
         }
 
-        private void frmCriar_Grupo_Load(object sender, EventArgs e)
+        private void frmEditar_Grupo_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             DoDesign();
             AtualizaCabecalho();
-            grupos = Banco.ConsultaGrupos(0);
+            grupos = Banco.ConsultaGrupos(IdGrupo);
 
             if (grupos.Count < 2)
             {
@@ -115,15 +116,19 @@ namespace tccCsharp
                 comboDepois.SelectedIndex = 0;
             }
 
-            if(radMeio.Checked == false)
+            if (radMeio.Checked == false)
             {
                 TLPSelecionaCombo.Enabled = false;
             }
 
-            radInicio.Checked = true; 
-            radMeio.Checked = false; 
+            radInicio.Checked = true;
+            radMeio.Checked = false;
             radFim.Checked = false;
             TLPSelecionaCombo.Enabled = false;
+
+            grupoEditando = Banco.RecarregaGrupo(IdGrupo);
+
+            txtNomeGrupo.Text = grupoEditando.nome_grupo;
         }
 
         private void radInicio_Click(object sender, EventArgs e)
@@ -174,59 +179,26 @@ namespace tccCsharp
                 radMeio.Checked = false;
                 TLPSelecionaCombo.Enabled = false;
             }
-        }
+        }        
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnCriar_Click(object sender, EventArgs e)
-        {
-            if (txtNomeGrupo.Text == String.Empty)
-            {
-                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                txtNomeGrupo.Focus();  
-                return;
-            }
-                
-
-            GroupSteps novogrupo = new GroupSteps();
-            novogrupo.id_projeto = Program.id_projeto_atual;
-            novogrupo.nome_grupo = txtNomeGrupo.Text;
-            novogrupo.porcentagem = 0;
-            if (BoxSim.Checked == true)
-                novogrupo.mostrar_porcentagem = true;
-            else
-                novogrupo.mostrar_porcentagem = false;
-
-            if (radInicio.Checked == true)
-            {
-                Banco.AdicionaOrdenador(Program.id_projeto_atual, 1);
-                novogrupo.ordenador = 1;
-            }
-            else if (radFim.Checked == true)
-            {
-                int last = grupos.Count();
-                novogrupo.ordenador = grupos[last - 1].ordenador + 1;  
-            }
-            else
-            {
-                int mid = Convert.ToInt32(comboDepois.SelectedValue) + 1;
-                Banco.AdicionaOrdenador(Program.id_projeto_atual, mid);
-                novogrupo.ordenador = mid;
-            }
-            novogrupo.excluido = false;
-            novogrupo.numero_etapas = 0;
-
-            Banco.InsereGrupo(novogrupo);
-            MessageBox.Show("Grupo criado com sucesso!!", "Sucesso", MessageBoxButtons.OK);
-            this.Close();
-        }
-
         private void txtNomeGrupo_Leave(object sender, EventArgs e)
         {
             customLine1.LineColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

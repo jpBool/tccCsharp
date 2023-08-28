@@ -1,6 +1,6 @@
 ﻿namespace tccCsharp
 {
-    partial class frmCriar_Grupo
+    partial class frmEditar_Grupo
     {
         /// <summary>
         /// Required designer variable.
@@ -70,7 +70,8 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.RGBDados4 = new tccCsharp.RoundedGroupBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCriar = new RoundButton();
+            this.btnExcluir = new RoundButton();
+            this.btnAtualizar = new RoundButton();
             this.btnCancelar = new RoundButton();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
@@ -115,7 +116,7 @@
             this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.TLP_Mãe.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLP_Mãe.Size = new System.Drawing.Size(1267, 685);
-            this.TLP_Mãe.TabIndex = 2;
+            this.TLP_Mãe.TabIndex = 3;
             // 
             // TLPHead2
             // 
@@ -345,11 +346,11 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(436, 4);
+            this.lblTitulo.Location = new System.Drawing.Point(497, 6);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(423, 39);
+            this.lblTitulo.Size = new System.Drawing.Size(279, 39);
             this.lblTitulo.TabIndex = 11;
-            this.lblTitulo.Text = "CRIANDO NOVO GRUPO";
+            this.lblTitulo.Text = "EDITAR GRUPO";
             // 
             // OPBRecarregar
             // 
@@ -744,38 +745,57 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.btnCriar, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.btnCancelar, 0, 0);
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.Controls.Add(this.btnExcluir, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btnAtualizar, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btnCancelar, 1, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(18, 12);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(717, 41);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
-            // btnCriar
+            // btnExcluir
             // 
-            this.btnCriar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCriar.AutoHoover = false;
-            this.btnCriar.BordaHoover = System.Drawing.Color.Green;
-            this.btnCriar.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnCriar.BorderColor = System.Drawing.Color.Black;
-            this.btnCriar.BorderRadius = 20;
-            this.btnCriar.BorderThickness = 4;
-            this.btnCriar.ButtonColor = System.Drawing.Color.White;
-            this.btnCriar.Location = new System.Drawing.Point(361, 3);
-            this.btnCriar.Name = "btnCriar";
-            this.btnCriar.Size = new System.Drawing.Size(353, 34);
-            this.btnCriar.TabIndex = 5;
-            this.btnCriar.Text = "CRIAR GRUPO";
-            this.btnCriar.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnCriar.UseVisualStyleBackColor = true;
-            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.AutoHoover = false;
+            this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
+            this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
+            this.btnExcluir.BorderRadius = 20;
+            this.btnExcluir.BorderThickness = 4;
+            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Location = new System.Drawing.Point(3, 3);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(233, 34);
+            this.btnExcluir.TabIndex = 6;
+            this.btnExcluir.Text = "EXCLUIR GRUPO";
+            this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAtualizar.AutoHoover = false;
+            this.btnAtualizar.BordaHoover = System.Drawing.Color.Green;
+            this.btnAtualizar.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnAtualizar.BorderColor = System.Drawing.Color.Black;
+            this.btnAtualizar.BorderRadius = 20;
+            this.btnAtualizar.BorderThickness = 4;
+            this.btnAtualizar.ButtonColor = System.Drawing.Color.White;
+            this.btnAtualizar.Location = new System.Drawing.Point(481, 3);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(233, 34);
+            this.btnAtualizar.TabIndex = 5;
+            this.btnAtualizar.Text = "ATUALIZAR";
+            this.btnAtualizar.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnCancelar
             // 
@@ -787,25 +807,24 @@
             this.btnCancelar.BorderRadius = 20;
             this.btnCancelar.BorderThickness = 4;
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(3, 3);
+            this.btnCancelar.Location = new System.Drawing.Point(242, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(352, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(233, 34);
             this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.Text = "SAIR SEM SALVAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // frmCriar_Grupo
+            // frmEditar_Grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
-            this.MinimumSize = new System.Drawing.Size(1280, 720);
-            this.Name = "frmCriar_Grupo";
-            this.Text = "frmCriarGrupo";
-            this.Load += new System.EventHandler(this.frmCriar_Grupo_Load);
+            this.Name = "frmEditar_Grupo";
+            this.Text = "frmEditar_Grupo";
+            this.Load += new System.EventHandler(this.frmEditar_Grupo_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
@@ -869,7 +888,18 @@
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.TableLayoutPanel TLPConteudo;
         private RoundedGroupBox RGBDados3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox BoxSim;
         private RoundedGroupBox RGBDados2;
+        private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
+        private System.Windows.Forms.RadioButton radFim;
+        private System.Windows.Forms.TableLayoutPanel TLPEntreGrupos;
+        private System.Windows.Forms.RadioButton radMeio;
+        private System.Windows.Forms.TableLayoutPanel TLPSelecionaCombo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboDepois;
+        private System.Windows.Forms.RadioButton radInicio;
         private System.Windows.Forms.Label lblPosicao;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private RoundedGroupBox RGBNome;
@@ -878,19 +908,9 @@
         private CustomLine customLine1;
         private System.Windows.Forms.Label lblNome;
         private RoundedGroupBox RGBDados4;
-        private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
-        private System.Windows.Forms.TableLayoutPanel TLPEntreGrupos;
-        private System.Windows.Forms.TableLayoutPanel TLPSelecionaCombo;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox BoxSim;
-        private System.Windows.Forms.RadioButton radFim;
-        private System.Windows.Forms.RadioButton radMeio;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radInicio;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private RoundButton btnCriar;
+        private RoundButton btnAtualizar;
         private RoundButton btnCancelar;
-        private System.Windows.Forms.ComboBox comboDepois;
+        private RoundButton btnExcluir;
     }
 }

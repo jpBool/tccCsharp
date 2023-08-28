@@ -504,5 +504,25 @@ namespace tccCsharp
                     groupPorcentagem2.Width = 45;
             }
         }
+
+        private void opbEditarE1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmEditar_Grupo splash = new frmEditar_Grupo(grupos[y+0].id_grupo);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+
+            }
+        }
     }
 }

@@ -701,15 +701,16 @@ namespace tccCsharp
             }
         }
 
-        public static List<GroupSteps> ConsultaGrupos()
+        public static List<GroupSteps> ConsultaGrupos(int except)
         {
             List<GroupSteps> grupos = new List<GroupSteps>();
             try
             {
                 string sql;
-                sql = "SELECT * FROM gp2_grupos_etapas WHERE id_projeto = @1 ORDER BY ordenador ASC";
+                sql = "SELECT * FROM gp2_grupos_etapas WHERE id_projeto = @1 AND id_grupo != @2 ORDER BY ordenador ASC";
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
+                param.Add(except);
 
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 while (dr.Read())
@@ -785,6 +786,39 @@ namespace tccCsharp
             return idInserido;
         }
 
+        public static GroupSteps RecarregaGrupo(int IdGrupo)
+        {
+            GroupSteps selecionado = new GroupSteps();
+            string sql;
+            try
+            {
+                sql = "SELECT * FROM gp2_grupos_etapas WHERE id_grupo = @1";
+                List<object> param = new List<object>();
+                param.Add(IdGrupo);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                dr.Read();
+                selecionado.id_projeto = Convert.ToInt32(dr["id_projeto"]);
+                selecionado.id_grupo = Convert.ToInt32(dr["id_grupo"]);
+                selecionado.nome_grupo = Convert.ToString(dr["nome_grupo"]);
+                selecionado.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
+                selecionado.mostrar_porcentagem = Convert.ToBoolean(dr["mostrar_porcentagem"]);
+                selecionado.ordenador = Convert.ToInt32(dr["ordenador"]);
+                selecionado.excluido = Convert.ToBoolean(dr["excluido"]);
+                selecionado.numero_etapas = Convert.ToInt32(dr["num_etapas"]);
+
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar esse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return selecionado;
+        }
     } 
 }
 
