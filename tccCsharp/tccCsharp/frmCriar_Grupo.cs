@@ -120,6 +120,10 @@ namespace tccCsharp
                 TLPSelecionaCombo.Enabled = false;
             }
 
+            radInicio.Checked = true; 
+            radMeio.Checked = false; 
+            radFim.Checked = false;
+            TLPSelecionaCombo.Enabled = false;
         }
 
         private void radInicio_Click(object sender, EventArgs e)
@@ -179,9 +183,10 @@ namespace tccCsharp
 
         private void btnCriar_Click(object sender, EventArgs e)
         {
-            if (txtNomeGrupo.Text == null)
+            if (txtNomeGrupo.Text == String.Empty)
             {
                 customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                txtNomeGrupo.Focus();  
                 return;
             }
                 
@@ -214,7 +219,9 @@ namespace tccCsharp
             novogrupo.excluido = false;
             novogrupo.numero_etapas = 0;
 
-            //Banco.insetrtgrupo(novogrupo)
+            Banco.InsereGrupo(novogrupo);
+            MessageBox.Show("Grupo criado com sucesso!!", "Sucesso", MessageBoxButtons.OK);
+            this.Close();
         }
 
         private void txtNomeGrupo_Leave(object sender, EventArgs e)

@@ -754,6 +754,37 @@ namespace tccCsharp
             }
         }
 
+        public static int InsereGrupo(GroupSteps grupo)
+        {
+            int idInserido = 0;
+            try
+            {
+                Conectar();
+                String sql = "INSERT INTO gp2_grupos_etapas (id_projeto, nome_grupo, porcentagem, mostrar_porcentagem, ordenador, excluido, num_etapas) VALUES ";
+                sql += "(@1, @2, @3, @4, @5, @6, @7) RETURNING id_grupo";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", Program.id_projeto_atual);
+                cmd.Parameters.AddWithValue("@2", grupo.nome_grupo);
+                cmd.Parameters.AddWithValue("@3", grupo.porcentagem);
+                cmd.Parameters.AddWithValue("@4", grupo.mostrar_porcentagem);
+                cmd.Parameters.AddWithValue("@5", grupo.ordenador);
+                cmd.Parameters.AddWithValue("@6", grupo.excluido);
+                cmd.Parameters.AddWithValue("@7", grupo.numero_etapas);
+
+                idInserido = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return idInserido;
+        }
+
     } 
 }
 

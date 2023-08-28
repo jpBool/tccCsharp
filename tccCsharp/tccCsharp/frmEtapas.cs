@@ -472,6 +472,10 @@ namespace tccCsharp
             {
                 this.Visible = true;
                 AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+
             }
         }
         private void AtualizaCabecalho()
