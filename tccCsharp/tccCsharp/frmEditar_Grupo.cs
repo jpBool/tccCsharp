@@ -16,6 +16,8 @@ namespace tccCsharp
         public List<GroupSteps> grupos = new List<GroupSteps>();
         public int IdGrupo;
         public GroupSteps grupoEditando = new GroupSteps();
+        public int originalIndex;
+        public int originalValue;
 
         public frmEditar_Grupo(int IdRecebido)
         {
@@ -129,6 +131,14 @@ namespace tccCsharp
             grupoEditando = Banco.RecarregaGrupo(IdGrupo);
 
             txtNomeGrupo.Text = grupoEditando.nome_grupo;
+
+            comboDepois.SelectedIndex = -1;
+            while (Convert.ToInt32(comboDepois.SelectedValue) < grupoEditando.ordenador - 1)
+            {
+                comboDepois.SelectedIndex++;
+            }
+            originalIndex = comboDepois.SelectedIndex;
+            originalValue = grupoEditando.ordenador;
         }
 
         private void radInicio_Click(object sender, EventArgs e)
