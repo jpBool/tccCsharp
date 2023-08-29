@@ -726,6 +726,7 @@
             this.opbEditarE2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarE2.TabIndex = 41;
             this.opbEditarE2.TabStop = false;
+            this.opbEditarE2.Click += new System.EventHandler(this.opbEditarE2_Click);
             // 
             // tableLayoutPanel2
             // 

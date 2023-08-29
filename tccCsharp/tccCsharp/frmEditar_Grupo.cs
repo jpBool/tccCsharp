@@ -16,8 +16,6 @@ namespace tccCsharp
         public List<GroupSteps> grupos = new List<GroupSteps>();
         public int IdGrupo;
         public GroupSteps grupoEditando = new GroupSteps();
-        public int originalIndex;
-        public int originalValue;
 
         public frmEditar_Grupo(int IdRecebido)
         {
@@ -76,6 +74,12 @@ namespace tccCsharp
             btnAtualizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnAtualizar.AutoHoover = true;
             btnAtualizar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+
+            btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnExcluir.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnExcluir.AutoHoover = true;
+            btnExcluir.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void AtualizaCabecalho()
@@ -133,12 +137,6 @@ namespace tccCsharp
             txtNomeGrupo.Text = grupoEditando.nome_grupo;
 
             comboDepois.SelectedIndex = -1;
-            while (Convert.ToInt32(comboDepois.SelectedValue) < grupoEditando.ordenador - 1)
-            {
-                comboDepois.SelectedIndex++;
-            }
-            originalIndex = comboDepois.SelectedIndex;
-            originalValue = grupoEditando.ordenador;
         }
 
         private void radInicio_Click(object sender, EventArgs e)
@@ -203,12 +201,66 @@ namespace tccCsharp
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
+            if (txtNomeGrupo.Text == String.Empty)
+            {
+                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                txtNomeGrupo.Focus();
+                return;
+            }
 
+
+            GroupSteps grupoAlterado = new GroupSteps();
+            grupoAlterado.id_grupo = grupoEditando.id_grupo;
+
+            grupoAlterado.nome_grupo = txtNomeGrupo.Text;
+            if (BoxSim.Checked == true)
+                grupoAlterado.mostrar_porcentagem = true;
+            else
+                grupoAlterado.mostrar_porcentagem = false;
+
+            if (radInicio.Checked == true)
+            {
+                if(grupoEditando.ordenador != 1)
+                {
+                    Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, 1, 1);
+                    Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, grupoEditando.ordenador + 1, -1);
+                    grupoAlterado.ordenador = 1;
+                }
+            }
+            else if (radFim.Checked == true)
+            {
+                Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, grupoEditando.ordenador, -1);
+                int fim = Convert.ToInt32(grupos[grupos.Count - 1].ordenador + 1);
+                grupoAlterado.ordenador = fim -1;
+
+            }
+            else
+            {
+                int mid = Convert.ToInt32(comboDepois.SelectedValue) + 1;
+
+                Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, mid, 1);
+                Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, grupoEditando.ordenador, -1);
+                grupoAlterado.ordenador = mid - 1;
+
+            }
+
+
+            Banco.AtualizaGrupo(grupoAlterado);
+            MessageBox.Show("Grupo atualizado com sucesso!!", "Sucesso", MessageBoxButtons.OK);
+            this.Close();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            Banco.DeleteGroup(grupoEditando.id_grupo);
+            Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, grupoEditando.ordenador, -1);
+            MessageBox.Show("Grupo excluido com sucesso!!", "Sucesso", MessageBoxButtons.OK);
+            this.Close();
+        }
 
+        private void OPBRecarregar_Click(object sender, EventArgs e)
+        {
+            Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, grupoEditando.ordenador, -1);
         }
     }
 }

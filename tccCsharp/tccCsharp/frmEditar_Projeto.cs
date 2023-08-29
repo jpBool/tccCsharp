@@ -380,7 +380,7 @@ namespace tccCsharp
 
             editando.data_atualizacao = DateTime.Now;
 
-            Banco.AtulizarProjeto(editando);
+            Banco.AtualizarProjeto(editando);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

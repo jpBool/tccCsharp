@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 using Npgsql;
+using System.Net.Configuration;
 #pragma warning disable IDE0028
 #pragma warning disable IDE0017
 
@@ -251,7 +252,7 @@ namespace tccCsharp
             return projetos;
         }
 
-        public static void AtulizarProjeto(Project Atualizar)
+        public static void AtualizarProjeto(Project Atualizar)
         {
             try
             {
@@ -609,6 +610,7 @@ namespace tccCsharp
             finally
             {
                 Desconectar();
+                Banco.NewCommit();
             }
             return idInserido;
         }
@@ -631,6 +633,7 @@ namespace tccCsharp
             finally
             {
                 Desconectar();
+                Banco.NewCommit();
             }
         }
 
@@ -698,6 +701,7 @@ namespace tccCsharp
             finally
             {
                 Desconectar();
+                Banco.NewCommit();
             }
         }
 
@@ -734,15 +738,16 @@ namespace tccCsharp
             return grupos;
         }
 
-        public static void AdicionaOrdenador(int id_projeto, int ordenadorAcima)
+        public static void AlteraOrdenadorGrupo(int id_projeto, int ordenadorAcima, int quant)
         {
             try
             {
                 Conectar();
-                String sql = "UPDATE gp2_grupos_etapas	SET  ordenador = ordenador + 1 WHERE id_projeto = @1 AND ordenador >= @2;";
+                String sql = "UPDATE gp2_grupos_etapas	SET  ordenador = ordenador + @1 WHERE id_projeto = @2 AND ordenador >= @3;";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                cmd.Parameters.AddWithValue("@1", id_projeto);
-                cmd.Parameters.AddWithValue("@2", ordenadorAcima);
+                cmd.Parameters.AddWithValue("@1", quant);
+                cmd.Parameters.AddWithValue("@2", id_projeto);
+                cmd.Parameters.AddWithValue("@3", ordenadorAcima);
                 cmd.ExecuteNonQuery();
             }
             catch (NpgsqlException ex)
@@ -782,6 +787,8 @@ namespace tccCsharp
             finally
             {
                 Desconectar();
+                Banco.NewCommit();
+                Banco.GroupNumAlt(Program.id_projeto_atual, 1);
             }
             return idInserido;
         }
@@ -819,7 +826,77 @@ namespace tccCsharp
             }
             return selecionado;
         }
+
+        public static void GroupNumAlt(int IdProjeto, int quant)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_projetos SET  num_grupos = num_grupos + @1 WHERE id_projeto = @2;";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", quant);
+                cmd.Parameters.AddWithValue("@2", IdProjeto);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar suas informações !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+        public static void DeleteGroup(int IdGrupo)
+        {
+            try
+            {
+                Conectar();
+                String sql = "DELETE FROM gp2_grupos_etapas WHERE id_grupo = @1";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", IdGrupo);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu ao excluir!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+                Banco.GroupNumAlt(Program.id_projeto_atual, -1);
+            }
+        }
+
+        public static void AtualizaGrupo(GroupSteps Atualizar)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_grupos_etapas SET nome_grupo = @1, mostrar_porcentagem = @2, ordenador = @3 WHERE id_grupo = @4 ";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", Atualizar.nome_grupo);
+                cmd.Parameters.AddWithValue("@2", Atualizar.mostrar_porcentagem);
+                cmd.Parameters.AddWithValue("@3", Atualizar.ordenador);
+                cmd.Parameters.AddWithValue("@4", Atualizar.id_grupo);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar o grupo !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+            }
+        }
     } 
+
 }
 
 

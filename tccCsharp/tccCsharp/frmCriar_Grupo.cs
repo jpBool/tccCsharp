@@ -202,7 +202,7 @@ namespace tccCsharp
 
             if (radInicio.Checked == true)
             {
-                Banco.AdicionaOrdenador(Program.id_projeto_atual, 1);
+                Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, 1, 1);
                 novogrupo.ordenador = 1;
             }
             else if (radFim.Checked == true)
@@ -213,13 +213,15 @@ namespace tccCsharp
             else
             {
                 int mid = Convert.ToInt32(comboDepois.SelectedValue) + 1;
-                Banco.AdicionaOrdenador(Program.id_projeto_atual, mid);
+                Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, mid, 1);
                 novogrupo.ordenador = mid;
             }
             novogrupo.excluido = false;
             novogrupo.numero_etapas = 0;
 
             Banco.InsereGrupo(novogrupo);
+            
+
             MessageBox.Show("Grupo criado com sucesso!!", "Sucesso", MessageBoxButtons.OK);
             this.Close();
         }

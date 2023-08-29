@@ -376,6 +376,9 @@ namespace tccCsharp
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
             }
+
+            OPBRight1.Visible = false;
+            OPBRight2.Visible = false; 
         }
 
         private void OPBLogout_Click(object sender, EventArgs e)
@@ -509,6 +512,26 @@ namespace tccCsharp
         {
             this.Visible = false;
             frmEditar_Grupo splash = new frmEditar_Grupo(grupos[y+0].id_grupo);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+
+            }
+        }
+
+        private void opbEditarE2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmEditar_Grupo splash = new frmEditar_Grupo(grupos[y + 1].id_grupo);
             splash.ShowDialog();
             if (Program.id_usuario == 0)
             {
