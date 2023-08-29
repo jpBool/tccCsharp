@@ -110,6 +110,12 @@
     <Compile Include="CustomLine.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="frmCriar_Etapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCriar_Etapa.Designer.cs">
+      <DependentUpon>frmCriar_Etapa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCriar_Grupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConfiguracoes.resx">
       <DependentUpon>frmConfiguracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCriar_Etapa.resx">
+      <DependentUpon>frmCriar_Etapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCriar_Grupo.resx">
       <DependentUpon>frmCriar_Grupo.cs</DependentUpon>
