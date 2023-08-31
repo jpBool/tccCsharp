@@ -258,7 +258,7 @@ namespace tccCsharp
             }
 
             toggle = !toggle;
-            nudFonte.Visible = toggle;
+            //nudFonte.Visible = toggle;
             
         }
 
@@ -372,6 +372,58 @@ namespace tccCsharp
         private void lblConfigsG_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblPCores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblIconePreto_Click(object sender, EventArgs e)
+        {
+            //AlteraIcones()
+        }
+
+        private void btnRestaurarPadrao_Click(object sender, EventArgs e)
+        {
+            //COMPONENTES DE AGRUPAMENTO
+            this.tlpBaseConfig1.BackColor = Color.FromArgb(229, 241, 243);
+            this.rgbMenu.BackgroundColor = Color.FromArgb(16, 39, 62);
+            this.rgbMenu.BackColor = Color.FromArgb(16, 39, 62);
+
+            //LABELS DE COR
+            lblCor1.BackColor = Color.FromArgb(0, 0, 0);
+            lblCor2.BackColor = Color.FromArgb(16, 39, 62);
+            lblCor3.BackColor = Color.FromArgb(54, 78, 101);
+            lblCor4.BackColor = Color.FromArgb(138, 182, 213);
+            lblCor5.BackColor = Color.FromArgb(170, 210, 229);
+            lblCor6.BackColor = Color.FromArgb(229, 241, 243);
+            lblCor7.BackColor = Color.FromArgb(255, 255, 255);
+            lblCorAviso1.BackColor = Color.FromArgb(204, 255, 51);
+            lblCorAviso2.BackColor = Color.FromArgb(242, 92, 84);
+            lblCorTexto1.BackColor = Color.FromArgb(0, 0, 0);
+            lblCorTexto2.BackColor = Color.FromArgb(255, 255, 255);
+
+            //OUTRAS LABELS
+            lblConfigsG.ForeColor = Color.FromArgb(0, 0, 0);
+            lblConfiguracoes.ForeColor = Color.FromArgb(0, 0, 0);
+            lblCoresElementos.ForeColor = Color.FromArgb(0, 0, 0);
+            lblCoresTexto.ForeColor = Color.FromArgb(0, 0, 0);
+            lblCoresAviso.ForeColor = Color.FromArgb(0, 0, 0);
+            lblPCores.ForeColor = Color.FromArgb(0, 0, 0);
+
+            //BOTÕES
+            btnAltTamF.ButtonColor = Color.FromArgb(16, 39, 62);
+            btnAltTamF.ForeColor = Color.FromArgb(255, 255, 255);
+            this.btnPersonalizar.ButtonColor = Color.FromArgb(16, 39, 62);
+            btnPersonalizar.ForeColor = Color.FromArgb( 255, 255, 255);
+            btnTutoriais.ButtonColor = Color.FromArgb(16, 39, 62);
+            btnTutoriais.ForeColor = Color.FromArgb(255, 255, 255);
+            btnVoltar.ButtonColor = Color.FromArgb(16, 39, 62);
+            btnVoltar.ForeColor = Color.FromArgb(255, 255, 255);
+            btnPersonalizar.ForeColor = Color.FromArgb(255, 255, 255);
+            btnAltTamF.ForeColor = Color.FromArgb(255, 255, 255);
+            btnTutoriais.ForeColor = Color.FromArgb( 255, 255, 255);
         }
     }
  

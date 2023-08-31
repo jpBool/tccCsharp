@@ -275,3 +275,8 @@ C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccC
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Grupo.resources
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Grupo.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Etapa.resources
+C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Etapa.resources
+C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Grupo.resources
+C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Grupo.resources
+C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.dll
+C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.xml
