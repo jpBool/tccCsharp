@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label lblTitulo;
             this.TLP_Mãe = new System.Windows.Forms.TableLayoutPanel();
             this.TLPConteudo = new System.Windows.Forms.TableLayoutPanel();
             this.TLPFilho1 = new System.Windows.Forms.TableLayoutPanel();
@@ -41,17 +40,28 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.lblImpedimento = new System.Windows.Forms.Label();
             this.lblDescri = new System.Windows.Forms.Label();
-            this.RGBPalavras = new tccCsharp.RoundedGroupBox();
+            this.RGBDecri1 = new tccCsharp.RoundedGroupBox();
             this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.roundedGroupBox1 = new tccCsharp.RoundedGroupBox();
+            this.RGBDescri2 = new tccCsharp.RoundedGroupBox();
             this.txtDescriImpedimento = new System.Windows.Forms.TextBox();
             this.boxSim = new System.Windows.Forms.CheckBox();
             this.RGBCampos = new tccCsharp.RoundedGroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboStatus = new System.Windows.Forms.ComboBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtResponsavel = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.comboStatus = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
-            this.roundedGroupBox2 = new tccCsharp.RoundedGroupBox();
+            this.RGBPrioridade = new tccCsharp.RoundedGroupBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.lblNivel = new System.Windows.Forms.Label();
+            this.lblInform = new System.Windows.Forms.Label();
+            this.numPrioridade = new System.Windows.Forms.NumericUpDown();
+            this.numPeso = new System.Windows.Forms.NumericUpDown();
+            this.numPercent = new System.Windows.Forms.NumericUpDown();
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.radFim = new System.Windows.Forms.RadioButton();
@@ -82,32 +92,25 @@
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtResponsavel = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            lblTitulo = new System.Windows.Forms.Label();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
             this.TLPNeto1.SuspendLayout();
             this.RGBNome.SuspendLayout();
-            this.RGBPalavras.SuspendLayout();
-            this.roundedGroupBox1.SuspendLayout();
+            this.RGBDecri1.SuspendLayout();
+            this.RGBDescri2.SuspendLayout();
             this.RGBCampos.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.TLPFilho2.SuspendLayout();
-            this.roundedGroupBox2.SuspendLayout();
+            this.RGBPrioridade.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPrioridade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPeso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPercent)).BeginInit();
             this.RGBDetalhada.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
             this.TLPEntreGrupos.SuspendLayout();
@@ -126,23 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblTitulo
-            // 
-            lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            lblTitulo.AutoSize = true;
-            lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblTitulo.Location = new System.Drawing.Point(442, 9);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new System.Drawing.Size(405, 39);
-            lblTitulo.TabIndex = 11;
-            lblTitulo.Text = "CRIANDO NOVA ETAPA";
             // 
             // TLP_Mãe
             // 
@@ -211,8 +198,8 @@
             this.TLPNeto1.Controls.Add(this.lblNome, 0, 0);
             this.TLPNeto1.Controls.Add(this.lblImpedimento, 0, 2);
             this.TLPNeto1.Controls.Add(this.lblDescri, 0, 1);
-            this.TLPNeto1.Controls.Add(this.RGBPalavras, 1, 1);
-            this.TLPNeto1.Controls.Add(this.roundedGroupBox1, 1, 3);
+            this.TLPNeto1.Controls.Add(this.RGBDecri1, 1, 1);
+            this.TLPNeto1.Controls.Add(this.RGBDescri2, 1, 3);
             this.TLPNeto1.Controls.Add(this.boxSim, 1, 2);
             this.TLPNeto1.Location = new System.Drawing.Point(3, 3);
             this.TLPNeto1.Name = "TLPNeto1";
@@ -259,6 +246,7 @@
             // 
             this.txtNomeEtapa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNomeEtapa.BackColor = System.Drawing.Color.White;
             this.txtNomeEtapa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeEtapa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeEtapa.ForeColor = System.Drawing.Color.Black;
@@ -333,22 +321,22 @@
             this.lblDescri.Text = "Descrição da Eetapa";
             this.lblDescri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // RGBPalavras
+            // RGBDecri1
             // 
-            this.RGBPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDecri1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RGBPalavras.AutoSize = true;
-            this.RGBPalavras.BackColor = System.Drawing.Color.Transparent;
-            this.RGBPalavras.BackgroundColor = System.Drawing.Color.White;
-            this.RGBPalavras.BorderWidth = 2F;
-            this.RGBPalavras.Controls.Add(this.txtDescricao);
-            this.RGBPalavras.CornerRadius = 12;
-            this.RGBPalavras.Location = new System.Drawing.Point(138, 66);
-            this.RGBPalavras.Name = "RGBPalavras";
-            this.RGBPalavras.Size = new System.Drawing.Size(477, 120);
-            this.RGBPalavras.TabIndex = 15;
-            this.RGBPalavras.TabStop = false;
+            this.RGBDecri1.AutoSize = true;
+            this.RGBDecri1.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDecri1.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDecri1.BorderWidth = 2F;
+            this.RGBDecri1.Controls.Add(this.txtDescricao);
+            this.RGBDecri1.CornerRadius = 12;
+            this.RGBDecri1.Location = new System.Drawing.Point(138, 66);
+            this.RGBDecri1.Name = "RGBDecri1";
+            this.RGBDecri1.Size = new System.Drawing.Size(477, 120);
+            this.RGBDecri1.TabIndex = 15;
+            this.RGBDecri1.TabStop = false;
             // 
             // txtDescricao
             // 
@@ -364,22 +352,22 @@
             this.txtDescricao.Size = new System.Drawing.Size(459, 101);
             this.txtDescricao.TabIndex = 0;
             // 
-            // roundedGroupBox1
+            // RGBDescri2
             // 
-            this.roundedGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBDescri2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox1.AutoSize = true;
-            this.roundedGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.roundedGroupBox1.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox1.BorderWidth = 2F;
-            this.roundedGroupBox1.Controls.Add(this.txtDescriImpedimento);
-            this.roundedGroupBox1.CornerRadius = 12;
-            this.roundedGroupBox1.Location = new System.Drawing.Point(138, 255);
-            this.roundedGroupBox1.Name = "roundedGroupBox1";
-            this.roundedGroupBox1.Size = new System.Drawing.Size(477, 123);
-            this.roundedGroupBox1.TabIndex = 17;
-            this.roundedGroupBox1.TabStop = false;
+            this.RGBDescri2.AutoSize = true;
+            this.RGBDescri2.BackColor = System.Drawing.Color.Transparent;
+            this.RGBDescri2.BackgroundColor = System.Drawing.Color.White;
+            this.RGBDescri2.BorderWidth = 2F;
+            this.RGBDescri2.Controls.Add(this.txtDescriImpedimento);
+            this.RGBDescri2.CornerRadius = 12;
+            this.RGBDescri2.Location = new System.Drawing.Point(138, 255);
+            this.RGBDescri2.Name = "RGBDescri2";
+            this.RGBDescri2.Size = new System.Drawing.Size(477, 123);
+            this.RGBDescri2.TabIndex = 17;
+            this.RGBDescri2.TabStop = false;
             // 
             // txtDescriImpedimento
             // 
@@ -426,6 +414,9 @@
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -444,15 +435,40 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(602, 114);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
-            // comboStatus
+            // txtEmail
             // 
-            this.comboStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboStatus.FormattingEnabled = true;
-            this.comboStatus.Location = new System.Drawing.Point(304, 4);
-            this.comboStatus.Name = "comboStatus";
-            this.comboStatus.Size = new System.Drawing.Size(295, 28);
-            this.comboStatus.TabIndex = 4;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail.Location = new System.Drawing.Point(304, 82);
+            this.txtEmail.MaxLength = 256;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(295, 26);
+            this.txtEmail.TabIndex = 9;
+            // 
+            // txtResponsavel
+            // 
+            this.txtResponsavel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtResponsavel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResponsavel.ForeColor = System.Drawing.Color.Black;
+            this.txtResponsavel.Location = new System.Drawing.Point(304, 44);
+            this.txtResponsavel.MaxLength = 150;
+            this.txtResponsavel.Name = "txtResponsavel";
+            this.txtResponsavel.Size = new System.Drawing.Size(295, 26);
+            this.txtResponsavel.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(3, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(295, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Responsável:";
             // 
             // lblStatus
             // 
@@ -465,6 +481,27 @@
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "Status do Projeto:";
             // 
+            // comboStatus
+            // 
+            this.comboStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboStatus.FormattingEnabled = true;
+            this.comboStatus.Location = new System.Drawing.Point(304, 5);
+            this.comboStatus.Name = "comboStatus";
+            this.comboStatus.Size = new System.Drawing.Size(295, 28);
+            this.comboStatus.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(3, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(295, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "E-mail Responsável:";
+            // 
             // TLPFilho2
             // 
             this.TLPFilho2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -472,7 +509,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPFilho2.ColumnCount = 1;
             this.TLPFilho2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPFilho2.Controls.Add(this.roundedGroupBox2, 0, 1);
+            this.TLPFilho2.Controls.Add(this.RGBPrioridade, 0, 1);
             this.TLPFilho2.Controls.Add(this.RGBDetalhada, 0, 0);
             this.TLPFilho2.Controls.Add(this.RGBButtons, 0, 2);
             this.TLPFilho2.Location = new System.Drawing.Point(633, 3);
@@ -484,21 +521,101 @@
             this.TLPFilho2.Size = new System.Drawing.Size(625, 553);
             this.TLPFilho2.TabIndex = 2;
             // 
-            // roundedGroupBox2
+            // RGBPrioridade
             // 
-            this.roundedGroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RGBPrioridade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.roundedGroupBox2.BackgroundColor = System.Drawing.Color.White;
-            this.roundedGroupBox2.BorderWidth = 2F;
-            this.roundedGroupBox2.Controls.Add(this.tableLayoutPanel4);
-            this.roundedGroupBox2.CornerRadius = 20;
-            this.roundedGroupBox2.Location = new System.Drawing.Point(3, 279);
-            this.roundedGroupBox2.Name = "roundedGroupBox2";
-            this.roundedGroupBox2.Size = new System.Drawing.Size(619, 159);
-            this.roundedGroupBox2.TabIndex = 2;
-            this.roundedGroupBox2.TabStop = false;
+            this.RGBPrioridade.BackColor = System.Drawing.Color.Transparent;
+            this.RGBPrioridade.BackgroundColor = System.Drawing.Color.White;
+            this.RGBPrioridade.BorderWidth = 2F;
+            this.RGBPrioridade.Controls.Add(this.tableLayoutPanel4);
+            this.RGBPrioridade.CornerRadius = 20;
+            this.RGBPrioridade.Location = new System.Drawing.Point(3, 279);
+            this.RGBPrioridade.Name = "RGBPrioridade";
+            this.RGBPrioridade.Size = new System.Drawing.Size(619, 159);
+            this.RGBPrioridade.TabIndex = 2;
+            this.RGBPrioridade.TabStop = false;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.lblPeso, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblNivel, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblInform, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.numPrioridade, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.numPeso, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.numPercent, 1, 2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 22);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(602, 114);
+            this.tableLayoutPanel4.TabIndex = 8;
+            // 
+            // lblPeso
+            // 
+            this.lblPeso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.BackColor = System.Drawing.Color.Transparent;
+            this.lblPeso.Location = new System.Drawing.Point(3, 50);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(295, 13);
+            this.lblPeso.TabIndex = 5;
+            this.lblPeso.Text = "Peso da Etapa no Projeto:";
+            // 
+            // lblNivel
+            // 
+            this.lblNivel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNivel.AutoSize = true;
+            this.lblNivel.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel.Location = new System.Drawing.Point(3, 12);
+            this.lblNivel.Name = "lblNivel";
+            this.lblNivel.Size = new System.Drawing.Size(295, 13);
+            this.lblNivel.TabIndex = 1;
+            this.lblNivel.Text = "Nível de Prioridade:";
+            // 
+            // lblInform
+            // 
+            this.lblInform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInform.AutoSize = true;
+            this.lblInform.BackColor = System.Drawing.Color.Transparent;
+            this.lblInform.Location = new System.Drawing.Point(3, 88);
+            this.lblInform.Name = "lblInform";
+            this.lblInform.Size = new System.Drawing.Size(295, 13);
+            this.lblInform.TabIndex = 6;
+            this.lblInform.Text = "Porcentagem de conclusão:";
+            // 
+            // numPrioridade
+            // 
+            this.numPrioridade.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.numPrioridade.Location = new System.Drawing.Point(304, 9);
+            this.numPrioridade.Name = "numPrioridade";
+            this.numPrioridade.Size = new System.Drawing.Size(120, 20);
+            this.numPrioridade.TabIndex = 7;
+            // 
+            // numPeso
+            // 
+            this.numPeso.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.numPeso.Location = new System.Drawing.Point(304, 47);
+            this.numPeso.Name = "numPeso";
+            this.numPeso.Size = new System.Drawing.Size(120, 20);
+            this.numPeso.TabIndex = 8;
+            // 
+            // numPercent
+            // 
+            this.numPercent.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.numPercent.Location = new System.Drawing.Point(304, 85);
+            this.numPercent.Name = "numPercent";
+            this.numPercent.Size = new System.Drawing.Size(120, 20);
+            this.numPercent.TabIndex = 9;
             // 
             // RGBDetalhada
             // 
@@ -689,6 +806,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -913,6 +1031,7 @@
             this.groupPorcentagem.Size = new System.Drawing.Size(557, 45);
             this.groupPorcentagem.TabIndex = 3;
             this.groupPorcentagem.TabStop = false;
+            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
             // 
             // groupPorcentagem2
             // 
@@ -952,7 +1071,7 @@
             this.RGBHead1.BackColor = System.Drawing.Color.Transparent;
             this.RGBHead1.BackgroundColor = System.Drawing.Color.White;
             this.RGBHead1.BorderWidth = 1F;
-            this.RGBHead1.Controls.Add(lblTitulo);
+            this.RGBHead1.Controls.Add(this.lblTitulo);
             this.RGBHead1.Controls.Add(this.OPBRecarregar);
             this.RGBHead1.Controls.Add(this.OPBConfiguracoes);
             this.RGBHead1.Controls.Add(this.OPBLogout);
@@ -962,6 +1081,18 @@
             this.RGBHead1.Size = new System.Drawing.Size(1261, 54);
             this.RGBHead1.TabIndex = 4;
             this.RGBHead1.TabStop = false;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(442, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(405, 39);
+            this.lblTitulo.TabIndex = 11;
+            this.lblTitulo.Text = "CRIANDO NOVA ETAPA";
             // 
             // OPBRecarregar
             // 
@@ -1017,126 +1148,6 @@
             this.OPBLogout.TabIndex = 8;
             this.OPBLogout.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(3, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Responsável:";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(3, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(295, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "E-mail Responsável:";
-            // 
-            // txtResponsavel
-            // 
-            this.txtResponsavel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtResponsavel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResponsavel.ForeColor = System.Drawing.Color.Black;
-            this.txtResponsavel.Location = new System.Drawing.Point(304, 42);
-            this.txtResponsavel.MaxLength = 150;
-            this.txtResponsavel.Name = "txtResponsavel";
-            this.txtResponsavel.Size = new System.Drawing.Size(295, 26);
-            this.txtResponsavel.TabIndex = 8;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(304, 81);
-            this.txtEmail.MaxLength = 256;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(295, 26);
-            this.txtEmail.TabIndex = 9;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.numericUpDown1, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.numericUpDown2, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.numericUpDown3, 1, 2);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 22);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(602, 114);
-            this.tableLayoutPanel4.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(3, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(295, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Peso da Etapa no Projeto:";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(3, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(295, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Nível de Prioridade:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(3, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(295, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Porcentagem de conclusão:";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(304, 3);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 7;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(304, 40);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 8;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(304, 77);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown3.TabIndex = 9;
-            // 
             // frmCriar_Etapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1146,6 +1157,7 @@
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmCriar_Etapa";
             this.Text = "frmCriar_Etapa";
+            this.Load += new System.EventHandler(this.frmCriar_Etapa_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPConteudo.ResumeLayout(false);
             this.TLPFilho1.ResumeLayout(false);
@@ -1154,15 +1166,20 @@
             this.TLPNeto1.PerformLayout();
             this.RGBNome.ResumeLayout(false);
             this.RGBNome.PerformLayout();
-            this.RGBPalavras.ResumeLayout(false);
-            this.RGBPalavras.PerformLayout();
-            this.roundedGroupBox1.ResumeLayout(false);
-            this.roundedGroupBox1.PerformLayout();
+            this.RGBDecri1.ResumeLayout(false);
+            this.RGBDecri1.PerformLayout();
+            this.RGBDescri2.ResumeLayout(false);
+            this.RGBDescri2.PerformLayout();
             this.RGBCampos.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.TLPFilho2.ResumeLayout(false);
-            this.roundedGroupBox2.ResumeLayout(false);
+            this.RGBPrioridade.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPrioridade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPeso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPercent)).EndInit();
             this.RGBDetalhada.ResumeLayout(false);
             this.RGBDetalhada.PerformLayout();
             this.TLPOpcoes.ResumeLayout(false);
@@ -1192,11 +1209,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1207,7 +1219,7 @@
         private System.Windows.Forms.TableLayoutPanel TLPConteudo;
         private System.Windows.Forms.TableLayoutPanel TLPFilho1;
         private System.Windows.Forms.TableLayoutPanel TLPNeto1;
-        private RoundedGroupBox RGBPalavras;
+        private RoundedGroupBox RGBDecri1;
         private System.Windows.Forms.TextBox txtDescricao;
         private RoundedGroupBox RGBNome;
         private System.Windows.Forms.TextBox txtNomeEtapa;
@@ -1239,14 +1251,14 @@
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.Label lblDescri2;
-        private RoundedGroupBox roundedGroupBox1;
+        private RoundedGroupBox RGBDescri2;
         private System.Windows.Forms.TextBox txtDescriImpedimento;
         private System.Windows.Forms.CheckBox boxSim;
         private RoundedGroupBox RGBButtons;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private RoundButton btnSalvar;
         private RoundButton btnCancelar;
-        private RoundedGroupBox roundedGroupBox2;
+        private RoundedGroupBox RGBPrioridade;
         private System.Windows.Forms.Label lblPosicao;
         private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
         private System.Windows.Forms.RadioButton radFim;
@@ -1264,11 +1276,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label lblNivel;
+        private System.Windows.Forms.Label lblInform;
+        private System.Windows.Forms.NumericUpDown numPrioridade;
+        private System.Windows.Forms.NumericUpDown numPeso;
+        private System.Windows.Forms.NumericUpDown numPercent;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }
