@@ -56,12 +56,15 @@
             this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBPrioridade = new tccCsharp.RoundedGroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblPeso = new System.Windows.Forms.Label();
             this.lblNivel = new System.Windows.Forms.Label();
-            this.lblInform = new System.Windows.Forms.Label();
             this.numPrioridade = new System.Windows.Forms.NumericUpDown();
             this.numPeso = new System.Windows.Forms.NumericUpDown();
+            this.lblInform = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.numPercent = new System.Windows.Forms.NumericUpDown();
+            this.trackPercent = new System.Windows.Forms.TrackBar();
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.radFim = new System.Windows.Forms.RadioButton();
@@ -72,6 +75,7 @@
             this.comboDepois = new System.Windows.Forms.ComboBox();
             this.radInicio = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboGrupo = new System.Windows.Forms.ComboBox();
             this.lblSelecione = new System.Windows.Forms.Label();
             this.lblPosicao = new System.Windows.Forms.Label();
             this.RGBButtons = new tccCsharp.RoundedGroupBox();
@@ -111,6 +115,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numPrioridade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPeso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPercent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackPercent)).BeginInit();
             this.RGBDetalhada.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
             this.TLPEntreGrupos.SuspendLayout();
@@ -255,6 +260,7 @@
             this.txtNomeEtapa.Name = "txtNomeEtapa";
             this.txtNomeEtapa.Size = new System.Drawing.Size(400, 19);
             this.txtNomeEtapa.TabIndex = 2;
+            this.txtNomeEtapa.Leave += new System.EventHandler(this.txtNomeEtapa_Leave);
             // 
             // lblcar1
             // 
@@ -344,7 +350,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao.ForeColor = System.Drawing.Color.Gray;
+            this.txtDescricao.ForeColor = System.Drawing.Color.Black;
             this.txtDescricao.Location = new System.Drawing.Point(10, 8);
             this.txtDescricao.MaxLength = 500;
             this.txtDescricao.Multiline = true;
@@ -375,7 +381,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescriImpedimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescriImpedimento.ForeColor = System.Drawing.Color.Gray;
+            this.txtDescriImpedimento.ForeColor = System.Drawing.Color.Black;
             this.txtDescriImpedimento.Location = new System.Drawing.Point(10, 8);
             this.txtDescriImpedimento.MaxLength = 500;
             this.txtDescriImpedimento.Multiline = true;
@@ -387,12 +393,15 @@
             // 
             this.boxSim.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.boxSim.AutoSize = true;
+            this.boxSim.Checked = true;
+            this.boxSim.CheckState = System.Windows.Forms.CheckState.Checked;
             this.boxSim.Location = new System.Drawing.Point(138, 212);
             this.boxSim.Name = "boxSim";
             this.boxSim.Size = new System.Drawing.Size(45, 17);
             this.boxSim.TabIndex = 18;
             this.boxSim.Text = "SIM";
             this.boxSim.UseVisualStyleBackColor = true;
+            this.boxSim.CheckedChanged += new System.EventHandler(this.boxSim_CheckedChanged);
             // 
             // RGBCampos
             // 
@@ -479,7 +488,7 @@
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(295, 13);
             this.lblStatus.TabIndex = 1;
-            this.lblStatus.Text = "Status do Projeto:";
+            this.lblStatus.Text = "Status da Etapa:";
             // 
             // comboStatus
             // 
@@ -542,15 +551,19 @@
             this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.lblPeso, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lblNivel, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lblInform, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.numPrioridade, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.numPeso, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.numPercent, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lblInform, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label4, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.numPercent, 2, 2);
+            this.tableLayoutPanel4.Controls.Add(this.trackPercent, 1, 2);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 22);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
@@ -559,6 +572,17 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(602, 114);
             this.tableLayoutPanel4.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(3, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(295, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Nível de Prioridade:";
             // 
             // lblPeso
             // 
@@ -582,40 +606,93 @@
             this.lblNivel.TabIndex = 1;
             this.lblNivel.Text = "Nível de Prioridade:";
             // 
-            // lblInform
-            // 
-            this.lblInform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblInform.AutoSize = true;
-            this.lblInform.BackColor = System.Drawing.Color.Transparent;
-            this.lblInform.Location = new System.Drawing.Point(3, 88);
-            this.lblInform.Name = "lblInform";
-            this.lblInform.Size = new System.Drawing.Size(295, 13);
-            this.lblInform.TabIndex = 6;
-            this.lblInform.Text = "Porcentagem de conclusão:";
-            // 
             // numPrioridade
             // 
             this.numPrioridade.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.numPrioridade.Location = new System.Drawing.Point(304, 9);
+            this.numPrioridade.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numPrioridade.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numPrioridade.Name = "numPrioridade";
-            this.numPrioridade.Size = new System.Drawing.Size(120, 20);
+            this.numPrioridade.Size = new System.Drawing.Size(50, 20);
             this.numPrioridade.TabIndex = 7;
+            this.numPrioridade.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numPeso
             // 
             this.numPeso.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.numPeso.Location = new System.Drawing.Point(304, 47);
+            this.numPeso.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numPeso.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numPeso.Name = "numPeso";
-            this.numPeso.Size = new System.Drawing.Size(120, 20);
+            this.numPeso.Size = new System.Drawing.Size(50, 20);
             this.numPeso.TabIndex = 8;
+            this.numPeso.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lblInform
+            // 
+            this.lblInform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInform.AutoSize = true;
+            this.lblInform.BackColor = System.Drawing.Color.Transparent;
+            this.lblInform.Location = new System.Drawing.Point(514, 12);
+            this.lblInform.Name = "lblInform";
+            this.lblInform.Size = new System.Drawing.Size(85, 13);
+            this.lblInform.TabIndex = 6;
+            this.lblInform.Text = "(1 a 5)";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(514, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "(1 a 5)";
             // 
             // numPercent
             // 
             this.numPercent.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.numPercent.Location = new System.Drawing.Point(304, 85);
+            this.numPercent.Location = new System.Drawing.Point(514, 85);
             this.numPercent.Name = "numPercent";
-            this.numPercent.Size = new System.Drawing.Size(120, 20);
+            this.numPercent.Size = new System.Drawing.Size(50, 20);
             this.numPercent.TabIndex = 9;
+            this.numPercent.Leave += new System.EventHandler(this.numPercent_Leave);
+            // 
+            // trackPercent
+            // 
+            this.trackPercent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.trackPercent.Location = new System.Drawing.Point(304, 79);
+            this.trackPercent.Maximum = 100;
+            this.trackPercent.Name = "trackPercent";
+            this.trackPercent.Size = new System.Drawing.Size(204, 32);
+            this.trackPercent.TabIndex = 12;
+            this.trackPercent.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackPercent.ValueChanged += new System.EventHandler(this.trackPercent_ValueChanged);
             // 
             // RGBDetalhada
             // 
@@ -668,6 +745,7 @@
             this.radFim.TabIndex = 2;
             this.radFim.Text = "No Final";
             this.radFim.UseVisualStyleBackColor = true;
+            this.radFim.Click += new System.EventHandler(this.radFim_Click);
             // 
             // TLPEntreGrupos
             // 
@@ -698,6 +776,7 @@
             this.radMeio.TabStop = true;
             this.radMeio.Text = "Entre as etapas existentes";
             this.radMeio.UseVisualStyleBackColor = true;
+            this.radMeio.Click += new System.EventHandler(this.radMeio_Click);
             // 
             // TLPSelecionaCombo
             // 
@@ -736,6 +815,7 @@
             this.comboDepois.Name = "comboDepois";
             this.comboDepois.Size = new System.Drawing.Size(166, 21);
             this.comboDepois.TabIndex = 2;
+            this.comboDepois.SelectedIndexChanged += new System.EventHandler(this.comboDepois_SelectedIndexChanged);
             // 
             // radInicio
             // 
@@ -749,12 +829,14 @@
             this.radInicio.TabStop = true;
             this.radInicio.Text = "No Início";
             this.radInicio.UseVisualStyleBackColor = true;
+            this.radInicio.Click += new System.EventHandler(this.radInicio_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.comboGrupo, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblSelecione, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -763,6 +845,16 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(583, 40);
             this.tableLayoutPanel2.TabIndex = 3;
+            // 
+            // comboGrupo
+            // 
+            this.comboGrupo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboGrupo.FormattingEnabled = true;
+            this.comboGrupo.Location = new System.Drawing.Point(294, 9);
+            this.comboGrupo.Name = "comboGrupo";
+            this.comboGrupo.Size = new System.Drawing.Size(166, 21);
+            this.comboGrupo.TabIndex = 5;
+            this.comboGrupo.SelectedIndexChanged += new System.EventHandler(this.comboGrupo_SelectedIndexChanged);
             // 
             // lblSelecione
             // 
@@ -839,6 +931,7 @@
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 
@@ -859,6 +952,7 @@
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // TLPHead2
             // 
@@ -1180,6 +1274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numPrioridade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPeso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPercent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackPercent)).EndInit();
             this.RGBDetalhada.ResumeLayout(false);
             this.RGBDetalhada.PerformLayout();
             this.TLPOpcoes.ResumeLayout(false);
@@ -1283,5 +1378,9 @@
         private System.Windows.Forms.NumericUpDown numPeso;
         private System.Windows.Forms.NumericUpDown numPercent;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TrackBar trackPercent;
+        private System.Windows.Forms.ComboBox comboGrupo;
     }
 }

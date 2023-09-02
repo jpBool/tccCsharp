@@ -363,6 +363,8 @@ namespace tccCsharp
             WindowState = FormWindowState.Maximized;
             DoDesign();
             Banco.CarregarEtapas(grupos);
+            OPBRight1.Visible = false;
+            OPBRight2.Visible = false;
             Refresh_steps();
             cabecalho = Banco.CabecalhoProjeto();
 
@@ -375,10 +377,7 @@ namespace tccCsharp
                 groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
-            }
-
-            OPBRight1.Visible = false;
-            OPBRight2.Visible = false; 
+            } 
         }
 
         private void OPBLogout_Click(object sender, EventArgs e)
@@ -453,12 +452,16 @@ namespace tccCsharp
         private void OPBDown_Click(object sender, EventArgs e)
         {
             y += 2;
+            x1 = 0;
+            x2 = 0;
             Refresh_steps();
         }
 
         private void OPBUp_Click(object sender, EventArgs e)
         {
             y -= 2;
+            x1 = 0;
+            x2 = 0;
             Refresh_steps();
         }
 
@@ -547,5 +550,29 @@ namespace tccCsharp
 
             }
         }
+
+        private void btnADDEtapa_Click(object sender, EventArgs e)
+        {
+            if (grupos.Count <1) return;
+            
+            this.Visible = false;
+            frmCriar_Etapa splash = new frmCriar_Etapa();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+
+            }
+        }
+
+        
     }
 }

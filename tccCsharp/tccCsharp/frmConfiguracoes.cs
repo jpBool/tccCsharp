@@ -424,6 +424,10 @@ namespace tccCsharp
             btnPersonalizar.ForeColor = Color.FromArgb(255, 255, 255);
             btnAltTamF.ForeColor = Color.FromArgb(255, 255, 255);
             btnTutoriais.ForeColor = Color.FromArgb( 255, 255, 255);
+
+            Program.Cor1[0] = 255;
+            Program.Cor1[1] = 255;
+            Program.Cor1[2] = 255;
         }
     }
  

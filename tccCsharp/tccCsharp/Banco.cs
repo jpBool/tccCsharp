@@ -722,6 +722,7 @@ namespace tccCsharp
                     GroupSteps linha = new GroupSteps();
                     linha.ordenador = Convert.ToInt32(dr["ordenador"]);
                     linha.nome_grupo = Convert.ToString(dr["nome_grupo"]);
+                    linha.id_grupo = Convert.ToInt32(dr["id_grupo"]);
                     grupos.Add(linha);
                 }
                 dr.Close();
@@ -893,6 +894,126 @@ namespace tccCsharp
             {
                 Desconectar();
                 Banco.NewCommit();
+            }
+        }
+
+        public static List<Step> ConsultaEtapas(int grupo, int except)
+        {
+            List<Step> etapas = new List<Step>();
+            try
+            {
+                string sql;
+                sql = "SELECT * FROM gp2_etapas WHERE id_grupo = @1 AND id_etapa != @2 ORDER BY ordenador ASC";
+                List<object> param = new List<object>();
+                param.Add(grupo);
+                param.Add(except);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                while (dr.Read())
+                {
+                    Step linha = new Step();
+                    linha.ordenador = Convert.ToInt32(dr["ordenador"]);
+                    linha.nome_etapa = Convert.ToString(dr["nome_etapa"]);
+                    etapas.Add(linha);
+                }
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar as etapas desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar imagens", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return etapas;
+        }
+
+        public static void AlteraOrdenadorEtapa(int id_grupo, int ordenadorAcima, int quant)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_etapas	SET  ordenador = ordenador + @1 WHERE id_grupo = @2 AND ordenador >= @3;";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", quant);
+                cmd.Parameters.AddWithValue("@2", id_grupo);
+                cmd.Parameters.AddWithValue("@3", ordenadorAcima);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar suas informações !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+        public static int InsereEtapa(Step etapa)
+        {
+            int idInserido = 0;
+            try
+            {
+                Conectar();
+                String sql = "INSERT INTO gp2_etapas (id_grupo, nome_etapa, peso, porcentagem, descricao_etapa, status, prioridade, ordenador, " +
+                "responsavel, email_responsavel, impedimento, descricao_impedimento, data_criacao, data_atualizacao, atualizador, excluido) VALUES ";
+                sql += "(@1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15, @16) RETURNING id_etapa";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", etapa.id_grupo);
+                cmd.Parameters.AddWithValue("@2", etapa.nome_etapa);
+                cmd.Parameters.AddWithValue("@3", etapa.peso);
+                cmd.Parameters.AddWithValue("@4", etapa.porcentagem);
+                cmd.Parameters.AddWithValue("@5", etapa.descricao_etapa);
+                cmd.Parameters.AddWithValue("@6", etapa.status);
+                cmd.Parameters.AddWithValue("@7", etapa.prioridade);
+                cmd.Parameters.AddWithValue("@8", etapa.ordenador);
+                cmd.Parameters.AddWithValue("@9", etapa.responsavel);
+                cmd.Parameters.AddWithValue("@10", etapa.email_responsavel);
+                cmd.Parameters.AddWithValue("@11", etapa.impedimento);
+                cmd.Parameters.AddWithValue("@12", etapa.descricao_impedimento);
+                cmd.Parameters.AddWithValue("@13", etapa.data_criacao);
+                cmd.Parameters.AddWithValue("@14", etapa.data_atualizacao);
+                cmd.Parameters.AddWithValue("@15", etapa.atualizador);
+                cmd.Parameters.AddWithValue("@16", etapa.excluido);
+                
+
+                idInserido = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+                Banco.StepNumAlt(etapa.id_grupo, 1);
+            }
+            return idInserido;
+        }
+
+        public static void StepNumAlt(int IdProjeto, int quant)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_grupos_etapas SET num_etapas = num_etapas + @1 WHERE id_grupo = @2;";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", quant);
+                cmd.Parameters.AddWithValue("@2", IdProjeto);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar suas informações !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
             }
         }
     } 

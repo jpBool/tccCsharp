@@ -38,7 +38,7 @@ namespace tccCsharp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new frmCriar_Etapa());
+            //Application.Run(new frmCriar_Etapa());
             Application.Run(new frmLogin());
             //Application.Run(new frmPersonalizacao());
 

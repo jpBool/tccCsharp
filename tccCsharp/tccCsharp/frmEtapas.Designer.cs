@@ -270,6 +270,7 @@
             this.btnADDEtapa.Text = "ADICIONAR ETAPA";
             this.btnADDEtapa.TextoPrincipal = System.Drawing.Color.Black;
             this.btnADDEtapa.UseVisualStyleBackColor = true;
+            this.btnADDEtapa.Click += new System.EventHandler(this.btnADDEtapa_Click);
             // 
             // BtnADDGrupo
             // 
@@ -802,6 +803,7 @@
             this.OPBLeft2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OPBLeft2.TabIndex = 56;
             this.OPBLeft2.TabStop = false;
+            this.OPBLeft2.Click += new System.EventHandler(this.OPBLeft2_Click);
             // 
             // GPBEtapa23
             // 
