@@ -1016,6 +1016,55 @@ namespace tccCsharp
                 Desconectar();
             }
         }
+
+        public static void AtualizaPorcentagem(int id_grupo)
+        {
+            int id_projeto = 0;
+            try
+            {
+                Conectar();
+                String sql = "SELECT id_projeto FROM gp2_grupos_etapas WHERE id_grupo = @1";
+                List<object> param = new List<object>();
+                param.Add(id_grupo);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                while (dr.Read())
+                {
+                    id_projeto = Convert.ToInt32(dr["id_projeto"]);
+                }
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar as informações do porjeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+            List<int> ids = new List<int>();
+            try
+            {
+                Conectar();
+                String sql = "SELECT id_grupo FROM gp2_grupos_etapas WHERE id_projeto = @1";
+                List<object> param = new List<object>();
+                param.Add(id_projeto);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                while (dr.Read())
+                {
+                    int linha = new int();
+                    linha = Convert.ToInt32(dr["id_grupo"]);
+                    ids.Add(linha);
+                }
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar as informações do projeto do porjeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
     } 
 
 }
