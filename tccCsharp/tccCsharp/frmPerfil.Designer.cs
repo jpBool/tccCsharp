@@ -54,7 +54,6 @@
             this.lblBio = new System.Windows.Forms.Label();
             this.tlpOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.btnAdicionar = new RoundButton();
-            this.btnEditarPerfil = new RoundButton();
             this.rgbProjetos = new tccCsharp.RoundedGroupBox();
             this.lblProjetos = new System.Windows.Forms.Label();
             this.TLP_Filha2 = new System.Windows.Forms.TableLayoutPanel();
@@ -475,16 +474,15 @@
             this.tlpOpcoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpOpcoes.ColumnCount = 2;
-            this.tlpOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.91597F));
-            this.tlpOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.08403F));
-            this.tlpOpcoes.Controls.Add(this.btnAdicionar, 1, 0);
-            this.tlpOpcoes.Controls.Add(this.btnEditarPerfil, 0, 0);
+            this.tlpOpcoes.ColumnCount = 1;
+            this.tlpOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpOpcoes.Controls.Add(this.btnAdicionar, 0, 0);
             this.tlpOpcoes.Location = new System.Drawing.Point(15, 147);
             this.tlpOpcoes.Margin = new System.Windows.Forms.Padding(15, 0, 15, 15);
             this.tlpOpcoes.Name = "tlpOpcoes";
             this.tlpOpcoes.RowCount = 1;
-            this.tlpOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpOpcoes.Size = new System.Drawing.Size(604, 43);
             this.tlpOpcoes.TabIndex = 5;
             // 
@@ -500,34 +498,14 @@
             this.btnAdicionar.BorderRadius = 20;
             this.btnAdicionar.BorderThickness = 4;
             this.btnAdicionar.ButtonColor = System.Drawing.Color.White;
-            this.btnAdicionar.Location = new System.Drawing.Point(304, 3);
+            this.btnAdicionar.Location = new System.Drawing.Point(3, 3);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(297, 37);
+            this.btnAdicionar.Size = new System.Drawing.Size(598, 37);
             this.btnAdicionar.TabIndex = 5;
             this.btnAdicionar.Text = "ADICIONAR NOVO PROJETO";
             this.btnAdicionar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
-            // 
-            // btnEditarPerfil
-            // 
-            this.btnEditarPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditarPerfil.AutoHoover = false;
-            this.btnEditarPerfil.BordaHoover = System.Drawing.Color.Green;
-            this.btnEditarPerfil.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnEditarPerfil.BorderColor = System.Drawing.Color.Black;
-            this.btnEditarPerfil.BorderRadius = 20;
-            this.btnEditarPerfil.BorderThickness = 4;
-            this.btnEditarPerfil.ButtonColor = System.Drawing.Color.White;
-            this.btnEditarPerfil.Location = new System.Drawing.Point(3, 3);
-            this.btnEditarPerfil.Name = "btnEditarPerfil";
-            this.btnEditarPerfil.Size = new System.Drawing.Size(295, 37);
-            this.btnEditarPerfil.TabIndex = 3;
-            this.btnEditarPerfil.Text = "EDITAR PERFIL";
-            this.btnEditarPerfil.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnEditarPerfil.UseVisualStyleBackColor = true;
             // 
             // rgbProjetos
             // 
@@ -1031,7 +1009,6 @@
         private System.Windows.Forms.Label lblBio;
         private System.Windows.Forms.TableLayoutPanel tlpOpcoes;
         private RoundButton btnAdicionar;
-        private RoundButton btnEditarPerfil;
         private RoundedGroupBox RGBHead1;
         private OvalPictureBox opbRecarregar;
         private OvalPictureBox opbConfiguracoes;

@@ -228,7 +228,7 @@
             this.lblDescri2.Name = "lblDescri2";
             this.lblDescri2.Size = new System.Drawing.Size(115, 119);
             this.lblDescri2.TabIndex = 16;
-            this.lblDescri2.Text = "Palavras-Chave:";
+            this.lblDescri2.Text = "Descrição do Impedimento:";
             this.lblDescri2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // RGBNome
