@@ -992,6 +992,7 @@ namespace tccCsharp
                 Desconectar();
                 Banco.NewCommit();
                 Banco.StepNumAlt(etapa.id_grupo, 1);
+                Banco.AtualizaPorcentagem(etapa.id_grupo);
             }
             return idInserido;
         }
@@ -1017,44 +1018,82 @@ namespace tccCsharp
             }
         }
 
-        public static void AtualizaPorcentagem(int id_grupo)
+        public static void AtualizaPorcentagem(int idGrupo)
         {
-            int id_projeto = 0;
+            int porcentagemProjeto = 0;
+            int porcentagemGrupo = 0;
             try
             {
                 Conectar();
-                String sql = "SELECT id_projeto FROM gp2_grupos_etapas WHERE id_grupo = @1";
+                String sql = "SELECT T2.id_projeto, CAST(SUM(T1.porcentagem * T1.peso) * 100/ SUM (T1.peso * 100) AS DECIMAL (10,2)) AS \"MEDIA\" " +
+                    "FROM gp2_etapas T1 INNER JOIN gp2_grupos_etapas T2 ON T1.id_grupo = T2.id_grupo " +
+                    "WHERE T2.id_projeto = @1 GROUP BY T2.id_projeto";
                 List<object> param = new List<object>();
-                param.Add(id_grupo);
+                param.Add(Program.id_projeto_atual);
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-                while (dr.Read())
-                {
-                    id_projeto = Convert.ToInt32(dr["id_projeto"]);
-                }
+                
+                dr.Read();
+                porcentagemProjeto = Convert.ToInt32(dr["MEDIA"]);
+                dr.Close(); 
             }
             catch (NpgsqlException ex)
             {
-                MessageBox.Show("Ocorreu um erro ao atualizar as informações do porjeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocorreu um erro ao atualizar as informações do projeto do porjeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
                 Desconectar();
             }
 
-            List<int> ids = new List<int>();
             try
             {
                 Conectar();
-                String sql = "SELECT id_grupo FROM gp2_grupos_etapas WHERE id_projeto = @1";
+                String sql = "SELECT T2.id_grupo, CAST(SUM(T1.porcentagem * T1.peso) * 100/ SUM (T1.peso * 100) AS DECIMAL (10,2)) AS \"MEDIA\" " +
+                    "FROM gp2_etapas T1 INNER JOIN gp2_grupos_etapas T2 ON T1.id_grupo = T2.id_grupo " +
+                    "WHERE T2.id_grupo = @1 GROUP BY T2.id_grupo";
                 List<object> param = new List<object>();
-                param.Add(id_projeto);
+                param.Add(idGrupo);
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-                while (dr.Read())
-                {
-                    int linha = new int();
-                    linha = Convert.ToInt32(dr["id_grupo"]);
-                    ids.Add(linha);
-                }
+
+                dr.Read();
+                porcentagemGrupo = Convert.ToInt32(dr["MEDIA"]);
+                dr.Close();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar as informações do projeto do porjeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_projetos SET porcentagem = @1 where id_projeto = @2";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", porcentagemProjeto);
+                cmd.Parameters.AddWithValue("@2", Program.id_projeto_atual);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar as informações do projeto do porjeto !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_grupos_etapas SET porcentagem = @1 where id_grupo = @2";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", porcentagemGrupo);
+                cmd.Parameters.AddWithValue("@2", idGrupo);
+                cmd.ExecuteNonQuery();
             }
             catch (NpgsqlException ex)
             {

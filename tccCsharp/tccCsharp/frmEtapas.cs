@@ -389,6 +389,7 @@ namespace tccCsharp
 
         private void OPBRecarregar_Click(object sender, EventArgs e)
         {
+            grupos.Clear();
             DoDesign();
             Banco.CarregarEtapas(grupos);
             Refresh_steps();
