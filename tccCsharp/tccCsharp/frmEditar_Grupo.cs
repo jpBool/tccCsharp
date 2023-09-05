@@ -101,11 +101,9 @@ namespace tccCsharp
             }
         }
 
-        private void frmEditar_Grupo_Load(object sender, EventArgs e)
+        public void CarregaInfo()
         {
-            this.WindowState = FormWindowState.Maximized;
-            DoDesign();
-            AtualizaCabecalho();
+            grupos.Clear();
             grupos = Banco.ConsultaGrupos(IdGrupo);
 
             if (grupos.Count < 2)
@@ -135,8 +133,24 @@ namespace tccCsharp
             grupoEditando = Banco.RecarregaGrupo(IdGrupo);
 
             txtNomeGrupo.Text = grupoEditando.nome_grupo;
+            if(grupoEditando.mostrar_porcentagem == true)
+            {
+                BoxSim.Checked = true;
+            }
+            else
+            {
+                BoxSim.Checked = false;
+            }
 
             comboDepois.SelectedIndex = -1;
+        }
+
+            private void frmEditar_Grupo_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            DoDesign();
+            AtualizaCabecalho();
+            CarregaInfo();
         }
 
         private void radInicio_Click(object sender, EventArgs e)
@@ -260,7 +274,26 @@ namespace tccCsharp
 
         private void OPBRecarregar_Click(object sender, EventArgs e)
         {
-            Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, grupoEditando.ordenador, -1);
+            DoDesign();
+            AtualizaCabecalho();
+            CarregaInfo();
+        }
+
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
+
+        private void OPBConfiguracoes_Click(object sender, EventArgs e)
+        {
+            //apenas teste
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
         }
     }
 }

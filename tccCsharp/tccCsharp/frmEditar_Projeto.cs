@@ -406,7 +406,7 @@ namespace tccCsharp
         private void btnEtapas_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            frmEtapas splash = new frmEtapas();
+            frmEtapas splash = new frmEtapas(editando.nome_projeto);
             splash.ShowDialog();
             if (Program.id_usuario == 0)
             {

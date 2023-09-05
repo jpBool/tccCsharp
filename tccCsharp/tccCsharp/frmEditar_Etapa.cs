@@ -153,12 +153,14 @@ namespace tccCsharp
             txtResponsavel.Text = EtapaEditando.responsavel;
             txtEmail.Text = EtapaEditando.email_responsavel;
 
+            grupos.Clear();
             grupos = Banco.ConsultaGrupos(0);
             comboGrupo.DataSource = grupos;
             comboGrupo.ValueMember = "id_grupo";
             comboGrupo.DisplayMember = "nome_grupo";
             comboGrupo.SelectedValue = EtapaEditando.id_grupo;
 
+            etapas.Clear();
             etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue), EtapaEditando.id_etapa);
             if(EtapaEditando.ordenador == 1)
             {
@@ -418,6 +420,32 @@ namespace tccCsharp
 
             Banco.AtualizaEtapa(EtapaAtualizada);
             this.Close();
+        }
+
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
+
+        private void OPBConfiguracoes_Click(object sender, EventArgs e)
+        {
+            //apenas teste
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
+        }
+
+        private void OPBRecarregar_Click(object sender, EventArgs e)
+        {
+            DoDesign();
+            AtualizaCabecalho();
+            liberado = false;
+            CarregaInfo();
+            liberado = true;
         }
     }
 }

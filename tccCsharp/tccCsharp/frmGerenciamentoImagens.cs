@@ -467,6 +467,41 @@ namespace tccCsharp
         {
             this.Close();
         }
+
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
+
+        private void OPBConfiguracoes_Click(object sender, EventArgs e)
+        {
+            //apenas teste
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
+        }
+
+        private void OPBRecarregar_Click(object sender, EventArgs e)
+        {
+            DoDesign();
+            flpImagens.Controls.Clear();
+            Imagens.Clear();
+            Imagens = Banco.CarregaImagens(Imagens);
+            for (int i = 0; i < Imagens.Count; i++)
+            {
+                CarregarImagem(Imagens[i]);
+            }
+            EditandoImagem = false;
+            pcbUpload.Image = null;
+            txtDescricaoImg.Text = string.Empty;
+            txtNomeImagem.Text = string.Empty;
+            cabecalho = Banco.CabecalhoProjeto();
+            AtualizaCabecalho();
+        }
     }
 }
 

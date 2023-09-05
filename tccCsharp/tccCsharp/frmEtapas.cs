@@ -17,10 +17,12 @@ namespace tccCsharp
         int y = 0;
         int x1 = 0;
         int x2 = 0;
+        public String NomeProjeto;
 
-        public frmEtapas()
+        public frmEtapas(String NomeRecebido)
         {
             InitializeComponent();
+            NomeProjeto = NomeRecebido;
         }
 
         public void DoDesign()
@@ -366,18 +368,8 @@ namespace tccCsharp
             OPBRight1.Visible = false;
             OPBRight2.Visible = false;
             Refresh_steps();
-            cabecalho = Banco.CabecalhoProjeto();
-
-            lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
-
-            if (cabecalho.porcentagem_int == 100)
-                groupPorcentagem2.Width = groupPorcentagem.Width;
-            else
-            {
-                groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
-                if (groupPorcentagem2.Width < 45)
-                    groupPorcentagem2.Width = 45;
-            } 
+            AtualizaCabecalho();
+            lblTitulo.Text = "ETAPAS DO PROJETO " + NomeProjeto.ToUpper();
         }
 
         private void OPBLogout_Click(object sender, EventArgs e)
@@ -393,6 +385,7 @@ namespace tccCsharp
             DoDesign();
             Banco.CarregarEtapas(grupos);
             Refresh_steps();
+            AtualizaCabecalho();
         }
 
         private void OPBConfiguracoes_Click(object sender, EventArgs e)

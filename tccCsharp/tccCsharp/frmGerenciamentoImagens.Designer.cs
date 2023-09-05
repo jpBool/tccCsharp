@@ -859,6 +859,7 @@
             this.OPBRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OPBRecarregar.TabIndex = 13;
             this.OPBRecarregar.TabStop = false;
+            this.OPBRecarregar.Click += new System.EventHandler(this.OPBRecarregar_Click);
             // 
             // OPBConfiguracoes
             // 
@@ -877,6 +878,7 @@
             this.OPBConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OPBConfiguracoes.TabIndex = 12;
             this.OPBConfiguracoes.TabStop = false;
+            this.OPBConfiguracoes.Click += new System.EventHandler(this.OPBConfiguracoes_Click);
             // 
             // OPBLogout
             // 
@@ -895,6 +897,7 @@
             this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OPBLogout.TabIndex = 11;
             this.OPBLogout.TabStop = false;
+            this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
             // 
             // lblTitulo
             // 
