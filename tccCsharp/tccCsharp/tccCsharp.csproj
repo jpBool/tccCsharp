@@ -164,6 +164,12 @@
     <Compile Include="frmEditar_Projeto.Designer.cs">
       <DependentUpon>frmEditar_Projeto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGerenciamentoColaboradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGerenciamentoColaboradores.Designer.cs">
+      <DependentUpon>frmGerenciamentoColaboradores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGerenciamentoImagens.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEtapas.resx">
       <DependentUpon>frmEtapas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGerenciamentoColaboradores.resx">
+      <DependentUpon>frmGerenciamentoColaboradores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGerenciamentoImagens.resx">
       <DependentUpon>frmGerenciamentoImagens.cs</DependentUpon>
