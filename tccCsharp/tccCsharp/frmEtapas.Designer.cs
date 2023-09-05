@@ -907,6 +907,7 @@
             this.opbEditarP23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarP23.TabIndex = 43;
             this.opbEditarP23.TabStop = false;
+            this.opbEditarP23.Click += new System.EventHandler(this.opbEditarP23_Click);
             // 
             // lblNomeEtapa23
             // 
@@ -1038,6 +1039,7 @@
             this.opbEditarP22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarP22.TabIndex = 43;
             this.opbEditarP22.TabStop = false;
+            this.opbEditarP22.Click += new System.EventHandler(this.opbEditarP22_Click);
             // 
             // lblNomeEtapa22
             // 
@@ -1151,6 +1153,7 @@
             this.opbEditarP21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarP21.TabIndex = 43;
             this.opbEditarP21.TabStop = false;
+            this.opbEditarP21.Click += new System.EventHandler(this.opbEditarP21_Click);
             // 
             // lblNomeEtapa21
             // 
@@ -1341,6 +1344,7 @@
             this.opbEditarP13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarP13.TabIndex = 43;
             this.opbEditarP13.TabStop = false;
+            this.opbEditarP13.Click += new System.EventHandler(this.opbEditarP13_Click);
             // 
             // lblNomeEtapa13
             // 
@@ -1454,6 +1458,7 @@
             this.opbEditarP12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarP12.TabIndex = 43;
             this.opbEditarP12.TabStop = false;
+            this.opbEditarP12.Click += new System.EventHandler(this.opbEditarP12_Click);
             // 
             // lblNomeEtapa12
             // 
@@ -1567,6 +1572,7 @@
             this.opbEditarP11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarP11.TabIndex = 39;
             this.opbEditarP11.TabStop = false;
+            this.opbEditarP11.Click += new System.EventHandler(this.opbEditarP11_Click);
             // 
             // lblNomeEtapa11
             // 

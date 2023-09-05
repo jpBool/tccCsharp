@@ -122,6 +122,12 @@
     <Compile Include="frmCriar_Grupo.Designer.cs">
       <DependentUpon>frmCriar_Grupo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditar_Etapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditar_Etapa.Designer.cs">
+      <DependentUpon>frmEditar_Etapa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEditar_Grupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCriar_Projeto.resx">
       <DependentUpon>frmCriar_Projeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditar_Etapa.resx">
+      <DependentUpon>frmEditar_Etapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditar_Grupo.resx">
       <DependentUpon>frmEditar_Grupo.cs</DependentUpon>

@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace tccCsharp
 {
-    public partial class frmCriar_Etapa : Form
+    public partial class frmEditar_Etapa : Form
     {
         public Head cabecalho = new Head();
         public List<GroupSteps> grupos = new List<GroupSteps>();
         public List<Step> etapas = new List<Step>();
         public Boolean liberado = false;
+        public Step EtapaEditando = new Step();
+        public int IdEtapa;
+        public int numGrupos;
 
-        public frmCriar_Etapa()
+        public frmEditar_Etapa(int idRecebido, int quantRecebido)
         {
             InitializeComponent();
+            IdEtapa = idRecebido;
+            numGrupos = quantRecebido;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
@@ -80,15 +85,21 @@ namespace tccCsharp
             btnCancelar.AutoHoover = true;
             btnCancelar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
 
-            btnSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
-            btnSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            btnSalvar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnSalvar.AutoHoover = true;
-            btnSalvar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAtualizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnAtualizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnAtualizar.AutoHoover = true;
+            btnAtualizar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+
+            btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnExcluir.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnExcluir.AutoHoover = true;
+            btnExcluir.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
 
             RGBButtons.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBCampos.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            RGBDetalhada.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1],Program.Cor5[2]);
+            RGBDetalhada.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBDecri1.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBDescri2.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBPrioridade.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
@@ -114,40 +125,80 @@ namespace tccCsharp
             }
         }
 
-        private void frmCriar_Etapa_Load(object sender, EventArgs e)
+        public void CarregaInfo()
         {
-            this.WindowState = FormWindowState.Maximized;
-            DoDesign();
-            AtualizaCabecalho();
+            EtapaEditando = Banco.RecarregaEtapa(IdEtapa);
+            txtNomeEtapa.Text = EtapaEditando.nome_etapa;
+            txtDescricao.Text = EtapaEditando.descricao_etapa;
 
+            if (EtapaEditando.impedimento == true)
+            {
+                boxSim.Checked = true;
+                txtDescriImpedimento.Text = EtapaEditando.descricao_impedimento;
+            }
+            else
+            {
+                boxSim.Checked = false;
+                txtDescriImpedimento.Enabled = false;
+                txtDescriImpedimento.Text = String.Empty;
+            }
+            
             if (Program.lista_status.Count == 0)
                 Program.lista_status = Banco.CarregaStatus();
             comboStatus.DataSource = Program.lista_status;
             comboStatus.ValueMember = "id_status";
             comboStatus.DisplayMember = "status";
+            comboStatus.SelectedIndex = EtapaEditando.status - 1;
+
+            txtResponsavel.Text = EtapaEditando.responsavel;
+            txtEmail.Text = EtapaEditando.email_responsavel;
 
             grupos = Banco.ConsultaGrupos(0);
             comboGrupo.DataSource = grupos;
             comboGrupo.ValueMember = "id_grupo";
             comboGrupo.DisplayMember = "nome_grupo";
-            comboGrupo.SelectedIndex = 0;
+            comboGrupo.SelectedValue = EtapaEditando.id_grupo;
 
-            etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue),0);
-            if (etapas.Count < 2)
+            etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue), EtapaEditando.id_etapa);
+            if(EtapaEditando.ordenador == 1)
             {
-                TLPEntreGrupos.Visible = false;
+                radInicio.Checked = true;
+                radMeio.Checked = false;
+                TLPSelecionaCombo.Visible = false;
+                radFim.Checked = false;
+
+            }else if (EtapaEditando.ordenador == numGrupos)
+            {
+                radFim.Checked = true;
+                radMeio.Checked = false;
+                radInicio.Checked = false;
+                TLPSelecionaCombo.Visible = false;
             }
             else
             {
-                TLPEntreGrupos.Visible = true;
+                 TLPEntreGrupos.Visible = true;
+                 radFim.Checked = false;
+                 radMeio.Checked = true;
+                 radInicio.Checked = false;
 
                 comboDepois.DataSource = etapas;
-                comboDepois.ValueMember = "ordenador";
-                comboDepois.DisplayMember = "nome_etapa";
-                comboDepois.SelectedIndex = 0;
+                 comboDepois.ValueMember = "ordenador";
+                 comboDepois.DisplayMember = "nome_etapa";
+                 comboDepois.SelectedValue = EtapaEditando.ordenador - 1;               
             }
 
-            TLPSelecionaCombo.Enabled = false;
+            numPrioridade.Value = EtapaEditando.prioridade;
+            numPeso.Value = EtapaEditando.peso;
+            numPercent.Value = Convert.ToInt32(EtapaEditando.porcentagem);
+            trackPercent.Value = Convert.ToInt32(EtapaEditando.porcentagem);  
+        }
+
+        private void frmEditar_Etapa_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            DoDesign();
+            AtualizaCabecalho();
+            CarregaInfo();
             liberado = true;
         }
 
@@ -171,6 +222,25 @@ namespace tccCsharp
 
         private void radMeio_Click(object sender, EventArgs e)
         {
+            if (comboGrupo.SelectedIndex >= 0 && liberado == true)
+            {
+                etapas.Clear();
+                etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue), 0);
+                if (etapas.Count < 2)
+                {
+                    TLPEntreGrupos.Visible = false;
+                }
+                else
+                {
+                    TLPEntreGrupos.Visible = true;
+
+                    comboDepois.DataSource = etapas;
+                    comboDepois.ValueMember = "ordenador";
+                    comboDepois.DisplayMember = "nome_etapa";
+                    comboDepois.SelectedIndex = 0;
+                }
+            }
+            TLPSelecionaCombo.Visible = true;
             radInicio.Checked = false;
             radMeio.Checked = true;
             radFim.Checked = false;
@@ -201,7 +271,7 @@ namespace tccCsharp
 
         private void comboGrupo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(comboGrupo.SelectedIndex >= 0 && liberado == true)
+            if (comboGrupo.SelectedIndex >= 0 && liberado == true)
             {
                 etapas.Clear();
                 etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue), 0);
@@ -218,85 +288,12 @@ namespace tccCsharp
                     comboDepois.DisplayMember = "nome_etapa";
                     comboDepois.SelectedIndex = 0;
                 }
-                radFim.Checked = true; 
-                radMeio.Checked = false; 
+                TLPSelecionaCombo.Visible = true;
+                radFim.Checked = true;
+                radMeio.Checked = false;
                 radInicio.Checked = false;
                 TLPSelecionaCombo.Enabled = false;
             }
-        }
-
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
-            if (txtNomeEtapa.Text == String.Empty)
-            {
-                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                txtNomeEtapa.Focus();
-                return;
-            }
-
-            if(Convert.ToInt32(comboGrupo.SelectedIndex) == -1)
-            {
-                comboGrupo.SelectedIndex = 0;
-                comboGrupo.Focus();
-                MessageBox.Show("Selecione um Grupo", "Criando Etapa", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            Step novaEtapa = new Step();
-            novaEtapa.id_grupo = Convert.ToInt32(comboGrupo.SelectedValue);
-            novaEtapa.nome_etapa = txtNomeEtapa.Text;
-            novaEtapa.peso = Convert.ToInt32(numPeso.Value);
-            novaEtapa.porcentagem = Convert.ToInt32(numPercent.Value);
-            novaEtapa.descricao_etapa = txtDescricao.Text;
-            novaEtapa.prioridade = Convert.ToInt32(numPrioridade.Value);
-            novaEtapa.responsavel = txtResponsavel.Text;
-            novaEtapa.email_responsavel = txtEmail.Text;    
-            if (boxSim.Checked == true)
-            {
-                novaEtapa.impedimento = true;
-                novaEtapa.descricao_impedimento = txtDescriImpedimento.Text;
-            }
-            else
-            {
-                novaEtapa.impedimento = false;
-                novaEtapa.descricao_impedimento = string.Empty;
-            }
-            novaEtapa.data_criacao = DateTime.Today;
-            novaEtapa.data_atualizacao = DateTime.Now;
-            novaEtapa.atualizador = Program.id_usuario;
-            novaEtapa.excluido = false;
-
-            if (comboStatus.SelectedIndex == -1)
-            {
-                MessageBox.Show("Selecione um Status", "Criando Etapa", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                comboStatus.Focus();
-                return;
-            }
-            else
-            {
-                novaEtapa.status = comboStatus.SelectedIndex + 1;
-            }
-
-            
-            if (radInicio.Checked == true)
-            {
-                Banco.AlteraOrdenadorEtapa(novaEtapa.id_grupo, 1, 1);
-                novaEtapa.ordenador = 1;
-            }
-            else if (radFim.Checked == true)
-            {
-                int last = etapas.Count();
-                novaEtapa.ordenador = etapas[last - 1].ordenador + 1;
-            }
-            else
-            {
-                int mid = Convert.ToInt32(comboDepois.SelectedValue) + 1;
-                Banco.AlteraOrdenadorEtapa(novaEtapa.id_grupo, mid, 1);
-                novaEtapa.ordenador = mid;
-            }
-
-            Banco.InsereEtapa(novaEtapa);
-            this.Close();
         }
 
         private void txtNomeEtapa_Leave(object sender, EventArgs e)
@@ -319,6 +316,14 @@ namespace tccCsharp
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            this.Close(); 
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            Banco.DeleteStep(EtapaEditando.id_etapa, EtapaEditando.id_grupo);
+            Banco.AlteraOrdenadorEtapa(Program.id_projeto_atual, EtapaEditando.ordenador, -1);
+            MessageBox.Show("Etapa excluida com sucesso!!", "Sucesso", MessageBoxButtons.OK);
             this.Close();
         }
 
@@ -333,6 +338,85 @@ namespace tccCsharp
                 comboDepois.SelectedIndex = 0;
                 TLPSelecionaCombo.Enabled = false;
             }
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            if (txtNomeEtapa.Text == String.Empty)
+            {
+                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                txtNomeEtapa.Focus();
+                return;
+            }
+
+            if (Convert.ToInt32(comboGrupo.SelectedIndex) == -1)
+            {
+                comboGrupo.SelectedIndex = 0;
+                comboGrupo.Focus();
+                MessageBox.Show("Selecione um Grupo", "Criando Etapa", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Step EtapaAtualizada = new Step();
+            EtapaAtualizada.id_grupo = Convert.ToInt32(comboGrupo.SelectedValue);
+            EtapaAtualizada.nome_etapa = txtNomeEtapa.Text;
+            EtapaAtualizada.peso = Convert.ToInt32(numPeso.Value);
+            EtapaAtualizada.porcentagem = Convert.ToInt32(numPercent.Value);
+            EtapaAtualizada.descricao_etapa = txtDescricao.Text;
+            EtapaAtualizada.prioridade = Convert.ToInt32(numPrioridade.Value);
+            EtapaAtualizada.responsavel = txtResponsavel.Text;
+            EtapaAtualizada.email_responsavel = txtEmail.Text;
+            if (boxSim.Checked == true)
+            {
+                EtapaAtualizada.impedimento = true;
+                EtapaAtualizada.descricao_impedimento = txtDescriImpedimento.Text;
+            }
+            else
+            {
+                EtapaAtualizada.impedimento = false;
+                EtapaAtualizada.descricao_impedimento = string.Empty;
+            }
+            EtapaAtualizada.data_atualizacao = DateTime.Now;
+            EtapaAtualizada.atualizador = Program.id_usuario;
+            EtapaAtualizada.excluido = false;
+
+            if (comboStatus.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecione um Status", "Criando Etapa", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                comboStatus.Focus();
+                return;
+            }
+            else
+            {
+                EtapaAtualizada.status = comboStatus.SelectedIndex + 1;
+            }
+
+            Banco.AlteraOrdenadorEtapa(Program.id_projeto_atual, EtapaEditando.ordenador, -1);
+
+            if (radInicio.Checked == true)
+            {
+                Banco.AlteraOrdenadorEtapa(EtapaAtualizada.id_grupo, 1, 1);
+                EtapaAtualizada.ordenador = 1;
+            }
+            else if (radFim.Checked == true)
+            {
+                int last = etapas.Count();
+                EtapaAtualizada.ordenador = etapas[last - 1].ordenador + 1;
+            }
+            else
+            {
+                int mid = Convert.ToInt32(comboDepois.SelectedValue) + 1;
+                Banco.AlteraOrdenadorEtapa(EtapaAtualizada.id_grupo, mid, 1);
+                EtapaAtualizada.ordenador = mid;
+            }
+
+            if(EtapaAtualizada.id_grupo != EtapaEditando.id_grupo)
+            {
+                Banco.StepNumAlt(EtapaEditando.id_grupo, -1);
+            }
+
+            Banco.AtualizaEtapa(EtapaAtualizada);
+            this.Close();
         }
     }
 }

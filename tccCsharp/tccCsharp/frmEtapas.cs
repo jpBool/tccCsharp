@@ -574,6 +574,148 @@ namespace tccCsharp
             }
         }
 
-        
+        private void opbEditarP11_Click(object sender, EventArgs e)
+        {
+            GroupSteps grupo1 = new GroupSteps();
+            grupo1 = grupos[y + 0];
+            Step etapa11 = new Step();
+            etapa11 = grupo1.etapas[x1 + 0];
+
+            this.Visible = false;
+            frmEditar_Etapa splash = new frmEditar_Etapa(etapa11.id_etapa, grupo1.numero_etapas);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+            }
+        }
+
+        private void opbEditarP12_Click(object sender, EventArgs e)
+        {
+            GroupSteps grupo1 = new GroupSteps();
+            grupo1 = grupos[y + 0];
+            Step etapa12 = new Step();
+            etapa12 = grupo1.etapas[x1 + 1];
+
+            this.Visible = false;
+            frmEditar_Etapa splash = new frmEditar_Etapa(etapa12.id_etapa, grupo1.numero_etapas);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+            }
+        }
+
+        private void opbEditarP13_Click(object sender, EventArgs e)
+        {
+            GroupSteps grupo1 = new GroupSteps();
+            grupo1 = grupos[y + 0];
+            Step etapa13 = new Step();
+            etapa13 = grupo1.etapas[x1 + 2];
+
+            this.Visible = false;
+            frmEditar_Etapa splash = new frmEditar_Etapa(etapa13.id_etapa, grupo1.numero_etapas);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+            }
+        }
+
+        private void opbEditarP21_Click(object sender, EventArgs e)
+        {
+            GroupSteps grupo2 = new GroupSteps();
+            grupo2 = grupos[y + 1];
+            Step etapa21 = new Step();
+            etapa21 = grupo2.etapas[x2 + 0];
+
+            this.Visible = false;
+            frmEditar_Etapa splash = new frmEditar_Etapa(etapa21.id_etapa, grupo2.numero_etapas);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+            }
+        }
+
+        private void opbEditarP22_Click(object sender, EventArgs e)
+        {
+            GroupSteps grupo2 = new GroupSteps();
+            grupo2 = grupos[y + 1];
+            Step etapa22 = new Step();
+            etapa22 = grupo2.etapas[x2 + 1];
+
+            this.Visible = false;
+            frmEditar_Etapa splash = new frmEditar_Etapa(etapa22.id_etapa, grupo2.numero_etapas);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+            }
+        }
+
+        private void opbEditarP23_Click(object sender, EventArgs e)
+        {
+            GroupSteps grupo2 = new GroupSteps();
+            grupo2 = grupos[y + 1];
+            Step etapa23 = new Step();
+            etapa23 = grupo2.etapas[x2 + 2];
+
+            this.Visible = false;
+            frmEditar_Etapa splash = new frmEditar_Etapa(etapa23.id_etapa, grupo2.numero_etapas);
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+                grupos.Clear();
+                Banco.CarregarEtapas(grupos);
+                Refresh_steps();
+            }
+        }
     }
 }

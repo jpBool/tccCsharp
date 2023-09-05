@@ -997,7 +997,7 @@ namespace tccCsharp
             return idInserido;
         }
 
-        public static void StepNumAlt(int IdProjeto, int quant)
+        public static void StepNumAlt(int IdGrupo, int quant)
         {
             try
             {
@@ -1005,7 +1005,7 @@ namespace tccCsharp
                 String sql = "UPDATE gp2_grupos_etapas SET num_etapas = num_etapas + @1 WHERE id_grupo = @2;";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", quant);
-                cmd.Parameters.AddWithValue("@2", IdProjeto);
+                cmd.Parameters.AddWithValue("@2", IdGrupo);
                 cmd.ExecuteNonQuery();
             }
             catch (NpgsqlException ex)
@@ -1102,6 +1102,116 @@ namespace tccCsharp
             finally
             {
                 Desconectar();
+            }
+        }
+        public static Step RecarregaEtapa(int IdEtapa)
+        {
+            Step selecionado = new Step();
+            string sql;
+            try
+            {
+                sql = "SELECT * FROM gp2_etapas WHERE id_etapa = @1";
+                List<object> param = new List<object>();
+                param.Add(IdEtapa);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                dr.Read();
+                selecionado.id_etapa = Convert.ToInt32(dr["id_etapa"]);
+                selecionado.id_grupo = Convert.ToInt32(dr["id_grupo"]);
+                selecionado.nome_etapa = Convert.ToString(dr["nome_etapa"]);
+                selecionado.peso = Convert.ToInt32(dr["peso"]);
+                selecionado.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
+                selecionado.descricao_etapa = Convert.ToString(dr["descricao_etapa"]);
+                selecionado.status = Convert.ToInt32(dr["status"]);
+                selecionado.prioridade = Convert.ToInt32(dr["prioridade"]);
+                selecionado.ordenador = Convert.ToInt32(dr["ordenador"]);
+                selecionado.responsavel = Convert.ToString(dr["responsavel"]);
+                selecionado.email_responsavel = Convert.ToString(dr["email_responsavel"]);
+                selecionado.impedimento = Convert.ToBoolean(dr["impedimento"]);
+                selecionado.descricao_impedimento = Convert.ToString(dr["descricao_impedimento"]);
+                selecionado.data_criacao = Convert.ToDateTime(dr["data_criacao"]);
+                selecionado.data_atualizacao = Convert.ToDateTime(dr["data_atualizacao"]);
+                selecionado.atualizador = Convert.ToInt32(dr["atualizador"]);
+                selecionado.excluido = Convert.ToBoolean(dr["excluido"]);
+                
+                
+
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar esse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao carregar projetos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return selecionado;
+        }
+
+        public static void DeleteStep(int IdEtapa, int IdGrupo)
+        {
+            try
+            {
+                Conectar();
+                String sql = "DELETE FROM gp2_etapas WHERE id_etapa= @1";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", IdEtapa);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu ao excluir!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+                Banco.StepNumAlt(IdGrupo, -1);
+                Banco.AtualizaPorcentagem(IdGrupo);
+            }
+        }
+
+        public static void AtualizaEtapa (Step etapa)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_etapas SET id_grupo = @1, nome_etapa = @2, peso = @3, porcentagem = @4, descricao_etapa = @5, status = @6, prioridade = @7, ordenador = @8, " +
+                "responsavel = @9, email_responsavel = @10, impedimento = @11, descricao_impedimento = @12, data_atualizacao = @14, atualizador = @15, excluido = @16 ";
+                sql += "WHERE id_etapa = @17";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", etapa.id_grupo);
+                cmd.Parameters.AddWithValue("@2", etapa.nome_etapa);
+                cmd.Parameters.AddWithValue("@3", etapa.peso);
+                cmd.Parameters.AddWithValue("@4", etapa.porcentagem);
+                cmd.Parameters.AddWithValue("@5", etapa.descricao_etapa);
+                cmd.Parameters.AddWithValue("@6", etapa.status);
+                cmd.Parameters.AddWithValue("@7", etapa.prioridade);
+                cmd.Parameters.AddWithValue("@8", etapa.ordenador);
+                cmd.Parameters.AddWithValue("@9", etapa.responsavel);
+                cmd.Parameters.AddWithValue("@10", etapa.email_responsavel);
+                cmd.Parameters.AddWithValue("@11", etapa.impedimento);
+                cmd.Parameters.AddWithValue("@12", etapa.descricao_impedimento);
+                cmd.Parameters.AddWithValue("@14", etapa.data_atualizacao);
+                cmd.Parameters.AddWithValue("@15", etapa.atualizador);
+                cmd.Parameters.AddWithValue("@16", etapa.excluido);
+                cmd.Parameters.AddWithValue("@17", etapa.id_etapa);
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar a Etapa!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+                Banco.StepNumAlt(etapa.id_grupo, 1);
+                Banco.AtualizaPorcentagem(etapa.id_grupo);
             }
         }
     } 
