@@ -358,6 +358,7 @@ namespace tccCsharp
             }
 
             Step EtapaAtualizada = new Step();
+            EtapaAtualizada.id_etapa = EtapaEditando.id_etapa;
             EtapaAtualizada.id_grupo = Convert.ToInt32(comboGrupo.SelectedValue);
             EtapaAtualizada.nome_etapa = txtNomeEtapa.Text;
             EtapaAtualizada.peso = Convert.ToInt32(numPeso.Value);
