@@ -14,6 +14,7 @@ namespace tccCsharp
     {
         public Head cabecalho = new Head();
         public Project projeto_editado = new Project();
+        public List<Collaborators> Colaboradores = new List<Collaborators>(); 
         public frmGerenciamentoColaboradores()
         {
             InitializeComponent();
@@ -133,6 +134,8 @@ namespace tccCsharp
         {
             WindowState = FormWindowState.Maximized;
             DoDesign();
+            Colaboradores = Banco.CarrregaColaboradores();
+            DGVColaboradores.DataSource = Colaboradores;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)

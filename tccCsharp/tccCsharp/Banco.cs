@@ -1214,8 +1214,39 @@ namespace tccCsharp
                 Banco.AtualizaPorcentagem(etapa.id_grupo);
             }
         }
-    } 
 
+        public static List<Collaborators> CarrregaColaboradores()
+        {
+            List<Collaborators> Colaboradores = new List<Collaborators>();
+            try
+            {
+                Conectar();
+                String sql = "SELECT nome, email, telefone, colaborador_adm from gp2_colaboradores T1 INNER JOIN gp2_usuarios T2 on T1.id_colaborador = T2.id_usuario WHERE id_projeto = @1";
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                while (dr.Read())
+                {
+                    Collaborators linha = new Collaborators();
+                    linha.nome = Convert.ToString(dr["nome"]);
+                    linha.email = Convert.ToString(dr["email"]);
+                    linha.telefone = Convert.ToString(dr["telefone"]);
+                    linha.isAdmin = Convert.ToBoolean(dr["colaborador_adm"]);
+                    Colaboradores.Add(linha);
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar os Colaboradores!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return Colaboradores;
+        }
+    } 
 }
 
 

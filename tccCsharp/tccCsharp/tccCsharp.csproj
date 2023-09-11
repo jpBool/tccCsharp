@@ -104,6 +104,7 @@
     <Compile Include="Coisas.Designer.cs">
       <DependentUpon>Coisas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Collaborators.cs" />
     <Compile Include="CustomGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>

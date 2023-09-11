@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tccCsharp
 {
-    internal class User
+    public class User
     {
         public int id_usuario { get; set; }
         public string nome { get; set; }
