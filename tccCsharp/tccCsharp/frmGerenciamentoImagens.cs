@@ -502,6 +502,18 @@ namespace tccCsharp
             cabecalho = Banco.CabecalhoProjeto();
             AtualizaCabecalho();
         }
+
+        private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
+        {
+            if (cabecalho.porcentagem_int == 100)
+                groupPorcentagem2.Width = groupPorcentagem.Width;
+            else
+            {
+                groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(groupPorcentagem.Width) / 100) * Convert.ToDouble(cabecalho.porcentagem_int));
+                if (groupPorcentagem2.Width < 45)
+                    groupPorcentagem2.Width = 45;
+            }
+        }
     }
 }
 

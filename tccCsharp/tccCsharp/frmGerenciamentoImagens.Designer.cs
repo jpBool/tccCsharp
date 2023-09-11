@@ -778,6 +778,7 @@
             this.groupPorcentagem.Size = new System.Drawing.Size(560, 43);
             this.groupPorcentagem.TabIndex = 3;
             this.groupPorcentagem.TabStop = false;
+            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
             // 
             // groupPorcentagem2
             // 
