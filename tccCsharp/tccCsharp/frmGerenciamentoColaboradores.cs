@@ -285,10 +285,10 @@ namespace tccCsharp
             else
             {
                 Banco.DeleteCollaborator(selecionado.idColaborador);
+                FimCarregamento = false;
                 Colaboradores.Clear();
                 OutrosUser.Clear();
-                FimCarregamento = false;
-
+                
                 Colaboradores = Banco.CarrregaColaboradores();
                 DGVColaboradores.DataSource = Colaboradores;
                 DGVColaboradores.Columns["avatar"].Visible = false;
@@ -324,6 +324,142 @@ namespace tccCsharp
         private void btnSairSSalvar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if (Editando == false)
+            {
+                if (comboNome.SelectedIndex == -1)
+                {
+                    comboNome.Focus();
+                    return;
+                }
+                else
+                {
+                    bool IsAdm = false;
+                    if (radSim.Checked == true)
+                    {
+                        IsAdm = true;
+                    }
+                    Banco.InsereColaborador(Convert.ToInt32(comboNome.SelectedValue), Program.id_projeto_atual, IsAdm);
+                }
+            }
+            else
+            {
+                bool IsAdmNow = false;
+                if (radSim.Checked == true) 
+                {
+                    IsAdmNow = true;
+                }
+                if (IsAdmNow == selecionado.isAdmin)
+                {
+                    //Mudou nada
+                    textNome.Visible = false;
+                    textEmail.Visible = false;
+                    textTelefone.Visible = false;
+                    comboEmail.Visible = true;
+                    comboTelefone.Visible = true;
+                    comboNome.Visible = true;
+                    comboNome.SelectedIndex = -1;
+                    comboEmail.SelectedIndex = -1;
+                    comboTelefone.SelectedIndex = -1;
+                    Editando = false;
+                    return;
+                }
+                else
+                {
+                    Banco.AlteraColaborador(selecionado.idColaborador, Program.id_projeto_atual, IsAdmNow);
+                }
+            }
+            FimCarregamento = false;
+            Colaboradores.Clear();
+            OutrosUser.Clear();
+
+            Colaboradores = Banco.CarrregaColaboradores();
+            DGVColaboradores.DataSource = Colaboradores;
+            DGVColaboradores.Columns["avatar"].Visible = false;
+            DGVColaboradores.Columns["idColaborador"].Visible = false;
+
+            textNome.Visible = false;
+            textEmail.Visible = false;
+            textTelefone.Visible = false;
+            comboEmail.Visible = true;
+            comboTelefone.Visible = true;
+            comboNome.Visible = true;
+
+            OutrosUser = Banco.CarrregaOutrosUser();
+            comboNome.DataSource = OutrosUser;
+            comboEmail.DataSource = OutrosUser;
+            comboTelefone.DataSource = OutrosUser;
+            comboNome.ValueMember = "idColaborador";
+            comboNome.DisplayMember = "nome";
+            comboNome.SelectedIndex = -1;
+            comboEmail.ValueMember = "idColaborador";
+            comboEmail.DisplayMember = "email";
+            comboEmail.SelectedIndex = -1;
+            comboTelefone.DisplayMember = "telefone";
+            comboTelefone.ValueMember = "idColaborador";
+            comboTelefone.SelectedIndex = -1;
+
+            FimCarregamento = true;
+            Editando = false;
+            selecionado = new Collaborators();
+        }
+
+        private void OPBLogout_Click(object sender, EventArgs e)
+        {
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
+        }
+
+        private void OPBRecarregar_Click(object sender, EventArgs e)
+        {
+            DoDesign();
+            FimCarregamento = false;
+            Colaboradores.Clear();
+            OutrosUser.Clear();
+
+            Colaboradores = Banco.CarrregaColaboradores();
+            DGVColaboradores.DataSource = Colaboradores;
+            DGVColaboradores.Columns["avatar"].Visible = false;
+            DGVColaboradores.Columns["idColaborador"].Visible = false;
+
+            textNome.Visible = false;
+            textEmail.Visible = false;
+            textTelefone.Visible = false;
+            comboEmail.Visible = true;
+            comboTelefone.Visible = true;
+            comboNome.Visible = true;
+
+            OutrosUser = Banco.CarrregaOutrosUser();
+            comboNome.DataSource = OutrosUser;
+            comboEmail.DataSource = OutrosUser;
+            comboTelefone.DataSource = OutrosUser;
+            comboNome.ValueMember = "idColaborador";
+            comboNome.DisplayMember = "nome";
+            comboNome.SelectedIndex = -1;
+            comboEmail.ValueMember = "idColaborador";
+            comboEmail.DisplayMember = "email";
+            comboEmail.SelectedIndex = -1;
+            comboTelefone.DisplayMember = "telefone";
+            comboTelefone.ValueMember = "idColaborador";
+            comboTelefone.SelectedIndex = -1;
+
+            FimCarregamento = true;
+            Editando = false;
+            selecionado = new Collaborators();
+        }
+
+        private void OPBConfiguracoes_Click(object sender, EventArgs e)
+        {
+            //apenas teste
+            frmConfiguracoes formC = new frmConfiguracoes();
+            formC.ShowDialog();
+
+            /*frmPersonalizacao formP = new frmPersonalizacao();
+            formP.ShowDialog();*/
         }
     }
 }

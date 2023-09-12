@@ -353,6 +353,7 @@ namespace tccCsharp
             Novo.numero_grupos = 0;
 
             Program.id_projeto_atual = Banco.InserirProjeto(Novo);
+            Banco.InsereColaborador(Program.id_usuario, Program.id_projeto_atual, true);
             ModelosEtapa();
 
             DialogResult resultado = MessageBox.Show("Projeto criado com sucesso!\nDeseja editar seu projeto agora?","Criando Projeto",MessageBoxButtons.YesNo);

@@ -1308,6 +1308,56 @@ namespace tccCsharp
             }
         }
 
+        public static void InsereColaborador(int IdColoborador, int IdProjeto, bool IsAdm)
+        {
+            try
+            {
+                Conectar();
+                String sql = "INSERT INTO gp2_colaboradores VALUES (@1, @2, @3)";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", IdColoborador);
+                cmd.Parameters.AddWithValue("@2", IdProjeto);
+                cmd.Parameters.AddWithValue("@3", IsAdm);
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao adicionar!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+            }
+        }
+
+        public static void AlteraColaborador(int IdColoborador, int IdProjeto, bool IsAdm)
+        {
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_colaboradores SET colaborador_adm = @1 WHERE id_colaborador = @2 AND id_projeto = @3";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", IsAdm);
+                cmd.Parameters.AddWithValue("@2", IdColoborador);
+                cmd.Parameters.AddWithValue("@3", IdProjeto);
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+                Banco.NewCommit();
+            }
+        }
+
     } 
 }
 
