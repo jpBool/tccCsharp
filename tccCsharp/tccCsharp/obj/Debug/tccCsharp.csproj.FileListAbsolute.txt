@@ -286,3 +286,4 @@ C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCshar
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Etapa.resources
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources
+C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources

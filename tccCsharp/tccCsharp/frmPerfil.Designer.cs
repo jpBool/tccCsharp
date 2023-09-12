@@ -407,9 +407,10 @@
             this.opcAvatar.BordaHoover = System.Drawing.Color.Green;
             this.opcAvatar.BordaPrincipal = System.Drawing.Color.Black;
             this.opcAvatar.Image = global::tccCsharp.Properties.Resources.Classic_Chess_King_Black;
-            this.opcAvatar.Location = new System.Drawing.Point(54, 3);
+            this.opcAvatar.Location = new System.Drawing.Point(84, 3);
             this.opcAvatar.Name = "opcAvatar";
-            this.opcAvatar.Size = new System.Drawing.Size(180, 121);
+            this.opcAvatar.Size = new System.Drawing.Size(120, 120);
+            this.opcAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opcAvatar.TabIndex = 7;
             this.opcAvatar.TabStop = false;
             // 

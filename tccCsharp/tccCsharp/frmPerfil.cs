@@ -207,6 +207,47 @@ namespace tccCsharp
             lblAMD.Text = usuario.inscricao.ToShortDateString();
             lblEmail.Text = usuario.email.ToString();
             lblCommits.Text = usuario.commits.ToString();
+
+            switch (usuario.avatar)
+            {
+                case 0: break;
+                case 1: opcAvatar.Image = global::tccCsharp.Properties.Resources._1; break;
+                case 2: opcAvatar.Image = global::tccCsharp.Properties.Resources._2; break;
+                case 3: opcAvatar.Image = global::tccCsharp.Properties.Resources._3; break;
+                case 4: opcAvatar.Image = global::tccCsharp.Properties.Resources._4; break;
+                case 5: opcAvatar.Image = global::tccCsharp.Properties.Resources._5; break;
+                case 6: opcAvatar.Image = global::tccCsharp.Properties.Resources._6; break;
+                case 7: opcAvatar.Image = global::tccCsharp.Properties.Resources._7; break;
+                case 8: opcAvatar.Image = global::tccCsharp.Properties.Resources._8; break;
+                case 9: opcAvatar.Image = global::tccCsharp.Properties.Resources._9; break;
+                case 10: opcAvatar.Image = global::tccCsharp.Properties.Resources._10; break;
+                case 11: opcAvatar.Image = global::tccCsharp.Properties.Resources._11; break;
+                case 12: opcAvatar.Image = global::tccCsharp.Properties.Resources._12; break;
+                case 13: opcAvatar.Image = global::tccCsharp.Properties.Resources._13; break;
+                case 14: opcAvatar.Image = global::tccCsharp.Properties.Resources._14; break;
+                case 15: opcAvatar.Image = global::tccCsharp.Properties.Resources._15; break;
+                case 16: opcAvatar.Image = global::tccCsharp.Properties.Resources._16; break;
+                case 17: opcAvatar.Image = global::tccCsharp.Properties.Resources._17; break;
+                case 18: opcAvatar.Image = global::tccCsharp.Properties.Resources._18; break;
+                case 19: opcAvatar.Image = global::tccCsharp.Properties.Resources._19; break;
+                case 20: opcAvatar.Image = global::tccCsharp.Properties.Resources._20; break;
+                case 21: opcAvatar.Image = global::tccCsharp.Properties.Resources._21; break;
+                case 22: opcAvatar.Image = global::tccCsharp.Properties.Resources._22; break;
+                case 23: opcAvatar.Image = global::tccCsharp.Properties.Resources._23; break;
+                case 24: opcAvatar.Image = global::tccCsharp.Properties.Resources._24; break;
+                case 25: opcAvatar.Image = global::tccCsharp.Properties.Resources._25; break;
+                case 26: opcAvatar.Image = global::tccCsharp.Properties.Resources._26; break;
+                case 27: opcAvatar.Image = global::tccCsharp.Properties.Resources._27; break;
+                case 28: opcAvatar.Image = global::tccCsharp.Properties.Resources._28; break;
+                case 29: opcAvatar.Image = global::tccCsharp.Properties.Resources._29; break;
+                case 30: opcAvatar.Image = global::tccCsharp.Properties.Resources._30; break;
+                case 31: opcAvatar.Image = global::tccCsharp.Properties.Resources._31; break;
+                case 32: opcAvatar.Image = global::tccCsharp.Properties.Resources._32; break;
+                case 33: opcAvatar.Image = global::tccCsharp.Properties.Resources._33; break;
+                case 34: opcAvatar.Image = global::tccCsharp.Properties.Resources._34; break;
+            }
+            
+
         }
         //BOTÔES 
 
@@ -214,7 +255,7 @@ namespace tccCsharp
 
         //MOUSE CLiCK
 
-        private void btnAdicionar_Click(object sender, EventArgs e)
+       private void btnAdicionar_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             frmCriar_Projeto splash = new frmCriar_Projeto();

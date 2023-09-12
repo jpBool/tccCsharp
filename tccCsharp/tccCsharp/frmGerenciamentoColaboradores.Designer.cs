@@ -60,7 +60,7 @@
             this.RGBDados = new tccCsharp.RoundedGroupBox();
             this.TLPDados = new System.Windows.Forms.TableLayoutPanel();
             this.lblDados = new System.Windows.Forms.Label();
-            this.ovalPictureBox1 = new tccCsharp.OvalPictureBox();
+            this.opcAvatar = new tccCsharp.OvalPictureBox();
             this.comboNome = new System.Windows.Forms.ComboBox();
             this.btnSalvar = new RoundButton();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -99,7 +99,7 @@
             this.rgbNomeP.SuspendLayout();
             this.RGBDados.SuspendLayout();
             this.TLPDados.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -561,7 +561,7 @@
             this.TLPDados.ColumnCount = 1;
             this.TLPDados.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPDados.Controls.Add(this.lblDados, 0, 0);
-            this.TLPDados.Controls.Add(this.ovalPictureBox1, 0, 1);
+            this.TLPDados.Controls.Add(this.opcAvatar, 0, 1);
             this.TLPDados.Controls.Add(this.comboNome, 0, 2);
             this.TLPDados.Controls.Add(this.btnSalvar, 0, 7);
             this.TLPDados.Controls.Add(this.tableLayoutPanel5, 0, 6);
@@ -595,20 +595,20 @@
             this.lblDados.Text = "Dados do Colaborador";
             this.lblDados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ovalPictureBox1
+            // opcAvatar
             // 
-            this.ovalPictureBox1._bordercolor = System.Drawing.Color.Red;
-            this.ovalPictureBox1._borderwidth = 3F;
-            this.ovalPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ovalPictureBox1.AutoHoover = false;
-            this.ovalPictureBox1.BordaHoover = System.Drawing.Color.Green;
-            this.ovalPictureBox1.BordaPrincipal = System.Drawing.Color.Black;
-            this.ovalPictureBox1.Location = new System.Drawing.Point(232, 57);
-            this.ovalPictureBox1.Name = "ovalPictureBox1";
-            this.ovalPictureBox1.Size = new System.Drawing.Size(140, 140);
-            this.ovalPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ovalPictureBox1.TabIndex = 1;
-            this.ovalPictureBox1.TabStop = false;
+            this.opcAvatar._bordercolor = System.Drawing.Color.Red;
+            this.opcAvatar._borderwidth = 3F;
+            this.opcAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.opcAvatar.AutoHoover = false;
+            this.opcAvatar.BordaHoover = System.Drawing.Color.Green;
+            this.opcAvatar.BordaPrincipal = System.Drawing.Color.Black;
+            this.opcAvatar.Location = new System.Drawing.Point(232, 57);
+            this.opcAvatar.Name = "opcAvatar";
+            this.opcAvatar.Size = new System.Drawing.Size(140, 140);
+            this.opcAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opcAvatar.TabIndex = 1;
+            this.opcAvatar.TabStop = false;
             // 
             // comboNome
             // 
@@ -967,7 +967,7 @@
             this.RGBDados.ResumeLayout(false);
             this.TLPDados.ResumeLayout(false);
             this.TLPDados.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opcAvatar)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -1022,7 +1022,7 @@
         private RoundButton btnSalvar;
         private System.Windows.Forms.TableLayoutPanel TLPDados;
         private System.Windows.Forms.Label lblDados;
-        private OvalPictureBox ovalPictureBox1;
+        private OvalPictureBox opcAvatar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.ComboBox comboEmail;
         private System.Windows.Forms.ComboBox comboTelefone;
