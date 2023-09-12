@@ -206,7 +206,9 @@ namespace tccCsharp
             string sql;
             try
             {
-                sql = "select id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos from gp2_projetos where id_criador = @1 and excluido = false order by data_criacao ASC";
+                sql = "select T1.id_projeto, id_criador, autores, email_contato, nome_projeto, palavras_chave, publico, descricao_breve, descricao_detalhada, link_site, link_youtube, status, porcentagem, data_criacao, data_atualizacao, atualizador, excluido, linguagem, previsao, num_grupos " +
+                    "from gp2_projetos T1 INNER JOIN gp2_colaboradores T2 ON T1.id_projeto = T2.id_projeto " +
+                    "where id_colaborador = @1 and excluido = false order by data_criacao ASC";
                 List<object> param = new List<object>();
                 param.Add(Program.id_usuario);
 
