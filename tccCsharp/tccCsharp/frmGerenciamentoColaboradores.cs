@@ -15,6 +15,11 @@ namespace tccCsharp
         public Head cabecalho = new Head();
         public Project projeto_editado = new Project();
         public List<Collaborators> Colaboradores = new List<Collaborators>(); 
+        public List<Collaborators> OutrosUser = new List<Collaborators>();
+        public bool Editando = false;
+        public Collaborators selecionado = new Collaborators();
+        public bool FimCarregamento = false;
+
         public frmGerenciamentoColaboradores()
         {
             InitializeComponent();
@@ -43,11 +48,11 @@ namespace tccCsharp
             btnSairSSalvar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             btnSairSSalvar.AutoHoover = true;
 
-            btnLimparForm.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
-            btnLimparForm.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            btnLimparForm.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            btnLimparForm.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnLimparForm.AutoHoover = true;
+            btnNovo.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnNovo.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnNovo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnNovo.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnNovo.AutoHoover = true;
 
             btnSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnSalvar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -136,6 +141,28 @@ namespace tccCsharp
             DoDesign();
             Colaboradores = Banco.CarrregaColaboradores();
             DGVColaboradores.DataSource = Colaboradores;
+            DGVColaboradores.Columns["avatar"].Visible = false;
+            DGVColaboradores.Columns["idColaborador"].Visible = false;
+
+            textNome.Visible = false;
+            textEmail.Visible = false;
+            textTelefone.Visible = false;
+            
+            OutrosUser = Banco.CarrregaOutrosUser();
+            comboNome.DataSource = OutrosUser;
+            comboEmail.DataSource = OutrosUser;
+            comboTelefone.DataSource = OutrosUser;
+            comboNome.ValueMember = "idColaborador";
+            comboNome.DisplayMember = "nome";
+            comboNome.SelectedIndex = -1;
+            comboEmail.ValueMember = "idColaborador";
+            comboEmail.DisplayMember = "email";
+            comboEmail.SelectedIndex = -1;
+            comboTelefone.DisplayMember = "telefone";
+            comboTelefone.ValueMember = "idColaborador";
+            comboTelefone.SelectedIndex = -1;
+
+            FimCarregamento = true;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
@@ -148,6 +175,155 @@ namespace tccCsharp
                 if (groupPorcentagem2.Width < 45)
                     groupPorcentagem2.Width = 45;
             }
+        }
+
+        private void DGVColaboradores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.DGVColaboradores.Rows[e.RowIndex];
+                selecionado.idColaborador = Convert.ToInt32(row.Cells[0].Value);
+                selecionado.nome = Convert.ToString(row.Cells[1].Value);
+                selecionado.email = Convert.ToString(row.Cells[2].Value);
+                selecionado.telefone = Convert.ToString(row.Cells[3].Value);
+                selecionado.avatar = Convert.ToInt32(row.Cells[4].Value);
+                selecionado.isAdmin = Convert.ToBoolean(row.Cells[5].Value);
+
+                textEmail.Visible = true;
+                textNome.Visible = true;
+                textTelefone.Visible = true;
+                textNome.Text = selecionado.nome;
+                textEmail.Text = selecionado.email;
+                textTelefone.Text = selecionado.telefone;
+                if(selecionado.isAdmin == true)
+                {
+                    radSim.Checked = true;
+                    radNao.Checked = false;
+                }
+                else
+                {
+                    radSim.Checked = false;
+                    radNao.Checked = true;
+                }
+                comboEmail.SelectedIndex = -1;
+                comboEmail.Visible = false;
+                comboNome.SelectedIndex = -1;
+                comboNome.Visible = false;
+                comboTelefone.SelectedIndex = -1;
+                comboTelefone.Visible = false;
+
+                Editando = true;
+            }
+        }
+
+        private void comboNome_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (FimCarregamento == true) 
+            { 
+                if(comboEmail.SelectedIndex != comboNome.SelectedIndex)
+                { 
+                    comboEmail.SelectedIndex = comboNome.SelectedIndex;
+                }
+                if (comboTelefone.SelectedIndex != comboNome.SelectedIndex)
+                {
+                    comboTelefone.SelectedIndex = comboNome.SelectedIndex;
+                }
+            }
+        }
+
+        private void comboEmail_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (FimCarregamento == true)
+            {
+                if (comboNome.SelectedIndex != comboEmail.SelectedIndex)
+                {
+                    comboNome.SelectedIndex = comboEmail.SelectedIndex;
+                }
+                if (comboTelefone.SelectedIndex != comboEmail.SelectedIndex)
+                {
+                    comboTelefone.SelectedIndex = comboEmail.SelectedIndex;
+                }
+            }
+        }
+
+        private void comboTelefone_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (FimCarregamento == true)
+            {
+                if (comboNome.SelectedIndex != comboTelefone.SelectedIndex)
+                {
+                    comboNome.SelectedIndex = comboTelefone.SelectedIndex;
+                }
+                if (comboEmail.SelectedIndex != comboTelefone.SelectedIndex)
+                {
+                    comboEmail.SelectedIndex = comboTelefone.SelectedIndex;
+                }
+            }
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            Editando = false;
+            textEmail.Visible = false;
+            textNome.Visible = false;
+            textTelefone.Visible = false;
+            comboEmail.Visible = true;
+            comboTelefone.Visible = true;
+            comboNome.Visible = true;
+            comboNome.SelectedIndex = -1;
+            radNao.Checked = true;
+            radSim.Checked = false;
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (Editando == false)
+            {
+                comboNome.SelectedIndex = -1;
+            }
+            else
+            {
+                Banco.DeleteCollaborator(selecionado.idColaborador);
+                Colaboradores.Clear();
+                OutrosUser.Clear();
+                FimCarregamento = false;
+
+                Colaboradores = Banco.CarrregaColaboradores();
+                DGVColaboradores.DataSource = Colaboradores;
+                DGVColaboradores.Columns["avatar"].Visible = false;
+                DGVColaboradores.Columns["idColaborador"].Visible = false;
+
+                textNome.Visible = false;
+                textEmail.Visible = false;
+                textTelefone.Visible = false;
+                comboEmail.Visible = true;
+                comboTelefone.Visible = true;
+                comboNome.Visible = true;
+
+                OutrosUser = Banco.CarrregaOutrosUser();
+                comboNome.DataSource = OutrosUser;
+                comboEmail.DataSource = OutrosUser;
+                comboTelefone.DataSource = OutrosUser;
+                comboNome.ValueMember = "idColaborador";
+                comboNome.DisplayMember = "nome";
+                comboNome.SelectedIndex = -1;
+                comboEmail.ValueMember = "idColaborador";
+                comboEmail.DisplayMember = "email";
+                comboEmail.SelectedIndex = -1;
+                comboTelefone.DisplayMember = "telefone";
+                comboTelefone.ValueMember = "idColaborador";
+                comboTelefone.SelectedIndex = -1;
+
+                FimCarregamento = true;
+                Editando = false;
+                selecionado = new Collaborators();
+            }
+        }
+
+        private void btnSairSSalvar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

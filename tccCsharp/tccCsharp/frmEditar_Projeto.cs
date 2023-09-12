@@ -645,6 +645,20 @@ namespace tccCsharp
             }
         }
 
-        
+        private void btnColaboradores_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmGerenciamentoColaboradores splash = new frmGerenciamentoColaboradores();
+            splash.ShowDialog();
+            if (Program.id_usuario == 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Visible = true;
+                AtualizaCabecalho();
+            }
+        }
     }
 }

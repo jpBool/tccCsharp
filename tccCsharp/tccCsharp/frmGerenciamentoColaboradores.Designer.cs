@@ -30,12 +30,6 @@
         {
             this.tlpBase1 = new System.Windows.Forms.TableLayoutPanel();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblProjeto = new System.Windows.Forms.Label();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
             this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
@@ -47,60 +41,69 @@
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.lblPorcentagem = new System.Windows.Forms.Label();
+            this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
             this.btnSairSSalvar = new RoundButton();
             this.RGBColaboradores = new tccCsharp.RoundedGroupBox();
             this.DGVColaboradores = new System.Windows.Forms.DataGridView();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblColaboradores = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbNomeP = new tccCsharp.RoundedGroupBox();
             this.lblNomeProjeto = new System.Windows.Forms.Label();
+            this.lblProjeto = new System.Windows.Forms.Label();
             this.RGBDados = new tccCsharp.RoundedGroupBox();
             this.TLPDados = new System.Windows.Forms.TableLayoutPanel();
-            this.btnSalvar = new RoundButton();
             this.lblDados = new System.Windows.Forms.Label();
             this.ovalPictureBox1 = new tccCsharp.OvalPictureBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboEmail = new System.Windows.Forms.ComboBox();
-            this.comboTelefone = new System.Windows.Forms.ComboBox();
+            this.comboNome = new System.Windows.Forms.ComboBox();
+            this.btnSalvar = new RoundButton();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnExcluir = new RoundButton();
+            this.btnNovo = new RoundButton();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lblAdm = new System.Windows.Forms.Label();
             this.radNao = new System.Windows.Forms.RadioButton();
             this.radSim = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnExcluir = new RoundButton();
-            this.btnLimparForm = new RoundButton();
-            this.comboNome = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textTelefone = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
+            this.comboTelefone = new System.Windows.Forms.ComboBox();
+            this.comboEmail = new System.Windows.Forms.ComboBox();
+            this.textNome = new System.Windows.Forms.TextBox();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tlpBase1.SuspendLayout();
             this.TLPHead2.SuspendLayout();
-            this.tlpBase2.SuspendLayout();
-            this.tlpBase4.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs2.SuspendLayout();
             this.TLPInfoshead.SuspendLayout();
             this.TLPCriacao.SuspendLayout();
             this.TLPAtualizacao.SuspendLayout();
             this.groupPorcentagem.SuspendLayout();
+            this.tlpBase2.SuspendLayout();
+            this.tlpBase4.SuspendLayout();
             this.rgbOpcoes.SuspendLayout();
             this.RGBColaboradores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColaboradores)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.rgbNomeP.SuspendLayout();
             this.RGBDados.SuspendLayout();
             this.TLPDados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).BeginInit();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
@@ -142,102 +145,6 @@
             this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPHead2.Size = new System.Drawing.Size(1264, 66);
             this.TLPHead2.TabIndex = 11;
-            // 
-            // tlpBase2
-            // 
-            this.tlpBase2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase2.ColumnCount = 2;
-            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBase2.Controls.Add(this.tlpBase4, 1, 0);
-            this.tlpBase2.Controls.Add(this.tableLayoutPanel1, 0, 0);
-            this.tlpBase2.Location = new System.Drawing.Point(3, 129);
-            this.tlpBase2.Name = "tlpBase2";
-            this.tlpBase2.RowCount = 1;
-            this.tlpBase2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.77273F));
-            this.tlpBase2.Size = new System.Drawing.Size(1258, 549);
-            this.tlpBase2.TabIndex = 4;
-            // 
-            // tlpBase4
-            // 
-            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase4.ColumnCount = 1;
-            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
-            this.tlpBase4.Controls.Add(this.RGBColaboradores, 0, 0);
-            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
-            this.tlpBase4.Name = "tlpBase4";
-            this.tlpBase4.RowCount = 2;
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
-            this.tlpBase4.TabIndex = 1;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.RGBDados, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 543);
-            this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.Controls.Add(this.rgbNomeP, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblProjeto, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(617, 48);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // lblProjeto
-            // 
-            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblProjeto.AutoSize = true;
-            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjeto.Location = new System.Drawing.Point(30, 14);
-            this.lblProjeto.Name = "lblProjeto";
-            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
-            this.lblProjeto.TabIndex = 3;
-            this.lblProjeto.Text = "Projeto:";
-            // 
-            // TLPHead1
-            // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
-            this.TLPHead1.TabIndex = 7;
             // 
             // rgbHeadImgs2
             // 
@@ -409,6 +316,41 @@
             this.lblPorcentagem.Text = "%";
             this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tlpBase2
+            // 
+            this.tlpBase2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase2.ColumnCount = 2;
+            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBase2.Controls.Add(this.tlpBase4, 1, 0);
+            this.tlpBase2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tlpBase2.Location = new System.Drawing.Point(3, 129);
+            this.tlpBase2.Name = "tlpBase2";
+            this.tlpBase2.RowCount = 1;
+            this.tlpBase2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.77273F));
+            this.tlpBase2.Size = new System.Drawing.Size(1258, 549);
+            this.tlpBase2.TabIndex = 4;
+            // 
+            // tlpBase4
+            // 
+            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase4.ColumnCount = 1;
+            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
+            this.tlpBase4.Controls.Add(this.RGBColaboradores, 0, 0);
+            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
+            this.tlpBase4.Name = "tlpBase4";
+            this.tlpBase4.RowCount = 2;
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
+            this.tlpBase4.TabIndex = 1;
+            // 
             // rgbOpcoes
             // 
             this.rgbOpcoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -442,6 +384,7 @@
             this.btnSairSSalvar.Text = "VOLTAR PARA O GERENCIAMENTO DO PROJETO";
             this.btnSairSSalvar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnSairSSalvar.UseVisualStyleBackColor = true;
+            this.btnSairSSalvar.Click += new System.EventHandler(this.btnSairSSalvar_Click);
             // 
             // RGBColaboradores
             // 
@@ -478,6 +421,39 @@
             this.DGVColaboradores.ReadOnly = true;
             this.DGVColaboradores.Size = new System.Drawing.Size(605, 410);
             this.DGVColaboradores.TabIndex = 1;
+            this.DGVColaboradores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVColaboradores_CellClick);
+            // 
+            // nome
+            // 
+            this.nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nome.DataPropertyName = "nome";
+            this.nome.HeaderText = "Nome do Colaborador";
+            this.nome.Name = "nome";
+            this.nome.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "E-mail";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // telefone
+            // 
+            this.telefone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.telefone.DataPropertyName = "telefone";
+            this.telefone.HeaderText = "Telefone";
+            this.telefone.Name = "telefone";
+            this.telefone.ReadOnly = true;
+            // 
+            // isAdmin
+            // 
+            this.isAdmin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.isAdmin.DataPropertyName = "isAdmin";
+            this.isAdmin.HeaderText = "É adminstrador?";
+            this.isAdmin.Name = "isAdmin";
+            this.isAdmin.ReadOnly = true;
             // 
             // lblColaboradores
             // 
@@ -488,6 +464,40 @@
             this.lblColaboradores.Size = new System.Drawing.Size(218, 20);
             this.lblColaboradores.TabIndex = 0;
             this.lblColaboradores.Text = "Lista de pessoas com acesso";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RGBDados, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 543);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.Controls.Add(this.rgbNomeP, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblProjeto, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(617, 48);
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // rgbNomeP
             // 
@@ -516,6 +526,17 @@
             this.lblNomeProjeto.TabIndex = 0;
             this.lblNomeProjeto.Text = "Nome";
             // 
+            // lblProjeto
+            // 
+            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblProjeto.AutoSize = true;
+            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProjeto.Location = new System.Drawing.Point(30, 14);
+            this.lblProjeto.Name = "lblProjeto";
+            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
+            this.lblProjeto.TabIndex = 3;
+            this.lblProjeto.Text = "Projeto:";
+            // 
             // RGBDados
             // 
             this.RGBDados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -539,46 +560,27 @@
             this.TLPDados.BackColor = System.Drawing.Color.Transparent;
             this.TLPDados.ColumnCount = 1;
             this.TLPDados.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPDados.Controls.Add(this.btnSalvar, 0, 6);
             this.TLPDados.Controls.Add(this.lblDados, 0, 0);
             this.TLPDados.Controls.Add(this.ovalPictureBox1, 0, 1);
-            this.TLPDados.Controls.Add(this.tableLayoutPanel3, 0, 3);
-            this.TLPDados.Controls.Add(this.tableLayoutPanel4, 0, 4);
-            this.TLPDados.Controls.Add(this.tableLayoutPanel5, 0, 5);
             this.TLPDados.Controls.Add(this.comboNome, 0, 2);
+            this.TLPDados.Controls.Add(this.btnSalvar, 0, 7);
+            this.TLPDados.Controls.Add(this.tableLayoutPanel5, 0, 6);
+            this.TLPDados.Controls.Add(this.tableLayoutPanel4, 0, 5);
+            this.TLPDados.Controls.Add(this.tableLayoutPanel3, 0, 4);
+            this.TLPDados.Controls.Add(this.textNome, 0, 3);
             this.TLPDados.Location = new System.Drawing.Point(6, 9);
             this.TLPDados.Name = "TLPDados";
-            this.TLPDados.RowCount = 7;
+            this.TLPDados.RowCount = 8;
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TLPDados.Size = new System.Drawing.Size(605, 468);
             this.TLPDados.TabIndex = 12;
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvar.AutoHoover = false;
-            this.btnSalvar.BordaHoover = System.Drawing.Color.Green;
-            this.btnSalvar.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnSalvar.BorderColor = System.Drawing.Color.Black;
-            this.btnSalvar.BorderRadius = 20;
-            this.btnSalvar.BorderThickness = 4;
-            this.btnSalvar.ButtonColor = System.Drawing.Color.White;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(3, 420);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(599, 45);
-            this.btnSalvar.TabIndex = 12;
-            this.btnSalvar.Text = "SALVAR";
-            this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // lblDados
             // 
@@ -601,47 +603,105 @@
             this.ovalPictureBox1.AutoHoover = false;
             this.ovalPictureBox1.BordaHoover = System.Drawing.Color.Green;
             this.ovalPictureBox1.BordaPrincipal = System.Drawing.Color.Black;
-            this.ovalPictureBox1.Location = new System.Drawing.Point(235, 60);
+            this.ovalPictureBox1.Location = new System.Drawing.Point(232, 57);
             this.ovalPictureBox1.Name = "ovalPictureBox1";
-            this.ovalPictureBox1.Size = new System.Drawing.Size(135, 134);
+            this.ovalPictureBox1.Size = new System.Drawing.Size(140, 140);
+            this.ovalPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ovalPictureBox1.TabIndex = 1;
             this.ovalPictureBox1.TabStop = false;
             // 
-            // tableLayoutPanel3
+            // comboNome
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.comboNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.comboNome.FormattingEnabled = true;
+            this.comboNome.Location = new System.Drawing.Point(152, 212);
+            this.comboNome.Name = "comboNome";
+            this.comboNome.Size = new System.Drawing.Size(300, 21);
+            this.comboNome.TabIndex = 13;
+            this.comboNome.SelectedIndexChanged += new System.EventHandler(this.comboNome_SelectedIndexChanged);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.comboEmail, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.comboTelefone, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 267);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(605, 58);
-            this.tableLayoutPanel3.TabIndex = 2;
+            this.btnSalvar.AutoHoover = false;
+            this.btnSalvar.BordaHoover = System.Drawing.Color.Green;
+            this.btnSalvar.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnSalvar.BorderColor = System.Drawing.Color.Black;
+            this.btnSalvar.BorderRadius = 20;
+            this.btnSalvar.BorderThickness = 4;
+            this.btnSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(3, 420);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(599, 45);
+            this.btnSalvar.TabIndex = 12;
+            this.btnSalvar.Text = "ADICIONAR ESTE COLABORADOR / SALVAR ALTERAÇÃO";
+            this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
-            // comboEmail
+            // tableLayoutPanel5
             // 
-            this.comboEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.comboEmail.FormattingEnabled = true;
-            this.comboEmail.Location = new System.Drawing.Point(348, 3);
-            this.comboEmail.Name = "comboEmail";
-            this.comboEmail.Size = new System.Drawing.Size(210, 21);
-            this.comboEmail.TabIndex = 0;
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.btnExcluir, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnNovo, 0, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 371);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(605, 46);
+            this.tableLayoutPanel5.TabIndex = 4;
             // 
-            // comboTelefone
+            // btnExcluir
             // 
-            this.comboTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.comboTelefone.FormattingEnabled = true;
-            this.comboTelefone.Location = new System.Drawing.Point(46, 3);
-            this.comboTelefone.Name = "comboTelefone";
-            this.comboTelefone.Size = new System.Drawing.Size(210, 21);
-            this.comboTelefone.TabIndex = 1;
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.AutoHoover = false;
+            this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
+            this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
+            this.btnExcluir.BorderRadius = 20;
+            this.btnExcluir.BorderThickness = 4;
+            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(305, 3);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(297, 40);
+            this.btnExcluir.TabIndex = 13;
+            this.btnExcluir.Text = "REMOVER ESTE COLABORADOR";
+            this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNovo.AutoHoover = false;
+            this.btnNovo.BordaHoover = System.Drawing.Color.Green;
+            this.btnNovo.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnNovo.BorderColor = System.Drawing.Color.Black;
+            this.btnNovo.BorderRadius = 20;
+            this.btnNovo.BorderThickness = 4;
+            this.btnNovo.ButtonColor = System.Drawing.Color.White;
+            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(3, 3);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(296, 40);
+            this.btnNovo.TabIndex = 14;
+            this.btnNovo.Text = "PROCURAR NOVO COLABORADOR";
+            this.btnNovo.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -700,74 +760,89 @@
             this.radSim.Text = "Sim";
             this.radSim.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel5
+            // tableLayoutPanel3
             // 
-            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.btnExcluir, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btnLimparForm, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 371);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(605, 46);
-            this.tableLayoutPanel5.TabIndex = 4;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.textTelefone, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.textEmail, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.comboTelefone, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.comboEmail, 1, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 267);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(605, 58);
+            this.tableLayoutPanel3.TabIndex = 2;
             // 
-            // btnExcluir
+            // textTelefone
             // 
-            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textTelefone.Enabled = false;
+            this.textTelefone.Location = new System.Drawing.Point(46, 32);
+            this.textTelefone.Name = "textTelefone";
+            this.textTelefone.Size = new System.Drawing.Size(210, 20);
+            this.textTelefone.TabIndex = 16;
+            // 
+            // textEmail
+            // 
+            this.textEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textEmail.Enabled = false;
+            this.textEmail.Location = new System.Drawing.Point(348, 32);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(210, 20);
+            this.textEmail.TabIndex = 15;
+            // 
+            // comboTelefone
+            // 
+            this.comboTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.comboTelefone.FormattingEnabled = true;
+            this.comboTelefone.Location = new System.Drawing.Point(46, 3);
+            this.comboTelefone.Name = "comboTelefone";
+            this.comboTelefone.Size = new System.Drawing.Size(210, 21);
+            this.comboTelefone.TabIndex = 1;
+            this.comboTelefone.SelectedIndexChanged += new System.EventHandler(this.comboTelefone_SelectedIndexChanged);
+            // 
+            // comboEmail
+            // 
+            this.comboEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.comboEmail.FormattingEnabled = true;
+            this.comboEmail.Location = new System.Drawing.Point(348, 3);
+            this.comboEmail.Name = "comboEmail";
+            this.comboEmail.Size = new System.Drawing.Size(210, 21);
+            this.comboEmail.TabIndex = 0;
+            this.comboEmail.SelectedIndexChanged += new System.EventHandler(this.comboEmail_SelectedIndexChanged);
+            // 
+            // textNome
+            // 
+            this.textNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textNome.Enabled = false;
+            this.textNome.Location = new System.Drawing.Point(152, 241);
+            this.textNome.Name = "textNome";
+            this.textNome.Size = new System.Drawing.Size(300, 20);
+            this.textNome.TabIndex = 14;
+            // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcluir.AutoHoover = false;
-            this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
-            this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
-            this.btnExcluir.BorderRadius = 20;
-            this.btnExcluir.BorderThickness = 4;
-            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
-            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(305, 3);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(297, 40);
-            this.btnExcluir.TabIndex = 13;
-            this.btnExcluir.Text = "EXCLUIR";
-            this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnLimparForm
-            // 
-            this.btnLimparForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimparForm.AutoHoover = false;
-            this.btnLimparForm.BordaHoover = System.Drawing.Color.Green;
-            this.btnLimparForm.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnLimparForm.BorderColor = System.Drawing.Color.Black;
-            this.btnLimparForm.BorderRadius = 20;
-            this.btnLimparForm.BorderThickness = 4;
-            this.btnLimparForm.ButtonColor = System.Drawing.Color.White;
-            this.btnLimparForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimparForm.Location = new System.Drawing.Point(3, 3);
-            this.btnLimparForm.Name = "btnLimparForm";
-            this.btnLimparForm.Size = new System.Drawing.Size(296, 40);
-            this.btnLimparForm.TabIndex = 14;
-            this.btnLimparForm.Text = "LIMPAR FORMULÁRIO";
-            this.btnLimparForm.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnLimparForm.UseVisualStyleBackColor = true;
-            // 
-            // comboNome
-            // 
-            this.comboNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.comboNome.FormattingEnabled = true;
-            this.comboNome.Location = new System.Drawing.Point(152, 212);
-            this.comboNome.Name = "comboNome";
-            this.comboNome.Size = new System.Drawing.Size(300, 21);
-            this.comboNome.TabIndex = 13;
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
+            this.TLPHead1.TabIndex = 7;
             // 
             // rgbHeadImgs1
             // 
@@ -853,38 +928,6 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "GERENCIAMENTO DE COLABORADORES";
             // 
-            // nome
-            // 
-            this.nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nome.DataPropertyName = "nome";
-            this.nome.HeaderText = "Nome do Colaborador";
-            this.nome.Name = "nome";
-            this.nome.ReadOnly = true;
-            // 
-            // email
-            // 
-            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "E-mail";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // telefone
-            // 
-            this.telefone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.telefone.DataPropertyName = "telefone";
-            this.telefone.HeaderText = "Telefone";
-            this.telefone.Name = "telefone";
-            this.telefone.ReadOnly = true;
-            // 
-            // isAdmin
-            // 
-            this.isAdmin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.isAdmin.DataPropertyName = "isAdmin";
-            this.isAdmin.HeaderText = "É adminstrador?";
-            this.isAdmin.Name = "isAdmin";
-            this.isAdmin.ReadOnly = true;
-            // 
             // frmGerenciamentoColaboradores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -898,13 +941,6 @@
             this.tlpBase1.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
-            this.tlpBase2.ResumeLayout(false);
-            this.tlpBase4.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs2.ResumeLayout(false);
             this.TLPInfoshead.ResumeLayout(false);
             this.TLPInfoshead.PerformLayout();
@@ -913,20 +949,28 @@
             this.TLPAtualizacao.ResumeLayout(false);
             this.TLPAtualizacao.PerformLayout();
             this.groupPorcentagem.ResumeLayout(false);
+            this.tlpBase2.ResumeLayout(false);
+            this.tlpBase4.ResumeLayout(false);
             this.rgbOpcoes.ResumeLayout(false);
             this.RGBColaboradores.ResumeLayout(false);
             this.RGBColaboradores.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColaboradores)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.rgbNomeP.ResumeLayout(false);
             this.rgbNomeP.PerformLayout();
             this.RGBDados.ResumeLayout(false);
             this.TLPDados.ResumeLayout(false);
             this.TLPDados.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ovalPictureBox1)).EndInit();
-            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs1.ResumeLayout(false);
             this.rgbHeadImgs1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
@@ -969,7 +1013,7 @@
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.Label lblTitulo;
-        private RoundButton btnLimparForm;
+        private RoundButton btnNovo;
         private RoundButton btnExcluir;
         private RoundButton btnSalvar;
         private System.Windows.Forms.TableLayoutPanel TLPDados;
@@ -989,5 +1033,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn isAdmin;
+        private System.Windows.Forms.TextBox textTelefone;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.TextBox textNome;
     }
 }

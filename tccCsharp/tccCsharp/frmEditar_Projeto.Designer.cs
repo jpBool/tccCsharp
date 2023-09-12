@@ -1061,6 +1061,7 @@
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // btnColaboradores
             // 
             this.btnColaboradores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1079,6 +1080,7 @@
             this.btnColaboradores.Text = "GERENCIAR COLABORADORES DO PROJETO";
             this.btnColaboradores.TextoPrincipal = System.Drawing.Color.Black;
             this.btnColaboradores.UseVisualStyleBackColor = true;
+            this.btnColaboradores.Click += new System.EventHandler(this.btnColaboradores_Click);
             // 
             // btnImagens
             // 
