@@ -647,6 +647,12 @@ namespace tccCsharp
 
         private void btnColaboradores_Click(object sender, EventArgs e)
         {
+            if(Banco.PodeGerenciar() == false)
+            {
+                MessageBox.Show("Você não tem permissão para Gerenciar os colaboradores desse projeto, é preciso ser um colaborador administrativo.","Editar Projeto", MessageBoxButtons.OK);
+                return;
+            }
+            
             this.Visible = false;
             frmGerenciamentoColaboradores splash = new frmGerenciamentoColaboradores();
             splash.ShowDialog();

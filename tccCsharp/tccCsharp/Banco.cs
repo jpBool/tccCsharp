@@ -1360,6 +1360,43 @@ namespace tccCsharp
             }
         }
 
+        public static bool PodeGerenciar()
+        {
+            bool permissao = false;
+            try
+            {
+                Conectar();
+                String sql = "SELECT * FROM gp2_colaboradores WHERE id_projeto = @1 AND id_colaborador = @2 AND colaborador_ADM = TRUE ";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
+                param.Add(Program.id_usuario);
+
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                if (dr.Read())
+                {
+                    dr.Close();
+                    permissao = true;
+                }
+                else
+                {
+                    permissao = false;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao iniciar gerenciamento!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar(); 
+            }
+            return permissao;
+        }
+
     } 
 }
 
