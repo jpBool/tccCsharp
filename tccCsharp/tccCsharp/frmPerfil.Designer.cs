@@ -502,7 +502,8 @@
             this.btnAdicionar.Location = new System.Drawing.Point(3, 3);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(598, 37);
-            this.btnAdicionar.TabIndex = 5;
+            this.btnAdicionar.TabIndex = 1;
+            this.btnAdicionar.TabStop = false;
             this.btnAdicionar.Text = "ADICIONAR NOVO PROJETO";
             this.btnAdicionar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -574,7 +575,7 @@
             this.RGPProjeto2.Margin = new System.Windows.Forms.Padding(20);
             this.RGPProjeto2.Name = "RGPProjeto2";
             this.RGPProjeto2.Size = new System.Drawing.Size(326, 311);
-            this.RGPProjeto2.TabIndex = 32;
+            this.RGPProjeto2.TabIndex = 4;
             this.RGPProjeto2.TabStop = false;
             // 
             // opbEditarP2
@@ -648,7 +649,7 @@
             this.RGPProjeto1.Margin = new System.Windows.Forms.Padding(20);
             this.RGPProjeto1.Name = "RGPProjeto1";
             this.RGPProjeto1.Size = new System.Drawing.Size(326, 311);
-            this.RGPProjeto1.TabIndex = 31;
+            this.RGPProjeto1.TabIndex = 3;
             this.RGPProjeto1.TabStop = false;
             // 
             // opbEditarP1
@@ -722,7 +723,7 @@
             this.RGPProjeto3.Margin = new System.Windows.Forms.Padding(20);
             this.RGPProjeto3.Name = "RGPProjeto3";
             this.RGPProjeto3.Size = new System.Drawing.Size(326, 311);
-            this.RGPProjeto3.TabIndex = 33;
+            this.RGPProjeto3.TabIndex = 5;
             this.RGPProjeto3.TabStop = false;
             // 
             // RGBDescricaoP3

@@ -654,7 +654,7 @@ namespace tccCsharp
             }
             
             this.Visible = false;
-            frmGerenciamentoColaboradores splash = new frmGerenciamentoColaboradores();
+            frmGerenciamentoColaboradores splash = new frmGerenciamentoColaboradores(editando.nome_projeto);
             splash.ShowDialog();
             if (Program.id_usuario == 0)
             {

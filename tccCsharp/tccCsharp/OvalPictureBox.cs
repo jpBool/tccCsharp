@@ -93,6 +93,34 @@ namespace tccCsharp
                 base.OnMouseLeave(e);
             }
         }
+
+        protected override void OnGotFocus(EventArgs e)
+        {
+            if (AutoHoover == true)
+            {
+                BordaPrincipal = _bordercolor;
+                _bordercolor = BordaHoover;
+                ForeColor = BordaHoover;
+                Refresh();
+            }
+            else
+            {
+                base.OnGotFocus(e);
+            }
+        }
+
+        protected override void OnLostFocus(EventArgs e)
+        {
+            if (AutoHoover == true)
+            {
+                _bordercolor = BordaPrincipal;
+                Refresh();
+            }
+            else
+            {
+                base.OnLostFocus(e);
+            }
+        }
     }
 }
 

@@ -13,16 +13,17 @@ namespace tccCsharp
     public partial class frmGerenciamentoColaboradores : Form
     {
         public Head cabecalho = new Head();
-        public Project projeto_editado = new Project();
         public List<Collaborators> Colaboradores = new List<Collaborators>(); 
         public List<Collaborators> OutrosUser = new List<Collaborators>();
         public bool Editando = false;
+        public string nomeProjeto;
         public Collaborators selecionado = new Collaborators();
         public bool FimCarregamento = false;
 
-        public frmGerenciamentoColaboradores()
+        public frmGerenciamentoColaboradores(string nomeRecebido)
         {
             InitializeComponent();
+            nomeProjeto = nomeRecebido;
         }
 
         public void Avatar(int avatar)
@@ -165,7 +166,7 @@ namespace tccCsharp
             lblAtualizadoquando.Text = "Atualizado em " + Convert.ToDateTime(cabecalho.atualizacao).ToShortDateString();
             lblAtualizador.Text = "Atualizador: " + cabecalho.atualizador_nome;
             lblPorcentagem.Text = cabecalho.porcentagem_int.ToString() + "%";
-            lblNomeProjeto.Text = projeto_editado.nome_projeto;
+            lblNomeProjeto.Text = nomeProjeto; 
 
             if (cabecalho.porcentagem_int == 100)
                 groupPorcentagem2.Width = groupPorcentagem.Width;

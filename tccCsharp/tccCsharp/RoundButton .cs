@@ -169,4 +169,34 @@ public class RoundButton : Button
             base.OnMouseLeave(e);
         }
     }
+
+    protected override void OnGotFocus(EventArgs e)
+    {
+        if (AutoHoover == true)
+        {
+            BordaPrincipal = BorderColor;
+            TextoPrincipal = ForeColor;
+            BorderColor = BordaHoover;
+            ForeColor = BordaHoover;
+            Refresh();
+        }
+        else
+        {
+            base.OnGotFocus(e);
+        }
+    }
+
+    protected override void OnLostFocus(EventArgs e)
+    {
+        if (AutoHoover == true)
+        {
+            BorderColor = BordaPrincipal;
+            ForeColor = TextoPrincipal;
+            Refresh();
+        }
+        else
+        {
+            base.OnLostFocus(e);
+        }
+    }
 }

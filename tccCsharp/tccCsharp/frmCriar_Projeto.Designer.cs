@@ -230,7 +230,7 @@
             this.RGBPalavras.Location = new System.Drawing.Point(138, 297);
             this.RGBPalavras.Name = "RGBPalavras";
             this.RGBPalavras.Size = new System.Drawing.Size(477, 108);
-            this.RGBPalavras.TabIndex = 15;
+            this.RGBPalavras.TabIndex = 8;
             this.RGBPalavras.TabStop = false;
             // 
             // txtPalavras
@@ -245,7 +245,7 @@
             this.txtPalavras.Multiline = true;
             this.txtPalavras.Name = "txtPalavras";
             this.txtPalavras.Size = new System.Drawing.Size(459, 89);
-            this.txtPalavras.TabIndex = 0;
+            this.txtPalavras.TabIndex = 8;
             this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
             this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
             this.txtPalavras.Leave += new System.EventHandler(this.txtPalavras_Leave);
@@ -262,7 +262,7 @@
             this.RGBYoutube.Location = new System.Drawing.Point(138, 255);
             this.RGBYoutube.Name = "RGBYoutube";
             this.RGBYoutube.Size = new System.Drawing.Size(477, 36);
-            this.RGBYoutube.TabIndex = 14;
+            this.RGBYoutube.TabIndex = 7;
             this.RGBYoutube.TabStop = false;
             // 
             // txtVideo
@@ -276,7 +276,7 @@
             this.txtVideo.MaxLength = 50;
             this.txtVideo.Name = "txtVideo";
             this.txtVideo.Size = new System.Drawing.Size(461, 19);
-            this.txtVideo.TabIndex = 5;
+            this.txtVideo.TabIndex = 7;
             this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
             this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
             this.txtVideo.Leave += new System.EventHandler(this.txtVideo_Leave);
@@ -305,7 +305,7 @@
             this.RGBSite.Location = new System.Drawing.Point(138, 213);
             this.RGBSite.Name = "RGBSite";
             this.RGBSite.Size = new System.Drawing.Size(477, 36);
-            this.RGBSite.TabIndex = 13;
+            this.RGBSite.TabIndex = 6;
             this.RGBSite.TabStop = false;
             // 
             // txtSite
@@ -319,7 +319,7 @@
             this.txtSite.MaxLength = 250;
             this.txtSite.Name = "txtSite";
             this.txtSite.Size = new System.Drawing.Size(461, 19);
-            this.txtSite.TabIndex = 5;
+            this.txtSite.TabIndex = 6;
             this.txtSite.Text = "Site do projeto";
             this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
             this.txtSite.Leave += new System.EventHandler(this.txtSite_Leave);
@@ -349,7 +349,7 @@
             this.RGBBreve.Location = new System.Drawing.Point(138, 171);
             this.RGBBreve.Name = "RGBBreve";
             this.RGBBreve.Size = new System.Drawing.Size(477, 36);
-            this.RGBBreve.TabIndex = 12;
+            this.RGBBreve.TabIndex = 5;
             this.RGBBreve.TabStop = false;
             // 
             // txtDescricaoBreve
@@ -404,7 +404,7 @@
             this.RGBLinguagem.Location = new System.Drawing.Point(138, 129);
             this.RGBLinguagem.Name = "RGBLinguagem";
             this.RGBLinguagem.Size = new System.Drawing.Size(477, 36);
-            this.RGBLinguagem.TabIndex = 11;
+            this.RGBLinguagem.TabIndex = 4;
             this.RGBLinguagem.TabStop = false;
             // 
             // txtLinguagem
@@ -418,7 +418,7 @@
             this.txtLinguagem.MaxLength = 100;
             this.txtLinguagem.Name = "txtLinguagem";
             this.txtLinguagem.Size = new System.Drawing.Size(400, 19);
-            this.txtLinguagem.TabIndex = 5;
+            this.txtLinguagem.TabIndex = 4;
             this.txtLinguagem.Text = "Linguagens de programação utilizadas";
             this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
             this.txtLinguagem.Leave += new System.EventHandler(this.txtLinguagem_Leave);
@@ -459,7 +459,7 @@
             this.RGBAutores.Location = new System.Drawing.Point(138, 87);
             this.RGBAutores.Name = "RGBAutores";
             this.RGBAutores.Size = new System.Drawing.Size(477, 36);
-            this.RGBAutores.TabIndex = 10;
+            this.RGBAutores.TabIndex = 3;
             this.RGBAutores.TabStop = false;
             // 
             // txtAutores
@@ -473,7 +473,7 @@
             this.txtAutores.MaxLength = 150;
             this.txtAutores.Name = "txtAutores";
             this.txtAutores.Size = new System.Drawing.Size(400, 19);
-            this.txtAutores.TabIndex = 5;
+            this.txtAutores.TabIndex = 3;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
             this.txtAutores.Leave += new System.EventHandler(this.txtAutores_Leave);
@@ -514,7 +514,7 @@
             this.RGBEmail.Location = new System.Drawing.Point(138, 45);
             this.RGBEmail.Name = "RGBEmail";
             this.RGBEmail.Size = new System.Drawing.Size(477, 36);
-            this.RGBEmail.TabIndex = 9;
+            this.RGBEmail.TabIndex = 2;
             this.RGBEmail.TabStop = false;
             // 
             // txtEmail
@@ -528,7 +528,7 @@
             this.txtEmail.MaxLength = 256;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(400, 19);
-            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TabIndex = 2;
             this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
@@ -569,7 +569,7 @@
             this.RGBNome.Location = new System.Drawing.Point(138, 3);
             this.RGBNome.Name = "RGBNome";
             this.RGBNome.Size = new System.Drawing.Size(477, 36);
-            this.RGBNome.TabIndex = 0;
+            this.RGBNome.TabIndex = 1;
             this.RGBNome.TabStop = false;
             // 
             // txtNomeProjeto
@@ -583,7 +583,7 @@
             this.txtNomeProjeto.MaxLength = 20;
             this.txtNomeProjeto.Name = "txtNomeProjeto";
             this.txtNomeProjeto.Size = new System.Drawing.Size(400, 19);
-            this.txtNomeProjeto.TabIndex = 2;
+            this.txtNomeProjeto.TabIndex = 1;
             this.txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
             this.txtNomeProjeto.Enter += new System.EventHandler(this.txtNomeProjeto_Enter);
             this.txtNomeProjeto.Leave += new System.EventHandler(this.txtNomeProjeto_Leave);
@@ -745,7 +745,7 @@
             this.RGBCampos.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.RGBCampos.Name = "RGBCampos";
             this.RGBCampos.Size = new System.Drawing.Size(618, 109);
-            this.RGBCampos.TabIndex = 3;
+            this.RGBCampos.TabIndex = 9;
             this.RGBCampos.TabStop = false;
             // 
             // boxSemPrevisao
@@ -754,7 +754,7 @@
             this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
             this.boxSemPrevisao.Name = "boxSemPrevisao";
             this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
-            this.boxSemPrevisao.TabIndex = 7;
+            this.boxSemPrevisao.TabIndex = 9;
             this.boxSemPrevisao.Text = "Sem Previsão.";
             this.boxSemPrevisao.UseVisualStyleBackColor = true;
             this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
@@ -769,7 +769,7 @@
             this.radioSim.Location = new System.Drawing.Point(443, 71);
             this.radioSim.Name = "radioSim";
             this.radioSim.Size = new System.Drawing.Size(54, 24);
-            this.radioSim.TabIndex = 6;
+            this.radioSim.TabIndex = 13;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
             // 
@@ -784,7 +784,7 @@
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
             this.radioNão.Size = new System.Drawing.Size(56, 24);
-            this.radioNão.TabIndex = 5;
+            this.radioNão.TabIndex = 12;
             this.radioNão.TabStop = true;
             this.radioNão.Text = "Não";
             this.radioNão.UseVisualStyleBackColor = false;
@@ -797,7 +797,7 @@
             this.comboStatus.Location = new System.Drawing.Point(349, 40);
             this.comboStatus.Name = "comboStatus";
             this.comboStatus.Size = new System.Drawing.Size(258, 28);
-            this.comboStatus.TabIndex = 4;
+            this.comboStatus.TabIndex = 11;
             // 
             // dtpPrevisao
             // 
@@ -808,7 +808,7 @@
             this.dtpPrevisao.Location = new System.Drawing.Point(349, 10);
             this.dtpPrevisao.Name = "dtpPrevisao";
             this.dtpPrevisao.Size = new System.Drawing.Size(258, 26);
-            this.dtpPrevisao.TabIndex = 3;
+            this.dtpPrevisao.TabIndex = 10;
             this.dtpPrevisao.Value = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             // 
             // lblPublicar
@@ -877,7 +877,7 @@
             this.RGBDetalhada.Location = new System.Drawing.Point(3, 3);
             this.RGBDetalhada.Name = "RGBDetalhada";
             this.RGBDetalhada.Size = new System.Drawing.Size(619, 325);
-            this.RGBDetalhada.TabIndex = 0;
+            this.RGBDetalhada.TabIndex = 10;
             this.RGBDetalhada.TabStop = false;
             // 
             // txtDetalhada
@@ -891,7 +891,7 @@
             this.txtDetalhada.Multiline = true;
             this.txtDetalhada.Name = "txtDetalhada";
             this.txtDetalhada.Size = new System.Drawing.Size(595, 285);
-            this.txtDetalhada.TabIndex = 4;
+            this.txtDetalhada.TabIndex = 14;
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
             this.txtDetalhada.Enter += new System.EventHandler(this.txtDetalhada_Enter);
@@ -920,7 +920,7 @@
             this.RGBModelos.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.RGBModelos.Name = "RGBModelos";
             this.RGBModelos.Size = new System.Drawing.Size(619, 192);
-            this.RGBModelos.TabIndex = 1;
+            this.RGBModelos.TabIndex = 11;
             this.RGBModelos.TabStop = false;
             // 
             // TLPOpcoes
@@ -969,7 +969,7 @@
             this.radioPrazos.Location = new System.Drawing.Point(3, 161);
             this.radioPrazos.Name = "radioPrazos";
             this.radioPrazos.Size = new System.Drawing.Size(158, 24);
-            this.radioPrazos.TabIndex = 7;
+            this.radioPrazos.TabIndex = 19;
             this.radioPrazos.Text = "Modelo de Prazos.";
             this.radioPrazos.UseVisualStyleBackColor = false;
             // 
@@ -983,7 +983,7 @@
             this.radioSemModelos.Location = new System.Drawing.Point(3, 34);
             this.radioSemModelos.Name = "radioSemModelos";
             this.radioSemModelos.Size = new System.Drawing.Size(173, 24);
-            this.radioSemModelos.TabIndex = 3;
+            this.radioSemModelos.TabIndex = 15;
             this.radioSemModelos.TabStop = true;
             this.radioSemModelos.Text = "Não utilizar modelos.";
             this.radioSemModelos.UseVisualStyleBackColor = false;
@@ -997,7 +997,7 @@
             this.radioEquipes.Location = new System.Drawing.Point(3, 127);
             this.radioEquipes.Name = "radioEquipes";
             this.radioEquipes.Size = new System.Drawing.Size(311, 24);
-            this.radioEquipes.TabIndex = 6;
+            this.radioEquipes.TabIndex = 18;
             this.radioEquipes.Text = "Modelo de Equipes de desenvolvimento.";
             this.radioEquipes.UseVisualStyleBackColor = false;
             // 
@@ -1010,7 +1010,7 @@
             this.radioKanban.Location = new System.Drawing.Point(3, 65);
             this.radioKanban.Name = "radioKanban";
             this.radioKanban.Size = new System.Drawing.Size(142, 24);
-            this.radioKanban.TabIndex = 4;
+            this.radioKanban.TabIndex = 16;
             this.radioKanban.Text = "Modelo Kanban.";
             this.radioKanban.UseVisualStyleBackColor = false;
             // 
@@ -1023,7 +1023,7 @@
             this.radioScrum.Location = new System.Drawing.Point(3, 96);
             this.radioScrum.Name = "radioScrum";
             this.radioScrum.Size = new System.Drawing.Size(133, 24);
-            this.radioScrum.TabIndex = 5;
+            this.radioScrum.TabIndex = 17;
             this.radioScrum.Text = "Modelo Scrum.";
             this.radioScrum.UseVisualStyleBackColor = false;
             // 
@@ -1058,7 +1058,7 @@
             this.RGBHead2.Location = new System.Drawing.Point(3, 3);
             this.RGBHead2.Name = "RGBHead2";
             this.RGBHead2.Size = new System.Drawing.Size(1261, 54);
-            this.RGBHead2.TabIndex = 3;
+            this.RGBHead2.TabIndex = 12;
             this.RGBHead2.TabStop = false;
             // 
             // btnCriar
@@ -1075,7 +1075,7 @@
             this.btnCriar.Location = new System.Drawing.Point(1095, 8);
             this.btnCriar.Name = "btnCriar";
             this.btnCriar.Size = new System.Drawing.Size(150, 37);
-            this.btnCriar.TabIndex = 1;
+            this.btnCriar.TabIndex = 20;
             this.btnCriar.Text = "CRIAR PROJETO";
             this.btnCriar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCriar.UseVisualStyleBackColor = true;
@@ -1094,7 +1094,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(910, 8);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(150, 37);
-            this.btnCancelar.TabIndex = 0;
+            this.btnCancelar.TabIndex = 21;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -1133,7 +1133,7 @@
             this.RGBHead1.Location = new System.Drawing.Point(3, 3);
             this.RGBHead1.Name = "RGBHead1";
             this.RGBHead1.Size = new System.Drawing.Size(1261, 54);
-            this.RGBHead1.TabIndex = 4;
+            this.RGBHead1.TabIndex = 13;
             this.RGBHead1.TabStop = false;
             // 
             // lblTitulo
