@@ -496,7 +496,7 @@ namespace tccCsharp
                     linha.id_projeto = Convert.ToInt32(dr["id_projeto"]);
                     linha.nome_grupo = Convert.ToString(dr["nome_grupo"]);
                     linha.porcentagem = Convert.ToDecimal(dr["porcentagem"]);
-                    linha.mostrar_porcentagem = Convert.ToBoolean(dr["porcentagem"]);
+                    linha.mostrar_porcentagem = Convert.ToBoolean(dr["mostrar_porcentagem"]);
                     linha.ordenador = Convert.ToInt32(dr["ordenador"]);
                     linha.excluido = Convert.ToBoolean(dr["excluido"]);
                     linha.numero_etapas = Convert.ToInt32(dr["num_etapas"]);
@@ -1079,8 +1079,10 @@ namespace tccCsharp
                 param.Add(idGrupo);
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
 
-                dr.Read();
-                porcentagemGrupo = Convert.ToInt32(dr["MEDIA"]);
+                if (dr.Read())
+                    porcentagemGrupo = Convert.ToInt32(dr["MEDIA"]);
+                else
+                    porcentagemGrupo = 0;
                 dr.Close();
             }
             catch (NpgsqlException ex)

@@ -166,14 +166,27 @@ namespace tccCsharp
                 {
                     OPBRight1.Visible = true;
                 }
-                lblPorcentagemGP1.Text = Convert.ToInt32(grupo1.porcentagem).ToString() + "%";
-                if (Convert.ToInt32(grupo1.porcentagem) == 100)
-                    Grupo1groupPorcentagem2.Width = Grupo1groupPorcentagem1.Width;
-                else
+                if(grupo1.mostrar_porcentagem == true)
                 {
-                    Grupo1groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Grupo1groupPorcentagem1.Width) / 100) * Convert.ToDouble(grupo1.porcentagem));
-                    if (Grupo1groupPorcentagem2.Width < 28)
-                        Grupo1groupPorcentagem2.Width = 28;
+                    lblPorcentagemGP1.Visible = true;
+                    Grupo1groupPorcentagem1.Visible = true;
+                    Grupo1groupPorcentagem2.Visible = true;
+
+                    lblPorcentagemGP1.Text = Convert.ToInt32(grupo1.porcentagem).ToString() + "%";
+                    if (Convert.ToInt32(grupo1.porcentagem) == 100)
+                        Grupo1groupPorcentagem2.Width = Grupo1groupPorcentagem1.Width;
+                    else
+                    {
+                        Grupo1groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Grupo1groupPorcentagem1.Width) / 100) * Convert.ToDouble(grupo1.porcentagem));
+                        if (Grupo1groupPorcentagem2.Width < 28)
+                            Grupo1groupPorcentagem2.Width = 28;
+                    }
+                }
+                else 
+                {
+                    lblPorcentagemGP1.Visible = false;
+                    Grupo1groupPorcentagem1.Visible = false;
+                    Grupo1groupPorcentagem2.Visible = false;
                 }
 
                 Step etapa11 = new Step();
@@ -269,15 +282,30 @@ namespace tccCsharp
                 {
                     OPBRight2.Visible = true;
                 }
-                lblPorcentagemGP2.Text = Convert.ToInt32(grupo2.porcentagem).ToString() + "%";
-                if (Convert.ToInt32(grupo2.porcentagem) == 100)
-                    Grupo2groupPorcentagem2.Width = Grupo2groupPorcentagem1.Width;
+
+                if(grupo2.mostrar_porcentagem == true)
+                {
+                    lblPorcentagemGP2.Visible = true;
+                    Grupo2groupPorcentagem1.Visible = true;
+                    Grupo2groupPorcentagem2.Visible = true;
+
+                    lblPorcentagemGP2.Text = Convert.ToInt32(grupo2.porcentagem).ToString() + "%";
+                    if (Convert.ToInt32(grupo2.porcentagem) == 100)
+                        Grupo2groupPorcentagem2.Width = Grupo2groupPorcentagem1.Width;
+                    else
+                    {
+                        Grupo2groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Grupo2groupPorcentagem1.Width) / 100) * Convert.ToDouble(grupo2.porcentagem));
+                        if (Grupo2groupPorcentagem2.Width < 28)
+                            Grupo2groupPorcentagem2.Width = 28;
+                    }
+                }
                 else
                 {
-                    Grupo2groupPorcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Grupo2groupPorcentagem1.Width) / 100) * Convert.ToDouble(grupo2.porcentagem));
-                    if (Grupo2groupPorcentagem2.Width < 28)
-                        Grupo2groupPorcentagem2.Width = 28;
+                    lblPorcentagemGP2.Visible = false;
+                    Grupo2groupPorcentagem1.Visible = false;
+                    Grupo2groupPorcentagem2.Visible = false;
                 }
+                
 
                 Step etapa21 = new Step();
                 if (grupo2.etapas.Count > x2 + 0)
