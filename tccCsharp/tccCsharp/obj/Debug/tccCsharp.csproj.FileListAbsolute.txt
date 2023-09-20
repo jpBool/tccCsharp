@@ -287,3 +287,12 @@ C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccC
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.dll
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.xml
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Etapa.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Grupo.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Etapa.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Grupo.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoImagens.resources
+C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmImagem.resources

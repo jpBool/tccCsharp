@@ -449,6 +449,8 @@ namespace tccCsharp
             }
             pcbUpload.Image = null;
             pcbUpload.Tag = null;
+            radNao.Checked = true;
+            radSim.Checked = false;
             txtDescricaoImg.Text = string.Empty;
             txtNomeImagem.Text = string.Empty;
             EditandoImagem = false;

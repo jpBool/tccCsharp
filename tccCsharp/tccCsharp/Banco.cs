@@ -622,15 +622,37 @@ namespace tccCsharp
             try
             {
                 Conectar();
-                String sql = "DELETE FROM gp2_imagens WHERE id_imagem = @1";
 
-                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                cmd.Parameters.AddWithValue("@1",Idimagem);
-                cmd.ExecuteNonQuery();
+                // Verifica se a imagem que está sendo excluída é a imagem principal
+                String verificaPrincipalSql = "SELECT imagem_principal FROM gp2_imagens WHERE id_imagem = @1";
+                NpgsqlCommand verificaPrincipalCmd = new NpgsqlCommand(verificaPrincipalSql, cn);
+                verificaPrincipalCmd.Parameters.AddWithValue("@1", Idimagem); // Supondo que existe um campo "id_imagem" na classe Photo
+                bool isImagemPrincipal = Convert.ToBoolean(verificaPrincipalCmd.ExecuteScalar());
+
+                // Obtém o id_projeto da imagem que será excluída
+                String selectProjetoSql = "SELECT id_projeto FROM gp2_imagens WHERE id_imagem = @1";
+                NpgsqlCommand selectProjetoCmd = new NpgsqlCommand(selectProjetoSql, cn);
+                selectProjetoCmd.Parameters.AddWithValue("@1", Idimagem);
+                int idProjeto = Convert.ToInt32(selectProjetoCmd.ExecuteScalar());
+
+                // Exclui a imagem
+                String deleteSql = "DELETE FROM gp2_imagens WHERE id_imagem = @1";
+                NpgsqlCommand deleteCmd = new NpgsqlCommand(deleteSql, cn);
+                deleteCmd.Parameters.AddWithValue("@1", Idimagem);
+                deleteCmd.ExecuteNonQuery();
+
+                // Se a imagem excluída for a imagem principal, selecione a nova imagem principal
+                if (isImagemPrincipal)
+                {
+                    String novaPrincipalSql = "UPDATE gp2_imagens SET imagem_principal = true WHERE id_imagem = (SELECT id_imagem FROM gp2_imagens WHERE id_projeto = @1 ORDER BY id_imagem LIMIT 1)";
+                    NpgsqlCommand novaPrincipalCmd = new NpgsqlCommand(novaPrincipalSql, cn);
+                    novaPrincipalCmd.Parameters.AddWithValue("@1", idProjeto);
+                    novaPrincipalCmd.ExecuteNonQuery();
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro ao inserir a imagem desse projeto!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocorreu um erro ao excluir a imagem!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao excluir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
