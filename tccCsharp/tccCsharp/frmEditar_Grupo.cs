@@ -232,7 +232,7 @@ namespace tccCsharp
             else
                 grupoAlterado.mostrar_porcentagem = false;
 
-            if (radInicio.Checked == true)
+            if (radInicio.Checked == true || grupos.Count == 0)
             {
                 if(grupoEditando.ordenador != 1)
                 {
@@ -266,6 +266,11 @@ namespace tccCsharp
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            if(grupoEditando.numero_etapas > 0)
+            {
+                MessageBox.Show("Exclua ou realoque todas as etapas desse grupo manualmente antes de excluí-lo","Mensagem", MessageBoxButtons.OK);
+                return;
+            }
             Banco.DeleteGroup(grupoEditando.id_grupo);
             Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, grupoEditando.ordenador, -1);
             MessageBox.Show("Grupo excluido com sucesso!!", "Sucesso", MessageBoxButtons.OK);

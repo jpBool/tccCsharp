@@ -396,7 +396,7 @@ namespace tccCsharp
 
             Banco.AlteraOrdenadorEtapa(Program.id_projeto_atual, EtapaEditando.ordenador, -1);
 
-            if (radInicio.Checked == true)
+            if (radInicio.Checked == true || etapas.Count == 0)
             {
                 Banco.AlteraOrdenadorEtapa(EtapaAtualizada.id_grupo, 1, 1);
                 EtapaAtualizada.ordenador = 1;

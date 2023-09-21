@@ -278,7 +278,7 @@ namespace tccCsharp
             }
 
             
-            if (radInicio.Checked == true)
+            if (radInicio.Checked == true || etapas.Count == 0)
             {
                 Banco.AlteraOrdenadorEtapa(novaEtapa.id_grupo, 1, 1);
                 novaEtapa.ordenador = 1;

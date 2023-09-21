@@ -200,7 +200,7 @@ namespace tccCsharp
             else
                 novogrupo.mostrar_porcentagem = false;
 
-            if (radInicio.Checked == true)
+            if (radInicio.Checked == true || grupos.Count == 0)
             {
                 Banco.AlteraOrdenadorGrupo(Program.id_projeto_atual, 1, 1);
                 novogrupo.ordenador = 1;
