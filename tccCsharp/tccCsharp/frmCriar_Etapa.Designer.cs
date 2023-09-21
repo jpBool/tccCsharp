@@ -380,6 +380,7 @@
             this.txtDescriImpedimento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDescriImpedimento.Enabled = false;
             this.txtDescriImpedimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescriImpedimento.ForeColor = System.Drawing.Color.Black;
             this.txtDescriImpedimento.Location = new System.Drawing.Point(10, 8);
@@ -393,8 +394,6 @@
             // 
             this.boxSim.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.boxSim.AutoSize = true;
-            this.boxSim.Checked = true;
-            this.boxSim.CheckState = System.Windows.Forms.CheckState.Checked;
             this.boxSim.Location = new System.Drawing.Point(138, 212);
             this.boxSim.Name = "boxSim";
             this.boxSim.Size = new System.Drawing.Size(45, 17);

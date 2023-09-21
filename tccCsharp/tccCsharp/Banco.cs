@@ -1057,9 +1057,9 @@ namespace tccCsharp
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
 
                 if (dr.Read())
-                    porcentagemGrupo = Convert.ToInt32(dr["MEDIA"]);
+                    porcentagemProjeto = Convert.ToInt32(dr["MEDIA"]);
                 else
-                    porcentagemGrupo = 0;
+                    porcentagemProjeto = 0;
                 dr.Close(); 
             }
             catch (NpgsqlException ex)
