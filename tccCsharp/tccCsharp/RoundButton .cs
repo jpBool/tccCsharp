@@ -10,10 +10,11 @@ public class RoundButton : Button
     private Color borderColor = Color.Black; // Cor da borda
     private Color buttonColor = Color.White; // Cor do botão
 
-    private Color bordaPrincippal = Color.Black;
-    private Color bordaHoover = Color.Green;
-    private Color textoPrincipal = Color.Black;
-    private bool autoHoover = false;
+    private Color originalBorderColor; // Armazena a cor original da borda
+    private Color originalForeColor; // Armazena a cor original do texto
+
+    private Color bordaHoover; // Cor da borda durante o hover
+    private bool autoHover = false;
 
 
     public int BorderRadius
@@ -48,20 +49,20 @@ public class RoundButton : Button
 
     public Color BordaPrincipal
     {
-        get { return bordaPrincippal; }
+        get { return originalBorderColor; }
         set
         {
-            bordaPrincippal = value;
+            originalBorderColor = value;
             Refresh();
         }
     }
 
     public Color TextoPrincipal
     {
-        get { return textoPrincipal; }
+        get { return originalForeColor; }
         set
         {
-            textoPrincipal = value;
+            originalForeColor = value;
             Refresh();
         }
     }
@@ -88,10 +89,10 @@ public class RoundButton : Button
 
     public bool AutoHoover
     {
-        get { return autoHoover; }
+        get { return autoHover; }
         set
         {
-            autoHoover = value;
+            autoHover = value;
         }
     }
 
@@ -137,66 +138,58 @@ public class RoundButton : Button
         if (path.IsVisible(e.Location))
         {
             base.OnMouseDown(e);
+
         }
     }
 
     protected override void OnMouseEnter(EventArgs e)
     {
-        if (AutoHoover == true)
+        if (autoHover)
         {
-            BordaPrincipal = BorderColor;
-            TextoPrincipal = ForeColor;
-            BorderColor = BordaHoover;
-            ForeColor = BordaHoover;
-            Refresh();
+            originalBorderColor = borderColor; // Salva a cor original da borda
+            originalForeColor = ForeColor; // Salva a cor original do texto
+
+            borderColor = bordaHoover; // Define a cor da borda durante o hover
+            ForeColor = bordaHoover; // Define a cor do texto durante o hover
         }
-        else
-        {
-            base.OnMouseEnter(e);
-        }
+
+        base.OnMouseEnter(e);
     }
 
     protected override void OnMouseLeave(EventArgs e)
     {
-        if (AutoHoover == true)
+        if (autoHover)
         {
-            BorderColor = BordaPrincipal;
-            ForeColor = TextoPrincipal;
-            Refresh();
+            borderColor = originalBorderColor; // Restaura a cor original da borda
+            ForeColor = originalForeColor; // Restaura a cor original do texto
         }
-        else
-        {
-            base.OnMouseLeave(e);
-        }
+
+        base.OnMouseLeave(e);
     }
 
     protected override void OnGotFocus(EventArgs e)
     {
-        if (AutoHoover == true)
+        if (autoHover)
         {
-            BordaPrincipal = BorderColor;
-            TextoPrincipal = ForeColor;
-            BorderColor = BordaHoover;
-            ForeColor = BordaHoover;
-            Refresh();
+            originalBorderColor = borderColor; // Salva a cor original da borda
+            originalForeColor = ForeColor; // Salva a cor original do texto
+
+            borderColor = bordaHoover; // Define a cor da borda durante o foco
+            ForeColor = bordaHoover; // Define a cor do texto durante o foco
         }
-        else
-        {
-            base.OnGotFocus(e);
-        }
+
+        base.OnGotFocus(e);
     }
 
     protected override void OnLostFocus(EventArgs e)
     {
-        if (AutoHoover == true)
+        if (autoHover)
         {
-            BorderColor = BordaPrincipal;
-            ForeColor = TextoPrincipal;
-            Refresh();
+            borderColor = originalBorderColor; // Restaura a cor original da borda
+            ForeColor = originalForeColor; // Restaura a cor original do texto
         }
-        else
-        {
-            base.OnLostFocus(e);
-        }
+
+        base.OnLostFocus(e);
     }
 }
+
