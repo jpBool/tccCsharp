@@ -325,6 +325,12 @@ namespace tccCsharp
 
         private void btnTutoriais_Click(object sender, EventArgs e)
         {
+            //visible false
+            lblPCores.Visible = false;
+            lblCoresElementos.Visible = false;
+            lblCoresTexto.Visible = false;
+            lblCoresAviso.Visible = false;
+            lblTrocaIcones.Visible = false;
 
         }
 
@@ -386,6 +392,7 @@ namespace tccCsharp
 
         private void btnRestaurarPadrao_Click(object sender, EventArgs e)
         {
+            /*
             //COMPONENTES DE AGRUPAMENTO
             this.tlpBaseConfig1.BackColor = Color.FromArgb(229, 241, 243);
             this.rgbMenu.BackgroundColor = Color.FromArgb(16, 39, 62);
@@ -424,10 +431,74 @@ namespace tccCsharp
             btnPersonalizar.ForeColor = Color.FromArgb(255, 255, 255);
             btnAltTamF.ForeColor = Color.FromArgb(255, 255, 255);
             btnTutoriais.ForeColor = Color.FromArgb( 255, 255, 255);
+            */
 
-            Program.Cor1[0] = 255;
-            Program.Cor1[1] = 255;
-            Program.Cor1[2] = 255;
+            Program.Cor1[0] = 0;  //{ 0, 0, 0 };
+            Program.Cor1[1] = 0;
+            Program.Cor1[2] = 0;
+
+            Program.Cor2[0] = 16;  //{ 16, 39, 62 };
+            Program.Cor2[1] = 39;
+            Program.Cor2[2] = 62;
+
+            Program.Cor3[0] = 54;  //{ 54, 78, 101 };
+            Program.Cor3[1] = 78;
+            Program.Cor3[2] = 101;
+
+            Program.Cor4[0] = 138;   //{ 138, 182, 213 };
+            Program.Cor4[1] = 182;
+            Program.Cor4[2] = 213;
+
+            Program.Cor5[0] = 170;  //{ 170, 210, 229 };
+            Program.Cor5[1] = 210;
+            Program.Cor5[2] = 229;
+
+            Program.Cor6[0] = 229;  //{ 229, 241, 243 };
+            Program.Cor6[1] = 241;
+            Program.Cor6[2] = 243;
+
+            Program.Cor7[0] = 255;  //{ 255,255, 255 };
+            Program.Cor7[1] = 255;
+            Program.Cor7[2] = 255;
+
+            //////////////CORES DE TEXTO E AVISO/////////////////
+            
+
+            Program.CorTexto1[0] = 0;   
+            Program.CorTexto1[1] = 0;
+            Program.CorTexto1[2] = 0;
+
+            Program.CorTexto2[0] = 255;  
+            Program.CorTexto2[1] = 255;
+            Program.CorTexto2[2] = 255;
+
+            /////
+
+            Program.CorAviso1[0] = 204;   //{ 204, 255, 51 };
+            Program.CorAviso1[1] = 255;
+            Program.CorAviso1[2] = 51;
+
+            Program.CorAviso2[0] = 242;   //{ 242, 92, 84 };
+            Program.CorAviso2[1] = 92;
+            Program.CorAviso2[2] = 84;
+
+            
+
+
+        }
+
+        private void radPreto_CheckedChanged(object sender, EventArgs e)
+        {
+            OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+            opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+            opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+        }
+
+        private void radBranco_CheckedChanged(object sender, EventArgs e)
+        {
+            OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+            opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+            opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
         }
     }
  
