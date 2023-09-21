@@ -166,30 +166,5 @@ public class RoundButton : Button
 
         base.OnMouseLeave(e);
     }
-
-    protected override void OnGotFocus(EventArgs e)
-    {
-        if (autoHover)
-        {
-            originalBorderColor = borderColor; // Salva a cor original da borda
-            originalForeColor = ForeColor; // Salva a cor original do texto
-
-            borderColor = bordaHoover; // Define a cor da borda durante o foco
-            ForeColor = bordaHoover; // Define a cor do texto durante o foco
-        }
-
-        base.OnGotFocus(e);
-    }
-
-    protected override void OnLostFocus(EventArgs e)
-    {
-        if (autoHover)
-        {
-            borderColor = originalBorderColor; // Restaura a cor original da borda
-            ForeColor = originalForeColor; // Restaura a cor original do texto
-        }
-
-        base.OnLostFocus(e);
-    }
 }
 
