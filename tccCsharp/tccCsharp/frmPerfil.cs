@@ -80,8 +80,45 @@ namespace tccCsharp
             Program.id_projeto_atual = projeto_selecionado.id_projeto;
         }
 
+        public void Logo(int logo)
+        {
+            switch (logo)
+            {
+                case 0:
+
+
+                    opbLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+                    opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                    opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+
+                    opbEditarP1.Image = global::tccCsharp.Properties.Resources.Edit_White;  
+                    opbEditarP2.Image = global::tccCsharp.Properties.Resources.Edit_White;
+                    opbEditarP3.Image = global::tccCsharp.Properties.Resources.Edit_White;
+
+                    OPBLeft.Image = global::tccCsharp.Properties.Resources.Left_White;
+                    OPBRight.Image = global::tccCsharp.Properties.Resources.Right_White;
+
+                    break;
+
+                case 1:
+                    opbLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                    opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                    opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+
+                    opbEditarP1.Image = global::tccCsharp.Properties.Resources.Edit_Black; 
+                    opbEditarP2.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+                    opbEditarP3.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+
+                    OPBLeft.Image = global::tccCsharp.Properties.Resources.Left_Black;
+                    OPBRight.Image = global::tccCsharp.Properties.Resources.Right_Black;
+
+                    break;
+            }
+        }
+
         public void DoDesign()
         {
+            Logo(Program.logo);
             TLPHead1.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             RGBHead1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             RGBHead1.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);

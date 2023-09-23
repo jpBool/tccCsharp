@@ -98,6 +98,7 @@ namespace tccCsharp
                 Program.Cor1[0] = cldPersonalizacao.Color.R;
                 Program.Cor1[1] = cldPersonalizacao.Color.G;
                 Program.Cor1[2] = cldPersonalizacao.Color.B;
+                lblCor1.BackColor = cldPersonalizacao.Color;
             }
 
         }
@@ -110,7 +111,7 @@ namespace tccCsharp
                 Program.Cor2[0] = cldPersonalizacao.Color.R;
                 Program.Cor2[1] = cldPersonalizacao.Color.G;
                 Program.Cor2[2] = cldPersonalizacao.Color.B;
-
+                lblCor2.BackColor = cldPersonalizacao.Color;
             }
         }
         private void lblCor3_Click(object sender, EventArgs e)
@@ -122,7 +123,7 @@ namespace tccCsharp
                 Program.Cor3[0] = cldPersonalizacao.Color.R;
                 Program.Cor3[1] = cldPersonalizacao.Color.G;
                 Program.Cor3[2] = cldPersonalizacao.Color.B;
-
+                lblCor3.BackColor = cldPersonalizacao.Color;
             }
         }
         private void lblCor4_Click(object sender, EventArgs e)
@@ -133,7 +134,7 @@ namespace tccCsharp
                 Program.Cor4[0] = cldPersonalizacao.Color.R;
                 Program.Cor4[1] = cldPersonalizacao.Color.G;
                 Program.Cor4[2] = cldPersonalizacao.Color.B;
-
+                lblCor4.BackColor = cldPersonalizacao.Color;
             }
         }
         private void lblCor5_Click(object sender, EventArgs e)
@@ -144,7 +145,7 @@ namespace tccCsharp
                 Program.Cor5[0] = cldPersonalizacao.Color.R;
                 Program.Cor5[1] = cldPersonalizacao.Color.G;
                 Program.Cor5[2] = cldPersonalizacao.Color.B;
-
+                lblCor5.BackColor = cldPersonalizacao.Color;
             }
         }
 
@@ -156,7 +157,7 @@ namespace tccCsharp
                 Program.Cor6[0] = cldPersonalizacao.Color.R;
                 Program.Cor6[1] = cldPersonalizacao.Color.G;
                 Program.Cor6[2] = cldPersonalizacao.Color.B;
-
+                lblCor6.BackColor = cldPersonalizacao.Color;
             }
         }
 
@@ -168,7 +169,7 @@ namespace tccCsharp
                 Program.Cor7[0] = cldPersonalizacao.Color.R;
                 Program.Cor7[1] = cldPersonalizacao.Color.G;
                 Program.Cor7[2] = cldPersonalizacao.Color.B;
-
+                lblCor7.BackColor = cldPersonalizacao.Color;
             }
         }
 
@@ -179,6 +180,7 @@ namespace tccCsharp
                 Program.CorAviso1[0] = cldPersonalizacao.Color.R;
                 Program.CorAviso1[1] = cldPersonalizacao.Color.G;
                 Program.CorAviso1[2] = cldPersonalizacao.Color.B;
+                lblCorAviso1.BackColor = cldPersonalizacao.Color;
             }
            
         }
@@ -190,6 +192,7 @@ namespace tccCsharp
                 Program.CorAviso2[0] = cldPersonalizacao.Color.R;
                 Program.CorAviso2[1] = cldPersonalizacao.Color.G;
                 Program.CorAviso2[2] = cldPersonalizacao.Color.B;
+                lblCorAviso1.BackColor = cldPersonalizacao.Color;
             }
             
         }
@@ -201,6 +204,7 @@ namespace tccCsharp
                 Program.CorTexto1[0] = cldPersonalizacao.Color.R;
                 Program.CorTexto1[1] = cldPersonalizacao.Color.G;
                 Program.CorTexto1[2] = cldPersonalizacao.Color.B;
+                lblCorTexto1.BackColor = cldPersonalizacao.Color;
             }
             
         }
@@ -212,6 +216,7 @@ namespace tccCsharp
                 Program.CorTexto2[0] = cldPersonalizacao.Color.R;
                 Program.CorTexto2[1] = cldPersonalizacao.Color.G;
                 Program.CorTexto2[2] = cldPersonalizacao.Color.B;
+                lblCorTexto2.BackColor = cldPersonalizacao.Color;
             }
             
         }
@@ -326,11 +331,11 @@ namespace tccCsharp
         private void btnTutoriais_Click(object sender, EventArgs e)
         {
             //visible false
-            lblPCores.Visible = false;
-            lblCoresElementos.Visible = false;
-            lblCoresTexto.Visible = false;
-            lblCoresAviso.Visible = false;
-            lblTrocaIcones.Visible = false;
+            //lblPCores.Visible = false;
+            //lblCoresElementos.Visible = false;
+           // lblCoresTexto.Visible = false;
+           // lblCoresAviso.Visible = false;
+           // lblTrocaIcones.Visible = false;
 
         }
 
@@ -489,16 +494,44 @@ namespace tccCsharp
 
         private void radPreto_CheckedChanged(object sender, EventArgs e)
         {
-            OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
-            opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
-            opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+            if (radPreto.Checked == true)
+            {
+                Program.logo = 0;
+                OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+                opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+            }
         }
 
         private void radBranco_CheckedChanged(object sender, EventArgs e)
         {
-            OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
-            opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
-            opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+            if (radBranco.Checked == true)
+            {
+                Program.logo = 1;
+                OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+            }
+                
+        }
+
+        public void Logo(int logo)
+        {
+            switch(logo)
+            {
+                case 0: opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                        OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black; 
+                        opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                        opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+                        break;
+
+                case 1:
+                        opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                        OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                        opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                        opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                        break;
+            }
         }
     }
  

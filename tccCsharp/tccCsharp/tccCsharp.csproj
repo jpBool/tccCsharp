@@ -141,12 +141,6 @@
     <Compile Include="frmEtapas.Designer.cs">
       <DependentUpon>frmEtapas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcessibilidade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAcessibilidade.Designer.cs">
-      <DependentUpon>frmAcessibilidade.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmConfiguracoes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,9 +220,6 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Coisas.resx">
       <DependentUpon>Coisas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAcessibilidade.resx">
-      <DependentUpon>frmAcessibilidade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConfiguracoes.resx">
       <DependentUpon>frmConfiguracoes.cs</DependentUpon>
@@ -443,6 +434,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Black2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_White2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

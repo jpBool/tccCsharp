@@ -32,6 +32,8 @@ namespace tccCsharp
         public static int[] CorAviso1 = new int[3] { 204, 255, 51 };
         public static int[] CorAviso2 = new int[3] { 242, 92, 84 };
 
+        public static int logo = 1;
+
         [STAThread]
         static void Main()
         {
