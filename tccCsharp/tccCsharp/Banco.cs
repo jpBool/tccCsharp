@@ -1238,7 +1238,6 @@ namespace tccCsharp
             {
                 Desconectar();
                 Banco.NewCommit();
-                Banco.StepNumAlt(etapa.id_grupo, 1);
                 Banco.AtualizaPorcentagem(etapa.id_grupo);
             }
         }
