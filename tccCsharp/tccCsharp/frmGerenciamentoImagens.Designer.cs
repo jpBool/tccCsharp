@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerenciamentoImagens));
             this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBase3 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBase5 = new System.Windows.Forms.TableLayoutPanel();
@@ -932,9 +933,10 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.tlpBase1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmGerenciamentoImagens";
-            this.Text = "frmGerenciamentoImagens";
+            this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmGerenciamentoImagens_Load);
             this.tlpBase2.ResumeLayout(false);
             this.tlpBase3.ResumeLayout(false);

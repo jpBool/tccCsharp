@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCriar_Grupo));
             this.TLP_Mãe = new System.Windows.Forms.TableLayoutPanel();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
@@ -43,6 +44,7 @@
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
+            this.opbLogo = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
@@ -72,7 +74,6 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCriar = new RoundButton();
             this.btnCancelar = new RoundButton();
-            this.opbLogo = new System.Windows.Forms.PictureBox();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -82,6 +83,7 @@
             this.groupPorcentagem.SuspendLayout();
             this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
@@ -96,7 +98,6 @@
             this.RGBNome.SuspendLayout();
             this.RGBDados4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -341,6 +342,16 @@
             this.RGBHead1.Size = new System.Drawing.Size(1261, 54);
             this.RGBHead1.TabIndex = 4;
             this.RGBHead1.TabStop = false;
+            // 
+            // opbLogo
+            // 
+            this.opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2;
+            this.opbLogo.Location = new System.Drawing.Point(21, -3);
+            this.opbLogo.Name = "opbLogo";
+            this.opbLogo.Size = new System.Drawing.Size(136, 60);
+            this.opbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbLogo.TabIndex = 33;
+            this.opbLogo.TabStop = false;
             // 
             // lblTitulo
             // 
@@ -802,25 +813,16 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // opbLogo
-            // 
-            this.opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2;
-            this.opbLogo.Location = new System.Drawing.Point(21, -3);
-            this.opbLogo.Name = "opbLogo";
-            this.opbLogo.Size = new System.Drawing.Size(136, 60);
-            this.opbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.opbLogo.TabIndex = 33;
-            this.opbLogo.TabStop = false;
-            // 
             // frmCriar_Grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmCriar_Grupo";
-            this.Text = "frmCriarGrupo";
+            this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmCriar_Grupo_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
@@ -837,6 +839,7 @@
             this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
             this.RGBHead1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
@@ -858,7 +861,6 @@
             this.RGBNome.PerformLayout();
             this.RGBDados4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

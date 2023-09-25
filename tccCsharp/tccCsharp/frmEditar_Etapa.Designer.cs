@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditar_Etapa));
             this.TLP_Mãe = new System.Windows.Forms.TableLayoutPanel();
             this.TLPConteudo = new System.Windows.Forms.TableLayoutPanel();
             this.TLPFilho1 = new System.Windows.Forms.TableLayoutPanel();
@@ -327,7 +328,7 @@
             this.lblDescri.Name = "lblDescri";
             this.lblDescri.Size = new System.Drawing.Size(115, 116);
             this.lblDescri.TabIndex = 8;
-            this.lblDescri.Text = "Descrição da Eetapa";
+            this.lblDescri.Text = "Descrição da Etapa";
             this.lblDescri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // RGBDecri1
@@ -585,7 +586,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 13);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Nível de Prioridade:";
+            this.label3.Text = "Porcentagem de Conclusão";
             // 
             // lblPeso
             // 
@@ -1289,9 +1290,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmEditar_Etapa";
-            this.Text = "frmEditar_Etapa";
+            this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmEditar_Etapa_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPConteudo.ResumeLayout(false);

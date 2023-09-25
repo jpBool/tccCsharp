@@ -1604,9 +1604,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmEtapas";
-            this.Text = "Etapas do Projeto";
+            this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmEtapas_Load);
             this.Resize += new System.EventHandler(this.frmEtapas_Resize);
             this.TLP_Mãe.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCriar_Projeto));
             this.TLP_Mãe = new System.Windows.Forms.TableLayoutPanel();
             this.TLPConteudo = new System.Windows.Forms.TableLayoutPanel();
             this.TLPFilho1 = new System.Windows.Forms.TableLayoutPanel();
@@ -1224,9 +1225,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmCriar_Projeto";
-            this.Text = "frmCriar_Projeto";
+            this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmCriar_Projeto_Load);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPConteudo.ResumeLayout(false);
