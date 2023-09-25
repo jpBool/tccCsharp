@@ -104,6 +104,8 @@ namespace tccCsharp
             RGBDescri2.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBPrioridade.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             trackPercent.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+
+            Logo(Program.logo);
         }
 
         private void AtualizaCabecalho()
@@ -324,7 +326,7 @@ namespace tccCsharp
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             Banco.DeleteStep(EtapaEditando.id_etapa, EtapaEditando.id_grupo);
-            Banco.AlteraOrdenadorEtapa(Program.id_projeto_atual, EtapaEditando.ordenador, -1);
+            Banco.AlteraOrdenadorEtapa(EtapaEditando.ordenador, EtapaEditando.ordenador, -1);
             MessageBox.Show("Etapa excluida com sucesso!!", "Sucesso", MessageBoxButtons.OK);
             this.Close();
         }
@@ -394,7 +396,7 @@ namespace tccCsharp
                 EtapaAtualizada.status = comboStatus.SelectedIndex + 1;
             }
 
-            Banco.AlteraOrdenadorEtapa(Program.id_projeto_atual, EtapaEditando.ordenador, -1);
+            Banco.AlteraOrdenadorEtapa(EtapaEditando.ordenador, EtapaEditando.ordenador, -1);
 
             if (radInicio.Checked == true || etapas.Count == 0)
             {
@@ -446,6 +448,26 @@ namespace tccCsharp
             liberado = false;
             CarregaInfo();
             liberado = true;
+        }
+
+        public void Logo(int logo)
+        {
+            switch (logo)
+            {
+                case 0:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+                    break;
+
+                case 1:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                    break;
+            }
         }
     }
 }

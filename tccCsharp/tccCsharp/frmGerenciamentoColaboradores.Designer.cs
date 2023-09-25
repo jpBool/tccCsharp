@@ -78,6 +78,7 @@
             this.textNome = new System.Windows.Forms.TextBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
+            this.opbLogo = new System.Windows.Forms.PictureBox();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
@@ -105,6 +106,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
@@ -854,6 +856,7 @@
             this.rgbHeadImgs1.AutoSize = true;
             this.rgbHeadImgs1.BackgroundColor = System.Drawing.Color.White;
             this.rgbHeadImgs1.BorderWidth = 1F;
+            this.rgbHeadImgs1.Controls.Add(this.opbLogo);
             this.rgbHeadImgs1.Controls.Add(this.OPBRecarregar);
             this.rgbHeadImgs1.Controls.Add(this.OPBConfiguracoes);
             this.rgbHeadImgs1.Controls.Add(this.OPBLogout);
@@ -864,6 +867,17 @@
             this.rgbHeadImgs1.Size = new System.Drawing.Size(1258, 54);
             this.rgbHeadImgs1.TabIndex = 6;
             this.rgbHeadImgs1.TabStop = false;
+            // 
+            // opbLogo
+            // 
+            this.opbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2;
+            this.opbLogo.Location = new System.Drawing.Point(23, -3);
+            this.opbLogo.Name = "opbLogo";
+            this.opbLogo.Size = new System.Drawing.Size(136, 60);
+            this.opbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbLogo.TabIndex = 33;
+            this.opbLogo.TabStop = false;
             // 
             // OPBRecarregar
             // 
@@ -978,6 +992,7 @@
             this.TLPHead1.PerformLayout();
             this.rgbHeadImgs1.ResumeLayout(false);
             this.rgbHeadImgs1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
@@ -1041,5 +1056,6 @@
         private System.Windows.Forms.TextBox textTelefone;
         private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.TextBox textNome;
+        private System.Windows.Forms.PictureBox opbLogo;
     }
 }

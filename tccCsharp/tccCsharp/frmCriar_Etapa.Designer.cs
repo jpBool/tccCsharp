@@ -96,6 +96,7 @@
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead1 = new tccCsharp.RoundedGroupBox();
+            this.opbLogo = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
@@ -131,6 +132,7 @@
             this.groupPorcentagem.SuspendLayout();
             this.TLPHead1.SuspendLayout();
             this.RGBHead1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
@@ -1165,6 +1167,7 @@
             this.RGBHead1.BackColor = System.Drawing.Color.Transparent;
             this.RGBHead1.BackgroundColor = System.Drawing.Color.White;
             this.RGBHead1.BorderWidth = 1F;
+            this.RGBHead1.Controls.Add(this.opbLogo);
             this.RGBHead1.Controls.Add(this.lblTitulo);
             this.RGBHead1.Controls.Add(this.OPBRecarregar);
             this.RGBHead1.Controls.Add(this.OPBConfiguracoes);
@@ -1175,6 +1178,16 @@
             this.RGBHead1.Size = new System.Drawing.Size(1261, 54);
             this.RGBHead1.TabIndex = 4;
             this.RGBHead1.TabStop = false;
+            // 
+            // opbLogo
+            // 
+            this.opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2;
+            this.opbLogo.Location = new System.Drawing.Point(23, -3);
+            this.opbLogo.Name = "opbLogo";
+            this.opbLogo.Size = new System.Drawing.Size(136, 60);
+            this.opbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbLogo.TabIndex = 33;
+            this.opbLogo.TabStop = false;
             // 
             // lblTitulo
             // 
@@ -1304,6 +1317,7 @@
             this.TLPHead1.PerformLayout();
             this.RGBHead1.ResumeLayout(false);
             this.RGBHead1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
@@ -1385,5 +1399,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TrackBar trackPercent;
         private System.Windows.Forms.ComboBox comboGrupo;
+        private System.Windows.Forms.PictureBox opbLogo;
     }
 }

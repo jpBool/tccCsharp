@@ -35,8 +35,9 @@
             this.rgbLogin = new tccCsharp.RoundedGroupBox();
             this.tlpLoginBase = new System.Windows.Forms.TableLayoutPanel();
             this.tlpTexto = new System.Windows.Forms.TableLayoutPanel();
-            this.lblBoasVindas = new System.Windows.Forms.Label();
             this.lblFacaLogin = new System.Windows.Forms.Label();
+            this.lblBoasVindas = new System.Windows.Forms.Label();
+            this.opbLogo = new System.Windows.Forms.PictureBox();
             this.tlpLoginBase2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblAviso = new System.Windows.Forms.Label();
             this.tlpLoginBase3 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,6 +51,7 @@
             this.rgbLogin.SuspendLayout();
             this.tlpLoginBase.SuspendLayout();
             this.tlpTexto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             this.tlpLoginBase2.SuspendLayout();
             this.tlpLoginBase3.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +78,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1264, 680);
             this.tableLayoutPanel1.TabIndex = 11;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
@@ -118,38 +121,53 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpTexto.ColumnCount = 1;
             this.tlpTexto.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpTexto.Controls.Add(this.lblBoasVindas, 0, 0);
-            this.tlpTexto.Controls.Add(this.lblFacaLogin, 0, 1);
+            this.tlpTexto.Controls.Add(this.lblFacaLogin, 0, 2);
+            this.tlpTexto.Controls.Add(this.lblBoasVindas, 0, 1);
+            this.tlpTexto.Controls.Add(this.opbLogo, 0, 0);
             this.tlpTexto.Location = new System.Drawing.Point(450, 3);
             this.tlpTexto.Name = "tlpTexto";
-            this.tlpTexto.RowCount = 2;
-            this.tlpTexto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpTexto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpTexto.RowCount = 4;
+            this.tlpTexto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.02439F));
+            this.tlpTexto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.97561F));
+            this.tlpTexto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tlpTexto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tlpTexto.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpTexto.Size = new System.Drawing.Size(377, 370);
             this.tlpTexto.TabIndex = 0;
-            // 
-            // lblBoasVindas
-            // 
-            this.lblBoasVindas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBoasVindas.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoasVindas.Location = new System.Drawing.Point(98, 70);
-            this.lblBoasVindas.Name = "lblBoasVindas";
-            this.lblBoasVindas.Size = new System.Drawing.Size(181, 45);
-            this.lblBoasVindas.TabIndex = 9;
-            this.lblBoasVindas.Text = "Bem-vindo!";
             // 
             // lblFacaLogin
             // 
             this.lblFacaLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFacaLogin.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFacaLogin.Location = new System.Drawing.Point(25, 185);
+            this.lblFacaLogin.Location = new System.Drawing.Point(25, 222);
             this.lblFacaLogin.Margin = new System.Windows.Forms.Padding(25, 0, 25, 0);
             this.lblFacaLogin.Name = "lblFacaLogin";
             this.lblFacaLogin.Size = new System.Drawing.Size(327, 70);
             this.lblFacaLogin.TabIndex = 10;
             this.lblFacaLogin.Text = "Faça login para entrar para o nosso time";
             this.lblFacaLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBoasVindas
+            // 
+            this.lblBoasVindas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBoasVindas.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBoasVindas.Location = new System.Drawing.Point(98, 154);
+            this.lblBoasVindas.Name = "lblBoasVindas";
+            this.lblBoasVindas.Size = new System.Drawing.Size(181, 45);
+            this.lblBoasVindas.TabIndex = 9;
+            this.lblBoasVindas.Text = "Bem-vindo!";
+            // 
+            // opbLogo
+            // 
+            this.opbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2;
+            this.opbLogo.Location = new System.Drawing.Point(3, 3);
+            this.opbLogo.Name = "opbLogo";
+            this.opbLogo.Size = new System.Drawing.Size(371, 125);
+            this.opbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.opbLogo.TabIndex = 33;
+            this.opbLogo.TabStop = false;
             // 
             // tlpLoginBase2
             // 
@@ -196,7 +214,7 @@
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.73016F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tlpLoginBase3.Controls.Add(this.lblEmail, 1, 1);
             this.tlpLoginBase3.Controls.Add(this.lblSenha, 1, 3);
             this.tlpLoginBase3.Controls.Add(this.txtEmail, 3, 1);
@@ -220,9 +238,9 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.White;
             this.lblEmail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(47, 35);
+            this.lblEmail.Location = new System.Drawing.Point(45, 35);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(57, 26);
+            this.lblEmail.Size = new System.Drawing.Size(53, 26);
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "E-mail:";
             // 
@@ -233,9 +251,9 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.White;
             this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(47, 90);
+            this.lblSenha.Location = new System.Drawing.Point(45, 90);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(57, 22);
+            this.lblSenha.Size = new System.Drawing.Size(53, 22);
             this.lblSenha.TabIndex = 6;
             this.lblSenha.Text = "Senha:";
             // 
@@ -243,7 +261,7 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmail.Location = new System.Drawing.Point(125, 38);
+            this.txtEmail.Location = new System.Drawing.Point(120, 38);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(244, 20);
             this.txtEmail.TabIndex = 1;
@@ -252,7 +270,7 @@
             // 
             this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSenha.Location = new System.Drawing.Point(125, 93);
+            this.txtSenha.Location = new System.Drawing.Point(120, 93);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(244, 20);
             this.txtSenha.TabIndex = 2;
@@ -305,6 +323,7 @@
             this.rgbLogin.ResumeLayout(false);
             this.tlpLoginBase.ResumeLayout(false);
             this.tlpTexto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             this.tlpLoginBase2.ResumeLayout(false);
             this.tlpLoginBase2.PerformLayout();
             this.tlpLoginBase3.ResumeLayout(false);
@@ -332,6 +351,7 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label lblLogin;
         private RoundButton btnLogar;
+        private System.Windows.Forms.PictureBox opbLogo;
     }
 }
 

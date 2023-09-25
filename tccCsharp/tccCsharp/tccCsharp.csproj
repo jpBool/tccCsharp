@@ -98,12 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Banco.cs" />
-    <Compile Include="Coisas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Coisas.Designer.cs">
-      <DependentUpon>Coisas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Collaborators.cs" />
     <Compile Include="CustomGroupBox.cs">
       <SubType>Component</SubType>
@@ -171,12 +165,6 @@
     <Compile Include="frmGerenciamentoImagens.Designer.cs">
       <DependentUpon>frmGerenciamentoImagens.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmImagem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmImagem.Designer.cs">
-      <DependentUpon>frmImagem.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,12 +176,6 @@
     </Compile>
     <Compile Include="frmPerfil.Designer.cs">
       <DependentUpon>frmPerfil.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPersonalizacao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPersonalizacao.Designer.cs">
-      <DependentUpon>frmPersonalizacao.cs</DependentUpon>
     </Compile>
     <Compile Include="GroupSteps.cs" />
     <Compile Include="Head.cs" />
@@ -218,9 +200,6 @@
     <Compile Include="Status.cs" />
     <Compile Include="Step.cs" />
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="Coisas.resx">
-      <DependentUpon>Coisas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmConfiguracoes.resx">
       <DependentUpon>frmConfiguracoes.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,17 +230,11 @@
     <EmbeddedResource Include="frmGerenciamentoImagens.resx">
       <DependentUpon>frmGerenciamentoImagens.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmImagem.resx">
-      <DependentUpon>frmImagem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPerfil.resx">
       <DependentUpon>frmPerfil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPersonalizacao.resx">
-      <DependentUpon>frmPersonalizacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -28,6 +28,16 @@ namespace tccCsharp
             //cldPersonalizacao = new ColorDialog()
             //;
             //frmConfiguracoes.BackgroundColor
+            if (Program.logo == 0)
+            {
+                radPreto.Checked = true;
+                radBranco.Checked = false;
+            }
+            else
+            {
+                radPreto.Checked = false;
+                radBranco.Checked = true;
+            }
             DoDesign();
         }
 

@@ -228,6 +228,8 @@ namespace tccCsharp
             lblNomeP1.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblNomeP2.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblNomeP3.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+
+            
         }
 
         private void frmPerfil_Load(object sender, EventArgs e)
@@ -401,5 +403,7 @@ namespace tccCsharp
             Program.id_usuario = 0;
             this.Close();
         }
+
+        
     }
 }

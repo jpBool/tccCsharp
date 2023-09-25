@@ -127,6 +127,8 @@ namespace tccCsharp
             opbEditarP23.AutoHoover = true;
             opbEditarE1.AutoHoover = true;
             opbEditarE2.AutoHoover = true;
+
+            Logo(Program.logo);
         }
 
         public void Refresh_steps()
@@ -736,6 +738,31 @@ namespace tccCsharp
                 grupos.Clear();
                 Banco.CarregarEtapas(grupos);
                 Refresh_steps();
+            }
+        }
+
+        private void RGBHead1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        public void Logo(int logo)
+        {
+            switch (logo)
+            {
+                case 0:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+                    break;
+
+                case 1:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                    break;
             }
         }
     }

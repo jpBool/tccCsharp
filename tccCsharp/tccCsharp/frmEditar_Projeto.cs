@@ -124,6 +124,8 @@ namespace tccCsharp
             OPBRecarregar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             OPBLogout.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
 
+
+            Logo(Program.logo);
         }
 
         public string PalavrasChave()
@@ -664,6 +666,26 @@ namespace tccCsharp
             {
                 this.Visible = true;
                 AtualizaCabecalho();
+            }
+        }
+
+        public void Logo(int logo)
+        {
+            switch (logo)
+            {
+                case 0:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+                    break;
+
+                case 1:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                    break;
             }
         }
     }

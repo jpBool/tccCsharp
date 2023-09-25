@@ -93,6 +93,8 @@ namespace tccCsharp
             RGBDescri2.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             RGBPrioridade.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             trackPercent.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+
+            Logo(Program.logo);
         }
 
         private void AtualizaCabecalho()
@@ -356,6 +358,26 @@ namespace tccCsharp
         {
             DoDesign();
             AtualizaCabecalho();
+        }
+
+        public void Logo(int logo)
+        {
+            switch (logo)
+            {
+                case 0:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+                    break;
+
+                case 1:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                    break;
+            }
         }
     }
 }

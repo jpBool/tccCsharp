@@ -258,8 +258,9 @@ namespace tccCsharp
             // 
             // opbLogo
             // 
+            this.opbLogo.BackColor = System.Drawing.Color.Transparent;
             this.opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2;
-            this.opbLogo.Location = new System.Drawing.Point(9, 0);
+            this.opbLogo.Location = new System.Drawing.Point(23, -3);
             this.opbLogo.Name = "opbLogo";
             this.opbLogo.Size = new System.Drawing.Size(136, 60);
             this.opbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -80,6 +80,8 @@ namespace tccCsharp
             btnExcluir.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnExcluir.AutoHoover = true;
             btnExcluir.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+
+            Logo(Program.logo);
         }
 
         private void AtualizaCabecalho()
@@ -299,6 +301,26 @@ namespace tccCsharp
 
             /*frmPersonalizacao formP = new frmPersonalizacao();
             formP.ShowDialog();*/
+        }
+
+        public void Logo(int logo)
+        {
+            switch (logo)
+            {
+                case 0:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+                    break;
+
+                case 1:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
+                    OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
+                    OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                    break;
+            }
         }
     }
 }

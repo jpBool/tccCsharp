@@ -72,6 +72,7 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCriar = new RoundButton();
             this.btnCancelar = new RoundButton();
+            this.opbLogo = new System.Windows.Forms.PictureBox();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -95,6 +96,7 @@
             this.RGBNome.SuspendLayout();
             this.RGBDados4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -328,6 +330,7 @@
             this.RGBHead1.BackColor = System.Drawing.Color.Transparent;
             this.RGBHead1.BackgroundColor = System.Drawing.Color.White;
             this.RGBHead1.BorderWidth = 1F;
+            this.RGBHead1.Controls.Add(this.opbLogo);
             this.RGBHead1.Controls.Add(this.lblTitulo);
             this.RGBHead1.Controls.Add(this.OPBRecarregar);
             this.RGBHead1.Controls.Add(this.OPBConfiguracoes);
@@ -799,6 +802,16 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // opbLogo
+            // 
+            this.opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2;
+            this.opbLogo.Location = new System.Drawing.Point(21, -3);
+            this.opbLogo.Name = "opbLogo";
+            this.opbLogo.Size = new System.Drawing.Size(136, 60);
+            this.opbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbLogo.TabIndex = 33;
+            this.opbLogo.TabStop = false;
+            // 
             // frmCriar_Grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -845,6 +858,7 @@
             this.RGBNome.PerformLayout();
             this.RGBDados4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -895,5 +909,6 @@
         private RoundButton btnCriar;
         private RoundButton btnCancelar;
         private System.Windows.Forms.ComboBox comboDepois;
+        private System.Windows.Forms.PictureBox opbLogo;
     }
 }
