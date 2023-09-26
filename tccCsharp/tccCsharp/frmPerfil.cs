@@ -132,6 +132,7 @@ namespace tccCsharp
 
             RGBNeta1.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
             RGBNeta1.CornerRadius = 20;
+            RGBNeta1.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
 
             RGBSeguidores.BackgroundColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             RGBSeguidores.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
@@ -168,6 +169,7 @@ namespace tccCsharp
             btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnAdicionar.AutoHoover = true;
             btnAdicionar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
 
 
             RGBBio.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
@@ -416,14 +418,62 @@ namespace tccCsharp
 
                 switch (index_btn)
                 {
-                    case 1: 
+                    case 1:
                         btnAdicionar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        opbLogout._bordercolor = Color.Transparent;
                         break;
                     case 2:
-                        btnAdicionar.BorderColor = Color.Black;
-                        opbConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-                        opbConfiguracoes.Refresh();
+                        btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);                      
+                        opbEditarP1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         break;
+
+                    case 3:
+                        opbEditarP1._bordercolor = Color.Transparent;
+                        opbEditarP2._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    
+                    case 4:
+                        opbEditarP2._bordercolor = Color.Transparent;
+                        opbEditarP3._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+
+                    case 5:
+                        opbEditarP3._bordercolor = Color.Transparent;
+                        if (OPBLeft.Visible == false)
+                        {
+                            index_btn++; //arrumar problemas
+                            
+                        }
+                        OPBLeft._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+
+                    case 6:                     
+                        OPBLeft._bordercolor = Color.Transparent;
+                        if (OPBRight.Visible == false)
+                        {
+                            index_btn++;
+                        }
+                        OPBRight._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+
+                    case 7:
+                        OPBRight._bordercolor = Color.Transparent;
+                        opbConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+
+                    case 8:
+                        opbConfiguracoes._bordercolor = Color.Transparent;
+                        opbRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+
+                    case 9:
+                        opbRecarregar._bordercolor = Color.Transparent;
+                        opbLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                        
+                        
+                        //btnAdicionar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+
                 }
 
             }

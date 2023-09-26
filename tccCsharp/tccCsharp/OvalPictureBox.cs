@@ -8,7 +8,7 @@ namespace tccCsharp
 {
     public class OvalPictureBox : PictureBox
     {
-        public Color _bordercolor { get; set; } = Color.Red;
+        private Color Bordercolor = Color.Red;
 
         public float _borderwidth { get; set; } = 3;
 
@@ -25,6 +25,17 @@ namespace tccCsharp
                 bordaPrincippal = value;
                 Refresh();
             }
+        }
+
+        public Color _bordercolor
+        {
+            get { return Bordercolor; }
+            set
+            {
+                Bordercolor = value;
+                Refresh();
+            }
+            
         }
 
         public Color BordaHoover
