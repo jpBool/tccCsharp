@@ -37,7 +37,6 @@ namespace tccCsharp
             this.opbLogo = new System.Windows.Forms.PictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
             this.opbRecarregar = new tccCsharp.OvalPictureBox();
-            this.opbConfiguracoes = new tccCsharp.OvalPictureBox();
             this.tlpBaseConfig2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnVoltar = new RoundButton();
@@ -85,7 +84,6 @@ namespace tccCsharp
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).BeginInit();
             this.tlpBaseConfig2.SuspendLayout();
             this.tlpBaseConfig4.SuspendLayout();
             this.rgbPCores.SuspendLayout();
@@ -120,7 +118,6 @@ namespace tccCsharp
             this.rgbMenu.Controls.Add(this.opbLogo);
             this.rgbMenu.Controls.Add(this.OPBLogout);
             this.rgbMenu.Controls.Add(this.opbRecarregar);
-            this.rgbMenu.Controls.Add(this.opbConfiguracoes);
             this.rgbMenu.CornerRadius = 10;
             this.rgbMenu.ForeColor = System.Drawing.Color.Transparent;
             this.rgbMenu.Location = new System.Drawing.Point(0, 0);
@@ -152,7 +149,7 @@ namespace tccCsharp
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
             this.OPBLogout.BordaPrincipal = System.Drawing.Color.Black;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
-            this.OPBLogout.Location = new System.Drawing.Point(912, 4);
+            this.OPBLogout.Location = new System.Drawing.Point(952, 7);
             this.OPBLogout.Name = "OPBLogout";
             this.OPBLogout.Size = new System.Drawing.Size(48, 47);
             this.OPBLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -171,31 +168,13 @@ namespace tccCsharp
             this.opbRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.opbRecarregar.BordaPrincipal = System.Drawing.Color.Black;
             this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
-            this.opbRecarregar.Location = new System.Drawing.Point(966, 4);
+            this.opbRecarregar.Location = new System.Drawing.Point(1015, 7);
             this.opbRecarregar.Name = "opbRecarregar";
             this.opbRecarregar.Size = new System.Drawing.Size(48, 47);
             this.opbRecarregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.opbRecarregar.TabIndex = 31;
             this.opbRecarregar.TabStop = false;
             this.opbRecarregar.Click += new System.EventHandler(this.opbRecarregar_Click);
-            // 
-            // opbConfiguracoes
-            // 
-            this.opbConfiguracoes._bordercolor = System.Drawing.Color.Red;
-            this.opbConfiguracoes._borderwidth = 5F;
-            this.opbConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbConfiguracoes.AutoHoover = false;
-            this.opbConfiguracoes.BackColor = System.Drawing.Color.Transparent;
-            this.opbConfiguracoes.BordaHoover = System.Drawing.Color.Green;
-            this.opbConfiguracoes.BordaPrincipal = System.Drawing.Color.Black;
-            this.opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
-            this.opbConfiguracoes.Location = new System.Drawing.Point(1020, 4);
-            this.opbConfiguracoes.Name = "opbConfiguracoes";
-            this.opbConfiguracoes.Size = new System.Drawing.Size(48, 47);
-            this.opbConfiguracoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.opbConfiguracoes.TabIndex = 30;
-            this.opbConfiguracoes.TabStop = false;
             // 
             // tlpBaseConfig2
             // 
@@ -704,12 +683,12 @@ namespace tccCsharp
             this.radBranco.AutoSize = true;
             this.radBranco.BackColor = System.Drawing.Color.Transparent;
             this.radBranco.Checked = true;
-            this.radBranco.Location = new System.Drawing.Point(111, 385);
+            this.radBranco.Location = new System.Drawing.Point(47, 385);
             this.radBranco.Name = "radBranco";
-            this.radBranco.Size = new System.Drawing.Size(59, 17);
+            this.radBranco.Size = new System.Drawing.Size(58, 17);
             this.radBranco.TabIndex = 45;
             this.radBranco.TabStop = true;
-            this.radBranco.Text = "Branco";
+            this.radBranco.Text = "Normal";
             this.radBranco.UseVisualStyleBackColor = false;
             this.radBranco.CheckedChanged += new System.EventHandler(this.radBranco_CheckedChanged);
             // 
@@ -720,11 +699,11 @@ namespace tccCsharp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radPreto.AutoSize = true;
             this.radPreto.BackColor = System.Drawing.Color.Transparent;
-            this.radPreto.Location = new System.Drawing.Point(47, 385);
+            this.radPreto.Location = new System.Drawing.Point(131, 385);
             this.radPreto.Name = "radPreto";
-            this.radPreto.Size = new System.Drawing.Size(50, 17);
+            this.radPreto.Size = new System.Drawing.Size(66, 17);
             this.radPreto.TabIndex = 44;
-            this.radPreto.Text = "Preto";
+            this.radPreto.Text = "Invertido";
             this.radPreto.UseVisualStyleBackColor = false;
             this.radPreto.CheckedChanged += new System.EventHandler(this.radPreto_CheckedChanged);
             // 
@@ -882,7 +861,6 @@ namespace tccCsharp
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.opbConfiguracoes)).EndInit();
             this.tlpBaseConfig2.ResumeLayout(false);
             this.tlpBaseConfig2.PerformLayout();
             this.tlpBaseConfig4.ResumeLayout(false);
@@ -948,6 +926,5 @@ namespace tccCsharp
         private System.Windows.Forms.PictureBox opbLogo;
         private OvalPictureBox OPBLogout;
         private OvalPictureBox opbRecarregar;
-        private OvalPictureBox opbConfiguracoes;
     }
 }

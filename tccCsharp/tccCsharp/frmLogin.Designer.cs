@@ -215,7 +215,7 @@
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.73016F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tlpLoginBase3.Controls.Add(this.lblEmail, 1, 1);
             this.tlpLoginBase3.Controls.Add(this.lblSenha, 1, 3);
             this.tlpLoginBase3.Controls.Add(this.txtEmail, 3, 1);
@@ -239,9 +239,9 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.White;
             this.lblEmail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(45, 35);
+            this.lblEmail.Location = new System.Drawing.Point(44, 35);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(53, 26);
+            this.lblEmail.Size = new System.Drawing.Size(50, 26);
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "E-mail:";
             // 
@@ -252,9 +252,9 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.White;
             this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(45, 90);
+            this.lblSenha.Location = new System.Drawing.Point(44, 90);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(53, 22);
+            this.lblSenha.Size = new System.Drawing.Size(44, 22);
             this.lblSenha.TabIndex = 6;
             this.lblSenha.Text = "Senha:";
             // 
@@ -262,7 +262,7 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmail.Location = new System.Drawing.Point(118, 38);
+            this.txtEmail.Location = new System.Drawing.Point(116, 38);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(244, 20);
             this.txtEmail.TabIndex = 1;
@@ -271,7 +271,7 @@
             // 
             this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSenha.Location = new System.Drawing.Point(118, 93);
+            this.txtSenha.Location = new System.Drawing.Point(116, 93);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(244, 20);
             this.txtSenha.TabIndex = 2;
@@ -321,6 +321,7 @@
             this.Name = "frmLogin";
             this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmLogin_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.rgbLogin.ResumeLayout(false);
             this.tlpLoginBase.ResumeLayout(false);

@@ -936,6 +936,7 @@
             this.Text = "Sensei";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPerfil_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPerfil_KeyDown);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLP_Filha1.ResumeLayout(false);
             this.RGBNeta1.ResumeLayout(false);

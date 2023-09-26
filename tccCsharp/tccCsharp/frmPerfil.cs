@@ -15,6 +15,7 @@ namespace tccCsharp
     public partial class frmPerfil : Form
     {
         int X = 0;
+        int index_btn = 0;
 
         public frmPerfil()
         {
@@ -86,7 +87,7 @@ namespace tccCsharp
             {
                 case 0:
 
-
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2;
                     opbLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
                     opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
                     opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
@@ -101,6 +102,7 @@ namespace tccCsharp
                     break;
 
                 case 1:
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2;
                     opbLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
                     opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
                     opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
@@ -404,6 +406,37 @@ namespace tccCsharp
             this.Close();
         }
 
-        
+        private void frmPerfil_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                index_btn++;
+                if (index_btn == 10)
+                    index_btn = 1;
+
+                switch (index_btn)
+                {
+                    case 1: 
+                        btnAdicionar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    case 2:
+                        btnAdicionar.BorderColor = Color.Black;
+                        opbConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        opbConfiguracoes.Refresh();
+                        break;
+                }
+
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                switch (index_btn)
+                { 
+                    case 1:
+                        //Ação do botão 1
+                        break;
+                }
+
+            }
+        }
     }
 }

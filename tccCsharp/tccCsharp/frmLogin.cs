@@ -103,6 +103,13 @@ namespace tccCsharp
         {
 
         }
+
+        private void frmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            //tabstop == false
+           //var
+           //switch
+        }
     }
 }
 

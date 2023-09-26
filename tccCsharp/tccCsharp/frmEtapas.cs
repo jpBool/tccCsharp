@@ -128,6 +128,28 @@ namespace tccCsharp
             opbEditarE1.AutoHoover = true;
             opbEditarE2.AutoHoover = true;
 
+            OPBLeft1._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            OPBLeft2._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            OPBRight1._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            OPBRight2._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            OPBUp._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            OPBDown._bordercolor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+
+            OPBLeft1.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBLeft1.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBLeft2.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBRight1.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBRight2.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBUp.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBDown.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            //////////
+            OPBLeft1.AutoHoover = true;
+            OPBLeft2.AutoHoover = true;
+            OPBRight1.AutoHoover = true;
+            OPBRight2.AutoHoover = true;
+            OPBUp.AutoHoover = true;
+            OPBDown.AutoHoover = true;
+
             Logo(Program.logo);
         }
 
@@ -751,17 +773,54 @@ namespace tccCsharp
             switch (logo)
             {
                 case 0:
-                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; 
+
                     OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
                     OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+
+                    opbEditarE1.Image = global::tccCsharp.Properties.Resources.Edit_White;
+                    opbEditarP11.Image = global::tccCsharp.Properties.Resources.Edit_White;
+                    opbEditarP12.Image = global::tccCsharp.Properties.Resources.Edit_White;
+                    opbEditarP13.Image = global::tccCsharp.Properties.Resources.Edit_White;
+
+                    opbEditarE2.Image = global::tccCsharp.Properties.Resources.Edit_White;
+                    opbEditarP21.Image = global::tccCsharp.Properties.Resources.Edit_White;
+                    opbEditarP22.Image = global::tccCsharp.Properties.Resources.Edit_White;
+                    opbEditarP23.Image = global::tccCsharp.Properties.Resources.Edit_White;
+
+                    OPBLeft1.Image = global::tccCsharp.Properties.Resources.Left_White;
+                    OPBLeft2.Image = global::tccCsharp.Properties.Resources.Left_White;
+                    OPBRight1.Image = global::tccCsharp.Properties.Resources.Right_White;
+                    OPBRight2.Image = global::tccCsharp.Properties.Resources.Right_White;
+                    OPBUp.Image = global::tccCsharp.Properties.Resources.Up_White;
+                    OPBDown.Image = global::tccCsharp.Properties.Resources.Down_White;
+
                     break;
 
                 case 1:
-                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; 
+
                     OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
                     OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+
+                    opbEditarE1.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+                    opbEditarP11.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+                    opbEditarP12.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+                    opbEditarP13.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+
+                    opbEditarE2.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+                    opbEditarP21.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+                    opbEditarP22.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+                    opbEditarP23.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+
+                    OPBLeft1.Image = global::tccCsharp.Properties.Resources.Left_Black;
+                    OPBLeft2.Image = global::tccCsharp.Properties.Resources.Left_Black;
+                    OPBRight1.Image = global::tccCsharp.Properties.Resources.Right_Black;
+                    OPBRight2.Image = global::tccCsharp.Properties.Resources.Right_Black;
+                    OPBUp.Image = global::tccCsharp.Properties.Resources.Up_Black;
+                    OPBDown.Image = global::tccCsharp.Properties.Resources.Down_Black;
                     break;
             }
         }

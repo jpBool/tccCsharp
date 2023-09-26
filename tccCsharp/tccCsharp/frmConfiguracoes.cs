@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 #pragma warning disable IDE1006
 
 //using System.Windows.Controls;
@@ -71,16 +72,42 @@ namespace tccCsharp
 
             //BOTÕES
             btnAltTamF.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnAltTamF.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             btnAltTamF.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnAltTamF.AutoHoover = true;
+
+
             btnPersonalizar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnPersonalizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnPersonalizar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnPersonalizar.AutoHoover = true;
+
             btnTutoriais.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnTutoriais.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnTutoriais.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnTutoriais.AutoHoover = true;
+
             btnVoltar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnVoltar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            btnPersonalizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            btnAltTamF.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            btnTutoriais.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnVoltar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnVoltar.AutoHoover = true;
+
+            btnRestaurarPadrao.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnRestaurarPadrao.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnRestaurarPadrao.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnRestaurarPadrao.AutoHoover = true;
+
+            OPBLogout._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            OPBLogout.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            OPBLogout.AutoHoover = true;
+
+            opbRecarregar._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            opbRecarregar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            opbRecarregar.AutoHoover = true;
+
+
+
+            Logo(Program.logo);
         }
 
 
@@ -340,13 +367,8 @@ namespace tccCsharp
 
         private void btnTutoriais_Click(object sender, EventArgs e)
         {
-            //visible false
-            //lblPCores.Visible = false;
-            //lblCoresElementos.Visible = false;
-           // lblCoresTexto.Visible = false;
-           // lblCoresAviso.Visible = false;
-           // lblTrocaIcones.Visible = false;
-
+            Process.Start("https://chat.openai.com/c/15dd028c-3306-4a87-bb70-9351762c50e1");
+            //subtituir link
         }
 
         private void OPBLogout_Click(object sender, EventArgs e)
@@ -407,46 +429,7 @@ namespace tccCsharp
 
         private void btnRestaurarPadrao_Click(object sender, EventArgs e)
         {
-            /*
-            //COMPONENTES DE AGRUPAMENTO
-            this.tlpBaseConfig1.BackColor = Color.FromArgb(229, 241, 243);
-            this.rgbMenu.BackgroundColor = Color.FromArgb(16, 39, 62);
-            this.rgbMenu.BackColor = Color.FromArgb(16, 39, 62);
-
-            //LABELS DE COR
-            lblCor1.BackColor = Color.FromArgb(0, 0, 0);
-            lblCor2.BackColor = Color.FromArgb(16, 39, 62);
-            lblCor3.BackColor = Color.FromArgb(54, 78, 101);
-            lblCor4.BackColor = Color.FromArgb(138, 182, 213);
-            lblCor5.BackColor = Color.FromArgb(170, 210, 229);
-            lblCor6.BackColor = Color.FromArgb(229, 241, 243);
-            lblCor7.BackColor = Color.FromArgb(255, 255, 255);
-            lblCorAviso1.BackColor = Color.FromArgb(204, 255, 51);
-            lblCorAviso2.BackColor = Color.FromArgb(242, 92, 84);
-            lblCorTexto1.BackColor = Color.FromArgb(0, 0, 0);
-            lblCorTexto2.BackColor = Color.FromArgb(255, 255, 255);
-
-            //OUTRAS LABELS
-            lblConfigsG.ForeColor = Color.FromArgb(0, 0, 0);
-            lblConfiguracoes.ForeColor = Color.FromArgb(0, 0, 0);
-            lblCoresElementos.ForeColor = Color.FromArgb(0, 0, 0);
-            lblCoresTexto.ForeColor = Color.FromArgb(0, 0, 0);
-            lblCoresAviso.ForeColor = Color.FromArgb(0, 0, 0);
-            lblPCores.ForeColor = Color.FromArgb(0, 0, 0);
-
-            //BOTÕES
-            btnAltTamF.ButtonColor = Color.FromArgb(16, 39, 62);
-            btnAltTamF.ForeColor = Color.FromArgb(255, 255, 255);
-            this.btnPersonalizar.ButtonColor = Color.FromArgb(16, 39, 62);
-            btnPersonalizar.ForeColor = Color.FromArgb( 255, 255, 255);
-            btnTutoriais.ButtonColor = Color.FromArgb(16, 39, 62);
-            btnTutoriais.ForeColor = Color.FromArgb(255, 255, 255);
-            btnVoltar.ButtonColor = Color.FromArgb(16, 39, 62);
-            btnVoltar.ForeColor = Color.FromArgb(255, 255, 255);
-            btnPersonalizar.ForeColor = Color.FromArgb(255, 255, 255);
-            btnAltTamF.ForeColor = Color.FromArgb(255, 255, 255);
-            btnTutoriais.ForeColor = Color.FromArgb( 255, 255, 255);
-            */
+            
 
             Program.Cor1[0] = 0;  //{ 0, 0, 0 };
             Program.Cor1[1] = 0;
@@ -497,7 +480,9 @@ namespace tccCsharp
             Program.CorAviso2[1] = 92;
             Program.CorAviso2[2] = 84;
 
-            
+
+            Program.logo = 1;
+            ///////////////////ÍCONES E LOGO/////////////////////
 
 
         }
@@ -509,7 +494,7 @@ namespace tccCsharp
                 Program.logo = 0;
                 OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
                 opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
-                opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+               
             }
         }
 
@@ -520,7 +505,7 @@ namespace tccCsharp
                 Program.logo = 1;
                 OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
                 opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
-                opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                
             }
                 
         }
@@ -529,17 +514,17 @@ namespace tccCsharp
         {
             switch(logo)
             {
-                case 0: opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                case 0: opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; 
                         OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black; 
                         opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
-                        opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
+                        
                         break;
 
                 case 1:
-                        opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                        opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; 
                         OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
                         opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
-                        opbConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
+                       
                         break;
             }
         }
