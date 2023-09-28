@@ -18,6 +18,7 @@ namespace tccCsharp
         int x1 = 0;
         int x2 = 0;
         public String NomeProjeto;
+        int index_btn = 0;
 
         public frmEtapas(String NomeRecebido)
         {
@@ -822,6 +823,282 @@ namespace tccCsharp
                     OPBUp.Image = global::tccCsharp.Properties.Resources.Up_Black;
                     OPBDown.Image = global::tccCsharp.Properties.Resources.Down_Black;
                     break;
+            }
+        }
+
+        private void frmEtapas_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                index_btn++;
+                if (index_btn == 21)
+                    index_btn = 1;
+
+                switch (index_btn)
+                {
+                    case 1:
+                        btnADDEtapa.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        OPBLogout._bordercolor = Color.Transparent;
+                        break;
+                    case 2:
+                        btnADDEtapa.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnADDGrupo.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break; 
+                    case 3:
+                        BtnADDGrupo.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnVoltar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    case 4: 
+                        BtnVoltar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        OPBUp._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (OPBUp.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+                        
+                    case 5:
+                        OPBUp._bordercolor = Color.Transparent;
+                        opbEditarE1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarE1.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 6:
+                        opbEditarE1._bordercolor = Color.Transparent;
+                        opbEditarE2._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarE2.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 7:
+                        opbEditarE2._bordercolor = Color.Transparent;
+                        OPBDown._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (OPBDown.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 8:
+                        OPBDown._bordercolor = Color.Transparent;
+                        OPBLeft1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (OPBLeft1.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 9:
+                        OPBLeft1._bordercolor = Color.Transparent;
+                        opbEditarP11._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP11.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 10:
+                        opbEditarP11._bordercolor = Color.Transparent;
+                        opbEditarP12._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP12.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 11:
+                        opbEditarP12._bordercolor = Color.Transparent;
+                        opbEditarP13._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP13.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+ 
+                    case 12:
+                        opbEditarP13._bordercolor = Color.Transparent;
+                        OPBRight1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (OPBRight1.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 13:
+                        OPBRight1._bordercolor = Color.Transparent;
+                        OPBLeft2._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (OPBLeft2.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 14:
+                        OPBLeft2._bordercolor = Color.Transparent;
+                        opbEditarP21._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP21.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 15:
+                        opbEditarP21._bordercolor = Color.Transparent;
+                        opbEditarP22._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP22.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 16:
+                        opbEditarP22._bordercolor = Color.Transparent;
+                        opbEditarP23._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP23.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    case 17:
+                        opbEditarP23._bordercolor = Color.Transparent;
+                        OPBRight2._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (OPBRight2.Visible == false)
+                        {
+                            frmEtapas_KeyDown(sender, e);
+                        }
+                        break;
+
+                    
+                    case 18:
+                        OPBRight2._bordercolor = Color.Transparent;
+                        OPBConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    
+                    case 19:
+                        OPBConfiguracoes._bordercolor = Color.Transparent;
+                        OPBRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+
+                    case 20:
+                        OPBRecarregar._bordercolor = Color.Transparent;
+                        OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                        
+
+                }
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                switch (index_btn)
+                {
+                    case 1:
+                        index_btn = 0;
+                        btnADDEtapa.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnADDEtapa_Click(sender, e);
+                        break;
+                    case 2:
+                        index_btn = 0;
+                        BtnADDGrupo.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnADDGrupo_Click(sender, e);
+                        break;
+                    case 3:
+                        index_btn = 0;
+                        BtnVoltar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnVoltar_Click(sender, e);
+                        break;
+                    case 4:
+                        index_btn = 0;
+                        OPBUp._bordercolor = Color.Transparent;
+                        OPBUp_Click(sender, e);
+                        break;
+                    case 5:
+                        index_btn = 0;
+                        opbEditarE1._bordercolor = Color.Transparent;
+                        opbEditarE1_Click(sender, e);
+                        break;
+                    case 6:
+                        index_btn = 0;
+                        opbEditarE2._bordercolor = Color.Transparent;
+                        opbEditarE2_Click(sender, e);
+                        break;
+                    case 7:
+                        index_btn = 0;
+                        OPBDown._bordercolor = Color.Transparent;
+                        OPBDown_Click(sender, e);
+                        break;
+                    case 8:
+                        index_btn = 0;
+                        OPBLeft1._bordercolor = Color.Transparent;
+                        OPBLeft1_Click_1(sender, e);
+                        break;
+                    case 9:
+                        index_btn = 0;
+                        opbEditarP11._bordercolor = Color.Transparent;
+                        opbEditarP11_Click(sender, e);
+                        break;
+                    case 10:
+                        index_btn = 0;
+                        opbEditarP12._bordercolor = Color.Transparent;
+                        opbEditarP12_Click(sender, e);
+                        break;
+                    case 11:
+                        index_btn = 0;
+                        opbEditarP13._bordercolor = Color.Transparent;
+                        opbEditarP13_Click(sender, e);
+                        break;
+                    case 12:
+                        index_btn = 0;
+                        OPBRight1._bordercolor = Color.Transparent;
+                        OPBRight1_Click(sender, e);
+                        break;
+                    case 13:
+                        index_btn = 0;
+                        OPBLeft2._bordercolor = Color.Transparent;
+                        OPBLeft2_Click(sender, e);
+                        break;
+                    case 14:
+                        index_btn = 0;
+                        opbEditarP21._bordercolor = Color.Transparent;
+                        opbEditarP21_Click(sender, e);
+                        break;
+                    case 15:
+                        index_btn = 0;
+                        opbEditarP22._bordercolor = Color.Transparent;
+                        opbEditarP22_Click(sender, e);
+                        break;
+                    case 16:
+                        index_btn = 0;
+                        opbEditarP23._bordercolor = Color.Transparent;
+                        opbEditarP23_Click(sender, e);
+                        break;
+                    case 17:
+                        index_btn = 0;
+                        OPBRight2._bordercolor = Color.Transparent;
+                        OPBRight2_Click(sender, e);
+                        break;
+                    case 18:
+                        index_btn = 0;
+                        OPBConfiguracoes._bordercolor = Color.Transparent;
+                        OPBConfiguracoes_Click(sender, e);
+                        break;
+                    case 19:
+                        index_btn = 0;
+                        OPBRecarregar._bordercolor = Color.Transparent;
+                        OPBRecarregar_Click(sender, e);
+                        break;
+                    case 20:
+                        index_btn = 0;
+                        OPBLogout._bordercolor = Color.Transparent;
+                        OPBLogout_Click(sender, e);
+                        break;
+                }
+
             }
         }
     }

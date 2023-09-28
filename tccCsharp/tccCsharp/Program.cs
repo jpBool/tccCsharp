@@ -12,7 +12,7 @@ namespace tccCsharp
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
         /// 
-        public static int id_usuario = 0;
+        public static int id_usuario = 2;
         public static List<Project> projetos = new List<Project>();
         public static List<Status> lista_status = new List<Status>();
         public static int id_projeto_atual = 0;

@@ -243,10 +243,10 @@ namespace tccCsharp
             DoDesign();
 
             User usuario = new User();
+            usuario.avatar = 2;
             Banco.CarregaPerfil(usuario);
             lblNome.Text = usuario.nome.ToString();
             lblBio.Text = usuario.bio.ToString();
-            //lblNaturalidade.Text = usuario.naturalidade.ToString();
             lblAMD.Text = usuario.inscricao.ToShortDateString();
             lblEmail.Text = usuario.email.ToString();
             lblCommits.Text = usuario.commits.ToString();
@@ -424,36 +424,47 @@ namespace tccCsharp
                         break;
                     case 2:
                         btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);                      
-                        opbEditarP1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        opbEditarP1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]); //
+                        if (opbEditarP1.Visible == false)
+                        {
+                            frmPerfil_KeyDown(sender, e);
+                        }
                         break;
 
                     case 3:
                         opbEditarP1._bordercolor = Color.Transparent;
                         opbEditarP2._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP2.Visible == false)
+                        {
+                            frmPerfil_KeyDown(sender, e);
+                        }
                         break;
                     
                     case 4:
                         opbEditarP2._bordercolor = Color.Transparent;
                         opbEditarP3._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        if (opbEditarP3.Visible == false)
+                        {
+                            frmPerfil_KeyDown(sender, e);
+                        }
                         break;
 
                     case 5:
                         opbEditarP3._bordercolor = Color.Transparent;
+                        OPBLeft._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         if (OPBLeft.Visible == false)
                         {
-                            index_btn++; //arrumar problemas
-                            
+                            frmPerfil_KeyDown(sender, e);
                         }
-                        OPBLeft._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         break;
 
                     case 6:                     
                         OPBLeft._bordercolor = Color.Transparent;
+                        OPBRight._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         if (OPBRight.Visible == false)
                         {
-                            index_btn++;
-                        }
-                        OPBRight._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                            frmPerfil_KeyDown(sender, e);
+                        }                     
                         break;
 
                     case 7:
@@ -470,10 +481,6 @@ namespace tccCsharp
                         opbRecarregar._bordercolor = Color.Transparent;
                         opbLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         break;
-                        
-                        
-                        //btnAdicionar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-
                 }
 
             }
@@ -482,8 +489,51 @@ namespace tccCsharp
                 switch (index_btn)
                 { 
                     case 1:
-                        //Ação do botão 1
+                        index_btn = 0;
+                        btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnAdicionar_Click(sender, e);
                         break;
+                    case 2:
+                        index_btn = 0;
+                        opbEditarP1._bordercolor = Color.Transparent;
+                        opbEditarP1_Click(sender, e);
+                        break;
+                    case 3:
+                        index_btn = 0;
+                        opbEditarP2._bordercolor = Color.Transparent;
+                        opbEditarP2_Click(sender, e);
+                        break;
+                    case 4:
+                        index_btn = 0;
+                        opbEditarP3._bordercolor = Color.Transparent;
+                        opbEditarP3_Click(sender, e);
+                        break;
+                    case 5:
+                        index_btn = 0;
+                        OPBLeft._bordercolor = Color.Transparent;
+                        ovalPictureBox2_Click(sender, e);
+                        break;
+                    case 6:
+                        index_btn = 0;
+                        OPBRight._bordercolor = Color.Transparent;
+                        ovalPictureBox1_Click(sender, e);
+                        break;
+                    case 7:
+                        index_btn = 0;
+                        opbConfiguracoes._bordercolor = Color.Transparent;
+                        opbConfiguracoes_Click_1(sender, e);
+                        break;
+                    case 8:
+                        index_btn = 0;
+                        opbRecarregar._bordercolor = Color.Transparent;
+                        opbRecarregar_Click_1(sender, e);
+                        break;
+                    case 9:
+                        index_btn = 0;
+                        opbLogout._bordercolor = Color.Transparent;
+                        opbLogout_Click_1(sender, e);
+                        break;
+
                 }
 
             }

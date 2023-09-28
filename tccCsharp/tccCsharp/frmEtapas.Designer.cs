@@ -269,6 +269,7 @@
             this.btnADDEtapa.Name = "btnADDEtapa";
             this.btnADDEtapa.Size = new System.Drawing.Size(193, 35);
             this.btnADDEtapa.TabIndex = 7;
+            this.btnADDEtapa.TabStop = false;
             this.btnADDEtapa.Text = "ADICIONAR ETAPA";
             this.btnADDEtapa.TextoPrincipal = System.Drawing.Color.Black;
             this.btnADDEtapa.UseVisualStyleBackColor = true;
@@ -291,6 +292,7 @@
             this.BtnADDGrupo.Name = "BtnADDGrupo";
             this.BtnADDGrupo.Size = new System.Drawing.Size(190, 35);
             this.BtnADDGrupo.TabIndex = 6;
+            this.BtnADDGrupo.TabStop = false;
             this.BtnADDGrupo.Text = "ADICIONAR GRUPO";
             this.BtnADDGrupo.TextoPrincipal = System.Drawing.Color.Black;
             this.BtnADDGrupo.UseVisualStyleBackColor = true;
@@ -356,6 +358,7 @@
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Size = new System.Drawing.Size(178, 35);
             this.BtnVoltar.TabIndex = 5;
+            this.BtnVoltar.TabStop = false;
             this.BtnVoltar.Text = "VOLTAR";
             this.BtnVoltar.TextoPrincipal = System.Drawing.Color.Black;
             this.BtnVoltar.UseVisualStyleBackColor = true;
@@ -1609,6 +1612,7 @@
             this.Name = "frmEtapas";
             this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmEtapas_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmEtapas_KeyDown);
             this.Resize += new System.EventHandler(this.frmEtapas_Resize);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
