@@ -265,20 +265,20 @@ namespace tccCsharp
                 sql += "linguagem = @14, previsao = @15 WHERE id_projeto = @16 ";
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                cmd.Parameters.AddWithValue("@1", String.IsNullOrEmpty(Atualizar.autores) ? (object)DBNull.Value : (object)Atualizar.autores);
-                cmd.Parameters.AddWithValue("@2", String.IsNullOrEmpty(Atualizar.email_contato) ? (object)DBNull.Value : (object)Atualizar.email_contato);
+                cmd.Parameters.AddWithValue("@1", String.IsNullOrWhiteSpace(Atualizar.autores) ? (object)DBNull.Value : (object)Atualizar.autores);
+                cmd.Parameters.AddWithValue("@2", String.IsNullOrWhiteSpace(Atualizar.email_contato) ? (object)DBNull.Value : (object)Atualizar.email_contato);
                 cmd.Parameters.AddWithValue("@3", Atualizar.nome_projeto);
-                cmd.Parameters.AddWithValue("@4", String.IsNullOrEmpty(Atualizar.palavras_chave) ? (object)DBNull.Value : (object)Atualizar.palavras_chave);
+                cmd.Parameters.AddWithValue("@4", String.IsNullOrWhiteSpace(Atualizar.palavras_chave) ? (object)DBNull.Value : (object)Atualizar.palavras_chave);
                 cmd.Parameters.AddWithValue("@5", Atualizar.publico);
                 cmd.Parameters.AddWithValue("@6", Atualizar.descricao_breve);
-                cmd.Parameters.AddWithValue("@7", String.IsNullOrEmpty(Atualizar.descricao_detalhada) ? (object)DBNull.Value : (object)Atualizar.descricao_detalhada);
-                cmd.Parameters.AddWithValue("@8", String.IsNullOrEmpty(Atualizar.link_site) ? (object)DBNull.Value : (object)Atualizar.link_site);
-                cmd.Parameters.AddWithValue("@9", String.IsNullOrEmpty(Atualizar.link_youtube) ? (object)DBNull.Value : (object)Atualizar.link_youtube);
+                cmd.Parameters.AddWithValue("@7", String.IsNullOrWhiteSpace(Atualizar.descricao_detalhada) ? (object)DBNull.Value : (object)Atualizar.descricao_detalhada);
+                cmd.Parameters.AddWithValue("@8", String.IsNullOrWhiteSpace(Atualizar.link_site) ? (object)DBNull.Value : (object)Atualizar.link_site);
+                cmd.Parameters.AddWithValue("@9", String.IsNullOrWhiteSpace(Atualizar.link_youtube) ? (object)DBNull.Value : (object)Atualizar.link_youtube);
                 cmd.Parameters.AddWithValue("@10", (Atualizar.status == 0 ? (object)DBNull.Value : (object)Atualizar.status));
                 cmd.Parameters.AddWithValue("@11", Atualizar.porcentagem);
                 cmd.Parameters.AddWithValue("@12", Atualizar.data_atualizacao);
                 cmd.Parameters.AddWithValue("@13", Atualizar.atualizador);
-                cmd.Parameters.AddWithValue("@14", String.IsNullOrEmpty(Atualizar.linguagem) ? (object)DBNull.Value : (object)Atualizar.linguagem);
+                cmd.Parameters.AddWithValue("@14", String.IsNullOrWhiteSpace(Atualizar.linguagem) ? (object)DBNull.Value : (object)Atualizar.linguagem);
                 cmd.Parameters.AddWithValue("@15", Atualizar.previsao == new DateTime(1, 1, 1) ? (object)DBNull.Value : (object)Atualizar.previsao);
                 cmd.Parameters.AddWithValue("@16", Program.id_projeto_atual);
 
@@ -309,22 +309,22 @@ namespace tccCsharp
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", Novo.id_criador);
-                cmd.Parameters.AddWithValue("@2", String.IsNullOrEmpty(Novo.autores) ? (object)DBNull.Value : (object)Novo.autores);
-                cmd.Parameters.AddWithValue("@3", String.IsNullOrEmpty(Novo.email_contato) ? (object)DBNull.Value : (object)Novo.email_contato);
+                cmd.Parameters.AddWithValue("@2", String.IsNullOrWhiteSpace(Novo.autores) ? (object)DBNull.Value : (object)Novo.autores);
+                cmd.Parameters.AddWithValue("@3", String.IsNullOrWhiteSpace(Novo.email_contato) ? (object)DBNull.Value : (object)Novo.email_contato);
                 cmd.Parameters.AddWithValue("@4", Novo.nome_projeto);
-                cmd.Parameters.AddWithValue("@5", String.IsNullOrEmpty(Novo.palavras_chave) ? (object)DBNull.Value : (object)Novo.palavras_chave);
+                cmd.Parameters.AddWithValue("@5", String.IsNullOrWhiteSpace(Novo.palavras_chave) ? (object)DBNull.Value : (object)Novo.palavras_chave);
                 cmd.Parameters.AddWithValue("@6", Novo.publico);
                 cmd.Parameters.AddWithValue("@7", Novo.descricao_breve);
-                cmd.Parameters.AddWithValue("@8", String.IsNullOrEmpty(Novo.descricao_detalhada) ? (object)DBNull.Value : (object)Novo.descricao_detalhada);
-                cmd.Parameters.AddWithValue("@9", String.IsNullOrEmpty(Novo.link_site) ? (object)DBNull.Value : (object)Novo.link_site);
-                cmd.Parameters.AddWithValue("@10", String.IsNullOrEmpty(Novo.link_youtube) ? (object)DBNull.Value : (object)Novo.link_youtube);
+                cmd.Parameters.AddWithValue("@8", String.IsNullOrWhiteSpace(Novo.descricao_detalhada) ? (object)DBNull.Value : (object)Novo.descricao_detalhada);
+                cmd.Parameters.AddWithValue("@9", String.IsNullOrWhiteSpace(Novo.link_site) ? (object)DBNull.Value : (object)Novo.link_site);
+                cmd.Parameters.AddWithValue("@10", String.IsNullOrWhiteSpace(Novo.link_youtube) ? (object)DBNull.Value : (object)Novo.link_youtube);
                 cmd.Parameters.AddWithValue("@11", (Novo.status == 0 ? (object)DBNull.Value : (object)Novo.status));
                 cmd.Parameters.AddWithValue("@12", Novo.porcentagem);
                 cmd.Parameters.AddWithValue("@13", Novo.data_criacao);
                 cmd.Parameters.AddWithValue("@14", Novo.data_atualizacao);
                 cmd.Parameters.AddWithValue("@15", Novo.atualizador);
                 cmd.Parameters.AddWithValue("@16", Novo.excluido);
-                cmd.Parameters.AddWithValue("@17", String.IsNullOrEmpty(Novo.linguagem) ? (object)DBNull.Value : (object)Novo.linguagem);
+                cmd.Parameters.AddWithValue("@17", String.IsNullOrWhiteSpace(Novo.linguagem) ? (object)DBNull.Value : (object)Novo.linguagem);
                 cmd.Parameters.AddWithValue("@18", Novo.previsao == new DateTime(1, 1, 1) ? (object)DBNull.Value : (object)Novo.previsao);
                 cmd.Parameters.AddWithValue("@19", Novo.numero_grupos);
 

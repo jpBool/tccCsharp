@@ -244,14 +244,14 @@ namespace tccCsharp
         {
             if (EditandoImagem == false)
             {
-                if (String.IsNullOrEmpty(txtNomeImagem.Text) == true)
+                if (String.IsNullOrWhiteSpace(txtNomeImagem.Text) == true)
                 {
                     customLine2.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
                     customLine2.Invalidate();
                     txtNomeImagem.Focus();
                     return;
                 }
-                if (String.IsNullOrEmpty(txtDescricaoImg.Text) == true)
+                if (String.IsNullOrWhiteSpace(txtDescricaoImg.Text) == true)
                 {
                     customLine3.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
                     customLine3.Invalidate();
@@ -330,14 +330,14 @@ namespace tccCsharp
             }
             else
             {
-                if (String.IsNullOrEmpty(txtNomeImagem.Text) == true)
+                if (String.IsNullOrWhiteSpace(txtNomeImagem.Text) == true)
                 {
                     customLine2.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
                     customLine2.Invalidate();
                     txtNomeImagem.Focus();
                     return;
                 }
-                if (String.IsNullOrEmpty(txtDescricaoImg.Text) == true)
+                if (String.IsNullOrWhiteSpace(txtDescricaoImg.Text) == true)
                 {
                     customLine3.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
                     customLine3.Invalidate();

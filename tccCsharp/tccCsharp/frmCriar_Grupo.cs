@@ -185,7 +185,7 @@ namespace tccCsharp
 
         private void btnCriar_Click(object sender, EventArgs e)
         {
-            if (txtNomeGrupo.Text == String.Empty)
+            if (String.IsNullOrWhiteSpace(txtNomeGrupo.Text))
             {
                 customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
                 txtNomeGrupo.Focus();  

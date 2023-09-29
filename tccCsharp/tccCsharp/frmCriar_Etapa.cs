@@ -229,7 +229,7 @@ namespace tccCsharp
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (txtNomeEtapa.Text == String.Empty)
+            if (String.IsNullOrWhiteSpace(txtNomeEtapa.Text))
             {
                 customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
                 txtNomeEtapa.Focus();

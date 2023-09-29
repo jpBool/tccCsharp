@@ -204,43 +204,43 @@ namespace tccCsharp
             txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             txtDescricaoBreve.Text = editando.descricao_breve;
             txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-            if (!String.IsNullOrEmpty(editando.email_contato))
+            if (!String.IsNullOrWhiteSpace(editando.email_contato))
             {
                 txtEmail.Text = editando.email_contato;
                 txtEmail.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             }
 
-            if (!String.IsNullOrEmpty(editando.autores))
+            if (!String.IsNullOrWhiteSpace(editando.autores))
             {
                 txtAutores.Text = editando.autores;
                 txtAutores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             }
 
-            if (!String.IsNullOrEmpty(editando.linguagem))
+            if (!String.IsNullOrWhiteSpace(editando.linguagem))
             {
                 txtLinguagem.Text = editando.linguagem;
                 txtLinguagem.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             }
 
-            if (!String.IsNullOrEmpty(editando.link_site))
+            if (!String.IsNullOrWhiteSpace(editando.link_site))
             {
                 txtSite.Text = editando.link_site;
                 txtSite.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             }
 
-            if (!String.IsNullOrEmpty(editando.link_youtube))
+            if (!String.IsNullOrWhiteSpace(editando.link_youtube))
             {
                 txtVideo.Text = editando.link_youtube;
                 txtVideo.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             }
 
-            if (!String.IsNullOrEmpty(editando.palavras_chave))
+            if (!String.IsNullOrWhiteSpace(editando.palavras_chave))
             {
                 txtPalavras.Text = editando.palavras_chave;
                 txtPalavras.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             }
 
-            if (!String.IsNullOrEmpty(editando.descricao_detalhada))
+            if (!String.IsNullOrWhiteSpace(editando.descricao_detalhada))
             {
                 txtDetalhada.Text = editando.descricao_detalhada;
                 txtDetalhada.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -297,7 +297,7 @@ namespace tccCsharp
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
 
-            if (String.IsNullOrEmpty(txtNomeProjeto.Text) || txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
+            if (String.IsNullOrWhiteSpace(txtNomeProjeto.Text) || txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
             {
                 txtNomeProjeto.Focus();
                 txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -307,7 +307,7 @@ namespace tccCsharp
             else
                 editando.nome_projeto = txtNomeProjeto.Text;
 
-            if (String.IsNullOrEmpty(txtDescricaoBreve.Text) || txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
+            if (String.IsNullOrWhiteSpace(txtDescricaoBreve.Text) || txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
             {
                 txtDescricaoBreve.Focus();
                 txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -327,31 +327,31 @@ namespace tccCsharp
             else
                 editando.status = comboStatus.SelectedIndex + 1;
 
-            if (String.IsNullOrEmpty(txtEmail.Text) || txtEmail.Text == "E-mail para que enteressados entrem em contato")
+            if (String.IsNullOrWhiteSpace(txtEmail.Text) || txtEmail.Text == "E-mail para que enteressados entrem em contato")
                 editando.email_contato = null;
             else
                 editando.email_contato = txtEmail.Text;
 
-            if (String.IsNullOrEmpty(txtAutores.Text) || txtAutores.Text == "Nome dos responsáveis pelo projeto")
+            if (String.IsNullOrWhiteSpace(txtAutores.Text) || txtAutores.Text == "Nome dos responsáveis pelo projeto")
                 editando.autores = null; 
             else
                 editando.autores = txtAutores.Text;
 
-            if (String.IsNullOrEmpty(txtLinguagem.Text) || txtLinguagem.Text == "Linguagens de programação utilizadas")
+            if (String.IsNullOrWhiteSpace(txtLinguagem.Text) || txtLinguagem.Text == "Linguagens de programação utilizadas")
                 editando.linguagem = null;
             else editando.linguagem = txtLinguagem.Text;
 
-            if (String.IsNullOrEmpty(txtSite.Text) || txtSite.Text == "Site do projeto")
+            if (String.IsNullOrWhiteSpace(txtSite.Text) || txtSite.Text == "Site do projeto")
                 editando.link_site = null;
             else
                 editando.link_site = txtSite.Text;
 
-            if (String.IsNullOrEmpty(txtVideo.Text) || txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
+            if (String.IsNullOrWhiteSpace(txtVideo.Text) || txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
                 editando.link_youtube = null;
             else
                 editando.link_youtube = txtVideo.Text;
 
-            if (String.IsNullOrEmpty(txtPalavras.Text) || txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
+            if (String.IsNullOrWhiteSpace(txtPalavras.Text) || txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
                 editando.palavras_chave = null;
             else
                 editando.palavras_chave = PalavrasChave();
@@ -366,7 +366,7 @@ namespace tccCsharp
             else
                 editando.publico = false;
 
-            if (String.IsNullOrEmpty(txtDetalhada.Text) || txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
+            if (String.IsNullOrWhiteSpace(txtDetalhada.Text) || txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
                 editando.descricao_detalhada = null;
             else
                 editando.descricao_detalhada = txtDetalhada.Text;
@@ -546,7 +546,7 @@ namespace tccCsharp
 
         private void txtPalavras_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtPalavras.Text))
+            if (String.IsNullOrWhiteSpace(txtPalavras.Text))
             {
                 txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
                 txtPalavras.ForeColor = Color.Gray;
@@ -559,7 +559,7 @@ namespace tccCsharp
 
         private void txtNomeProjeto_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtNomeProjeto.Text))
+            if (String.IsNullOrWhiteSpace(txtNomeProjeto.Text))
             {
                 txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
                 txtNomeProjeto.ForeColor = Color.Gray;
@@ -569,7 +569,7 @@ namespace tccCsharp
 
         private void txtEmail_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtEmail.Text))
+            if (String.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 txtEmail.Text = "E-mail para que enteressados entrem em contato";
                 txtEmail.ForeColor = Color.Gray;
@@ -578,7 +578,7 @@ namespace tccCsharp
 
         private void txtAutores_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtAutores.Text))
+            if (String.IsNullOrWhiteSpace(txtAutores.Text))
             {
                 txtAutores.Text = "Nome dos responsáveis pelo projeto";
                 txtAutores.ForeColor = Color.Gray;
@@ -587,7 +587,7 @@ namespace tccCsharp
 
         private void txtLinguagem_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtLinguagem.Text))
+            if (String.IsNullOrWhiteSpace(txtLinguagem.Text))
             {
                 txtLinguagem.Text = "Linguagens de programação utilizadas";
                 txtLinguagem.ForeColor = Color.Gray;
@@ -596,7 +596,7 @@ namespace tccCsharp
 
         private void txtDescricaoBreve_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtDescricaoBreve.Text))
+            if (String.IsNullOrWhiteSpace(txtDescricaoBreve.Text))
             {
                 txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
                 txtDescricaoBreve.ForeColor = Color.Gray;
@@ -606,7 +606,7 @@ namespace tccCsharp
 
         private void txtSite_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtSite.Text))
+            if (String.IsNullOrWhiteSpace(txtSite.Text))
             {
                 txtSite.Text = "Site do projeto";
                 txtSite.ForeColor = Color.Gray;
@@ -615,7 +615,7 @@ namespace tccCsharp
 
         private void txtVideo_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtVideo.Text))
+            if (String.IsNullOrWhiteSpace(txtVideo.Text))
             {
                 txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
                 txtVideo.ForeColor = Color.Gray;
@@ -624,7 +624,7 @@ namespace tccCsharp
 
         private void txtDetalhada_Leave(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtDetalhada.Text))
+            if (String.IsNullOrWhiteSpace(txtDetalhada.Text))
             {
                 txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...";
                 txtDetalhada.ForeColor = Color.Gray;
