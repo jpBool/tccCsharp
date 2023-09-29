@@ -613,42 +613,28 @@ namespace tccCsharp
             {
                 Desconectar();
                 Banco.NewCommit();
+                VerificaImagemPrincipal(foto.id_projeto);
             }
             return idInserido;
         }
 
         public static void DeleteImagem(int Idimagem)
         {
+            int idProjeto = 0;
             try
             {
                 Conectar();
-
-                // Verifica se a imagem que está sendo excluída é a imagem principal
-                String verificaPrincipalSql = "SELECT imagem_principal FROM gp2_imagens WHERE id_imagem = @1";
-                NpgsqlCommand verificaPrincipalCmd = new NpgsqlCommand(verificaPrincipalSql, cn);
-                verificaPrincipalCmd.Parameters.AddWithValue("@1", Idimagem); // Supondo que existe um campo "id_imagem" na classe Photo
-                bool isImagemPrincipal = Convert.ToBoolean(verificaPrincipalCmd.ExecuteScalar());
-
-                // Obtém o id_projeto da imagem que será excluída
                 String selectProjetoSql = "SELECT id_projeto FROM gp2_imagens WHERE id_imagem = @1";
                 NpgsqlCommand selectProjetoCmd = new NpgsqlCommand(selectProjetoSql, cn);
                 selectProjetoCmd.Parameters.AddWithValue("@1", Idimagem);
-                int idProjeto = Convert.ToInt32(selectProjetoCmd.ExecuteScalar());
+                idProjeto = Convert.ToInt32(selectProjetoCmd.ExecuteScalar());
 
-                // Exclui a imagem
+
                 String deleteSql = "DELETE FROM gp2_imagens WHERE id_imagem = @1";
                 NpgsqlCommand deleteCmd = new NpgsqlCommand(deleteSql, cn);
                 deleteCmd.Parameters.AddWithValue("@1", Idimagem);
                 deleteCmd.ExecuteNonQuery();
 
-                // Se a imagem excluída for a imagem principal, selecione a nova imagem principal
-                if (isImagemPrincipal)
-                {
-                    String novaPrincipalSql = "UPDATE gp2_imagens SET imagem_principal = true WHERE id_imagem = (SELECT id_imagem FROM gp2_imagens WHERE id_projeto = @1 ORDER BY id_imagem LIMIT 1)";
-                    NpgsqlCommand novaPrincipalCmd = new NpgsqlCommand(novaPrincipalSql, cn);
-                    novaPrincipalCmd.Parameters.AddWithValue("@1", idProjeto);
-                    novaPrincipalCmd.ExecuteNonQuery();
-                }
             }
             catch (Exception ex)
             {
@@ -658,6 +644,7 @@ namespace tccCsharp
             {
                 Desconectar();
                 Banco.NewCommit();
+                VerificaImagemPrincipal(idProjeto);
             }
         }
 
@@ -706,17 +693,18 @@ namespace tccCsharp
 
         public static void UpdateImagem(string nome, string descri, bool principal, int IdImagem)
         {
+            int idProjeto = 0;
             try
             {
                 Conectar();
-                String sql = "UPDATE  gp2_imagens SET nome = @1, descricao_imagem = @2, imagem_principal = @3 WHERE id_imagem = @4";
+                String sql = "UPDATE  gp2_imagens SET nome = @1, descricao_imagem = @2, imagem_principal = @3 WHERE id_imagem = @4 RETURNING id_projeto";
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", nome);
                 cmd.Parameters.AddWithValue("@2", descri);
                 cmd.Parameters.AddWithValue("@3", principal);
                 cmd.Parameters.AddWithValue("@4", IdImagem);
-                cmd.ExecuteNonQuery();
+                idProjeto = Convert.ToInt32(cmd.ExecuteScalar());
             }
             catch (Exception ex)
             {
@@ -726,6 +714,7 @@ namespace tccCsharp
             {
                 Desconectar();
                 Banco.NewCommit();
+                VerificaImagemPrincipal(idProjeto);
             }
         }
 
@@ -1421,7 +1410,46 @@ namespace tccCsharp
             }
             return permissao;
         }
+        public static void VerificaImagemPrincipal(int IdProjeto)
+        {
+            try
+            {
+                Conectar(); // Estabelece a conexão com o banco de dados
 
+                // Verifica se há imagens com o IdProjeto especificado
+                string sql = "SELECT COUNT(*) FROM gp2_imagens WHERE id_projeto = @IdProjeto";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@IdProjeto", IdProjeto);
+                int countImagens = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if (countImagens == 0)
+                {
+                    // Não há imagens com esse IdProjeto, retorna
+                    return;
+                }
+
+                // Verifica se há imagens com o IdProjeto e Imagem_principal = true
+                sql = "SELECT COUNT(*) FROM gp2_imagens WHERE id_projeto = @IdProjeto AND imagem_principal = true";
+                cmd.CommandText = sql;
+                int countImagensPrincipais = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if (countImagensPrincipais == 0)
+                {
+                    // Não há imagens principais com esse IdProjeto, selecione a imagem com o menor Id_Imagem e atualize Imagem_principal para true
+                    sql = "UPDATE gp2_imagens SET imagem_principal = true WHERE id_imagem = (SELECT id_imagem FROM gp2_imagens WHERE id_projeto = @IdProjeto ORDER BY id_imagem ASC LIMIT 1)";
+                    cmd.CommandText = sql;
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar a imagem principal: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar(); // Fecha a conexão com o banco de dados
+            }
+        }
     } 
 }
 

@@ -319,8 +319,13 @@ namespace tccCsharp
                 txtNomeImagem.Text = string.Empty;
                 txtDescricaoImg.Text = string.Empty;
                 pcbUpload.Image = null;
+                flpImagens.Controls.Clear();
+                Imagens.Clear();
                 Imagens = Banco.CarregaImagens(Imagens);
-                CarregarImagem(Foto);
+                for (int i = 0; i < Imagens.Count; i++)
+                {
+                    CarregarImagem(Imagens[i]);
+                }
 
             }
             else
@@ -366,7 +371,7 @@ namespace tccCsharp
                 }
                 else
                 {
-                    MessageBox.Show("Tem alguma coisa errada sua mula");
+                   // MessageBox.Show("Tem alguma coisa errada sua mula");
                 }
 
                 if (verifica == pcbUpload.Image)//Imagem continua a mesma
@@ -375,8 +380,6 @@ namespace tccCsharp
                 }
                 else//Imagem mudou
                 {
-                    Banco.UpdateImagem(nome, descri, principal, idImagem);
-
                     string localFilePath = pcbUpload.ImageLocation.ToString();
                     string remoteFilePath = "/public_sites/matheussoares/imagens";
                     string remoteServer = "200.145.153.91";
@@ -416,12 +419,11 @@ namespace tccCsharp
                 {
                     CarregarImagem(Imagens[i]);
                 }
-                EditandoImagem = false;
                 pcbUpload.Image = null;
                 txtDescricaoImg.Text = string.Empty;
                 txtNomeImagem.Text = string.Empty;
             }
-
+            EditandoImagem = false;
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -445,7 +447,7 @@ namespace tccCsharp
                 }
                 else
                 {
-                    MessageBox.Show("Tem alguma coisa errada sua mula");
+                    //MessageBox.Show("Tem alguma coisa errada sua mula");
                 }
 
             }
