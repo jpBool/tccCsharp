@@ -281,6 +281,8 @@ namespace tccCsharp
             comboStatus.ValueMember = "id_status";
             comboStatus.DisplayMember = "status";
 
+            dtpPrevisao.Value = DateTime.Today.AddYears(1);
+
             AtualizaCabecalho();
             AtualizaCampos();
             DoDesign();

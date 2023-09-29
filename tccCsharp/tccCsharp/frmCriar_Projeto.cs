@@ -257,6 +257,8 @@ namespace tccCsharp
             comboStatus.DataSource = Program.lista_status;
             comboStatus.ValueMember = "id_status";
             comboStatus.DisplayMember = "status";
+
+            dtpPrevisao.Value = DateTime.Today.AddYears(1);
         }
 
         private void BtnCriar_Click(object sender, EventArgs e)

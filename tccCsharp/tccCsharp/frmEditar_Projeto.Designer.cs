@@ -84,13 +84,13 @@
             this.lblDetalhado = new System.Windows.Forms.Label();
             this.RGBButtons = new tccCsharp.RoundedGroupBox();
             this.TLPButtons1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnEtapas = new RoundButton();
             this.TLPButtons2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnExcluir = new RoundButton();
             this.btnAtualizar = new RoundButton();
             this.btnCancelar = new RoundButton();
             this.btnColaboradores = new RoundButton();
             this.btnImagens = new RoundButton();
+            this.btnEtapas = new RoundButton();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
@@ -949,41 +949,19 @@
             this.TLPButtons1.BackColor = System.Drawing.Color.Transparent;
             this.TLPButtons1.ColumnCount = 1;
             this.TLPButtons1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPButtons1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TLPButtons1.Controls.Add(this.btnEtapas, 0, 3);
-            this.TLPButtons1.Controls.Add(this.TLPButtons2, 0, 0);
-            this.TLPButtons1.Controls.Add(this.btnColaboradores, 0, 1);
-            this.TLPButtons1.Controls.Add(this.btnImagens, 0, 2);
+            this.TLPButtons1.Controls.Add(this.TLPButtons2, 0, 3);
+            this.TLPButtons1.Controls.Add(this.btnColaboradores, 0, 0);
+            this.TLPButtons1.Controls.Add(this.btnImagens, 0, 1);
+            this.TLPButtons1.Controls.Add(this.btnEtapas, 0, 2);
             this.TLPButtons1.Location = new System.Drawing.Point(18, 10);
             this.TLPButtons1.Name = "TLPButtons1";
             this.TLPButtons1.RowCount = 4;
-            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.30303F));
-            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.23232F));
-            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.23232F));
-            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.23232F));
-            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.23125F));
+            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.23357F));
+            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.23357F));
+            this.TLPButtons1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.30162F));
             this.TLPButtons1.Size = new System.Drawing.Size(580, 176);
             this.TLPButtons1.TabIndex = 5;
-            // 
-            // btnEtapas
-            // 
-            this.btnEtapas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEtapas.AutoHoover = false;
-            this.btnEtapas.BordaHoover = System.Drawing.Color.Green;
-            this.btnEtapas.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnEtapas.BorderColor = System.Drawing.Color.Black;
-            this.btnEtapas.BorderRadius = 20;
-            this.btnEtapas.BorderThickness = 4;
-            this.btnEtapas.ButtonColor = System.Drawing.Color.White;
-            this.btnEtapas.Location = new System.Drawing.Point(3, 136);
-            this.btnEtapas.Name = "btnEtapas";
-            this.btnEtapas.Size = new System.Drawing.Size(574, 37);
-            this.btnEtapas.TabIndex = 5;
-            this.btnEtapas.Text = "GERENCIAR ETAPAS DO PROJETO";
-            this.btnEtapas.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnEtapas.UseVisualStyleBackColor = true;
-            this.btnEtapas.Click += new System.EventHandler(this.btnEtapas_Click);
             // 
             // TLPButtons2
             // 
@@ -997,17 +975,18 @@
             this.TLPButtons2.Controls.Add(this.btnExcluir, 0, 0);
             this.TLPButtons2.Controls.Add(this.btnAtualizar, 2, 0);
             this.TLPButtons2.Controls.Add(this.btnCancelar, 1, 0);
-            this.TLPButtons2.Location = new System.Drawing.Point(0, 3);
+            this.TLPButtons2.Location = new System.Drawing.Point(0, 123);
             this.TLPButtons2.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.TLPButtons2.Name = "TLPButtons2";
             this.TLPButtons2.RowCount = 1;
             this.TLPButtons2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPButtons2.Size = new System.Drawing.Size(580, 47);
-            this.TLPButtons2.TabIndex = 0;
+            this.TLPButtons2.Size = new System.Drawing.Size(580, 50);
+            this.TLPButtons2.TabIndex = 6;
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcluir.AutoHoover = false;
             this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
@@ -1018,16 +997,16 @@
             this.btnExcluir.ButtonColor = System.Drawing.Color.White;
             this.btnExcluir.Location = new System.Drawing.Point(3, 3);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(187, 41);
+            this.btnExcluir.Size = new System.Drawing.Size(187, 44);
             this.btnExcluir.TabIndex = 4;
             this.btnExcluir.Text = "EXCLUIR PROJETO";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAtualizar.AutoHoover = false;
             this.btnAtualizar.BordaHoover = System.Drawing.Color.Green;
@@ -1038,16 +1017,16 @@
             this.btnAtualizar.ButtonColor = System.Drawing.Color.White;
             this.btnAtualizar.Location = new System.Drawing.Point(389, 3);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(188, 41);
+            this.btnAtualizar.Size = new System.Drawing.Size(188, 44);
             this.btnAtualizar.TabIndex = 3;
             this.btnAtualizar.Text = "ATUALIZAR";
             this.btnAtualizar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancelar.AutoHoover = false;
             this.btnCancelar.BordaHoover = System.Drawing.Color.Green;
@@ -1058,16 +1037,16 @@
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(196, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(187, 41);
+            this.btnCancelar.Size = new System.Drawing.Size(187, 44);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "SAIR SEM SALVAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnColaboradores
             // 
-            this.btnColaboradores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnColaboradores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnColaboradores.AutoHoover = false;
             this.btnColaboradores.BordaHoover = System.Drawing.Color.Green;
@@ -1076,7 +1055,7 @@
             this.btnColaboradores.BorderRadius = 20;
             this.btnColaboradores.BorderThickness = 4;
             this.btnColaboradores.ButtonColor = System.Drawing.Color.White;
-            this.btnColaboradores.Location = new System.Drawing.Point(3, 56);
+            this.btnColaboradores.Location = new System.Drawing.Point(3, 3);
             this.btnColaboradores.Name = "btnColaboradores";
             this.btnColaboradores.Size = new System.Drawing.Size(574, 34);
             this.btnColaboradores.TabIndex = 3;
@@ -1087,7 +1066,8 @@
             // 
             // btnImagens
             // 
-            this.btnImagens.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnImagens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnImagens.AutoHoover = false;
             this.btnImagens.BordaHoover = System.Drawing.Color.Green;
@@ -1096,7 +1076,7 @@
             this.btnImagens.BorderRadius = 20;
             this.btnImagens.BorderThickness = 4;
             this.btnImagens.ButtonColor = System.Drawing.Color.White;
-            this.btnImagens.Location = new System.Drawing.Point(3, 96);
+            this.btnImagens.Location = new System.Drawing.Point(3, 43);
             this.btnImagens.Name = "btnImagens";
             this.btnImagens.Size = new System.Drawing.Size(574, 34);
             this.btnImagens.TabIndex = 4;
@@ -1104,6 +1084,27 @@
             this.btnImagens.TextoPrincipal = System.Drawing.Color.Black;
             this.btnImagens.UseVisualStyleBackColor = true;
             this.btnImagens.Click += new System.EventHandler(this.btnImagens_Click);
+            // 
+            // btnEtapas
+            // 
+            this.btnEtapas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEtapas.AutoHoover = false;
+            this.btnEtapas.BordaHoover = System.Drawing.Color.Green;
+            this.btnEtapas.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnEtapas.BorderColor = System.Drawing.Color.Black;
+            this.btnEtapas.BorderRadius = 20;
+            this.btnEtapas.BorderThickness = 4;
+            this.btnEtapas.ButtonColor = System.Drawing.Color.White;
+            this.btnEtapas.Location = new System.Drawing.Point(3, 83);
+            this.btnEtapas.Name = "btnEtapas";
+            this.btnEtapas.Size = new System.Drawing.Size(574, 34);
+            this.btnEtapas.TabIndex = 5;
+            this.btnEtapas.Text = "GERENCIAR ETAPAS DO PROJETO";
+            this.btnEtapas.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnEtapas.UseVisualStyleBackColor = true;
+            this.btnEtapas.Click += new System.EventHandler(this.btnEtapas_Click);
             // 
             // TLPHead2
             // 
@@ -1528,11 +1529,7 @@
         private RoundedGroupBox RGBButtons;
         private System.Windows.Forms.TableLayoutPanel TLPHead2;
         private System.Windows.Forms.TableLayoutPanel TLPHead1;
-        private RoundButton btnAtualizar;
-        private RoundButton btnCancelar;
-        private RoundButton btnExcluir;
         private System.Windows.Forms.TableLayoutPanel TLPButtons1;
-        private System.Windows.Forms.TableLayoutPanel TLPButtons2;
         private RoundButton btnEtapas;
         private RoundButton btnColaboradores;
         private RoundButton btnImagens;
@@ -1553,5 +1550,9 @@
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.PictureBox opbLogo;
+        private System.Windows.Forms.TableLayoutPanel TLPButtons2;
+        private RoundButton btnExcluir;
+        private RoundButton btnAtualizar;
+        private RoundButton btnCancelar;
     }
 }
