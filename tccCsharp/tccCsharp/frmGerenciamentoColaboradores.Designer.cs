@@ -606,7 +606,7 @@
             this.opcAvatar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.opcAvatar.AutoHoover = false;
             this.opcAvatar.BordaHoover = System.Drawing.Color.Green;
-            this.opcAvatar.BordaPrincipal = System.Drawing.Color.Black;
+            this.opcAvatar.BordaPrincipal = System.Drawing.Color.Orange;
             this.opcAvatar.Location = new System.Drawing.Point(232, 57);
             this.opcAvatar.Name = "opcAvatar";
             this.opcAvatar.Size = new System.Drawing.Size(140, 140);
@@ -889,7 +889,7 @@
             this.OPBRecarregar.AutoHoover = false;
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
-            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -908,7 +908,7 @@
             this.OPBConfiguracoes.AutoHoover = false;
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
-            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -927,7 +927,7 @@
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
-            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";

@@ -249,6 +249,7 @@
             this.txtPalavras.Name = "txtPalavras";
             this.txtPalavras.Size = new System.Drawing.Size(459, 89);
             this.txtPalavras.TabIndex = 8;
+            this.txtPalavras.TabStop = false;
             this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
             this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
             this.txtPalavras.Leave += new System.EventHandler(this.txtPalavras_Leave);
@@ -280,6 +281,7 @@
             this.txtVideo.Name = "txtVideo";
             this.txtVideo.Size = new System.Drawing.Size(461, 19);
             this.txtVideo.TabIndex = 7;
+            this.txtVideo.TabStop = false;
             this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
             this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
             this.txtVideo.Leave += new System.EventHandler(this.txtVideo_Leave);
@@ -294,6 +296,7 @@
             this.customLine7.Name = "customLine7";
             this.customLine7.Size = new System.Drawing.Size(461, 3);
             this.customLine7.TabIndex = 3;
+            this.customLine7.TabStop = false;
             this.customLine7.Text = "customLine7";
             // 
             // RGBSite
@@ -323,6 +326,7 @@
             this.txtSite.Name = "txtSite";
             this.txtSite.Size = new System.Drawing.Size(461, 19);
             this.txtSite.TabIndex = 6;
+            this.txtSite.TabStop = false;
             this.txtSite.Text = "Site do projeto";
             this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
             this.txtSite.Leave += new System.EventHandler(this.txtSite_Leave);
@@ -337,6 +341,7 @@
             this.customLine6.Name = "customLine6";
             this.customLine6.Size = new System.Drawing.Size(461, 3);
             this.customLine6.TabIndex = 3;
+            this.customLine6.TabStop = false;
             this.customLine6.Text = "customLine6";
             // 
             // RGBBreve
@@ -367,6 +372,7 @@
             this.txtDescricaoBreve.Name = "txtDescricaoBreve";
             this.txtDescricaoBreve.Size = new System.Drawing.Size(400, 19);
             this.txtDescricaoBreve.TabIndex = 5;
+            this.txtDescricaoBreve.TabStop = false;
             this.txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
             this.txtDescricaoBreve.Enter += new System.EventHandler(this.txtDescricaoBreve_Enter);
             this.txtDescricaoBreve.Leave += new System.EventHandler(this.txtDescricaoBreve_Leave);
@@ -392,6 +398,7 @@
             this.customLine5.Name = "customLine5";
             this.customLine5.Size = new System.Drawing.Size(400, 3);
             this.customLine5.TabIndex = 3;
+            this.customLine5.TabStop = false;
             this.customLine5.Text = "customLine5";
             // 
             // RGBLinguagem
@@ -422,6 +429,7 @@
             this.txtLinguagem.Name = "txtLinguagem";
             this.txtLinguagem.Size = new System.Drawing.Size(400, 19);
             this.txtLinguagem.TabIndex = 4;
+            this.txtLinguagem.TabStop = false;
             this.txtLinguagem.Text = "Linguagens de programação utilizadas";
             this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
             this.txtLinguagem.Leave += new System.EventHandler(this.txtLinguagem_Leave);
@@ -447,6 +455,7 @@
             this.customLine4.Name = "customLine4";
             this.customLine4.Size = new System.Drawing.Size(400, 3);
             this.customLine4.TabIndex = 3;
+            this.customLine4.TabStop = false;
             this.customLine4.Text = "customLine4";
             // 
             // RGBAutores
@@ -477,6 +486,7 @@
             this.txtAutores.Name = "txtAutores";
             this.txtAutores.Size = new System.Drawing.Size(400, 19);
             this.txtAutores.TabIndex = 3;
+            this.txtAutores.TabStop = false;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
             this.txtAutores.Leave += new System.EventHandler(this.txtAutores_Leave);
@@ -501,7 +511,8 @@
             this.customLine3.Location = new System.Drawing.Point(8, 26);
             this.customLine3.Name = "customLine3";
             this.customLine3.Size = new System.Drawing.Size(400, 3);
-            this.customLine3.TabIndex = 3;
+            this.customLine3.TabIndex = 0;
+            this.customLine3.TabStop = false;
             this.customLine3.Text = "customLine3";
             // 
             // RGBEmail
@@ -532,6 +543,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(400, 19);
             this.txtEmail.TabIndex = 2;
+            this.txtEmail.TabStop = false;
             this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
@@ -556,7 +568,8 @@
             this.customLine2.Location = new System.Drawing.Point(8, 26);
             this.customLine2.Name = "customLine2";
             this.customLine2.Size = new System.Drawing.Size(400, 3);
-            this.customLine2.TabIndex = 3;
+            this.customLine2.TabIndex = 0;
+            this.customLine2.TabStop = false;
             this.customLine2.Text = "customLine2";
             // 
             // RGBNome
@@ -587,8 +600,10 @@
             this.txtNomeProjeto.Name = "txtNomeProjeto";
             this.txtNomeProjeto.Size = new System.Drawing.Size(400, 19);
             this.txtNomeProjeto.TabIndex = 1;
+            this.txtNomeProjeto.TabStop = false;
             this.txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
             this.txtNomeProjeto.Enter += new System.EventHandler(this.txtNomeProjeto_Enter);
+            this.txtNomeProjeto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNomeProjeto_KeyDown);
             this.txtNomeProjeto.Leave += new System.EventHandler(this.txtNomeProjeto_Leave);
             // 
             // lblcar1
@@ -612,6 +627,7 @@
             this.customLine1.Name = "customLine1";
             this.customLine1.Size = new System.Drawing.Size(400, 3);
             this.customLine1.TabIndex = 0;
+            this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
             // 
             // lblNome
@@ -758,6 +774,7 @@
             this.boxSemPrevisao.Name = "boxSemPrevisao";
             this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
             this.boxSemPrevisao.TabIndex = 9;
+            this.boxSemPrevisao.TabStop = false;
             this.boxSemPrevisao.Text = "Sem Previsão.";
             this.boxSemPrevisao.UseVisualStyleBackColor = true;
             this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
@@ -782,13 +799,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioNão.AutoSize = true;
             this.radioNão.BackColor = System.Drawing.Color.Transparent;
-            this.radioNão.Checked = true;
             this.radioNão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
             this.radioNão.Size = new System.Drawing.Size(56, 24);
             this.radioNão.TabIndex = 12;
-            this.radioNão.TabStop = true;
             this.radioNão.Text = "Não";
             this.radioNão.UseVisualStyleBackColor = false;
             // 
@@ -801,6 +816,7 @@
             this.comboStatus.Name = "comboStatus";
             this.comboStatus.Size = new System.Drawing.Size(258, 28);
             this.comboStatus.TabIndex = 11;
+            this.comboStatus.TabStop = false;
             // 
             // dtpPrevisao
             // 
@@ -812,6 +828,7 @@
             this.dtpPrevisao.Name = "dtpPrevisao";
             this.dtpPrevisao.Size = new System.Drawing.Size(258, 26);
             this.dtpPrevisao.TabIndex = 10;
+            this.dtpPrevisao.TabStop = false;
             this.dtpPrevisao.Value = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             // 
             // lblPublicar
@@ -895,6 +912,7 @@
             this.txtDetalhada.Name = "txtDetalhada";
             this.txtDetalhada.Size = new System.Drawing.Size(595, 285);
             this.txtDetalhada.TabIndex = 14;
+            this.txtDetalhada.TabStop = false;
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
             this.txtDetalhada.Enter += new System.EventHandler(this.txtDetalhada_Enter);
@@ -981,13 +999,11 @@
             this.radioSemModelos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioSemModelos.AutoSize = true;
             this.radioSemModelos.BackColor = System.Drawing.Color.Transparent;
-            this.radioSemModelos.Checked = true;
             this.radioSemModelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSemModelos.Location = new System.Drawing.Point(3, 34);
             this.radioSemModelos.Name = "radioSemModelos";
             this.radioSemModelos.Size = new System.Drawing.Size(173, 24);
             this.radioSemModelos.TabIndex = 15;
-            this.radioSemModelos.TabStop = true;
             this.radioSemModelos.Text = "Não utilizar modelos.";
             this.radioSemModelos.UseVisualStyleBackColor = false;
             // 
@@ -1079,6 +1095,7 @@
             this.btnCriar.Name = "btnCriar";
             this.btnCriar.Size = new System.Drawing.Size(150, 37);
             this.btnCriar.TabIndex = 20;
+            this.btnCriar.TabStop = false;
             this.btnCriar.Text = "CRIAR PROJETO";
             this.btnCriar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCriar.UseVisualStyleBackColor = true;
@@ -1098,6 +1115,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(150, 37);
             this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.TabStop = false;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -1171,7 +1189,7 @@
             this.OPBRecarregar.AutoHoover = false;
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
-            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -1190,7 +1208,7 @@
             this.OPBConfiguracoes.AutoHoover = false;
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
-            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -1209,7 +1227,7 @@
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
-            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Black;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";
@@ -1230,6 +1248,7 @@
             this.Name = "frmCriar_Projeto";
             this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmCriar_Projeto_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCriar_Projeto_KeyDown);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPConteudo.ResumeLayout(false);
             this.TLPFilho1.ResumeLayout(false);

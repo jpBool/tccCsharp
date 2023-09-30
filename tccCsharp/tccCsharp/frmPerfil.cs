@@ -170,6 +170,8 @@ namespace tccCsharp
             btnAdicionar.AutoHoover = true;
             btnAdicionar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnAdicionar.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnAdicionar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
 
             RGBBio.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
@@ -223,6 +225,16 @@ namespace tccCsharp
             opbEditarP1.AutoHoover = true;
             OPBLeft.AutoHoover = true;
             OPBRight.AutoHoover = true;
+
+            opbLogout.BordaPrincipal = Color.Transparent;
+            opbRecarregar.BordaPrincipal = Color.Transparent;
+            opbConfiguracoes.BordaPrincipal = Color.Transparent;
+            opbEditarP3.BordaPrincipal = Color.Transparent;
+            opbEditarP2.BordaPrincipal = Color.Transparent;
+            opbEditarP1.BordaPrincipal = Color.Transparent;
+            OPBLeft.BordaPrincipal = Color.Transparent;
+            OPBRight.BordaPrincipal = Color.Transparent;
+
 
 
             //teste
@@ -420,10 +432,12 @@ namespace tccCsharp
                 {
                     case 1:
                         btnAdicionar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        btnAdicionar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         opbLogout._bordercolor = Color.Transparent;
                         break;
                     case 2:
-                        btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);                      
+                        btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         opbEditarP1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]); //
                         if (opbEditarP1.Visible == false)
                         {
@@ -482,7 +496,6 @@ namespace tccCsharp
                         opbLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         break;
                 }
-
             }
             else if (e.KeyCode == Keys.Enter)
             {
@@ -491,6 +504,7 @@ namespace tccCsharp
                     case 1:
                         index_btn = 0;
                         btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         btnAdicionar_Click(sender, e);
                         break;
                     case 2:

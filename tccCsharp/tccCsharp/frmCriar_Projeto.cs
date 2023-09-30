@@ -14,6 +14,7 @@ namespace tccCsharp
     public partial class frmCriar_Projeto : Form
     {
         public List<GroupSteps> grupos = new List<GroupSteps>();
+        int index_btn = 0;
         public frmCriar_Projeto()
         {
             InitializeComponent();
@@ -67,7 +68,9 @@ namespace tccCsharp
             btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnCancelar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnCancelar.AutoHoover = true;
-            btnCancelar.BordaHoover = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+            btnCancelar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnCancelar.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnCancelar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
 
             btnCriar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
@@ -75,8 +78,8 @@ namespace tccCsharp
             btnCriar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnCriar.AutoHoover = true;
             btnCriar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnCancelar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-
+            btnCriar.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnCriar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
             OPBLogout._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBConfiguracoes._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -85,6 +88,10 @@ namespace tccCsharp
             OPBConfiguracoes.AutoHoover = true;
             OPBRecarregar.AutoHoover = true;
             OPBLogout.AutoHoover = true;
+
+            OPBConfiguracoes.BordaPrincipal = Color.Transparent;
+            OPBRecarregar.BordaPrincipal = Color.Transparent;
+            OPBLogout.BordaPrincipal = Color.Transparent;
 
             OPBConfiguracoes.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             OPBRecarregar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
@@ -259,6 +266,8 @@ namespace tccCsharp
             comboStatus.DisplayMember = "status";
 
             dtpPrevisao.Value = DateTime.Today.AddYears(1);
+
+            this.Focus();
         }
 
         private void BtnCriar_Click(object sender, EventArgs e)
@@ -604,6 +613,110 @@ namespace tccCsharp
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
                     break;
             }
+        }
+        public void indexxxx(KeyEventArgs e)
+        {
+           
+        }
+
+        private void frmCriar_Projeto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                index_btn++;
+                if (index_btn == 20)
+                    index_btn = 1;
+
+                switch (index_btn)
+                {
+                    case 1:
+                        OPBLogout._bordercolor = Color.Transparent;
+                        this.Focus();
+                        break;
+                    case 2:
+                        txtEmail.Focus();
+                        break;
+                    case 3:
+                        txtAutores.Focus();
+                        break;
+                    case 4:
+                        txtLinguagem.Focus();
+                        break;
+                    case 5:
+                        txtDescricaoBreve.Focus();
+                        break;
+                    case 6:
+                        txtSite.Focus();
+                        break;
+                    case 7:
+                        txtVideo.Focus();
+                        break;
+                    case 8:
+                        txtPalavras.Focus();
+                        break;
+                    case 9:
+                        boxSemPrevisao.Focus();
+                        break;
+                    case 10:
+                        dtpPrevisao.Focus();
+                        break;
+                    case 11:
+                        comboStatus.Focus();
+                        break;
+                    case 12:
+                        radioNão.Focus();
+                        break;
+                    case 13:
+                        txtDetalhada.Focus();
+                        break;
+                    case 14:
+                        radioSemModelos.Focus();
+                        break;
+                    case 15:
+                        btnCriar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        btnCriar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    case 16:
+                        btnCriar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnCriar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                        btnCancelar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        btnCancelar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    case 17:
+                        btnCancelar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                        OPBConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    case 18:
+                        OPBConfiguracoes._bordercolor = Color.Transparent;
+                        OPBRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+                    case 19:
+                        OPBRecarregar._bordercolor = Color.Transparent;
+                        OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        break;
+
+
+
+                }
+                lblTitulo.Text = index_btn.ToString();
+
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                switch (index_btn)
+                {
+                    case 1:
+                        break;
+
+                }
+
+            }
+        }
+
+        private void txtNomeProjeto_KeyDown(object sender, KeyEventArgs e)
+        {
+           // indexxxx(e);
         }
     }
 }

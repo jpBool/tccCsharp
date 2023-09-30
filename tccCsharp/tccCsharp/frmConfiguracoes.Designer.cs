@@ -147,7 +147,6 @@ namespace tccCsharp
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
-            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Black;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(952, 7);
             this.OPBLogout.Name = "OPBLogout";
@@ -166,7 +165,6 @@ namespace tccCsharp
             this.opbRecarregar.AutoHoover = false;
             this.opbRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.opbRecarregar.BordaHoover = System.Drawing.Color.Green;
-            this.opbRecarregar.BordaPrincipal = System.Drawing.Color.Black;
             this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.opbRecarregar.Location = new System.Drawing.Point(1015, 7);
             this.opbRecarregar.Name = "opbRecarregar";

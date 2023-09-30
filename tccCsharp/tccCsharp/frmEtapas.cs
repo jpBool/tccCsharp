@@ -59,6 +59,13 @@ namespace tccCsharp
             BtnADDGrupo.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             BtnVoltar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
+            btnADDEtapa.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnADDEtapa.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            BtnADDGrupo.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            BtnADDGrupo.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            BtnVoltar.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            BtnVoltar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+
             GPBEtapa11.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             GPBEtapa12.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             GPBEtapa13.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
@@ -150,6 +157,18 @@ namespace tccCsharp
             OPBRight2.AutoHoover = true;
             OPBUp.AutoHoover = true;
             OPBDown.AutoHoover = true;
+
+            OPBConfiguracoes.BordaPrincipal = Color.Transparent;
+            OPBLogout.BordaPrincipal = Color.Transparent;
+            OPBRecarregar.BordaPrincipal = Color.Transparent;
+            opbEditarP11.BordaPrincipal = Color.Transparent;
+            opbEditarP12.BordaPrincipal = Color.Transparent;
+            opbEditarP13.BordaPrincipal = Color.Transparent;
+            opbEditarP21.BordaPrincipal = Color.Transparent;
+            opbEditarP22.BordaPrincipal = Color.Transparent;
+            opbEditarP23.BordaPrincipal = Color.Transparent;
+            opbEditarE1.BordaPrincipal = Color.Transparent;
+            opbEditarE2.BordaPrincipal = Color.Transparent;
 
             Logo(Program.logo);
         }
@@ -838,18 +857,25 @@ namespace tccCsharp
                 {
                     case 1:
                         btnADDEtapa.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        btnADDEtapa.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         OPBLogout._bordercolor = Color.Transparent;
                         break;
                     case 2:
                         btnADDEtapa.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnADDEtapa.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         BtnADDGrupo.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        BtnADDGrupo.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         break; 
                     case 3:
                         BtnADDGrupo.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnADDGrupo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         BtnVoltar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+                        BtnVoltar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+             
                         break;
                     case 4: 
                         BtnVoltar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnVoltar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         OPBUp._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
                         if (OPBUp.Visible == false)
                         {
@@ -1000,16 +1026,19 @@ namespace tccCsharp
                     case 1:
                         index_btn = 0;
                         btnADDEtapa.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnADDEtapa.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         btnADDEtapa_Click(sender, e);
                         break;
                     case 2:
                         index_btn = 0;
                         BtnADDGrupo.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnADDGrupo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         BtnADDGrupo_Click(sender, e);
                         break;
                     case 3:
                         index_btn = 0;
                         BtnVoltar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        BtnVoltar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         BtnVoltar_Click(sender, e);
                         break;
                     case 4:

@@ -10,8 +10,8 @@ public class RoundButton : Button
     private Color borderColor = Color.Black; // Cor da borda
     private Color buttonColor = Color.White; // Cor do botão
 
-    private Color originalBorderColor; // Armazena a cor original da borda
-    private Color originalForeColor; // Armazena a cor original do texto
+    private Color originalBorderColor { get; set; } = Color.Red;// Armazena a cor original da borda
+    private Color originalForeColor { get; set;} = Color.Red;// Armazena a cor original do texto
 
     private Color bordaHoover; // Cor da borda durante o hover
     private bool autoHover = false;
@@ -146,11 +146,8 @@ public class RoundButton : Button
     {
         if (autoHover)
         {
-            originalBorderColor = borderColor; // Salva a cor original da borda
-            originalForeColor = ForeColor; // Salva a cor original do texto
-
-            borderColor = bordaHoover; // Define a cor da borda durante o hover
-            ForeColor = bordaHoover; // Define a cor do texto durante o hover
+            BorderColor = BordaHoover;
+            ForeColor = BordaHoover;
         }
 
         base.OnMouseEnter(e);

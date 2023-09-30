@@ -13,7 +13,7 @@ namespace tccCsharp
         public float _borderwidth { get; set; } = 3;
 
 
-        private Color bordaPrincippal = Color.Black;
+        private Color bordaPrincippal { get; set; } = Color.Orange;
         private Color bordaHoover = Color.Green;
         private bool autoHoover = false;
 
@@ -23,7 +23,6 @@ namespace tccCsharp
             set
             {
                 bordaPrincippal = value;
-                Refresh();
             }
         }
 
@@ -44,7 +43,6 @@ namespace tccCsharp
             set
             {
                 bordaHoover = value;
-                Refresh();
             }
         }
 
@@ -81,10 +79,7 @@ namespace tccCsharp
         {
             if (AutoHoover == true)
             {
-                BordaPrincipal = _bordercolor;
                 _bordercolor = BordaHoover;
-                ForeColor = BordaHoover;
-                Refresh();
             }
             else
             {
@@ -97,39 +92,10 @@ namespace tccCsharp
             if (AutoHoover == true)
             {
                 _bordercolor = BordaPrincipal;
-                Refresh();
             }
             else
             {
                 base.OnMouseLeave(e);
-            }
-        }
-
-        protected override void OnGotFocus(EventArgs e)
-        {
-            if (AutoHoover == true)
-            {
-                BordaPrincipal = _bordercolor;
-                _bordercolor = BordaHoover;
-                ForeColor = BordaHoover;
-                Refresh();
-            }
-            else
-            {
-                base.OnGotFocus(e);
-            }
-        }
-
-        protected override void OnLostFocus(EventArgs e)
-        {
-            if (AutoHoover == true)
-            {
-                _bordercolor = BordaPrincipal;
-                Refresh();
-            }
-            else
-            {
-                base.OnLostFocus(e);
             }
         }
     }
