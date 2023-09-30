@@ -249,10 +249,8 @@
             this.txtPalavras.Name = "txtPalavras";
             this.txtPalavras.Size = new System.Drawing.Size(459, 89);
             this.txtPalavras.TabIndex = 8;
-            this.txtPalavras.TabStop = false;
             this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
             this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
-            this.txtPalavras.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPalavras_KeyDown);
             this.txtPalavras.Leave += new System.EventHandler(this.txtPalavras_Leave);
             // 
             // RGBYoutube
@@ -282,10 +280,8 @@
             this.txtVideo.Name = "txtVideo";
             this.txtVideo.Size = new System.Drawing.Size(461, 19);
             this.txtVideo.TabIndex = 7;
-            this.txtVideo.TabStop = false;
             this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
             this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
-            this.txtVideo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtVideo_KeyDown);
             this.txtVideo.Leave += new System.EventHandler(this.txtVideo_Leave);
             // 
             // customLine7
@@ -328,10 +324,8 @@
             this.txtSite.Name = "txtSite";
             this.txtSite.Size = new System.Drawing.Size(461, 19);
             this.txtSite.TabIndex = 6;
-            this.txtSite.TabStop = false;
             this.txtSite.Text = "Site do projeto";
             this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
-            this.txtSite.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSite_KeyDown);
             this.txtSite.Leave += new System.EventHandler(this.txtSite_Leave);
             // 
             // customLine6
@@ -375,10 +369,8 @@
             this.txtDescricaoBreve.Name = "txtDescricaoBreve";
             this.txtDescricaoBreve.Size = new System.Drawing.Size(400, 19);
             this.txtDescricaoBreve.TabIndex = 5;
-            this.txtDescricaoBreve.TabStop = false;
             this.txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
             this.txtDescricaoBreve.Enter += new System.EventHandler(this.txtDescricaoBreve_Enter);
-            this.txtDescricaoBreve.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDescricaoBreve_KeyDown);
             this.txtDescricaoBreve.Leave += new System.EventHandler(this.txtDescricaoBreve_Leave);
             // 
             // lblcar5
@@ -433,10 +425,8 @@
             this.txtLinguagem.Name = "txtLinguagem";
             this.txtLinguagem.Size = new System.Drawing.Size(400, 19);
             this.txtLinguagem.TabIndex = 4;
-            this.txtLinguagem.TabStop = false;
             this.txtLinguagem.Text = "Linguagens de programação utilizadas";
             this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
-            this.txtLinguagem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLinguagem_KeyDown);
             this.txtLinguagem.Leave += new System.EventHandler(this.txtLinguagem_Leave);
             // 
             // lblCar4
@@ -491,10 +481,8 @@
             this.txtAutores.Name = "txtAutores";
             this.txtAutores.Size = new System.Drawing.Size(400, 19);
             this.txtAutores.TabIndex = 3;
-            this.txtAutores.TabStop = false;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
-            this.txtAutores.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAutores_KeyDown);
             this.txtAutores.Leave += new System.EventHandler(this.txtAutores_Leave);
             // 
             // lblCar3
@@ -549,10 +537,8 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(400, 19);
             this.txtEmail.TabIndex = 2;
-            this.txtEmail.TabStop = false;
             this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
-            this.txtEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmail_KeyDown);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // lblcar2
@@ -575,9 +561,9 @@
             this.customLine2.Location = new System.Drawing.Point(8, 26);
             this.customLine2.Name = "customLine2";
             this.customLine2.Size = new System.Drawing.Size(400, 3);
-            this.customLine2.TabIndex = 0;
-            this.customLine2.TabStop = false;
+            this.customLine2.TabIndex = 16;
             this.customLine2.Text = "customLine2";
+            this.customLine2.Enter += new System.EventHandler(this.customLine2_Enter);
             // 
             // RGBNome
             // 
@@ -607,10 +593,8 @@
             this.txtNomeProjeto.Name = "txtNomeProjeto";
             this.txtNomeProjeto.Size = new System.Drawing.Size(400, 19);
             this.txtNomeProjeto.TabIndex = 1;
-            this.txtNomeProjeto.TabStop = false;
             this.txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
             this.txtNomeProjeto.Enter += new System.EventHandler(this.txtNomeProjeto_Enter);
-            this.txtNomeProjeto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNomeProjeto_KeyDown);
             this.txtNomeProjeto.Leave += new System.EventHandler(this.txtNomeProjeto_Leave);
             // 
             // lblcar1
@@ -633,9 +617,9 @@
             this.customLine1.Location = new System.Drawing.Point(8, 28);
             this.customLine1.Name = "customLine1";
             this.customLine1.Size = new System.Drawing.Size(400, 3);
-            this.customLine1.TabIndex = 0;
-            this.customLine1.TabStop = false;
+            this.customLine1.TabIndex = 15;
             this.customLine1.Text = "customLine1";
+            this.customLine1.Enter += new System.EventHandler(this.customLine1_Enter);
             // 
             // lblNome
             // 
@@ -781,11 +765,9 @@
             this.boxSemPrevisao.Name = "boxSemPrevisao";
             this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
             this.boxSemPrevisao.TabIndex = 9;
-            this.boxSemPrevisao.TabStop = false;
             this.boxSemPrevisao.Text = "Sem Previsão.";
             this.boxSemPrevisao.UseVisualStyleBackColor = true;
             this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
-            this.boxSemPrevisao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.boxSemPrevisao_KeyDown);
             // 
             // radioSim
             // 
@@ -797,10 +779,9 @@
             this.radioSim.Location = new System.Drawing.Point(443, 71);
             this.radioSim.Name = "radioSim";
             this.radioSim.Size = new System.Drawing.Size(54, 24);
-            this.radioSim.TabIndex = 13;
+            this.radioSim.TabIndex = 12;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
-            this.radioSim.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioSim_KeyDown);
             // 
             // radioNão
             // 
@@ -808,15 +789,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioNão.AutoSize = true;
             this.radioNão.BackColor = System.Drawing.Color.Transparent;
+            this.radioNão.Checked = true;
             this.radioNão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
             this.radioNão.Size = new System.Drawing.Size(56, 24);
             this.radioNão.TabIndex = 12;
+            this.radioNão.TabStop = true;
             this.radioNão.Text = "Não";
             this.radioNão.UseVisualStyleBackColor = false;
-            this.radioNão.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioNão_KeyDown);
-            this.radioNão.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.radioNão_PreviewKeyDown);
             // 
             // comboStatus
             // 
@@ -827,8 +808,6 @@
             this.comboStatus.Name = "comboStatus";
             this.comboStatus.Size = new System.Drawing.Size(258, 28);
             this.comboStatus.TabIndex = 11;
-            this.comboStatus.TabStop = false;
-            this.comboStatus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboStatus_KeyDown);
             // 
             // dtpPrevisao
             // 
@@ -840,9 +819,7 @@
             this.dtpPrevisao.Name = "dtpPrevisao";
             this.dtpPrevisao.Size = new System.Drawing.Size(258, 26);
             this.dtpPrevisao.TabIndex = 10;
-            this.dtpPrevisao.TabStop = false;
             this.dtpPrevisao.Value = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
-            this.dtpPrevisao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpPrevisao_KeyDown);
             // 
             // lblPublicar
             // 
@@ -924,12 +901,10 @@
             this.txtDetalhada.Multiline = true;
             this.txtDetalhada.Name = "txtDetalhada";
             this.txtDetalhada.Size = new System.Drawing.Size(595, 285);
-            this.txtDetalhada.TabIndex = 14;
-            this.txtDetalhada.TabStop = false;
+            this.txtDetalhada.TabIndex = 13;
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
             this.txtDetalhada.Enter += new System.EventHandler(this.txtDetalhada_Enter);
-            this.txtDetalhada.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDetalhada_KeyDown);
             this.txtDetalhada.Leave += new System.EventHandler(this.txtDetalhada_Leave);
             // 
             // lblDetalhado
@@ -1007,21 +982,21 @@
             this.radioPrazos.TabIndex = 19;
             this.radioPrazos.Text = "Modelo de Prazos.";
             this.radioPrazos.UseVisualStyleBackColor = false;
-            this.radioPrazos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioPrazos_KeyDown);
             // 
             // radioSemModelos
             // 
             this.radioSemModelos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioSemModelos.AutoSize = true;
             this.radioSemModelos.BackColor = System.Drawing.Color.Transparent;
+            this.radioSemModelos.Checked = true;
             this.radioSemModelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSemModelos.Location = new System.Drawing.Point(3, 34);
             this.radioSemModelos.Name = "radioSemModelos";
             this.radioSemModelos.Size = new System.Drawing.Size(173, 24);
-            this.radioSemModelos.TabIndex = 15;
+            this.radioSemModelos.TabIndex = 14;
+            this.radioSemModelos.TabStop = true;
             this.radioSemModelos.Text = "Não utilizar modelos.";
             this.radioSemModelos.UseVisualStyleBackColor = false;
-            this.radioSemModelos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioSemModelos_KeyDown);
             // 
             // radioEquipes
             // 
@@ -1035,7 +1010,6 @@
             this.radioEquipes.TabIndex = 18;
             this.radioEquipes.Text = "Modelo de Equipes de desenvolvimento.";
             this.radioEquipes.UseVisualStyleBackColor = false;
-            this.radioEquipes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioEquipes_KeyDown);
             // 
             // radioKanban
             // 
@@ -1049,7 +1023,6 @@
             this.radioKanban.TabIndex = 16;
             this.radioKanban.Text = "Modelo Kanban.";
             this.radioKanban.UseVisualStyleBackColor = false;
-            this.radioKanban.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioKanban_KeyDown);
             // 
             // radioScrum
             // 
@@ -1063,7 +1036,6 @@
             this.radioScrum.TabIndex = 17;
             this.radioScrum.Text = "Modelo Scrum.";
             this.radioScrum.UseVisualStyleBackColor = false;
-            this.radioScrum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioScrum_KeyDown);
             // 
             // TLPHead2
             // 
@@ -1267,7 +1239,6 @@
             this.Name = "frmCriar_Projeto";
             this.Text = "Sensei";
             this.Load += new System.EventHandler(this.frmCriar_Projeto_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCriar_Projeto_KeyDown);
             this.TLP_Mãe.ResumeLayout(false);
             this.TLPConteudo.ResumeLayout(false);
             this.TLPFilho1.ResumeLayout(false);
