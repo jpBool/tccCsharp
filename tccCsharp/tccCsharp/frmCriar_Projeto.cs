@@ -616,11 +616,6 @@ namespace tccCsharp
         }
         public void indexxxx(KeyEventArgs e)
         {
-           
-        }
-
-        private void frmCriar_Projeto_KeyDown(object sender, KeyEventArgs e)
-        {
             if (e.KeyCode == Keys.Tab)
             {
                 index_btn++;
@@ -631,7 +626,7 @@ namespace tccCsharp
                 {
                     case 1:
                         OPBLogout._bordercolor = Color.Transparent;
-                        this.Focus();
+                        txtNomeProjeto.Focus();
                         break;
                     case 2:
                         txtEmail.Focus();
@@ -714,9 +709,109 @@ namespace tccCsharp
             }
         }
 
+        private void frmCriar_Projeto_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
         private void txtNomeProjeto_KeyDown(object sender, KeyEventArgs e)
         {
-           // indexxxx(e);
+           indexxxx(e);
+        }
+
+        private void txtAutores_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void txtLinguagem_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void txtDescricaoBreve_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void txtSite_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void txtVideo_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void txtPalavras_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void txtEmail_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void boxSemPrevisao_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void dtpPrevisao_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void comboStatus_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioNão_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioSim_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void txtDetalhada_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioSemModelos_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioKanban_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioScrum_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioEquipes_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioPrazos_KeyDown(object sender, KeyEventArgs e)
+        {
+            indexxxx(e);
+        }
+
+        private void radioNão_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            
         }
     }
 }

@@ -252,6 +252,7 @@
             this.txtPalavras.TabStop = false;
             this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
             this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
+            this.txtPalavras.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPalavras_KeyDown);
             this.txtPalavras.Leave += new System.EventHandler(this.txtPalavras_Leave);
             // 
             // RGBYoutube
@@ -284,6 +285,7 @@
             this.txtVideo.TabStop = false;
             this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
             this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
+            this.txtVideo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtVideo_KeyDown);
             this.txtVideo.Leave += new System.EventHandler(this.txtVideo_Leave);
             // 
             // customLine7
@@ -329,6 +331,7 @@
             this.txtSite.TabStop = false;
             this.txtSite.Text = "Site do projeto";
             this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
+            this.txtSite.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSite_KeyDown);
             this.txtSite.Leave += new System.EventHandler(this.txtSite_Leave);
             // 
             // customLine6
@@ -375,6 +378,7 @@
             this.txtDescricaoBreve.TabStop = false;
             this.txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
             this.txtDescricaoBreve.Enter += new System.EventHandler(this.txtDescricaoBreve_Enter);
+            this.txtDescricaoBreve.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDescricaoBreve_KeyDown);
             this.txtDescricaoBreve.Leave += new System.EventHandler(this.txtDescricaoBreve_Leave);
             // 
             // lblcar5
@@ -432,6 +436,7 @@
             this.txtLinguagem.TabStop = false;
             this.txtLinguagem.Text = "Linguagens de programação utilizadas";
             this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
+            this.txtLinguagem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLinguagem_KeyDown);
             this.txtLinguagem.Leave += new System.EventHandler(this.txtLinguagem_Leave);
             // 
             // lblCar4
@@ -489,6 +494,7 @@
             this.txtAutores.TabStop = false;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
+            this.txtAutores.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAutores_KeyDown);
             this.txtAutores.Leave += new System.EventHandler(this.txtAutores_Leave);
             // 
             // lblCar3
@@ -546,6 +552,7 @@
             this.txtEmail.TabStop = false;
             this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
+            this.txtEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmail_KeyDown);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // lblcar2
@@ -778,6 +785,7 @@
             this.boxSemPrevisao.Text = "Sem Previsão.";
             this.boxSemPrevisao.UseVisualStyleBackColor = true;
             this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
+            this.boxSemPrevisao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.boxSemPrevisao_KeyDown);
             // 
             // radioSim
             // 
@@ -792,6 +800,7 @@
             this.radioSim.TabIndex = 13;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
+            this.radioSim.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioSim_KeyDown);
             // 
             // radioNão
             // 
@@ -806,6 +815,8 @@
             this.radioNão.TabIndex = 12;
             this.radioNão.Text = "Não";
             this.radioNão.UseVisualStyleBackColor = false;
+            this.radioNão.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioNão_KeyDown);
+            this.radioNão.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.radioNão_PreviewKeyDown);
             // 
             // comboStatus
             // 
@@ -817,6 +828,7 @@
             this.comboStatus.Size = new System.Drawing.Size(258, 28);
             this.comboStatus.TabIndex = 11;
             this.comboStatus.TabStop = false;
+            this.comboStatus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboStatus_KeyDown);
             // 
             // dtpPrevisao
             // 
@@ -830,6 +842,7 @@
             this.dtpPrevisao.TabIndex = 10;
             this.dtpPrevisao.TabStop = false;
             this.dtpPrevisao.Value = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.dtpPrevisao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpPrevisao_KeyDown);
             // 
             // lblPublicar
             // 
@@ -916,6 +929,7 @@
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
             this.txtDetalhada.Enter += new System.EventHandler(this.txtDetalhada_Enter);
+            this.txtDetalhada.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDetalhada_KeyDown);
             this.txtDetalhada.Leave += new System.EventHandler(this.txtDetalhada_Leave);
             // 
             // lblDetalhado
@@ -993,6 +1007,7 @@
             this.radioPrazos.TabIndex = 19;
             this.radioPrazos.Text = "Modelo de Prazos.";
             this.radioPrazos.UseVisualStyleBackColor = false;
+            this.radioPrazos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioPrazos_KeyDown);
             // 
             // radioSemModelos
             // 
@@ -1006,6 +1021,7 @@
             this.radioSemModelos.TabIndex = 15;
             this.radioSemModelos.Text = "Não utilizar modelos.";
             this.radioSemModelos.UseVisualStyleBackColor = false;
+            this.radioSemModelos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioSemModelos_KeyDown);
             // 
             // radioEquipes
             // 
@@ -1019,6 +1035,7 @@
             this.radioEquipes.TabIndex = 18;
             this.radioEquipes.Text = "Modelo de Equipes de desenvolvimento.";
             this.radioEquipes.UseVisualStyleBackColor = false;
+            this.radioEquipes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioEquipes_KeyDown);
             // 
             // radioKanban
             // 
@@ -1032,6 +1049,7 @@
             this.radioKanban.TabIndex = 16;
             this.radioKanban.Text = "Modelo Kanban.";
             this.radioKanban.UseVisualStyleBackColor = false;
+            this.radioKanban.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioKanban_KeyDown);
             // 
             // radioScrum
             // 
@@ -1045,6 +1063,7 @@
             this.radioScrum.TabIndex = 17;
             this.radioScrum.Text = "Modelo Scrum.";
             this.radioScrum.UseVisualStyleBackColor = false;
+            this.radioScrum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioScrum_KeyDown);
             // 
             // TLPHead2
             // 
