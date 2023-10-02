@@ -83,6 +83,11 @@
             this.txtDetalhada = new System.Windows.Forms.TextBox();
             this.lblDetalhado = new System.Windows.Forms.Label();
             this.RGBModelos = new tccCsharp.RoundedGroupBox();
+            this.Invisi5 = new CustomLine();
+            this.Invisi4 = new CustomLine();
+            this.Invisi3 = new CustomLine();
+            this.Invisi2 = new CustomLine();
+            this.Invisi1 = new CustomLine();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.lblModelos = new System.Windows.Forms.Label();
             this.radioPrazos = new System.Windows.Forms.RadioButton();
@@ -562,8 +567,8 @@
             this.customLine2.Name = "customLine2";
             this.customLine2.Size = new System.Drawing.Size(400, 3);
             this.customLine2.TabIndex = 16;
+            this.customLine2.TabStop = false;
             this.customLine2.Text = "customLine2";
-            this.customLine2.Enter += new System.EventHandler(this.customLine2_Enter);
             // 
             // RGBNome
             // 
@@ -618,8 +623,8 @@
             this.customLine1.Name = "customLine1";
             this.customLine1.Size = new System.Drawing.Size(400, 3);
             this.customLine1.TabIndex = 15;
+            this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
-            this.customLine1.Enter += new System.EventHandler(this.customLine1_Enter);
             // 
             // lblNome
             // 
@@ -924,6 +929,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBModelos.BackgroundColor = System.Drawing.Color.White;
             this.RGBModelos.BorderWidth = 2F;
+            this.RGBModelos.Controls.Add(this.Invisi5);
+            this.RGBModelos.Controls.Add(this.Invisi4);
+            this.RGBModelos.Controls.Add(this.Invisi3);
+            this.RGBModelos.Controls.Add(this.Invisi2);
+            this.RGBModelos.Controls.Add(this.Invisi1);
             this.RGBModelos.Controls.Add(this.TLPOpcoes);
             this.RGBModelos.CornerRadius = 20;
             this.RGBModelos.Location = new System.Drawing.Point(3, 346);
@@ -932,6 +942,71 @@
             this.RGBModelos.Size = new System.Drawing.Size(619, 192);
             this.RGBModelos.TabIndex = 11;
             this.RGBModelos.TabStop = false;
+            // 
+            // Invisi5
+            // 
+            this.Invisi5.LineColor = System.Drawing.Color.Black;
+            this.Invisi5.LineWidth = 1;
+            this.Invisi5.Location = new System.Drawing.Point(487, 141);
+            this.Invisi5.Name = "Invisi5";
+            this.Invisi5.Size = new System.Drawing.Size(75, 23);
+            this.Invisi5.TabIndex = 19;
+            this.Invisi5.Text = "Invisi5";
+            this.Invisi5.Enter += new System.EventHandler(this.Invisi5_Enter);
+            this.Invisi5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi5_KeyDown);
+            this.Invisi5.Leave += new System.EventHandler(this.Invisi5_Leave);
+            // 
+            // Invisi4
+            // 
+            this.Invisi4.LineColor = System.Drawing.Color.Black;
+            this.Invisi4.LineWidth = 1;
+            this.Invisi4.Location = new System.Drawing.Point(487, 112);
+            this.Invisi4.Name = "Invisi4";
+            this.Invisi4.Size = new System.Drawing.Size(75, 23);
+            this.Invisi4.TabIndex = 18;
+            this.Invisi4.Text = "Invisi4";
+            this.Invisi4.Enter += new System.EventHandler(this.Invisi4_Enter);
+            this.Invisi4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi4_KeyDown);
+            this.Invisi4.Leave += new System.EventHandler(this.Invisi4_Leave);
+            // 
+            // Invisi3
+            // 
+            this.Invisi3.LineColor = System.Drawing.Color.Black;
+            this.Invisi3.LineWidth = 1;
+            this.Invisi3.Location = new System.Drawing.Point(487, 83);
+            this.Invisi3.Name = "Invisi3";
+            this.Invisi3.Size = new System.Drawing.Size(75, 23);
+            this.Invisi3.TabIndex = 17;
+            this.Invisi3.Text = "Invisi3";
+            this.Invisi3.Enter += new System.EventHandler(this.Invisi3_Enter);
+            this.Invisi3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi3_KeyDown);
+            this.Invisi3.Leave += new System.EventHandler(this.Invisi3_Leave);
+            // 
+            // Invisi2
+            // 
+            this.Invisi2.LineColor = System.Drawing.Color.Black;
+            this.Invisi2.LineWidth = 1;
+            this.Invisi2.Location = new System.Drawing.Point(487, 54);
+            this.Invisi2.Name = "Invisi2";
+            this.Invisi2.Size = new System.Drawing.Size(75, 23);
+            this.Invisi2.TabIndex = 16;
+            this.Invisi2.Text = "Invisi2";
+            this.Invisi2.Enter += new System.EventHandler(this.Invisi2_Enter);
+            this.Invisi2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi2_KeyDown);
+            this.Invisi2.Leave += new System.EventHandler(this.Invisi2_Leave);
+            // 
+            // Invisi1
+            // 
+            this.Invisi1.LineColor = System.Drawing.Color.Black;
+            this.Invisi1.LineWidth = 1;
+            this.Invisi1.Location = new System.Drawing.Point(487, 25);
+            this.Invisi1.Name = "Invisi1";
+            this.Invisi1.Size = new System.Drawing.Size(75, 23);
+            this.Invisi1.TabIndex = 15;
+            this.Invisi1.Text = "Invisi1";
+            this.Invisi1.Enter += new System.EventHandler(this.Invisi1_Enter);
+            this.Invisi1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi1_KeyDown);
+            this.Invisi1.Leave += new System.EventHandler(this.Invisi1_Leave);
             // 
             // TLPOpcoes
             // 
@@ -956,7 +1031,7 @@
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.TLPOpcoes.Size = new System.Drawing.Size(529, 192);
+            this.TLPOpcoes.Size = new System.Drawing.Size(449, 192);
             this.TLPOpcoes.TabIndex = 8;
             // 
             // lblModelos
@@ -1358,5 +1433,10 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.CheckBox boxSemPrevisao;
         private System.Windows.Forms.PictureBox opbLogo;
+        private CustomLine Invisi5;
+        private CustomLine Invisi4;
+        private CustomLine Invisi3;
+        private CustomLine Invisi2;
+        private CustomLine Invisi1;
     }
 }

@@ -169,8 +169,8 @@ namespace tccCsharp
             btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnAdicionar.AutoHoover = true;
             btnAdicionar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
-            btnAdicionar.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnAdicionar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnAdicionar.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnAdicionar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
 
@@ -436,7 +436,7 @@ namespace tccCsharp
                         opbLogout._bordercolor = Color.Transparent;
                         break;
                     case 2:
-                        btnAdicionar.BorderColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+                        btnAdicionar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
                         btnAdicionar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                         opbEditarP1._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]); //
                         if (opbEditarP1.Visible == false)

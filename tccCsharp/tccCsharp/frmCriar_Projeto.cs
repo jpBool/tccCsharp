@@ -14,7 +14,6 @@ namespace tccCsharp
     public partial class frmCriar_Projeto : Form
     {
         public List<GroupSteps> grupos = new List<GroupSteps>();
-        int index_btn = 0;
         public frmCriar_Projeto()
         {
             InitializeComponent();
@@ -69,7 +68,7 @@ namespace tccCsharp
             btnCancelar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnCancelar.AutoHoover = true;
             btnCancelar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnCancelar.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnCancelar.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnCancelar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
 
@@ -78,7 +77,7 @@ namespace tccCsharp
             btnCriar.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnCriar.AutoHoover = true;
             btnCriar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnCriar.BordaPrincipal = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            btnCriar.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnCriar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
             OPBLogout._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -98,6 +97,17 @@ namespace tccCsharp
             OPBLogout.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
 
             lblTitulo.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+
+            Invisi1.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi1.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi2.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi2.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi3.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi3.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi4.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi4.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi5.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Invisi5.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
             Logo(Program.logo);
         }
@@ -615,16 +625,106 @@ namespace tccCsharp
             }
         }
 
-        private void customLine1_Enter(object sender, EventArgs e)
+        private void Invisi1_Enter(object sender, EventArgs e)
         {
-            btnCriar.Visible = false;
-            btnCancelar.Visible = true;
+            btnCriar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnCriar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
-        private void customLine2_Enter(object sender, EventArgs e)
+        private void Invisi2_Enter(object sender, EventArgs e)
         {
-            btnCriar.Visible = true;
-            btnCancelar.Visible = false;
+            btnCancelar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnCancelar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void Invisi3_Enter(object sender, EventArgs e)
+        {
+            OPBConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void Invisi4_Enter(object sender, EventArgs e)
+        {
+            OPBRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void Invisi5_Enter(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void Invisi1_Leave(object sender, EventArgs e)
+        {
+            btnCriar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnCriar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void Invisi2_Leave(object sender, EventArgs e)
+        {
+            btnCancelar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void Invisi3_Leave(object sender, EventArgs e)
+        {
+            OPBConfiguracoes._bordercolor = Color.Transparent;
+        }
+
+        private void Invisi4_Leave(object sender, EventArgs e)
+        {
+            OPBRecarregar._bordercolor = Color.Transparent;
+        }
+
+        private void Invisi5_Leave(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.Transparent;
+        }
+
+        private void Invisi1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+            {
+                btnCriar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnCriar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                BtnCriar_Click(sender, e);
+            }
+        }
+
+        private void Invisi2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCancelar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnCancelar_Click(sender, e);
+            }
+        }
+
+        private void Invisi3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBConfiguracoes._bordercolor = Color.Transparent;
+                OPBConfiguracoes_Click_1(sender, e);
+                
+            }
+         }
+
+        private void Invisi4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBRecarregar._bordercolor = Color.Transparent;
+                OPBRecarregar_Click(sender, e);  
+            }
+        }
+
+        private void Invisi5_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBLogout._bordercolor = Color.Transparent;
+                OPBLogout_Click(sender, e);   
+            }
         }
     }
 }
