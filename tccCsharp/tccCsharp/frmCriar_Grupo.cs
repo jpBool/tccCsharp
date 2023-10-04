@@ -19,6 +19,7 @@ namespace tccCsharp
         public frmCriar_Grupo()
         {
             InitializeComponent();
+            gbAgrupaCL.Visible = false;
         }
 
         private void DoDesign()

@@ -181,8 +181,6 @@ C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccC
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.pdb
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmLogin.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmPerfil.resources
-C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmAcessibilidade.resources
-C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmPersonalizacao.resources
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmConfiguracoes.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmConfiguracoes.resources
 C:\Users\ra2157050\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Projeto.resources
@@ -237,7 +235,6 @@ C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debu
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.exe
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.pdb
 C:\Users\ra2157057\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Projeto.resources
-C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.Coisas.resources
 C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmConfiguracoes.resources
 C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Projeto.resources
 C:\Users\jairs\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Projeto.resources
@@ -284,3 +281,10 @@ C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debu
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoImagens.resources
 C:\Users\mathe\OneDrive\Documentos\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmImagem.resources
+C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.dll
+C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\bin\Debug\Renci.SshNet.xml
+C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Etapa.resources
+C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmCriar_Grupo.resources
+C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Etapa.resources
+C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmEditar_Grupo.resources
+C:\Users\Usuario\Documents\GitHub\tccCsharp\tccCsharp\tccCsharp\obj\Debug\tccCsharp.frmGerenciamentoColaboradores.resources

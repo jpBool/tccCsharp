@@ -25,6 +25,7 @@ namespace tccCsharp
             InitializeComponent();
             IdEtapa = idRecebido;
             numGrupos = quantRecebido;
+            gbAgrupaCL.Visible = false;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
@@ -214,6 +215,11 @@ namespace tccCsharp
             AtualizaCabecalho();
             CarregaInfo();
             liberado = true;
+
+            //teste (n funcionou) 
+            txtNomeEtapa.TabIndex = 1;
+            txtDescricao.TabIndex = 2;
+            boxSim.TabIndex = 3;
         }
 
         private void trackPercent_ValueChanged(object sender, EventArgs e)
@@ -478,6 +484,11 @@ namespace tccCsharp
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
                     break;
             }
+        }
+
+        private void clAtualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
