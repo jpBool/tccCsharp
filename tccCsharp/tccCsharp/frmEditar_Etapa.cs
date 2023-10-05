@@ -25,7 +25,6 @@ namespace tccCsharp
             InitializeComponent();
             IdEtapa = idRecebido;
             numGrupos = quantRecebido;
-            gbAgrupaCL.Visible = false;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)

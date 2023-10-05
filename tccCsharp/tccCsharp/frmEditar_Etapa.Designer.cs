@@ -56,6 +56,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBPrioridade = new tccCsharp.RoundedGroupBox();
+            this.clConfig = new CustomLine();
+            this.clLogout = new CustomLine();
+            this.clAtualizar = new CustomLine();
+            this.clRecarregar = new CustomLine();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblPeso = new System.Windows.Forms.Label();
@@ -66,6 +70,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.numPercent = new System.Windows.Forms.NumericUpDown();
             this.trackPercent = new System.Windows.Forms.TrackBar();
+            this.clExcluir = new CustomLine();
+            this.clSairSemS = new CustomLine();
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.radFim = new System.Windows.Forms.RadioButton();
@@ -103,13 +109,6 @@
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
-            this.gbAgrupaCL = new System.Windows.Forms.GroupBox();
-            this.clLogout = new CustomLine();
-            this.clSairSemS = new CustomLine();
-            this.clRecarregar = new CustomLine();
-            this.clExcluir = new CustomLine();
-            this.clConfig = new CustomLine();
-            this.clAtualizar = new CustomLine();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
@@ -145,7 +144,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
-            this.gbAgrupaCL.SuspendLayout();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -256,7 +254,7 @@
             this.RGBNome.Location = new System.Drawing.Point(138, 13);
             this.RGBNome.Name = "RGBNome";
             this.RGBNome.Size = new System.Drawing.Size(477, 36);
-            this.RGBNome.TabIndex = 0;
+            this.RGBNome.TabIndex = 1;
             this.RGBNome.TabStop = false;
             // 
             // txtNomeEtapa
@@ -295,6 +293,7 @@
             this.customLine1.Name = "customLine1";
             this.customLine1.Size = new System.Drawing.Size(400, 3);
             this.customLine1.TabIndex = 0;
+            this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
             // 
             // lblNome
@@ -348,13 +347,12 @@
             this.RGBDecri1.BackColor = System.Drawing.Color.Transparent;
             this.RGBDecri1.BackgroundColor = System.Drawing.Color.White;
             this.RGBDecri1.BorderWidth = 2F;
-            this.RGBDecri1.Controls.Add(this.gbAgrupaCL);
             this.RGBDecri1.Controls.Add(this.txtDescricao);
             this.RGBDecri1.CornerRadius = 12;
             this.RGBDecri1.Location = new System.Drawing.Point(138, 66);
             this.RGBDecri1.Name = "RGBDecri1";
             this.RGBDecri1.Size = new System.Drawing.Size(477, 120);
-            this.RGBDecri1.TabIndex = 15;
+            this.RGBDecri1.TabIndex = 2;
             this.RGBDecri1.TabStop = false;
             // 
             // txtDescricao
@@ -385,7 +383,7 @@
             this.RGBDescri2.Location = new System.Drawing.Point(138, 255);
             this.RGBDescri2.Name = "RGBDescri2";
             this.RGBDescri2.Size = new System.Drawing.Size(477, 123);
-            this.RGBDescri2.TabIndex = 17;
+            this.RGBDescri2.TabIndex = 4;
             this.RGBDescri2.TabStop = false;
             // 
             // txtDescriImpedimento
@@ -431,7 +429,7 @@
             this.RGBCampos.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.RGBCampos.Name = "RGBCampos";
             this.RGBCampos.Size = new System.Drawing.Size(618, 136);
-            this.RGBCampos.TabIndex = 3;
+            this.RGBCampos.TabIndex = 5;
             this.RGBCampos.TabStop = false;
             // 
             // tableLayoutPanel3
@@ -556,8 +554,49 @@
             this.RGBPrioridade.Location = new System.Drawing.Point(3, 279);
             this.RGBPrioridade.Name = "RGBPrioridade";
             this.RGBPrioridade.Size = new System.Drawing.Size(619, 159);
-            this.RGBPrioridade.TabIndex = 2;
+            this.RGBPrioridade.TabIndex = 10;
             this.RGBPrioridade.TabStop = false;
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(487, 65);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 36;
+            this.clConfig.Text = "customLine4";
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(382, 65);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 13);
+            this.clLogout.TabIndex = 35;
+            this.clLogout.Text = "customLine3";
+            // 
+            // clAtualizar
+            // 
+            this.clAtualizar.LineColor = System.Drawing.Color.Black;
+            this.clAtualizar.LineWidth = 1;
+            this.clAtualizar.Location = new System.Drawing.Point(211, 62);
+            this.clAtualizar.Name = "clAtualizar";
+            this.clAtualizar.Size = new System.Drawing.Size(75, 13);
+            this.clAtualizar.TabIndex = 39;
+            this.clAtualizar.Text = "customLine3";
+            this.clAtualizar.Click += new System.EventHandler(this.clAtualizar_Click);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(301, 64);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 14);
+            this.clRecarregar.TabIndex = 34;
+            this.clRecarregar.Text = "customLine2";
             // 
             // tableLayoutPanel4
             // 
@@ -584,7 +623,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(602, 114);
-            this.tableLayoutPanel4.TabIndex = 8;
+            this.tableLayoutPanel4.TabIndex = 11;
             // 
             // label3
             // 
@@ -707,6 +746,26 @@
             this.trackPercent.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackPercent.ValueChanged += new System.EventHandler(this.trackPercent_ValueChanged);
             // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(38, 62);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 14);
+            this.clExcluir.TabIndex = 37;
+            this.clExcluir.Text = "customLine5";
+            // 
+            // clSairSemS
+            // 
+            this.clSairSemS.LineColor = System.Drawing.Color.Black;
+            this.clSairSemS.LineWidth = 1;
+            this.clSairSemS.Location = new System.Drawing.Point(130, 65);
+            this.clSairSemS.Name = "clSairSemS";
+            this.clSairSemS.Size = new System.Drawing.Size(75, 11);
+            this.clSairSemS.TabIndex = 38;
+            this.clSairSemS.Text = "customLine6";
+            // 
             // RGBDetalhada
             // 
             this.RGBDetalhada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -721,7 +780,7 @@
             this.RGBDetalhada.Location = new System.Drawing.Point(3, 3);
             this.RGBDetalhada.Name = "RGBDetalhada";
             this.RGBDetalhada.Size = new System.Drawing.Size(619, 270);
-            this.RGBDetalhada.TabIndex = 0;
+            this.RGBDetalhada.TabIndex = 8;
             this.RGBDetalhada.TabStop = false;
             // 
             // TLPOpcoes
@@ -746,7 +805,7 @@
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TLPOpcoes.Size = new System.Drawing.Size(585, 207);
-            this.TLPOpcoes.TabIndex = 7;
+            this.TLPOpcoes.TabIndex = 9;
             // 
             // radFim
             // 
@@ -777,7 +836,7 @@
             this.TLPEntreGrupos.RowCount = 1;
             this.TLPEntreGrupos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPEntreGrupos.Size = new System.Drawing.Size(583, 80);
-            this.TLPEntreGrupos.TabIndex = 0;
+            this.TLPEntreGrupos.TabIndex = 9;
             // 
             // radMeio
             // 
@@ -859,12 +918,13 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(583, 40);
-            this.tableLayoutPanel2.TabIndex = 3;
+            this.tableLayoutPanel2.TabIndex = 9;
             // 
             // comboGrupo
             // 
             this.comboGrupo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboGrupo.FormattingEnabled = true;
+            this.comboGrupo.IntegralHeight = false;
             this.comboGrupo.Location = new System.Drawing.Point(294, 9);
             this.comboGrupo.Name = "comboGrupo";
             this.comboGrupo.Size = new System.Drawing.Size(166, 21);
@@ -902,13 +962,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBButtons.BackgroundColor = System.Drawing.Color.White;
             this.RGBButtons.BorderWidth = 2F;
+            this.RGBButtons.Controls.Add(this.clConfig);
             this.RGBButtons.Controls.Add(this.tableLayoutPanel1);
+            this.RGBButtons.Controls.Add(this.clLogout);
+            this.RGBButtons.Controls.Add(this.clExcluir);
+            this.RGBButtons.Controls.Add(this.clRecarregar);
+            this.RGBButtons.Controls.Add(this.clAtualizar);
+            this.RGBButtons.Controls.Add(this.clSairSemS);
             this.RGBButtons.CornerRadius = 20;
             this.RGBButtons.Location = new System.Drawing.Point(3, 456);
             this.RGBButtons.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.RGBButtons.Name = "RGBButtons";
             this.RGBButtons.Size = new System.Drawing.Size(619, 82);
-            this.RGBButtons.TabIndex = 1;
+            this.RGBButtons.TabIndex = 11;
             this.RGBButtons.TabStop = false;
             // 
             // tableLayoutPanel1
@@ -922,7 +988,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnExcluir, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnAtualizar, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnCancelar, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 13);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(19, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1294,83 +1360,6 @@
             this.OPBLogout.TabStop = false;
             this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
             // 
-            // gbAgrupaCL
-            // 
-            this.gbAgrupaCL.Controls.Add(this.clAtualizar);
-            this.gbAgrupaCL.Controls.Add(this.clLogout);
-            this.gbAgrupaCL.Controls.Add(this.clSairSemS);
-            this.gbAgrupaCL.Controls.Add(this.clRecarregar);
-            this.gbAgrupaCL.Controls.Add(this.clExcluir);
-            this.gbAgrupaCL.Controls.Add(this.clConfig);
-            this.gbAgrupaCL.Location = new System.Drawing.Point(250, 16);
-            this.gbAgrupaCL.Name = "gbAgrupaCL";
-            this.gbAgrupaCL.Size = new System.Drawing.Size(200, 93);
-            this.gbAgrupaCL.TabIndex = 40;
-            this.gbAgrupaCL.TabStop = false;
-            this.gbAgrupaCL.Text = "groupBox1";
-            this.gbAgrupaCL.Visible = false;
-            // 
-            // clLogout
-            // 
-            this.clLogout.LineColor = System.Drawing.Color.Black;
-            this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(101, 40);
-            this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(75, 13);
-            this.clLogout.TabIndex = 35;
-            this.clLogout.Text = "customLine3";
-            // 
-            // clSairSemS
-            // 
-            this.clSairSemS.LineColor = System.Drawing.Color.Black;
-            this.clSairSemS.LineWidth = 1;
-            this.clSairSemS.Location = new System.Drawing.Point(6, 40);
-            this.clSairSemS.Name = "clSairSemS";
-            this.clSairSemS.Size = new System.Drawing.Size(75, 11);
-            this.clSairSemS.TabIndex = 38;
-            this.clSairSemS.Text = "customLine6";
-            // 
-            // clRecarregar
-            // 
-            this.clRecarregar.LineColor = System.Drawing.Color.Black;
-            this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(101, 20);
-            this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(75, 14);
-            this.clRecarregar.TabIndex = 34;
-            this.clRecarregar.Text = "customLine2";
-            // 
-            // clExcluir
-            // 
-            this.clExcluir.LineColor = System.Drawing.Color.Black;
-            this.clExcluir.LineWidth = 1;
-            this.clExcluir.Location = new System.Drawing.Point(6, 20);
-            this.clExcluir.Name = "clExcluir";
-            this.clExcluir.Size = new System.Drawing.Size(75, 14);
-            this.clExcluir.TabIndex = 37;
-            this.clExcluir.Text = "customLine5";
-            // 
-            // clConfig
-            // 
-            this.clConfig.LineColor = System.Drawing.Color.Black;
-            this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(101, 60);
-            this.clConfig.Name = "clConfig";
-            this.clConfig.Size = new System.Drawing.Size(75, 10);
-            this.clConfig.TabIndex = 36;
-            this.clConfig.Text = "customLine4";
-            // 
-            // clAtualizar
-            // 
-            this.clAtualizar.LineColor = System.Drawing.Color.Black;
-            this.clAtualizar.LineWidth = 1;
-            this.clAtualizar.Location = new System.Drawing.Point(6, 57);
-            this.clAtualizar.Name = "clAtualizar";
-            this.clAtualizar.Size = new System.Drawing.Size(75, 13);
-            this.clAtualizar.TabIndex = 39;
-            this.clAtualizar.Text = "customLine3";
-            this.clAtualizar.Click += new System.EventHandler(this.clAtualizar_Click);
-            // 
             // frmEditar_Etapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1435,7 +1424,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
-            this.gbAgrupaCL.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1516,7 +1504,6 @@
         private OvalPictureBox OPBLogout;
         private RoundButton btnExcluir;
         private System.Windows.Forms.PictureBox opbLogo;
-        private System.Windows.Forms.GroupBox gbAgrupaCL;
         private CustomLine clAtualizar;
         private CustomLine clLogout;
         private CustomLine clSairSemS;
