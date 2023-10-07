@@ -178,7 +178,11 @@ namespace tccCsharp
             {
                 radInicio.Checked = true;
                 radMeio.Checked = false;
-                TLPSelecionaCombo.Visible = false;
+
+                //TLPSelecionaCombo.Visible = false;
+                //Apenas combo
+                comboDepois.Visible = false;
+
                 radFim.Checked = false;
 
             }else if (EtapaEditando.ordenador == numGrupos)
@@ -186,12 +190,20 @@ namespace tccCsharp
                 radFim.Checked = true;
                 radMeio.Checked = false;
                 radInicio.Checked = false;
-                TLPSelecionaCombo.Visible = false;
+
+                //TLPSelecionaCombo.Visible = false;
+                //Apenas combo
+                comboDepois.Visible = false;
             }
             else
             {
-                 TLPEntreGrupos.Visible = true;
-                 radFim.Checked = false;
+
+                //TLPEntreGrupos.Visible = true;
+                //ambos
+                comboDepois.Visible = true;
+                radMeio.Visible = true;
+
+                radFim.Checked = false;
                  radMeio.Checked = true;
                  radInicio.Checked = false;
 
@@ -231,50 +243,6 @@ namespace tccCsharp
             trackPercent.Value = Convert.ToInt32(numPercent.Value);
         }
 
-        private void radInicio_Click(object sender, EventArgs e)
-        {
-            radInicio.Checked = true;
-            radMeio.Checked = false;
-            radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = false;
-        }
-
-        private void radMeio_Click(object sender, EventArgs e)
-        {
-            if (comboGrupo.SelectedIndex >= 0 && liberado == true)
-            {
-                etapas.Clear();
-                etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue), 0);
-                if (etapas.Count < 2)
-                {
-                    TLPEntreGrupos.Visible = false;
-                }
-                else
-                {
-                    TLPEntreGrupos.Visible = true;
-
-                    comboDepois.DataSource = etapas;
-                    comboDepois.ValueMember = "ordenador";
-                    comboDepois.DisplayMember = "nome_etapa";
-                    comboDepois.SelectedIndex = 0;
-                }
-            }
-            TLPSelecionaCombo.Visible = true;
-            radInicio.Checked = false;
-            radMeio.Checked = true;
-            radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = true;
-            comboDepois.SelectedIndex = 0;
-        }
-
-        private void radFim_Click(object sender, EventArgs e)
-        {
-            radInicio.Checked = false;
-            radMeio.Checked = false;
-            radFim.Checked = true;
-            TLPSelecionaCombo.Enabled = false;
-        }
-
         private void comboDepois_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = comboDepois.SelectedIndex;
@@ -284,7 +252,10 @@ namespace tccCsharp
             {
                 radFim.Checked = true;
                 radMeio.Checked = false;
-                TLPSelecionaCombo.Enabled = false;
+                
+                //TLPSelecionaCombo.Enabled = false;
+                //apenas combo
+                comboDepois.Enabled = false;
             }
         }
 
@@ -296,22 +267,34 @@ namespace tccCsharp
                 etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue), 0);
                 if (etapas.Count < 2)
                 {
-                    TLPEntreGrupos.Visible = false;
+                    //TLPEntreGrupos.Visible = false;
+                    //ambos
+                    comboDepois.Visible = false;
+                    radMeio.Visible = false;
                 }
                 else
                 {
-                    TLPEntreGrupos.Visible = true;
+                    //TLPEntreGrupos.Visible = true;
+                    //ambos
+                    comboDepois.Visible = true;
+                    radMeio.Visible = true;
 
                     comboDepois.DataSource = etapas;
                     comboDepois.ValueMember = "ordenador";
                     comboDepois.DisplayMember = "nome_etapa";
                     comboDepois.SelectedIndex = 0;
                 }
-                TLPSelecionaCombo.Visible = true;
+                //TLPSelecionaCombo.Visible = true;
+                //apenas combo
+                comboDepois.Visible = true;
+
                 radFim.Checked = true;
                 radMeio.Checked = false;
                 radInicio.Checked = false;
-                TLPSelecionaCombo.Enabled = false;
+                
+                //TLPSelecionaCombo.Enabled = false;
+                //apenas combo
+                comboDepois.Enabled = false;
             }
         }
 
@@ -355,7 +338,9 @@ namespace tccCsharp
                 radFim.Checked = false;
                 radMeio.Checked = false;
                 comboDepois.SelectedIndex = 0;
-                TLPSelecionaCombo.Enabled = false;
+                //TLPSelecionaCombo.Enabled = false;
+                //apenas combo
+                comboDepois.Enabled = false;
             }
         }
 
@@ -485,9 +470,94 @@ namespace tccCsharp
             }
         }
 
-        private void clAtualizar_Click(object sender, EventArgs e)
-        {
+        
 
+        private void radInicio_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radInicio.Checked)
+            {
+                radInicio.Checked = true;
+                radMeio.Checked = false;
+                radFim.Checked = false;
+
+                //TLPSelecionaCombo.Enabled = false;
+                //Apenas combo
+                comboDepois.Enabled = false;
+            }
+        }
+
+        private void radMeio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radMeio.Checked)
+            {
+                if (comboGrupo.SelectedIndex >= 0 && liberado == true)
+                {
+                    etapas.Clear();
+                    etapas = Banco.ConsultaEtapas(Convert.ToInt32(comboGrupo.SelectedValue), 0);
+                    if (etapas.Count < 2)
+                    {
+                        //TLPEntreGrupos.Visible = false;
+                        //ambos
+                        comboDepois.Visible = false;
+                        radMeio.Visible = false;
+
+                    }
+                    else
+                    {
+                        //TLPEntreGrupos.Visible = true;
+                        //ambos
+                        comboDepois.Visible = true;
+                        radMeio.Visible = true;
+
+                        comboDepois.DataSource = etapas;
+                        comboDepois.ValueMember = "ordenador";
+                        comboDepois.DisplayMember = "nome_etapa";
+                        comboDepois.SelectedIndex = 0;
+                    }
+                }
+                //TLPSelecionaCombo.Visible = true;
+                //apenas combo
+                comboDepois.Visible = true;
+
+                radInicio.Checked = false;
+                radMeio.Checked = true;
+                radFim.Checked = false;
+
+                //TLPSelecionaCombo.Enabled = true;
+                //apenas combo
+                comboDepois.Enabled = true;
+
+                comboDepois.SelectedIndex = 0;
+            }
+        }
+
+        private void radFim_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radFim.Checked)
+            {
+                radInicio.Checked = false;
+                radMeio.Checked = false;
+                radFim.Checked = true;
+
+                //TLPSelecionaCombo.Enabled = false;
+                //apenas combo
+                comboDepois.Enabled = false;
+            }
+        }
+
+        private void radInicio_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radMeio_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void radFim_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

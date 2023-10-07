@@ -56,10 +56,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBPrioridade = new tccCsharp.RoundedGroupBox();
-            this.clConfig = new CustomLine();
-            this.clLogout = new CustomLine();
-            this.clAtualizar = new CustomLine();
-            this.clRecarregar = new CustomLine();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblPeso = new System.Windows.Forms.Label();
@@ -70,26 +66,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.numPercent = new System.Windows.Forms.NumericUpDown();
             this.trackPercent = new System.Windows.Forms.TrackBar();
-            this.clExcluir = new CustomLine();
-            this.clSairSemS = new CustomLine();
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.radFim = new System.Windows.Forms.RadioButton();
-            this.TLPEntreGrupos = new System.Windows.Forms.TableLayoutPanel();
             this.radMeio = new System.Windows.Forms.RadioButton();
-            this.TLPSelecionaCombo = new System.Windows.Forms.TableLayoutPanel();
-            this.lblDepois = new System.Windows.Forms.Label();
-            this.comboDepois = new System.Windows.Forms.ComboBox();
-            this.radInicio = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboGrupo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.lblSelecione = new System.Windows.Forms.Label();
+            this.comboDepois = new System.Windows.Forms.ComboBox();
+            this.comboGrupo = new System.Windows.Forms.ComboBox();
+            this.radInicio = new System.Windows.Forms.RadioButton();
             this.lblPosicao = new System.Windows.Forms.Label();
             this.RGBButtons = new tccCsharp.RoundedGroupBox();
+            this.clConfig = new CustomLine();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnExcluir = new RoundButton();
             this.btnAtualizar = new RoundButton();
             this.btnCancelar = new RoundButton();
+            this.clLogout = new CustomLine();
+            this.clExcluir = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.clAtualizar = new CustomLine();
+            this.clSairSemS = new CustomLine();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBHead2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
@@ -127,9 +124,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackPercent)).BeginInit();
             this.RGBDetalhada.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
-            this.TLPEntreGrupos.SuspendLayout();
-            this.TLPSelecionaCombo.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.RGBButtons.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.TLPHead2.SuspendLayout();
@@ -557,47 +551,6 @@
             this.RGBPrioridade.TabIndex = 10;
             this.RGBPrioridade.TabStop = false;
             // 
-            // clConfig
-            // 
-            this.clConfig.LineColor = System.Drawing.Color.Black;
-            this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(487, 65);
-            this.clConfig.Name = "clConfig";
-            this.clConfig.Size = new System.Drawing.Size(75, 10);
-            this.clConfig.TabIndex = 36;
-            this.clConfig.Text = "customLine4";
-            // 
-            // clLogout
-            // 
-            this.clLogout.LineColor = System.Drawing.Color.Black;
-            this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(382, 65);
-            this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(75, 13);
-            this.clLogout.TabIndex = 35;
-            this.clLogout.Text = "customLine3";
-            // 
-            // clAtualizar
-            // 
-            this.clAtualizar.LineColor = System.Drawing.Color.Black;
-            this.clAtualizar.LineWidth = 1;
-            this.clAtualizar.Location = new System.Drawing.Point(211, 62);
-            this.clAtualizar.Name = "clAtualizar";
-            this.clAtualizar.Size = new System.Drawing.Size(75, 13);
-            this.clAtualizar.TabIndex = 39;
-            this.clAtualizar.Text = "customLine3";
-            this.clAtualizar.Click += new System.EventHandler(this.clAtualizar_Click);
-            // 
-            // clRecarregar
-            // 
-            this.clRecarregar.LineColor = System.Drawing.Color.Black;
-            this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(301, 64);
-            this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(75, 14);
-            this.clRecarregar.TabIndex = 34;
-            this.clRecarregar.Text = "customLine2";
-            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -746,26 +699,6 @@
             this.trackPercent.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackPercent.ValueChanged += new System.EventHandler(this.trackPercent_ValueChanged);
             // 
-            // clExcluir
-            // 
-            this.clExcluir.LineColor = System.Drawing.Color.Black;
-            this.clExcluir.LineWidth = 1;
-            this.clExcluir.Location = new System.Drawing.Point(38, 62);
-            this.clExcluir.Name = "clExcluir";
-            this.clExcluir.Size = new System.Drawing.Size(75, 14);
-            this.clExcluir.TabIndex = 37;
-            this.clExcluir.Text = "customLine5";
-            // 
-            // clSairSemS
-            // 
-            this.clSairSemS.LineColor = System.Drawing.Color.Black;
-            this.clSairSemS.LineWidth = 1;
-            this.clSairSemS.Location = new System.Drawing.Point(130, 65);
-            this.clSairSemS.Name = "clSairSemS";
-            this.clSairSemS.Size = new System.Drawing.Size(75, 11);
-            this.clSairSemS.TabIndex = 38;
-            this.clSairSemS.Text = "customLine6";
-            // 
             // RGBDetalhada
             // 
             this.RGBDetalhada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -790,12 +723,16 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPOpcoes.BackColor = System.Drawing.Color.Transparent;
             this.TLPOpcoes.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.TLPOpcoes.ColumnCount = 1;
-            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPOpcoes.ColumnCount = 2;
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.TLPOpcoes.Controls.Add(this.radFim, 0, 3);
-            this.TLPOpcoes.Controls.Add(this.TLPEntreGrupos, 0, 2);
+            this.TLPOpcoes.Controls.Add(this.radMeio, 0, 2);
+            this.TLPOpcoes.Controls.Add(this.label5, 1, 1);
+            this.TLPOpcoes.Controls.Add(this.lblSelecione, 0, 0);
+            this.TLPOpcoes.Controls.Add(this.comboDepois, 1, 2);
+            this.TLPOpcoes.Controls.Add(this.comboGrupo, 1, 0);
             this.TLPOpcoes.Controls.Add(this.radInicio, 0, 1);
-            this.TLPOpcoes.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.TLPOpcoes.Location = new System.Drawing.Point(18, 47);
             this.TLPOpcoes.Name = "TLPOpcoes";
             this.TLPOpcoes.RowCount = 4;
@@ -803,7 +740,6 @@
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TLPOpcoes.Size = new System.Drawing.Size(585, 207);
             this.TLPOpcoes.TabIndex = 9;
             // 
@@ -814,82 +750,66 @@
             this.radFim.Location = new System.Drawing.Point(4, 176);
             this.radFim.Name = "radFim";
             this.radFim.Size = new System.Drawing.Size(64, 17);
-            this.radFim.TabIndex = 12;
+            this.radFim.TabIndex = 11;
             this.radFim.TabStop = true;
             this.radFim.Text = "No Final";
             this.radFim.UseVisualStyleBackColor = true;
-            this.radFim.Click += new System.EventHandler(this.radFim_Click);
-            // 
-            // TLPEntreGrupos
-            // 
-            this.TLPEntreGrupos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPEntreGrupos.ColumnCount = 2;
-            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.Controls.Add(this.radMeio, 0, 0);
-            this.TLPEntreGrupos.Controls.Add(this.TLPSelecionaCombo, 1, 0);
-            this.TLPEntreGrupos.Location = new System.Drawing.Point(1, 83);
-            this.TLPEntreGrupos.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPEntreGrupos.Name = "TLPEntreGrupos";
-            this.TLPEntreGrupos.RowCount = 1;
-            this.TLPEntreGrupos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.Size = new System.Drawing.Size(583, 80);
-            this.TLPEntreGrupos.TabIndex = 9;
+            this.radFim.CheckedChanged += new System.EventHandler(this.radFim_CheckedChanged);
             // 
             // radMeio
             // 
             this.radMeio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radMeio.AutoSize = true;
-            this.radMeio.Location = new System.Drawing.Point(3, 31);
+            this.radMeio.Location = new System.Drawing.Point(4, 114);
             this.radMeio.Name = "radMeio";
             this.radMeio.Size = new System.Drawing.Size(149, 17);
             this.radMeio.TabIndex = 10;
             this.radMeio.TabStop = true;
             this.radMeio.Text = "Entre as etapas existentes";
             this.radMeio.UseVisualStyleBackColor = true;
-            this.radMeio.Click += new System.EventHandler(this.radMeio_Click);
+            this.radMeio.CheckedChanged += new System.EventHandler(this.radMeio_CheckedChanged);
             // 
-            // TLPSelecionaCombo
+            // label5
             // 
-            this.TLPSelecionaCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPSelecionaCombo.ColumnCount = 2;
-            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.TLPSelecionaCombo.Controls.Add(this.lblDepois, 0, 0);
-            this.TLPSelecionaCombo.Controls.Add(this.comboDepois, 1, 0);
-            this.TLPSelecionaCombo.Location = new System.Drawing.Point(291, 0);
-            this.TLPSelecionaCombo.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPSelecionaCombo.Name = "TLPSelecionaCombo";
-            this.TLPSelecionaCombo.RowCount = 1;
-            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.TLPSelecionaCombo.Size = new System.Drawing.Size(292, 80);
-            this.TLPSelecionaCombo.TabIndex = 0;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(392, 55);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Selecione um grupo de Etapas:";
             // 
-            // lblDepois
+            // lblSelecione
             // 
-            this.lblDepois.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDepois.AutoSize = true;
-            this.lblDepois.Location = new System.Drawing.Point(13, 33);
-            this.lblDepois.Name = "lblDepois";
-            this.lblDepois.Size = new System.Drawing.Size(89, 13);
-            this.lblDepois.TabIndex = 3;
-            this.lblDepois.Text = "Depois da Etapa:";
+            this.lblSelecione.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblSelecione.AutoSize = true;
+            this.lblSelecione.Location = new System.Drawing.Point(4, 14);
+            this.lblSelecione.Name = "lblSelecione";
+            this.lblSelecione.Size = new System.Drawing.Size(155, 13);
+            this.lblSelecione.TabIndex = 13;
+            this.lblSelecione.Text = "Selecione um grupo de Etapas:";
             // 
             // comboDepois
             // 
             this.comboDepois.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboDepois.FormattingEnabled = true;
-            this.comboDepois.Location = new System.Drawing.Point(119, 29);
+            this.comboDepois.Location = new System.Drawing.Point(392, 112);
             this.comboDepois.Name = "comboDepois";
             this.comboDepois.Size = new System.Drawing.Size(166, 21);
-            this.comboDepois.TabIndex = 11;
+            this.comboDepois.TabIndex = 12;
             this.comboDepois.SelectedIndexChanged += new System.EventHandler(this.comboDepois_SelectedIndexChanged);
             this.comboDepois.Leave += new System.EventHandler(this.comboDepois_Leave);
+            // 
+            // comboGrupo
+            // 
+            this.comboGrupo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboGrupo.FormattingEnabled = true;
+            this.comboGrupo.IntegralHeight = false;
+            this.comboGrupo.Location = new System.Drawing.Point(392, 10);
+            this.comboGrupo.Name = "comboGrupo";
+            this.comboGrupo.Size = new System.Drawing.Size(166, 21);
+            this.comboGrupo.TabIndex = 8;
+            this.comboGrupo.SelectedIndexChanged += new System.EventHandler(this.comboGrupo_SelectedIndexChanged);
             // 
             // radInicio
             // 
@@ -903,43 +823,8 @@
             this.radInicio.TabStop = true;
             this.radInicio.Text = "No Início";
             this.radInicio.UseVisualStyleBackColor = true;
+            this.radInicio.CheckedChanged += new System.EventHandler(this.radInicio_CheckedChanged);
             this.radInicio.Click += new System.EventHandler(this.radInicio_Click);
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.comboGrupo, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblSelecione, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 1);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(583, 40);
-            this.tableLayoutPanel2.TabIndex = 9;
-            // 
-            // comboGrupo
-            // 
-            this.comboGrupo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboGrupo.FormattingEnabled = true;
-            this.comboGrupo.IntegralHeight = false;
-            this.comboGrupo.Location = new System.Drawing.Point(294, 9);
-            this.comboGrupo.Name = "comboGrupo";
-            this.comboGrupo.Size = new System.Drawing.Size(166, 21);
-            this.comboGrupo.TabIndex = 8;
-            this.comboGrupo.SelectedIndexChanged += new System.EventHandler(this.comboGrupo_SelectedIndexChanged);
-            // 
-            // lblSelecione
-            // 
-            this.lblSelecione.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblSelecione.AutoSize = true;
-            this.lblSelecione.Location = new System.Drawing.Point(3, 13);
-            this.lblSelecione.Name = "lblSelecione";
-            this.lblSelecione.Size = new System.Drawing.Size(155, 13);
-            this.lblSelecione.TabIndex = 4;
-            this.lblSelecione.Text = "Selecione um grupo de Etapas:";
             // 
             // lblPosicao
             // 
@@ -977,6 +862,16 @@
             this.RGBButtons.TabIndex = 11;
             this.RGBButtons.TabStop = false;
             // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(487, 65);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 22;
+            this.clConfig.Text = "customLine4";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -1011,6 +906,7 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(187, 50);
             this.btnExcluir.TabIndex = 8;
+            this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "EXCLUIR ETAPA";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -1032,6 +928,7 @@
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(188, 50);
             this.btnAtualizar.TabIndex = 7;
+            this.btnAtualizar.TabStop = false;
             this.btnAtualizar.Text = "ATUALIZAR";
             this.btnAtualizar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAtualizar.UseVisualStyleBackColor = true;
@@ -1053,10 +950,61 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(187, 50);
             this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.TabStop = false;
             this.btnCancelar.Text = "SAIR SEM SALVAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(382, 65);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 13);
+            this.clLogout.TabIndex = 21;
+            this.clLogout.Text = "customLine3";
+            // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(38, 62);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 14);
+            this.clExcluir.TabIndex = 17;
+            this.clExcluir.Text = "customLine5";
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(301, 64);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 14);
+            this.clRecarregar.TabIndex = 20;
+            this.clRecarregar.Text = "customLine2";
+            // 
+            // clAtualizar
+            // 
+            this.clAtualizar.LineColor = System.Drawing.Color.Black;
+            this.clAtualizar.LineWidth = 1;
+            this.clAtualizar.Location = new System.Drawing.Point(211, 62);
+            this.clAtualizar.Name = "clAtualizar";
+            this.clAtualizar.Size = new System.Drawing.Size(75, 13);
+            this.clAtualizar.TabIndex = 19;
+            this.clAtualizar.Text = "customLine3";
+            // 
+            // clSairSemS
+            // 
+            this.clSairSemS.LineColor = System.Drawing.Color.Black;
+            this.clSairSemS.LineWidth = 1;
+            this.clSairSemS.Location = new System.Drawing.Point(130, 65);
+            this.clSairSemS.Name = "clSairSemS";
+            this.clSairSemS.Size = new System.Drawing.Size(75, 11);
+            this.clSairSemS.TabIndex = 18;
+            this.clSairSemS.Text = "customLine6";
             // 
             // TLPHead2
             // 
@@ -1398,12 +1346,6 @@
             this.RGBDetalhada.PerformLayout();
             this.TLPOpcoes.ResumeLayout(false);
             this.TLPOpcoes.PerformLayout();
-            this.TLPEntreGrupos.ResumeLayout(false);
-            this.TLPEntreGrupos.PerformLayout();
-            this.TLPSelecionaCombo.ResumeLayout(false);
-            this.TLPSelecionaCombo.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.RGBButtons.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
@@ -1469,16 +1411,8 @@
         private System.Windows.Forms.TrackBar trackPercent;
         private RoundedGroupBox RGBDetalhada;
         private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
-        private System.Windows.Forms.RadioButton radFim;
-        private System.Windows.Forms.TableLayoutPanel TLPEntreGrupos;
-        private System.Windows.Forms.RadioButton radMeio;
-        private System.Windows.Forms.TableLayoutPanel TLPSelecionaCombo;
-        private System.Windows.Forms.Label lblDepois;
-        private System.Windows.Forms.ComboBox comboDepois;
         private System.Windows.Forms.RadioButton radInicio;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox comboGrupo;
-        private System.Windows.Forms.Label lblSelecione;
         private System.Windows.Forms.Label lblPosicao;
         private RoundedGroupBox RGBButtons;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -1510,5 +1444,10 @@
         private CustomLine clRecarregar;
         private CustomLine clExcluir;
         private CustomLine clConfig;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblSelecione;
+        private System.Windows.Forms.ComboBox comboDepois;
+        private System.Windows.Forms.RadioButton radMeio;
+        private System.Windows.Forms.RadioButton radFim;
     }
 }

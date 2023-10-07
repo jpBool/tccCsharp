@@ -380,7 +380,6 @@
             this.clLogout.Size = new System.Drawing.Size(75, 13);
             this.clLogout.TabIndex = 35;
             this.clLogout.Text = "customLine3";
-            this.clLogout.Click += new System.EventHandler(this.clLogout_Click);
             this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
             this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
             this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
@@ -838,7 +837,7 @@
             this.radFim.TabStop = true;
             this.radFim.Text = "No Final";
             this.radFim.UseVisualStyleBackColor = true;
-            this.radFim.Click += new System.EventHandler(this.radFim_Click);
+            this.radFim.CheckedChanged += new System.EventHandler(this.radFim_CheckedChanged);
             // 
             // TLPEntreGrupos
             // 
@@ -869,7 +868,8 @@
             this.radMeio.TabStop = true;
             this.radMeio.Text = "Entre as etapas existentes";
             this.radMeio.UseVisualStyleBackColor = true;
-            this.radMeio.Click += new System.EventHandler(this.radMeio_Click);
+            this.radMeio.CheckedChanged += new System.EventHandler(this.radMeio_CheckedChanged);
+
             // 
             // TLPSelecionaCombo
             // 
@@ -923,7 +923,7 @@
             this.radInicio.TabStop = true;
             this.radInicio.Text = "No Início";
             this.radInicio.UseVisualStyleBackColor = true;
-            this.radInicio.Click += new System.EventHandler(this.radInicio_Click);
+            this.radInicio.CheckedChanged += new System.EventHandler(this.radInicio_CheckedChanged);
             // 
             // tableLayoutPanel2
             // 

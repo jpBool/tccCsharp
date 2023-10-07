@@ -176,31 +176,6 @@ namespace tccCsharp
             trackPercent.Value = Convert.ToInt32(numPercent.Value);
         }
 
-        private void radInicio_Click(object sender, EventArgs e)
-        {
-            radInicio.Checked = true;
-            radMeio.Checked = false;
-            radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = false;
-        }
-
-        private void radMeio_Click(object sender, EventArgs e)
-        {
-            radInicio.Checked = false;
-            radMeio.Checked = true;
-            radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = true;
-            comboDepois.SelectedIndex = 0;
-        }
-
-        private void radFim_Click(object sender, EventArgs e)
-        {
-            radInicio.Checked = false;
-            radMeio.Checked = false;
-            radFim.Checked = true;
-            TLPSelecionaCombo.Enabled = false;
-        }
-
         private void comboDepois_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = comboDepois.SelectedIndex;
@@ -477,11 +452,6 @@ namespace tccCsharp
             }
         }
 
-        private void clLogout_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void clLogout_Enter(object sender, EventArgs e)
         {
             OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
@@ -499,6 +469,40 @@ namespace tccCsharp
                 OPBLogout._bordercolor = Color.Transparent;
                 OPBLogout_Click(sender, e);
 
+            }
+        }
+
+        private void radInicio_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radInicio.Checked)
+            {
+                radInicio.Checked = true;
+                radMeio.Checked = false;
+                radFim.Checked = false;
+                TLPSelecionaCombo.Enabled = false;
+            }
+        }
+       
+        private void radMeio_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radMeio.Checked)
+            {
+                radInicio.Checked = false;
+                radMeio.Checked = true;
+                radFim.Checked = false;
+                TLPSelecionaCombo.Enabled = true;
+                comboDepois.SelectedIndex = 0;
+            }
+        }
+
+        private void radFim_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radFim.Checked)
+            {
+                radInicio.Checked = false;
+                radMeio.Checked = false;
+                radFim.Checked = true;
+                TLPSelecionaCombo.Enabled = false;
             }
         }
     }
