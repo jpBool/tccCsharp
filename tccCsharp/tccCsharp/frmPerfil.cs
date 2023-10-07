@@ -120,6 +120,8 @@ namespace tccCsharp
 
         public void DoDesign()
         {
+            TLP_Mãe.Font = Program.fonte;
+            
             Logo(Program.logo);
             TLPHead1.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             RGBHead1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -253,7 +255,6 @@ namespace tccCsharp
             Refresh_projects(Program.projetos);
             WindowState = FormWindowState.Maximized;
             DoDesign();
-
             User usuario = new User();
             usuario.avatar = 2;
             Banco.CarregaPerfil(usuario);

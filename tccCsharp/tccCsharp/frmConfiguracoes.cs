@@ -269,49 +269,41 @@ namespace tccCsharp
                 Program.CorTexto2[2] = cldPersonalizacao.Color.B;
                 lblCorTexto2.BackColor = cldPersonalizacao.Color;
             }
-            
+
         }
 
         private void btnAltTamF_Click(object sender, EventArgs e)
         {
+            //Matheus ->
             FontDialog fd = new FontDialog();
             if(fd.ShowDialog() == DialogResult.OK)
             {
-                //frmPerfil.Font = fd.Font; //frms n possuem a definicao .Font??
-                //Program.Font = fd.Font; //program n contem uma definicao p .font
 
-                //frmConfigs
+                Font Nova = new Font("Microsoft Sans Serif", 12);
+
+                if (fd.Font.Size > 36 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
+                {
+                    Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
+                }
+                else
+                {
+                    Nova = fd.Font;
+                }
+                Program.fonte = Nova;
+
+
+                // No doDesign de cada form: TLP_Mãe.Font = Program.fonte;
+                //  (fiz no frmPerfil, funciona quase totalmente)
+
                 tlpBaseConfig1.Font = fd.Font;
                 tlpBaseConfig2.Font = fd.Font;
                 tlpBaseConfig3.Font = fd.Font;
                 tlpBaseConfig4.Font = fd.Font;
-                //teste
+
                 lblConfigsG.Font = fd.Font;
                 lblConfiguracoes.Font = fd.Font;
-
-                //frmPerfil
-                /*TLP_Mae.Font = fd.Font;
-                  TLP_Filha1.Font = fd.Font;
-                  TLP_Filha2.Font = fd.Font;
-                  TLP_Neta1.Font = fd.Font;
-                  TLP_Neta2.Font = fd.Font;
-                  TLPAvatar.Font = fd.Font;
-                  TLPHead1.Font = fd.Font;
-                  tlpOpcoes.Font = fd.Font;
-                */
-
-                //frmLogin
-                /*
-                */
-
-                //frmCriar_Projeto
-                /*
-                */
-
-                //frmEditar_Projeto
-                /*
-                */
             }
+
 
             toggle = !toggle;
             //nudFonte.Visible = toggle;
