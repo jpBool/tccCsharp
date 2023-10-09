@@ -152,6 +152,62 @@ namespace tccCsharp
             return usuario;
         }
 
+        public static int[] seguimentos()
+        {
+            int seguidores = 0;
+            int seguidos = 0;
+            int[] seguimentos = new int[2] { 0, 0 };
+            try
+            {
+                Conectar();
+                string sql = "SELECT COUNT(*) AS seguidores FROM gp2_seguidores WHERE id_seguido = @1";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                List<object> param = new List<object>();
+                param.Add(Program.id_usuario);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                if (dr.Read())
+                {
+                    seguidores = Convert.ToInt32(dr["seguidores"]);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar as informações do usuário !!!" + "\n\nMais detalhes: " + ex.Message, "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+            try
+            {
+                Conectar();
+                string sql = "SELECT COUNT(*) AS seguidos FROM gp2_seguidores WHERE id_seguidor = @1";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                List<object> param = new List<object>();
+                param.Add(Program.id_usuario);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                if (dr.Read())
+                {
+                    seguidos = Convert.ToInt32(dr["seguidos"]);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar as informações do usuário !!!" + "\n\nMais detalhes: " + ex.Message, "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+            seguimentos[0] = seguidores;
+            seguimentos[1] = seguidos;
+            return seguimentos;
+        }
+
         public static Project RecarregaSelecionado()
         {
             Project selecionado = new Project();

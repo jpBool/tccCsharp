@@ -56,12 +56,10 @@
             this.BoxSim = new System.Windows.Forms.CheckBox();
             this.RGBDados2 = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
-            this.radFim = new System.Windows.Forms.RadioButton();
-            this.TLPEntreGrupos = new System.Windows.Forms.TableLayoutPanel();
-            this.radMeio = new System.Windows.Forms.RadioButton();
-            this.TLPSelecionaCombo = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboDepois = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.radMeio = new System.Windows.Forms.RadioButton();
+            this.radFim = new System.Windows.Forms.RadioButton();
             this.radInicio = new System.Windows.Forms.RadioButton();
             this.lblPosicao = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -98,8 +96,6 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.RGBDados2.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
-            this.TLPEntreGrupos.SuspendLayout();
-            this.TLPSelecionaCombo.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.RGBNome.SuspendLayout();
             this.RGBDados4.SuspendLayout();
@@ -467,7 +463,7 @@
             this.RGBDados3.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.RGBDados3.Name = "RGBDados3";
             this.RGBDados3.Size = new System.Drawing.Size(754, 58);
-            this.RGBDados3.TabIndex = 8;
+            this.RGBDados3.TabIndex = 4;
             this.RGBDados3.TabStop = false;
             // 
             // tableLayoutPanel5
@@ -527,7 +523,7 @@
             this.RGBDados2.Margin = new System.Windows.Forms.Padding(3, 30, 3, 15);
             this.RGBDados2.Name = "RGBDados2";
             this.RGBDados2.Size = new System.Drawing.Size(754, 243);
-            this.RGBDados2.TabIndex = 7;
+            this.RGBDados2.TabIndex = 3;
             this.RGBDados2.TabStop = false;
             // 
             // TLPOpcoes
@@ -537,10 +533,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPOpcoes.BackColor = System.Drawing.Color.Transparent;
             this.TLPOpcoes.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.TLPOpcoes.ColumnCount = 1;
-            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPOpcoes.ColumnCount = 3;
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TLPOpcoes.Controls.Add(this.comboDepois, 2, 1);
+            this.TLPOpcoes.Controls.Add(this.label1, 1, 1);
+            this.TLPOpcoes.Controls.Add(this.radMeio, 0, 1);
             this.TLPOpcoes.Controls.Add(this.radFim, 0, 2);
-            this.TLPOpcoes.Controls.Add(this.TLPEntreGrupos, 0, 1);
             this.TLPOpcoes.Controls.Add(this.radInicio, 0, 0);
             this.TLPOpcoes.Location = new System.Drawing.Point(18, 45);
             this.TLPOpcoes.Name = "TLPOpcoes";
@@ -551,42 +551,31 @@
             this.TLPOpcoes.Size = new System.Drawing.Size(717, 177);
             this.TLPOpcoes.TabIndex = 6;
             // 
-            // radFim
+            // comboDepois
             // 
-            this.radFim.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radFim.AutoSize = true;
-            this.radFim.Location = new System.Drawing.Point(4, 139);
-            this.radFim.Name = "radFim";
-            this.radFim.Size = new System.Drawing.Size(64, 17);
-            this.radFim.TabIndex = 5;
-            this.radFim.TabStop = true;
-            this.radFim.Text = "No Final";
-            this.radFim.UseVisualStyleBackColor = true;
-            this.radFim.Click += new System.EventHandler(this.radFim_Click);
+            this.comboDepois.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboDepois.FormattingEnabled = true;
+            this.comboDepois.Location = new System.Drawing.Point(540, 72);
+            this.comboDepois.Name = "comboDepois";
+            this.comboDepois.Size = new System.Drawing.Size(121, 21);
+            this.comboDepois.TabIndex = 5;
+            this.comboDepois.SelectedIndexChanged += new System.EventHandler(this.comboDepois_SelectedIndexChanged);
             // 
-            // TLPEntreGrupos
+            // label1
             // 
-            this.TLPEntreGrupos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPEntreGrupos.ColumnCount = 2;
-            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.Controls.Add(this.radMeio, 0, 0);
-            this.TLPEntreGrupos.Controls.Add(this.TLPSelecionaCombo, 1, 0);
-            this.TLPEntreGrupos.Location = new System.Drawing.Point(1, 47);
-            this.TLPEntreGrupos.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPEntreGrupos.Name = "TLPEntreGrupos";
-            this.TLPEntreGrupos.RowCount = 1;
-            this.TLPEntreGrupos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.Size = new System.Drawing.Size(715, 72);
-            this.TLPEntreGrupos.TabIndex = 0;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(402, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Depois do Grupo:";
             // 
             // radMeio
             // 
             this.radMeio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radMeio.AutoSize = true;
-            this.radMeio.Location = new System.Drawing.Point(3, 27);
+            this.radMeio.Location = new System.Drawing.Point(4, 74);
             this.radMeio.Name = "radMeio";
             this.radMeio.Size = new System.Drawing.Size(149, 17);
             this.radMeio.TabIndex = 3;
@@ -595,44 +584,18 @@
             this.radMeio.UseVisualStyleBackColor = true;
             this.radMeio.Click += new System.EventHandler(this.radMeio_Click);
             // 
-            // TLPSelecionaCombo
+            // radFim
             // 
-            this.TLPSelecionaCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPSelecionaCombo.ColumnCount = 2;
-            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.TLPSelecionaCombo.Controls.Add(this.label1, 0, 0);
-            this.TLPSelecionaCombo.Controls.Add(this.comboDepois, 1, 0);
-            this.TLPSelecionaCombo.Location = new System.Drawing.Point(357, 0);
-            this.TLPSelecionaCombo.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPSelecionaCombo.Name = "TLPSelecionaCombo";
-            this.TLPSelecionaCombo.RowCount = 1;
-            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.TLPSelecionaCombo.Size = new System.Drawing.Size(358, 72);
-            this.TLPSelecionaCombo.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Depois do Grupo:";
-            // 
-            // comboDepois
-            // 
-            this.comboDepois.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboDepois.FormattingEnabled = true;
-            this.comboDepois.Location = new System.Drawing.Point(146, 25);
-            this.comboDepois.Name = "comboDepois";
-            this.comboDepois.Size = new System.Drawing.Size(121, 21);
-            this.comboDepois.TabIndex = 4;
-            this.comboDepois.SelectedIndexChanged += new System.EventHandler(this.comboDepois_SelectedIndexChanged);
+            this.radFim.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.radFim.AutoSize = true;
+            this.radFim.Location = new System.Drawing.Point(4, 139);
+            this.radFim.Name = "radFim";
+            this.radFim.Size = new System.Drawing.Size(64, 17);
+            this.radFim.TabIndex = 4;
+            this.radFim.TabStop = true;
+            this.radFim.Text = "No Final";
+            this.radFim.UseVisualStyleBackColor = true;
+            this.radFim.Click += new System.EventHandler(this.radFim_Click);
             // 
             // radInicio
             // 
@@ -678,7 +641,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(754, 54);
-            this.tableLayoutPanel2.TabIndex = 10;
+            this.tableLayoutPanel2.TabIndex = 1;
             // 
             // RGBNome
             // 
@@ -695,7 +658,7 @@
             this.RGBNome.Location = new System.Drawing.Point(153, 3);
             this.RGBNome.Name = "RGBNome";
             this.RGBNome.Size = new System.Drawing.Size(598, 48);
-            this.RGBNome.TabIndex = 6;
+            this.RGBNome.TabIndex = 2;
             this.RGBNome.TabStop = false;
             // 
             // txtNomeGrupo
@@ -763,7 +726,7 @@
             this.RGBDados4.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.RGBDados4.Name = "RGBDados4";
             this.RGBDados4.Size = new System.Drawing.Size(754, 59);
-            this.RGBDados4.TabIndex = 9;
+            this.RGBDados4.TabIndex = 5;
             this.RGBDados4.TabStop = false;
             // 
             // tableLayoutPanel6
@@ -835,8 +798,8 @@
             this.gbAgrupaCL.Controls.Add(this.clLogout);
             this.gbAgrupaCL.Location = new System.Drawing.Point(1016, 63);
             this.gbAgrupaCL.Name = "gbAgrupaCL";
-            this.gbAgrupaCL.Size = new System.Drawing.Size(248, 282);
-            this.gbAgrupaCL.TabIndex = 15;
+            this.gbAgrupaCL.Size = new System.Drawing.Size(248, 165);
+            this.gbAgrupaCL.TabIndex = 6;
             this.gbAgrupaCL.TabStop = false;
             this.gbAgrupaCL.Text = "groupBox1";
             // 
@@ -844,7 +807,7 @@
             // 
             this.clConfig.LineColor = System.Drawing.Color.Black;
             this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(41, 132);
+            this.clConfig.Location = new System.Drawing.Point(77, 77);
             this.clConfig.Name = "clConfig";
             this.clConfig.Size = new System.Drawing.Size(165, 23);
             this.clConfig.TabIndex = 9;
@@ -858,7 +821,7 @@
             // 
             this.clCancelar.LineColor = System.Drawing.Color.Black;
             this.clCancelar.LineWidth = 1;
-            this.clCancelar.Location = new System.Drawing.Point(41, 38);
+            this.clCancelar.Location = new System.Drawing.Point(77, 19);
             this.clCancelar.Name = "clCancelar";
             this.clCancelar.Size = new System.Drawing.Size(165, 23);
             this.clCancelar.TabIndex = 7;
@@ -871,7 +834,7 @@
             // 
             this.clRecarregar.LineColor = System.Drawing.Color.Black;
             this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(41, 179);
+            this.clRecarregar.Location = new System.Drawing.Point(14, 106);
             this.clRecarregar.Name = "clRecarregar";
             this.clRecarregar.Size = new System.Drawing.Size(165, 23);
             this.clRecarregar.TabIndex = 10;
@@ -885,7 +848,7 @@
             // 
             this.clCGrupo.LineColor = System.Drawing.Color.Black;
             this.clCGrupo.LineWidth = 1;
-            this.clCGrupo.Location = new System.Drawing.Point(41, 85);
+            this.clCGrupo.Location = new System.Drawing.Point(14, 48);
             this.clCGrupo.Name = "clCGrupo";
             this.clCGrupo.Size = new System.Drawing.Size(165, 23);
             this.clCGrupo.TabIndex = 8;
@@ -898,7 +861,7 @@
             // 
             this.clLogout.LineColor = System.Drawing.Color.Black;
             this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(41, 226);
+            this.clLogout.Location = new System.Drawing.Point(77, 138);
             this.clLogout.Name = "clLogout";
             this.clLogout.Size = new System.Drawing.Size(165, 23);
             this.clLogout.TabIndex = 11;
@@ -945,10 +908,6 @@
             this.RGBDados2.PerformLayout();
             this.TLPOpcoes.ResumeLayout(false);
             this.TLPOpcoes.PerformLayout();
-            this.TLPEntreGrupos.ResumeLayout(false);
-            this.TLPEntreGrupos.PerformLayout();
-            this.TLPSelecionaCombo.ResumeLayout(false);
-            this.TLPSelecionaCombo.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.RGBNome.ResumeLayout(false);
@@ -993,8 +952,6 @@
         private System.Windows.Forms.Label lblNome;
         private RoundedGroupBox RGBDados4;
         private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
-        private System.Windows.Forms.TableLayoutPanel TLPEntreGrupos;
-        private System.Windows.Forms.TableLayoutPanel TLPSelecionaCombo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox BoxSim;

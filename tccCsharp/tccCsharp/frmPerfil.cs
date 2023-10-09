@@ -264,6 +264,15 @@ namespace tccCsharp
             lblEmail.Text = usuario.email.ToString();
             lblCommits.Text = usuario.commits.ToString();
 
+            int seguidores = 0;
+            int seguidos = 0;
+            int[] seguimentos = new int[2] { 0, 0 };
+            seguimentos = Banco.seguimentos();
+            seguidores = seguimentos[0];
+            seguidos = seguimentos[1];
+            lblSeguidores.Text = seguidores.ToString();
+            lblSeguindo.Text = seguidos.ToString();
+
             switch (usuario.avatar)
             {
                 case 0: break;

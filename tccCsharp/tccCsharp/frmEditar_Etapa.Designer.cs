@@ -1228,6 +1228,7 @@
             this.RGBHead1.Size = new System.Drawing.Size(1261, 54);
             this.RGBHead1.TabIndex = 4;
             this.RGBHead1.TabStop = false;
+            this.RGBHead1.Enter += new System.EventHandler(this.RGBHead1_Enter);
             // 
             // opbLogo
             // 

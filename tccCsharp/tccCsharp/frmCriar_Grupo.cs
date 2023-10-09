@@ -19,7 +19,7 @@ namespace tccCsharp
         public frmCriar_Grupo()
         {
             InitializeComponent();
-            gbAgrupaCL.Visible = false;
+            gbAgrupaCL.Visible = true;
         }
 
         private void DoDesign()
@@ -114,11 +114,15 @@ namespace tccCsharp
 
             if (grupos.Count < 2)
             {
-                TLPEntreGrupos.Visible = false;
+                //TLPEntreGrupos.Visible = false;
+                comboDepois.Visible = false;
+                radMeio.Visible = false;
             }
             else
             {
-                TLPEntreGrupos.Visible = true;
+                //TLPEntreGrupos.Visible = true;
+                comboDepois.Visible = true;
+                radMeio.Visible = true;
 
                 comboDepois.DataSource = grupos;
                 comboDepois.ValueMember = "ordenador";
@@ -128,13 +132,15 @@ namespace tccCsharp
 
             if(radMeio.Checked == false)
             {
-                TLPSelecionaCombo.Enabled = false;
+                //TLPSelecionaCombo.Enabled = false;
+                comboDepois.Enabled = false;
             }
 
             radInicio.Checked = true; 
             radMeio.Checked = false; 
             radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = false;
+            //TLPSelecionaCombo.Enabled = false;
+            comboDepois.Enabled = false;
         }
 
         private void radInicio_Click(object sender, EventArgs e)
@@ -142,7 +148,8 @@ namespace tccCsharp
             radInicio.Checked = true;
             radMeio.Checked = false;
             radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = false;
+            //TLPSelecionaCombo.Enabled = false;
+            comboDepois.Enabled = false;
         }
 
         private void radMeio_Click(object sender, EventArgs e)
@@ -150,7 +157,8 @@ namespace tccCsharp
             radInicio.Checked = false;
             radMeio.Checked = true;
             radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = true;
+            //TLPSelecionaCombo.Enabled = true;
+            comboDepois.Enabled = true;
             comboDepois.SelectedIndex = 0;
         }
 
@@ -159,7 +167,8 @@ namespace tccCsharp
             radInicio.Checked = false;
             radMeio.Checked = false;
             radFim.Checked = true;
-            TLPSelecionaCombo.Enabled = false;
+            //TLPSelecionaCombo.Enabled = false;
+            comboDepois.Enabled = false;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
@@ -183,7 +192,8 @@ namespace tccCsharp
             {
                 radFim.Checked = true;
                 radMeio.Checked = false;
-                TLPSelecionaCombo.Enabled = false;
+                //TLPSelecionaCombo.Enabled = false;
+                comboDepois.Enabled = false;
             }
         }
 

@@ -202,7 +202,7 @@ namespace tccCsharp
                 //ambos
                 comboDepois.Visible = true;
                 radMeio.Visible = true;
-
+                ///
                 radFim.Checked = false;
                  radMeio.Checked = true;
                  radInicio.Checked = false;
@@ -221,8 +221,10 @@ namespace tccCsharp
 
         private void frmEditar_Etapa_Load(object sender, EventArgs e)
         {
+            
             this.WindowState = FormWindowState.Maximized;
             DoDesign();
+            
             AtualizaCabecalho();
             CarregaInfo();
             liberado = true;
@@ -558,6 +560,11 @@ namespace tccCsharp
         private void radFim_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void RGBHead1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
