@@ -63,25 +63,10 @@ namespace tccCsharp
             }
         }
 
-        //Select simples retornando um DataReader
-        public static NpgsqlDataReader Selecionar(string sql)
-        {
-            try
-            {
-                Conectar();
-                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                return cmd.ExecuteReader(CommandBehavior.CloseConnection);
-            }
-            catch (NpgsqlException ex)
-            {
-                Desconectar();
-                throw new ApplicationException(ex.Message);
-            }
-        }
-
         public static int Logar(string email, string senha)
         {
             string sql;
+            int id = 0;
             try
             {
                 sql = "select id_usuario,nome from gp2_usuarios ";
@@ -93,17 +78,9 @@ namespace tccCsharp
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 if (dr.Read())
                 {
-                    //MessageBox.Show("Bom dia " + dr["nome"].ToString() + " !!! Acesso autorizado ao sistema !!!");
-                    int id = Convert.ToInt32(dr["id_usuario"]);
-                    dr.Close();
-                    return id;
+                    id = Convert.ToInt32(dr["id_usuario"]);
                 }
-                else
-                {
-                    //MessageBox.Show("E-mail ou Senha Incorreto(s), verifique !!!", "Login do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    dr.Close();
-                    return 0;
-                }
+                dr.Close();
             }
             catch (Exception ex)
             {
@@ -114,6 +91,7 @@ namespace tccCsharp
             {
                 Desconectar();
             }
+            return id;
         }
 
         public static User CarregaPerfil(User usuario)
@@ -169,6 +147,7 @@ namespace tccCsharp
                 {
                     seguidores = Convert.ToInt32(dr["seguidores"]);
                 }
+                dr.Close();
 
             }
             catch (Exception ex)
@@ -192,6 +171,7 @@ namespace tccCsharp
                 {
                     seguidos = Convert.ToInt32(dr["seguidos"]);
                 }
+                dr.Close();
 
             }
             catch (Exception ex)
@@ -385,6 +365,7 @@ namespace tccCsharp
                 cmd.Parameters.AddWithValue("@19", Novo.numero_grupos);
 
                 idInserido = Convert.ToInt32(cmd.ExecuteScalar());
+                Program.id_projeto_atual = idInserido;
             }
             catch (NpgsqlException ex)
             {
@@ -394,6 +375,7 @@ namespace tccCsharp
             finally
             {
                 Desconectar();
+                Banco.NewCommit();
             }
             return idInserido;
         }
@@ -404,13 +386,14 @@ namespace tccCsharp
             List<Status> list = new List<Status>();
             try
             {
-                NpgsqlDataReader dr = Banco.Selecionar(sql);
+                Conectar();
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                NpgsqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     Status linha = new Status();
                     linha.id_status = Convert.ToInt32(dr["id_status"]);
                     linha.status = dr["status"].ToString();
-
                     list.Add(linha);
                 };
                 dr.Close();
@@ -1225,8 +1208,6 @@ namespace tccCsharp
                 selecionado.atualizador = Convert.ToInt32(dr["atualizador"]);
                 selecionado.excluido = Convert.ToBoolean(dr["excluido"]);
                 
-                
-
                 dr.Close();
             }
             catch (Exception ex)
@@ -1354,15 +1335,14 @@ namespace tccCsharp
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
-                if (dr.Read())
-                {
-                    Criador.nome = Convert.ToString(dr["nome"]);
-                    Criador.email = Convert.ToString(dr["email"]);
-                    Criador.telefone = Convert.ToString(dr["telefone"]);
-                    Criador.isAdmin = true;
-                    Criador.avatar = dr["avatar"] != DBNull.Value ? Convert.ToInt32(dr["avatar"]) : 0;
-                    Criador.idColaborador = Convert.ToInt32(dr["id_usuario"]);
-                }
+                dr.Read();
+                Criador.nome = Convert.ToString(dr["nome"]);
+                Criador.email = Convert.ToString(dr["email"]);
+                Criador.telefone = Convert.ToString(dr["telefone"]);
+                Criador.isAdmin = true;
+                Criador.avatar = dr["avatar"] != DBNull.Value ? Convert.ToInt32(dr["avatar"]) : 0;
+                Criador.idColaborador = Convert.ToInt32(dr["id_usuario"]);
+                
                 dr.Close();
             }
             catch (Exception ex)
@@ -1498,14 +1478,13 @@ namespace tccCsharp
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
                 if (dr.Read())
                 {
-                    dr.Close();
                     permissao = true;
                 }
                 else
                 {
                     permissao = false;
                 }
-
+                dr.Close();
 
             }
             catch (Exception ex)
