@@ -31,6 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerenciamentoColaboradores));
             this.tlpBase1 = new System.Windows.Forms.TableLayoutPanel();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblProjeto = new System.Windows.Forms.Label();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
             this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
@@ -42,22 +48,21 @@
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.lblPorcentagem = new System.Windows.Forms.Label();
-            this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
             this.btnSairSSalvar = new RoundButton();
             this.RGBColaboradores = new tccCsharp.RoundedGroupBox();
+            this.dgvCriador = new System.Windows.Forms.DataGridView();
+            this.nomeCriador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGVColaboradores = new System.Windows.Forms.DataGridView();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblColaboradores = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbNomeP = new tccCsharp.RoundedGroupBox();
             this.lblNomeProjeto = new System.Windows.Forms.Label();
-            this.lblProjeto = new System.Windows.Forms.Label();
             this.RGBDados = new tccCsharp.RoundedGroupBox();
             this.TLPDados = new System.Windows.Forms.TableLayoutPanel();
             this.lblDados = new System.Windows.Forms.Label();
@@ -77,7 +82,6 @@
             this.comboTelefone = new System.Windows.Forms.ComboBox();
             this.comboEmail = new System.Windows.Forms.ComboBox();
             this.textNome = new System.Windows.Forms.TextBox();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
             this.opbLogo = new System.Windows.Forms.PictureBox();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
@@ -86,18 +90,20 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.tlpBase1.SuspendLayout();
             this.TLPHead2.SuspendLayout();
+            this.tlpBase2.SuspendLayout();
+            this.tlpBase4.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs2.SuspendLayout();
             this.TLPInfoshead.SuspendLayout();
             this.TLPCriacao.SuspendLayout();
             this.TLPAtualizacao.SuspendLayout();
             this.groupPorcentagem.SuspendLayout();
-            this.tlpBase2.SuspendLayout();
-            this.tlpBase4.SuspendLayout();
             this.rgbOpcoes.SuspendLayout();
             this.RGBColaboradores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCriador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColaboradores)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.rgbNomeP.SuspendLayout();
             this.RGBDados.SuspendLayout();
             this.TLPDados.SuspendLayout();
@@ -105,7 +111,6 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
@@ -148,6 +153,102 @@
             this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPHead2.Size = new System.Drawing.Size(1264, 66);
             this.TLPHead2.TabIndex = 11;
+            // 
+            // tlpBase2
+            // 
+            this.tlpBase2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase2.ColumnCount = 2;
+            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBase2.Controls.Add(this.tlpBase4, 1, 0);
+            this.tlpBase2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tlpBase2.Location = new System.Drawing.Point(3, 129);
+            this.tlpBase2.Name = "tlpBase2";
+            this.tlpBase2.RowCount = 1;
+            this.tlpBase2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.77273F));
+            this.tlpBase2.Size = new System.Drawing.Size(1258, 549);
+            this.tlpBase2.TabIndex = 4;
+            // 
+            // tlpBase4
+            // 
+            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase4.ColumnCount = 1;
+            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
+            this.tlpBase4.Controls.Add(this.RGBColaboradores, 0, 0);
+            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
+            this.tlpBase4.Name = "tlpBase4";
+            this.tlpBase4.RowCount = 2;
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
+            this.tlpBase4.TabIndex = 1;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RGBDados, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 543);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.Controls.Add(this.rgbNomeP, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblProjeto, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(617, 48);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // lblProjeto
+            // 
+            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblProjeto.AutoSize = true;
+            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProjeto.Location = new System.Drawing.Point(30, 14);
+            this.lblProjeto.Name = "lblProjeto";
+            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
+            this.lblProjeto.TabIndex = 3;
+            this.lblProjeto.Text = "Projeto:";
+            // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
+            this.TLPHead1.TabIndex = 7;
             // 
             // rgbHeadImgs2
             // 
@@ -319,41 +420,6 @@
             this.lblPorcentagem.Text = "%";
             this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tlpBase2
-            // 
-            this.tlpBase2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase2.ColumnCount = 2;
-            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBase2.Controls.Add(this.tlpBase4, 1, 0);
-            this.tlpBase2.Controls.Add(this.tableLayoutPanel1, 0, 0);
-            this.tlpBase2.Location = new System.Drawing.Point(3, 129);
-            this.tlpBase2.Name = "tlpBase2";
-            this.tlpBase2.RowCount = 1;
-            this.tlpBase2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.77273F));
-            this.tlpBase2.Size = new System.Drawing.Size(1258, 549);
-            this.tlpBase2.TabIndex = 4;
-            // 
-            // tlpBase4
-            // 
-            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase4.ColumnCount = 1;
-            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
-            this.tlpBase4.Controls.Add(this.RGBColaboradores, 0, 0);
-            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
-            this.tlpBase4.Name = "tlpBase4";
-            this.tlpBase4.RowCount = 2;
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
-            this.tlpBase4.TabIndex = 1;
-            // 
             // rgbOpcoes
             // 
             this.rgbOpcoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -396,6 +462,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBColaboradores.BackgroundColor = System.Drawing.Color.White;
             this.RGBColaboradores.BorderWidth = 1F;
+            this.RGBColaboradores.Controls.Add(this.dgvCriador);
             this.RGBColaboradores.Controls.Add(this.DGVColaboradores);
             this.RGBColaboradores.Controls.Add(this.lblColaboradores);
             this.RGBColaboradores.CornerRadius = 20;
@@ -404,6 +471,46 @@
             this.RGBColaboradores.Size = new System.Drawing.Size(617, 482);
             this.RGBColaboradores.TabIndex = 1;
             this.RGBColaboradores.TabStop = false;
+            // 
+            // dgvCriador
+            // 
+            this.dgvCriador.AllowUserToAddRows = false;
+            this.dgvCriador.AllowUserToDeleteRows = false;
+            this.dgvCriador.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvCriador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCriador.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomeCriador,
+            this.mail,
+            this.tel});
+            this.dgvCriador.Location = new System.Drawing.Point(6, 39);
+            this.dgvCriador.Name = "dgvCriador";
+            this.dgvCriador.ReadOnly = true;
+            this.dgvCriador.RowHeadersVisible = false;
+            this.dgvCriador.Size = new System.Drawing.Size(605, 41);
+            this.dgvCriador.TabIndex = 2;
+            this.dgvCriador.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvCriador_CellPainting);
+            // 
+            // nomeCriador
+            // 
+            this.nomeCriador.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nomeCriador.HeaderText = "Nome do Criador";
+            this.nomeCriador.Name = "nomeCriador";
+            this.nomeCriador.ReadOnly = true;
+            // 
+            // mail
+            // 
+            this.mail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mail.HeaderText = "E-mail";
+            this.mail.Name = "mail";
+            this.mail.ReadOnly = true;
+            // 
+            // tel
+            // 
+            this.tel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tel.HeaderText = "Telefone";
+            this.tel.Name = "tel";
+            this.tel.ReadOnly = true;
             // 
             // DGVColaboradores
             // 
@@ -418,13 +525,15 @@
             this.email,
             this.telefone,
             this.isAdmin});
-            this.DGVColaboradores.Location = new System.Drawing.Point(6, 54);
+            this.DGVColaboradores.Location = new System.Drawing.Point(6, 86);
             this.DGVColaboradores.MultiSelect = false;
             this.DGVColaboradores.Name = "DGVColaboradores";
             this.DGVColaboradores.ReadOnly = true;
-            this.DGVColaboradores.Size = new System.Drawing.Size(605, 410);
+            this.DGVColaboradores.RowHeadersVisible = false;
+            this.DGVColaboradores.Size = new System.Drawing.Size(605, 378);
             this.DGVColaboradores.TabIndex = 1;
             this.DGVColaboradores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVColaboradores_CellClick);
+            this.DGVColaboradores.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DGVColaboradores_CellPainting);
             // 
             // nome
             // 
@@ -468,40 +577,6 @@
             this.lblColaboradores.TabIndex = 0;
             this.lblColaboradores.Text = "Lista de pessoas com acesso";
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.RGBDados, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 543);
-            this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.Controls.Add(this.rgbNomeP, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblProjeto, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(617, 48);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
             // rgbNomeP
             // 
             this.rgbNomeP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -529,17 +604,6 @@
             this.lblNomeProjeto.Size = new System.Drawing.Size(79, 29);
             this.lblNomeProjeto.TabIndex = 0;
             this.lblNomeProjeto.Text = "Nome";
-            // 
-            // lblProjeto
-            // 
-            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblProjeto.AutoSize = true;
-            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjeto.Location = new System.Drawing.Point(30, 14);
-            this.lblProjeto.Name = "lblProjeto";
-            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
-            this.lblProjeto.TabIndex = 3;
-            this.lblProjeto.Text = "Projeto:";
             // 
             // RGBDados
             // 
@@ -833,22 +897,6 @@
             this.textNome.Size = new System.Drawing.Size(300, 20);
             this.textNome.TabIndex = 14;
             // 
-            // TLPHead1
-            // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
-            this.TLPHead1.TabIndex = 7;
-            // 
             // rgbHeadImgs1
             // 
             this.rgbHeadImgs1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -962,6 +1010,13 @@
             this.tlpBase1.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
+            this.tlpBase2.ResumeLayout(false);
+            this.tlpBase4.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs2.ResumeLayout(false);
             this.TLPInfoshead.ResumeLayout(false);
             this.TLPInfoshead.PerformLayout();
@@ -970,15 +1025,11 @@
             this.TLPAtualizacao.ResumeLayout(false);
             this.TLPAtualizacao.PerformLayout();
             this.groupPorcentagem.ResumeLayout(false);
-            this.tlpBase2.ResumeLayout(false);
-            this.tlpBase4.ResumeLayout(false);
             this.rgbOpcoes.ResumeLayout(false);
             this.RGBColaboradores.ResumeLayout(false);
             this.RGBColaboradores.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCriador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColaboradores)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.rgbNomeP.ResumeLayout(false);
             this.rgbNomeP.PerformLayout();
             this.RGBDados.ResumeLayout(false);
@@ -990,8 +1041,6 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs1.ResumeLayout(false);
             this.rgbHeadImgs1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
@@ -1059,5 +1108,9 @@
         private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.TextBox textNome;
         private System.Windows.Forms.PictureBox opbLogo;
+        private System.Windows.Forms.DataGridView dgvCriador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCriador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tel;
     }
 }

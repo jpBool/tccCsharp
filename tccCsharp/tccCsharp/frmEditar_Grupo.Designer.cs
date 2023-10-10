@@ -57,9 +57,7 @@
             this.RGBDados2 = new tccCsharp.RoundedGroupBox();
             this.TLPOpcoes = new System.Windows.Forms.TableLayoutPanel();
             this.radFim = new System.Windows.Forms.RadioButton();
-            this.TLPEntreGrupos = new System.Windows.Forms.TableLayoutPanel();
             this.radMeio = new System.Windows.Forms.RadioButton();
-            this.TLPSelecionaCombo = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.comboDepois = new System.Windows.Forms.ComboBox();
             this.radInicio = new System.Windows.Forms.RadioButton();
@@ -75,6 +73,13 @@
             this.btnExcluir = new RoundButton();
             this.btnAtualizar = new RoundButton();
             this.btnCancelar = new RoundButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.clConfig = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.clExcluir = new CustomLine();
+            this.clCancelar = new CustomLine();
+            this.clLogout = new CustomLine();
+            this.clAtualizar = new CustomLine();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -93,12 +98,11 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.RGBDados2.SuspendLayout();
             this.TLPOpcoes.SuspendLayout();
-            this.TLPEntreGrupos.SuspendLayout();
-            this.TLPSelecionaCombo.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.RGBNome.SuspendLayout();
             this.RGBDados4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -375,6 +379,7 @@
             this.OPBRecarregar.AutoHoover = false;
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -393,6 +398,7 @@
             this.OPBConfiguracoes.AutoHoover = false;
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
+            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -411,6 +417,7 @@
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";
@@ -433,6 +440,7 @@
             this.TLPConteudo.Controls.Add(this.RGBDados2, 1, 1);
             this.TLPConteudo.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.TLPConteudo.Controls.Add(this.RGBDados4, 1, 3);
+            this.TLPConteudo.Controls.Add(this.groupBox1, 2, 1);
             this.TLPConteudo.Location = new System.Drawing.Point(0, 120);
             this.TLPConteudo.Margin = new System.Windows.Forms.Padding(0);
             this.TLPConteudo.Name = "TLPConteudo";
@@ -457,7 +465,7 @@
             this.RGBDados3.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.RGBDados3.Name = "RGBDados3";
             this.RGBDados3.Size = new System.Drawing.Size(754, 58);
-            this.RGBDados3.TabIndex = 8;
+            this.RGBDados3.TabIndex = 4;
             this.RGBDados3.TabStop = false;
             // 
             // tableLayoutPanel5
@@ -498,7 +506,7 @@
             this.BoxSim.Location = new System.Drawing.Point(514, 12);
             this.BoxSim.Name = "BoxSim";
             this.BoxSim.Size = new System.Drawing.Size(45, 17);
-            this.BoxSim.TabIndex = 2;
+            this.BoxSim.TabIndex = 6;
             this.BoxSim.Text = "SIM";
             this.BoxSim.UseVisualStyleBackColor = true;
             // 
@@ -516,7 +524,7 @@
             this.RGBDados2.Margin = new System.Windows.Forms.Padding(3, 30, 3, 15);
             this.RGBDados2.Name = "RGBDados2";
             this.RGBDados2.Size = new System.Drawing.Size(754, 243);
-            this.RGBDados2.TabIndex = 7;
+            this.RGBDados2.TabIndex = 3;
             this.RGBDados2.TabStop = false;
             // 
             // TLPOpcoes
@@ -526,11 +534,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPOpcoes.BackColor = System.Drawing.Color.Transparent;
             this.TLPOpcoes.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.TLPOpcoes.ColumnCount = 1;
-            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPOpcoes.ColumnCount = 3;
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.TLPOpcoes.Controls.Add(this.radFim, 0, 2);
-            this.TLPOpcoes.Controls.Add(this.TLPEntreGrupos, 0, 1);
+            this.TLPOpcoes.Controls.Add(this.label1, 1, 1);
             this.TLPOpcoes.Controls.Add(this.radInicio, 0, 0);
+            this.TLPOpcoes.Controls.Add(this.radMeio, 0, 1);
+            this.TLPOpcoes.Controls.Add(this.comboDepois, 2, 1);
             this.TLPOpcoes.Location = new System.Drawing.Point(18, 45);
             this.TLPOpcoes.Name = "TLPOpcoes";
             this.TLPOpcoes.RowCount = 3;
@@ -538,7 +550,7 @@
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.77216F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.64557F));
             this.TLPOpcoes.Size = new System.Drawing.Size(717, 177);
-            this.TLPOpcoes.TabIndex = 6;
+            this.TLPOpcoes.TabIndex = 2;
             // 
             // radFim
             // 
@@ -547,66 +559,30 @@
             this.radFim.Location = new System.Drawing.Point(4, 139);
             this.radFim.Name = "radFim";
             this.radFim.Size = new System.Drawing.Size(64, 17);
-            this.radFim.TabIndex = 2;
+            this.radFim.TabIndex = 4;
+            this.radFim.TabStop = true;
             this.radFim.Text = "No Final";
             this.radFim.UseVisualStyleBackColor = true;
             this.radFim.Click += new System.EventHandler(this.radFim_Click);
-            // 
-            // TLPEntreGrupos
-            // 
-            this.TLPEntreGrupos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPEntreGrupos.ColumnCount = 2;
-            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.Controls.Add(this.radMeio, 0, 0);
-            this.TLPEntreGrupos.Controls.Add(this.TLPSelecionaCombo, 1, 0);
-            this.TLPEntreGrupos.Location = new System.Drawing.Point(1, 47);
-            this.TLPEntreGrupos.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPEntreGrupos.Name = "TLPEntreGrupos";
-            this.TLPEntreGrupos.RowCount = 1;
-            this.TLPEntreGrupos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPEntreGrupos.Size = new System.Drawing.Size(715, 72);
-            this.TLPEntreGrupos.TabIndex = 0;
             // 
             // radMeio
             // 
             this.radMeio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radMeio.AutoSize = true;
-            this.radMeio.Location = new System.Drawing.Point(3, 27);
+            this.radMeio.Location = new System.Drawing.Point(4, 74);
             this.radMeio.Name = "radMeio";
             this.radMeio.Size = new System.Drawing.Size(149, 17);
-            this.radMeio.TabIndex = 2;
+            this.radMeio.TabIndex = 3;
             this.radMeio.TabStop = true;
             this.radMeio.Text = "Entre os grupos existentes";
             this.radMeio.UseVisualStyleBackColor = true;
             this.radMeio.Click += new System.EventHandler(this.radMeio_Click);
             // 
-            // TLPSelecionaCombo
-            // 
-            this.TLPSelecionaCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPSelecionaCombo.ColumnCount = 2;
-            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.TLPSelecionaCombo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.TLPSelecionaCombo.Controls.Add(this.label1, 0, 0);
-            this.TLPSelecionaCombo.Controls.Add(this.comboDepois, 1, 0);
-            this.TLPSelecionaCombo.Location = new System.Drawing.Point(357, 0);
-            this.TLPSelecionaCombo.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPSelecionaCombo.Name = "TLPSelecionaCombo";
-            this.TLPSelecionaCombo.RowCount = 1;
-            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPSelecionaCombo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.TLPSelecionaCombo.Size = new System.Drawing.Size(358, 72);
-            this.TLPSelecionaCombo.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 29);
+            this.label1.Location = new System.Drawing.Point(402, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
@@ -616,10 +592,10 @@
             // 
             this.comboDepois.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboDepois.FormattingEnabled = true;
-            this.comboDepois.Location = new System.Drawing.Point(146, 25);
+            this.comboDepois.Location = new System.Drawing.Point(540, 72);
             this.comboDepois.Name = "comboDepois";
             this.comboDepois.Size = new System.Drawing.Size(121, 21);
-            this.comboDepois.TabIndex = 2;
+            this.comboDepois.TabIndex = 5;
             this.comboDepois.SelectedIndexChanged += new System.EventHandler(this.comboDepois_SelectedIndexChanged);
             // 
             // radInicio
@@ -630,7 +606,7 @@
             this.radInicio.Location = new System.Drawing.Point(4, 15);
             this.radInicio.Name = "radInicio";
             this.radInicio.Size = new System.Drawing.Size(69, 17);
-            this.radInicio.TabIndex = 1;
+            this.radInicio.TabIndex = 2;
             this.radInicio.TabStop = true;
             this.radInicio.Text = "No Início";
             this.radInicio.UseVisualStyleBackColor = true;
@@ -666,7 +642,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(754, 54);
-            this.tableLayoutPanel2.TabIndex = 10;
+            this.tableLayoutPanel2.TabIndex = 1;
             // 
             // RGBNome
             // 
@@ -683,7 +659,7 @@
             this.RGBNome.Location = new System.Drawing.Point(153, 3);
             this.RGBNome.Name = "RGBNome";
             this.RGBNome.Size = new System.Drawing.Size(598, 48);
-            this.RGBNome.TabIndex = 6;
+            this.RGBNome.TabIndex = 2;
             this.RGBNome.TabStop = false;
             // 
             // txtNomeGrupo
@@ -697,7 +673,7 @@
             this.txtNomeGrupo.MaxLength = 50;
             this.txtNomeGrupo.Name = "txtNomeGrupo";
             this.txtNomeGrupo.Size = new System.Drawing.Size(538, 19);
-            this.txtNomeGrupo.TabIndex = 2;
+            this.txtNomeGrupo.TabIndex = 1;
             this.txtNomeGrupo.Leave += new System.EventHandler(this.txtNomeGrupo_Leave);
             // 
             // lblcar1
@@ -721,6 +697,7 @@
             this.customLine1.Name = "customLine1";
             this.customLine1.Size = new System.Drawing.Size(538, 3);
             this.customLine1.TabIndex = 0;
+            this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
             // 
             // lblNome
@@ -750,7 +727,7 @@
             this.RGBDados4.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.RGBDados4.Name = "RGBDados4";
             this.RGBDados4.Size = new System.Drawing.Size(754, 59);
-            this.RGBDados4.TabIndex = 9;
+            this.RGBDados4.TabIndex = 5;
             this.RGBDados4.TabStop = false;
             // 
             // tableLayoutPanel6
@@ -787,6 +764,7 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(233, 34);
             this.btnExcluir.TabIndex = 6;
+            this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "EXCLUIR GRUPO";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -806,6 +784,7 @@
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(233, 34);
             this.btnAtualizar.TabIndex = 5;
+            this.btnAtualizar.TabStop = false;
             this.btnAtualizar.Text = "ATUALIZAR";
             this.btnAtualizar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAtualizar.UseVisualStyleBackColor = true;
@@ -825,10 +804,104 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(233, 34);
             this.btnCancelar.TabIndex = 4;
+            this.btnCancelar.TabStop = false;
             this.btnCancelar.Text = "SAIR SEM SALVAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.clLogout);
+            this.groupBox1.Controls.Add(this.clExcluir);
+            this.groupBox1.Controls.Add(this.clRecarregar);
+            this.groupBox1.Controls.Add(this.clAtualizar);
+            this.groupBox1.Controls.Add(this.clCancelar);
+            this.groupBox1.Controls.Add(this.clConfig);
+            this.groupBox1.Location = new System.Drawing.Point(1016, 63);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(232, 104);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(110, 51);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 10;
+            this.clConfig.Text = "customLine2";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(122, 72);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 11;
+            this.clRecarregar.Text = "customLine3";
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(8, 19);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 10);
+            this.clExcluir.TabIndex = 7;
+            this.clExcluir.Text = "customLine4";
+            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
+            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
+            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
+            // 
+            // clCancelar
+            // 
+            this.clCancelar.LineColor = System.Drawing.Color.Black;
+            this.clCancelar.LineWidth = 1;
+            this.clCancelar.Location = new System.Drawing.Point(8, 35);
+            this.clCancelar.Name = "clCancelar";
+            this.clCancelar.Size = new System.Drawing.Size(75, 10);
+            this.clCancelar.TabIndex = 8;
+            this.clCancelar.Text = "customLine5";
+            this.clCancelar.Enter += new System.EventHandler(this.clCancelar_Enter);
+            this.clCancelar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCancelar_KeyDown);
+            this.clCancelar.Leave += new System.EventHandler(this.clCancelar_Leave);
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(122, 94);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 10);
+            this.clLogout.TabIndex = 12;
+            this.clLogout.Text = "customLine6";
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clAtualizar
+            // 
+            this.clAtualizar.LineColor = System.Drawing.Color.Black;
+            this.clAtualizar.LineWidth = 1;
+            this.clAtualizar.Location = new System.Drawing.Point(8, 51);
+            this.clAtualizar.Name = "clAtualizar";
+            this.clAtualizar.Size = new System.Drawing.Size(75, 10);
+            this.clAtualizar.TabIndex = 9;
+            this.clAtualizar.Text = "customLine7";
+            this.clAtualizar.Enter += new System.EventHandler(this.clAtualizar_Enter);
+            this.clAtualizar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAtualizar_KeyDown);
+            this.clAtualizar.Leave += new System.EventHandler(this.clAtualizar_Leave);
             // 
             // frmEditar_Grupo
             // 
@@ -867,16 +940,13 @@
             this.RGBDados2.PerformLayout();
             this.TLPOpcoes.ResumeLayout(false);
             this.TLPOpcoes.PerformLayout();
-            this.TLPEntreGrupos.ResumeLayout(false);
-            this.TLPEntreGrupos.PerformLayout();
-            this.TLPSelecionaCombo.ResumeLayout(false);
-            this.TLPSelecionaCombo.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.RGBNome.ResumeLayout(false);
             this.RGBNome.PerformLayout();
             this.RGBDados4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -910,9 +980,7 @@
         private RoundedGroupBox RGBDados2;
         private System.Windows.Forms.TableLayoutPanel TLPOpcoes;
         private System.Windows.Forms.RadioButton radFim;
-        private System.Windows.Forms.TableLayoutPanel TLPEntreGrupos;
         private System.Windows.Forms.RadioButton radMeio;
-        private System.Windows.Forms.TableLayoutPanel TLPSelecionaCombo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboDepois;
         private System.Windows.Forms.RadioButton radInicio;
@@ -929,5 +997,12 @@
         private RoundButton btnCancelar;
         private RoundButton btnExcluir;
         private System.Windows.Forms.PictureBox opbLogo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private CustomLine clAtualizar;
+        private CustomLine clLogout;
+        private CustomLine clCancelar;
+        private CustomLine clExcluir;
+        private CustomLine clRecarregar;
+        private CustomLine clConfig;
     }
 }

@@ -110,6 +110,15 @@
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
+            this.clColaboradores = new CustomLine();
+            this.clCancelar = new CustomLine();
+            this.clExcluir = new CustomLine();
+            this.clEtapas = new CustomLine();
+            this.clAtualizar = new CustomLine();
+            this.clLogout = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.clConfig = new CustomLine();
+            this.clImagens = new CustomLine();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
@@ -309,6 +318,7 @@
             this.customLine7.Name = "customLine7";
             this.customLine7.Size = new System.Drawing.Size(461, 3);
             this.customLine7.TabIndex = 3;
+            this.customLine7.TabStop = false;
             this.customLine7.Text = "customLine7";
             // 
             // RGBSite
@@ -352,6 +362,7 @@
             this.customLine6.Name = "customLine6";
             this.customLine6.Size = new System.Drawing.Size(461, 3);
             this.customLine6.TabIndex = 3;
+            this.customLine6.TabStop = false;
             this.customLine6.Text = "customLine6";
             // 
             // RGBBreve
@@ -407,6 +418,7 @@
             this.customLine5.Name = "customLine5";
             this.customLine5.Size = new System.Drawing.Size(400, 3);
             this.customLine5.TabIndex = 3;
+            this.customLine5.TabStop = false;
             this.customLine5.Text = "customLine5";
             // 
             // RGBLinguagem
@@ -436,7 +448,7 @@
             this.txtLinguagem.MaxLength = 100;
             this.txtLinguagem.Name = "txtLinguagem";
             this.txtLinguagem.Size = new System.Drawing.Size(400, 19);
-            this.txtLinguagem.TabIndex = 5;
+            this.txtLinguagem.TabIndex = 4;
             this.txtLinguagem.Text = "Linguagens de programação utilizadas";
             this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
             this.txtLinguagem.Leave += new System.EventHandler(this.txtLinguagem_Leave);
@@ -462,6 +474,7 @@
             this.customLine4.Name = "customLine4";
             this.customLine4.Size = new System.Drawing.Size(400, 3);
             this.customLine4.TabIndex = 3;
+            this.customLine4.TabStop = false;
             this.customLine4.Text = "customLine4";
             // 
             // RGBAutores
@@ -491,7 +504,7 @@
             this.txtAutores.MaxLength = 150;
             this.txtAutores.Name = "txtAutores";
             this.txtAutores.Size = new System.Drawing.Size(400, 19);
-            this.txtAutores.TabIndex = 5;
+            this.txtAutores.TabIndex = 3;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
             this.txtAutores.Leave += new System.EventHandler(this.txtAutores_Leave);
@@ -517,6 +530,7 @@
             this.customLine3.Name = "customLine3";
             this.customLine3.Size = new System.Drawing.Size(400, 3);
             this.customLine3.TabIndex = 3;
+            this.customLine3.TabStop = false;
             this.customLine3.Text = "customLine3";
             // 
             // RGBEmail
@@ -546,7 +560,7 @@
             this.txtEmail.MaxLength = 256;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(400, 19);
-            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TabIndex = 2;
             this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
@@ -572,6 +586,7 @@
             this.customLine2.Name = "customLine2";
             this.customLine2.Size = new System.Drawing.Size(400, 3);
             this.customLine2.TabIndex = 3;
+            this.customLine2.TabStop = false;
             this.customLine2.Text = "customLine2";
             // 
             // RGBNome
@@ -601,7 +616,7 @@
             this.txtNomeProjeto.MaxLength = 20;
             this.txtNomeProjeto.Name = "txtNomeProjeto";
             this.txtNomeProjeto.Size = new System.Drawing.Size(400, 19);
-            this.txtNomeProjeto.TabIndex = 2;
+            this.txtNomeProjeto.TabIndex = 1;
             this.txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
             this.txtNomeProjeto.Enter += new System.EventHandler(this.txtNomeProjeto_Enter);
             this.txtNomeProjeto.Leave += new System.EventHandler(this.txtNomeProjeto_Leave);
@@ -627,6 +642,7 @@
             this.customLine1.Name = "customLine1";
             this.customLine1.Size = new System.Drawing.Size(400, 3);
             this.customLine1.TabIndex = 0;
+            this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
             // 
             // lblNome
@@ -788,6 +804,7 @@
             this.radioSim.Name = "radioSim";
             this.radioSim.Size = new System.Drawing.Size(54, 24);
             this.radioSim.TabIndex = 6;
+            this.radioSim.TabStop = true;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
             // 
@@ -889,6 +906,15 @@
             this.RGBDetalhada.BackColor = System.Drawing.Color.Transparent;
             this.RGBDetalhada.BackgroundColor = System.Drawing.Color.White;
             this.RGBDetalhada.BorderWidth = 2F;
+            this.RGBDetalhada.Controls.Add(this.clImagens);
+            this.RGBDetalhada.Controls.Add(this.clConfig);
+            this.RGBDetalhada.Controls.Add(this.clRecarregar);
+            this.RGBDetalhada.Controls.Add(this.clLogout);
+            this.RGBDetalhada.Controls.Add(this.clAtualizar);
+            this.RGBDetalhada.Controls.Add(this.clEtapas);
+            this.RGBDetalhada.Controls.Add(this.clExcluir);
+            this.RGBDetalhada.Controls.Add(this.clCancelar);
+            this.RGBDetalhada.Controls.Add(this.clColaboradores);
             this.RGBDetalhada.Controls.Add(this.txtDetalhada);
             this.RGBDetalhada.Controls.Add(this.lblDetalhado);
             this.RGBDetalhada.CornerRadius = 20;
@@ -912,6 +938,7 @@
             this.txtDetalhada.TabIndex = 4;
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
+            this.txtDetalhada.TextChanged += new System.EventHandler(this.txtDetalhada_TextChanged);
             this.txtDetalhada.Enter += new System.EventHandler(this.txtDetalhada_Enter);
             this.txtDetalhada.Leave += new System.EventHandler(this.txtDetalhada_Leave);
             // 
@@ -999,6 +1026,7 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(187, 44);
             this.btnExcluir.TabIndex = 4;
+            this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "EXCLUIR PROJETO";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -1019,6 +1047,7 @@
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(188, 44);
             this.btnAtualizar.TabIndex = 3;
+            this.btnAtualizar.TabStop = false;
             this.btnAtualizar.Text = "ATUALIZAR";
             this.btnAtualizar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAtualizar.UseVisualStyleBackColor = true;
@@ -1039,6 +1068,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(187, 44);
             this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.TabStop = false;
             this.btnCancelar.Text = "SAIR SEM SALVAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -1059,6 +1089,7 @@
             this.btnColaboradores.Name = "btnColaboradores";
             this.btnColaboradores.Size = new System.Drawing.Size(574, 34);
             this.btnColaboradores.TabIndex = 3;
+            this.btnColaboradores.TabStop = false;
             this.btnColaboradores.Text = "GERENCIAR COLABORADORES DO PROJETO";
             this.btnColaboradores.TextoPrincipal = System.Drawing.Color.Black;
             this.btnColaboradores.UseVisualStyleBackColor = true;
@@ -1080,6 +1111,7 @@
             this.btnImagens.Name = "btnImagens";
             this.btnImagens.Size = new System.Drawing.Size(574, 34);
             this.btnImagens.TabIndex = 4;
+            this.btnImagens.TabStop = false;
             this.btnImagens.Text = "GERENCIAR IMAGENS DO PROJETO";
             this.btnImagens.TextoPrincipal = System.Drawing.Color.Black;
             this.btnImagens.UseVisualStyleBackColor = true;
@@ -1101,6 +1133,7 @@
             this.btnEtapas.Name = "btnEtapas";
             this.btnEtapas.Size = new System.Drawing.Size(574, 34);
             this.btnEtapas.TabIndex = 5;
+            this.btnEtapas.TabStop = false;
             this.btnEtapas.Text = "GERENCIAR ETAPAS DO PROJETO";
             this.btnEtapas.TextoPrincipal = System.Drawing.Color.Black;
             this.btnEtapas.UseVisualStyleBackColor = true;
@@ -1360,6 +1393,7 @@
             this.OPBRecarregar.AutoHoover = false;
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -1378,6 +1412,7 @@
             this.OPBConfiguracoes.AutoHoover = false;
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
+            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -1396,6 +1431,7 @@
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";
@@ -1404,6 +1440,125 @@
             this.OPBLogout.TabIndex = 8;
             this.OPBLogout.TabStop = false;
             this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
+            // 
+            // clColaboradores
+            // 
+            this.clColaboradores.LineColor = System.Drawing.Color.Black;
+            this.clColaboradores.LineWidth = 1;
+            this.clColaboradores.Location = new System.Drawing.Point(31, 215);
+            this.clColaboradores.Name = "clColaboradores";
+            this.clColaboradores.Size = new System.Drawing.Size(75, 10);
+            this.clColaboradores.TabIndex = 5;
+            this.clColaboradores.Text = "customLine8";
+            this.clColaboradores.Enter += new System.EventHandler(this.clColaboradores_Enter);
+            this.clColaboradores.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clColaboradores_KeyDown);
+            this.clColaboradores.Leave += new System.EventHandler(this.clColaboradores_Leave);
+            // 
+            // clCancelar
+            // 
+            this.clCancelar.LineColor = System.Drawing.Color.Black;
+            this.clCancelar.LineWidth = 1;
+            this.clCancelar.Location = new System.Drawing.Point(355, 215);
+            this.clCancelar.Name = "clCancelar";
+            this.clCancelar.Size = new System.Drawing.Size(75, 10);
+            this.clCancelar.TabIndex = 6;
+            this.clCancelar.Text = "customLine9";
+            this.clCancelar.Enter += new System.EventHandler(this.clCancelar_Enter);
+            this.clCancelar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCancelar_KeyDown);
+            this.clCancelar.Leave += new System.EventHandler(this.clCancelar_Leave);
+            // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(274, 215);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 10);
+            this.clExcluir.TabIndex = 7;
+            this.clExcluir.Text = "customLine10";
+            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
+            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
+            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
+            // 
+            // clEtapas
+            // 
+            this.clEtapas.LineColor = System.Drawing.Color.Black;
+            this.clEtapas.LineWidth = 1;
+            this.clEtapas.Location = new System.Drawing.Point(193, 215);
+            this.clEtapas.Name = "clEtapas";
+            this.clEtapas.Size = new System.Drawing.Size(75, 10);
+            this.clEtapas.TabIndex = 8;
+            this.clEtapas.Text = "customLine11";
+            this.clEtapas.Enter += new System.EventHandler(this.clEtapas_Enter);
+            this.clEtapas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clEtapas_KeyDown);
+            this.clEtapas.Leave += new System.EventHandler(this.clEtapas_Leave);
+            // 
+            // clAtualizar
+            // 
+            this.clAtualizar.LineColor = System.Drawing.Color.Black;
+            this.clAtualizar.LineWidth = 1;
+            this.clAtualizar.Location = new System.Drawing.Point(73, 231);
+            this.clAtualizar.Name = "clAtualizar";
+            this.clAtualizar.Size = new System.Drawing.Size(75, 10);
+            this.clAtualizar.TabIndex = 9;
+            this.clAtualizar.Text = "customLine12";
+            this.clAtualizar.Enter += new System.EventHandler(this.clAtualizar_Enter);
+            this.clAtualizar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAtualizar_KeyDown);
+            this.clAtualizar.Leave += new System.EventHandler(this.clAtualizar_Leave);
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(316, 231);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 10);
+            this.clLogout.TabIndex = 10;
+            this.clLogout.Text = "customLine13";
+            this.clLogout.Click += new System.EventHandler(this.customLine13_Click);
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(235, 231);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 11;
+            this.clRecarregar.Text = "customLine14";
+            this.clRecarregar.Click += new System.EventHandler(this.customLine14_Click);
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(154, 231);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 12;
+            this.clConfig.Text = "customLine15";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
+            // 
+            // clImagens
+            // 
+            this.clImagens.LineColor = System.Drawing.Color.Black;
+            this.clImagens.LineWidth = 1;
+            this.clImagens.Location = new System.Drawing.Point(112, 215);
+            this.clImagens.Name = "clImagens";
+            this.clImagens.Size = new System.Drawing.Size(75, 10);
+            this.clImagens.TabIndex = 13;
+            this.clImagens.Text = "customLine16";
+            this.clImagens.Enter += new System.EventHandler(this.clImagens_Enter);
+            this.clImagens.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clImagens_KeyDown);
+            this.clImagens.Leave += new System.EventHandler(this.clImagens_Leave);
             // 
             // frmEditar_Projeto
             // 
@@ -1551,5 +1706,14 @@
         private RoundButton btnExcluir;
         private RoundButton btnAtualizar;
         private RoundButton btnCancelar;
+        private CustomLine clImagens;
+        private CustomLine clConfig;
+        private CustomLine clRecarregar;
+        private CustomLine clLogout;
+        private CustomLine clAtualizar;
+        private CustomLine clEtapas;
+        private CustomLine clExcluir;
+        private CustomLine clCancelar;
+        private CustomLine clColaboradores;
     }
 }

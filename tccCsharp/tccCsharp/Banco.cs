@@ -1324,6 +1324,40 @@ namespace tccCsharp
             return Colaboradores;
         }
 
+        public static Collaborators CarregaCriador()
+        {
+            Collaborators Criador = new Collaborators();
+            try
+            {
+                Conectar();
+                String sql = "SELECT id_usuario, nome, email, telefone, avatar from gp2_usuarios T1 " +
+                    "INNER JOIN gp2_projetos T2 on T1.id_usuario = T2.id_criador " +
+                    "WHERE T2.id_projeto = @1";
+                List<object> param = new List<object>();
+                param.Add(Program.id_projeto_atual);
+                NpgsqlDataReader dr = Banco.Selecionar(sql, param);
+                if (dr.Read())
+                {
+                    Criador.nome = Convert.ToString(dr["nome"]);
+                    Criador.email = Convert.ToString(dr["email"]);
+                    Criador.telefone = Convert.ToString(dr["telefone"]);
+                    Criador.isAdmin = true;
+                    Criador.avatar = dr["avatar"] != DBNull.Value ? Convert.ToInt32(dr["avatar"]) : 0;
+                    Criador.idColaborador = Convert.ToInt32(dr["id_usuario"]);
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar os Colaboradores!!!" + "\n\nMais detalhes: " + ex.Message, "Erro ao inserir imagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return Criador;
+        }
+
         public static List<Collaborators> CarrregaOutrosUser()
         {
             List<Collaborators> Outros = new List<Collaborators>();

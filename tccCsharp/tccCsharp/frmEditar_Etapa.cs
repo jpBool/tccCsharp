@@ -529,7 +529,7 @@ namespace tccCsharp
                 //apenas combo
                 comboDepois.Enabled = true;
 
-                comboDepois.SelectedIndex = 0;
+                //comboDepois.SelectedIndex = 0; //Erro
             }
         }
 

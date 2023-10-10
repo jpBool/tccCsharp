@@ -219,6 +219,13 @@ namespace tccCsharp
             comboTelefone.ValueMember = "idColaborador";
             comboTelefone.SelectedIndex = -1;
 
+            Collaborators Criador = new Collaborators();
+            Criador = Banco.CarregaCriador();
+            string[] novaLinha = new string[] { Criador.nome, Criador.email, Criador.telefone };
+            dgvCriador.Rows.Add(novaLinha);
+            dgvCriador.Enabled = false;
+            dgvCriador.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
             FimCarregamento = true;
         }
 
@@ -547,5 +554,27 @@ namespace tccCsharp
                     break;
             }
         }
+
+        private void dgvCriador_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (e.RowIndex == -1 && e.ColumnIndex >= 0)
+            {
+                e.PaintBackground(e.CellBounds, true);
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2])), e.CellBounds);
+                e.PaintContent(e.CellBounds);
+                e.Handled = true;
+            }
+        }
+
+        private void DGVColaboradores_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+                if (e.RowIndex == -1 && e.ColumnIndex >= 0)
+                {
+                    e.PaintBackground(e.CellBounds, true);
+                    e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2])), e.CellBounds);
+                    e.PaintContent(e.CellBounds);
+                    e.Handled = true;
+                }
+            }
     }
 }

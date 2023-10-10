@@ -120,11 +120,17 @@ namespace tccCsharp
 
             if (grupos.Count < 2)
             {
-                TLPEntreGrupos.Visible = false;
+                //TLPEntreGrupos.Visible = false;
+                //ambos
+                comboDepois.Visible = false;
+                radMeio.Visible = false;
             }
             else
             {
-                TLPEntreGrupos.Visible = true;
+                //TLPEntreGrupos.Visible = true;
+                //ambos
+                comboDepois.Visible = true;
+                radMeio.Visible = true;
 
                 comboDepois.DataSource = grupos;
                 comboDepois.ValueMember = "ordenador";
@@ -134,13 +140,17 @@ namespace tccCsharp
 
             if (radMeio.Checked == false)
             {
-                TLPSelecionaCombo.Enabled = false;
+                //TLPSelecionaCombo.Enabled = false;
+                //Apenas combo
+                comboDepois.Enabled = false;
             }
 
             radInicio.Checked = true;
             radMeio.Checked = false;
             radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = false;
+            //TLPSelecionaCombo.Enabled = false;
+            //Apenas combo
+            comboDepois.Enabled = false;
 
             grupoEditando = Banco.RecarregaGrupo(IdGrupo);
 
@@ -170,7 +180,9 @@ namespace tccCsharp
             radInicio.Checked = true;
             radMeio.Checked = false;
             radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = false;
+            //TLPSelecionaCombo.Enabled = false;
+            //Apenas combo
+            comboDepois.Enabled = false;
         }
 
         private void radMeio_Click(object sender, EventArgs e)
@@ -178,7 +190,9 @@ namespace tccCsharp
             radInicio.Checked = false;
             radMeio.Checked = true;
             radFim.Checked = false;
-            TLPSelecionaCombo.Enabled = true;
+            //TLPSelecionaCombo.Enabled = true;
+            //Apenas combo
+            comboDepois.Enabled = true;
             comboDepois.SelectedIndex = 0;
         }
 
@@ -187,7 +201,9 @@ namespace tccCsharp
             radInicio.Checked = false;
             radMeio.Checked = false;
             radFim.Checked = true;
-            TLPSelecionaCombo.Enabled = false;
+            //TLPSelecionaCombo.Enabled = false;
+            //Apenas combo
+            comboDepois.Enabled = false;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
@@ -211,7 +227,9 @@ namespace tccCsharp
             {
                 radFim.Checked = true;
                 radMeio.Checked = false;
-                TLPSelecionaCombo.Enabled = false;
+                //TLPSelecionaCombo.Enabled = false;
+                //Apenas combo
+                comboDepois.Enabled = false;
             }
         }        
 
@@ -330,6 +348,132 @@ namespace tccCsharp
                     OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
                     break;
+            }
+        }
+
+        private void clExcluir_Enter(object sender, EventArgs e)
+        {
+            btnExcluir.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clExcluir_Leave(object sender, EventArgs e)
+        {
+            btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clExcluir_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnExcluir_Click(sender, e);
+            }
+        }
+
+        private void clCancelar_Enter(object sender, EventArgs e)
+        {
+            btnCancelar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnCancelar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clCancelar_Leave(object sender, EventArgs e)
+        {
+            btnCancelar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clCancelar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCancelar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnCancelar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnCancelar_Click(sender, e);
+            }
+        }
+
+        private void clAtualizar_Enter(object sender, EventArgs e)
+        {
+            btnAtualizar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAtualizar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clAtualizar_Leave(object sender, EventArgs e)
+        {
+            btnAtualizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clAtualizar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnAtualizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnAtualizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnAtualizar_Click(sender, e);
+            }
+        }
+
+        private void clConfig_Enter(object sender, EventArgs e)
+        {
+            OPBConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clConfig_Leave(object sender, EventArgs e)
+        {
+            OPBConfiguracoes._bordercolor = Color.Transparent;
+        }
+
+        private void clConfig_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBConfiguracoes._bordercolor = Color.Transparent;
+                OPBConfiguracoes_Click(sender, e);
+
+            }
+        }
+
+        private void clRecarregar_Enter(object sender, EventArgs e)
+        {
+            OPBRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clRecarregar_Leave(object sender, EventArgs e)
+        {
+            OPBRecarregar._bordercolor = Color.Transparent;
+        }
+
+        private void clRecarregar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBRecarregar._bordercolor = Color.Transparent;
+                OPBRecarregar_Click(sender, e);
+
+            }
+        }
+
+        private void clLogout_Enter(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clLogout_Leave(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.Transparent;
+        }
+
+        private void clLogout_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBLogout._bordercolor = Color.Transparent;
+                OPBLogout_Click(sender, e);
+
             }
         }
     }
