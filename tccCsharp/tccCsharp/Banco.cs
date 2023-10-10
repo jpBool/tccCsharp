@@ -466,9 +466,27 @@ namespace tccCsharp
             try
             {
                 Conectar();
-                String sql = "UPDATE gp2_usuarios	SET  commits = commits + 1 WHERE id_usuario = @1;";
+                String sql = "UPDATE gp2_usuarios   SET  commits = commits + 1 WHERE id_usuario = @1;";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@1", Program.id_usuario);
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao atualizar suas informações !!!" + "\n\nMais detalhes: " + ex.Message, "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+            try
+            {
+                Conectar();
+                String sql = "UPDATE gp2_projetos SET  data_atualizacao = NOW(), atualizador = @1 WHERE id_projeto = @2;";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@1", Program.id_usuario);
+                cmd.Parameters.AddWithValue("@2", Program.id_projeto_atual);
                 cmd.ExecuteNonQuery();
             }
             catch (NpgsqlException ex)
