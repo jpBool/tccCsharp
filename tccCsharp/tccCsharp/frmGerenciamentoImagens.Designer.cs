@@ -257,7 +257,7 @@
             this.rgbDescricaoImg.Location = new System.Drawing.Point(160, 372);
             this.rgbDescricaoImg.Name = "rgbDescricaoImg";
             this.rgbDescricaoImg.Size = new System.Drawing.Size(454, 37);
-            this.rgbDescricaoImg.TabIndex = 4;
+            this.rgbDescricaoImg.TabIndex = 3;
             this.rgbDescricaoImg.TabStop = false;
             // 
             // lblCar3
@@ -294,6 +294,7 @@
             this.customLine3.Name = "customLine3";
             this.customLine3.Size = new System.Drawing.Size(377, 3);
             this.customLine3.TabIndex = 0;
+            this.customLine3.TabStop = false;
             this.customLine3.Text = "customLine3";
             // 
             // rgbUpload
@@ -309,7 +310,7 @@
             this.rgbUpload.Location = new System.Drawing.Point(160, 53);
             this.rgbUpload.Name = "rgbUpload";
             this.rgbUpload.Size = new System.Drawing.Size(454, 271);
-            this.rgbUpload.TabIndex = 5;
+            this.rgbUpload.TabIndex = 1;
             this.rgbUpload.TabStop = false;
             // 
             // pcbUpload
@@ -339,6 +340,7 @@
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
             this.btnUpload.TabIndex = 1;
+            this.btnUpload.TabStop = false;
             this.btnUpload.Text = "UPLOAD";
             this.btnUpload.TextoPrincipal = System.Drawing.Color.Black;
             this.btnUpload.UseVisualStyleBackColor = true;
@@ -359,7 +361,7 @@
             this.rgbNomeImagem.Location = new System.Drawing.Point(160, 330);
             this.rgbNomeImagem.Name = "rgbNomeImagem";
             this.rgbNomeImagem.Size = new System.Drawing.Size(454, 36);
-            this.rgbNomeImagem.TabIndex = 3;
+            this.rgbNomeImagem.TabIndex = 2;
             this.rgbNomeImagem.TabStop = false;
             // 
             // txtNomeImagem
@@ -396,6 +398,7 @@
             this.customLine2.Name = "customLine2";
             this.customLine2.Size = new System.Drawing.Size(377, 3);
             this.customLine2.TabIndex = 0;
+            this.customLine2.TabStop = false;
             this.customLine2.Text = "customLine2";
             // 
             // tlpBase6
@@ -420,7 +423,7 @@
             this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.6875F));
             this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.tlpBase6.Size = new System.Drawing.Size(617, 119);
-            this.tlpBase6.TabIndex = 1;
+            this.tlpBase6.TabIndex = 4;
             // 
             // btnExcluir
             // 
@@ -437,6 +440,7 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(89, 36);
             this.btnExcluir.TabIndex = 9;
+            this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -457,6 +461,7 @@
             this.btnLimparForm.Name = "btnLimparForm";
             this.btnLimparForm.Size = new System.Drawing.Size(195, 36);
             this.btnLimparForm.TabIndex = 5;
+            this.btnLimparForm.TabStop = false;
             this.btnLimparForm.Text = "LIMPAR FORMULÁRIO";
             this.btnLimparForm.TextoPrincipal = System.Drawing.Color.Black;
             this.btnLimparForm.UseVisualStyleBackColor = true;
@@ -510,6 +515,7 @@
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(89, 36);
             this.btnSalvar.TabIndex = 6;
+            this.btnSalvar.TabStop = false;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -563,6 +569,7 @@
             this.btnSairSSalvar.Name = "btnSairSSalvar";
             this.btnSairSSalvar.Size = new System.Drawing.Size(595, 36);
             this.btnSairSSalvar.TabIndex = 12;
+            this.btnSairSSalvar.TabStop = false;
             this.btnSairSSalvar.Text = "VOLTAR PARA O GERENCIAMENTO DO PROJETO";
             this.btnSairSSalvar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnSairSSalvar.UseVisualStyleBackColor = true;
@@ -581,7 +588,7 @@
             this.rgbImagensP.Location = new System.Drawing.Point(3, 3);
             this.rgbImagensP.Name = "rgbImagensP";
             this.rgbImagensP.Size = new System.Drawing.Size(617, 482);
-            this.rgbImagensP.TabIndex = 1;
+            this.rgbImagensP.TabIndex = 5;
             this.rgbImagensP.TabStop = false;
             // 
             // flpImagens
@@ -593,7 +600,8 @@
             this.flpImagens.Location = new System.Drawing.Point(7, 45);
             this.flpImagens.Name = "flpImagens";
             this.flpImagens.Size = new System.Drawing.Size(601, 431);
-            this.flpImagens.TabIndex = 1;
+            this.flpImagens.TabIndex = 9;
+            this.flpImagens.TabStop = true;
             // 
             // lblImagens
             // 
@@ -867,6 +875,7 @@
             this.OPBRecarregar.AutoHoover = false;
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -885,6 +894,7 @@
             this.OPBConfiguracoes.AutoHoover = false;
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
+            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -903,6 +913,7 @@
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";

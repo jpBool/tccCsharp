@@ -44,6 +44,7 @@ namespace tccCsharp
 
         public void DoDesign()
         {
+            tlpBaseConfig1.Font = Program.fonte;
             //COMPONENTES DE AGRUPAMENTO
             tlpBaseConfig1.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             rgbMenu.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -281,7 +282,7 @@ namespace tccCsharp
 
                 Font Nova = new Font("Microsoft Sans Serif", 12);
 
-                if (fd.Font.Size > 36 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
+                if (fd.Font.Size > 12 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
                 {
                     Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
                 }

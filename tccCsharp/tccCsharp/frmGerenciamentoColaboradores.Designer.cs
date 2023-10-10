@@ -31,12 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerenciamentoColaboradores));
             this.tlpBase1 = new System.Windows.Forms.TableLayoutPanel();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblProjeto = new System.Windows.Forms.Label();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
             this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
@@ -48,6 +42,8 @@
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.lblPorcentagem = new System.Windows.Forms.Label();
+            this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
             this.btnSairSSalvar = new RoundButton();
             this.RGBColaboradores = new tccCsharp.RoundedGroupBox();
@@ -61,8 +57,11 @@
             this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblColaboradores = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbNomeP = new tccCsharp.RoundedGroupBox();
             this.lblNomeProjeto = new System.Windows.Forms.Label();
+            this.lblProjeto = new System.Windows.Forms.Label();
             this.RGBDados = new tccCsharp.RoundedGroupBox();
             this.TLPDados = new System.Windows.Forms.TableLayoutPanel();
             this.lblDados = new System.Windows.Forms.Label();
@@ -82,6 +81,7 @@
             this.comboTelefone = new System.Windows.Forms.ComboBox();
             this.comboEmail = new System.Windows.Forms.ComboBox();
             this.textNome = new System.Windows.Forms.TextBox();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
             this.opbLogo = new System.Windows.Forms.PictureBox();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
@@ -90,20 +90,19 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.tlpBase1.SuspendLayout();
             this.TLPHead2.SuspendLayout();
-            this.tlpBase2.SuspendLayout();
-            this.tlpBase4.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs2.SuspendLayout();
             this.TLPInfoshead.SuspendLayout();
             this.TLPCriacao.SuspendLayout();
             this.TLPAtualizacao.SuspendLayout();
             this.groupPorcentagem.SuspendLayout();
+            this.tlpBase2.SuspendLayout();
+            this.tlpBase4.SuspendLayout();
             this.rgbOpcoes.SuspendLayout();
             this.RGBColaboradores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCriador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColaboradores)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.rgbNomeP.SuspendLayout();
             this.RGBDados.SuspendLayout();
             this.TLPDados.SuspendLayout();
@@ -111,6 +110,7 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
@@ -153,102 +153,6 @@
             this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPHead2.Size = new System.Drawing.Size(1264, 66);
             this.TLPHead2.TabIndex = 11;
-            // 
-            // tlpBase2
-            // 
-            this.tlpBase2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase2.ColumnCount = 2;
-            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBase2.Controls.Add(this.tlpBase4, 1, 0);
-            this.tlpBase2.Controls.Add(this.tableLayoutPanel1, 0, 0);
-            this.tlpBase2.Location = new System.Drawing.Point(3, 129);
-            this.tlpBase2.Name = "tlpBase2";
-            this.tlpBase2.RowCount = 1;
-            this.tlpBase2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.77273F));
-            this.tlpBase2.Size = new System.Drawing.Size(1258, 549);
-            this.tlpBase2.TabIndex = 4;
-            // 
-            // tlpBase4
-            // 
-            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase4.ColumnCount = 1;
-            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
-            this.tlpBase4.Controls.Add(this.RGBColaboradores, 0, 0);
-            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
-            this.tlpBase4.Name = "tlpBase4";
-            this.tlpBase4.RowCount = 2;
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
-            this.tlpBase4.TabIndex = 1;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.RGBDados, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 543);
-            this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.Controls.Add(this.rgbNomeP, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblProjeto, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(617, 48);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // lblProjeto
-            // 
-            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblProjeto.AutoSize = true;
-            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjeto.Location = new System.Drawing.Point(30, 14);
-            this.lblProjeto.Name = "lblProjeto";
-            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
-            this.lblProjeto.TabIndex = 3;
-            this.lblProjeto.Text = "Projeto:";
-            // 
-            // TLPHead1
-            // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
-            this.TLPHead1.TabIndex = 7;
             // 
             // rgbHeadImgs2
             // 
@@ -420,6 +324,41 @@
             this.lblPorcentagem.Text = "%";
             this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tlpBase2
+            // 
+            this.tlpBase2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase2.ColumnCount = 2;
+            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBase2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBase2.Controls.Add(this.tlpBase4, 1, 0);
+            this.tlpBase2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tlpBase2.Location = new System.Drawing.Point(3, 129);
+            this.tlpBase2.Name = "tlpBase2";
+            this.tlpBase2.RowCount = 1;
+            this.tlpBase2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.77273F));
+            this.tlpBase2.Size = new System.Drawing.Size(1258, 549);
+            this.tlpBase2.TabIndex = 4;
+            // 
+            // tlpBase4
+            // 
+            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase4.ColumnCount = 1;
+            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
+            this.tlpBase4.Controls.Add(this.RGBColaboradores, 0, 0);
+            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
+            this.tlpBase4.Name = "tlpBase4";
+            this.tlpBase4.RowCount = 2;
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
+            this.tlpBase4.TabIndex = 1;
+            // 
             // rgbOpcoes
             // 
             this.rgbOpcoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -577,6 +516,40 @@
             this.lblColaboradores.TabIndex = 0;
             this.lblColaboradores.Text = "Lista de pessoas com acesso";
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RGBDados, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 543);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.Controls.Add(this.rgbNomeP, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblProjeto, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(617, 48);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
             // rgbNomeP
             // 
             this.rgbNomeP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -604,6 +577,17 @@
             this.lblNomeProjeto.Size = new System.Drawing.Size(79, 29);
             this.lblNomeProjeto.TabIndex = 0;
             this.lblNomeProjeto.Text = "Nome";
+            // 
+            // lblProjeto
+            // 
+            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblProjeto.AutoSize = true;
+            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProjeto.Location = new System.Drawing.Point(30, 14);
+            this.lblProjeto.Name = "lblProjeto";
+            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
+            this.lblProjeto.TabIndex = 3;
+            this.lblProjeto.Text = "Projeto:";
             // 
             // RGBDados
             // 
@@ -897,6 +881,22 @@
             this.textNome.Size = new System.Drawing.Size(300, 20);
             this.textNome.TabIndex = 14;
             // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
+            this.TLPHead1.TabIndex = 7;
+            // 
             // rgbHeadImgs1
             // 
             this.rgbHeadImgs1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1010,13 +1010,6 @@
             this.tlpBase1.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
-            this.tlpBase2.ResumeLayout(false);
-            this.tlpBase4.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs2.ResumeLayout(false);
             this.TLPInfoshead.ResumeLayout(false);
             this.TLPInfoshead.PerformLayout();
@@ -1025,11 +1018,16 @@
             this.TLPAtualizacao.ResumeLayout(false);
             this.TLPAtualizacao.PerformLayout();
             this.groupPorcentagem.ResumeLayout(false);
+            this.tlpBase2.ResumeLayout(false);
+            this.tlpBase4.ResumeLayout(false);
             this.rgbOpcoes.ResumeLayout(false);
             this.RGBColaboradores.ResumeLayout(false);
             this.RGBColaboradores.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCriador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVColaboradores)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.rgbNomeP.ResumeLayout(false);
             this.rgbNomeP.PerformLayout();
             this.RGBDados.ResumeLayout(false);
@@ -1041,6 +1039,8 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs1.ResumeLayout(false);
             this.rgbHeadImgs1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();

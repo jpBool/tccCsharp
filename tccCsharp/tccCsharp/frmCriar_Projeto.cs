@@ -21,6 +21,7 @@ namespace tccCsharp
 
         public void DoDesign()
         {
+            TLP_Mãe.Font = Program.fonte;
             TLPHead1.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             RGBHead1.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             RGBHead1.ForeColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -264,7 +265,6 @@ namespace tccCsharp
 
         private void frmCriar_Projeto_Load(object sender, EventArgs e)
         {
-            TLP_Mãe.Font = new Font("Arial", 9);
             WindowState = FormWindowState.Maximized;
             DoDesign();
 

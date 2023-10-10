@@ -80,6 +80,15 @@
             this.lblPrevi = new System.Windows.Forms.Label();
             this.TLPFilho2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBDetalhada = new tccCsharp.RoundedGroupBox();
+            this.clImagens = new CustomLine();
+            this.clConfig = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.clLogout = new CustomLine();
+            this.clAtualizar = new CustomLine();
+            this.clEtapas = new CustomLine();
+            this.clExcluir = new CustomLine();
+            this.clCancelar = new CustomLine();
+            this.clColaboradores = new CustomLine();
             this.txtDetalhada = new System.Windows.Forms.TextBox();
             this.lblDetalhado = new System.Windows.Forms.Label();
             this.RGBButtons = new tccCsharp.RoundedGroupBox();
@@ -110,15 +119,6 @@
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
-            this.clColaboradores = new CustomLine();
-            this.clCancelar = new CustomLine();
-            this.clExcluir = new CustomLine();
-            this.clEtapas = new CustomLine();
-            this.clAtualizar = new CustomLine();
-            this.clLogout = new CustomLine();
-            this.clRecarregar = new CustomLine();
-            this.clConfig = new CustomLine();
-            this.clImagens = new CustomLine();
             this.TLP_Mãe.SuspendLayout();
             this.TLPConteudo.SuspendLayout();
             this.TLPFilho1.SuspendLayout();
@@ -272,7 +272,7 @@
             this.txtPalavras.Multiline = true;
             this.txtPalavras.Name = "txtPalavras";
             this.txtPalavras.Size = new System.Drawing.Size(459, 89);
-            this.txtPalavras.TabIndex = 0;
+            this.txtPalavras.TabIndex = 8;
             this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
             this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
             this.txtPalavras.Leave += new System.EventHandler(this.txtPalavras_Leave);
@@ -303,7 +303,7 @@
             this.txtVideo.MaxLength = 50;
             this.txtVideo.Name = "txtVideo";
             this.txtVideo.Size = new System.Drawing.Size(461, 19);
-            this.txtVideo.TabIndex = 5;
+            this.txtVideo.TabIndex = 7;
             this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
             this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
             this.txtVideo.Leave += new System.EventHandler(this.txtVideo_Leave);
@@ -347,7 +347,7 @@
             this.txtSite.MaxLength = 250;
             this.txtSite.Name = "txtSite";
             this.txtSite.Size = new System.Drawing.Size(461, 19);
-            this.txtSite.TabIndex = 5;
+            this.txtSite.TabIndex = 6;
             this.txtSite.Text = "Site do projeto";
             this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
             this.txtSite.Leave += new System.EventHandler(this.txtSite_Leave);
@@ -788,7 +788,7 @@
             this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
             this.boxSemPrevisao.Name = "boxSemPrevisao";
             this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
-            this.boxSemPrevisao.TabIndex = 7;
+            this.boxSemPrevisao.TabIndex = 9;
             this.boxSemPrevisao.Text = "Sem Previsão.";
             this.boxSemPrevisao.UseVisualStyleBackColor = true;
             this.boxSemPrevisao.CheckedChanged += new System.EventHandler(this.boxSemPrevisao_CheckedChanged);
@@ -803,7 +803,7 @@
             this.radioSim.Location = new System.Drawing.Point(443, 71);
             this.radioSim.Name = "radioSim";
             this.radioSim.Size = new System.Drawing.Size(54, 24);
-            this.radioSim.TabIndex = 6;
+            this.radioSim.TabIndex = 13;
             this.radioSim.TabStop = true;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
@@ -819,7 +819,7 @@
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
             this.radioNão.Size = new System.Drawing.Size(56, 24);
-            this.radioNão.TabIndex = 5;
+            this.radioNão.TabIndex = 12;
             this.radioNão.TabStop = true;
             this.radioNão.Text = "Não";
             this.radioNão.UseVisualStyleBackColor = false;
@@ -832,7 +832,7 @@
             this.comboStatus.Location = new System.Drawing.Point(349, 40);
             this.comboStatus.Name = "comboStatus";
             this.comboStatus.Size = new System.Drawing.Size(258, 28);
-            this.comboStatus.TabIndex = 4;
+            this.comboStatus.TabIndex = 11;
             // 
             // dtpPrevisao
             // 
@@ -843,7 +843,7 @@
             this.dtpPrevisao.Location = new System.Drawing.Point(349, 10);
             this.dtpPrevisao.Name = "dtpPrevisao";
             this.dtpPrevisao.Size = new System.Drawing.Size(258, 26);
-            this.dtpPrevisao.TabIndex = 3;
+            this.dtpPrevisao.TabIndex = 10;
             this.dtpPrevisao.Value = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             // 
             // lblPublicar
@@ -924,6 +924,125 @@
             this.RGBDetalhada.TabIndex = 0;
             this.RGBDetalhada.TabStop = false;
             // 
+            // clImagens
+            // 
+            this.clImagens.LineColor = System.Drawing.Color.Black;
+            this.clImagens.LineWidth = 1;
+            this.clImagens.Location = new System.Drawing.Point(112, 215);
+            this.clImagens.Name = "clImagens";
+            this.clImagens.Size = new System.Drawing.Size(75, 10);
+            this.clImagens.TabIndex = 16;
+            this.clImagens.Text = "customLine16";
+            this.clImagens.Enter += new System.EventHandler(this.clImagens_Enter);
+            this.clImagens.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clImagens_KeyDown);
+            this.clImagens.Leave += new System.EventHandler(this.clImagens_Leave);
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(154, 231);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 21;
+            this.clConfig.Text = "customLine15";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(235, 231);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 22;
+            this.clRecarregar.Text = "customLine14";
+            this.clRecarregar.Click += new System.EventHandler(this.customLine14_Click);
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(316, 231);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 10);
+            this.clLogout.TabIndex = 23;
+            this.clLogout.Text = "customLine13";
+            this.clLogout.Click += new System.EventHandler(this.customLine13_Click);
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clAtualizar
+            // 
+            this.clAtualizar.LineColor = System.Drawing.Color.Black;
+            this.clAtualizar.LineWidth = 1;
+            this.clAtualizar.Location = new System.Drawing.Point(73, 231);
+            this.clAtualizar.Name = "clAtualizar";
+            this.clAtualizar.Size = new System.Drawing.Size(75, 10);
+            this.clAtualizar.TabIndex = 20;
+            this.clAtualizar.Text = "customLine12";
+            this.clAtualizar.Enter += new System.EventHandler(this.clAtualizar_Enter);
+            this.clAtualizar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAtualizar_KeyDown);
+            this.clAtualizar.Leave += new System.EventHandler(this.clAtualizar_Leave);
+            // 
+            // clEtapas
+            // 
+            this.clEtapas.LineColor = System.Drawing.Color.Black;
+            this.clEtapas.LineWidth = 1;
+            this.clEtapas.Location = new System.Drawing.Point(193, 215);
+            this.clEtapas.Name = "clEtapas";
+            this.clEtapas.Size = new System.Drawing.Size(75, 10);
+            this.clEtapas.TabIndex = 17;
+            this.clEtapas.Text = "customLine11";
+            this.clEtapas.Enter += new System.EventHandler(this.clEtapas_Enter);
+            this.clEtapas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clEtapas_KeyDown);
+            this.clEtapas.Leave += new System.EventHandler(this.clEtapas_Leave);
+            // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(274, 215);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 10);
+            this.clExcluir.TabIndex = 18;
+            this.clExcluir.Text = "customLine10";
+            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
+            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
+            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
+            // 
+            // clCancelar
+            // 
+            this.clCancelar.LineColor = System.Drawing.Color.Black;
+            this.clCancelar.LineWidth = 1;
+            this.clCancelar.Location = new System.Drawing.Point(355, 215);
+            this.clCancelar.Name = "clCancelar";
+            this.clCancelar.Size = new System.Drawing.Size(75, 10);
+            this.clCancelar.TabIndex = 19;
+            this.clCancelar.Text = "customLine9";
+            this.clCancelar.Enter += new System.EventHandler(this.clCancelar_Enter);
+            this.clCancelar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCancelar_KeyDown);
+            this.clCancelar.Leave += new System.EventHandler(this.clCancelar_Leave);
+            // 
+            // clColaboradores
+            // 
+            this.clColaboradores.LineColor = System.Drawing.Color.Black;
+            this.clColaboradores.LineWidth = 1;
+            this.clColaboradores.Location = new System.Drawing.Point(31, 215);
+            this.clColaboradores.Name = "clColaboradores";
+            this.clColaboradores.Size = new System.Drawing.Size(75, 10);
+            this.clColaboradores.TabIndex = 15;
+            this.clColaboradores.Text = "customLine8";
+            this.clColaboradores.Enter += new System.EventHandler(this.clColaboradores_Enter);
+            this.clColaboradores.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clColaboradores_KeyDown);
+            this.clColaboradores.Leave += new System.EventHandler(this.clColaboradores_Leave);
+            // 
             // txtDetalhada
             // 
             this.txtDetalhada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -935,7 +1054,7 @@
             this.txtDetalhada.Multiline = true;
             this.txtDetalhada.Name = "txtDetalhada";
             this.txtDetalhada.Size = new System.Drawing.Size(595, 285);
-            this.txtDetalhada.TabIndex = 4;
+            this.txtDetalhada.TabIndex = 14;
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
             this.txtDetalhada.TextChanged += new System.EventHandler(this.txtDetalhada_TextChanged);
@@ -1440,125 +1559,6 @@
             this.OPBLogout.TabIndex = 8;
             this.OPBLogout.TabStop = false;
             this.OPBLogout.Click += new System.EventHandler(this.OPBLogout_Click);
-            // 
-            // clColaboradores
-            // 
-            this.clColaboradores.LineColor = System.Drawing.Color.Black;
-            this.clColaboradores.LineWidth = 1;
-            this.clColaboradores.Location = new System.Drawing.Point(31, 215);
-            this.clColaboradores.Name = "clColaboradores";
-            this.clColaboradores.Size = new System.Drawing.Size(75, 10);
-            this.clColaboradores.TabIndex = 5;
-            this.clColaboradores.Text = "customLine8";
-            this.clColaboradores.Enter += new System.EventHandler(this.clColaboradores_Enter);
-            this.clColaboradores.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clColaboradores_KeyDown);
-            this.clColaboradores.Leave += new System.EventHandler(this.clColaboradores_Leave);
-            // 
-            // clCancelar
-            // 
-            this.clCancelar.LineColor = System.Drawing.Color.Black;
-            this.clCancelar.LineWidth = 1;
-            this.clCancelar.Location = new System.Drawing.Point(355, 215);
-            this.clCancelar.Name = "clCancelar";
-            this.clCancelar.Size = new System.Drawing.Size(75, 10);
-            this.clCancelar.TabIndex = 6;
-            this.clCancelar.Text = "customLine9";
-            this.clCancelar.Enter += new System.EventHandler(this.clCancelar_Enter);
-            this.clCancelar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCancelar_KeyDown);
-            this.clCancelar.Leave += new System.EventHandler(this.clCancelar_Leave);
-            // 
-            // clExcluir
-            // 
-            this.clExcluir.LineColor = System.Drawing.Color.Black;
-            this.clExcluir.LineWidth = 1;
-            this.clExcluir.Location = new System.Drawing.Point(274, 215);
-            this.clExcluir.Name = "clExcluir";
-            this.clExcluir.Size = new System.Drawing.Size(75, 10);
-            this.clExcluir.TabIndex = 7;
-            this.clExcluir.Text = "customLine10";
-            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
-            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
-            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
-            // 
-            // clEtapas
-            // 
-            this.clEtapas.LineColor = System.Drawing.Color.Black;
-            this.clEtapas.LineWidth = 1;
-            this.clEtapas.Location = new System.Drawing.Point(193, 215);
-            this.clEtapas.Name = "clEtapas";
-            this.clEtapas.Size = new System.Drawing.Size(75, 10);
-            this.clEtapas.TabIndex = 8;
-            this.clEtapas.Text = "customLine11";
-            this.clEtapas.Enter += new System.EventHandler(this.clEtapas_Enter);
-            this.clEtapas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clEtapas_KeyDown);
-            this.clEtapas.Leave += new System.EventHandler(this.clEtapas_Leave);
-            // 
-            // clAtualizar
-            // 
-            this.clAtualizar.LineColor = System.Drawing.Color.Black;
-            this.clAtualizar.LineWidth = 1;
-            this.clAtualizar.Location = new System.Drawing.Point(73, 231);
-            this.clAtualizar.Name = "clAtualizar";
-            this.clAtualizar.Size = new System.Drawing.Size(75, 10);
-            this.clAtualizar.TabIndex = 9;
-            this.clAtualizar.Text = "customLine12";
-            this.clAtualizar.Enter += new System.EventHandler(this.clAtualizar_Enter);
-            this.clAtualizar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAtualizar_KeyDown);
-            this.clAtualizar.Leave += new System.EventHandler(this.clAtualizar_Leave);
-            // 
-            // clLogout
-            // 
-            this.clLogout.LineColor = System.Drawing.Color.Black;
-            this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(316, 231);
-            this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(75, 10);
-            this.clLogout.TabIndex = 10;
-            this.clLogout.Text = "customLine13";
-            this.clLogout.Click += new System.EventHandler(this.customLine13_Click);
-            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
-            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
-            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
-            // 
-            // clRecarregar
-            // 
-            this.clRecarregar.LineColor = System.Drawing.Color.Black;
-            this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(235, 231);
-            this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
-            this.clRecarregar.TabIndex = 11;
-            this.clRecarregar.Text = "customLine14";
-            this.clRecarregar.Click += new System.EventHandler(this.customLine14_Click);
-            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
-            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
-            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
-            // 
-            // clConfig
-            // 
-            this.clConfig.LineColor = System.Drawing.Color.Black;
-            this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(154, 231);
-            this.clConfig.Name = "clConfig";
-            this.clConfig.Size = new System.Drawing.Size(75, 10);
-            this.clConfig.TabIndex = 12;
-            this.clConfig.Text = "customLine15";
-            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
-            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
-            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
-            // 
-            // clImagens
-            // 
-            this.clImagens.LineColor = System.Drawing.Color.Black;
-            this.clImagens.LineWidth = 1;
-            this.clImagens.Location = new System.Drawing.Point(112, 215);
-            this.clImagens.Name = "clImagens";
-            this.clImagens.Size = new System.Drawing.Size(75, 10);
-            this.clImagens.TabIndex = 13;
-            this.clImagens.Text = "customLine16";
-            this.clImagens.Enter += new System.EventHandler(this.clImagens_Enter);
-            this.clImagens.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clImagens_KeyDown);
-            this.clImagens.Leave += new System.EventHandler(this.clImagens_Leave);
             // 
             // frmEditar_Projeto
             // 

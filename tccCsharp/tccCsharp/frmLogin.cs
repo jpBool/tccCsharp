@@ -27,6 +27,7 @@ namespace tccCsharp
 
         public void DesignLogin()
         {
+            tlpLoginBase.Font = Program.fonte;
             WindowState = FormWindowState.Maximized;
             rgbLogin.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             lblLogin.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
