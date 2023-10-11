@@ -147,6 +147,8 @@ namespace tccCsharp
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(952, 7);
             this.OPBLogout.Name = "OPBLogout";
@@ -165,6 +167,8 @@ namespace tccCsharp
             this.opbRecarregar.AutoHoover = false;
             this.opbRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.opbRecarregar.BordaHoover = System.Drawing.Color.Green;
+            this.opbRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.opbRecarregar.Location = new System.Drawing.Point(1015, 7);
             this.opbRecarregar.Name = "opbRecarregar";
@@ -229,6 +233,7 @@ namespace tccCsharp
             this.btnVoltar.BorderRadius = 10;
             this.btnVoltar.BorderThickness = 2;
             this.btnVoltar.ButtonColor = System.Drawing.Color.White;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Location = new System.Drawing.Point(434, 539);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 22);
@@ -321,6 +326,7 @@ namespace tccCsharp
             this.lblCorAviso2.AutoSize = true;
             this.lblCorAviso2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCorAviso2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorAviso2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCorAviso2.Location = new System.Drawing.Point(131, 306);
             this.lblCorAviso2.Name = "lblCorAviso2";
             this.lblCorAviso2.Size = new System.Drawing.Size(21, 15);
@@ -348,6 +354,7 @@ namespace tccCsharp
             this.lblCorAviso1.AutoSize = true;
             this.lblCorAviso1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCorAviso1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorAviso1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCorAviso1.Location = new System.Drawing.Point(44, 306);
             this.lblCorAviso1.Name = "lblCorAviso1";
             this.lblCorAviso1.Size = new System.Drawing.Size(21, 15);
@@ -391,6 +398,7 @@ namespace tccCsharp
             this.lblCorTexto2.AutoSize = true;
             this.lblCorTexto2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCorTexto2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorTexto2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCorTexto2.Location = new System.Drawing.Point(131, 235);
             this.lblCorTexto2.Name = "lblCorTexto2";
             this.lblCorTexto2.Size = new System.Drawing.Size(21, 15);
@@ -430,6 +438,7 @@ namespace tccCsharp
             this.lblCorTexto1.AutoSize = true;
             this.lblCorTexto1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCorTexto1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCorTexto1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCorTexto1.Location = new System.Drawing.Point(47, 235);
             this.lblCorTexto1.Name = "lblCorTexto1";
             this.lblCorTexto1.Size = new System.Drawing.Size(21, 15);
@@ -457,6 +466,7 @@ namespace tccCsharp
             this.lblCor7.AutoSize = true;
             this.lblCor7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCor7.Location = new System.Drawing.Point(178, 163);
             this.lblCor7.Name = "lblCor7";
             this.lblCor7.Size = new System.Drawing.Size(21, 15);
@@ -496,6 +506,7 @@ namespace tccCsharp
             this.lblCor1.AutoSize = true;
             this.lblCor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCor1.Location = new System.Drawing.Point(44, 131);
             this.lblCor1.Name = "lblCor1";
             this.lblCor1.Size = new System.Drawing.Size(21, 15);
@@ -523,6 +534,7 @@ namespace tccCsharp
             this.lblCor3.AutoSize = true;
             this.lblCor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCor3.Location = new System.Drawing.Point(178, 131);
             this.lblCor3.Name = "lblCor3";
             this.lblCor3.Size = new System.Drawing.Size(21, 15);
@@ -550,6 +562,7 @@ namespace tccCsharp
             this.lblCor2.AutoSize = true;
             this.lblCor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCor2.Location = new System.Drawing.Point(111, 131);
             this.lblCor2.Name = "lblCor2";
             this.lblCor2.Size = new System.Drawing.Size(21, 15);
@@ -589,6 +602,7 @@ namespace tccCsharp
             this.lblCor4.AutoSize = true;
             this.lblCor4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCor4.Location = new System.Drawing.Point(245, 131);
             this.lblCor4.Name = "lblCor4";
             this.lblCor4.Size = new System.Drawing.Size(21, 15);
@@ -604,6 +618,7 @@ namespace tccCsharp
             this.lblCor6.AutoSize = true;
             this.lblCor6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCor6.Location = new System.Drawing.Point(111, 163);
             this.lblCor6.Name = "lblCor6";
             this.lblCor6.Size = new System.Drawing.Size(21, 15);
@@ -619,6 +634,7 @@ namespace tccCsharp
             this.lblCor5.AutoSize = true;
             this.lblCor5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblCor5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCor5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCor5.Location = new System.Drawing.Point(44, 163);
             this.lblCor5.Name = "lblCor5";
             this.lblCor5.Size = new System.Drawing.Size(21, 15);
@@ -650,6 +666,7 @@ namespace tccCsharp
             this.btnRestaurarPadrao.BorderRadius = 10;
             this.btnRestaurarPadrao.BorderThickness = 2;
             this.btnRestaurarPadrao.ButtonColor = System.Drawing.Color.White;
+            this.btnRestaurarPadrao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurarPadrao.Location = new System.Drawing.Point(225, 430);
             this.btnRestaurarPadrao.Name = "btnRestaurarPadrao";
             this.btnRestaurarPadrao.Size = new System.Drawing.Size(209, 23);
@@ -681,6 +698,7 @@ namespace tccCsharp
             this.radBranco.AutoSize = true;
             this.radBranco.BackColor = System.Drawing.Color.Transparent;
             this.radBranco.Checked = true;
+            this.radBranco.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radBranco.Location = new System.Drawing.Point(47, 385);
             this.radBranco.Name = "radBranco";
             this.radBranco.Size = new System.Drawing.Size(58, 17);
@@ -697,6 +715,7 @@ namespace tccCsharp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radPreto.AutoSize = true;
             this.radPreto.BackColor = System.Drawing.Color.Transparent;
+            this.radPreto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radPreto.Location = new System.Drawing.Point(131, 385);
             this.radPreto.Name = "radPreto";
             this.radPreto.Size = new System.Drawing.Size(66, 17);
@@ -798,6 +817,7 @@ namespace tccCsharp
             this.btnAltTamF.BorderRadius = 10;
             this.btnAltTamF.BorderThickness = 2;
             this.btnAltTamF.ButtonColor = System.Drawing.Color.White;
+            this.btnAltTamF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAltTamF.Location = new System.Drawing.Point(23, 46);
             this.btnAltTamF.Name = "btnAltTamF";
             this.btnAltTamF.Size = new System.Drawing.Size(471, 42);
@@ -816,6 +836,7 @@ namespace tccCsharp
             this.btnPersonalizar.BorderRadius = 10;
             this.btnPersonalizar.BorderThickness = 2;
             this.btnPersonalizar.ButtonColor = System.Drawing.Color.White;
+            this.btnPersonalizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPersonalizar.Location = new System.Drawing.Point(23, 147);
             this.btnPersonalizar.Name = "btnPersonalizar";
             this.btnPersonalizar.Size = new System.Drawing.Size(471, 42);
@@ -834,6 +855,7 @@ namespace tccCsharp
             this.btnTutoriais.BorderRadius = 10;
             this.btnTutoriais.BorderThickness = 2;
             this.btnTutoriais.ButtonColor = System.Drawing.Color.White;
+            this.btnTutoriais.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTutoriais.Location = new System.Drawing.Point(23, 241);
             this.btnTutoriais.Name = "btnTutoriais";
             this.btnTutoriais.Size = new System.Drawing.Size(471, 40);

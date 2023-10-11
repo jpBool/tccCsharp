@@ -384,6 +384,7 @@
             this.btnSairSSalvar.BorderRadius = 20;
             this.btnSairSSalvar.BorderThickness = 4;
             this.btnSairSSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSairSSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairSSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
             this.btnSairSSalvar.Name = "btnSairSSalvar";
@@ -464,6 +465,7 @@
             this.email,
             this.telefone,
             this.isAdmin});
+            this.DGVColaboradores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGVColaboradores.Location = new System.Drawing.Point(6, 86);
             this.DGVColaboradores.MultiSelect = false;
             this.DGVColaboradores.Name = "DGVColaboradores";
@@ -684,6 +686,7 @@
             this.btnSalvar.BorderRadius = 20;
             this.btnSalvar.BorderThickness = 4;
             this.btnSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(3, 420);
             this.btnSalvar.Name = "btnSalvar";
@@ -724,6 +727,7 @@
             this.btnExcluir.BorderRadius = 20;
             this.btnExcluir.BorderThickness = 4;
             this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Location = new System.Drawing.Point(305, 3);
             this.btnExcluir.Name = "btnExcluir";
@@ -746,6 +750,7 @@
             this.btnNovo.BorderRadius = 20;
             this.btnNovo.BorderThickness = 4;
             this.btnNovo.ButtonColor = System.Drawing.Color.White;
+            this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Location = new System.Drawing.Point(3, 3);
             this.btnNovo.Name = "btnNovo";
@@ -794,6 +799,7 @@
             this.radNao.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radNao.AutoSize = true;
             this.radNao.Checked = true;
+            this.radNao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radNao.Location = new System.Drawing.Point(426, 14);
             this.radNao.Name = "radNao";
             this.radNao.Size = new System.Drawing.Size(45, 17);
@@ -806,6 +812,7 @@
             // 
             this.radSim.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radSim.AutoSize = true;
+            this.radSim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radSim.Location = new System.Drawing.Point(516, 14);
             this.radSim.Name = "radSim";
             this.radSim.Size = new System.Drawing.Size(42, 17);
@@ -938,6 +945,7 @@
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -957,6 +965,7 @@
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
             this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -976,6 +985,7 @@
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
             this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";

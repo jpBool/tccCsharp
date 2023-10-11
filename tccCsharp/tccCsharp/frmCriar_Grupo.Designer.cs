@@ -378,6 +378,7 @@
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -397,6 +398,7 @@
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
             this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -416,6 +418,7 @@
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
             this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";
@@ -502,6 +505,7 @@
             this.BoxSim.AutoSize = true;
             this.BoxSim.Checked = true;
             this.BoxSim.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.BoxSim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BoxSim.Location = new System.Drawing.Point(421, 12);
             this.BoxSim.Name = "BoxSim";
             this.BoxSim.Size = new System.Drawing.Size(45, 17);
@@ -575,6 +579,7 @@
             // 
             this.radMeio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radMeio.AutoSize = true;
+            this.radMeio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radMeio.Location = new System.Drawing.Point(4, 74);
             this.radMeio.Name = "radMeio";
             this.radMeio.Size = new System.Drawing.Size(149, 17);
@@ -588,6 +593,7 @@
             // 
             this.radFim.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radFim.AutoSize = true;
+            this.radFim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radFim.Location = new System.Drawing.Point(4, 139);
             this.radFim.Name = "radFim";
             this.radFim.Size = new System.Drawing.Size(64, 17);
@@ -602,6 +608,7 @@
             this.radInicio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radInicio.AutoSize = true;
             this.radInicio.Checked = true;
+            this.radInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radInicio.Location = new System.Drawing.Point(4, 15);
             this.radInicio.Name = "radInicio";
             this.radInicio.Size = new System.Drawing.Size(69, 17);
@@ -759,6 +766,7 @@
             this.btnCriar.BorderRadius = 20;
             this.btnCriar.BorderThickness = 4;
             this.btnCriar.ButtonColor = System.Drawing.Color.White;
+            this.btnCriar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCriar.Location = new System.Drawing.Point(361, 3);
             this.btnCriar.Name = "btnCriar";
             this.btnCriar.Size = new System.Drawing.Size(353, 34);
@@ -779,6 +787,7 @@
             this.btnCancelar.BorderRadius = 20;
             this.btnCancelar.BorderThickness = 4;
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Location = new System.Drawing.Point(3, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(352, 34);

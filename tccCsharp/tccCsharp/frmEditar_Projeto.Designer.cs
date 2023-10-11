@@ -785,6 +785,7 @@
             // boxSemPrevisao
             // 
             this.boxSemPrevisao.AutoSize = true;
+            this.boxSemPrevisao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
             this.boxSemPrevisao.Name = "boxSemPrevisao";
             this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
@@ -799,6 +800,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioSim.AutoSize = true;
             this.radioSim.BackColor = System.Drawing.Color.Transparent;
+            this.radioSim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSim.Location = new System.Drawing.Point(443, 71);
             this.radioSim.Name = "radioSim";
@@ -815,6 +817,7 @@
             this.radioNão.AutoSize = true;
             this.radioNão.BackColor = System.Drawing.Color.Transparent;
             this.radioNão.Checked = true;
+            this.radioNão.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioNão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
@@ -1141,6 +1144,7 @@
             this.btnExcluir.BorderRadius = 20;
             this.btnExcluir.BorderThickness = 4;
             this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.Location = new System.Drawing.Point(3, 3);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(187, 44);
@@ -1162,6 +1166,7 @@
             this.btnAtualizar.BorderRadius = 20;
             this.btnAtualizar.BorderThickness = 4;
             this.btnAtualizar.ButtonColor = System.Drawing.Color.White;
+            this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAtualizar.Location = new System.Drawing.Point(389, 3);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(188, 44);
@@ -1183,6 +1188,7 @@
             this.btnCancelar.BorderRadius = 20;
             this.btnCancelar.BorderThickness = 4;
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Location = new System.Drawing.Point(196, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(187, 44);
@@ -1204,6 +1210,7 @@
             this.btnColaboradores.BorderRadius = 20;
             this.btnColaboradores.BorderThickness = 4;
             this.btnColaboradores.ButtonColor = System.Drawing.Color.White;
+            this.btnColaboradores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnColaboradores.Location = new System.Drawing.Point(3, 3);
             this.btnColaboradores.Name = "btnColaboradores";
             this.btnColaboradores.Size = new System.Drawing.Size(574, 34);
@@ -1226,6 +1233,7 @@
             this.btnImagens.BorderRadius = 20;
             this.btnImagens.BorderThickness = 4;
             this.btnImagens.ButtonColor = System.Drawing.Color.White;
+            this.btnImagens.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImagens.Location = new System.Drawing.Point(3, 43);
             this.btnImagens.Name = "btnImagens";
             this.btnImagens.Size = new System.Drawing.Size(574, 34);
@@ -1248,6 +1256,7 @@
             this.btnEtapas.BorderRadius = 20;
             this.btnEtapas.BorderThickness = 4;
             this.btnEtapas.ButtonColor = System.Drawing.Color.White;
+            this.btnEtapas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEtapas.Location = new System.Drawing.Point(3, 83);
             this.btnEtapas.Name = "btnEtapas";
             this.btnEtapas.Size = new System.Drawing.Size(574, 34);
@@ -1513,6 +1522,7 @@
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -1532,6 +1542,7 @@
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
             this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -1551,6 +1562,7 @@
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
             this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";

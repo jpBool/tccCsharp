@@ -264,6 +264,7 @@
             this.btnADDEtapa.BorderRadius = 20;
             this.btnADDEtapa.BorderThickness = 4;
             this.btnADDEtapa.ButtonColor = System.Drawing.Color.White;
+            this.btnADDEtapa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnADDEtapa.Location = new System.Drawing.Point(1036, 8);
             this.btnADDEtapa.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.btnADDEtapa.Name = "btnADDEtapa";
@@ -287,6 +288,7 @@
             this.BtnADDGrupo.BorderRadius = 20;
             this.BtnADDGrupo.BorderThickness = 4;
             this.BtnADDGrupo.ButtonColor = System.Drawing.Color.White;
+            this.BtnADDGrupo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnADDGrupo.Location = new System.Drawing.Point(826, 8);
             this.BtnADDGrupo.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.BtnADDGrupo.Name = "BtnADDGrupo";
@@ -353,6 +355,7 @@
             this.BtnVoltar.BorderRadius = 20;
             this.BtnVoltar.BorderThickness = 4;
             this.BtnVoltar.ButtonColor = System.Drawing.Color.White;
+            this.BtnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnVoltar.Location = new System.Drawing.Point(628, 8);
             this.BtnVoltar.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.BtnVoltar.Name = "BtnVoltar";
@@ -433,6 +436,8 @@
             this.OPBRecarregar.AutoHoover = false;
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -451,6 +456,8 @@
             this.OPBConfiguracoes.AutoHoover = false;
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
+            this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBConfiguracoes.Image = ((System.Drawing.Image)(resources.GetObject("OPBConfiguracoes.Image")));
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -469,6 +476,8 @@
             this.OPBLogout.AutoHoover = false;
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";
@@ -543,6 +552,8 @@
             this.OPBDown.AutoHoover = false;
             this.OPBDown.BackColor = System.Drawing.Color.Transparent;
             this.OPBDown.BordaHoover = System.Drawing.Color.Green;
+            this.OPBDown.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBDown.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBDown.Image = global::tccCsharp.Properties.Resources.Down_Black;
             this.OPBDown.Location = new System.Drawing.Point(92, 482);
             this.OPBDown.Name = "OPBDown";
@@ -560,6 +571,8 @@
             this.OPBUp.AutoHoover = false;
             this.OPBUp.BackColor = System.Drawing.Color.Transparent;
             this.OPBUp.BordaHoover = System.Drawing.Color.Green;
+            this.OPBUp.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBUp.Image = global::tccCsharp.Properties.Resources.Up_Black;
             this.OPBUp.Location = new System.Drawing.Point(92, 3);
             this.OPBUp.Name = "OPBUp";
@@ -645,6 +658,8 @@
             this.opbEditarE1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarE1.AutoHoover = false;
             this.opbEditarE1.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarE1.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarE1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarE1.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarE1.Location = new System.Drawing.Point(152, 4);
             this.opbEditarE1.Name = "opbEditarE1";
@@ -730,6 +745,8 @@
             this.opbEditarE2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarE2.AutoHoover = false;
             this.opbEditarE2.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarE2.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarE2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarE2.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarE2.Location = new System.Drawing.Point(152, 3);
             this.opbEditarE2.Name = "opbEditarE2";
@@ -805,6 +822,8 @@
             this.OPBLeft2.AutoHoover = false;
             this.OPBLeft2.BackColor = System.Drawing.Color.Transparent;
             this.OPBLeft2.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLeft2.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLeft2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLeft2.Image = global::tccCsharp.Properties.Resources.Left_Black;
             this.OPBLeft2.Location = new System.Drawing.Point(22, 96);
             this.OPBLeft2.Name = "OPBLeft2";
@@ -908,6 +927,8 @@
             this.opbEditarP23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarP23.AutoHoover = false;
             this.opbEditarP23.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP23.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarP23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarP23.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarP23.Location = new System.Drawing.Point(156, 3);
             this.opbEditarP23.Name = "opbEditarP23";
@@ -935,6 +956,8 @@
             this.OPBRight2.AutoHoover = false;
             this.OPBRight2.BackColor = System.Drawing.Color.Transparent;
             this.OPBRight2.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRight2.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRight2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRight2.Image = global::tccCsharp.Properties.Resources.Right_Black;
             this.OPBRight2.Location = new System.Drawing.Point(850, 96);
             this.OPBRight2.Name = "OPBRight2";
@@ -1038,6 +1061,8 @@
             this.opbEditarP22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarP22.AutoHoover = false;
             this.opbEditarP22.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP22.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarP22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarP22.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarP22.Location = new System.Drawing.Point(156, 3);
             this.opbEditarP22.Name = "opbEditarP22";
@@ -1129,7 +1154,7 @@
             this.RGBDescricaoEtapa21.Location = new System.Drawing.Point(11, 41);
             this.RGBDescricaoEtapa21.Margin = new System.Windows.Forms.Padding(0);
             this.RGBDescricaoEtapa21.Name = "RGBDescricaoEtapa21";
-            this.RGBDescricaoEtapa21.Size = new System.Drawing.Size(185, 142);
+            this.RGBDescricaoEtapa21.Size = new System.Drawing.Size(173, 142);
             this.RGBDescricaoEtapa21.TabIndex = 44;
             this.RGBDescricaoEtapa21.TabStop = false;
             // 
@@ -1140,7 +1165,7 @@
             this.lblDescricaoEtapa21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricaoEtapa21.Location = new System.Drawing.Point(3, 16);
             this.lblDescricaoEtapa21.Name = "lblDescricaoEtapa21";
-            this.lblDescricaoEtapa21.Size = new System.Drawing.Size(179, 123);
+            this.lblDescricaoEtapa21.Size = new System.Drawing.Size(167, 123);
             this.lblDescricaoEtapa21.TabIndex = 36;
             this.lblDescricaoEtapa21.Text = "Descrição do projeto";
             // 
@@ -1151,6 +1176,8 @@
             this.opbEditarP21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarP21.AutoHoover = false;
             this.opbEditarP21.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP21.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarP21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarP21.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarP21.Location = new System.Drawing.Point(156, 3);
             this.opbEditarP21.Name = "opbEditarP21";
@@ -1219,6 +1246,8 @@
             this.OPBLeft1.AutoHoover = false;
             this.OPBLeft1.BackColor = System.Drawing.Color.Transparent;
             this.OPBLeft1.BordaHoover = System.Drawing.Color.Green;
+            this.OPBLeft1.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLeft1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLeft1.Image = global::tccCsharp.Properties.Resources.Left_Black;
             this.OPBLeft1.Location = new System.Drawing.Point(22, 96);
             this.OPBLeft1.Name = "OPBLeft1";
@@ -1236,6 +1265,8 @@
             this.OPBRight1.AutoHoover = false;
             this.OPBRight1.BackColor = System.Drawing.Color.Transparent;
             this.OPBRight1.BordaHoover = System.Drawing.Color.Green;
+            this.OPBRight1.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRight1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRight1.Image = global::tccCsharp.Properties.Resources.Right_Black;
             this.OPBRight1.Location = new System.Drawing.Point(850, 96);
             this.OPBRight1.Name = "OPBRight1";
@@ -1339,6 +1370,8 @@
             this.opbEditarP13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarP13.AutoHoover = false;
             this.opbEditarP13.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP13.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarP13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarP13.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarP13.Location = new System.Drawing.Point(156, 3);
             this.opbEditarP13.Name = "opbEditarP13";
@@ -1452,6 +1485,8 @@
             this.opbEditarP12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarP12.AutoHoover = false;
             this.opbEditarP12.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP12.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarP12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarP12.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarP12.Location = new System.Drawing.Point(156, 3);
             this.opbEditarP12.Name = "opbEditarP12";
@@ -1565,6 +1600,8 @@
             this.opbEditarP11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.opbEditarP11.AutoHoover = false;
             this.opbEditarP11.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarP11.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarP11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarP11.Image = global::tccCsharp.Properties.Resources.Edit_Black;
             this.opbEditarP11.Location = new System.Drawing.Point(159, 2);
             this.opbEditarP11.Name = "opbEditarP11";
@@ -1590,6 +1627,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TLP_Mãe);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmEtapas";

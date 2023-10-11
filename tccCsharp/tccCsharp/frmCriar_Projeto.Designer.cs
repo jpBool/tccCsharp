@@ -766,6 +766,7 @@
             // boxSemPrevisao
             // 
             this.boxSemPrevisao.AutoSize = true;
+            this.boxSemPrevisao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
             this.boxSemPrevisao.Name = "boxSemPrevisao";
             this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
@@ -780,6 +781,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioSim.AutoSize = true;
             this.radioSim.BackColor = System.Drawing.Color.Transparent;
+            this.radioSim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSim.Location = new System.Drawing.Point(443, 71);
             this.radioSim.Name = "radioSim";
@@ -795,6 +797,7 @@
             this.radioNão.AutoSize = true;
             this.radioNão.BackColor = System.Drawing.Color.Transparent;
             this.radioNão.Checked = true;
+            this.radioNão.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioNão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioNão.Location = new System.Drawing.Point(349, 71);
             this.radioNão.Name = "radioNão";
@@ -1050,6 +1053,7 @@
             this.radioPrazos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioPrazos.AutoSize = true;
             this.radioPrazos.BackColor = System.Drawing.Color.Transparent;
+            this.radioPrazos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioPrazos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioPrazos.Location = new System.Drawing.Point(3, 161);
             this.radioPrazos.Name = "radioPrazos";
@@ -1064,6 +1068,7 @@
             this.radioSemModelos.AutoSize = true;
             this.radioSemModelos.BackColor = System.Drawing.Color.Transparent;
             this.radioSemModelos.Checked = true;
+            this.radioSemModelos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioSemModelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSemModelos.Location = new System.Drawing.Point(3, 34);
             this.radioSemModelos.Name = "radioSemModelos";
@@ -1078,6 +1083,7 @@
             this.radioEquipes.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioEquipes.AutoSize = true;
             this.radioEquipes.BackColor = System.Drawing.Color.Transparent;
+            this.radioEquipes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioEquipes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioEquipes.Location = new System.Drawing.Point(3, 127);
             this.radioEquipes.Name = "radioEquipes";
@@ -1091,6 +1097,7 @@
             this.radioKanban.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioKanban.AutoSize = true;
             this.radioKanban.BackColor = System.Drawing.Color.Transparent;
+            this.radioKanban.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioKanban.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioKanban.Location = new System.Drawing.Point(3, 65);
             this.radioKanban.Name = "radioKanban";
@@ -1104,6 +1111,7 @@
             this.radioScrum.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radioScrum.AutoSize = true;
             this.radioScrum.BackColor = System.Drawing.Color.Transparent;
+            this.radioScrum.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioScrum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioScrum.Location = new System.Drawing.Point(3, 96);
             this.radioScrum.Name = "radioScrum";
@@ -1157,6 +1165,7 @@
             this.btnCriar.BorderRadius = 20;
             this.btnCriar.BorderThickness = 4;
             this.btnCriar.ButtonColor = System.Drawing.Color.White;
+            this.btnCriar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCriar.Location = new System.Drawing.Point(1095, 8);
             this.btnCriar.Name = "btnCriar";
             this.btnCriar.Size = new System.Drawing.Size(150, 37);
@@ -1177,6 +1186,7 @@
             this.btnCancelar.BorderRadius = 20;
             this.btnCancelar.BorderThickness = 4;
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Location = new System.Drawing.Point(910, 8);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(150, 37);
@@ -1256,6 +1266,7 @@
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -1275,6 +1286,7 @@
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
             this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -1294,6 +1306,7 @@
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
             this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";

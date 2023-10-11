@@ -397,6 +397,7 @@
             // 
             this.boxSim.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.boxSim.AutoSize = true;
+            this.boxSim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxSim.Location = new System.Drawing.Point(138, 212);
             this.boxSim.Name = "boxSim";
             this.boxSim.Size = new System.Drawing.Size(45, 17);
@@ -688,6 +689,7 @@
             // trackPercent
             // 
             this.trackPercent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.trackPercent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trackPercent.Location = new System.Drawing.Point(304, 79);
             this.trackPercent.Maximum = 100;
             this.trackPercent.Name = "trackPercent";
@@ -754,6 +756,7 @@
             // 
             this.radMeio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radMeio.AutoSize = true;
+            this.radMeio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radMeio.Location = new System.Drawing.Point(4, 114);
             this.radMeio.Name = "radMeio";
             this.radMeio.Size = new System.Drawing.Size(149, 17);
@@ -789,6 +792,7 @@
             // 
             this.radFim.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radFim.AutoSize = true;
+            this.radFim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radFim.Location = new System.Drawing.Point(4, 176);
             this.radFim.Name = "radFim";
             this.radFim.Size = new System.Drawing.Size(64, 17);
@@ -803,6 +807,7 @@
             this.radInicio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.radInicio.AutoSize = true;
             this.radInicio.Checked = true;
+            this.radInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radInicio.Location = new System.Drawing.Point(4, 53);
             this.radInicio.Name = "radInicio";
             this.radInicio.Size = new System.Drawing.Size(69, 17);
@@ -859,11 +864,12 @@
             // 
             // clLogout
             // 
+            this.clLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.clLogout.LineColor = System.Drawing.Color.Black;
             this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(499, 65);
+            this.clLogout.Location = new System.Drawing.Point(499, 69);
             this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(75, 13);
+            this.clLogout.Size = new System.Drawing.Size(75, 8);
             this.clLogout.TabIndex = 21;
             this.clLogout.Text = "customLine3";
             this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
@@ -898,6 +904,7 @@
             this.btnSalvar.BorderRadius = 20;
             this.btnSalvar.BorderThickness = 4;
             this.btnSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.Location = new System.Drawing.Point(293, 3);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(284, 50);
@@ -920,6 +927,7 @@
             this.btnCancelar.BorderRadius = 20;
             this.btnCancelar.BorderThickness = 4;
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Location = new System.Drawing.Point(3, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(284, 50);
@@ -932,11 +940,12 @@
             // 
             // clRecarregar
             // 
+            this.clRecarregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.clRecarregar.LineColor = System.Drawing.Color.Black;
             this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(418, 62);
+            this.clRecarregar.Location = new System.Drawing.Point(418, 69);
             this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(75, 14);
+            this.clRecarregar.Size = new System.Drawing.Size(75, 8);
             this.clRecarregar.TabIndex = 20;
             this.clRecarregar.Text = "customLine2";
             this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
@@ -945,11 +954,12 @@
             // 
             // clSalvar
             // 
+            this.clSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.clSalvar.LineColor = System.Drawing.Color.Black;
             this.clSalvar.LineWidth = 1;
-            this.clSalvar.Location = new System.Drawing.Point(217, 65);
+            this.clSalvar.Location = new System.Drawing.Point(151, 69);
             this.clSalvar.Name = "clSalvar";
-            this.clSalvar.Size = new System.Drawing.Size(75, 11);
+            this.clSalvar.Size = new System.Drawing.Size(75, 8);
             this.clSalvar.TabIndex = 18;
             this.clSalvar.Text = "customLine6";
             this.clSalvar.Enter += new System.EventHandler(this.clSalvar_Enter);
@@ -958,11 +968,12 @@
             // 
             // clConfig
             // 
+            this.clConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.clConfig.LineColor = System.Drawing.Color.Black;
             this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(314, 68);
+            this.clConfig.Location = new System.Drawing.Point(314, 69);
             this.clConfig.Name = "clConfig";
-            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.Size = new System.Drawing.Size(75, 8);
             this.clConfig.TabIndex = 19;
             this.clConfig.Text = "customLine4";
             this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
@@ -971,11 +982,12 @@
             // 
             // clCancelar
             // 
+            this.clCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.clCancelar.LineColor = System.Drawing.Color.Black;
             this.clCancelar.LineWidth = 1;
-            this.clCancelar.Location = new System.Drawing.Point(136, 62);
+            this.clCancelar.Location = new System.Drawing.Point(58, 69);
             this.clCancelar.Name = "clCancelar";
-            this.clCancelar.Size = new System.Drawing.Size(75, 14);
+            this.clCancelar.Size = new System.Drawing.Size(75, 8);
             this.clCancelar.TabIndex = 17;
             this.clCancelar.Text = "customLine5";
             this.clCancelar.Enter += new System.EventHandler(this.clCancelar_Enter);
@@ -1237,6 +1249,7 @@
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -1256,6 +1269,7 @@
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
             this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -1275,6 +1289,7 @@
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
             this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";

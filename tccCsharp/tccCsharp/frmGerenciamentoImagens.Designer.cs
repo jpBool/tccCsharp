@@ -336,6 +336,7 @@
             this.btnUpload.BorderRadius = 20;
             this.btnUpload.BorderThickness = 4;
             this.btnUpload.ButtonColor = System.Drawing.Color.White;
+            this.btnUpload.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpload.Location = new System.Drawing.Point(373, 242);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
@@ -435,6 +436,7 @@
             this.btnExcluir.BorderRadius = 20;
             this.btnExcluir.BorderThickness = 4;
             this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Location = new System.Drawing.Point(313, 72);
             this.btnExcluir.Name = "btnExcluir";
@@ -456,6 +458,7 @@
             this.btnLimparForm.BorderRadius = 20;
             this.btnLimparForm.BorderThickness = 4;
             this.btnLimparForm.ButtonColor = System.Drawing.Color.White;
+            this.btnLimparForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimparForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimparForm.Location = new System.Drawing.Point(107, 72);
             this.btnLimparForm.Name = "btnLimparForm";
@@ -480,6 +483,7 @@
             // 
             this.radNao.AutoSize = true;
             this.radNao.Checked = true;
+            this.radNao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radNao.Location = new System.Drawing.Point(308, 17);
             this.radNao.Name = "radNao";
@@ -492,6 +496,7 @@
             // radSim
             // 
             this.radSim.AutoSize = true;
+            this.radSim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radSim.Location = new System.Drawing.Point(414, 17);
             this.radSim.Name = "radSim";
@@ -510,6 +515,7 @@
             this.btnSalvar.BorderRadius = 20;
             this.btnSalvar.BorderThickness = 4;
             this.btnSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(414, 72);
             this.btnSalvar.Name = "btnSalvar";
@@ -564,6 +570,7 @@
             this.btnSairSSalvar.BorderRadius = 20;
             this.btnSairSSalvar.BorderThickness = 4;
             this.btnSairSSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSairSSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairSSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
             this.btnSairSSalvar.Name = "btnSairSSalvar";
@@ -876,6 +883,7 @@
             this.OPBRecarregar.BackColor = System.Drawing.Color.Transparent;
             this.OPBRecarregar.BordaHoover = System.Drawing.Color.Green;
             this.OPBRecarregar.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBRecarregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
             this.OPBRecarregar.Location = new System.Drawing.Point(1123, 4);
             this.OPBRecarregar.Name = "OPBRecarregar";
@@ -895,6 +903,7 @@
             this.OPBConfiguracoes.BackColor = System.Drawing.Color.Transparent;
             this.OPBConfiguracoes.BordaHoover = System.Drawing.Color.Green;
             this.OPBConfiguracoes.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
             this.OPBConfiguracoes.Location = new System.Drawing.Point(1186, 4);
             this.OPBConfiguracoes.Name = "OPBConfiguracoes";
@@ -914,6 +923,7 @@
             this.OPBLogout.BackColor = System.Drawing.Color.Transparent;
             this.OPBLogout.BordaHoover = System.Drawing.Color.Green;
             this.OPBLogout.BordaPrincipal = System.Drawing.Color.Orange;
+            this.OPBLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
             this.OPBLogout.Location = new System.Drawing.Point(1054, 4);
             this.OPBLogout.Name = "OPBLogout";
