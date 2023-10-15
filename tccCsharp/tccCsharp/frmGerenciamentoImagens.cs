@@ -555,6 +555,176 @@ namespace tccCsharp
                     break;
             }
         }
+
+        private void clUpload_Enter(object sender, EventArgs e)
+        {
+            btnUpload.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnUpload.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clUpload_Leave(object sender, EventArgs e)
+        {
+            btnUpload.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnUpload.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clUpload_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnUpload.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnUpload.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnUpload_Click(sender, e);
+            }
+        }
+
+        private void clLimparForm_Enter(object sender, EventArgs e)
+        {
+            btnLimparForm.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnLimparForm.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clLimparForm_Leave(object sender, EventArgs e)
+        {
+            btnLimparForm.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnLimparForm.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clLimparForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLimparForm.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnLimparForm.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnLimparForm_Click(sender, e);
+            }
+        }
+
+        private void clExcluir_Enter(object sender, EventArgs e)
+        {
+            btnExcluir.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clExcluir_Leave(object sender, EventArgs e)
+        {
+            btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clExcluir_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnExcluir.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnExcluir.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnExcluir_Click(sender, e);
+            }
+        }
+
+        private void clSalvar_Enter(object sender, EventArgs e)
+        {
+            btnSalvar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnSalvar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clSalvar_Leave(object sender, EventArgs e)
+        {
+            btnSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clSalvar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnSalvar_Click(sender, e);
+            }
+        }
+
+        private void clVoltar_Enter(object sender, EventArgs e)
+        {
+            btnSairSSalvar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnSairSSalvar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clVoltar_Leave(object sender, EventArgs e)
+        {
+            btnSairSSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnSairSSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clVoltar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSairSSalvar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnSairSSalvar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnSairSSalvar_Click(sender, e);
+            }
+        }
+
+        private void clConfig_Enter(object sender, EventArgs e)
+        {
+            OPBConfiguracoes._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clConfig_Leave(object sender, EventArgs e)
+        {
+            OPBConfiguracoes._bordercolor = Color.Transparent;
+        }
+
+        private void clConfig_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBConfiguracoes._bordercolor = Color.Transparent;
+                OPBConfiguracoes_Click(sender, e);
+
+            }
+        }
+
+        private void clRecarregar_Enter(object sender, EventArgs e)
+        {
+            OPBRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clRecarregar_Leave(object sender, EventArgs e)
+        {
+            OPBRecarregar._bordercolor = Color.Transparent;
+        }
+
+        private void clRecarregar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBRecarregar._bordercolor = Color.Transparent;
+                OPBRecarregar_Click(sender, e);
+
+            }
+        }
+
+        private void clLogout_Enter(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clLogout_Leave(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.Transparent;
+        }
+
+        private void clLogout_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBLogout._bordercolor = Color.Transparent;
+                OPBLogout_Click(sender, e);
+
+            }
+        }
     }
 }
 

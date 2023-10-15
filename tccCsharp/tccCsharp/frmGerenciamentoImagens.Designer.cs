@@ -82,6 +82,15 @@
             this.OPBConfiguracoes = new tccCsharp.OvalPictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.clSalvar = new CustomLine();
+            this.clExcluir = new CustomLine();
+            this.clUpload = new CustomLine();
+            this.clVoltar = new CustomLine();
+            this.clConfig = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.clLogout = new CustomLine();
+            this.clLimparForm = new CustomLine();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tlpBase2.SuspendLayout();
             this.tlpBase3.SuspendLayout();
             this.tlpBase5.SuspendLayout();
@@ -94,6 +103,7 @@
             this.tlpBase4.SuspendLayout();
             this.rgbOpcoes.SuspendLayout();
             this.rgbImagensP.SuspendLayout();
+            this.flpImagens.SuspendLayout();
             this.tlpBase1.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.rgbHeadImgs2.SuspendLayout();
@@ -107,6 +117,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpBase2
@@ -282,7 +293,7 @@
             this.txtDescricaoImg.MaxLength = 300;
             this.txtDescricaoImg.Name = "txtDescricaoImg";
             this.txtDescricaoImg.Size = new System.Drawing.Size(377, 19);
-            this.txtDescricaoImg.TabIndex = 2;
+            this.txtDescricaoImg.TabIndex = 3;
             // 
             // customLine3
             // 
@@ -488,7 +499,7 @@
             this.radNao.Location = new System.Drawing.Point(308, 17);
             this.radNao.Name = "radNao";
             this.radNao.Size = new System.Drawing.Size(56, 24);
-            this.radNao.TabIndex = 7;
+            this.radNao.TabIndex = 4;
             this.radNao.TabStop = true;
             this.radNao.Text = "Não";
             this.radNao.UseVisualStyleBackColor = true;
@@ -501,7 +512,7 @@
             this.radSim.Location = new System.Drawing.Point(414, 17);
             this.radSim.Name = "radSim";
             this.radSim.Size = new System.Drawing.Size(54, 24);
-            this.radSim.TabIndex = 8;
+            this.radSim.TabIndex = 5;
             this.radSim.TabStop = true;
             this.radSim.Text = "Sim";
             this.radSim.UseVisualStyleBackColor = true;
@@ -604,6 +615,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpImagens.AutoScroll = true;
+            this.flpImagens.Controls.Add(this.groupBox1);
             this.flpImagens.Location = new System.Drawing.Point(7, 45);
             this.flpImagens.Name = "flpImagens";
             this.flpImagens.Size = new System.Drawing.Size(601, 431);
@@ -944,6 +956,127 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "GERENCIAMENTO DE IMAGENS";
             // 
+            // clSalvar
+            // 
+            this.clSalvar.LineColor = System.Drawing.Color.Black;
+            this.clSalvar.LineWidth = 1;
+            this.clSalvar.Location = new System.Drawing.Point(22, 85);
+            this.clSalvar.Name = "clSalvar";
+            this.clSalvar.Size = new System.Drawing.Size(75, 10);
+            this.clSalvar.TabIndex = 8;
+            this.clSalvar.Text = "customLine1";
+            this.clSalvar.Enter += new System.EventHandler(this.clSalvar_Enter);
+            this.clSalvar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clSalvar_KeyDown);
+            this.clSalvar.Leave += new System.EventHandler(this.clSalvar_Leave);
+            // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(22, 67);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 12);
+            this.clExcluir.TabIndex = 7;
+            this.clExcluir.Text = "customLine4";
+            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
+            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
+            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
+            // 
+            // clUpload
+            // 
+            this.clUpload.LineColor = System.Drawing.Color.Black;
+            this.clUpload.LineWidth = 1;
+            this.clUpload.Location = new System.Drawing.Point(22, 35);
+            this.clUpload.Name = "clUpload";
+            this.clUpload.Size = new System.Drawing.Size(75, 10);
+            this.clUpload.TabIndex = 1;
+            this.clUpload.Text = "customLine5";
+            this.clUpload.Enter += new System.EventHandler(this.clUpload_Enter);
+            this.clUpload.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clUpload_KeyDown);
+            this.clUpload.Leave += new System.EventHandler(this.clUpload_Leave);
+            // 
+            // clVoltar
+            // 
+            this.clVoltar.LineColor = System.Drawing.Color.Black;
+            this.clVoltar.LineWidth = 1;
+            this.clVoltar.Location = new System.Drawing.Point(116, 35);
+            this.clVoltar.Name = "clVoltar";
+            this.clVoltar.Size = new System.Drawing.Size(75, 10);
+            this.clVoltar.TabIndex = 9;
+            this.clVoltar.Text = "customLine6";
+            this.clVoltar.Enter += new System.EventHandler(this.clVoltar_Enter);
+            this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
+            this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(116, 51);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 10;
+            this.clConfig.Text = "customLine7";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(116, 67);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 11;
+            this.clRecarregar.Text = "customLine8";
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(116, 83);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 10);
+            this.clLogout.TabIndex = 12;
+            this.clLogout.Text = "customLine9";
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clLimparForm
+            // 
+            this.clLimparForm.LineColor = System.Drawing.Color.Black;
+            this.clLimparForm.LineWidth = 1;
+            this.clLimparForm.Location = new System.Drawing.Point(22, 51);
+            this.clLimparForm.Name = "clLimparForm";
+            this.clLimparForm.Size = new System.Drawing.Size(75, 10);
+            this.clLimparForm.TabIndex = 6;
+            this.clLimparForm.Text = "customLine10";
+            this.clLimparForm.Enter += new System.EventHandler(this.clLimparForm_Enter);
+            this.clLimparForm.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLimparForm_KeyDown);
+            this.clLimparForm.Leave += new System.EventHandler(this.clLimparForm_Leave);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.clSalvar);
+            this.groupBox1.Controls.Add(this.clExcluir);
+            this.groupBox1.Controls.Add(this.clLimparForm);
+            this.groupBox1.Controls.Add(this.clUpload);
+            this.groupBox1.Controls.Add(this.clLogout);
+            this.groupBox1.Controls.Add(this.clVoltar);
+            this.groupBox1.Controls.Add(this.clRecarregar);
+            this.groupBox1.Controls.Add(this.clConfig);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(211, 117);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // frmGerenciamentoImagens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -974,6 +1107,7 @@
             this.rgbOpcoes.ResumeLayout(false);
             this.rgbImagensP.ResumeLayout(false);
             this.rgbImagensP.PerformLayout();
+            this.flpImagens.ResumeLayout(false);
             this.tlpBase1.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
@@ -993,6 +1127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBConfiguracoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1052,5 +1187,14 @@
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.PictureBox opbLogo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private CustomLine clSalvar;
+        private CustomLine clExcluir;
+        private CustomLine clLimparForm;
+        private CustomLine clUpload;
+        private CustomLine clLogout;
+        private CustomLine clVoltar;
+        private CustomLine clRecarregar;
+        private CustomLine clConfig;
     }
 }
