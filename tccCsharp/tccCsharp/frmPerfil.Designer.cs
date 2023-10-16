@@ -204,8 +204,8 @@
             this.tableLayoutPanel7.Location = new System.Drawing.Point(297, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.2327F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.7673F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(289, 159);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
@@ -223,7 +223,7 @@
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(283, 73);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(283, 85);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // RGBSeguindo
@@ -240,7 +240,7 @@
             this.RGBSeguindo.Location = new System.Drawing.Point(151, 10);
             this.RGBSeguindo.Margin = new System.Windows.Forms.Padding(10);
             this.RGBSeguindo.Name = "RGBSeguindo";
-            this.RGBSeguindo.Size = new System.Drawing.Size(122, 53);
+            this.RGBSeguindo.Size = new System.Drawing.Size(122, 65);
             this.RGBSeguindo.TabIndex = 10;
             this.RGBSeguindo.TabStop = false;
             // 
@@ -249,9 +249,9 @@
             this.lblNSeguindo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNSeguindo.BackColor = System.Drawing.Color.Transparent;
-            this.lblNSeguindo.Location = new System.Drawing.Point(8, 27);
+            this.lblNSeguindo.Location = new System.Drawing.Point(6, 26);
             this.lblNSeguindo.Name = "lblNSeguindo";
-            this.lblNSeguindo.Size = new System.Drawing.Size(110, 20);
+            this.lblNSeguindo.Size = new System.Drawing.Size(110, 30);
             this.lblNSeguindo.TabIndex = 52;
             this.lblNSeguindo.Text = "Seguindo";
             this.lblNSeguindo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -262,10 +262,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSeguindo.BackColor = System.Drawing.Color.Transparent;
-            this.lblSeguindo.Location = new System.Drawing.Point(30, 9);
+            this.lblSeguindo.Location = new System.Drawing.Point(25, 1);
             this.lblSeguindo.Margin = new System.Windows.Forms.Padding(50);
             this.lblSeguindo.Name = "lblSeguindo";
-            this.lblSeguindo.Size = new System.Drawing.Size(66, 15);
+            this.lblSeguindo.Size = new System.Drawing.Size(66, 25);
             this.lblSeguindo.TabIndex = 50;
             this.lblSeguindo.Text = "(num)";
             this.lblSeguindo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -283,7 +283,7 @@
             this.RGBSeguidores.Location = new System.Drawing.Point(10, 10);
             this.RGBSeguidores.Margin = new System.Windows.Forms.Padding(10);
             this.RGBSeguidores.Name = "RGBSeguidores";
-            this.RGBSeguidores.Size = new System.Drawing.Size(121, 53);
+            this.RGBSeguidores.Size = new System.Drawing.Size(121, 65);
             this.RGBSeguidores.TabIndex = 0;
             this.RGBSeguidores.TabStop = false;
             // 
@@ -292,9 +292,9 @@
             this.lblNSeguidores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNSeguidores.BackColor = System.Drawing.Color.Transparent;
-            this.lblNSeguidores.Location = new System.Drawing.Point(6, 27);
+            this.lblNSeguidores.Location = new System.Drawing.Point(7, 26);
             this.lblNSeguidores.Name = "lblNSeguidores";
-            this.lblNSeguidores.Size = new System.Drawing.Size(109, 20);
+            this.lblNSeguidores.Size = new System.Drawing.Size(109, 30);
             this.lblNSeguidores.TabIndex = 51;
             this.lblNSeguidores.Text = "Seguidores";
             this.lblNSeguidores.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -305,9 +305,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSeguidores.BackColor = System.Drawing.Color.Transparent;
-            this.lblSeguidores.Location = new System.Drawing.Point(26, 9);
+            this.lblSeguidores.Location = new System.Drawing.Point(29, 1);
             this.lblSeguidores.Name = "lblSeguidores";
-            this.lblSeguidores.Size = new System.Drawing.Size(67, 15);
+            this.lblSeguidores.Size = new System.Drawing.Size(67, 25);
             this.lblSeguidores.TabIndex = 49;
             this.lblSeguidores.Text = "(num)";
             this.lblSeguidores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,9 +325,9 @@
             this.RGBCommits.Controls.Add(this.lblAMD);
             this.RGBCommits.Controls.Add(this.lblAtivoDesde);
             this.RGBCommits.CornerRadius = 10;
-            this.RGBCommits.Location = new System.Drawing.Point(3, 82);
+            this.RGBCommits.Location = new System.Drawing.Point(3, 94);
             this.RGBCommits.Name = "RGBCommits";
-            this.RGBCommits.Size = new System.Drawing.Size(283, 74);
+            this.RGBCommits.Size = new System.Drawing.Size(283, 62);
             this.RGBCommits.TabIndex = 2;
             this.RGBCommits.TabStop = false;
             // 
@@ -335,7 +335,7 @@
             // 
             this.lblNCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNCommits.AutoSize = true;
-            this.lblNCommits.Location = new System.Drawing.Point(137, 3);
+            this.lblNCommits.Location = new System.Drawing.Point(137, 2);
             this.lblNCommits.Name = "lblNCommits";
             this.lblNCommits.Size = new System.Drawing.Size(68, 20);
             this.lblNCommits.TabIndex = 41;
@@ -345,7 +345,7 @@
             // 
             this.lblCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCommits.AutoSize = true;
-            this.lblCommits.Location = new System.Drawing.Point(17, 3);
+            this.lblCommits.Location = new System.Drawing.Point(17, 0);
             this.lblCommits.Name = "lblCommits";
             this.lblCommits.Size = new System.Drawing.Size(114, 20);
             this.lblCommits.TabIndex = 38;
@@ -355,7 +355,7 @@
             // 
             this.lblAMD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAMD.AutoSize = true;
-            this.lblAMD.Location = new System.Drawing.Point(119, 55);
+            this.lblAMD.Location = new System.Drawing.Point(152, 35);
             this.lblAMD.Name = "lblAMD";
             this.lblAMD.Size = new System.Drawing.Size(89, 20);
             this.lblAMD.TabIndex = 40;
@@ -365,11 +365,12 @@
             // 
             this.lblAtivoDesde.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAtivoDesde.AutoSize = true;
-            this.lblAtivoDesde.Location = new System.Drawing.Point(17, 55);
+            this.lblAtivoDesde.Location = new System.Drawing.Point(17, 35);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
             this.lblAtivoDesde.Size = new System.Drawing.Size(96, 20);
             this.lblAtivoDesde.TabIndex = 39;
             this.lblAtivoDesde.Text = "Ativo desde:";
+            this.lblAtivoDesde.Click += new System.EventHandler(this.lblAtivoDesde_Click);
             // 
             // TLPAvatar
             // 
@@ -384,9 +385,9 @@
             this.TLPAvatar.Location = new System.Drawing.Point(3, 3);
             this.TLPAvatar.Name = "TLPAvatar";
             this.TLPAvatar.RowCount = 3;
-            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.06918F));
+            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.09434F));
+            this.TLPAvatar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.83648F));
             this.TLPAvatar.Size = new System.Drawing.Size(288, 159);
             this.TLPAvatar.TabIndex = 0;
             // 
@@ -394,9 +395,9 @@
             // 
             this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(120, 142);
+            this.lblEmail.Location = new System.Drawing.Point(120, 137);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(48, 17);
+            this.lblEmail.Size = new System.Drawing.Size(48, 22);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email";
             // 
@@ -412,7 +413,7 @@
             this.opcAvatar.Image = global::tccCsharp.Properties.Resources.Classic_Chess_King_Black;
             this.opcAvatar.Location = new System.Drawing.Point(84, 3);
             this.opcAvatar.Name = "opcAvatar";
-            this.opcAvatar.Size = new System.Drawing.Size(120, 120);
+            this.opcAvatar.Size = new System.Drawing.Size(120, 107);
             this.opcAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opcAvatar.TabIndex = 7;
             this.opcAvatar.TabStop = false;
@@ -421,9 +422,9 @@
             // 
             this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(118, 127);
+            this.lblNome.Location = new System.Drawing.Point(118, 113);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(51, 15);
+            this.lblNome.Size = new System.Drawing.Size(51, 24);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome";
             // 

@@ -236,10 +236,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPInfoshead.ColumnCount = 5;
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.748184F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.3979F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.04762F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.09685F));
             this.TLPInfoshead.Controls.Add(this.btnADDEtapa, 4, 0);
             this.TLPInfoshead.Controls.Add(this.BtnADDGrupo, 3, 0);
             this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 0, 0);
@@ -265,10 +265,10 @@
             this.btnADDEtapa.BorderThickness = 4;
             this.btnADDEtapa.ButtonColor = System.Drawing.Color.White;
             this.btnADDEtapa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnADDEtapa.Location = new System.Drawing.Point(1036, 8);
+            this.btnADDEtapa.Location = new System.Drawing.Point(999, 8);
             this.btnADDEtapa.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.btnADDEtapa.Name = "btnADDEtapa";
-            this.btnADDEtapa.Size = new System.Drawing.Size(193, 35);
+            this.btnADDEtapa.Size = new System.Drawing.Size(230, 35);
             this.btnADDEtapa.TabIndex = 7;
             this.btnADDEtapa.TabStop = false;
             this.btnADDEtapa.Text = "ADICIONAR ETAPA";
@@ -289,10 +289,10 @@
             this.BtnADDGrupo.BorderThickness = 4;
             this.BtnADDGrupo.ButtonColor = System.Drawing.Color.White;
             this.BtnADDGrupo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnADDGrupo.Location = new System.Drawing.Point(826, 8);
+            this.BtnADDGrupo.Location = new System.Drawing.Point(764, 8);
             this.BtnADDGrupo.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.BtnADDGrupo.Name = "BtnADDGrupo";
-            this.BtnADDGrupo.Size = new System.Drawing.Size(190, 35);
+            this.BtnADDGrupo.Size = new System.Drawing.Size(215, 35);
             this.BtnADDGrupo.TabIndex = 6;
             this.BtnADDGrupo.TabStop = false;
             this.BtnADDGrupo.Text = "ADICIONAR GRUPO";
@@ -307,9 +307,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagem.AutoSize = true;
             this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(498, 0);
+            this.lblPorcentagem.Location = new System.Drawing.Point(497, 0);
             this.lblPorcentagem.Name = "lblPorcentagem";
-            this.lblPorcentagem.Size = new System.Drawing.Size(117, 51);
+            this.lblPorcentagem.Size = new System.Drawing.Size(89, 51);
             this.lblPorcentagem.TabIndex = 4;
             this.lblPorcentagem.Text = "%";
             this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,7 +325,7 @@
             this.groupPorcentagem.CornerRadius = 22;
             this.groupPorcentagem.Location = new System.Drawing.Point(3, 3);
             this.groupPorcentagem.Name = "groupPorcentagem";
-            this.groupPorcentagem.Size = new System.Drawing.Size(489, 45);
+            this.groupPorcentagem.Size = new System.Drawing.Size(488, 45);
             this.groupPorcentagem.TabIndex = 3;
             this.groupPorcentagem.TabStop = false;
             this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
@@ -356,10 +356,10 @@
             this.BtnVoltar.BorderThickness = 4;
             this.BtnVoltar.ButtonColor = System.Drawing.Color.White;
             this.BtnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnVoltar.Location = new System.Drawing.Point(628, 8);
+            this.BtnVoltar.Location = new System.Drawing.Point(599, 8);
             this.BtnVoltar.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(178, 35);
+            this.BtnVoltar.Size = new System.Drawing.Size(145, 35);
             this.BtnVoltar.TabIndex = 5;
             this.BtnVoltar.TabStop = false;
             this.BtnVoltar.Text = "VOLTAR";
@@ -605,7 +605,7 @@
             // 
             this.lblPorcentagemGP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemGP1.AutoSize = true;
-            this.lblPorcentagemGP1.Location = new System.Drawing.Point(160, 129);
+            this.lblPorcentagemGP1.Location = new System.Drawing.Point(126, 119);
             this.lblPorcentagemGP1.Name = "lblPorcentagemGP1";
             this.lblPorcentagemGP1.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemGP1.TabIndex = 43;
@@ -620,9 +620,9 @@
             this.Grupo1groupPorcentagem1.BorderWidth = 1F;
             this.Grupo1groupPorcentagem1.Controls.Add(this.Grupo1groupPorcentagem2);
             this.Grupo1groupPorcentagem1.CornerRadius = 14;
-            this.Grupo1groupPorcentagem1.Location = new System.Drawing.Point(17, 120);
+            this.Grupo1groupPorcentagem1.Location = new System.Drawing.Point(12, 119);
             this.Grupo1groupPorcentagem1.Name = "Grupo1groupPorcentagem1";
-            this.Grupo1groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Grupo1groupPorcentagem1.Size = new System.Drawing.Size(108, 28);
             this.Grupo1groupPorcentagem1.TabIndex = 42;
             this.Grupo1groupPorcentagem1.TabStop = false;
             // 
@@ -643,6 +643,7 @@
             // lblTituloGrupo1
             // 
             this.lblTituloGrupo1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTituloGrupo1.AutoEllipsis = true;
             this.lblTituloGrupo1.AutoSize = true;
             this.lblTituloGrupo1.BackColor = System.Drawing.Color.Transparent;
             this.lblTituloGrupo1.Location = new System.Drawing.Point(54, 66);
@@ -650,6 +651,7 @@
             this.lblTituloGrupo1.Size = new System.Drawing.Size(85, 13);
             this.lblTituloGrupo1.TabIndex = 41;
             this.lblTituloGrupo1.Text = "Nome do projeto";
+            this.lblTituloGrupo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // opbEditarE1
             // 
@@ -692,7 +694,7 @@
             // 
             this.lblPorcentagemGP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemGP2.AutoSize = true;
-            this.lblPorcentagemGP2.Location = new System.Drawing.Point(160, 129);
+            this.lblPorcentagemGP2.Location = new System.Drawing.Point(78, 125);
             this.lblPorcentagemGP2.Name = "lblPorcentagemGP2";
             this.lblPorcentagemGP2.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemGP2.TabIndex = 44;
@@ -707,7 +709,7 @@
             this.Grupo2groupPorcentagem1.BorderWidth = 1F;
             this.Grupo2groupPorcentagem1.Controls.Add(this.Grupo2groupPorcentagem2);
             this.Grupo2groupPorcentagem1.CornerRadius = 14;
-            this.Grupo2groupPorcentagem1.Location = new System.Drawing.Point(15, 120);
+            this.Grupo2groupPorcentagem1.Location = new System.Drawing.Point(24, 80);
             this.Grupo2groupPorcentagem1.Name = "Grupo2groupPorcentagem1";
             this.Grupo2groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
             this.Grupo2groupPorcentagem1.TabIndex = 43;
@@ -729,14 +731,15 @@
             // 
             // lblTituloGrupo2
             // 
-            this.lblTituloGrupo2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTituloGrupo2.AutoEllipsis = true;
             this.lblTituloGrupo2.AutoSize = true;
             this.lblTituloGrupo2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTituloGrupo2.Location = new System.Drawing.Point(54, 70);
+            this.lblTituloGrupo2.Location = new System.Drawing.Point(54, 46);
             this.lblTituloGrupo2.Name = "lblTituloGrupo2";
             this.lblTituloGrupo2.Size = new System.Drawing.Size(85, 13);
             this.lblTituloGrupo2.TabIndex = 42;
             this.lblTituloGrupo2.Text = "Nome do projeto";
+            this.lblTituloGrupo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // opbEditarE2
             // 
@@ -857,7 +860,7 @@
             // 
             this.lblPorcentagemET23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemET23.AutoSize = true;
-            this.lblPorcentagemET23.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET23.Location = new System.Drawing.Point(133, 189);
             this.lblPorcentagemET23.Name = "lblPorcentagemET23";
             this.lblPorcentagemET23.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemET23.TabIndex = 48;
@@ -874,7 +877,7 @@
             this.Etapa23groupPorcentagem1.CornerRadius = 14;
             this.Etapa23groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
             this.Etapa23groupPorcentagem1.Name = "Etapa23groupPorcentagem1";
-            this.Etapa23groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Etapa23groupPorcentagem1.Size = new System.Drawing.Size(113, 28);
             this.Etapa23groupPorcentagem1.TabIndex = 45;
             this.Etapa23groupPorcentagem1.TabStop = false;
             // 
@@ -940,6 +943,7 @@
             // 
             // lblNomeEtapa23
             // 
+            this.lblNomeEtapa23.AutoEllipsis = true;
             this.lblNomeEtapa23.AutoSize = true;
             this.lblNomeEtapa23.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeEtapa23.Location = new System.Drawing.Point(8, 16);
@@ -991,7 +995,7 @@
             // 
             this.lblPorcentagemET22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemET22.AutoSize = true;
-            this.lblPorcentagemET22.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET22.Location = new System.Drawing.Point(130, 189);
             this.lblPorcentagemET22.Name = "lblPorcentagemET22";
             this.lblPorcentagemET22.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemET22.TabIndex = 48;
@@ -1008,7 +1012,7 @@
             this.Etapa22groupPorcentagem1.CornerRadius = 14;
             this.Etapa22groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
             this.Etapa22groupPorcentagem1.Name = "Etapa22groupPorcentagem1";
-            this.Etapa22groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Etapa22groupPorcentagem1.Size = new System.Drawing.Size(110, 28);
             this.Etapa22groupPorcentagem1.TabIndex = 45;
             this.Etapa22groupPorcentagem1.TabStop = false;
             // 
@@ -1074,6 +1078,7 @@
             // 
             // lblNomeEtapa22
             // 
+            this.lblNomeEtapa22.AutoEllipsis = true;
             this.lblNomeEtapa22.AutoSize = true;
             this.lblNomeEtapa22.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeEtapa22.Location = new System.Drawing.Point(8, 16);
@@ -1106,7 +1111,7 @@
             // 
             this.lblPorcentagemET21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemET21.AutoSize = true;
-            this.lblPorcentagemET21.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET21.Location = new System.Drawing.Point(136, 189);
             this.lblPorcentagemET21.Name = "lblPorcentagemET21";
             this.lblPorcentagemET21.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemET21.TabIndex = 47;
@@ -1123,7 +1128,7 @@
             this.Etapa21groupPorcentagem1.CornerRadius = 14;
             this.Etapa21groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
             this.Etapa21groupPorcentagem1.Name = "Etapa21groupPorcentagem1";
-            this.Etapa21groupPorcentagem1.Size = new System.Drawing.Size(146, 28);
+            this.Etapa21groupPorcentagem1.Size = new System.Drawing.Size(116, 28);
             this.Etapa21groupPorcentagem1.TabIndex = 45;
             this.Etapa21groupPorcentagem1.TabStop = false;
             // 
@@ -1189,6 +1194,7 @@
             // 
             // lblNomeEtapa21
             // 
+            this.lblNomeEtapa21.AutoEllipsis = true;
             this.lblNomeEtapa21.AutoSize = true;
             this.lblNomeEtapa21.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeEtapa21.Location = new System.Drawing.Point(8, 16);
@@ -1300,7 +1306,7 @@
             // 
             this.lblPorcentagemET13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemET13.AutoSize = true;
-            this.lblPorcentagemET13.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET13.Location = new System.Drawing.Point(132, 189);
             this.lblPorcentagemET13.Name = "lblPorcentagemET13";
             this.lblPorcentagemET13.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemET13.TabIndex = 46;
@@ -1317,7 +1323,7 @@
             this.Etapa13groupPorcentagem1.CornerRadius = 14;
             this.Etapa13groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
             this.Etapa13groupPorcentagem1.Name = "Etapa13groupPorcentagem1";
-            this.Etapa13groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Etapa13groupPorcentagem1.Size = new System.Drawing.Size(112, 28);
             this.Etapa13groupPorcentagem1.TabIndex = 45;
             this.Etapa13groupPorcentagem1.TabStop = false;
             // 
@@ -1383,6 +1389,7 @@
             // 
             // lblNomeEtapa13
             // 
+            this.lblNomeEtapa13.AutoEllipsis = true;
             this.lblNomeEtapa13.AutoSize = true;
             this.lblNomeEtapa13.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeEtapa13.Location = new System.Drawing.Point(8, 16);
@@ -1415,7 +1422,7 @@
             // 
             this.lblPorcentagemET12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemET12.AutoSize = true;
-            this.lblPorcentagemET12.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET12.Location = new System.Drawing.Point(129, 189);
             this.lblPorcentagemET12.Name = "lblPorcentagemET12";
             this.lblPorcentagemET12.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemET12.TabIndex = 46;
@@ -1432,7 +1439,7 @@
             this.Etapa12groupPorcentagem1.CornerRadius = 14;
             this.Etapa12groupPorcentagem1.Location = new System.Drawing.Point(14, 189);
             this.Etapa12groupPorcentagem1.Name = "Etapa12groupPorcentagem1";
-            this.Etapa12groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Etapa12groupPorcentagem1.Size = new System.Drawing.Size(109, 28);
             this.Etapa12groupPorcentagem1.TabIndex = 45;
             this.Etapa12groupPorcentagem1.TabStop = false;
             // 
@@ -1498,6 +1505,7 @@
             // 
             // lblNomeEtapa12
             // 
+            this.lblNomeEtapa12.AutoEllipsis = true;
             this.lblNomeEtapa12.AutoSize = true;
             this.lblNomeEtapa12.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeEtapa12.Location = new System.Drawing.Point(8, 16);
@@ -1530,7 +1538,7 @@
             // 
             this.lblPorcentagemET11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemET11.AutoSize = true;
-            this.lblPorcentagemET11.Location = new System.Drawing.Point(160, 196);
+            this.lblPorcentagemET11.Location = new System.Drawing.Point(135, 189);
             this.lblPorcentagemET11.Name = "lblPorcentagemET11";
             this.lblPorcentagemET11.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemET11.TabIndex = 42;
@@ -1547,7 +1555,7 @@
             this.Etapa11groupPorcentagem1.CornerRadius = 14;
             this.Etapa11groupPorcentagem1.Location = new System.Drawing.Point(17, 188);
             this.Etapa11groupPorcentagem1.Name = "Etapa11groupPorcentagem1";
-            this.Etapa11groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Etapa11groupPorcentagem1.Size = new System.Drawing.Size(112, 28);
             this.Etapa11groupPorcentagem1.TabIndex = 41;
             this.Etapa11groupPorcentagem1.TabStop = false;
             // 
@@ -1613,6 +1621,7 @@
             // 
             // lblNomeEtapa11
             // 
+            this.lblNomeEtapa11.AutoEllipsis = true;
             this.lblNomeEtapa11.AutoSize = true;
             this.lblNomeEtapa11.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeEtapa11.Location = new System.Drawing.Point(11, 15);

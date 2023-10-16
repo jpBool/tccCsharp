@@ -164,9 +164,9 @@
             this.TLPInfoshead.ColumnCount = 5;
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.035512F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.77401F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54964F));
             this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
             this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
             this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
@@ -187,13 +187,13 @@
             this.TLPCriacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPCriacao.Controls.Add(this.lblCriador, 0, 1);
             this.TLPCriacao.Controls.Add(this.lblCriadoquando, 0, 0);
-            this.TLPCriacao.Location = new System.Drawing.Point(790, 0);
+            this.TLPCriacao.Location = new System.Drawing.Point(728, 0);
             this.TLPCriacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.TLPCriacao.Name = "TLPCriacao";
             this.TLPCriacao.RowCount = 2;
             this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.Size = new System.Drawing.Size(219, 51);
+            this.TLPCriacao.Size = new System.Drawing.Size(239, 51);
             this.TLPCriacao.TabIndex = 6;
             // 
             // lblCriador
@@ -204,7 +204,7 @@
             this.lblCriador.AutoSize = true;
             this.lblCriador.Location = new System.Drawing.Point(3, 25);
             this.lblCriador.Name = "lblCriador";
-            this.lblCriador.Size = new System.Drawing.Size(213, 26);
+            this.lblCriador.Size = new System.Drawing.Size(233, 26);
             this.lblCriador.TabIndex = 1;
             this.lblCriador.Text = "Criador:";
             this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -217,7 +217,7 @@
             this.lblCriadoquando.AutoSize = true;
             this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblCriadoquando.Name = "lblCriadoquando";
-            this.lblCriadoquando.Size = new System.Drawing.Size(213, 25);
+            this.lblCriadoquando.Size = new System.Drawing.Size(233, 25);
             this.lblCriadoquando.TabIndex = 0;
             this.lblCriadoquando.Text = "Criado em";
             this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,13 +231,13 @@
             this.TLPAtualizacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPAtualizacao.Controls.Add(this.lblAtualizador, 0, 1);
             this.TLPAtualizacao.Controls.Add(this.lblAtualizadoquando, 0, 0);
-            this.TLPAtualizacao.Location = new System.Drawing.Point(1015, 0);
+            this.TLPAtualizacao.Location = new System.Drawing.Point(973, 0);
             this.TLPAtualizacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.TLPAtualizacao.Name = "TLPAtualizacao";
             this.TLPAtualizacao.RowCount = 2;
             this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.Size = new System.Drawing.Size(221, 51);
+            this.TLPAtualizacao.Size = new System.Drawing.Size(263, 51);
             this.TLPAtualizacao.TabIndex = 5;
             // 
             // lblAtualizador
@@ -248,7 +248,7 @@
             this.lblAtualizador.AutoSize = true;
             this.lblAtualizador.Location = new System.Drawing.Point(3, 25);
             this.lblAtualizador.Name = "lblAtualizador";
-            this.lblAtualizador.Size = new System.Drawing.Size(215, 26);
+            this.lblAtualizador.Size = new System.Drawing.Size(257, 26);
             this.lblAtualizador.TabIndex = 3;
             this.lblAtualizador.Text = "Atualizado por:";
             this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,7 +261,7 @@
             this.lblAtualizadoquando.AutoSize = true;
             this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblAtualizadoquando.Name = "lblAtualizadoquando";
-            this.lblAtualizadoquando.Size = new System.Drawing.Size(215, 25);
+            this.lblAtualizadoquando.Size = new System.Drawing.Size(257, 25);
             this.lblAtualizadoquando.TabIndex = 2;
             this.lblAtualizadoquando.Text = "Atualizado em";
             this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -434,9 +434,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPConteudo.ColumnCount = 3;
-            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.78532F));
+            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.40331F));
+            this.TLPConteudo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.73244F));
             this.TLPConteudo.Controls.Add(this.RGBDados3, 1, 2);
             this.TLPConteudo.Controls.Add(this.RGBDados2, 1, 1);
             this.TLPConteudo.Controls.Add(this.tableLayoutPanel2, 1, 0);
@@ -462,10 +462,10 @@
             this.RGBDados3.BorderWidth = 1F;
             this.RGBDados3.Controls.Add(this.tableLayoutPanel5);
             this.RGBDados3.CornerRadius = 20;
-            this.RGBDados3.Location = new System.Drawing.Point(256, 373);
+            this.RGBDados3.Location = new System.Drawing.Point(203, 373);
             this.RGBDados3.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.RGBDados3.Name = "RGBDados3";
-            this.RGBDados3.Size = new System.Drawing.Size(754, 58);
+            this.RGBDados3.Size = new System.Drawing.Size(848, 58);
             this.RGBDados3.TabIndex = 4;
             this.RGBDados3.TabStop = false;
             // 
@@ -486,14 +486,14 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(716, 42);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(810, 42);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(69, 14);
+            this.label3.Location = new System.Drawing.Point(92, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 13);
             this.label3.TabIndex = 1;
@@ -506,7 +506,7 @@
             this.BoxSim.Checked = true;
             this.BoxSim.CheckState = System.Windows.Forms.CheckState.Checked;
             this.BoxSim.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BoxSim.Location = new System.Drawing.Point(421, 12);
+            this.BoxSim.Location = new System.Drawing.Point(492, 12);
             this.BoxSim.Name = "BoxSim";
             this.BoxSim.Size = new System.Drawing.Size(45, 17);
             this.BoxSim.TabIndex = 6;
@@ -523,10 +523,10 @@
             this.RGBDados2.Controls.Add(this.TLPOpcoes);
             this.RGBDados2.Controls.Add(this.lblPosicao);
             this.RGBDados2.CornerRadius = 20;
-            this.RGBDados2.Location = new System.Drawing.Point(256, 90);
+            this.RGBDados2.Location = new System.Drawing.Point(203, 90);
             this.RGBDados2.Margin = new System.Windows.Forms.Padding(3, 30, 3, 15);
             this.RGBDados2.Name = "RGBDados2";
-            this.RGBDados2.Size = new System.Drawing.Size(754, 243);
+            this.RGBDados2.Size = new System.Drawing.Size(848, 243);
             this.RGBDados2.TabIndex = 3;
             this.RGBDados2.TabStop = false;
             // 
@@ -538,9 +538,9 @@
             this.TLPOpcoes.BackColor = System.Drawing.Color.Transparent;
             this.TLPOpcoes.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.TLPOpcoes.ColumnCount = 3;
-            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.39506F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.71605F));
+            this.TLPOpcoes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.76543F));
             this.TLPOpcoes.Controls.Add(this.comboDepois, 2, 1);
             this.TLPOpcoes.Controls.Add(this.label1, 1, 1);
             this.TLPOpcoes.Controls.Add(this.radMeio, 0, 1);
@@ -552,16 +552,16 @@
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.58228F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.77216F));
             this.TLPOpcoes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.64557F));
-            this.TLPOpcoes.Size = new System.Drawing.Size(717, 177);
+            this.TLPOpcoes.Size = new System.Drawing.Size(811, 177);
             this.TLPOpcoes.TabIndex = 6;
             // 
             // comboDepois
             // 
             this.comboDepois.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboDepois.FormattingEnabled = true;
-            this.comboDepois.Location = new System.Drawing.Point(540, 72);
+            this.comboDepois.Location = new System.Drawing.Point(580, 72);
             this.comboDepois.Name = "comboDepois";
-            this.comboDepois.Size = new System.Drawing.Size(121, 21);
+            this.comboDepois.Size = new System.Drawing.Size(227, 21);
             this.comboDepois.TabIndex = 5;
             this.comboDepois.SelectedIndexChanged += new System.EventHandler(this.comboDepois_SelectedIndexChanged);
             // 
@@ -569,7 +569,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(402, 76);
+            this.label1.Location = new System.Drawing.Point(439, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
@@ -625,7 +625,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPosicao.AutoSize = true;
             this.lblPosicao.BackColor = System.Drawing.Color.Transparent;
-            this.lblPosicao.Location = new System.Drawing.Point(15, 21);
+            this.lblPosicao.Location = new System.Drawing.Point(15, 11);
             this.lblPosicao.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblPosicao.Name = "lblPosicao";
             this.lblPosicao.Size = new System.Drawing.Size(95, 13);
@@ -639,15 +639,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.95288F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.04712F));
             this.tableLayoutPanel2.Controls.Add(this.RGBNome, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblNome, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(256, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(203, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(754, 54);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(848, 54);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // RGBNome
@@ -662,9 +662,9 @@
             this.RGBNome.Controls.Add(this.lblcar1);
             this.RGBNome.Controls.Add(this.customLine1);
             this.RGBNome.CornerRadius = 20;
-            this.RGBNome.Location = new System.Drawing.Point(153, 3);
+            this.RGBNome.Location = new System.Drawing.Point(206, 3);
             this.RGBNome.Name = "RGBNome";
-            this.RGBNome.Size = new System.Drawing.Size(598, 48);
+            this.RGBNome.Size = new System.Drawing.Size(639, 48);
             this.RGBNome.TabIndex = 2;
             this.RGBNome.TabStop = false;
             // 
@@ -675,10 +675,10 @@
             this.txtNomeGrupo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeGrupo.ForeColor = System.Drawing.Color.Black;
-            this.txtNomeGrupo.Location = new System.Drawing.Point(10, 14);
+            this.txtNomeGrupo.Location = new System.Drawing.Point(10, 15);
             this.txtNomeGrupo.MaxLength = 50;
             this.txtNomeGrupo.Name = "txtNomeGrupo";
-            this.txtNomeGrupo.Size = new System.Drawing.Size(538, 19);
+            this.txtNomeGrupo.Size = new System.Drawing.Size(543, 19);
             this.txtNomeGrupo.TabIndex = 1;
             this.txtNomeGrupo.Leave += new System.EventHandler(this.txtNomeGrupo_Leave);
             // 
@@ -687,7 +687,7 @@
             this.lblcar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar1.AutoSize = true;
             this.lblcar1.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar1.Location = new System.Drawing.Point(558, 19);
+            this.lblcar1.Location = new System.Drawing.Point(557, 20);
             this.lblcar1.Name = "lblcar1";
             this.lblcar1.Size = new System.Drawing.Size(40, 13);
             this.lblcar1.TabIndex = 1;
@@ -699,9 +699,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customLine1.LineColor = System.Drawing.Color.Black;
             this.customLine1.LineWidth = 3;
-            this.customLine1.Location = new System.Drawing.Point(10, 34);
+            this.customLine1.Location = new System.Drawing.Point(10, 32);
             this.customLine1.Name = "customLine1";
-            this.customLine1.Size = new System.Drawing.Size(538, 3);
+            this.customLine1.Size = new System.Drawing.Size(541, 10);
             this.customLine1.TabIndex = 0;
             this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
@@ -729,10 +729,10 @@
             this.RGBDados4.BorderWidth = 1F;
             this.RGBDados4.Controls.Add(this.tableLayoutPanel6);
             this.RGBDados4.CornerRadius = 20;
-            this.RGBDados4.Location = new System.Drawing.Point(256, 481);
+            this.RGBDados4.Location = new System.Drawing.Point(203, 481);
             this.RGBDados4.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.RGBDados4.Name = "RGBDados4";
-            this.RGBDados4.Size = new System.Drawing.Size(754, 59);
+            this.RGBDados4.Size = new System.Drawing.Size(848, 59);
             this.RGBDados4.TabIndex = 5;
             this.RGBDados4.TabStop = false;
             // 
@@ -753,7 +753,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(717, 41);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(811, 41);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // btnCriar
@@ -767,9 +767,9 @@
             this.btnCriar.BorderThickness = 4;
             this.btnCriar.ButtonColor = System.Drawing.Color.White;
             this.btnCriar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCriar.Location = new System.Drawing.Point(361, 3);
+            this.btnCriar.Location = new System.Drawing.Point(408, 3);
             this.btnCriar.Name = "btnCriar";
-            this.btnCriar.Size = new System.Drawing.Size(353, 34);
+            this.btnCriar.Size = new System.Drawing.Size(400, 34);
             this.btnCriar.TabIndex = 8;
             this.btnCriar.TabStop = false;
             this.btnCriar.Text = "CRIAR GRUPO";
@@ -790,7 +790,7 @@
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Location = new System.Drawing.Point(3, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(352, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(399, 34);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.TabStop = false;
             this.btnCancelar.Text = "CANCELAR";
@@ -805,9 +805,9 @@
             this.gbAgrupaCL.Controls.Add(this.clRecarregar);
             this.gbAgrupaCL.Controls.Add(this.clCGrupo);
             this.gbAgrupaCL.Controls.Add(this.clLogout);
-            this.gbAgrupaCL.Location = new System.Drawing.Point(1016, 63);
+            this.gbAgrupaCL.Location = new System.Drawing.Point(1057, 63);
             this.gbAgrupaCL.Name = "gbAgrupaCL";
-            this.gbAgrupaCL.Size = new System.Drawing.Size(248, 165);
+            this.gbAgrupaCL.Size = new System.Drawing.Size(207, 165);
             this.gbAgrupaCL.TabIndex = 6;
             this.gbAgrupaCL.TabStop = false;
             this.gbAgrupaCL.Text = "groupBox1";

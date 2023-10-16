@@ -178,9 +178,9 @@
             this.TLPInfoshead.ColumnCount = 5;
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.012841F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.74318F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.91011F));
             this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
             this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
             this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
@@ -201,13 +201,13 @@
             this.TLPCriacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPCriacao.Controls.Add(this.lblCriador, 0, 1);
             this.TLPCriacao.Controls.Add(this.lblCriadoquando, 0, 0);
-            this.TLPCriacao.Location = new System.Drawing.Point(795, 0);
+            this.TLPCriacao.Location = new System.Drawing.Point(730, 0);
             this.TLPCriacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.TLPCriacao.Name = "TLPCriacao";
             this.TLPCriacao.RowCount = 2;
             this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.Size = new System.Drawing.Size(220, 49);
+            this.TLPCriacao.Size = new System.Drawing.Size(239, 49);
             this.TLPCriacao.TabIndex = 6;
             // 
             // lblCriador
@@ -218,7 +218,7 @@
             this.lblCriador.AutoSize = true;
             this.lblCriador.Location = new System.Drawing.Point(3, 24);
             this.lblCriador.Name = "lblCriador";
-            this.lblCriador.Size = new System.Drawing.Size(214, 25);
+            this.lblCriador.Size = new System.Drawing.Size(233, 25);
             this.lblCriador.TabIndex = 1;
             this.lblCriador.Text = "Criador:";
             this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,7 +231,7 @@
             this.lblCriadoquando.AutoSize = true;
             this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblCriadoquando.Name = "lblCriadoquando";
-            this.lblCriadoquando.Size = new System.Drawing.Size(214, 24);
+            this.lblCriadoquando.Size = new System.Drawing.Size(233, 24);
             this.lblCriadoquando.TabIndex = 0;
             this.lblCriadoquando.Text = "Criado em";
             this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -245,13 +245,13 @@
             this.TLPAtualizacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPAtualizacao.Controls.Add(this.lblAtualizador, 0, 1);
             this.TLPAtualizacao.Controls.Add(this.lblAtualizadoquando, 0, 0);
-            this.TLPAtualizacao.Location = new System.Drawing.Point(1021, 0);
+            this.TLPAtualizacao.Location = new System.Drawing.Point(975, 0);
             this.TLPAtualizacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.TLPAtualizacao.Name = "TLPAtualizacao";
             this.TLPAtualizacao.RowCount = 2;
             this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.Size = new System.Drawing.Size(222, 49);
+            this.TLPAtualizacao.Size = new System.Drawing.Size(268, 49);
             this.TLPAtualizacao.TabIndex = 5;
             // 
             // lblAtualizador
@@ -262,7 +262,7 @@
             this.lblAtualizador.AutoSize = true;
             this.lblAtualizador.Location = new System.Drawing.Point(3, 24);
             this.lblAtualizador.Name = "lblAtualizador";
-            this.lblAtualizador.Size = new System.Drawing.Size(216, 25);
+            this.lblAtualizador.Size = new System.Drawing.Size(262, 25);
             this.lblAtualizador.TabIndex = 3;
             this.lblAtualizador.Text = "Atualizado por:";
             this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -275,7 +275,7 @@
             this.lblAtualizadoquando.AutoSize = true;
             this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblAtualizadoquando.Name = "lblAtualizadoquando";
-            this.lblAtualizadoquando.Size = new System.Drawing.Size(216, 24);
+            this.lblAtualizadoquando.Size = new System.Drawing.Size(262, 24);
             this.lblAtualizadoquando.TabIndex = 2;
             this.lblAtualizadoquando.Text = "Atualizado em";
             this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -291,7 +291,7 @@
             this.groupPorcentagem.CornerRadius = 21;
             this.groupPorcentagem.Location = new System.Drawing.Point(3, 3);
             this.groupPorcentagem.Name = "groupPorcentagem";
-            this.groupPorcentagem.Size = new System.Drawing.Size(560, 43);
+            this.groupPorcentagem.Size = new System.Drawing.Size(559, 43);
             this.groupPorcentagem.TabIndex = 3;
             this.groupPorcentagem.TabStop = false;
             this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
@@ -317,7 +317,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagem.AutoSize = true;
             this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(569, 0);
+            this.lblPorcentagem.Location = new System.Drawing.Point(568, 0);
             this.lblPorcentagem.Name = "lblPorcentagem";
             this.lblPorcentagem.Size = new System.Drawing.Size(107, 49);
             this.lblPorcentagem.TabIndex = 2;
@@ -427,7 +427,7 @@
             this.dgvCriador.Name = "dgvCriador";
             this.dgvCriador.ReadOnly = true;
             this.dgvCriador.RowHeadersVisible = false;
-            this.dgvCriador.Size = new System.Drawing.Size(605, 41);
+            this.dgvCriador.Size = new System.Drawing.Size(605, 64);
             this.dgvCriador.TabIndex = 2;
             this.dgvCriador.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvCriador_CellPainting);
             // 
@@ -466,12 +466,12 @@
             this.telefone,
             this.isAdmin});
             this.DGVColaboradores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DGVColaboradores.Location = new System.Drawing.Point(6, 86);
+            this.DGVColaboradores.Location = new System.Drawing.Point(6, 109);
             this.DGVColaboradores.MultiSelect = false;
             this.DGVColaboradores.Name = "DGVColaboradores";
             this.DGVColaboradores.ReadOnly = true;
             this.DGVColaboradores.RowHeadersVisible = false;
-            this.DGVColaboradores.Size = new System.Drawing.Size(605, 378);
+            this.DGVColaboradores.Size = new System.Drawing.Size(605, 355);
             this.DGVColaboradores.TabIndex = 1;
             this.DGVColaboradores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVColaboradores_CellClick);
             this.DGVColaboradores.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DGVColaboradores_CellPainting);

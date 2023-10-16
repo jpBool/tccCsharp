@@ -17,7 +17,10 @@ namespace tccCsharp
         public frmCriar_Projeto()
         {
             InitializeComponent();
+            
         }
+
+        
 
         public void DoDesign()
         {
@@ -267,6 +270,7 @@ namespace tccCsharp
         {
             WindowState = FormWindowState.Maximized;
             DoDesign();
+            
 
             if (Program.lista_status.Count == 0)
                 Program.lista_status = Banco.CarregaStatus();

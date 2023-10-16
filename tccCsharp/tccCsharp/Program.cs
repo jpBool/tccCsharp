@@ -35,7 +35,7 @@ namespace tccCsharp
 
         public static int logo = 1;
 
-        public static Font fonte = new Font("Microsoft Sans Serif", 12); 
+        public static Font fonte = new Font("Microsoft Sans Serif", 12); //max 16 
 
         [STAThread]
         static void Main()

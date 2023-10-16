@@ -303,6 +303,8 @@ namespace tccCsharp
 
                 lblConfigsG.Font = fd.Font;
                 lblConfiguracoes.Font = fd.Font;
+
+                
             }
 
 

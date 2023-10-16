@@ -477,5 +477,10 @@ namespace tccCsharp
 
             }
         }
+
+        private void lblcar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

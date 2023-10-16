@@ -211,8 +211,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPNeto1.ColumnCount = 2;
-            this.TLPNeto1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.TLPNeto1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78F));
+            this.TLPNeto1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.91909F));
+            this.TLPNeto1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.08091F));
             this.TLPNeto1.Controls.Add(this.RGBPalavras, 1, 7);
             this.TLPNeto1.Controls.Add(this.RGBYoutube, 1, 6);
             this.TLPNeto1.Controls.Add(this.RGBSite, 1, 5);
@@ -254,9 +254,9 @@
             this.RGBPalavras.BorderWidth = 2F;
             this.RGBPalavras.Controls.Add(this.txtPalavras);
             this.RGBPalavras.CornerRadius = 12;
-            this.RGBPalavras.Location = new System.Drawing.Point(138, 297);
+            this.RGBPalavras.Location = new System.Drawing.Point(157, 297);
             this.RGBPalavras.Name = "RGBPalavras";
-            this.RGBPalavras.Size = new System.Drawing.Size(477, 108);
+            this.RGBPalavras.Size = new System.Drawing.Size(458, 108);
             this.RGBPalavras.TabIndex = 15;
             this.RGBPalavras.TabStop = false;
             // 
@@ -271,7 +271,7 @@
             this.txtPalavras.MaxLength = 500;
             this.txtPalavras.Multiline = true;
             this.txtPalavras.Name = "txtPalavras";
-            this.txtPalavras.Size = new System.Drawing.Size(459, 89);
+            this.txtPalavras.Size = new System.Drawing.Size(440, 89);
             this.txtPalavras.TabIndex = 8;
             this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
             this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
@@ -286,9 +286,9 @@
             this.RGBYoutube.Controls.Add(this.txtVideo);
             this.RGBYoutube.Controls.Add(this.customLine7);
             this.RGBYoutube.CornerRadius = 12;
-            this.RGBYoutube.Location = new System.Drawing.Point(138, 255);
+            this.RGBYoutube.Location = new System.Drawing.Point(157, 255);
             this.RGBYoutube.Name = "RGBYoutube";
-            this.RGBYoutube.Size = new System.Drawing.Size(477, 36);
+            this.RGBYoutube.Size = new System.Drawing.Size(458, 36);
             this.RGBYoutube.TabIndex = 14;
             this.RGBYoutube.TabStop = false;
             // 
@@ -302,7 +302,7 @@
             this.txtVideo.Location = new System.Drawing.Point(8, 6);
             this.txtVideo.MaxLength = 50;
             this.txtVideo.Name = "txtVideo";
-            this.txtVideo.Size = new System.Drawing.Size(461, 19);
+            this.txtVideo.Size = new System.Drawing.Size(442, 19);
             this.txtVideo.TabIndex = 7;
             this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
             this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
@@ -316,7 +316,7 @@
             this.customLine7.LineWidth = 3;
             this.customLine7.Location = new System.Drawing.Point(8, 26);
             this.customLine7.Name = "customLine7";
-            this.customLine7.Size = new System.Drawing.Size(461, 3);
+            this.customLine7.Size = new System.Drawing.Size(442, 3);
             this.customLine7.TabIndex = 3;
             this.customLine7.TabStop = false;
             this.customLine7.Text = "customLine7";
@@ -330,9 +330,9 @@
             this.RGBSite.Controls.Add(this.txtSite);
             this.RGBSite.Controls.Add(this.customLine6);
             this.RGBSite.CornerRadius = 12;
-            this.RGBSite.Location = new System.Drawing.Point(138, 213);
+            this.RGBSite.Location = new System.Drawing.Point(157, 213);
             this.RGBSite.Name = "RGBSite";
-            this.RGBSite.Size = new System.Drawing.Size(477, 36);
+            this.RGBSite.Size = new System.Drawing.Size(458, 36);
             this.RGBSite.TabIndex = 13;
             this.RGBSite.TabStop = false;
             // 
@@ -346,7 +346,7 @@
             this.txtSite.Location = new System.Drawing.Point(8, 6);
             this.txtSite.MaxLength = 250;
             this.txtSite.Name = "txtSite";
-            this.txtSite.Size = new System.Drawing.Size(461, 19);
+            this.txtSite.Size = new System.Drawing.Size(442, 19);
             this.txtSite.TabIndex = 6;
             this.txtSite.Text = "Site do projeto";
             this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
@@ -360,7 +360,7 @@
             this.customLine6.LineWidth = 3;
             this.customLine6.Location = new System.Drawing.Point(8, 26);
             this.customLine6.Name = "customLine6";
-            this.customLine6.Size = new System.Drawing.Size(461, 3);
+            this.customLine6.Size = new System.Drawing.Size(442, 3);
             this.customLine6.TabIndex = 3;
             this.customLine6.TabStop = false;
             this.customLine6.Text = "customLine6";
@@ -375,9 +375,9 @@
             this.RGBBreve.Controls.Add(this.lblcar5);
             this.RGBBreve.Controls.Add(this.customLine5);
             this.RGBBreve.CornerRadius = 12;
-            this.RGBBreve.Location = new System.Drawing.Point(138, 171);
+            this.RGBBreve.Location = new System.Drawing.Point(157, 171);
             this.RGBBreve.Name = "RGBBreve";
-            this.RGBBreve.Size = new System.Drawing.Size(477, 36);
+            this.RGBBreve.Size = new System.Drawing.Size(458, 36);
             this.RGBBreve.TabIndex = 12;
             this.RGBBreve.TabStop = false;
             // 
@@ -391,7 +391,7 @@
             this.txtDescricaoBreve.Location = new System.Drawing.Point(8, 6);
             this.txtDescricaoBreve.MaxLength = 80;
             this.txtDescricaoBreve.Name = "txtDescricaoBreve";
-            this.txtDescricaoBreve.Size = new System.Drawing.Size(400, 19);
+            this.txtDescricaoBreve.Size = new System.Drawing.Size(381, 19);
             this.txtDescricaoBreve.TabIndex = 5;
             this.txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
             this.txtDescricaoBreve.Enter += new System.EventHandler(this.txtDescricaoBreve_Enter);
@@ -402,7 +402,7 @@
             this.lblcar5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar5.AutoSize = true;
             this.lblcar5.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar5.Location = new System.Drawing.Point(420, 20);
+            this.lblcar5.Location = new System.Drawing.Point(385, 12);
             this.lblcar5.Name = "lblcar5";
             this.lblcar5.Size = new System.Drawing.Size(40, 13);
             this.lblcar5.TabIndex = 4;
@@ -416,7 +416,7 @@
             this.customLine5.LineWidth = 3;
             this.customLine5.Location = new System.Drawing.Point(8, 26);
             this.customLine5.Name = "customLine5";
-            this.customLine5.Size = new System.Drawing.Size(400, 3);
+            this.customLine5.Size = new System.Drawing.Size(381, 3);
             this.customLine5.TabIndex = 3;
             this.customLine5.TabStop = false;
             this.customLine5.Text = "customLine5";
@@ -431,9 +431,9 @@
             this.RGBLinguagem.Controls.Add(this.lblCar4);
             this.RGBLinguagem.Controls.Add(this.customLine4);
             this.RGBLinguagem.CornerRadius = 12;
-            this.RGBLinguagem.Location = new System.Drawing.Point(138, 129);
+            this.RGBLinguagem.Location = new System.Drawing.Point(157, 129);
             this.RGBLinguagem.Name = "RGBLinguagem";
-            this.RGBLinguagem.Size = new System.Drawing.Size(477, 36);
+            this.RGBLinguagem.Size = new System.Drawing.Size(458, 36);
             this.RGBLinguagem.TabIndex = 11;
             this.RGBLinguagem.TabStop = false;
             // 
@@ -447,7 +447,7 @@
             this.txtLinguagem.Location = new System.Drawing.Point(8, 6);
             this.txtLinguagem.MaxLength = 100;
             this.txtLinguagem.Name = "txtLinguagem";
-            this.txtLinguagem.Size = new System.Drawing.Size(400, 19);
+            this.txtLinguagem.Size = new System.Drawing.Size(381, 19);
             this.txtLinguagem.TabIndex = 4;
             this.txtLinguagem.Text = "Linguagens de programação utilizadas";
             this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
@@ -458,7 +458,7 @@
             this.lblCar4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCar4.AutoSize = true;
             this.lblCar4.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar4.Location = new System.Drawing.Point(414, 20);
+            this.lblCar4.Location = new System.Drawing.Point(385, 11);
             this.lblCar4.Name = "lblCar4";
             this.lblCar4.Size = new System.Drawing.Size(46, 13);
             this.lblCar4.TabIndex = 4;
@@ -472,7 +472,7 @@
             this.customLine4.LineWidth = 3;
             this.customLine4.Location = new System.Drawing.Point(8, 26);
             this.customLine4.Name = "customLine4";
-            this.customLine4.Size = new System.Drawing.Size(400, 3);
+            this.customLine4.Size = new System.Drawing.Size(381, 3);
             this.customLine4.TabIndex = 3;
             this.customLine4.TabStop = false;
             this.customLine4.Text = "customLine4";
@@ -487,9 +487,9 @@
             this.RGBAutores.Controls.Add(this.lblCar3);
             this.RGBAutores.Controls.Add(this.customLine3);
             this.RGBAutores.CornerRadius = 12;
-            this.RGBAutores.Location = new System.Drawing.Point(138, 87);
+            this.RGBAutores.Location = new System.Drawing.Point(157, 87);
             this.RGBAutores.Name = "RGBAutores";
-            this.RGBAutores.Size = new System.Drawing.Size(477, 36);
+            this.RGBAutores.Size = new System.Drawing.Size(458, 36);
             this.RGBAutores.TabIndex = 10;
             this.RGBAutores.TabStop = false;
             // 
@@ -503,7 +503,7 @@
             this.txtAutores.Location = new System.Drawing.Point(8, 6);
             this.txtAutores.MaxLength = 150;
             this.txtAutores.Name = "txtAutores";
-            this.txtAutores.Size = new System.Drawing.Size(400, 19);
+            this.txtAutores.Size = new System.Drawing.Size(381, 19);
             this.txtAutores.TabIndex = 3;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
@@ -514,7 +514,7 @@
             this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCar3.AutoSize = true;
             this.lblCar3.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar3.Location = new System.Drawing.Point(414, 16);
+            this.lblCar3.Location = new System.Drawing.Point(385, 11);
             this.lblCar3.Name = "lblCar3";
             this.lblCar3.Size = new System.Drawing.Size(46, 13);
             this.lblCar3.TabIndex = 4;
@@ -528,7 +528,7 @@
             this.customLine3.LineWidth = 3;
             this.customLine3.Location = new System.Drawing.Point(8, 26);
             this.customLine3.Name = "customLine3";
-            this.customLine3.Size = new System.Drawing.Size(400, 3);
+            this.customLine3.Size = new System.Drawing.Size(381, 3);
             this.customLine3.TabIndex = 3;
             this.customLine3.TabStop = false;
             this.customLine3.Text = "customLine3";
@@ -543,9 +543,9 @@
             this.RGBEmail.Controls.Add(this.lblcar2);
             this.RGBEmail.Controls.Add(this.customLine2);
             this.RGBEmail.CornerRadius = 12;
-            this.RGBEmail.Location = new System.Drawing.Point(138, 45);
+            this.RGBEmail.Location = new System.Drawing.Point(157, 45);
             this.RGBEmail.Name = "RGBEmail";
-            this.RGBEmail.Size = new System.Drawing.Size(477, 36);
+            this.RGBEmail.Size = new System.Drawing.Size(458, 36);
             this.RGBEmail.TabIndex = 9;
             this.RGBEmail.TabStop = false;
             // 
@@ -559,7 +559,7 @@
             this.txtEmail.Location = new System.Drawing.Point(8, 6);
             this.txtEmail.MaxLength = 256;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(400, 19);
+            this.txtEmail.Size = new System.Drawing.Size(381, 19);
             this.txtEmail.TabIndex = 2;
             this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
@@ -570,7 +570,7 @@
             this.lblcar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar2.AutoSize = true;
             this.lblcar2.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar2.Location = new System.Drawing.Point(414, 18);
+            this.lblcar2.Location = new System.Drawing.Point(385, 11);
             this.lblcar2.Name = "lblcar2";
             this.lblcar2.Size = new System.Drawing.Size(46, 13);
             this.lblcar2.TabIndex = 4;
@@ -584,7 +584,7 @@
             this.customLine2.LineWidth = 3;
             this.customLine2.Location = new System.Drawing.Point(8, 26);
             this.customLine2.Name = "customLine2";
-            this.customLine2.Size = new System.Drawing.Size(400, 3);
+            this.customLine2.Size = new System.Drawing.Size(381, 3);
             this.customLine2.TabIndex = 3;
             this.customLine2.TabStop = false;
             this.customLine2.Text = "customLine2";
@@ -599,9 +599,9 @@
             this.RGBNome.Controls.Add(this.lblcar1);
             this.RGBNome.Controls.Add(this.customLine1);
             this.RGBNome.CornerRadius = 12;
-            this.RGBNome.Location = new System.Drawing.Point(138, 3);
+            this.RGBNome.Location = new System.Drawing.Point(157, 3);
             this.RGBNome.Name = "RGBNome";
-            this.RGBNome.Size = new System.Drawing.Size(477, 36);
+            this.RGBNome.Size = new System.Drawing.Size(458, 36);
             this.RGBNome.TabIndex = 0;
             this.RGBNome.TabStop = false;
             // 
@@ -615,7 +615,7 @@
             this.txtNomeProjeto.Location = new System.Drawing.Point(8, 8);
             this.txtNomeProjeto.MaxLength = 20;
             this.txtNomeProjeto.Name = "txtNomeProjeto";
-            this.txtNomeProjeto.Size = new System.Drawing.Size(400, 19);
+            this.txtNomeProjeto.Size = new System.Drawing.Size(381, 19);
             this.txtNomeProjeto.TabIndex = 1;
             this.txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
             this.txtNomeProjeto.Enter += new System.EventHandler(this.txtNomeProjeto_Enter);
@@ -626,7 +626,7 @@
             this.lblcar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar1.AutoSize = true;
             this.lblcar1.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar1.Location = new System.Drawing.Point(420, 18);
+            this.lblcar1.Location = new System.Drawing.Point(385, 14);
             this.lblcar1.Name = "lblcar1";
             this.lblcar1.Size = new System.Drawing.Size(40, 13);
             this.lblcar1.TabIndex = 1;
@@ -640,7 +640,7 @@
             this.customLine1.LineWidth = 3;
             this.customLine1.Location = new System.Drawing.Point(8, 28);
             this.customLine1.Name = "customLine1";
-            this.customLine1.Size = new System.Drawing.Size(400, 3);
+            this.customLine1.Size = new System.Drawing.Size(381, 3);
             this.customLine1.TabIndex = 0;
             this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
@@ -650,11 +650,12 @@
             this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNome.AutoEllipsis = true;
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(15, 5);
             this.lblNome.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(115, 32);
+            this.lblNome.Size = new System.Drawing.Size(134, 32);
             this.lblNome.TabIndex = 1;
             this.lblNome.Text = "Nome do Projeto:";
             this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -664,11 +665,12 @@
             this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEmail.AutoEllipsis = true;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(15, 47);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(115, 32);
+            this.lblEmail.Size = new System.Drawing.Size(134, 32);
             this.lblEmail.TabIndex = 2;
             this.lblEmail.Text = "E-mail para Contato:";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -678,11 +680,12 @@
             this.lblAutores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAutores.AutoEllipsis = true;
             this.lblAutores.AutoSize = true;
             this.lblAutores.Location = new System.Drawing.Point(15, 89);
             this.lblAutores.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblAutores.Name = "lblAutores";
-            this.lblAutores.Size = new System.Drawing.Size(115, 32);
+            this.lblAutores.Size = new System.Drawing.Size(134, 32);
             this.lblAutores.TabIndex = 3;
             this.lblAutores.Text = "Nome dos Autores:";
             this.lblAutores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -692,11 +695,12 @@
             this.lblLinguagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLinguagem.AutoEllipsis = true;
             this.lblLinguagem.AutoSize = true;
             this.lblLinguagem.Location = new System.Drawing.Point(15, 131);
             this.lblLinguagem.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblLinguagem.Name = "lblLinguagem";
-            this.lblLinguagem.Size = new System.Drawing.Size(115, 32);
+            this.lblLinguagem.Size = new System.Drawing.Size(134, 32);
             this.lblLinguagem.TabIndex = 4;
             this.lblLinguagem.Text = "Linguagem:";
             this.lblLinguagem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -706,11 +710,12 @@
             this.lblBreve.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBreve.AutoEllipsis = true;
             this.lblBreve.AutoSize = true;
             this.lblBreve.Location = new System.Drawing.Point(15, 173);
             this.lblBreve.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblBreve.Name = "lblBreve";
-            this.lblBreve.Size = new System.Drawing.Size(115, 32);
+            this.lblBreve.Size = new System.Drawing.Size(134, 32);
             this.lblBreve.TabIndex = 5;
             this.lblBreve.Text = "Descrição Breve:";
             this.lblBreve.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -720,11 +725,12 @@
             this.lblSite.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSite.AutoEllipsis = true;
             this.lblSite.AutoSize = true;
             this.lblSite.Location = new System.Drawing.Point(15, 215);
             this.lblSite.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblSite.Name = "lblSite";
-            this.lblSite.Size = new System.Drawing.Size(115, 32);
+            this.lblSite.Size = new System.Drawing.Size(134, 32);
             this.lblSite.TabIndex = 6;
             this.lblSite.Text = "Link para Site:";
             this.lblSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -734,11 +740,12 @@
             this.lblYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblYoutube.AutoEllipsis = true;
             this.lblYoutube.AutoSize = true;
             this.lblYoutube.Location = new System.Drawing.Point(15, 257);
             this.lblYoutube.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblYoutube.Name = "lblYoutube";
-            this.lblYoutube.Size = new System.Drawing.Size(115, 32);
+            this.lblYoutube.Size = new System.Drawing.Size(134, 32);
             this.lblYoutube.TabIndex = 7;
             this.lblYoutube.Text = "Link para Vídeo:";
             this.lblYoutube.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -748,11 +755,12 @@
             this.lblPalavras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPalavras.AutoEllipsis = true;
             this.lblPalavras.AutoSize = true;
             this.lblPalavras.Location = new System.Drawing.Point(15, 299);
             this.lblPalavras.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblPalavras.Name = "lblPalavras";
-            this.lblPalavras.Size = new System.Drawing.Size(115, 104);
+            this.lblPalavras.Size = new System.Drawing.Size(134, 104);
             this.lblPalavras.TabIndex = 8;
             this.lblPalavras.Text = "Palavras-Chave:";
             this.lblPalavras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -784,9 +792,10 @@
             // 
             // boxSemPrevisao
             // 
+            this.boxSemPrevisao.AutoEllipsis = true;
             this.boxSemPrevisao.AutoSize = true;
             this.boxSemPrevisao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxSemPrevisao.Location = new System.Drawing.Point(201, 15);
+            this.boxSemPrevisao.Location = new System.Drawing.Point(252, 17);
             this.boxSemPrevisao.Name = "boxSemPrevisao";
             this.boxSemPrevisao.Size = new System.Drawing.Size(94, 17);
             this.boxSemPrevisao.TabIndex = 9;
@@ -802,7 +811,7 @@
             this.radioSim.BackColor = System.Drawing.Color.Transparent;
             this.radioSim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioSim.Location = new System.Drawing.Point(443, 71);
+            this.radioSim.Location = new System.Drawing.Point(346, 79);
             this.radioSim.Name = "radioSim";
             this.radioSim.Size = new System.Drawing.Size(54, 24);
             this.radioSim.TabIndex = 13;
@@ -819,7 +828,7 @@
             this.radioNão.Checked = true;
             this.radioNão.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioNão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioNão.Location = new System.Drawing.Point(349, 71);
+            this.radioNão.Location = new System.Drawing.Point(252, 79);
             this.radioNão.Name = "radioNão";
             this.radioNão.Size = new System.Drawing.Size(56, 24);
             this.radioNão.TabIndex = 12;
@@ -832,9 +841,9 @@
             this.comboStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboStatus.FormattingEnabled = true;
-            this.comboStatus.Location = new System.Drawing.Point(349, 40);
+            this.comboStatus.Location = new System.Drawing.Point(443, 47);
             this.comboStatus.Name = "comboStatus";
-            this.comboStatus.Size = new System.Drawing.Size(258, 28);
+            this.comboStatus.Size = new System.Drawing.Size(164, 28);
             this.comboStatus.TabIndex = 11;
             // 
             // dtpPrevisao
@@ -843,19 +852,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpPrevisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpPrevisao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPrevisao.Location = new System.Drawing.Point(349, 10);
+            this.dtpPrevisao.Location = new System.Drawing.Point(443, 15);
             this.dtpPrevisao.Name = "dtpPrevisao";
-            this.dtpPrevisao.Size = new System.Drawing.Size(258, 26);
+            this.dtpPrevisao.Size = new System.Drawing.Size(164, 26);
             this.dtpPrevisao.TabIndex = 10;
             this.dtpPrevisao.Value = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.dtpPrevisao.ValueChanged += new System.EventHandler(this.dtpPrevisao_ValueChanged);
             // 
             // lblPublicar
             // 
             this.lblPublicar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPublicar.AutoEllipsis = true;
             this.lblPublicar.AutoSize = true;
             this.lblPublicar.BackColor = System.Drawing.Color.Transparent;
-            this.lblPublicar.Location = new System.Drawing.Point(25, 82);
+            this.lblPublicar.Location = new System.Drawing.Point(14, 78);
             this.lblPublicar.Name = "lblPublicar";
             this.lblPublicar.Size = new System.Drawing.Size(87, 13);
             this.lblPublicar.TabIndex = 2;
@@ -864,9 +875,10 @@
             // lblStatus
             // 
             this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStatus.AutoEllipsis = true;
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblStatus.Location = new System.Drawing.Point(25, 55);
+            this.lblStatus.Location = new System.Drawing.Point(15, 49);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(91, 13);
             this.lblStatus.TabIndex = 1;
@@ -876,9 +888,10 @@
             // 
             this.lblPrevi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPrevi.AutoEllipsis = true;
             this.lblPrevi.AutoSize = true;
             this.lblPrevi.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrevi.Location = new System.Drawing.Point(25, 19);
+            this.lblPrevi.Location = new System.Drawing.Point(14, 15);
             this.lblPrevi.Name = "lblPrevi";
             this.lblPrevi.Size = new System.Drawing.Size(119, 13);
             this.lblPrevi.TabIndex = 0;
@@ -1053,10 +1066,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDetalhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDetalhada.ForeColor = System.Drawing.Color.Gray;
-            this.txtDetalhada.Location = new System.Drawing.Point(14, 31);
+            this.txtDetalhada.Location = new System.Drawing.Point(14, 45);
             this.txtDetalhada.Multiline = true;
             this.txtDetalhada.Name = "txtDetalhada";
-            this.txtDetalhada.Size = new System.Drawing.Size(595, 285);
+            this.txtDetalhada.Size = new System.Drawing.Size(595, 271);
             this.txtDetalhada.TabIndex = 14;
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
@@ -1066,9 +1079,10 @@
             // 
             // lblDetalhado
             // 
+            this.lblDetalhado.AutoEllipsis = true;
             this.lblDetalhado.AutoSize = true;
             this.lblDetalhado.BackColor = System.Drawing.Color.Transparent;
-            this.lblDetalhado.Location = new System.Drawing.Point(15, 14);
+            this.lblDetalhado.Location = new System.Drawing.Point(15, 17);
             this.lblDetalhado.Name = "lblDetalhado";
             this.lblDetalhado.Size = new System.Drawing.Size(110, 13);
             this.lblDetalhado.TabIndex = 3;
@@ -1118,9 +1132,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TLPButtons2.ColumnCount = 3;
-            this.TLPButtons2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.TLPButtons2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.TLPButtons2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.TLPButtons2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.06897F));
+            this.TLPButtons2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.86207F));
+            this.TLPButtons2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.89655F));
             this.TLPButtons2.Controls.Add(this.btnExcluir, 0, 0);
             this.TLPButtons2.Controls.Add(this.btnAtualizar, 2, 0);
             this.TLPButtons2.Controls.Add(this.btnCancelar, 1, 0);
@@ -1137,6 +1151,7 @@
             this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.AutoEllipsis = true;
             this.btnExcluir.AutoHoover = false;
             this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
             this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
@@ -1147,7 +1162,7 @@
             this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.Location = new System.Drawing.Point(3, 3);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(187, 44);
+            this.btnExcluir.Size = new System.Drawing.Size(209, 44);
             this.btnExcluir.TabIndex = 4;
             this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "EXCLUIR PROJETO";
@@ -1159,6 +1174,7 @@
             this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAtualizar.AutoEllipsis = true;
             this.btnAtualizar.AutoHoover = false;
             this.btnAtualizar.BordaHoover = System.Drawing.Color.Green;
             this.btnAtualizar.BordaPrincipal = System.Drawing.Color.Black;
@@ -1167,9 +1183,9 @@
             this.btnAtualizar.BorderThickness = 4;
             this.btnAtualizar.ButtonColor = System.Drawing.Color.White;
             this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAtualizar.Location = new System.Drawing.Point(389, 3);
+            this.btnAtualizar.Location = new System.Drawing.Point(426, 3);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(188, 44);
+            this.btnAtualizar.Size = new System.Drawing.Size(151, 44);
             this.btnAtualizar.TabIndex = 3;
             this.btnAtualizar.TabStop = false;
             this.btnAtualizar.Text = "ATUALIZAR";
@@ -1181,6 +1197,7 @@
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelar.AutoEllipsis = true;
             this.btnCancelar.AutoHoover = false;
             this.btnCancelar.BordaHoover = System.Drawing.Color.Green;
             this.btnCancelar.BordaPrincipal = System.Drawing.Color.Black;
@@ -1189,9 +1206,9 @@
             this.btnCancelar.BorderThickness = 4;
             this.btnCancelar.ButtonColor = System.Drawing.Color.White;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelar.Location = new System.Drawing.Point(196, 3);
+            this.btnCancelar.Location = new System.Drawing.Point(218, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(187, 44);
+            this.btnCancelar.Size = new System.Drawing.Size(202, 44);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.TabStop = false;
             this.btnCancelar.Text = "SAIR SEM SALVAR";
@@ -1203,6 +1220,7 @@
             this.btnColaboradores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnColaboradores.AutoEllipsis = true;
             this.btnColaboradores.AutoHoover = false;
             this.btnColaboradores.BordaHoover = System.Drawing.Color.Green;
             this.btnColaboradores.BordaPrincipal = System.Drawing.Color.Black;
@@ -1226,6 +1244,7 @@
             this.btnImagens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnImagens.AutoEllipsis = true;
             this.btnImagens.AutoHoover = false;
             this.btnImagens.BordaHoover = System.Drawing.Color.Green;
             this.btnImagens.BordaPrincipal = System.Drawing.Color.Black;
@@ -1249,6 +1268,7 @@
             this.btnEtapas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEtapas.AutoEllipsis = true;
             this.btnEtapas.AutoHoover = false;
             this.btnEtapas.BordaHoover = System.Drawing.Color.Green;
             this.btnEtapas.BordaPrincipal = System.Drawing.Color.Black;
@@ -1308,9 +1328,9 @@
             this.TLPInfoshead.ColumnCount = 5;
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
             this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.196933F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.93543F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.30751F));
             this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
             this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
             this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
@@ -1331,13 +1351,13 @@
             this.TLPCriacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPCriacao.Controls.Add(this.lblCriador, 0, 1);
             this.TLPCriacao.Controls.Add(this.lblCriadoquando, 0, 0);
-            this.TLPCriacao.Location = new System.Drawing.Point(790, 0);
+            this.TLPCriacao.Location = new System.Drawing.Point(730, 0);
             this.TLPCriacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.TLPCriacao.Name = "TLPCriacao";
             this.TLPCriacao.RowCount = 2;
             this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.Size = new System.Drawing.Size(219, 51);
+            this.TLPCriacao.Size = new System.Drawing.Size(241, 51);
             this.TLPCriacao.TabIndex = 6;
             // 
             // lblCriador
@@ -1348,7 +1368,7 @@
             this.lblCriador.AutoSize = true;
             this.lblCriador.Location = new System.Drawing.Point(3, 25);
             this.lblCriador.Name = "lblCriador";
-            this.lblCriador.Size = new System.Drawing.Size(213, 26);
+            this.lblCriador.Size = new System.Drawing.Size(235, 26);
             this.lblCriador.TabIndex = 1;
             this.lblCriador.Text = "Criador:";
             this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1361,7 +1381,7 @@
             this.lblCriadoquando.AutoSize = true;
             this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblCriadoquando.Name = "lblCriadoquando";
-            this.lblCriadoquando.Size = new System.Drawing.Size(213, 25);
+            this.lblCriadoquando.Size = new System.Drawing.Size(235, 25);
             this.lblCriadoquando.TabIndex = 0;
             this.lblCriadoquando.Text = "Criado em";
             this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1375,13 +1395,13 @@
             this.TLPAtualizacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPAtualizacao.Controls.Add(this.lblAtualizador, 0, 1);
             this.TLPAtualizacao.Controls.Add(this.lblAtualizadoquando, 0, 0);
-            this.TLPAtualizacao.Location = new System.Drawing.Point(1015, 0);
+            this.TLPAtualizacao.Location = new System.Drawing.Point(977, 0);
             this.TLPAtualizacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.TLPAtualizacao.Name = "TLPAtualizacao";
             this.TLPAtualizacao.RowCount = 2;
             this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.Size = new System.Drawing.Size(221, 51);
+            this.TLPAtualizacao.Size = new System.Drawing.Size(259, 51);
             this.TLPAtualizacao.TabIndex = 5;
             // 
             // lblAtualizador
@@ -1392,7 +1412,7 @@
             this.lblAtualizador.AutoSize = true;
             this.lblAtualizador.Location = new System.Drawing.Point(3, 25);
             this.lblAtualizador.Name = "lblAtualizador";
-            this.lblAtualizador.Size = new System.Drawing.Size(215, 26);
+            this.lblAtualizador.Size = new System.Drawing.Size(253, 26);
             this.lblAtualizador.TabIndex = 3;
             this.lblAtualizador.Text = "Atualizado por:";
             this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1405,7 +1425,7 @@
             this.lblAtualizadoquando.AutoSize = true;
             this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblAtualizadoquando.Name = "lblAtualizadoquando";
-            this.lblAtualizadoquando.Size = new System.Drawing.Size(215, 25);
+            this.lblAtualizadoquando.Size = new System.Drawing.Size(253, 25);
             this.lblAtualizadoquando.TabIndex = 2;
             this.lblAtualizadoquando.Text = "Atualizado em";
             this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
