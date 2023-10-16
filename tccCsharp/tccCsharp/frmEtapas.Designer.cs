@@ -52,17 +52,18 @@
             this.OPBDown = new tccCsharp.OvalPictureBox();
             this.OPBUp = new tccCsharp.OvalPictureBox();
             this.GPBGrupo1 = new tccCsharp.RoundedGroupBox();
-            this.lblPorcentagemGP1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.opbEditarE1 = new tccCsharp.OvalPictureBox();
             this.Grupo1groupPorcentagem1 = new tccCsharp.CustomGroupBox();
             this.Grupo1groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.lblPorcentagemGP1 = new System.Windows.Forms.Label();
             this.lblTituloGrupo1 = new System.Windows.Forms.Label();
-            this.opbEditarE1 = new tccCsharp.OvalPictureBox();
             this.GPBGrupo2 = new tccCsharp.RoundedGroupBox();
             this.lblPorcentagemGP2 = new System.Windows.Forms.Label();
             this.Grupo2groupPorcentagem1 = new tccCsharp.CustomGroupBox();
             this.Grupo2groupPorcentagem2 = new tccCsharp.CustomGroupBox();
-            this.lblTituloGrupo2 = new System.Windows.Forms.Label();
             this.opbEditarE2 = new tccCsharp.OvalPictureBox();
+            this.lblTituloGrupo2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGBEtapas2 = new tccCsharp.RoundedGroupBox();
             this.TLPEtapas2 = new System.Windows.Forms.TableLayoutPanel();
@@ -120,6 +121,7 @@
             this.lblDescricaoEtapa11 = new System.Windows.Forms.Label();
             this.opbEditarP11 = new tccCsharp.OvalPictureBox();
             this.lblNomeEtapa11 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -137,8 +139,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBUp)).BeginInit();
             this.GPBGrupo1.SuspendLayout();
-            this.Grupo1groupPorcentagem1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarE1)).BeginInit();
+            this.Grupo1groupPorcentagem1.SuspendLayout();
             this.GPBGrupo2.SuspendLayout();
             this.Grupo2groupPorcentagem1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarE2)).BeginInit();
@@ -175,6 +178,7 @@
             this.Etapa11groupPorcentagem1.SuspendLayout();
             this.RGBDescricaoEtapa11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP11)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -589,10 +593,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBGrupo1.BackgroundColor = System.Drawing.Color.White;
             this.GPBGrupo1.BorderWidth = 1F;
-            this.GPBGrupo1.Controls.Add(this.lblPorcentagemGP1);
-            this.GPBGrupo1.Controls.Add(this.Grupo1groupPorcentagem1);
-            this.GPBGrupo1.Controls.Add(this.lblTituloGrupo1);
-            this.GPBGrupo1.Controls.Add(this.opbEditarE1);
+            this.GPBGrupo1.Controls.Add(this.tableLayoutPanel1);
             this.GPBGrupo1.CornerRadius = 20;
             this.GPBGrupo1.Location = new System.Drawing.Point(20, 56);
             this.GPBGrupo1.Margin = new System.Windows.Forms.Padding(20, 3, 20, 35);
@@ -601,28 +602,60 @@
             this.GPBGrupo1.TabIndex = 2;
             this.GPBGrupo1.TabStop = false;
             // 
-            // lblPorcentagemGP1
+            // tableLayoutPanel1
             // 
-            this.lblPorcentagemGP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPorcentagemGP1.AutoSize = true;
-            this.lblPorcentagemGP1.Location = new System.Drawing.Point(126, 119);
-            this.lblPorcentagemGP1.Name = "lblPorcentagemGP1";
-            this.lblPorcentagemGP1.Size = new System.Drawing.Size(33, 13);
-            this.lblPorcentagemGP1.TabIndex = 43;
-            this.lblPorcentagemGP1.Text = "100%";
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.06265F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.12531F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.81203F));
+            this.tableLayoutPanel1.Controls.Add(this.opbEditarE1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblTituloGrupo1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Grupo1groupPorcentagem1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblPorcentagemGP1, 2, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(194, 153);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // opbEditarE1
+            // 
+            this.opbEditarE1._bordercolor = System.Drawing.Color.Red;
+            this.opbEditarE1._borderwidth = 5F;
+            this.opbEditarE1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.opbEditarE1.AutoHoover = false;
+            this.opbEditarE1.BordaHoover = System.Drawing.Color.Green;
+            this.opbEditarE1.BordaPrincipal = System.Drawing.Color.Orange;
+            this.opbEditarE1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.opbEditarE1.Image = global::tccCsharp.Properties.Resources.Edit_Black;
+            this.opbEditarE1.Location = new System.Drawing.Point(156, 3);
+            this.opbEditarE1.Name = "opbEditarE1";
+            this.opbEditarE1.Size = new System.Drawing.Size(35, 32);
+            this.opbEditarE1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.opbEditarE1.TabIndex = 40;
+            this.opbEditarE1.TabStop = false;
+            this.opbEditarE1.Click += new System.EventHandler(this.opbEditarE1_Click);
             // 
             // Grupo1groupPorcentagem1
             // 
-            this.Grupo1groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Grupo1groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Grupo1groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
             this.Grupo1groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
             this.Grupo1groupPorcentagem1.BorderWidth = 1F;
             this.Grupo1groupPorcentagem1.Controls.Add(this.Grupo1groupPorcentagem2);
             this.Grupo1groupPorcentagem1.CornerRadius = 14;
-            this.Grupo1groupPorcentagem1.Location = new System.Drawing.Point(12, 119);
+            this.Grupo1groupPorcentagem1.Location = new System.Drawing.Point(51, 117);
             this.Grupo1groupPorcentagem1.Name = "Grupo1groupPorcentagem1";
-            this.Grupo1groupPorcentagem1.Size = new System.Drawing.Size(108, 28);
+            this.Grupo1groupPorcentagem1.Size = new System.Drawing.Size(91, 28);
             this.Grupo1groupPorcentagem1.TabIndex = 42;
             this.Grupo1groupPorcentagem1.TabStop = false;
             // 
@@ -640,36 +673,28 @@
             this.Grupo1groupPorcentagem2.TabIndex = 0;
             this.Grupo1groupPorcentagem2.TabStop = false;
             // 
+            // lblPorcentagemGP1
+            // 
+            this.lblPorcentagemGP1.AutoSize = true;
+            this.lblPorcentagemGP1.Location = new System.Drawing.Point(148, 114);
+            this.lblPorcentagemGP1.Name = "lblPorcentagemGP1";
+            this.lblPorcentagemGP1.Size = new System.Drawing.Size(33, 13);
+            this.lblPorcentagemGP1.TabIndex = 43;
+            this.lblPorcentagemGP1.Text = "100%";
+            // 
             // lblTituloGrupo1
             // 
-            this.lblTituloGrupo1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTituloGrupo1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTituloGrupo1.AutoEllipsis = true;
             this.lblTituloGrupo1.AutoSize = true;
             this.lblTituloGrupo1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTituloGrupo1.Location = new System.Drawing.Point(54, 66);
+            this.lblTituloGrupo1.Location = new System.Drawing.Point(51, 63);
             this.lblTituloGrupo1.Name = "lblTituloGrupo1";
-            this.lblTituloGrupo1.Size = new System.Drawing.Size(85, 13);
+            this.lblTituloGrupo1.Size = new System.Drawing.Size(91, 13);
             this.lblTituloGrupo1.TabIndex = 41;
             this.lblTituloGrupo1.Text = "Nome do projeto";
             this.lblTituloGrupo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // opbEditarE1
-            // 
-            this.opbEditarE1._bordercolor = System.Drawing.Color.Red;
-            this.opbEditarE1._borderwidth = 5F;
-            this.opbEditarE1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.opbEditarE1.AutoHoover = false;
-            this.opbEditarE1.BordaHoover = System.Drawing.Color.Green;
-            this.opbEditarE1.BordaPrincipal = System.Drawing.Color.Orange;
-            this.opbEditarE1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.opbEditarE1.Image = global::tccCsharp.Properties.Resources.Edit_Black;
-            this.opbEditarE1.Location = new System.Drawing.Point(152, 4);
-            this.opbEditarE1.Name = "opbEditarE1";
-            this.opbEditarE1.Size = new System.Drawing.Size(35, 35);
-            this.opbEditarE1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.opbEditarE1.TabIndex = 40;
-            this.opbEditarE1.TabStop = false;
-            this.opbEditarE1.Click += new System.EventHandler(this.opbEditarE1_Click);
             // 
             // GPBGrupo2
             // 
@@ -678,10 +703,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GPBGrupo2.BackgroundColor = System.Drawing.Color.White;
             this.GPBGrupo2.BorderWidth = 1F;
-            this.GPBGrupo2.Controls.Add(this.lblPorcentagemGP2);
-            this.GPBGrupo2.Controls.Add(this.Grupo2groupPorcentagem1);
-            this.GPBGrupo2.Controls.Add(this.lblTituloGrupo2);
-            this.GPBGrupo2.Controls.Add(this.opbEditarE2);
+            this.GPBGrupo2.Controls.Add(this.tableLayoutPanel3);
             this.GPBGrupo2.CornerRadius = 20;
             this.GPBGrupo2.Location = new System.Drawing.Point(20, 321);
             this.GPBGrupo2.Margin = new System.Windows.Forms.Padding(20, 35, 20, 3);
@@ -692,9 +714,8 @@
             // 
             // lblPorcentagemGP2
             // 
-            this.lblPorcentagemGP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPorcentagemGP2.AutoSize = true;
-            this.lblPorcentagemGP2.Location = new System.Drawing.Point(78, 125);
+            this.lblPorcentagemGP2.Location = new System.Drawing.Point(148, 114);
             this.lblPorcentagemGP2.Name = "lblPorcentagemGP2";
             this.lblPorcentagemGP2.Size = new System.Drawing.Size(33, 13);
             this.lblPorcentagemGP2.TabIndex = 44;
@@ -702,16 +723,16 @@
             // 
             // Grupo2groupPorcentagem1
             // 
-            this.Grupo2groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Grupo2groupPorcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Grupo2groupPorcentagem1.BackColor = System.Drawing.Color.Transparent;
             this.Grupo2groupPorcentagem1.BackgroundColor = System.Drawing.Color.White;
             this.Grupo2groupPorcentagem1.BorderWidth = 1F;
             this.Grupo2groupPorcentagem1.Controls.Add(this.Grupo2groupPorcentagem2);
             this.Grupo2groupPorcentagem1.CornerRadius = 14;
-            this.Grupo2groupPorcentagem1.Location = new System.Drawing.Point(24, 80);
+            this.Grupo2groupPorcentagem1.Location = new System.Drawing.Point(51, 117);
             this.Grupo2groupPorcentagem1.Name = "Grupo2groupPorcentagem1";
-            this.Grupo2groupPorcentagem1.Size = new System.Drawing.Size(142, 28);
+            this.Grupo2groupPorcentagem1.Size = new System.Drawing.Size(91, 28);
             this.Grupo2groupPorcentagem1.TabIndex = 43;
             this.Grupo2groupPorcentagem1.TabStop = false;
             // 
@@ -729,18 +750,6 @@
             this.Grupo2groupPorcentagem2.TabIndex = 0;
             this.Grupo2groupPorcentagem2.TabStop = false;
             // 
-            // lblTituloGrupo2
-            // 
-            this.lblTituloGrupo2.AutoEllipsis = true;
-            this.lblTituloGrupo2.AutoSize = true;
-            this.lblTituloGrupo2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTituloGrupo2.Location = new System.Drawing.Point(54, 46);
-            this.lblTituloGrupo2.Name = "lblTituloGrupo2";
-            this.lblTituloGrupo2.Size = new System.Drawing.Size(85, 13);
-            this.lblTituloGrupo2.TabIndex = 42;
-            this.lblTituloGrupo2.Text = "Nome do projeto";
-            this.lblTituloGrupo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // opbEditarE2
             // 
             this.opbEditarE2._bordercolor = System.Drawing.Color.Red;
@@ -751,13 +760,27 @@
             this.opbEditarE2.BordaPrincipal = System.Drawing.Color.Orange;
             this.opbEditarE2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.opbEditarE2.Image = global::tccCsharp.Properties.Resources.Edit_Black;
-            this.opbEditarE2.Location = new System.Drawing.Point(152, 3);
+            this.opbEditarE2.Location = new System.Drawing.Point(156, 3);
             this.opbEditarE2.Name = "opbEditarE2";
             this.opbEditarE2.Size = new System.Drawing.Size(35, 35);
             this.opbEditarE2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.opbEditarE2.TabIndex = 41;
             this.opbEditarE2.TabStop = false;
             this.opbEditarE2.Click += new System.EventHandler(this.opbEditarE2_Click);
+            // 
+            // lblTituloGrupo2
+            // 
+            this.lblTituloGrupo2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTituloGrupo2.AutoEllipsis = true;
+            this.lblTituloGrupo2.AutoSize = true;
+            this.lblTituloGrupo2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTituloGrupo2.Location = new System.Drawing.Point(51, 65);
+            this.lblTituloGrupo2.Name = "lblTituloGrupo2";
+            this.lblTituloGrupo2.Size = new System.Drawing.Size(91, 13);
+            this.lblTituloGrupo2.TabIndex = 42;
+            this.lblTituloGrupo2.Text = "Nome do projeto";
+            this.lblTituloGrupo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
@@ -1630,6 +1653,29 @@
             this.lblNomeEtapa11.TabIndex = 38;
             this.lblNomeEtapa11.Text = "Nome do projeto";
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.25253F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.50505F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.24242F));
+            this.tableLayoutPanel3.Controls.Add(this.lblTituloGrupo2, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblPorcentagemGP2, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.opbEditarE2, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.Grupo2groupPorcentagem1, 1, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 1);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 4;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.11502F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.96166F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.96166F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.96166F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(194, 152);
+            this.tableLayoutPanel3.TabIndex = 45;
+            // 
             // frmEtapas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1666,10 +1712,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.OPBUp)).EndInit();
             this.GPBGrupo1.ResumeLayout(false);
             this.GPBGrupo1.PerformLayout();
-            this.Grupo1groupPorcentagem1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarE1)).EndInit();
+            this.Grupo1groupPorcentagem1.ResumeLayout(false);
             this.GPBGrupo2.ResumeLayout(false);
-            this.GPBGrupo2.PerformLayout();
             this.Grupo2groupPorcentagem1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarE2)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -1711,6 +1758,8 @@
             this.Etapa11groupPorcentagem1.ResumeLayout(false);
             this.RGBDescricaoEtapa11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP11)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1761,7 +1810,6 @@
         private System.Windows.Forms.Label lblNomeEtapa12;
         private RoundedGroupBox GPBGrupo1;
         private System.Windows.Forms.Label lblTituloGrupo1;
-        private OvalPictureBox opbEditarE1;
         private RoundButton btnADDEtapa;
         private RoundButton BtnADDGrupo;
         private RoundButton BtnVoltar;
@@ -1772,7 +1820,6 @@
         private CustomGroupBox Grupo2groupPorcentagem2;
         private System.Windows.Forms.Label lblTituloGrupo2;
         private OvalPictureBox opbEditarE2;
-        private System.Windows.Forms.Label lblPorcentagemGP1;
         private System.Windows.Forms.Label lblPorcentagemGP2;
         private System.Windows.Forms.Label lblPorcentagemET13;
         private System.Windows.Forms.Label lblPorcentagemET12;
@@ -1808,5 +1855,9 @@
         private OvalPictureBox opbEditarP22;
         private System.Windows.Forms.Label lblNomeEtapa22;
         private System.Windows.Forms.PictureBox opbLogo;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private OvalPictureBox opbEditarE1;
+        private System.Windows.Forms.Label lblPorcentagemGP1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
     }
 }

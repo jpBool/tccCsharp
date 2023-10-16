@@ -282,7 +282,7 @@ namespace tccCsharp
 
                 Font Nova = new Font("Microsoft Sans Serif", 12);
 
-                if (fd.Font.Size > 12 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
+                if (fd.Font.Size >= 16 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
                 {
                     Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
                 }
