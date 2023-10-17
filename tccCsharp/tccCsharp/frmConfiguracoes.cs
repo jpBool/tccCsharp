@@ -403,7 +403,10 @@ namespace tccCsharp
 
         private void rgbPCores_Enter(object sender, EventArgs e)
         {
+            if(rgbPCores.Visible==false)
+            {
 
+            }
         }
 
         private void tlpBaseConfig4_Paint(object sender, PaintEventArgs e)
@@ -536,6 +539,26 @@ namespace tccCsharp
                        
                         break;
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
  
