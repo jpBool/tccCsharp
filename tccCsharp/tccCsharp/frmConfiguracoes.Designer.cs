@@ -39,7 +39,6 @@ namespace tccCsharp
             this.opbRecarregar = new tccCsharp.OvalPictureBox();
             this.tlpBaseConfig2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnVoltar = new RoundButton();
             this.rgbPCores = new tccCsharp.RoundedGroupBox();
             this.lblCoresAviso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -79,6 +78,7 @@ namespace tccCsharp
             this.btnAltTamF = new RoundButton();
             this.btnPersonalizar = new RoundButton();
             this.btnTutoriais = new RoundButton();
+            this.btnVoltar = new RoundButton();
             this.tlpBaseConfig1.SuspendLayout();
             this.rgbMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
@@ -211,7 +211,7 @@ namespace tccCsharp
             this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.5625F));
             this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.4375F));
             this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
             this.tlpBaseConfig4.Controls.Add(this.rgbPCores, 1, 1);
             this.tlpBaseConfig4.Location = new System.Drawing.Point(437, 15);
             this.tlpBaseConfig4.Name = "tlpBaseConfig4";
@@ -224,27 +224,6 @@ namespace tccCsharp
             this.tlpBaseConfig4.Size = new System.Drawing.Size(423, 573);
             this.tlpBaseConfig4.TabIndex = 33;
             this.tlpBaseConfig4.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpBaseConfig4_Paint);
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVoltar.AutoHoover = false;
-            this.btnVoltar.BordaHoover = System.Drawing.Color.Green;
-            this.btnVoltar.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnVoltar.BorderColor = System.Drawing.Color.Black;
-            this.btnVoltar.BorderRadius = 10;
-            this.btnVoltar.BorderThickness = 2;
-            this.btnVoltar.ButtonColor = System.Drawing.Color.White;
-            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVoltar.Location = new System.Drawing.Point(918, 529);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(0, 35, 40, 35);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(122, 27);
-            this.btnVoltar.TabIndex = 25;
-            this.btnVoltar.Text = "VOLTAR";
-            this.btnVoltar.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // rgbPCores
             // 
@@ -288,7 +267,7 @@ namespace tccCsharp
             this.rgbPCores.Location = new System.Drawing.Point(9, 11);
             this.rgbPCores.Margin = new System.Windows.Forms.Padding(3, 3, 40, 40);
             this.rgbPCores.Name = "rgbPCores";
-            this.rgbPCores.Size = new System.Drawing.Size(349, 469);
+            this.rgbPCores.Size = new System.Drawing.Size(348, 469);
             this.rgbPCores.TabIndex = 23;
             this.rgbPCores.TabStop = false;
             this.rgbPCores.Visible = false;
@@ -677,7 +656,7 @@ namespace tccCsharp
             this.btnRestaurarPadrao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurarPadrao.Location = new System.Drawing.Point(44, 422);
             this.btnRestaurarPadrao.Name = "btnRestaurarPadrao";
-            this.btnRestaurarPadrao.Size = new System.Drawing.Size(278, 33);
+            this.btnRestaurarPadrao.Size = new System.Drawing.Size(277, 33);
             this.btnRestaurarPadrao.TabIndex = 42;
             this.btnRestaurarPadrao.Text = "Restaurar versão padrão";
             this.btnRestaurarPadrao.TextoPrincipal = System.Drawing.Color.Black;
@@ -691,7 +670,7 @@ namespace tccCsharp
             this.lblPCores.AutoSize = true;
             this.lblPCores.BackColor = System.Drawing.Color.White;
             this.lblPCores.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCores.Location = new System.Drawing.Point(106, 37);
+            this.lblPCores.Location = new System.Drawing.Point(39, 34);
             this.lblPCores.Name = "lblPCores";
             this.lblPCores.Size = new System.Drawing.Size(274, 27);
             this.lblPCores.TabIndex = 36;
@@ -872,6 +851,27 @@ namespace tccCsharp
             this.btnTutoriais.TextoPrincipal = System.Drawing.Color.Black;
             this.btnTutoriais.UseVisualStyleBackColor = true;
             this.btnTutoriais.Click += new System.EventHandler(this.btnTutoriais_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVoltar.AutoHoover = false;
+            this.btnVoltar.BordaHoover = System.Drawing.Color.Green;
+            this.btnVoltar.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnVoltar.BorderColor = System.Drawing.Color.Black;
+            this.btnVoltar.BorderRadius = 10;
+            this.btnVoltar.BorderThickness = 2;
+            this.btnVoltar.ButtonColor = System.Drawing.Color.White;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.Location = new System.Drawing.Point(918, 529);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(0, 35, 40, 35);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(122, 27);
+            this.btnVoltar.TabIndex = 25;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // frmConfiguracoes
             // 

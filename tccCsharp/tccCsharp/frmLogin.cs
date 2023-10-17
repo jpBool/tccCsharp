@@ -126,6 +126,14 @@ namespace tccCsharp
             btnLogar.BorderColor = btnLogar.BordaPrincipal;
             btnLogar.ForeColor = btnLogar.TextoPrincipal;
         }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogar_Click(sender, e);
+            }
+        }
     }
 }
 
