@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using System.Security.Cryptography;
 #pragma warning disable IDE1006
 
 namespace tccCsharp
@@ -24,6 +25,24 @@ namespace tccCsharp
         {
             DesignLogin();
         }
+
+        public static string GetMd5Hash(string input)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
+
+                StringBuilder sBuilder = new StringBuilder();
+
+                for (int i = 0; i < data.Length; i++)
+                {
+                    sBuilder.Append(data[i].ToString("x2"));
+                }
+
+                return sBuilder.ToString();
+            }
+        }
+
 
         public void DesignLogin()
         {
@@ -96,6 +115,35 @@ namespace tccCsharp
                 else
                     this.Close();
             }
+
+            /*
+            string senha_encrpty = GetMd5Hash(senha);
+            Program.id_usuario = Banco.Logar(email, senha_encrpty);
+            if (Program.id_usuario == 0)
+            {
+                //E-mail ou senha incorretos
+                lblAviso.Visible = true; //aqui
+                return;
+            }
+            else if (Program.id_usuario == -1)
+            {
+                //Aconteceu algum erro no banco
+                return;
+            }
+            else
+            {
+                txtSenha.Clear();
+                this.Visible = false;
+                Program.projetos = Banco.CarregarProjetos(Program.projetos);
+                frmPerfil splash = new frmPerfil();
+                splash.ShowDialog();
+                if (Program.id_usuario == 0)
+                    this.Visible = true;
+                else
+                    this.Close();
+            }
+            */
+
         }
 
         private void tlpLoginBase3_Paint(object sender, PaintEventArgs e)
