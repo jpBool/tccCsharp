@@ -73,13 +73,13 @@
             this.btnExcluir = new RoundButton();
             this.btnAtualizar = new RoundButton();
             this.btnCancelar = new RoundButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.clLogout = new CustomLine();
             this.clExcluir = new CustomLine();
             this.clRecarregar = new CustomLine();
             this.clAtualizar = new CustomLine();
             this.clCancelar = new CustomLine();
             this.clConfig = new CustomLine();
+            this.RGBInvisi = new tccCsharp.RoundedGroupBox();
+            this.clLogout = new CustomLine();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -102,7 +102,7 @@
             this.RGBNome.SuspendLayout();
             this.RGBDados4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.RGBInvisi.SuspendLayout();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -445,7 +445,7 @@
             this.TLPConteudo.Controls.Add(this.RGBDados2, 1, 1);
             this.TLPConteudo.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.TLPConteudo.Controls.Add(this.RGBDados4, 1, 3);
-            this.TLPConteudo.Controls.Add(this.groupBox1, 2, 1);
+            this.TLPConteudo.Controls.Add(this.RGBInvisi, 2, 1);
             this.TLPConteudo.Location = new System.Drawing.Point(0, 120);
             this.TLPConteudo.Margin = new System.Windows.Forms.Padding(0);
             this.TLPConteudo.Name = "TLPConteudo";
@@ -823,39 +823,11 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.clLogout);
-            this.groupBox1.Controls.Add(this.clExcluir);
-            this.groupBox1.Controls.Add(this.clRecarregar);
-            this.groupBox1.Controls.Add(this.clAtualizar);
-            this.groupBox1.Controls.Add(this.clCancelar);
-            this.groupBox1.Controls.Add(this.clConfig);
-            this.groupBox1.Location = new System.Drawing.Point(1016, 63);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(232, 104);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // clLogout
-            // 
-            this.clLogout.LineColor = System.Drawing.Color.Black;
-            this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(122, 94);
-            this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(75, 10);
-            this.clLogout.TabIndex = 12;
-            this.clLogout.Text = "customLine6";
-            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
-            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
-            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
-            // 
             // clExcluir
             // 
             this.clExcluir.LineColor = System.Drawing.Color.Black;
             this.clExcluir.LineWidth = 1;
-            this.clExcluir.Location = new System.Drawing.Point(8, 19);
+            this.clExcluir.Location = new System.Drawing.Point(27, 19);
             this.clExcluir.Name = "clExcluir";
             this.clExcluir.Size = new System.Drawing.Size(75, 10);
             this.clExcluir.TabIndex = 7;
@@ -868,7 +840,7 @@
             // 
             this.clRecarregar.LineColor = System.Drawing.Color.Black;
             this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(122, 72);
+            this.clRecarregar.Location = new System.Drawing.Point(27, 94);
             this.clRecarregar.Name = "clRecarregar";
             this.clRecarregar.Size = new System.Drawing.Size(75, 10);
             this.clRecarregar.TabIndex = 11;
@@ -881,7 +853,7 @@
             // 
             this.clAtualizar.LineColor = System.Drawing.Color.Black;
             this.clAtualizar.LineWidth = 1;
-            this.clAtualizar.Location = new System.Drawing.Point(8, 51);
+            this.clAtualizar.Location = new System.Drawing.Point(27, 64);
             this.clAtualizar.Name = "clAtualizar";
             this.clAtualizar.Size = new System.Drawing.Size(75, 10);
             this.clAtualizar.TabIndex = 9;
@@ -894,7 +866,7 @@
             // 
             this.clCancelar.LineColor = System.Drawing.Color.Black;
             this.clCancelar.LineWidth = 1;
-            this.clCancelar.Location = new System.Drawing.Point(8, 35);
+            this.clCancelar.Location = new System.Drawing.Point(27, 44);
             this.clCancelar.Name = "clCancelar";
             this.clCancelar.Size = new System.Drawing.Size(75, 10);
             this.clCancelar.TabIndex = 8;
@@ -907,7 +879,7 @@
             // 
             this.clConfig.LineColor = System.Drawing.Color.Black;
             this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(110, 51);
+            this.clConfig.Location = new System.Drawing.Point(27, 110);
             this.clConfig.Name = "clConfig";
             this.clConfig.Size = new System.Drawing.Size(75, 10);
             this.clConfig.TabIndex = 10;
@@ -915,6 +887,39 @@
             this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
             this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
             this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
+            // 
+            // RGBInvisi
+            // 
+            this.RGBInvisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBInvisi.BackgroundColor = System.Drawing.Color.White;
+            this.RGBInvisi.BorderWidth = 1F;
+            this.RGBInvisi.Controls.Add(this.clLogout);
+            this.RGBInvisi.Controls.Add(this.clExcluir);
+            this.RGBInvisi.Controls.Add(this.clRecarregar);
+            this.RGBInvisi.Controls.Add(this.clCancelar);
+            this.RGBInvisi.Controls.Add(this.clConfig);
+            this.RGBInvisi.Controls.Add(this.clAtualizar);
+            this.RGBInvisi.CornerRadius = 10;
+            this.RGBInvisi.Location = new System.Drawing.Point(1016, 63);
+            this.RGBInvisi.Name = "RGBInvisi";
+            this.RGBInvisi.Size = new System.Drawing.Size(248, 282);
+            this.RGBInvisi.TabIndex = 6;
+            this.RGBInvisi.TabStop = false;
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(27, 144);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 10);
+            this.clLogout.TabIndex = 12;
+            this.clLogout.Text = "customLine6";
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
             // 
             // frmEditar_Grupo
             // 
@@ -959,7 +964,7 @@
             this.RGBNome.PerformLayout();
             this.RGBDados4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.RGBInvisi.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1010,12 +1015,12 @@
         private RoundButton btnCancelar;
         private RoundButton btnExcluir;
         private System.Windows.Forms.PictureBox opbLogo;
-        private System.Windows.Forms.GroupBox groupBox1;
         private CustomLine clAtualizar;
-        private CustomLine clLogout;
         private CustomLine clCancelar;
         private CustomLine clExcluir;
         private CustomLine clRecarregar;
         private CustomLine clConfig;
+        private RoundedGroupBox RGBInvisi;
+        private CustomLine clLogout;
     }
 }

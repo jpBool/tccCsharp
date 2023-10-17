@@ -72,12 +72,12 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCriar = new RoundButton();
             this.btnCancelar = new RoundButton();
-            this.gbAgrupaCL = new System.Windows.Forms.GroupBox();
+            this.RGBInvisi = new tccCsharp.RoundedGroupBox();
+            this.clLogout = new CustomLine();
+            this.clRecarregar = new CustomLine();
             this.clConfig = new CustomLine();
             this.clCancelar = new CustomLine();
-            this.clRecarregar = new CustomLine();
             this.clCGrupo = new CustomLine();
-            this.clLogout = new CustomLine();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -100,7 +100,7 @@
             this.RGBNome.SuspendLayout();
             this.RGBDados4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            this.gbAgrupaCL.SuspendLayout();
+            this.RGBInvisi.SuspendLayout();
             this.SuspendLayout();
             // 
             // TLP_Mãe
@@ -441,7 +441,7 @@
             this.TLPConteudo.Controls.Add(this.RGBDados2, 1, 1);
             this.TLPConteudo.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.TLPConteudo.Controls.Add(this.RGBDados4, 1, 3);
-            this.TLPConteudo.Controls.Add(this.gbAgrupaCL, 2, 1);
+            this.TLPConteudo.Controls.Add(this.RGBInvisi, 2, 1);
             this.TLPConteudo.Location = new System.Drawing.Point(0, 120);
             this.TLPConteudo.Margin = new System.Windows.Forms.Padding(0);
             this.TLPConteudo.Name = "TLPConteudo";
@@ -798,25 +798,57 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // gbAgrupaCL
+            // RGBInvisi
             // 
-            this.gbAgrupaCL.Controls.Add(this.clConfig);
-            this.gbAgrupaCL.Controls.Add(this.clCancelar);
-            this.gbAgrupaCL.Controls.Add(this.clRecarregar);
-            this.gbAgrupaCL.Controls.Add(this.clCGrupo);
-            this.gbAgrupaCL.Controls.Add(this.clLogout);
-            this.gbAgrupaCL.Location = new System.Drawing.Point(1057, 63);
-            this.gbAgrupaCL.Name = "gbAgrupaCL";
-            this.gbAgrupaCL.Size = new System.Drawing.Size(207, 165);
-            this.gbAgrupaCL.TabIndex = 6;
-            this.gbAgrupaCL.TabStop = false;
-            this.gbAgrupaCL.Text = "groupBox1";
+            this.RGBInvisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RGBInvisi.BackgroundColor = System.Drawing.Color.White;
+            this.RGBInvisi.BorderWidth = 1F;
+            this.RGBInvisi.Controls.Add(this.clLogout);
+            this.RGBInvisi.Controls.Add(this.clRecarregar);
+            this.RGBInvisi.Controls.Add(this.clConfig);
+            this.RGBInvisi.Controls.Add(this.clCancelar);
+            this.RGBInvisi.Controls.Add(this.clCGrupo);
+            this.RGBInvisi.CornerRadius = 10;
+            this.RGBInvisi.Location = new System.Drawing.Point(1057, 63);
+            this.RGBInvisi.Name = "RGBInvisi";
+            this.RGBInvisi.Size = new System.Drawing.Size(207, 282);
+            this.RGBInvisi.TabIndex = 7;
+            this.RGBInvisi.TabStop = false;
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(15, 173);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(165, 23);
+            this.clLogout.TabIndex = 11;
+            this.clLogout.Text = "customLine4";
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(15, 87);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(165, 23);
+            this.clRecarregar.TabIndex = 10;
+            this.clRecarregar.Text = "customLine2";
+            this.clRecarregar.Click += new System.EventHandler(this.customLine2_Click);
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
             // 
             // clConfig
             // 
             this.clConfig.LineColor = System.Drawing.Color.Black;
             this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(77, 77);
+            this.clConfig.Location = new System.Drawing.Point(15, 247);
             this.clConfig.Name = "clConfig";
             this.clConfig.Size = new System.Drawing.Size(165, 23);
             this.clConfig.TabIndex = 9;
@@ -830,7 +862,7 @@
             // 
             this.clCancelar.LineColor = System.Drawing.Color.Black;
             this.clCancelar.LineWidth = 1;
-            this.clCancelar.Location = new System.Drawing.Point(77, 19);
+            this.clCancelar.Location = new System.Drawing.Point(15, 129);
             this.clCancelar.Name = "clCancelar";
             this.clCancelar.Size = new System.Drawing.Size(165, 23);
             this.clCancelar.TabIndex = 7;
@@ -839,25 +871,11 @@
             this.clCancelar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCancelar_KeyDown);
             this.clCancelar.Leave += new System.EventHandler(this.clCancelar_Leave);
             // 
-            // clRecarregar
-            // 
-            this.clRecarregar.LineColor = System.Drawing.Color.Black;
-            this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(14, 106);
-            this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(165, 23);
-            this.clRecarregar.TabIndex = 10;
-            this.clRecarregar.Text = "customLine2";
-            this.clRecarregar.Click += new System.EventHandler(this.customLine2_Click);
-            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
-            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
-            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
-            // 
             // clCGrupo
             // 
             this.clCGrupo.LineColor = System.Drawing.Color.Black;
             this.clCGrupo.LineWidth = 1;
-            this.clCGrupo.Location = new System.Drawing.Point(14, 48);
+            this.clCGrupo.Location = new System.Drawing.Point(15, 211);
             this.clCGrupo.Name = "clCGrupo";
             this.clCGrupo.Size = new System.Drawing.Size(165, 23);
             this.clCGrupo.TabIndex = 8;
@@ -865,19 +883,6 @@
             this.clCGrupo.Enter += new System.EventHandler(this.clCGrupo_Enter);
             this.clCGrupo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCGrupo_KeyDown);
             this.clCGrupo.Leave += new System.EventHandler(this.clCGrupo_Leave);
-            // 
-            // clLogout
-            // 
-            this.clLogout.LineColor = System.Drawing.Color.Black;
-            this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(77, 138);
-            this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(165, 23);
-            this.clLogout.TabIndex = 11;
-            this.clLogout.Text = "customLine4";
-            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
-            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
-            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
             // 
             // frmCriar_Grupo
             // 
@@ -923,7 +928,7 @@
             this.RGBNome.PerformLayout();
             this.RGBDados4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
-            this.gbAgrupaCL.ResumeLayout(false);
+            this.RGBInvisi.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -975,9 +980,9 @@
         private System.Windows.Forms.PictureBox opbLogo;
         private CustomLine clRecarregar;
         private CustomLine clLogout;
-        private System.Windows.Forms.GroupBox gbAgrupaCL;
         private CustomLine clConfig;
         private CustomLine clCancelar;
         private CustomLine clCGrupo;
+        private RoundedGroupBox RGBInvisi;
     }
 }

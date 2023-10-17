@@ -32,47 +32,18 @@
             this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBase3 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBase5 = new System.Windows.Forms.TableLayoutPanel();
-            this.rgbNomeP = new tccCsharp.RoundedGroupBox();
-            this.lblNomeProjeto = new System.Windows.Forms.Label();
             this.lblProjeto = new System.Windows.Forms.Label();
             this.lblUpload = new System.Windows.Forms.Label();
             this.lblNomeImagem = new System.Windows.Forms.Label();
             this.lblDescricao = new System.Windows.Forms.Label();
-            this.rgbDescricaoImg = new tccCsharp.RoundedGroupBox();
-            this.lblCar3 = new System.Windows.Forms.Label();
-            this.txtDescricaoImg = new System.Windows.Forms.TextBox();
-            this.customLine3 = new CustomLine();
-            this.rgbUpload = new tccCsharp.RoundedGroupBox();
-            this.pcbUpload = new System.Windows.Forms.PictureBox();
-            this.btnUpload = new RoundButton();
-            this.rgbNomeImagem = new tccCsharp.RoundedGroupBox();
-            this.txtNomeImagem = new System.Windows.Forms.TextBox();
-            this.lblCar2 = new System.Windows.Forms.Label();
-            this.customLine2 = new CustomLine();
             this.tlpBase6 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnExcluir = new RoundButton();
-            this.btnLimparForm = new RoundButton();
             this.lblImagemPrincipal = new System.Windows.Forms.Label();
             this.radNao = new System.Windows.Forms.RadioButton();
             this.radSim = new System.Windows.Forms.RadioButton();
-            this.btnSalvar = new RoundButton();
             this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
-            this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
-            this.btnSairSSalvar = new RoundButton();
-            this.rgbImagensP = new tccCsharp.RoundedGroupBox();
-            this.flpImagens = new System.Windows.Forms.FlowLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.clSalvar = new CustomLine();
-            this.clExcluir = new CustomLine();
-            this.clLimparForm = new CustomLine();
-            this.clUpload = new CustomLine();
-            this.clLogout = new CustomLine();
-            this.clVoltar = new CustomLine();
-            this.clRecarregar = new CustomLine();
-            this.clConfig = new CustomLine();
-            this.lblImagens = new System.Windows.Forms.Label();
             this.tlpBase1 = new System.Windows.Forms.TableLayoutPanel();
             this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
             this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
             this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
@@ -84,7 +55,35 @@
             this.groupPorcentagem = new tccCsharp.CustomGroupBox();
             this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
             this.lblPorcentagem = new System.Windows.Forms.Label();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
+            this.rgbNomeP = new tccCsharp.RoundedGroupBox();
+            this.lblNomeProjeto = new System.Windows.Forms.Label();
+            this.rgbDescricaoImg = new tccCsharp.RoundedGroupBox();
+            this.lblCar3 = new System.Windows.Forms.Label();
+            this.txtDescricaoImg = new System.Windows.Forms.TextBox();
+            this.customLine3 = new CustomLine();
+            this.rgbUpload = new tccCsharp.RoundedGroupBox();
+            this.pcbUpload = new System.Windows.Forms.PictureBox();
+            this.btnUpload = new RoundButton();
+            this.clUpload = new CustomLine();
+            this.rgbNomeImagem = new tccCsharp.RoundedGroupBox();
+            this.txtNomeImagem = new System.Windows.Forms.TextBox();
+            this.lblCar2 = new System.Windows.Forms.Label();
+            this.customLine2 = new CustomLine();
+            this.btnExcluir = new RoundButton();
+            this.btnLimparForm = new RoundButton();
+            this.btnSalvar = new RoundButton();
+            this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
+            this.btnSairSSalvar = new RoundButton();
+            this.rgbImagensP = new tccCsharp.RoundedGroupBox();
+            this.clLogout = new CustomLine();
+            this.clSalvar = new CustomLine();
+            this.flpImagens = new System.Windows.Forms.FlowLayoutPanel();
+            this.clExcluir = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.lblImagens = new System.Windows.Forms.Label();
+            this.clLimparForm = new CustomLine();
+            this.clVoltar = new CustomLine();
+            this.clConfig = new CustomLine();
             this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
             this.opbLogo = new System.Windows.Forms.PictureBox();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
@@ -94,25 +93,23 @@
             this.tlpBase2.SuspendLayout();
             this.tlpBase3.SuspendLayout();
             this.tlpBase5.SuspendLayout();
-            this.rgbNomeP.SuspendLayout();
-            this.rgbDescricaoImg.SuspendLayout();
-            this.rgbUpload.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbUpload)).BeginInit();
-            this.rgbNomeImagem.SuspendLayout();
             this.tlpBase6.SuspendLayout();
             this.tlpBase4.SuspendLayout();
-            this.rgbOpcoes.SuspendLayout();
-            this.rgbImagensP.SuspendLayout();
-            this.flpImagens.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tlpBase1.SuspendLayout();
             this.TLPHead2.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs2.SuspendLayout();
             this.TLPInfoshead.SuspendLayout();
             this.TLPCriacao.SuspendLayout();
             this.TLPAtualizacao.SuspendLayout();
             this.groupPorcentagem.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
+            this.rgbNomeP.SuspendLayout();
+            this.rgbDescricaoImg.SuspendLayout();
+            this.rgbUpload.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbUpload)).BeginInit();
+            this.rgbNomeImagem.SuspendLayout();
+            this.rgbOpcoes.SuspendLayout();
+            this.rgbImagensP.SuspendLayout();
             this.rgbHeadImgs1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
@@ -182,33 +179,6 @@
             this.tlpBase5.Size = new System.Drawing.Size(617, 412);
             this.tlpBase5.TabIndex = 0;
             // 
-            // rgbNomeP
-            // 
-            this.rgbNomeP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbNomeP.BackColor = System.Drawing.Color.Transparent;
-            this.rgbNomeP.BackgroundColor = System.Drawing.Color.White;
-            this.rgbNomeP.BorderWidth = 2F;
-            this.rgbNomeP.Controls.Add(this.lblNomeProjeto);
-            this.rgbNomeP.CornerRadius = 12;
-            this.rgbNomeP.Location = new System.Drawing.Point(99, 11);
-            this.rgbNomeP.Name = "rgbNomeP";
-            this.rgbNomeP.Size = new System.Drawing.Size(515, 36);
-            this.rgbNomeP.TabIndex = 1;
-            this.rgbNomeP.TabStop = false;
-            // 
-            // lblNomeProjeto
-            // 
-            this.lblNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblNomeProjeto.AutoSize = true;
-            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeProjeto.Location = new System.Drawing.Point(15, 4);
-            this.lblNomeProjeto.Name = "lblNomeProjeto";
-            this.lblNomeProjeto.Size = new System.Drawing.Size(79, 29);
-            this.lblNomeProjeto.TabIndex = 0;
-            this.lblNomeProjeto.Text = "Nome";
-            // 
             // lblProjeto
             // 
             this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -253,165 +223,6 @@
             this.lblDescricao.TabIndex = 3;
             this.lblDescricao.Text = "Descrição:";
             // 
-            // rgbDescricaoImg
-            // 
-            this.rgbDescricaoImg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbDescricaoImg.BackColor = System.Drawing.Color.Transparent;
-            this.rgbDescricaoImg.BackgroundColor = System.Drawing.Color.White;
-            this.rgbDescricaoImg.BorderWidth = 2F;
-            this.rgbDescricaoImg.Controls.Add(this.lblCar3);
-            this.rgbDescricaoImg.Controls.Add(this.txtDescricaoImg);
-            this.rgbDescricaoImg.Controls.Add(this.customLine3);
-            this.rgbDescricaoImg.CornerRadius = 12;
-            this.rgbDescricaoImg.Location = new System.Drawing.Point(99, 372);
-            this.rgbDescricaoImg.Name = "rgbDescricaoImg";
-            this.rgbDescricaoImg.Size = new System.Drawing.Size(515, 37);
-            this.rgbDescricaoImg.TabIndex = 3;
-            this.rgbDescricaoImg.TabStop = false;
-            // 
-            // lblCar3
-            // 
-            this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblCar3.AutoSize = true;
-            this.lblCar3.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar3.Location = new System.Drawing.Point(436, 13);
-            this.lblCar3.Name = "lblCar3";
-            this.lblCar3.Size = new System.Drawing.Size(46, 13);
-            this.lblCar3.TabIndex = 3;
-            this.lblCar3.Text = "300 car.";
-            // 
-            // txtDescricaoImg
-            // 
-            this.txtDescricaoImg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescricaoImg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescricaoImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricaoImg.ForeColor = System.Drawing.Color.Black;
-            this.txtDescricaoImg.Location = new System.Drawing.Point(8, 9);
-            this.txtDescricaoImg.MaxLength = 300;
-            this.txtDescricaoImg.Name = "txtDescricaoImg";
-            this.txtDescricaoImg.Size = new System.Drawing.Size(438, 19);
-            this.txtDescricaoImg.TabIndex = 3;
-            // 
-            // customLine3
-            // 
-            this.customLine3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine3.LineColor = System.Drawing.Color.Black;
-            this.customLine3.LineWidth = 3;
-            this.customLine3.Location = new System.Drawing.Point(8, 29);
-            this.customLine3.Name = "customLine3";
-            this.customLine3.Size = new System.Drawing.Size(438, 3);
-            this.customLine3.TabIndex = 0;
-            this.customLine3.TabStop = false;
-            this.customLine3.Text = "customLine3";
-            // 
-            // rgbUpload
-            // 
-            this.rgbUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbUpload.BackgroundColor = System.Drawing.Color.White;
-            this.rgbUpload.BorderWidth = 1F;
-            this.rgbUpload.Controls.Add(this.pcbUpload);
-            this.rgbUpload.Controls.Add(this.btnUpload);
-            this.rgbUpload.CornerRadius = 10;
-            this.rgbUpload.Location = new System.Drawing.Point(99, 53);
-            this.rgbUpload.Name = "rgbUpload";
-            this.rgbUpload.Size = new System.Drawing.Size(515, 271);
-            this.rgbUpload.TabIndex = 1;
-            this.rgbUpload.TabStop = false;
-            // 
-            // pcbUpload
-            // 
-            this.pcbUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcbUpload.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pcbUpload.Location = new System.Drawing.Point(6, 10);
-            this.pcbUpload.Name = "pcbUpload";
-            this.pcbUpload.Size = new System.Drawing.Size(503, 226);
-            this.pcbUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbUpload.TabIndex = 2;
-            this.pcbUpload.TabStop = false;
-            // 
-            // btnUpload
-            // 
-            this.btnUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpload.AutoHoover = false;
-            this.btnUpload.BordaHoover = System.Drawing.Color.Green;
-            this.btnUpload.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnUpload.BorderColor = System.Drawing.Color.Black;
-            this.btnUpload.BorderRadius = 20;
-            this.btnUpload.BorderThickness = 4;
-            this.btnUpload.ButtonColor = System.Drawing.Color.White;
-            this.btnUpload.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpload.Location = new System.Drawing.Point(357, 235);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(152, 30);
-            this.btnUpload.TabIndex = 1;
-            this.btnUpload.Text = "UPLOAD";
-            this.btnUpload.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnUpload.UseVisualStyleBackColor = true;
-            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
-            // 
-            // rgbNomeImagem
-            // 
-            this.rgbNomeImagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbNomeImagem.BackColor = System.Drawing.Color.Transparent;
-            this.rgbNomeImagem.BackgroundColor = System.Drawing.Color.White;
-            this.rgbNomeImagem.BorderWidth = 2F;
-            this.rgbNomeImagem.Controls.Add(this.txtNomeImagem);
-            this.rgbNomeImagem.Controls.Add(this.lblCar2);
-            this.rgbNomeImagem.Controls.Add(this.customLine2);
-            this.rgbNomeImagem.CornerRadius = 12;
-            this.rgbNomeImagem.Location = new System.Drawing.Point(99, 330);
-            this.rgbNomeImagem.Name = "rgbNomeImagem";
-            this.rgbNomeImagem.Size = new System.Drawing.Size(515, 36);
-            this.rgbNomeImagem.TabIndex = 2;
-            this.rgbNomeImagem.TabStop = false;
-            // 
-            // txtNomeImagem
-            // 
-            this.txtNomeImagem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNomeImagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomeImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeImagem.ForeColor = System.Drawing.Color.Black;
-            this.txtNomeImagem.Location = new System.Drawing.Point(8, 8);
-            this.txtNomeImagem.MaxLength = 40;
-            this.txtNomeImagem.Name = "txtNomeImagem";
-            this.txtNomeImagem.Size = new System.Drawing.Size(438, 19);
-            this.txtNomeImagem.TabIndex = 2;
-            // 
-            // lblCar2
-            // 
-            this.lblCar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblCar2.AutoSize = true;
-            this.lblCar2.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar2.Location = new System.Drawing.Point(442, 12);
-            this.lblCar2.Name = "lblCar2";
-            this.lblCar2.Size = new System.Drawing.Size(40, 13);
-            this.lblCar2.TabIndex = 1;
-            this.lblCar2.Text = "40 car.";
-            // 
-            // customLine2
-            // 
-            this.customLine2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customLine2.LineColor = System.Drawing.Color.Black;
-            this.customLine2.LineWidth = 3;
-            this.customLine2.Location = new System.Drawing.Point(8, 28);
-            this.customLine2.Name = "customLine2";
-            this.customLine2.Size = new System.Drawing.Size(438, 3);
-            this.customLine2.TabIndex = 0;
-            this.customLine2.TabStop = false;
-            this.customLine2.Text = "customLine2";
-            // 
             // tlpBase6
             // 
             this.tlpBase6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -435,50 +246,6 @@
             this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.tlpBase6.Size = new System.Drawing.Size(617, 119);
             this.tlpBase6.TabIndex = 4;
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnExcluir.AutoHoover = false;
-            this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
-            this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
-            this.btnExcluir.BorderRadius = 20;
-            this.btnExcluir.BorderThickness = 4;
-            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
-            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(309, 72);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(139, 36);
-            this.btnExcluir.TabIndex = 9;
-            this.btnExcluir.TabStop = false;
-            this.btnExcluir.Text = "EXCLUIR";
-            this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // btnLimparForm
-            // 
-            this.btnLimparForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimparForm.AutoHoover = false;
-            this.btnLimparForm.BordaHoover = System.Drawing.Color.Green;
-            this.btnLimparForm.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnLimparForm.BorderColor = System.Drawing.Color.Black;
-            this.btnLimparForm.BorderRadius = 20;
-            this.btnLimparForm.BorderThickness = 4;
-            this.btnLimparForm.ButtonColor = System.Drawing.Color.White;
-            this.btnLimparForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimparForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimparForm.Location = new System.Drawing.Point(3, 72);
-            this.btnLimparForm.Name = "btnLimparForm";
-            this.btnLimparForm.Size = new System.Drawing.Size(299, 36);
-            this.btnLimparForm.TabIndex = 5;
-            this.btnLimparForm.TabStop = false;
-            this.btnLimparForm.Text = "LIMPAR FORMULÁRIO";
-            this.btnLimparForm.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnLimparForm.UseVisualStyleBackColor = true;
-            this.btnLimparForm.Click += new System.EventHandler(this.btnLimparForm_Click);
             // 
             // lblImagemPrincipal
             // 
@@ -516,27 +283,6 @@
             this.radSim.Text = "Sim";
             this.radSim.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.AutoHoover = false;
-            this.btnSalvar.BordaHoover = System.Drawing.Color.Green;
-            this.btnSalvar.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnSalvar.BorderColor = System.Drawing.Color.Black;
-            this.btnSalvar.BorderRadius = 20;
-            this.btnSalvar.BorderThickness = 4;
-            this.btnSalvar.ButtonColor = System.Drawing.Color.White;
-            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(456, 72);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(139, 36);
-            this.btnSalvar.TabIndex = 6;
-            this.btnSalvar.TabStop = false;
-            this.btnSalvar.Text = "SALVAR";
-            this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
             // tlpBase4
             // 
             this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -554,203 +300,6 @@
             this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpBase4.Size = new System.Drawing.Size(623, 543);
             this.tlpBase4.TabIndex = 1;
-            // 
-            // rgbOpcoes
-            // 
-            this.rgbOpcoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbOpcoes.BackgroundColor = System.Drawing.Color.White;
-            this.rgbOpcoes.BorderWidth = 1F;
-            this.rgbOpcoes.Controls.Add(this.btnSairSSalvar);
-            this.rgbOpcoes.CornerRadius = 10;
-            this.rgbOpcoes.Location = new System.Drawing.Point(3, 491);
-            this.rgbOpcoes.Name = "rgbOpcoes";
-            this.rgbOpcoes.Size = new System.Drawing.Size(617, 49);
-            this.rgbOpcoes.TabIndex = 10;
-            this.rgbOpcoes.TabStop = false;
-            // 
-            // btnSairSSalvar
-            // 
-            this.btnSairSSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSairSSalvar.AutoHoover = false;
-            this.btnSairSSalvar.BordaHoover = System.Drawing.Color.Green;
-            this.btnSairSSalvar.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnSairSSalvar.BorderColor = System.Drawing.Color.Black;
-            this.btnSairSSalvar.BorderRadius = 20;
-            this.btnSairSSalvar.BorderThickness = 4;
-            this.btnSairSSalvar.ButtonColor = System.Drawing.Color.White;
-            this.btnSairSSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSairSSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
-            this.btnSairSSalvar.Name = "btnSairSSalvar";
-            this.btnSairSSalvar.Size = new System.Drawing.Size(595, 36);
-            this.btnSairSSalvar.TabIndex = 12;
-            this.btnSairSSalvar.TabStop = false;
-            this.btnSairSSalvar.Text = "VOLTAR PARA O GERENCIAMENTO DO PROJETO";
-            this.btnSairSSalvar.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnSairSSalvar.UseVisualStyleBackColor = true;
-            this.btnSairSSalvar.Click += new System.EventHandler(this.btnSairSSalvar_Click);
-            // 
-            // rgbImagensP
-            // 
-            this.rgbImagensP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbImagensP.BackgroundColor = System.Drawing.Color.White;
-            this.rgbImagensP.BorderWidth = 1F;
-            this.rgbImagensP.Controls.Add(this.flpImagens);
-            this.rgbImagensP.Controls.Add(this.lblImagens);
-            this.rgbImagensP.CornerRadius = 10;
-            this.rgbImagensP.Location = new System.Drawing.Point(3, 3);
-            this.rgbImagensP.Name = "rgbImagensP";
-            this.rgbImagensP.Size = new System.Drawing.Size(617, 482);
-            this.rgbImagensP.TabIndex = 9;
-            this.rgbImagensP.TabStop = false;
-            // 
-            // flpImagens
-            // 
-            this.flpImagens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flpImagens.AutoScroll = true;
-            this.flpImagens.Controls.Add(this.groupBox1);
-            this.flpImagens.Location = new System.Drawing.Point(7, 53);
-            this.flpImagens.Name = "flpImagens";
-            this.flpImagens.Size = new System.Drawing.Size(601, 423);
-            this.flpImagens.TabIndex = 9;
-            this.flpImagens.TabStop = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.clSalvar);
-            this.groupBox1.Controls.Add(this.clExcluir);
-            this.groupBox1.Controls.Add(this.clLimparForm);
-            this.groupBox1.Controls.Add(this.clUpload);
-            this.groupBox1.Controls.Add(this.clLogout);
-            this.groupBox1.Controls.Add(this.clVoltar);
-            this.groupBox1.Controls.Add(this.clRecarregar);
-            this.groupBox1.Controls.Add(this.clConfig);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(211, 117);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // clSalvar
-            // 
-            this.clSalvar.LineColor = System.Drawing.Color.Black;
-            this.clSalvar.LineWidth = 1;
-            this.clSalvar.Location = new System.Drawing.Point(22, 85);
-            this.clSalvar.Name = "clSalvar";
-            this.clSalvar.Size = new System.Drawing.Size(75, 10);
-            this.clSalvar.TabIndex = 8;
-            this.clSalvar.Text = "customLine1";
-            this.clSalvar.Enter += new System.EventHandler(this.clSalvar_Enter);
-            this.clSalvar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clSalvar_KeyDown);
-            this.clSalvar.Leave += new System.EventHandler(this.clSalvar_Leave);
-            // 
-            // clExcluir
-            // 
-            this.clExcluir.LineColor = System.Drawing.Color.Black;
-            this.clExcluir.LineWidth = 1;
-            this.clExcluir.Location = new System.Drawing.Point(22, 67);
-            this.clExcluir.Name = "clExcluir";
-            this.clExcluir.Size = new System.Drawing.Size(75, 12);
-            this.clExcluir.TabIndex = 7;
-            this.clExcluir.Text = "customLine4";
-            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
-            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
-            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
-            // 
-            // clLimparForm
-            // 
-            this.clLimparForm.LineColor = System.Drawing.Color.Black;
-            this.clLimparForm.LineWidth = 1;
-            this.clLimparForm.Location = new System.Drawing.Point(22, 51);
-            this.clLimparForm.Name = "clLimparForm";
-            this.clLimparForm.Size = new System.Drawing.Size(75, 10);
-            this.clLimparForm.TabIndex = 6;
-            this.clLimparForm.Text = "customLine10";
-            this.clLimparForm.Enter += new System.EventHandler(this.clLimparForm_Enter);
-            this.clLimparForm.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLimparForm_KeyDown);
-            this.clLimparForm.Leave += new System.EventHandler(this.clLimparForm_Leave);
-            // 
-            // clUpload
-            // 
-            this.clUpload.LineColor = System.Drawing.Color.Black;
-            this.clUpload.LineWidth = 1;
-            this.clUpload.Location = new System.Drawing.Point(22, 35);
-            this.clUpload.Name = "clUpload";
-            this.clUpload.Size = new System.Drawing.Size(75, 10);
-            this.clUpload.TabIndex = 1;
-            this.clUpload.Text = "customLine5";
-            this.clUpload.Enter += new System.EventHandler(this.clUpload_Enter);
-            this.clUpload.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clUpload_KeyDown);
-            this.clUpload.Leave += new System.EventHandler(this.clUpload_Leave);
-            // 
-            // clLogout
-            // 
-            this.clLogout.LineColor = System.Drawing.Color.Black;
-            this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(116, 83);
-            this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(75, 10);
-            this.clLogout.TabIndex = 12;
-            this.clLogout.Text = "customLine9";
-            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
-            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
-            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
-            // 
-            // clVoltar
-            // 
-            this.clVoltar.LineColor = System.Drawing.Color.Black;
-            this.clVoltar.LineWidth = 1;
-            this.clVoltar.Location = new System.Drawing.Point(116, 35);
-            this.clVoltar.Name = "clVoltar";
-            this.clVoltar.Size = new System.Drawing.Size(75, 10);
-            this.clVoltar.TabIndex = 9;
-            this.clVoltar.Text = "customLine6";
-            this.clVoltar.Enter += new System.EventHandler(this.clVoltar_Enter);
-            this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
-            this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
-            // 
-            // clRecarregar
-            // 
-            this.clRecarregar.LineColor = System.Drawing.Color.Black;
-            this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(116, 67);
-            this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
-            this.clRecarregar.TabIndex = 11;
-            this.clRecarregar.Text = "customLine8";
-            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
-            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
-            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
-            // 
-            // clConfig
-            // 
-            this.clConfig.LineColor = System.Drawing.Color.Black;
-            this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(116, 51);
-            this.clConfig.Name = "clConfig";
-            this.clConfig.Size = new System.Drawing.Size(75, 10);
-            this.clConfig.TabIndex = 10;
-            this.clConfig.Text = "customLine7";
-            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
-            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
-            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
-            // 
-            // lblImagens
-            // 
-            this.lblImagens.AutoSize = true;
-            this.lblImagens.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagens.Location = new System.Drawing.Point(6, 19);
-            this.lblImagens.Name = "lblImagens";
-            this.lblImagens.Size = new System.Drawing.Size(151, 20);
-            this.lblImagens.TabIndex = 0;
-            this.lblImagens.Text = "Imagens do Projeto:";
             // 
             // tlpBase1
             // 
@@ -787,6 +336,22 @@
             this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPHead2.Size = new System.Drawing.Size(1264, 66);
             this.TLPHead2.TabIndex = 11;
+            // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
+            this.TLPHead1.TabIndex = 7;
             // 
             // rgbHeadImgs2
             // 
@@ -958,21 +523,445 @@
             this.lblPorcentagem.Text = "%";
             this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TLPHead1
+            // rgbNomeP
             // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.rgbNomeP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbNomeP.BackColor = System.Drawing.Color.Transparent;
+            this.rgbNomeP.BackgroundColor = System.Drawing.Color.White;
+            this.rgbNomeP.BorderWidth = 2F;
+            this.rgbNomeP.Controls.Add(this.lblNomeProjeto);
+            this.rgbNomeP.CornerRadius = 12;
+            this.rgbNomeP.Location = new System.Drawing.Point(99, 11);
+            this.rgbNomeP.Name = "rgbNomeP";
+            this.rgbNomeP.Size = new System.Drawing.Size(515, 36);
+            this.rgbNomeP.TabIndex = 1;
+            this.rgbNomeP.TabStop = false;
+            // 
+            // lblNomeProjeto
+            // 
+            this.lblNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblNomeProjeto.AutoSize = true;
+            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeProjeto.Location = new System.Drawing.Point(15, 4);
+            this.lblNomeProjeto.Name = "lblNomeProjeto";
+            this.lblNomeProjeto.Size = new System.Drawing.Size(79, 29);
+            this.lblNomeProjeto.TabIndex = 0;
+            this.lblNomeProjeto.Text = "Nome";
+            // 
+            // rgbDescricaoImg
+            // 
+            this.rgbDescricaoImg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
-            this.TLPHead1.TabIndex = 7;
+            this.rgbDescricaoImg.BackColor = System.Drawing.Color.Transparent;
+            this.rgbDescricaoImg.BackgroundColor = System.Drawing.Color.White;
+            this.rgbDescricaoImg.BorderWidth = 2F;
+            this.rgbDescricaoImg.Controls.Add(this.lblCar3);
+            this.rgbDescricaoImg.Controls.Add(this.txtDescricaoImg);
+            this.rgbDescricaoImg.Controls.Add(this.customLine3);
+            this.rgbDescricaoImg.CornerRadius = 12;
+            this.rgbDescricaoImg.Location = new System.Drawing.Point(99, 372);
+            this.rgbDescricaoImg.Name = "rgbDescricaoImg";
+            this.rgbDescricaoImg.Size = new System.Drawing.Size(515, 37);
+            this.rgbDescricaoImg.TabIndex = 3;
+            this.rgbDescricaoImg.TabStop = false;
+            // 
+            // lblCar3
+            // 
+            this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblCar3.AutoSize = true;
+            this.lblCar3.BackColor = System.Drawing.Color.Transparent;
+            this.lblCar3.Location = new System.Drawing.Point(436, 13);
+            this.lblCar3.Name = "lblCar3";
+            this.lblCar3.Size = new System.Drawing.Size(46, 13);
+            this.lblCar3.TabIndex = 3;
+            this.lblCar3.Text = "300 car.";
+            // 
+            // txtDescricaoImg
+            // 
+            this.txtDescricaoImg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDescricaoImg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescricaoImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescricaoImg.ForeColor = System.Drawing.Color.Black;
+            this.txtDescricaoImg.Location = new System.Drawing.Point(8, 9);
+            this.txtDescricaoImg.MaxLength = 300;
+            this.txtDescricaoImg.Name = "txtDescricaoImg";
+            this.txtDescricaoImg.Size = new System.Drawing.Size(438, 19);
+            this.txtDescricaoImg.TabIndex = 3;
+            this.txtDescricaoImg.Leave += new System.EventHandler(this.txtDescricaoImg_Leave);
+            // 
+            // customLine3
+            // 
+            this.customLine3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine3.LineColor = System.Drawing.Color.Black;
+            this.customLine3.LineWidth = 3;
+            this.customLine3.Location = new System.Drawing.Point(8, 29);
+            this.customLine3.Name = "customLine3";
+            this.customLine3.Size = new System.Drawing.Size(438, 3);
+            this.customLine3.TabIndex = 0;
+            this.customLine3.TabStop = false;
+            this.customLine3.Text = "customLine3";
+            // 
+            // rgbUpload
+            // 
+            this.rgbUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbUpload.BackgroundColor = System.Drawing.Color.White;
+            this.rgbUpload.BorderWidth = 1F;
+            this.rgbUpload.Controls.Add(this.pcbUpload);
+            this.rgbUpload.Controls.Add(this.btnUpload);
+            this.rgbUpload.Controls.Add(this.clUpload);
+            this.rgbUpload.CornerRadius = 10;
+            this.rgbUpload.Location = new System.Drawing.Point(99, 53);
+            this.rgbUpload.Name = "rgbUpload";
+            this.rgbUpload.Size = new System.Drawing.Size(515, 271);
+            this.rgbUpload.TabIndex = 1;
+            this.rgbUpload.TabStop = false;
+            // 
+            // pcbUpload
+            // 
+            this.pcbUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcbUpload.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pcbUpload.Location = new System.Drawing.Point(6, 10);
+            this.pcbUpload.Name = "pcbUpload";
+            this.pcbUpload.Size = new System.Drawing.Size(503, 226);
+            this.pcbUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbUpload.TabIndex = 2;
+            this.pcbUpload.TabStop = false;
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpload.AutoHoover = false;
+            this.btnUpload.BordaHoover = System.Drawing.Color.Green;
+            this.btnUpload.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnUpload.BorderColor = System.Drawing.Color.Black;
+            this.btnUpload.BorderRadius = 20;
+            this.btnUpload.BorderThickness = 4;
+            this.btnUpload.ButtonColor = System.Drawing.Color.White;
+            this.btnUpload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpload.Location = new System.Drawing.Point(357, 238);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(152, 30);
+            this.btnUpload.TabIndex = 1;
+            this.btnUpload.TabStop = false;
+            this.btnUpload.Text = "UPLOAD";
+            this.btnUpload.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // clUpload
+            // 
+            this.clUpload.LineColor = System.Drawing.Color.Black;
+            this.clUpload.LineWidth = 1;
+            this.clUpload.Location = new System.Drawing.Point(244, 248);
+            this.clUpload.Name = "clUpload";
+            this.clUpload.Size = new System.Drawing.Size(75, 10);
+            this.clUpload.TabIndex = 1;
+            this.clUpload.Text = "customLine5";
+            this.clUpload.Enter += new System.EventHandler(this.clUpload_Enter);
+            this.clUpload.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clUpload_KeyDown);
+            this.clUpload.Leave += new System.EventHandler(this.clUpload_Leave);
+            // 
+            // rgbNomeImagem
+            // 
+            this.rgbNomeImagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbNomeImagem.BackColor = System.Drawing.Color.Transparent;
+            this.rgbNomeImagem.BackgroundColor = System.Drawing.Color.White;
+            this.rgbNomeImagem.BorderWidth = 2F;
+            this.rgbNomeImagem.Controls.Add(this.txtNomeImagem);
+            this.rgbNomeImagem.Controls.Add(this.lblCar2);
+            this.rgbNomeImagem.Controls.Add(this.customLine2);
+            this.rgbNomeImagem.CornerRadius = 12;
+            this.rgbNomeImagem.Location = new System.Drawing.Point(99, 330);
+            this.rgbNomeImagem.Name = "rgbNomeImagem";
+            this.rgbNomeImagem.Size = new System.Drawing.Size(515, 36);
+            this.rgbNomeImagem.TabIndex = 2;
+            this.rgbNomeImagem.TabStop = false;
+            // 
+            // txtNomeImagem
+            // 
+            this.txtNomeImagem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNomeImagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNomeImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeImagem.ForeColor = System.Drawing.Color.Black;
+            this.txtNomeImagem.Location = new System.Drawing.Point(8, 8);
+            this.txtNomeImagem.MaxLength = 40;
+            this.txtNomeImagem.Name = "txtNomeImagem";
+            this.txtNomeImagem.Size = new System.Drawing.Size(438, 19);
+            this.txtNomeImagem.TabIndex = 2;
+            this.txtNomeImagem.Leave += new System.EventHandler(this.txtNomeImagem_Leave);
+            // 
+            // lblCar2
+            // 
+            this.lblCar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblCar2.AutoSize = true;
+            this.lblCar2.BackColor = System.Drawing.Color.Transparent;
+            this.lblCar2.Location = new System.Drawing.Point(442, 12);
+            this.lblCar2.Name = "lblCar2";
+            this.lblCar2.Size = new System.Drawing.Size(40, 13);
+            this.lblCar2.TabIndex = 1;
+            this.lblCar2.Text = "40 car.";
+            // 
+            // customLine2
+            // 
+            this.customLine2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customLine2.LineColor = System.Drawing.Color.Black;
+            this.customLine2.LineWidth = 3;
+            this.customLine2.Location = new System.Drawing.Point(8, 28);
+            this.customLine2.Name = "customLine2";
+            this.customLine2.Size = new System.Drawing.Size(438, 3);
+            this.customLine2.TabIndex = 0;
+            this.customLine2.TabStop = false;
+            this.customLine2.Text = "customLine2";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnExcluir.AutoHoover = false;
+            this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
+            this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
+            this.btnExcluir.BorderRadius = 20;
+            this.btnExcluir.BorderThickness = 4;
+            this.btnExcluir.ButtonColor = System.Drawing.Color.White;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(309, 72);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(139, 36);
+            this.btnExcluir.TabIndex = 9;
+            this.btnExcluir.TabStop = false;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnLimparForm
+            // 
+            this.btnLimparForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimparForm.AutoHoover = false;
+            this.btnLimparForm.BordaHoover = System.Drawing.Color.Green;
+            this.btnLimparForm.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnLimparForm.BorderColor = System.Drawing.Color.Black;
+            this.btnLimparForm.BorderRadius = 20;
+            this.btnLimparForm.BorderThickness = 4;
+            this.btnLimparForm.ButtonColor = System.Drawing.Color.White;
+            this.btnLimparForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimparForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparForm.Location = new System.Drawing.Point(3, 72);
+            this.btnLimparForm.Name = "btnLimparForm";
+            this.btnLimparForm.Size = new System.Drawing.Size(299, 36);
+            this.btnLimparForm.TabIndex = 5;
+            this.btnLimparForm.TabStop = false;
+            this.btnLimparForm.Text = "LIMPAR FORMULÁRIO";
+            this.btnLimparForm.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnLimparForm.UseVisualStyleBackColor = true;
+            this.btnLimparForm.Click += new System.EventHandler(this.btnLimparForm_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.AutoHoover = false;
+            this.btnSalvar.BordaHoover = System.Drawing.Color.Green;
+            this.btnSalvar.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnSalvar.BorderColor = System.Drawing.Color.Black;
+            this.btnSalvar.BorderRadius = 20;
+            this.btnSalvar.BorderThickness = 4;
+            this.btnSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(456, 72);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(139, 36);
+            this.btnSalvar.TabIndex = 6;
+            this.btnSalvar.TabStop = false;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // rgbOpcoes
+            // 
+            this.rgbOpcoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbOpcoes.BackgroundColor = System.Drawing.Color.White;
+            this.rgbOpcoes.BorderWidth = 1F;
+            this.rgbOpcoes.Controls.Add(this.btnSairSSalvar);
+            this.rgbOpcoes.CornerRadius = 10;
+            this.rgbOpcoes.Location = new System.Drawing.Point(3, 491);
+            this.rgbOpcoes.Name = "rgbOpcoes";
+            this.rgbOpcoes.Size = new System.Drawing.Size(617, 49);
+            this.rgbOpcoes.TabIndex = 10;
+            this.rgbOpcoes.TabStop = false;
+            // 
+            // btnSairSSalvar
+            // 
+            this.btnSairSSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSairSSalvar.AutoHoover = false;
+            this.btnSairSSalvar.BordaHoover = System.Drawing.Color.Green;
+            this.btnSairSSalvar.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnSairSSalvar.BorderColor = System.Drawing.Color.Black;
+            this.btnSairSSalvar.BorderRadius = 20;
+            this.btnSairSSalvar.BorderThickness = 4;
+            this.btnSairSSalvar.ButtonColor = System.Drawing.Color.White;
+            this.btnSairSSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSairSSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
+            this.btnSairSSalvar.Name = "btnSairSSalvar";
+            this.btnSairSSalvar.Size = new System.Drawing.Size(595, 36);
+            this.btnSairSSalvar.TabIndex = 12;
+            this.btnSairSSalvar.TabStop = false;
+            this.btnSairSSalvar.Text = "VOLTAR PARA O GERENCIAMENTO DO PROJETO";
+            this.btnSairSSalvar.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnSairSSalvar.UseVisualStyleBackColor = true;
+            this.btnSairSSalvar.Click += new System.EventHandler(this.btnSairSSalvar_Click);
+            // 
+            // rgbImagensP
+            // 
+            this.rgbImagensP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbImagensP.BackgroundColor = System.Drawing.Color.White;
+            this.rgbImagensP.BorderWidth = 1F;
+            this.rgbImagensP.Controls.Add(this.clLogout);
+            this.rgbImagensP.Controls.Add(this.clSalvar);
+            this.rgbImagensP.Controls.Add(this.flpImagens);
+            this.rgbImagensP.Controls.Add(this.clExcluir);
+            this.rgbImagensP.Controls.Add(this.clRecarregar);
+            this.rgbImagensP.Controls.Add(this.lblImagens);
+            this.rgbImagensP.Controls.Add(this.clLimparForm);
+            this.rgbImagensP.Controls.Add(this.clVoltar);
+            this.rgbImagensP.Controls.Add(this.clConfig);
+            this.rgbImagensP.CornerRadius = 10;
+            this.rgbImagensP.Location = new System.Drawing.Point(3, 3);
+            this.rgbImagensP.Name = "rgbImagensP";
+            this.rgbImagensP.Size = new System.Drawing.Size(617, 482);
+            this.rgbImagensP.TabIndex = 9;
+            this.rgbImagensP.TabStop = false;
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(419, 29);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 10);
+            this.clLogout.TabIndex = 12;
+            this.clLogout.Text = "customLine9";
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clSalvar
+            // 
+            this.clSalvar.LineColor = System.Drawing.Color.Black;
+            this.clSalvar.LineWidth = 1;
+            this.clSalvar.Location = new System.Drawing.Point(256, 11);
+            this.clSalvar.Name = "clSalvar";
+            this.clSalvar.Size = new System.Drawing.Size(75, 10);
+            this.clSalvar.TabIndex = 8;
+            this.clSalvar.Text = "customLine1";
+            this.clSalvar.Enter += new System.EventHandler(this.clSalvar_Enter);
+            this.clSalvar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clSalvar_KeyDown);
+            this.clSalvar.Leave += new System.EventHandler(this.clSalvar_Leave);
+            // 
+            // flpImagens
+            // 
+            this.flpImagens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flpImagens.AutoScroll = true;
+            this.flpImagens.Location = new System.Drawing.Point(7, 53);
+            this.flpImagens.Name = "flpImagens";
+            this.flpImagens.Size = new System.Drawing.Size(601, 423);
+            this.flpImagens.TabIndex = 9;
+            // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(175, 27);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 12);
+            this.clExcluir.TabIndex = 7;
+            this.clExcluir.Text = "customLine4";
+            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
+            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
+            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(338, 29);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 11;
+            this.clRecarregar.Text = "customLine8";
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // lblImagens
+            // 
+            this.lblImagens.AutoSize = true;
+            this.lblImagens.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImagens.Location = new System.Drawing.Point(6, 19);
+            this.lblImagens.Name = "lblImagens";
+            this.lblImagens.Size = new System.Drawing.Size(151, 20);
+            this.lblImagens.TabIndex = 0;
+            this.lblImagens.Text = "Imagens do Projeto:";
+            // 
+            // clLimparForm
+            // 
+            this.clLimparForm.LineColor = System.Drawing.Color.Black;
+            this.clLimparForm.LineWidth = 1;
+            this.clLimparForm.Location = new System.Drawing.Point(175, 11);
+            this.clLimparForm.Name = "clLimparForm";
+            this.clLimparForm.Size = new System.Drawing.Size(75, 10);
+            this.clLimparForm.TabIndex = 6;
+            this.clLimparForm.Text = "customLine10";
+            this.clLimparForm.Enter += new System.EventHandler(this.clLimparForm_Enter);
+            this.clLimparForm.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLimparForm_KeyDown);
+            this.clLimparForm.Leave += new System.EventHandler(this.clLimparForm_Leave);
+            // 
+            // clVoltar
+            // 
+            this.clVoltar.LineColor = System.Drawing.Color.Black;
+            this.clVoltar.LineWidth = 1;
+            this.clVoltar.Location = new System.Drawing.Point(256, 27);
+            this.clVoltar.Name = "clVoltar";
+            this.clVoltar.Size = new System.Drawing.Size(75, 10);
+            this.clVoltar.TabIndex = 9;
+            this.clVoltar.Text = "customLine6";
+            this.clVoltar.Enter += new System.EventHandler(this.clVoltar_Enter);
+            this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
+            this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(338, 11);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 10;
+            this.clConfig.Text = "customLine7";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
             // 
             // rgbHeadImgs1
             // 
@@ -1092,25 +1081,14 @@
             this.tlpBase3.ResumeLayout(false);
             this.tlpBase5.ResumeLayout(false);
             this.tlpBase5.PerformLayout();
-            this.rgbNomeP.ResumeLayout(false);
-            this.rgbNomeP.PerformLayout();
-            this.rgbDescricaoImg.ResumeLayout(false);
-            this.rgbDescricaoImg.PerformLayout();
-            this.rgbUpload.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbUpload)).EndInit();
-            this.rgbNomeImagem.ResumeLayout(false);
-            this.rgbNomeImagem.PerformLayout();
             this.tlpBase6.ResumeLayout(false);
             this.tlpBase6.PerformLayout();
             this.tlpBase4.ResumeLayout(false);
-            this.rgbOpcoes.ResumeLayout(false);
-            this.rgbImagensP.ResumeLayout(false);
-            this.rgbImagensP.PerformLayout();
-            this.flpImagens.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.tlpBase1.ResumeLayout(false);
             this.TLPHead2.ResumeLayout(false);
             this.TLPHead2.PerformLayout();
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs2.ResumeLayout(false);
             this.TLPInfoshead.ResumeLayout(false);
             this.TLPInfoshead.PerformLayout();
@@ -1119,8 +1097,17 @@
             this.TLPAtualizacao.ResumeLayout(false);
             this.TLPAtualizacao.PerformLayout();
             this.groupPorcentagem.ResumeLayout(false);
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
+            this.rgbNomeP.ResumeLayout(false);
+            this.rgbNomeP.PerformLayout();
+            this.rgbDescricaoImg.ResumeLayout(false);
+            this.rgbDescricaoImg.PerformLayout();
+            this.rgbUpload.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbUpload)).EndInit();
+            this.rgbNomeImagem.ResumeLayout(false);
+            this.rgbNomeImagem.PerformLayout();
+            this.rgbOpcoes.ResumeLayout(false);
+            this.rgbImagensP.ResumeLayout(false);
+            this.rgbImagensP.PerformLayout();
             this.rgbHeadImgs1.ResumeLayout(false);
             this.rgbHeadImgs1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
@@ -1186,7 +1173,6 @@
         private OvalPictureBox OPBConfiguracoes;
         private OvalPictureBox OPBLogout;
         private System.Windows.Forms.PictureBox opbLogo;
-        private System.Windows.Forms.GroupBox groupBox1;
         private CustomLine clSalvar;
         private CustomLine clExcluir;
         private CustomLine clLimparForm;

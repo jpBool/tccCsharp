@@ -47,6 +47,9 @@ namespace tccCsharp
             {
                 CarregarImagem(Imagens[i]);
             }
+
+            btnUpload.BorderColor = btnUpload.BordaHoover;
+            btnUpload.ForeColor = btnUpload.BordaHoover;
         }
 
 
@@ -135,6 +138,9 @@ namespace tccCsharp
             {
                 string selectedFileName = openFile.FileName;
                 pcbUpload.ImageLocation = selectedFileName;
+
+                string nomeArquivo = Path.GetFileNameWithoutExtension(selectedFileName);
+                txtNomeImagem.Text = nomeArquivo;
             }
         }
 
@@ -251,6 +257,26 @@ namespace tccCsharp
             OPBLogout.BordaPrincipal = Color.Transparent;
             OPBRecarregar.BordaPrincipal = Color.Transparent;
             OPBConfiguracoes.BordaPrincipal = Color.Transparent;
+
+            customLine2.LineColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            customLine3.LineColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+
+            clSalvar.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clSalvar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clRecarregar.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clRecarregar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clLogout.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clLogout.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clLimparForm.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clLimparForm.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clVoltar.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clVoltar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clUpload.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clUpload.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clConfig.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clConfig.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clExcluir.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clExcluir.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
             Logo(Program.logo);
         }
@@ -724,6 +750,16 @@ namespace tccCsharp
                 OPBLogout_Click(sender, e);
 
             }
+        }
+
+        private void txtNomeImagem_Leave(object sender, EventArgs e)
+        {
+            customLine2.LineColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+        }
+
+        private void txtDescricaoImg_Leave(object sender, EventArgs e)
+        {
+            customLine3.LineColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
         }
     }
 }

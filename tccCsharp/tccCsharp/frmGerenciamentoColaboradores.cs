@@ -226,6 +226,7 @@ namespace tccCsharp
             dgvCriador.Rows.Add(novaLinha);
             dgvCriador.Enabled = false;
             dgvCriador.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVColaboradores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             FimCarregamento = true;
         }

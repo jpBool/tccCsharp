@@ -57,6 +57,7 @@ namespace tccCsharp
             btnLogar.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             btnLogar.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnLogar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnLogar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -112,6 +113,18 @@ namespace tccCsharp
             //tabstop == false
            //var
            //switch
+        }
+
+        private void btnLogar_Enter(object sender, EventArgs e)
+        {
+            btnLogar.BorderColor = btnLogar.BordaHoover;
+            btnLogar.ForeColor = btnLogar.BordaHoover;
+        }
+
+        private void btnLogar_Leave(object sender, EventArgs e)
+        {
+            btnLogar.BorderColor = btnLogar.BordaPrincipal;
+            btnLogar.ForeColor = btnLogar.TextoPrincipal;
         }
     }
 }

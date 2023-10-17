@@ -142,6 +142,25 @@ namespace tccCsharp
             OPBRecarregar.BordaPrincipal = Color.Transparent;
 
             Logo(Program.logo);
+
+            clAtualizar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clAtualizar.LineColor = Color.Transparent;
+            clCancelar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clCancelar.LineColor = Color.Transparent;
+            clColaboradores.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clColaboradores.LineColor = Color.Transparent;
+            clConfig.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clConfig.LineColor = Color.Transparent;
+            clEtapas.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clEtapas.LineColor = Color.Transparent;
+            clExcluir.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clExcluir.LineColor = Color.Transparent;
+            clImagens.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clImagens.LineColor = Color.Transparent;
+            clLogout.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clLogout.LineColor = Color.Transparent;
+            clRecarregar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clRecarregar.LineColor = Color.Transparent;
         }
 
         public string PalavrasChave()
@@ -706,64 +725,70 @@ namespace tccCsharp
             }
         }
 
-        private void txtDetalhada_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void customLine14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void customLine13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void clColaboradores_Enter(object sender, EventArgs e)
         {
-
+            btnColaboradores.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnColaboradores.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void clColaboradores_Leave(object sender, EventArgs e)
         {
-
+            btnColaboradores.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnColaboradores.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
         private void clColaboradores_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnColaboradores.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnColaboradores.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnColaboradores_Click(sender, e);
+            }
         }
 
         private void clImagens_Enter(object sender, EventArgs e)
         {
-
+            btnImagens.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnImagens.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void clImagens_Leave(object sender, EventArgs e)
         {
-
+            btnImagens.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnImagens.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
         private void clImagens_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnImagens.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnImagens.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnImagens_Click(sender, e);
+            }
         }
 
         private void clEtapas_Enter(object sender, EventArgs e)
         {
-
+            btnEtapas.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnEtapas.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void clEtapas_Leave(object sender, EventArgs e)
         {
-
+            btnEtapas.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnEtapas.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
         private void clEtapas_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnEtapas.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnEtapas.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnEtapas_Click(sender, e);
+            }
         }
 
         private void clExcluir_Enter(object sender, EventArgs e)
@@ -890,11 +915,6 @@ namespace tccCsharp
                 OPBLogout_Click(sender, e);
 
             }
-        }
-
-        private void dtpPrevisao_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
