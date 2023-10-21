@@ -370,7 +370,6 @@
             this.lblAtivoDesde.Size = new System.Drawing.Size(96, 20);
             this.lblAtivoDesde.TabIndex = 39;
             this.lblAtivoDesde.Text = "Ativo desde:";
-            this.lblAtivoDesde.Click += new System.EventHandler(this.lblAtivoDesde_Click);
             // 
             // TLPAvatar
             // 

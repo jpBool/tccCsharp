@@ -562,10 +562,5 @@ namespace tccCsharp
 
             }
         }
-
-        private void lblAtivoDesde_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

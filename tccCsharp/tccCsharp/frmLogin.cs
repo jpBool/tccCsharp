@@ -118,16 +118,6 @@ namespace tccCsharp
             }
         }
 
-        private void tlpLoginBase3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void frmLogin_KeyDown(object sender, KeyEventArgs e)
         {
             //tabstop == false
@@ -153,6 +143,12 @@ namespace tccCsharp
             {
                 btnLogar_Click(sender, e);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Cor2 = Color.Orange;
+            Properties.Settings.Default.Save();
         }
     }
 }

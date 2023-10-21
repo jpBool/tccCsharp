@@ -50,6 +50,8 @@ namespace tccCsharp
             rgbMenu.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             rgbMenu.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             
+            TLPPersonaliza.BackColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+
             //LABELS DE COR
             lblCor1.BackColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
             lblCor2.BackColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -126,21 +128,7 @@ namespace tccCsharp
         }
 
 
-        private void btnPersonalizacao_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPersonalizacao_Click(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void btnPersonalizacao_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void lblCor1_Click(object sender, EventArgs e)
         {
@@ -152,7 +140,7 @@ namespace tccCsharp
                 Program.Cor1[2] = cldPersonalizacao.Color.B;
                 lblCor1.BackColor = cldPersonalizacao.Color;
             }
-
+            DoDesign();
         }
 
         private void lblCor2_Click(object sender, EventArgs e)
@@ -165,6 +153,7 @@ namespace tccCsharp
                 Program.Cor2[2] = cldPersonalizacao.Color.B;
                 lblCor2.BackColor = cldPersonalizacao.Color;
             }
+            DoDesign();
         }
         private void lblCor3_Click(object sender, EventArgs e)
         {
@@ -177,6 +166,7 @@ namespace tccCsharp
                 Program.Cor3[2] = cldPersonalizacao.Color.B;
                 lblCor3.BackColor = cldPersonalizacao.Color;
             }
+            DoDesign();
         }
         private void lblCor4_Click(object sender, EventArgs e)
         {
@@ -188,6 +178,7 @@ namespace tccCsharp
                 Program.Cor4[2] = cldPersonalizacao.Color.B;
                 lblCor4.BackColor = cldPersonalizacao.Color;
             }
+            DoDesign();
         }
         private void lblCor5_Click(object sender, EventArgs e)
         {
@@ -199,6 +190,7 @@ namespace tccCsharp
                 Program.Cor5[2] = cldPersonalizacao.Color.B;
                 lblCor5.BackColor = cldPersonalizacao.Color;
             }
+            DoDesign();
         }
 
         private void lblCor6_Click(object sender, EventArgs e)
@@ -211,6 +203,7 @@ namespace tccCsharp
                 Program.Cor6[2] = cldPersonalizacao.Color.B;
                 lblCor6.BackColor = cldPersonalizacao.Color;
             }
+            DoDesign();
         }
 
         private void lblCor7_Click(object sender, EventArgs e)
@@ -223,6 +216,7 @@ namespace tccCsharp
                 Program.Cor7[2] = cldPersonalizacao.Color.B;
                 lblCor7.BackColor = cldPersonalizacao.Color;
             }
+            DoDesign();
         }
 
         private void lblCorAviso1_Click(object sender, EventArgs e)
@@ -234,7 +228,7 @@ namespace tccCsharp
                 Program.CorAviso1[2] = cldPersonalizacao.Color.B;
                 lblCorAviso1.BackColor = cldPersonalizacao.Color;
             }
-           
+            DoDesign();
         }
 
         private void lblCorAviso2_Click(object sender, EventArgs e)
@@ -246,7 +240,7 @@ namespace tccCsharp
                 Program.CorAviso2[2] = cldPersonalizacao.Color.B;
                 lblCorAviso1.BackColor = cldPersonalizacao.Color;
             }
-            
+            DoDesign();
         }
 
         private void lblCorTexto1_Click(object sender, EventArgs e)
@@ -258,7 +252,7 @@ namespace tccCsharp
                 Program.CorTexto1[2] = cldPersonalizacao.Color.B;
                 lblCorTexto1.BackColor = cldPersonalizacao.Color;
             }
-            
+            DoDesign();
         }
 
         private void lblCorTexto2_Click(object sender, EventArgs e)
@@ -270,7 +264,7 @@ namespace tccCsharp
                 Program.CorTexto2[2] = cldPersonalizacao.Color.B;
                 lblCorTexto2.BackColor = cldPersonalizacao.Color;
             }
-
+            DoDesign();
         }
 
         private void btnAltTamF_Click(object sender, EventArgs e)
@@ -359,20 +353,7 @@ namespace tccCsharp
             rgbPCores.Visible = toggle;
         }
 
-        private void opbRecarregar_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblConfiguracoes_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnTutoriais_Click(object sender, EventArgs e)
         {
@@ -380,20 +361,7 @@ namespace tccCsharp
             //subtituir link
         }
 
-        private void OPBLogout_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void tlpBaseConfig2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tlpBaseConfig3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
        
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -409,35 +377,7 @@ namespace tccCsharp
             }
         }
 
-        private void tlpBaseConfig4_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void lblCorAviso_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCoresAviso_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblConfigsG_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPCores_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblIconePreto_Click(object sender, EventArgs e)
-        {
-            //AlteraIcones()
-        }
 
         private void btnRestaurarPadrao_Click(object sender, EventArgs e)
         {
@@ -496,7 +436,7 @@ namespace tccCsharp
             Program.logo = 1;
             ///////////////////ÍCONES E LOGO/////////////////////
 
-
+            DoDesign();
         }
 
         private void radPreto_CheckedChanged(object sender, EventArgs e)
@@ -541,34 +481,166 @@ namespace tccCsharp
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void OPBLogout_Click(object sender, EventArgs e)
         {
-
+            Program.projetos.Clear();
+            Program.id_usuario = 0;
+            this.Close();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void opbRecarregar_Click(object sender, EventArgs e)
         {
-
+            DoDesign();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void clAltF_Enter(object sender, EventArgs e)
         {
-
+            btnAltTamF.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAltTamF.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void clAltF_Leave(object sender, EventArgs e)
         {
-
+            btnAltTamF.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnAltTamF.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
         }
 
-        private void lblTrocaIcones_Click(object sender, EventArgs e)
+        private void clAltF_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnAltTamF.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnAltTamF.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnAltTamF_Click(sender, e);
+            }
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void clPersonaliza_Enter(object sender, EventArgs e)
         {
+            btnPersonalizar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnPersonalizar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
 
+        private void clPersonaliza_Leave(object sender, EventArgs e)
+        {
+            btnPersonalizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnPersonalizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clPersonaliza_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnPersonalizar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnPersonalizar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnPersonalizar_Click(sender, e);
+            }
+        }
+
+        private void clTut_Enter(object sender, EventArgs e)
+        {
+            btnTutoriais.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnTutoriais.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clTut_Leave(object sender, EventArgs e)
+        {
+            btnTutoriais.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnTutoriais.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clTut_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnTutoriais.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnTutoriais.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnTutoriais_Click(sender, e);
+            }
+        }
+
+        private void clRestaura_Enter(object sender, EventArgs e)
+        {
+            btnRestaurarPadrao.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnRestaurarPadrao.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clRestaura_Leave(object sender, EventArgs e)
+        {
+            btnRestaurarPadrao.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnRestaurarPadrao.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clRestaura_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnRestaurarPadrao.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnRestaurarPadrao.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnRestaurarPadrao_Click(sender, e);
+            }
+        }
+
+        private void clVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnVoltar.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnVoltar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clVoltar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnVoltar.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnVoltar.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnVoltar_Click(sender, e);
+            }
+        }
+
+        private void clRefresh_Enter(object sender, EventArgs e)
+        {
+            opbRecarregar._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clRefresh_Leave(object sender, EventArgs e)
+        {
+            opbRecarregar._bordercolor = Color.Transparent;
+        }
+
+        private void clRefresh_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                opbRecarregar._bordercolor = Color.Transparent;
+                opbRecarregar_Click(sender, e);
+
+            }
+        }
+
+        private void clLogout_Enter(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clLogout_Leave(object sender, EventArgs e)
+        {
+            OPBLogout._bordercolor = Color.Transparent;
+        }
+
+        private void clLogout_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                OPBLogout._bordercolor = Color.Transparent;
+                OPBLogout_Click(sender, e);
+
+            }
         }
     }
  

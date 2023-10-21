@@ -916,5 +916,10 @@ namespace tccCsharp
 
             }
         }
+
+        private void clImagens_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

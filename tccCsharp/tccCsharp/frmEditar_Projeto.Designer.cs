@@ -948,6 +948,7 @@
             this.clImagens.Size = new System.Drawing.Size(75, 10);
             this.clImagens.TabIndex = 16;
             this.clImagens.Text = "customLine16";
+            this.clImagens.Click += new System.EventHandler(this.clImagens_Click);
             this.clImagens.Enter += new System.EventHandler(this.clImagens_Enter);
             this.clImagens.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clImagens_KeyDown);
             this.clImagens.Leave += new System.EventHandler(this.clImagens_Leave);
