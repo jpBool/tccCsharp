@@ -91,32 +91,6 @@ namespace tccCsharp
             {
                 return;
             }
-            Program.id_usuario = Banco.Logar(email, senha);
-            if (Program.id_usuario == 0)
-            {
-                //E-mail ou senha incorretos
-                lblAviso.Visible = true; //aqui
-                return;
-            }
-            else if (Program.id_usuario == -1)
-            {
-                //Aconteceu algum erro no banco
-                return;
-            }
-            else
-            {
-                txtSenha.Clear();
-                this.Visible = false;
-                Program.projetos = Banco.CarregarProjetos(Program.projetos);
-                frmPerfil splash = new frmPerfil();
-                splash.ShowDialog();
-                if (Program.id_usuario == 0)
-                    this.Visible = true;
-                else
-                    this.Close();
-            }
-
-            /*
             string senha_encrpty = GetMd5Hash(senha);
             Program.id_usuario = Banco.Logar(email, senha_encrpty);
             if (Program.id_usuario == 0)
@@ -142,8 +116,6 @@ namespace tccCsharp
                 else
                     this.Close();
             }
-            */
-
         }
 
         private void tlpLoginBase3_Paint(object sender, PaintEventArgs e)

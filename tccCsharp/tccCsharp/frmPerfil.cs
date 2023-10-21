@@ -258,10 +258,10 @@ namespace tccCsharp
             User usuario = new User();
             usuario.avatar = 2;
             Banco.CarregaPerfil(usuario);
-            lblNome.Text = usuario.nome.ToString();
-            lblBio.Text = usuario.bio.ToString();
+            lblNome.Text = usuario.nome;
+            lblBio.Text = usuario.bio;
             lblAMD.Text = usuario.inscricao.ToShortDateString();
-            lblEmail.Text = usuario.email.ToString();
+            lblEmail.Text = usuario.email;
             lblCommits.Text = usuario.commits.ToString();
 
             int seguidores = 0;
