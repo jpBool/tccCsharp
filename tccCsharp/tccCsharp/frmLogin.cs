@@ -144,12 +144,6 @@ namespace tccCsharp
                 btnLogar_Click(sender, e);
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.Cor2 = Color.Orange;
-            Properties.Settings.Default.Save();
-        }
     }
 }
 

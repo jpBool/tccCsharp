@@ -39,6 +39,7 @@ namespace tccCsharp
                 radPreto.Checked = false;
                 radBranco.Checked = true;
             }
+            clRestaura.Visible = false;
             DoDesign();
         }
 
@@ -351,6 +352,7 @@ namespace tccCsharp
             //rgbPCores.Visible= true;
             toggle = !toggle;
             rgbPCores.Visible = toggle;
+            clRestaura.Visible = toggle;
         }
 
 
@@ -435,6 +437,8 @@ namespace tccCsharp
 
             Program.logo = 1;
             ///////////////////ÍCONES E LOGO/////////////////////
+            radBranco.Checked = true;
+            radPreto.Checked = false;
 
             DoDesign();
         }

@@ -429,6 +429,7 @@
             this.dgvCriador.RowHeadersVisible = false;
             this.dgvCriador.Size = new System.Drawing.Size(605, 64);
             this.dgvCriador.TabIndex = 2;
+            this.dgvCriador.TabStop = false;
             this.dgvCriador.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvCriador_CellPainting);
             // 
             // nomeCriador
@@ -473,6 +474,7 @@
             this.DGVColaboradores.RowHeadersVisible = false;
             this.DGVColaboradores.Size = new System.Drawing.Size(605, 355);
             this.DGVColaboradores.TabIndex = 1;
+            this.DGVColaboradores.TabStop = false;
             this.DGVColaboradores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVColaboradores_CellClick);
             this.DGVColaboradores.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DGVColaboradores_CellPainting);
             // 
