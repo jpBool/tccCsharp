@@ -642,6 +642,44 @@ namespace tccCsharp
 
             }
         }
+
+        private void clCor1_Enter(object sender, EventArgs e)
+        {
+            lblCor1.Margin = new System.Windows.Forms.Padding(1,1,1,1); 
+            //btnRestaurarPadrao.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clCor1_Leave(object sender, EventArgs e)
+        {
+            lblCor1.ForeColor  = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            //lblCor1.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clCor1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                lblCor1.ForeColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                //lblCor1.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                lblCor1_Click(sender, e);
+            }
+        }
+
+        private void frmConfiguracoes_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Cor1 = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+            Properties.Settings.Default.Cor2 = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            Properties.Settings.Default.Cor3 = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
+            Properties.Settings.Default.Cor4 = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
+            Properties.Settings.Default.Cor5 = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            Properties.Settings.Default.Cor6 = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            Properties.Settings.Default.Cor7 = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+            Properties.Settings.Default.CorTexto1 = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            Properties.Settings.Default.CorTexto2 = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            Properties.Settings.Default.CorAviso1 = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            Properties.Settings.Default.CorAviso2 = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+            Properties.Settings.Default.Save();
+        }
     }
  
 }
