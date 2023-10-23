@@ -33,21 +33,17 @@ namespace tccCsharp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfiguracoes));
             this.cldPersonalizacao = new System.Windows.Forms.ColorDialog();
             this.tlpBaseConfig1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBaseConfig2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBaseConfig3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBaseConfig6 = new System.Windows.Forms.TableLayoutPanel();
-            this.gpbAgrupa = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbMenu = new tccCsharp.RoundedGroupBox();
             this.opbLogo = new System.Windows.Forms.PictureBox();
             this.OPBLogout = new tccCsharp.OvalPictureBox();
             this.opbRecarregar = new tccCsharp.OvalPictureBox();
+            this.tlpBaseConfig2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbPCores = new tccCsharp.RoundedGroupBox();
             this.TLPPersonaliza = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.radBranco = new System.Windows.Forms.RadioButton();
-            this.clRestaura = new CustomLine();
             this.radPreto = new System.Windows.Forms.RadioButton();
             this.lblTrocaIcones = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -80,36 +76,40 @@ namespace tccCsharp
             this.lblCoresElementos = new System.Windows.Forms.Label();
             this.lblPCores = new System.Windows.Forms.Label();
             this.btnRestaurarPadrao = new RoundButton();
+            this.tlpBaseConfig3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpBaseConfig5 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblConfigsG = new System.Windows.Forms.Label();
+            this.lblConfiguracoes = new System.Windows.Forms.Label();
+            this.tlpBaseConfig6 = new System.Windows.Forms.TableLayoutPanel();
+            this.gpbAgrupa = new System.Windows.Forms.GroupBox();
             this.clVoltar = new CustomLine();
+            this.clRestaura = new CustomLine();
             this.clLogout = new CustomLine();
             this.clRefresh = new CustomLine();
             this.btnAltTamF = new RoundButton();
             this.clAltF = new CustomLine();
             this.btnPersonalizar = new RoundButton();
+            this.clTut = new CustomLine();
+            this.btnTutoriais = new RoundButton();
             this.clPersonaliza = new CustomLine();
             this.btnVoltar = new RoundButton();
-            this.lblConfiguracoes = new System.Windows.Forms.Label();
-            this.lblConfigsG = new System.Windows.Forms.Label();
-            this.tlpBaseConfig5 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnTutoriais = new RoundButton();
-            this.clTut = new CustomLine();
             this.tlpBaseConfig1.SuspendLayout();
-            this.tlpBaseConfig2.SuspendLayout();
-            this.tlpBaseConfig4.SuspendLayout();
-            this.tlpBaseConfig3.SuspendLayout();
-            this.tlpBaseConfig6.SuspendLayout();
-            this.gpbAgrupa.SuspendLayout();
             this.rgbMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).BeginInit();
+            this.tlpBaseConfig2.SuspendLayout();
+            this.tlpBaseConfig4.SuspendLayout();
             this.rgbPCores.SuspendLayout();
             this.TLPPersonaliza.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tlpBaseConfig3.SuspendLayout();
             this.tlpBaseConfig5.SuspendLayout();
+            this.tlpBaseConfig6.SuspendLayout();
+            this.gpbAgrupa.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpBaseConfig1
@@ -128,121 +128,6 @@ namespace tccCsharp
             this.tlpBaseConfig1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpBaseConfig1.Size = new System.Drawing.Size(1086, 657);
             this.tlpBaseConfig1.TabIndex = 35;
-            // 
-            // tlpBaseConfig2
-            // 
-            this.tlpBaseConfig2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBaseConfig2.ColumnCount = 3;
-            this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.18518F));
-            this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.25926F));
-            this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.64815F));
-            this.tlpBaseConfig2.Controls.Add(this.tlpBaseConfig4, 1, 1);
-            this.tlpBaseConfig2.Controls.Add(this.tlpBaseConfig3, 0, 1);
-            this.tlpBaseConfig2.Controls.Add(this.btnVoltar, 2, 1);
-            this.tlpBaseConfig2.Location = new System.Drawing.Point(3, 63);
-            this.tlpBaseConfig2.Name = "tlpBaseConfig2";
-            this.tlpBaseConfig2.RowCount = 2;
-            this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.105263F));
-            this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.89474F));
-            this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBaseConfig2.Size = new System.Drawing.Size(1080, 591);
-            this.tlpBaseConfig2.TabIndex = 35;
-            // 
-            // tlpBaseConfig4
-            // 
-            this.tlpBaseConfig4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBaseConfig4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tlpBaseConfig4.BackgroundImage")));
-            this.tlpBaseConfig4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tlpBaseConfig4.ColumnCount = 3;
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98F));
-            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tlpBaseConfig4.Controls.Add(this.tableLayoutPanel8, 0, 0);
-            this.tlpBaseConfig4.Controls.Add(this.rgbPCores, 1, 1);
-            this.tlpBaseConfig4.Location = new System.Drawing.Point(436, 15);
-            this.tlpBaseConfig4.Name = "tlpBaseConfig4";
-            this.tlpBaseConfig4.RowCount = 3;
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.6F));
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98.4F));
-            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tlpBaseConfig4.Size = new System.Drawing.Size(471, 573);
-            this.tlpBaseConfig4.TabIndex = 33;
-            // 
-            // tlpBaseConfig3
-            // 
-            this.tlpBaseConfig3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBaseConfig3.ColumnCount = 1;
-            this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBaseConfig3.Controls.Add(this.tlpBaseConfig5, 0, 0);
-            this.tlpBaseConfig3.Controls.Add(this.tlpBaseConfig6, 0, 1);
-            this.tlpBaseConfig3.Location = new System.Drawing.Point(3, 15);
-            this.tlpBaseConfig3.Name = "tlpBaseConfig3";
-            this.tlpBaseConfig3.RowCount = 3;
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 204F));
-            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBaseConfig3.Size = new System.Drawing.Size(427, 573);
-            this.tlpBaseConfig3.TabIndex = 33;
-            // 
-            // tlpBaseConfig6
-            // 
-            this.tlpBaseConfig6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBaseConfig6.ColumnCount = 2;
-            this.tlpBaseConfig6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBaseConfig6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBaseConfig6.Controls.Add(this.gpbAgrupa, 1, 6);
-            this.tlpBaseConfig6.Controls.Add(this.btnAltTamF, 1, 1);
-            this.tlpBaseConfig6.Controls.Add(this.clAltF, 1, 0);
-            this.tlpBaseConfig6.Controls.Add(this.btnPersonalizar, 1, 3);
-            this.tlpBaseConfig6.Controls.Add(this.clTut, 1, 4);
-            this.tlpBaseConfig6.Controls.Add(this.btnTutoriais, 1, 5);
-            this.tlpBaseConfig6.Controls.Add(this.clPersonaliza, 1, 2);
-            this.tlpBaseConfig6.Location = new System.Drawing.Point(3, 207);
-            this.tlpBaseConfig6.Name = "tlpBaseConfig6";
-            this.tlpBaseConfig6.RowCount = 7;
-            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.tlpBaseConfig6.Size = new System.Drawing.Size(421, 372);
-            this.tlpBaseConfig6.TabIndex = 1;
-            // 
-            // gpbAgrupa
-            // 
-            this.gpbAgrupa.Controls.Add(this.clVoltar);
-            this.gpbAgrupa.Controls.Add(this.clRestaura);
-            this.gpbAgrupa.Controls.Add(this.clLogout);
-            this.gpbAgrupa.Controls.Add(this.clRefresh);
-            this.gpbAgrupa.Location = new System.Drawing.Point(23, 303);
-            this.gpbAgrupa.Name = "gpbAgrupa";
-            this.gpbAgrupa.Size = new System.Drawing.Size(395, 55);
-            this.gpbAgrupa.TabIndex = 29;
-            this.gpbAgrupa.TabStop = false;
-            this.gpbAgrupa.Text = "groupBox1";
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1, 2);
-            this.tableLayoutPanel8.TabIndex = 25;
             // 
             // rgbMenu
             // 
@@ -312,6 +197,63 @@ namespace tccCsharp
             this.opbRecarregar.TabIndex = 31;
             this.opbRecarregar.TabStop = false;
             this.opbRecarregar.Click += new System.EventHandler(this.opbRecarregar_Click);
+            // 
+            // tlpBaseConfig2
+            // 
+            this.tlpBaseConfig2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBaseConfig2.ColumnCount = 3;
+            this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.18518F));
+            this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.25926F));
+            this.tlpBaseConfig2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.64815F));
+            this.tlpBaseConfig2.Controls.Add(this.tlpBaseConfig4, 1, 1);
+            this.tlpBaseConfig2.Controls.Add(this.tlpBaseConfig3, 0, 1);
+            this.tlpBaseConfig2.Controls.Add(this.btnVoltar, 2, 1);
+            this.tlpBaseConfig2.Location = new System.Drawing.Point(3, 63);
+            this.tlpBaseConfig2.Name = "tlpBaseConfig2";
+            this.tlpBaseConfig2.RowCount = 2;
+            this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.105263F));
+            this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.89474F));
+            this.tlpBaseConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBaseConfig2.Size = new System.Drawing.Size(1080, 591);
+            this.tlpBaseConfig2.TabIndex = 35;
+            // 
+            // tlpBaseConfig4
+            // 
+            this.tlpBaseConfig4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBaseConfig4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tlpBaseConfig4.BackgroundImage")));
+            this.tlpBaseConfig4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tlpBaseConfig4.ColumnCount = 3;
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98F));
+            this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tlpBaseConfig4.Controls.Add(this.tableLayoutPanel8, 0, 0);
+            this.tlpBaseConfig4.Controls.Add(this.rgbPCores, 1, 1);
+            this.tlpBaseConfig4.Location = new System.Drawing.Point(436, 15);
+            this.tlpBaseConfig4.Name = "tlpBaseConfig4";
+            this.tlpBaseConfig4.RowCount = 3;
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.6F));
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98.4F));
+            this.tlpBaseConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tlpBaseConfig4.Size = new System.Drawing.Size(471, 573);
+            this.tlpBaseConfig4.TabIndex = 33;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1, 2);
+            this.tableLayoutPanel8.TabIndex = 25;
             // 
             // rgbPCores
             // 
@@ -400,19 +342,6 @@ namespace tccCsharp
             this.radBranco.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radBranco.UseVisualStyleBackColor = false;
             this.radBranco.CheckedChanged += new System.EventHandler(this.radBranco_CheckedChanged);
-            // 
-            // clRestaura
-            // 
-            this.clRestaura.LineColor = System.Drawing.Color.Black;
-            this.clRestaura.LineWidth = 1;
-            this.clRestaura.Location = new System.Drawing.Point(286, 21);
-            this.clRestaura.Name = "clRestaura";
-            this.clRestaura.Size = new System.Drawing.Size(75, 10);
-            this.clRestaura.TabIndex = 4;
-            this.clRestaura.Text = "customLine7";
-            this.clRestaura.Enter += new System.EventHandler(this.clRestaura_Enter);
-            this.clRestaura.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRestaura_KeyDown);
-            this.clRestaura.Leave += new System.EventHandler(this.clRestaura_Leave);
             // 
             // radPreto
             // 
@@ -896,6 +825,104 @@ namespace tccCsharp
             this.btnRestaurarPadrao.UseVisualStyleBackColor = true;
             this.btnRestaurarPadrao.Click += new System.EventHandler(this.btnRestaurarPadrao_Click);
             // 
+            // tlpBaseConfig3
+            // 
+            this.tlpBaseConfig3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBaseConfig3.ColumnCount = 1;
+            this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBaseConfig3.Controls.Add(this.tlpBaseConfig5, 0, 0);
+            this.tlpBaseConfig3.Controls.Add(this.tlpBaseConfig6, 0, 1);
+            this.tlpBaseConfig3.Location = new System.Drawing.Point(3, 15);
+            this.tlpBaseConfig3.Name = "tlpBaseConfig3";
+            this.tlpBaseConfig3.RowCount = 3;
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 204F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBaseConfig3.Size = new System.Drawing.Size(427, 573);
+            this.tlpBaseConfig3.TabIndex = 33;
+            // 
+            // tlpBaseConfig5
+            // 
+            this.tlpBaseConfig5.ColumnCount = 2;
+            this.tlpBaseConfig5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBaseConfig5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBaseConfig5.Controls.Add(this.lblConfigsG, 1, 1);
+            this.tlpBaseConfig5.Controls.Add(this.lblConfiguracoes, 1, 2);
+            this.tlpBaseConfig5.Location = new System.Drawing.Point(3, 3);
+            this.tlpBaseConfig5.Name = "tlpBaseConfig5";
+            this.tlpBaseConfig5.RowCount = 4;
+            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.80808F));
+            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.88889F));
+            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
+            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.575758F));
+            this.tlpBaseConfig5.Size = new System.Drawing.Size(421, 198);
+            this.tlpBaseConfig5.TabIndex = 0;
+            // 
+            // lblConfigsG
+            // 
+            this.lblConfigsG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblConfigsG.AutoSize = true;
+            this.lblConfigsG.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfigsG.Location = new System.Drawing.Point(23, 81);
+            this.lblConfigsG.Name = "lblConfigsG";
+            this.lblConfigsG.Size = new System.Drawing.Size(395, 37);
+            this.lblConfigsG.TabIndex = 28;
+            this.lblConfigsG.Text = "Configurações";
+            // 
+            // lblConfiguracoes
+            // 
+            this.lblConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblConfiguracoes.AutoSize = true;
+            this.lblConfiguracoes.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfiguracoes.Location = new System.Drawing.Point(23, 148);
+            this.lblConfiguracoes.Name = "lblConfiguracoes";
+            this.lblConfiguracoes.Size = new System.Drawing.Size(395, 24);
+            this.lblConfiguracoes.TabIndex = 27;
+            this.lblConfiguracoes.Text = "Configurações gerais e Acessibilidade";
+            // 
+            // tlpBaseConfig6
+            // 
+            this.tlpBaseConfig6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBaseConfig6.ColumnCount = 2;
+            this.tlpBaseConfig6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBaseConfig6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBaseConfig6.Controls.Add(this.gpbAgrupa, 1, 6);
+            this.tlpBaseConfig6.Controls.Add(this.btnAltTamF, 1, 1);
+            this.tlpBaseConfig6.Controls.Add(this.clAltF, 1, 0);
+            this.tlpBaseConfig6.Controls.Add(this.btnPersonalizar, 1, 3);
+            this.tlpBaseConfig6.Controls.Add(this.clTut, 1, 4);
+            this.tlpBaseConfig6.Controls.Add(this.btnTutoriais, 1, 5);
+            this.tlpBaseConfig6.Controls.Add(this.clPersonaliza, 1, 2);
+            this.tlpBaseConfig6.Location = new System.Drawing.Point(3, 207);
+            this.tlpBaseConfig6.Name = "tlpBaseConfig6";
+            this.tlpBaseConfig6.RowCount = 7;
+            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tlpBaseConfig6.Size = new System.Drawing.Size(421, 343);
+            this.tlpBaseConfig6.TabIndex = 1;
+            // 
+            // gpbAgrupa
+            // 
+            this.gpbAgrupa.Controls.Add(this.clVoltar);
+            this.gpbAgrupa.Controls.Add(this.clRestaura);
+            this.gpbAgrupa.Controls.Add(this.clLogout);
+            this.gpbAgrupa.Controls.Add(this.clRefresh);
+            this.gpbAgrupa.Location = new System.Drawing.Point(23, 282);
+            this.gpbAgrupa.Name = "gpbAgrupa";
+            this.gpbAgrupa.Size = new System.Drawing.Size(395, 55);
+            this.gpbAgrupa.TabIndex = 29;
+            this.gpbAgrupa.TabStop = false;
+            this.gpbAgrupa.Text = "groupBox1";
+            // 
             // clVoltar
             // 
             this.clVoltar.LineColor = System.Drawing.Color.Black;
@@ -908,6 +935,19 @@ namespace tccCsharp
             this.clVoltar.Enter += new System.EventHandler(this.clVoltar_Enter);
             this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
             this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
+            // 
+            // clRestaura
+            // 
+            this.clRestaura.LineColor = System.Drawing.Color.Black;
+            this.clRestaura.LineWidth = 1;
+            this.clRestaura.Location = new System.Drawing.Point(286, 21);
+            this.clRestaura.Name = "clRestaura";
+            this.clRestaura.Size = new System.Drawing.Size(75, 10);
+            this.clRestaura.TabIndex = 4;
+            this.clRestaura.Text = "customLine7";
+            this.clRestaura.Enter += new System.EventHandler(this.clRestaura_Enter);
+            this.clRestaura.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRestaura_KeyDown);
+            this.clRestaura.Leave += new System.EventHandler(this.clRestaura_Leave);
             // 
             // clLogout
             // 
@@ -945,7 +985,7 @@ namespace tccCsharp
             this.btnAltTamF.BorderThickness = 2;
             this.btnAltTamF.ButtonColor = System.Drawing.Color.White;
             this.btnAltTamF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAltTamF.Location = new System.Drawing.Point(23, 36);
+            this.btnAltTamF.Location = new System.Drawing.Point(23, 34);
             this.btnAltTamF.Name = "btnAltTamF";
             this.btnAltTamF.Size = new System.Drawing.Size(395, 42);
             this.btnAltTamF.TabIndex = 27;
@@ -978,7 +1018,7 @@ namespace tccCsharp
             this.btnPersonalizar.BorderThickness = 2;
             this.btnPersonalizar.ButtonColor = System.Drawing.Color.White;
             this.btnPersonalizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPersonalizar.Location = new System.Drawing.Point(23, 136);
+            this.btnPersonalizar.Location = new System.Drawing.Point(23, 127);
             this.btnPersonalizar.Name = "btnPersonalizar";
             this.btnPersonalizar.Size = new System.Drawing.Size(395, 42);
             this.btnPersonalizar.TabIndex = 28;
@@ -988,11 +1028,44 @@ namespace tccCsharp
             this.btnPersonalizar.UseVisualStyleBackColor = true;
             this.btnPersonalizar.Click += new System.EventHandler(this.btnPersonalizar_Click);
             // 
+            // clTut
+            // 
+            this.clTut.LineColor = System.Drawing.Color.Black;
+            this.clTut.LineWidth = 1;
+            this.clTut.Location = new System.Drawing.Point(23, 189);
+            this.clTut.Name = "clTut";
+            this.clTut.Size = new System.Drawing.Size(75, 10);
+            this.clTut.TabIndex = 3;
+            this.clTut.Text = "customLine2";
+            this.clTut.Enter += new System.EventHandler(this.clTut_Enter);
+            this.clTut.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clTut_KeyDown);
+            this.clTut.Leave += new System.EventHandler(this.clTut_Leave);
+            // 
+            // btnTutoriais
+            // 
+            this.btnTutoriais.AutoHoover = false;
+            this.btnTutoriais.BordaHoover = System.Drawing.Color.Green;
+            this.btnTutoriais.BordaPrincipal = System.Drawing.Color.Black;
+            this.btnTutoriais.BorderColor = System.Drawing.Color.Black;
+            this.btnTutoriais.BorderRadius = 10;
+            this.btnTutoriais.BorderThickness = 2;
+            this.btnTutoriais.ButtonColor = System.Drawing.Color.White;
+            this.btnTutoriais.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTutoriais.Location = new System.Drawing.Point(23, 220);
+            this.btnTutoriais.Name = "btnTutoriais";
+            this.btnTutoriais.Size = new System.Drawing.Size(395, 40);
+            this.btnTutoriais.TabIndex = 29;
+            this.btnTutoriais.TabStop = false;
+            this.btnTutoriais.Text = "Tutoriais de usabilidade";
+            this.btnTutoriais.TextoPrincipal = System.Drawing.Color.Black;
+            this.btnTutoriais.UseVisualStyleBackColor = true;
+            this.btnTutoriais.Click += new System.EventHandler(this.btnTutoriais_Click);
+            // 
             // clPersonaliza
             // 
             this.clPersonaliza.LineColor = System.Drawing.Color.Black;
             this.clPersonaliza.LineWidth = 1;
-            this.clPersonaliza.Location = new System.Drawing.Point(23, 103);
+            this.clPersonaliza.Location = new System.Drawing.Point(23, 96);
             this.clPersonaliza.Name = "clPersonaliza";
             this.clPersonaliza.Size = new System.Drawing.Size(75, 10);
             this.clPersonaliza.TabIndex = 2;
@@ -1023,78 +1096,6 @@ namespace tccCsharp
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // lblConfiguracoes
-            // 
-            this.lblConfiguracoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblConfiguracoes.AutoSize = true;
-            this.lblConfiguracoes.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfiguracoes.Location = new System.Drawing.Point(23, 148);
-            this.lblConfiguracoes.Name = "lblConfiguracoes";
-            this.lblConfiguracoes.Size = new System.Drawing.Size(395, 24);
-            this.lblConfiguracoes.TabIndex = 27;
-            this.lblConfiguracoes.Text = "Configurações gerais e Acessibilidade";
-            // 
-            // lblConfigsG
-            // 
-            this.lblConfigsG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblConfigsG.AutoSize = true;
-            this.lblConfigsG.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfigsG.Location = new System.Drawing.Point(23, 81);
-            this.lblConfigsG.Name = "lblConfigsG";
-            this.lblConfigsG.Size = new System.Drawing.Size(395, 37);
-            this.lblConfigsG.TabIndex = 28;
-            this.lblConfigsG.Text = "Configurações";
-            // 
-            // tlpBaseConfig5
-            // 
-            this.tlpBaseConfig5.ColumnCount = 2;
-            this.tlpBaseConfig5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBaseConfig5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBaseConfig5.Controls.Add(this.lblConfigsG, 1, 1);
-            this.tlpBaseConfig5.Controls.Add(this.lblConfiguracoes, 1, 2);
-            this.tlpBaseConfig5.Location = new System.Drawing.Point(3, 3);
-            this.tlpBaseConfig5.Name = "tlpBaseConfig5";
-            this.tlpBaseConfig5.RowCount = 4;
-            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.80808F));
-            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.88889F));
-            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
-            this.tlpBaseConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.575758F));
-            this.tlpBaseConfig5.Size = new System.Drawing.Size(421, 198);
-            this.tlpBaseConfig5.TabIndex = 0;
-            // 
-            // btnTutoriais
-            // 
-            this.btnTutoriais.AutoHoover = false;
-            this.btnTutoriais.BordaHoover = System.Drawing.Color.Green;
-            this.btnTutoriais.BordaPrincipal = System.Drawing.Color.Black;
-            this.btnTutoriais.BorderColor = System.Drawing.Color.Black;
-            this.btnTutoriais.BorderRadius = 10;
-            this.btnTutoriais.BorderThickness = 2;
-            this.btnTutoriais.ButtonColor = System.Drawing.Color.White;
-            this.btnTutoriais.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTutoriais.Location = new System.Drawing.Point(23, 236);
-            this.btnTutoriais.Name = "btnTutoriais";
-            this.btnTutoriais.Size = new System.Drawing.Size(395, 40);
-            this.btnTutoriais.TabIndex = 29;
-            this.btnTutoriais.TabStop = false;
-            this.btnTutoriais.Text = "Tutoriais de usabilidade";
-            this.btnTutoriais.TextoPrincipal = System.Drawing.Color.Black;
-            this.btnTutoriais.UseVisualStyleBackColor = true;
-            this.btnTutoriais.Click += new System.EventHandler(this.btnTutoriais_Click);
-            // 
-            // clTut
-            // 
-            this.clTut.LineColor = System.Drawing.Color.Black;
-            this.clTut.LineWidth = 1;
-            this.clTut.Location = new System.Drawing.Point(23, 203);
-            this.clTut.Name = "clTut";
-            this.clTut.Size = new System.Drawing.Size(75, 10);
-            this.clTut.TabIndex = 3;
-            this.clTut.Text = "customLine2";
-            this.clTut.Enter += new System.EventHandler(this.clTut_Enter);
-            this.clTut.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clTut_KeyDown);
-            this.clTut.Leave += new System.EventHandler(this.clTut_Leave);
-            // 
             // frmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1108,15 +1109,12 @@ namespace tccCsharp
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmConfiguracoes_FormClosing);
             this.Load += new System.EventHandler(this.frmConfiguracoes_Load);
             this.tlpBaseConfig1.ResumeLayout(false);
-            this.tlpBaseConfig2.ResumeLayout(false);
-            this.tlpBaseConfig4.ResumeLayout(false);
-            this.tlpBaseConfig3.ResumeLayout(false);
-            this.tlpBaseConfig6.ResumeLayout(false);
-            this.gpbAgrupa.ResumeLayout(false);
             this.rgbMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.opbRecarregar)).EndInit();
+            this.tlpBaseConfig2.ResumeLayout(false);
+            this.tlpBaseConfig4.ResumeLayout(false);
             this.rgbPCores.ResumeLayout(false);
             this.TLPPersonaliza.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -1124,8 +1122,11 @@ namespace tccCsharp
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tlpBaseConfig3.ResumeLayout(false);
             this.tlpBaseConfig5.ResumeLayout(false);
             this.tlpBaseConfig5.PerformLayout();
+            this.tlpBaseConfig6.ResumeLayout(false);
+            this.gpbAgrupa.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

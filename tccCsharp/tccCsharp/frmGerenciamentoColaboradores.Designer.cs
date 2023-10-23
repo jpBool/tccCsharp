@@ -47,6 +47,13 @@
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
             this.btnSairSSalvar = new RoundButton();
             this.RGBColaboradores = new tccCsharp.RoundedGroupBox();
+            this.clRecarregar = new CustomLine();
+            this.clLogout = new CustomLine();
+            this.clRemover = new CustomLine();
+            this.clAdicionar = new CustomLine();
+            this.clConfig = new CustomLine();
+            this.clVoltar = new CustomLine();
+            this.clProcurar = new CustomLine();
             this.dgvCriador = new System.Windows.Forms.DataGridView();
             this.nomeCriador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -389,7 +396,8 @@
             this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
             this.btnSairSSalvar.Name = "btnSairSSalvar";
             this.btnSairSSalvar.Size = new System.Drawing.Size(595, 36);
-            this.btnSairSSalvar.TabIndex = 12;
+            this.btnSairSSalvar.TabIndex = 10;
+            this.btnSairSSalvar.TabStop = false;
             this.btnSairSSalvar.Text = "VOLTAR PARA O GERENCIAMENTO DO PROJETO";
             this.btnSairSSalvar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnSairSSalvar.UseVisualStyleBackColor = true;
@@ -402,15 +410,113 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBColaboradores.BackgroundColor = System.Drawing.Color.White;
             this.RGBColaboradores.BorderWidth = 1F;
+            this.RGBColaboradores.Controls.Add(this.clLogout);
+            this.RGBColaboradores.Controls.Add(this.clVoltar);
+            this.RGBColaboradores.Controls.Add(this.clAdicionar);
+            this.RGBColaboradores.Controls.Add(this.clProcurar);
+            this.RGBColaboradores.Controls.Add(this.clRecarregar);
+            this.RGBColaboradores.Controls.Add(this.clRemover);
             this.RGBColaboradores.Controls.Add(this.dgvCriador);
+            this.RGBColaboradores.Controls.Add(this.clConfig);
             this.RGBColaboradores.Controls.Add(this.DGVColaboradores);
             this.RGBColaboradores.Controls.Add(this.lblColaboradores);
             this.RGBColaboradores.CornerRadius = 20;
             this.RGBColaboradores.Location = new System.Drawing.Point(3, 3);
             this.RGBColaboradores.Name = "RGBColaboradores";
             this.RGBColaboradores.Size = new System.Drawing.Size(617, 482);
-            this.RGBColaboradores.TabIndex = 1;
+            this.RGBColaboradores.TabIndex = 3;
             this.RGBColaboradores.TabStop = false;
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(416, 467);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 11;
+            this.clRecarregar.Text = "customLine2";
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(497, 467);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(75, 10);
+            this.clLogout.TabIndex = 12;
+            this.clLogout.Text = "customLine1";
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clRemover
+            // 
+            this.clRemover.LineColor = System.Drawing.Color.Red;
+            this.clRemover.LineWidth = 1;
+            this.clRemover.Location = new System.Drawing.Point(11, 467);
+            this.clRemover.Name = "clRemover";
+            this.clRemover.Size = new System.Drawing.Size(75, 10);
+            this.clRemover.TabIndex = 7;
+            this.clRemover.Text = "customLine5";
+            this.clRemover.Enter += new System.EventHandler(this.clRemover_Enter);
+            this.clRemover.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRemover_KeyDown);
+            this.clRemover.Leave += new System.EventHandler(this.clRemover_Leave);
+            // 
+            // clAdicionar
+            // 
+            this.clAdicionar.LineColor = System.Drawing.Color.Red;
+            this.clAdicionar.LineWidth = 1;
+            this.clAdicionar.Location = new System.Drawing.Point(173, 467);
+            this.clAdicionar.Name = "clAdicionar";
+            this.clAdicionar.Size = new System.Drawing.Size(75, 10);
+            this.clAdicionar.TabIndex = 8;
+            this.clAdicionar.Text = "customLine4";
+            this.clAdicionar.Enter += new System.EventHandler(this.clAdicionar_Enter);
+            this.clAdicionar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAdicionar_KeyDown);
+            this.clAdicionar.Leave += new System.EventHandler(this.clAdicionar_Leave);
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(335, 466);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 10;
+            this.clConfig.Text = "customLine3";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
+            // 
+            // clVoltar
+            // 
+            this.clVoltar.LineColor = System.Drawing.Color.Red;
+            this.clVoltar.LineWidth = 1;
+            this.clVoltar.Location = new System.Drawing.Point(254, 466);
+            this.clVoltar.Name = "clVoltar";
+            this.clVoltar.Size = new System.Drawing.Size(75, 10);
+            this.clVoltar.TabIndex = 9;
+            this.clVoltar.Text = "customLine2";
+            this.clVoltar.Enter += new System.EventHandler(this.clVoltar_Enter);
+            this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
+            this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
+            // 
+            // clProcurar
+            // 
+            this.clProcurar.LineColor = System.Drawing.Color.Red;
+            this.clProcurar.LineWidth = 1;
+            this.clProcurar.Location = new System.Drawing.Point(92, 467);
+            this.clProcurar.Name = "clProcurar";
+            this.clProcurar.Size = new System.Drawing.Size(75, 10);
+            this.clProcurar.TabIndex = 6;
+            this.clProcurar.Text = "customLine1";
+            this.clProcurar.Enter += new System.EventHandler(this.clProcurar_Enter);
+            this.clProcurar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clProcurar_KeyDown);
+            this.clProcurar.Leave += new System.EventHandler(this.clProcurar_Leave);
             // 
             // dgvCriador
             // 
@@ -473,8 +579,7 @@
             this.DGVColaboradores.ReadOnly = true;
             this.DGVColaboradores.RowHeadersVisible = false;
             this.DGVColaboradores.Size = new System.Drawing.Size(605, 355);
-            this.DGVColaboradores.TabIndex = 1;
-            this.DGVColaboradores.TabStop = false;
+            this.DGVColaboradores.TabIndex = 9;
             this.DGVColaboradores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVColaboradores_CellClick);
             this.DGVColaboradores.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DGVColaboradores_CellPainting);
             // 
@@ -567,7 +672,7 @@
             this.rgbNomeP.Location = new System.Drawing.Point(126, 3);
             this.rgbNomeP.Name = "rgbNomeP";
             this.rgbNomeP.Size = new System.Drawing.Size(488, 42);
-            this.rgbNomeP.TabIndex = 4;
+            this.rgbNomeP.TabIndex = 2;
             this.rgbNomeP.TabStop = false;
             // 
             // lblNomeProjeto
@@ -636,7 +741,8 @@
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TLPDados.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TLPDados.Size = new System.Drawing.Size(605, 468);
-            this.TLPDados.TabIndex = 12;
+            this.TLPDados.TabIndex = 1;
+            this.TLPDados.TabStop = true;
             // 
             // lblDados
             // 
@@ -673,7 +779,7 @@
             this.comboNome.Location = new System.Drawing.Point(152, 212);
             this.comboNome.Name = "comboNome";
             this.comboNome.Size = new System.Drawing.Size(300, 21);
-            this.comboNome.TabIndex = 13;
+            this.comboNome.TabIndex = 1;
             this.comboNome.SelectedIndexChanged += new System.EventHandler(this.comboNome_SelectedIndexChanged);
             // 
             // btnSalvar
@@ -693,7 +799,8 @@
             this.btnSalvar.Location = new System.Drawing.Point(3, 420);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(599, 45);
-            this.btnSalvar.TabIndex = 12;
+            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.TabStop = false;
             this.btnSalvar.Text = "ADICIONAR ESTE COLABORADOR / SALVAR ALTERAÇÃO";
             this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -734,7 +841,8 @@
             this.btnExcluir.Location = new System.Drawing.Point(305, 3);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(297, 40);
-            this.btnExcluir.TabIndex = 13;
+            this.btnExcluir.TabIndex = 7;
+            this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "REMOVER ESTE COLABORADOR";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -757,7 +865,8 @@
             this.btnNovo.Location = new System.Drawing.Point(3, 3);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(296, 40);
-            this.btnNovo.TabIndex = 14;
+            this.btnNovo.TabIndex = 6;
+            this.btnNovo.TabStop = false;
             this.btnNovo.Text = "PROCURAR NOVO COLABORADOR";
             this.btnNovo.TextoPrincipal = System.Drawing.Color.Black;
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -805,7 +914,7 @@
             this.radNao.Location = new System.Drawing.Point(426, 14);
             this.radNao.Name = "radNao";
             this.radNao.Size = new System.Drawing.Size(45, 17);
-            this.radNao.TabIndex = 0;
+            this.radNao.TabIndex = 4;
             this.radNao.TabStop = true;
             this.radNao.Text = "Não";
             this.radNao.UseVisualStyleBackColor = true;
@@ -818,7 +927,8 @@
             this.radSim.Location = new System.Drawing.Point(516, 14);
             this.radSim.Name = "radSim";
             this.radSim.Size = new System.Drawing.Size(42, 17);
-            this.radSim.TabIndex = 1;
+            this.radSim.TabIndex = 5;
+            this.radSim.TabStop = true;
             this.radSim.Text = "Sim";
             this.radSim.UseVisualStyleBackColor = true;
             // 
@@ -850,7 +960,8 @@
             this.textTelefone.Location = new System.Drawing.Point(46, 32);
             this.textTelefone.Name = "textTelefone";
             this.textTelefone.Size = new System.Drawing.Size(210, 20);
-            this.textTelefone.TabIndex = 16;
+            this.textTelefone.TabIndex = 5;
+            this.textTelefone.TabStop = false;
             // 
             // textEmail
             // 
@@ -859,7 +970,8 @@
             this.textEmail.Location = new System.Drawing.Point(348, 32);
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(210, 20);
-            this.textEmail.TabIndex = 15;
+            this.textEmail.TabIndex = 6;
+            this.textEmail.TabStop = false;
             // 
             // comboTelefone
             // 
@@ -868,7 +980,7 @@
             this.comboTelefone.Location = new System.Drawing.Point(46, 3);
             this.comboTelefone.Name = "comboTelefone";
             this.comboTelefone.Size = new System.Drawing.Size(210, 21);
-            this.comboTelefone.TabIndex = 1;
+            this.comboTelefone.TabIndex = 2;
             this.comboTelefone.SelectedIndexChanged += new System.EventHandler(this.comboTelefone_SelectedIndexChanged);
             // 
             // comboEmail
@@ -878,7 +990,7 @@
             this.comboEmail.Location = new System.Drawing.Point(348, 3);
             this.comboEmail.Name = "comboEmail";
             this.comboEmail.Size = new System.Drawing.Size(210, 21);
-            this.comboEmail.TabIndex = 0;
+            this.comboEmail.TabIndex = 3;
             this.comboEmail.SelectedIndexChanged += new System.EventHandler(this.comboEmail_SelectedIndexChanged);
             // 
             // textNome
@@ -888,7 +1000,8 @@
             this.textNome.Location = new System.Drawing.Point(152, 241);
             this.textNome.Name = "textNome";
             this.textNome.Size = new System.Drawing.Size(300, 20);
-            this.textNome.TabIndex = 14;
+            this.textNome.TabIndex = 2;
+            this.textNome.TabStop = false;
             // 
             // TLPHead1
             // 
@@ -1124,5 +1237,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeCriador;
         private System.Windows.Forms.DataGridViewTextBoxColumn mail;
         private System.Windows.Forms.DataGridViewTextBoxColumn tel;
+        private CustomLine clRecarregar;
+        private CustomLine clLogout;
+        private CustomLine clRemover;
+        private CustomLine clAdicionar;
+        private CustomLine clConfig;
+        private CustomLine clVoltar;
+        private CustomLine clProcurar;
     }
 }
