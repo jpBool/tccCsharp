@@ -977,7 +977,7 @@ namespace tccCsharp
             // 
             // btnAltTamF
             // 
-            this.btnAltTamF.AutoHoover = false;
+            this.btnAltTamF.AutoHoover = true;
             this.btnAltTamF.BordaHoover = System.Drawing.Color.Green;
             this.btnAltTamF.BordaPrincipal = System.Drawing.Color.Black;
             this.btnAltTamF.BorderColor = System.Drawing.Color.Black;

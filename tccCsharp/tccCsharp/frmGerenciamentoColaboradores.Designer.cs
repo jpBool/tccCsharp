@@ -47,17 +47,20 @@
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
             this.btnSairSSalvar = new RoundButton();
             this.RGBColaboradores = new tccCsharp.RoundedGroupBox();
-            this.clRecarregar = new CustomLine();
+            this.customLine1 = new CustomLine();
+            this.clNome = new CustomLine();
+            this.customLine3 = new CustomLine();
             this.clLogout = new CustomLine();
-            this.clRemover = new CustomLine();
-            this.clAdicionar = new CustomLine();
-            this.clConfig = new CustomLine();
             this.clVoltar = new CustomLine();
+            this.clAdicionar = new CustomLine();
             this.clProcurar = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.clRemover = new CustomLine();
             this.dgvCriador = new System.Windows.Forms.DataGridView();
             this.nomeCriador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clConfig = new CustomLine();
             this.DGVColaboradores = new System.Windows.Forms.DataGridView();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -410,6 +413,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBColaboradores.BackgroundColor = System.Drawing.Color.White;
             this.RGBColaboradores.BorderWidth = 1F;
+            this.RGBColaboradores.Controls.Add(this.customLine1);
+            this.RGBColaboradores.Controls.Add(this.clNome);
+            this.RGBColaboradores.Controls.Add(this.customLine3);
             this.RGBColaboradores.Controls.Add(this.clLogout);
             this.RGBColaboradores.Controls.Add(this.clVoltar);
             this.RGBColaboradores.Controls.Add(this.clAdicionar);
@@ -427,24 +433,44 @@
             this.RGBColaboradores.TabIndex = 3;
             this.RGBColaboradores.TabStop = false;
             // 
-            // clRecarregar
+            // customLine1
             // 
-            this.clRecarregar.LineColor = System.Drawing.Color.Black;
-            this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(416, 467);
-            this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
-            this.clRecarregar.TabIndex = 11;
-            this.clRecarregar.Text = "customLine2";
-            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
-            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
-            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            this.customLine1.LineColor = System.Drawing.Color.DarkOrange;
+            this.customLine1.LineWidth = 1;
+            this.customLine1.Location = new System.Drawing.Point(271, 254);
+            this.customLine1.Name = "customLine1";
+            this.customLine1.Size = new System.Drawing.Size(75, 10);
+            this.customLine1.TabIndex = 15;
+            this.customLine1.Text = "customLine4";
+            // 
+            // clNome
+            // 
+            this.clNome.LineColor = System.Drawing.Color.DarkOrange;
+            this.clNome.LineWidth = 1;
+            this.clNome.Location = new System.Drawing.Point(271, 219);
+            this.clNome.Name = "clNome";
+            this.clNome.Size = new System.Drawing.Size(75, 10);
+            this.clNome.TabIndex = 1;
+            this.clNome.Text = "customLine1";
+            this.clNome.Enter += new System.EventHandler(this.clNome_Enter);
+            this.clNome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clNome_KeyDown);
+            this.clNome.Leave += new System.EventHandler(this.clNome_Leave);
+            // 
+            // customLine3
+            // 
+            this.customLine3.LineColor = System.Drawing.Color.DarkOrange;
+            this.customLine3.LineWidth = 1;
+            this.customLine3.Location = new System.Drawing.Point(271, 235);
+            this.customLine3.Name = "customLine3";
+            this.customLine3.Size = new System.Drawing.Size(75, 10);
+            this.customLine3.TabIndex = 14;
+            this.customLine3.Text = "customLine5";
             // 
             // clLogout
             // 
             this.clLogout.LineColor = System.Drawing.Color.Black;
             this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(497, 467);
+            this.clLogout.Location = new System.Drawing.Point(365, 410);
             this.clLogout.Name = "clLogout";
             this.clLogout.Size = new System.Drawing.Size(75, 10);
             this.clLogout.TabIndex = 12;
@@ -453,50 +479,11 @@
             this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
             this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
             // 
-            // clRemover
-            // 
-            this.clRemover.LineColor = System.Drawing.Color.Red;
-            this.clRemover.LineWidth = 1;
-            this.clRemover.Location = new System.Drawing.Point(11, 467);
-            this.clRemover.Name = "clRemover";
-            this.clRemover.Size = new System.Drawing.Size(75, 10);
-            this.clRemover.TabIndex = 7;
-            this.clRemover.Text = "customLine5";
-            this.clRemover.Enter += new System.EventHandler(this.clRemover_Enter);
-            this.clRemover.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRemover_KeyDown);
-            this.clRemover.Leave += new System.EventHandler(this.clRemover_Leave);
-            // 
-            // clAdicionar
-            // 
-            this.clAdicionar.LineColor = System.Drawing.Color.Red;
-            this.clAdicionar.LineWidth = 1;
-            this.clAdicionar.Location = new System.Drawing.Point(173, 467);
-            this.clAdicionar.Name = "clAdicionar";
-            this.clAdicionar.Size = new System.Drawing.Size(75, 10);
-            this.clAdicionar.TabIndex = 8;
-            this.clAdicionar.Text = "customLine4";
-            this.clAdicionar.Enter += new System.EventHandler(this.clAdicionar_Enter);
-            this.clAdicionar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAdicionar_KeyDown);
-            this.clAdicionar.Leave += new System.EventHandler(this.clAdicionar_Leave);
-            // 
-            // clConfig
-            // 
-            this.clConfig.LineColor = System.Drawing.Color.Black;
-            this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(335, 466);
-            this.clConfig.Name = "clConfig";
-            this.clConfig.Size = new System.Drawing.Size(75, 10);
-            this.clConfig.TabIndex = 10;
-            this.clConfig.Text = "customLine3";
-            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
-            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
-            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
-            // 
             // clVoltar
             // 
             this.clVoltar.LineColor = System.Drawing.Color.Red;
             this.clVoltar.LineWidth = 1;
-            this.clVoltar.Location = new System.Drawing.Point(254, 466);
+            this.clVoltar.Location = new System.Drawing.Point(365, 349);
             this.clVoltar.Name = "clVoltar";
             this.clVoltar.Size = new System.Drawing.Size(75, 10);
             this.clVoltar.TabIndex = 9;
@@ -505,11 +492,24 @@
             this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
             this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
             // 
+            // clAdicionar
+            // 
+            this.clAdicionar.LineColor = System.Drawing.Color.Red;
+            this.clAdicionar.LineWidth = 1;
+            this.clAdicionar.Location = new System.Drawing.Point(365, 333);
+            this.clAdicionar.Name = "clAdicionar";
+            this.clAdicionar.Size = new System.Drawing.Size(75, 10);
+            this.clAdicionar.TabIndex = 8;
+            this.clAdicionar.Text = "customLine4";
+            this.clAdicionar.Enter += new System.EventHandler(this.clAdicionar_Enter);
+            this.clAdicionar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAdicionar_KeyDown);
+            this.clAdicionar.Leave += new System.EventHandler(this.clAdicionar_Leave);
+            // 
             // clProcurar
             // 
             this.clProcurar.LineColor = System.Drawing.Color.Red;
             this.clProcurar.LineWidth = 1;
-            this.clProcurar.Location = new System.Drawing.Point(92, 467);
+            this.clProcurar.Location = new System.Drawing.Point(365, 298);
             this.clProcurar.Name = "clProcurar";
             this.clProcurar.Size = new System.Drawing.Size(75, 10);
             this.clProcurar.TabIndex = 6;
@@ -517,6 +517,32 @@
             this.clProcurar.Enter += new System.EventHandler(this.clProcurar_Enter);
             this.clProcurar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clProcurar_KeyDown);
             this.clProcurar.Leave += new System.EventHandler(this.clProcurar_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(365, 394);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 11;
+            this.clRecarregar.Text = "customLine2";
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // clRemover
+            // 
+            this.clRemover.LineColor = System.Drawing.Color.Red;
+            this.clRemover.LineWidth = 1;
+            this.clRemover.Location = new System.Drawing.Point(365, 314);
+            this.clRemover.Name = "clRemover";
+            this.clRemover.Size = new System.Drawing.Size(75, 10);
+            this.clRemover.TabIndex = 7;
+            this.clRemover.Text = "customLine5";
+            this.clRemover.Enter += new System.EventHandler(this.clRemover_Enter);
+            this.clRemover.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRemover_KeyDown);
+            this.clRemover.Leave += new System.EventHandler(this.clRemover_Leave);
             // 
             // dgvCriador
             // 
@@ -558,6 +584,19 @@
             this.tel.HeaderText = "Telefone";
             this.tel.Name = "tel";
             this.tel.ReadOnly = true;
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(365, 378);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 10;
+            this.clConfig.Text = "customLine3";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
             // 
             // DGVColaboradores
             // 
@@ -780,6 +819,7 @@
             this.comboNome.Name = "comboNome";
             this.comboNome.Size = new System.Drawing.Size(300, 21);
             this.comboNome.TabIndex = 1;
+            this.comboNome.TabStop = false;
             this.comboNome.SelectedIndexChanged += new System.EventHandler(this.comboNome_SelectedIndexChanged);
             // 
             // btnSalvar
@@ -1244,5 +1284,8 @@
         private CustomLine clConfig;
         private CustomLine clVoltar;
         private CustomLine clProcurar;
+        private CustomLine customLine1;
+        private CustomLine clNome;
+        private CustomLine customLine3;
     }
 }

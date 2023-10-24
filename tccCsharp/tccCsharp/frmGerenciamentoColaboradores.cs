@@ -731,5 +731,25 @@ namespace tccCsharp
 
             }
         }
+
+        private void clNome_Enter(object sender, EventArgs e)
+        {
+            comboNome.BackColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clNome_Leave(object sender, EventArgs e)
+        {
+            comboNome.BackColor = Color.Red;
+        }
+
+        private void clNome_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                comboNome.BackColor = Color.Plum;
+                //comboNome.SelectedIndexChanged //();// (sender, e);
+
+            }
+        }
     }
 }
