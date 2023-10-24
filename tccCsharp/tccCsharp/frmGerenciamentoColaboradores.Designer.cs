@@ -47,9 +47,7 @@
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
             this.btnSairSSalvar = new RoundButton();
             this.RGBColaboradores = new tccCsharp.RoundedGroupBox();
-            this.customLine1 = new CustomLine();
             this.clNome = new CustomLine();
-            this.customLine3 = new CustomLine();
             this.clLogout = new CustomLine();
             this.clVoltar = new CustomLine();
             this.clAdicionar = new CustomLine();
@@ -363,8 +361,8 @@
             this.tlpBase4.Location = new System.Drawing.Point(632, 3);
             this.tlpBase4.Name = "tlpBase4";
             this.tlpBase4.RowCount = 2;
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.84531F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.1547F));
             this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpBase4.Size = new System.Drawing.Size(623, 543);
             this.tlpBase4.TabIndex = 1;
@@ -377,11 +375,18 @@
             this.rgbOpcoes.BackgroundColor = System.Drawing.Color.White;
             this.rgbOpcoes.BorderWidth = 1F;
             this.rgbOpcoes.Controls.Add(this.btnSairSSalvar);
+            this.rgbOpcoes.Controls.Add(this.clVoltar);
+            this.rgbOpcoes.Controls.Add(this.clConfig);
+            this.rgbOpcoes.Controls.Add(this.clRemover);
+            this.rgbOpcoes.Controls.Add(this.clRecarregar);
+            this.rgbOpcoes.Controls.Add(this.clAdicionar);
+            this.rgbOpcoes.Controls.Add(this.clProcurar);
+            this.rgbOpcoes.Controls.Add(this.clLogout);
             this.rgbOpcoes.CornerRadius = 20;
-            this.rgbOpcoes.Location = new System.Drawing.Point(3, 491);
+            this.rgbOpcoes.Location = new System.Drawing.Point(3, 480);
             this.rgbOpcoes.Name = "rgbOpcoes";
-            this.rgbOpcoes.Size = new System.Drawing.Size(617, 49);
-            this.rgbOpcoes.TabIndex = 0;
+            this.rgbOpcoes.Size = new System.Drawing.Size(617, 60);
+            this.rgbOpcoes.TabIndex = 3;
             this.rgbOpcoes.TabStop = false;
             // 
             // btnSairSSalvar
@@ -396,10 +401,10 @@
             this.btnSairSSalvar.ButtonColor = System.Drawing.Color.White;
             this.btnSairSSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairSSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSairSSalvar.Location = new System.Drawing.Point(11, 7);
+            this.btnSairSSalvar.Location = new System.Drawing.Point(11, 12);
             this.btnSairSSalvar.Name = "btnSairSSalvar";
             this.btnSairSSalvar.Size = new System.Drawing.Size(595, 36);
-            this.btnSairSSalvar.TabIndex = 10;
+            this.btnSairSSalvar.TabIndex = 9;
             this.btnSairSSalvar.TabStop = false;
             this.btnSairSSalvar.Text = "VOLTAR PARA O GERENCIAMENTO DO PROJETO";
             this.btnSairSSalvar.TextoPrincipal = System.Drawing.Color.Black;
@@ -413,64 +418,36 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGBColaboradores.BackgroundColor = System.Drawing.Color.White;
             this.RGBColaboradores.BorderWidth = 1F;
-            this.RGBColaboradores.Controls.Add(this.customLine1);
             this.RGBColaboradores.Controls.Add(this.clNome);
-            this.RGBColaboradores.Controls.Add(this.customLine3);
-            this.RGBColaboradores.Controls.Add(this.clLogout);
-            this.RGBColaboradores.Controls.Add(this.clVoltar);
-            this.RGBColaboradores.Controls.Add(this.clAdicionar);
-            this.RGBColaboradores.Controls.Add(this.clProcurar);
-            this.RGBColaboradores.Controls.Add(this.clRecarregar);
-            this.RGBColaboradores.Controls.Add(this.clRemover);
             this.RGBColaboradores.Controls.Add(this.dgvCriador);
-            this.RGBColaboradores.Controls.Add(this.clConfig);
             this.RGBColaboradores.Controls.Add(this.DGVColaboradores);
             this.RGBColaboradores.Controls.Add(this.lblColaboradores);
             this.RGBColaboradores.CornerRadius = 20;
             this.RGBColaboradores.Location = new System.Drawing.Point(3, 3);
             this.RGBColaboradores.Name = "RGBColaboradores";
-            this.RGBColaboradores.Size = new System.Drawing.Size(617, 482);
-            this.RGBColaboradores.TabIndex = 3;
+            this.RGBColaboradores.Size = new System.Drawing.Size(617, 471);
+            this.RGBColaboradores.TabIndex = 0;
             this.RGBColaboradores.TabStop = false;
-            // 
-            // customLine1
-            // 
-            this.customLine1.LineColor = System.Drawing.Color.DarkOrange;
-            this.customLine1.LineWidth = 1;
-            this.customLine1.Location = new System.Drawing.Point(271, 254);
-            this.customLine1.Name = "customLine1";
-            this.customLine1.Size = new System.Drawing.Size(75, 10);
-            this.customLine1.TabIndex = 15;
-            this.customLine1.Text = "customLine4";
             // 
             // clNome
             // 
             this.clNome.LineColor = System.Drawing.Color.DarkOrange;
             this.clNome.LineWidth = 1;
-            this.clNome.Location = new System.Drawing.Point(271, 219);
+            this.clNome.Location = new System.Drawing.Point(22, 455);
             this.clNome.Name = "clNome";
             this.clNome.Size = new System.Drawing.Size(75, 10);
             this.clNome.TabIndex = 1;
+            this.clNome.TabStop = false;
             this.clNome.Text = "customLine1";
             this.clNome.Enter += new System.EventHandler(this.clNome_Enter);
             this.clNome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clNome_KeyDown);
             this.clNome.Leave += new System.EventHandler(this.clNome_Leave);
             // 
-            // customLine3
-            // 
-            this.customLine3.LineColor = System.Drawing.Color.DarkOrange;
-            this.customLine3.LineWidth = 1;
-            this.customLine3.Location = new System.Drawing.Point(271, 235);
-            this.customLine3.Name = "customLine3";
-            this.customLine3.Size = new System.Drawing.Size(75, 10);
-            this.customLine3.TabIndex = 14;
-            this.customLine3.Text = "customLine5";
-            // 
             // clLogout
             // 
             this.clLogout.LineColor = System.Drawing.Color.Black;
             this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(365, 410);
+            this.clLogout.Location = new System.Drawing.Point(508, 50);
             this.clLogout.Name = "clLogout";
             this.clLogout.Size = new System.Drawing.Size(75, 10);
             this.clLogout.TabIndex = 12;
@@ -483,7 +460,7 @@
             // 
             this.clVoltar.LineColor = System.Drawing.Color.Red;
             this.clVoltar.LineWidth = 1;
-            this.clVoltar.Location = new System.Drawing.Point(365, 349);
+            this.clVoltar.Location = new System.Drawing.Point(265, 50);
             this.clVoltar.Name = "clVoltar";
             this.clVoltar.Size = new System.Drawing.Size(75, 10);
             this.clVoltar.TabIndex = 9;
@@ -496,7 +473,7 @@
             // 
             this.clAdicionar.LineColor = System.Drawing.Color.Red;
             this.clAdicionar.LineWidth = 1;
-            this.clAdicionar.Location = new System.Drawing.Point(365, 333);
+            this.clAdicionar.Location = new System.Drawing.Point(184, 50);
             this.clAdicionar.Name = "clAdicionar";
             this.clAdicionar.Size = new System.Drawing.Size(75, 10);
             this.clAdicionar.TabIndex = 8;
@@ -509,9 +486,9 @@
             // 
             this.clProcurar.LineColor = System.Drawing.Color.Red;
             this.clProcurar.LineWidth = 1;
-            this.clProcurar.Location = new System.Drawing.Point(365, 298);
+            this.clProcurar.Location = new System.Drawing.Point(22, 50);
             this.clProcurar.Name = "clProcurar";
-            this.clProcurar.Size = new System.Drawing.Size(75, 10);
+            this.clProcurar.Size = new System.Drawing.Size(76, 10);
             this.clProcurar.TabIndex = 6;
             this.clProcurar.Text = "customLine1";
             this.clProcurar.Enter += new System.EventHandler(this.clProcurar_Enter);
@@ -522,7 +499,7 @@
             // 
             this.clRecarregar.LineColor = System.Drawing.Color.Black;
             this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(365, 394);
+            this.clRecarregar.Location = new System.Drawing.Point(427, 50);
             this.clRecarregar.Name = "clRecarregar";
             this.clRecarregar.Size = new System.Drawing.Size(75, 10);
             this.clRecarregar.TabIndex = 11;
@@ -535,7 +512,7 @@
             // 
             this.clRemover.LineColor = System.Drawing.Color.Red;
             this.clRemover.LineWidth = 1;
-            this.clRemover.Location = new System.Drawing.Point(365, 314);
+            this.clRemover.Location = new System.Drawing.Point(103, 50);
             this.clRemover.Name = "clRemover";
             this.clRemover.Size = new System.Drawing.Size(75, 10);
             this.clRemover.TabIndex = 7;
@@ -589,7 +566,7 @@
             // 
             this.clConfig.LineColor = System.Drawing.Color.Black;
             this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(365, 378);
+            this.clConfig.Location = new System.Drawing.Point(346, 50);
             this.clConfig.Name = "clConfig";
             this.clConfig.Size = new System.Drawing.Size(75, 10);
             this.clConfig.TabIndex = 10;
@@ -617,8 +594,9 @@
             this.DGVColaboradores.Name = "DGVColaboradores";
             this.DGVColaboradores.ReadOnly = true;
             this.DGVColaboradores.RowHeadersVisible = false;
-            this.DGVColaboradores.Size = new System.Drawing.Size(605, 355);
-            this.DGVColaboradores.TabIndex = 9;
+            this.DGVColaboradores.Size = new System.Drawing.Size(605, 344);
+            this.DGVColaboradores.TabIndex = 6;
+            this.DGVColaboradores.TabStop = false;
             this.DGVColaboradores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVColaboradores_CellClick);
             this.DGVColaboradores.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DGVColaboradores_CellPainting);
             // 
@@ -819,8 +797,9 @@
             this.comboNome.Name = "comboNome";
             this.comboNome.Size = new System.Drawing.Size(300, 21);
             this.comboNome.TabIndex = 1;
-            this.comboNome.TabStop = false;
+            this.comboNome.DropDown += new System.EventHandler(this.comboNome_DropDown);
             this.comboNome.SelectedIndexChanged += new System.EventHandler(this.comboNome_SelectedIndexChanged);
+            this.comboNome.Click += new System.EventHandler(this.comboNome_Click);
             // 
             // btnSalvar
             // 
@@ -862,7 +841,8 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(605, 46);
-            this.tableLayoutPanel5.TabIndex = 4;
+            this.tableLayoutPanel5.TabIndex = 2;
+            this.tableLayoutPanel5.UseWaitCursor = true;
             // 
             // btnExcluir
             // 
@@ -876,7 +856,7 @@
             this.btnExcluir.BorderRadius = 20;
             this.btnExcluir.BorderThickness = 4;
             this.btnExcluir.ButtonColor = System.Drawing.Color.White;
-            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Location = new System.Drawing.Point(305, 3);
             this.btnExcluir.Name = "btnExcluir";
@@ -886,6 +866,7 @@
             this.btnExcluir.Text = "REMOVER ESTE COLABORADOR";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseWaitCursor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnNovo
@@ -900,7 +881,7 @@
             this.btnNovo.BorderRadius = 20;
             this.btnNovo.BorderThickness = 4;
             this.btnNovo.ButtonColor = System.Drawing.Color.White;
-            this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNovo.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Location = new System.Drawing.Point(3, 3);
             this.btnNovo.Name = "btnNovo";
@@ -910,6 +891,7 @@
             this.btnNovo.Text = "PROCURAR NOVO COLABORADOR";
             this.btnNovo.TextoPrincipal = System.Drawing.Color.Black;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.UseWaitCursor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // tableLayoutPanel4
@@ -1284,8 +1266,6 @@
         private CustomLine clConfig;
         private CustomLine clVoltar;
         private CustomLine clProcurar;
-        private CustomLine customLine1;
         private CustomLine clNome;
-        private CustomLine customLine3;
     }
 }

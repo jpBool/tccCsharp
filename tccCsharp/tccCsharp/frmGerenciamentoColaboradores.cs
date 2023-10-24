@@ -234,6 +234,20 @@ namespace tccCsharp
             DGVColaboradores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             FimCarregamento = true;
+
+            //teste
+            comboNome.TabIndex = 1;
+            comboTelefone.TabIndex = 2;
+            comboEmail.TabIndex = 3;
+
+            clAdicionar.Visible = false;
+            clProcurar.Visible = false;
+            clRemover.Visible = false;
+            clLogout.Visible = false;
+            clRecarregar.Visible = false;
+            clConfig.Visible = false;
+            clVoltar.Visible = false;
+            clNome.Visible = false;
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)
@@ -734,12 +748,12 @@ namespace tccCsharp
 
         private void clNome_Enter(object sender, EventArgs e)
         {
-            comboNome.BackColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            //comboNome.BackColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         private void clNome_Leave(object sender, EventArgs e)
         {
-            comboNome.BackColor = Color.Red;
+            //comboNome.BackColor = Color.Red;
         }
 
         private void clNome_KeyDown(object sender, KeyEventArgs e)
@@ -747,9 +761,23 @@ namespace tccCsharp
             if (e.KeyCode == Keys.Enter)
             {
                 comboNome.BackColor = Color.Plum;
-                //comboNome.SelectedIndexChanged //();// (sender, e);
+                //comboNome.TabIndex = 1;
+                //comboEmail.TabIndex = 2;
+                //comboTelefone.TabIndex = 3;
+                //comboNome_Click(sender, e); 
+                //comboNome_DropDown(sender, e);
 
             }
+        }
+
+        private void comboNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboNome_DropDown(object sender, EventArgs e)
+        {
+
         }
     }
 }
