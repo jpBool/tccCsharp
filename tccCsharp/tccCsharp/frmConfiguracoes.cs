@@ -41,6 +41,9 @@ namespace tccCsharp
             }
             clRestaura.Visible = false;
             DoDesign();
+
+            btnAltTamF.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnAltTamF.AutoHoover = true;
         }
 
         public void DoDesign()
