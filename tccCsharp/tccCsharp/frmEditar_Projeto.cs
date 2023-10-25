@@ -330,117 +330,6 @@ namespace tccCsharp
                 dtpPrevisao.Visible = true;
         }
 
-        private void btnAtualizar_Click(object sender, EventArgs e)
-        {
-
-            if (String.IsNullOrWhiteSpace(txtNomeProjeto.Text) || txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
-            {
-                txtNomeProjeto.Focus();
-                txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                return;
-            }
-            else
-                editando.nome_projeto = txtNomeProjeto.Text;
-
-            if (String.IsNullOrWhiteSpace(txtDescricaoBreve.Text) || txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
-            {
-                txtDescricaoBreve.Focus();
-                txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-                customLine5.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
-                return;
-            }
-            else
-                editando.descricao_breve = txtDescricaoBreve.Text;
-
-            if (comboStatus.SelectedIndex == -1)
-            {
-                MessageBox.Show("Selecione um Status", "Criando Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                comboStatus.Focus();
-                return;
-            }
-
-            else
-                editando.status = comboStatus.SelectedIndex + 1;
-
-            if (String.IsNullOrWhiteSpace(txtEmail.Text) || txtEmail.Text == "E-mail para que enteressados entrem em contato")
-                editando.email_contato = null;
-            else
-                editando.email_contato = txtEmail.Text;
-
-            if (String.IsNullOrWhiteSpace(txtAutores.Text) || txtAutores.Text == "Nome dos responsáveis pelo projeto")
-                editando.autores = null; 
-            else
-                editando.autores = txtAutores.Text;
-
-            if (String.IsNullOrWhiteSpace(txtLinguagem.Text) || txtLinguagem.Text == "Linguagens de programação utilizadas")
-                editando.linguagem = null;
-            else editando.linguagem = txtLinguagem.Text;
-
-            if (String.IsNullOrWhiteSpace(txtSite.Text) || txtSite.Text == "Site do projeto")
-                editando.link_site = null;
-            else
-                editando.link_site = txtSite.Text;
-
-            if (String.IsNullOrWhiteSpace(txtVideo.Text) || txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
-                editando.link_youtube = null;
-            else
-                editando.link_youtube = txtVideo.Text;
-
-            if (String.IsNullOrWhiteSpace(txtPalavras.Text) || txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
-                editando.palavras_chave = null;
-            else
-                editando.palavras_chave = PalavrasChave();
-
-            if (boxSemPrevisao.Checked == true)
-                editando.previsao = new DateTime(1, 1, 1);
-            else
-                editando.previsao = dtpPrevisao.Value;
-
-            if (radioSim.Checked == true)
-                editando.publico = true;
-            else
-                editando.publico = false;
-
-            if (String.IsNullOrWhiteSpace(txtDetalhada.Text) || txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
-                editando.descricao_detalhada = null;
-            else
-                editando.descricao_detalhada = txtDetalhada.Text;
-
-            if (Program.id_usuario == 0)
-            {
-                MessageBox.Show("Ocorreu um erro ao resgatar suas informações!!!", "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else
-                editando.atualizador = Program.id_usuario;
-
-
-            editando.data_atualizacao = DateTime.Now;
-
-            Banco.AtualizarProjeto(editando);
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Program.id_projeto_atual = 0;
-            this.Close();
-        }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            DialogResult resultado = MessageBox.Show("Deseja mesmo excluir seu projeto agora?", "Editando Projeto", MessageBoxButtons.YesNo);
-            if (resultado == DialogResult.Yes)
-            {
-                Banco.ExcluirProjeto();
-                this.Close();
-            }
-            else if (resultado == DialogResult.No)
-            {
-                return;
-            }  
-        }
-
         private void btnEtapas_Click(object sender, EventArgs e)
         {
             this.Visible = false;
@@ -917,9 +806,120 @@ namespace tccCsharp
             }
         }
 
-        private void clImagens_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
+            Program.id_projeto_atual = 0;
+            this.Close();
+        }
 
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (Banco.PodeGerenciar() == false)
+            {
+                MessageBox.Show("Você não tem permissão para Excluir esse projeto, é preciso ser um colaborador administrativo.", "Editar Projeto", MessageBoxButtons.OK);
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Deseja mesmo excluir seu projeto agora?", "Editando Projeto", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                Banco.ExcluirProjeto();
+                this.Close();
+            }
+            else if (resultado == DialogResult.No)
+            {
+                return;
+            }
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtNomeProjeto.Text) || txtNomeProjeto.Text == "Digite o nome do projeto (Obrigatório)")
+            {
+                txtNomeProjeto.Focus();
+                txtNomeProjeto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+                customLine1.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+            else
+                editando.nome_projeto = txtNomeProjeto.Text;
+
+            if (String.IsNullOrWhiteSpace(txtDescricaoBreve.Text) || txtDescricaoBreve.Text == "Defina seu projeto em poucas palavras (Obrigatório)")
+            {
+                txtDescricaoBreve.Focus();
+                txtDescricaoBreve.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+                customLine5.LineColor = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+                return;
+            }
+            else
+                editando.descricao_breve = txtDescricaoBreve.Text;
+
+            if (comboStatus.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecione um Status", "Criando Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                comboStatus.Focus();
+                return;
+            }
+
+            else
+                editando.status = comboStatus.SelectedIndex + 1;
+
+            if (String.IsNullOrWhiteSpace(txtEmail.Text) || txtEmail.Text == "E-mail para que enteressados entrem em contato")
+                editando.email_contato = null;
+            else
+                editando.email_contato = txtEmail.Text;
+
+            if (String.IsNullOrWhiteSpace(txtAutores.Text) || txtAutores.Text == "Nome dos responsáveis pelo projeto")
+                editando.autores = null;
+            else
+                editando.autores = txtAutores.Text;
+
+            if (String.IsNullOrWhiteSpace(txtLinguagem.Text) || txtLinguagem.Text == "Linguagens de programação utilizadas")
+                editando.linguagem = null;
+            else editando.linguagem = txtLinguagem.Text;
+
+            if (String.IsNullOrWhiteSpace(txtSite.Text) || txtSite.Text == "Site do projeto")
+                editando.link_site = null;
+            else
+                editando.link_site = txtSite.Text;
+
+            if (String.IsNullOrWhiteSpace(txtVideo.Text) || txtVideo.Text == "Vídeo demonstrativo do projeto no YouTube")
+                editando.link_youtube = null;
+            else
+                editando.link_youtube = txtVideo.Text;
+
+            if (String.IsNullOrWhiteSpace(txtPalavras.Text) || txtPalavras.Text == "Ex. Tecnologia; Inovação; Automação...")
+                editando.palavras_chave = null;
+            else
+                editando.palavras_chave = PalavrasChave();
+
+            if (boxSemPrevisao.Checked == true)
+                editando.previsao = new DateTime(1, 1, 1);
+            else
+                editando.previsao = dtpPrevisao.Value;
+
+            if (radioSim.Checked == true)
+                editando.publico = true;
+            else
+                editando.publico = false;
+
+            if (String.IsNullOrWhiteSpace(txtDetalhada.Text) || txtDetalhada.Text == "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Melhorias...")
+                editando.descricao_detalhada = null;
+            else
+                editando.descricao_detalhada = txtDetalhada.Text;
+
+            if (Program.id_usuario == 0)
+            {
+                MessageBox.Show("Ocorreu um erro ao resgatar suas informações!!!", "Criar Projeto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+                editando.atualizador = Program.id_usuario;
+
+
+            editando.data_atualizacao = DateTime.Now;
+
+            Banco.AtualizarProjeto(editando);
         }
     }
 }

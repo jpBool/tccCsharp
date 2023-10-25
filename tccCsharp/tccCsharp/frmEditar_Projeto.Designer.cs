@@ -948,7 +948,6 @@
             this.clImagens.Size = new System.Drawing.Size(75, 10);
             this.clImagens.TabIndex = 16;
             this.clImagens.Text = "customLine16";
-            this.clImagens.Click += new System.EventHandler(this.clImagens_Click);
             this.clImagens.Enter += new System.EventHandler(this.clImagens_Enter);
             this.clImagens.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clImagens_KeyDown);
             this.clImagens.Leave += new System.EventHandler(this.clImagens_Leave);
@@ -1173,6 +1172,7 @@
             this.btnExcluir.Text = "EXCLUIR PROJETO";
             this.btnExcluir.TextoPrincipal = System.Drawing.Color.Black;
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAtualizar
             // 
@@ -1196,6 +1196,7 @@
             this.btnAtualizar.Text = "ATUALIZAR";
             this.btnAtualizar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnCancelar
             // 
@@ -1219,6 +1220,7 @@
             this.btnCancelar.Text = "SAIR SEM SALVAR";
             this.btnCancelar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnColaboradores
             // 
