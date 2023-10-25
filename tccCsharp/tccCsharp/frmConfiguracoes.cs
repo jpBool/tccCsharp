@@ -44,6 +44,12 @@ namespace tccCsharp
 
             btnAltTamF.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             btnAltTamF.AutoHoover = true;
+
+            //gpbAgrupa.Visible = false;
+            //clAltF.Visible = false;
+            //clPersonaliza.Visible = false;
+            //clTut.Visible = false;
+            btnAltTamF.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         public void DoDesign()
@@ -136,7 +142,20 @@ namespace tccCsharp
             OPBLogout.BordaPrincipal = Color.Transparent;           
             opbRecarregar.BordaPrincipal = Color.Transparent;
 
-            gpbAgrupa.Visible = false;
+            //gpbAgrupa.Visible = false;
+            gpbAgrupa.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            gpbAgrupa.ForeColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clAltF.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clAltF.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clPersonaliza.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clPersonaliza.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clTut.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clTut.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+
+            clLogout.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clRefresh.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clVoltar.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clRestaura.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
             Logo(Program.logo);
         }
