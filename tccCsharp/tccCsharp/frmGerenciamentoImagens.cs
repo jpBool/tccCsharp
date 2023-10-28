@@ -147,6 +147,22 @@ namespace tccCsharp
         public void DoDesign()
         {
             tlpBase1.Font = Program.fonte;
+            lblProjeto.Font = Program.fonte;
+            lblUpload.Font = Program.fonte;
+            lblNomeImagem.Font = Program.fonte;
+            lblDescricao.Font = Program.fonte;
+            lblImagemPrincipal.Font = Program.fonte;
+            lblImagens.Font = Program.fonte;
+
+            btnExcluir.Font = Program.fonte;
+            btnLimparForm.Font = Program.fonte;
+            btnSairSSalvar.Font = Program.fonte;
+            btnSalvar.Font = Program.fonte;
+            btnUpload.Font = Program.fonte;
+            
+
+
+
             tlpBase1.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             TLPInfoshead.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 

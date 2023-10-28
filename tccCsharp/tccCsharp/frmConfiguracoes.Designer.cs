@@ -40,6 +40,7 @@ namespace tccCsharp
             this.tlpBaseConfig2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBaseConfig4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.clRestaura = new CustomLine();
             this.rgbPCores = new tccCsharp.RoundedGroupBox();
             this.TLPPersonaliza = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -77,21 +78,19 @@ namespace tccCsharp
             this.lblPCores = new System.Windows.Forms.Label();
             this.btnRestaurarPadrao = new RoundButton();
             this.tlpBaseConfig3 = new System.Windows.Forms.TableLayoutPanel();
+            this.clRefresh = new CustomLine();
             this.tlpBaseConfig5 = new System.Windows.Forms.TableLayoutPanel();
             this.lblConfigsG = new System.Windows.Forms.Label();
             this.lblConfiguracoes = new System.Windows.Forms.Label();
             this.tlpBaseConfig6 = new System.Windows.Forms.TableLayoutPanel();
-            this.gpbAgrupa = new System.Windows.Forms.GroupBox();
-            this.clVoltar = new CustomLine();
-            this.clRestaura = new CustomLine();
-            this.clLogout = new CustomLine();
-            this.clRefresh = new CustomLine();
             this.btnAltTamF = new RoundButton();
+            this.clVoltar = new CustomLine();
             this.clAltF = new CustomLine();
             this.btnPersonalizar = new RoundButton();
             this.clTut = new CustomLine();
             this.btnTutoriais = new RoundButton();
             this.clPersonaliza = new CustomLine();
+            this.clLogout = new CustomLine();
             this.btnVoltar = new RoundButton();
             this.tlpBaseConfig1.SuspendLayout();
             this.rgbMenu.SuspendLayout();
@@ -109,7 +108,6 @@ namespace tccCsharp
             this.tlpBaseConfig3.SuspendLayout();
             this.tlpBaseConfig5.SuspendLayout();
             this.tlpBaseConfig6.SuspendLayout();
-            this.gpbAgrupa.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpBaseConfig1
@@ -232,6 +230,7 @@ namespace tccCsharp
             this.tlpBaseConfig4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tlpBaseConfig4.Controls.Add(this.tableLayoutPanel8, 0, 0);
             this.tlpBaseConfig4.Controls.Add(this.rgbPCores, 1, 1);
+            this.tlpBaseConfig4.Controls.Add(this.clLogout, 1, 2);
             this.tlpBaseConfig4.Location = new System.Drawing.Point(436, 15);
             this.tlpBaseConfig4.Name = "tlpBaseConfig4";
             this.tlpBaseConfig4.RowCount = 3;
@@ -254,6 +253,19 @@ namespace tccCsharp
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1, 2);
             this.tableLayoutPanel8.TabIndex = 25;
+            // 
+            // clRestaura
+            // 
+            this.clRestaura.LineColor = System.Drawing.Color.Black;
+            this.clRestaura.LineWidth = 1;
+            this.clRestaura.Location = new System.Drawing.Point(3, 282);
+            this.clRestaura.Name = "clRestaura";
+            this.clRestaura.Size = new System.Drawing.Size(14, 10);
+            this.clRestaura.TabIndex = 4;
+            this.clRestaura.Text = "customLine7";
+            this.clRestaura.Enter += new System.EventHandler(this.clRestaura_Enter);
+            this.clRestaura.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRestaura_KeyDown);
+            this.clRestaura.Leave += new System.EventHandler(this.clRestaura_Leave);
             // 
             // rgbPCores
             // 
@@ -832,6 +844,7 @@ namespace tccCsharp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpBaseConfig3.ColumnCount = 1;
             this.tlpBaseConfig3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBaseConfig3.Controls.Add(this.clRefresh, 0, 2);
             this.tlpBaseConfig3.Controls.Add(this.tlpBaseConfig5, 0, 0);
             this.tlpBaseConfig3.Controls.Add(this.tlpBaseConfig6, 0, 1);
             this.tlpBaseConfig3.Location = new System.Drawing.Point(3, 15);
@@ -842,6 +855,19 @@ namespace tccCsharp
             this.tlpBaseConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpBaseConfig3.Size = new System.Drawing.Size(427, 573);
             this.tlpBaseConfig3.TabIndex = 33;
+            // 
+            // clRefresh
+            // 
+            this.clRefresh.LineColor = System.Drawing.Color.Black;
+            this.clRefresh.LineWidth = 1;
+            this.clRefresh.Location = new System.Drawing.Point(3, 556);
+            this.clRefresh.Name = "clRefresh";
+            this.clRefresh.Size = new System.Drawing.Size(75, 6);
+            this.clRefresh.TabIndex = 19;
+            this.clRefresh.Text = "customLine3";
+            this.clRefresh.Enter += new System.EventHandler(this.clRefresh_Enter);
+            this.clRefresh.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRefresh_KeyDown);
+            this.clRefresh.Leave += new System.EventHandler(this.clRefresh_Leave);
             // 
             // tlpBaseConfig5
             // 
@@ -890,8 +916,9 @@ namespace tccCsharp
             this.tlpBaseConfig6.ColumnCount = 2;
             this.tlpBaseConfig6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpBaseConfig6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBaseConfig6.Controls.Add(this.gpbAgrupa, 1, 6);
             this.tlpBaseConfig6.Controls.Add(this.btnAltTamF, 1, 1);
+            this.tlpBaseConfig6.Controls.Add(this.clVoltar, 1, 6);
+            this.tlpBaseConfig6.Controls.Add(this.clRestaura, 0, 6);
             this.tlpBaseConfig6.Controls.Add(this.clAltF, 1, 0);
             this.tlpBaseConfig6.Controls.Add(this.btnPersonalizar, 1, 3);
             this.tlpBaseConfig6.Controls.Add(this.clTut, 1, 4);
@@ -909,71 +936,6 @@ namespace tccCsharp
             this.tlpBaseConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
             this.tlpBaseConfig6.Size = new System.Drawing.Size(421, 343);
             this.tlpBaseConfig6.TabIndex = 1;
-            // 
-            // gpbAgrupa
-            // 
-            this.gpbAgrupa.Controls.Add(this.clVoltar);
-            this.gpbAgrupa.Controls.Add(this.clRestaura);
-            this.gpbAgrupa.Controls.Add(this.clLogout);
-            this.gpbAgrupa.Controls.Add(this.clRefresh);
-            this.gpbAgrupa.Location = new System.Drawing.Point(23, 282);
-            this.gpbAgrupa.Name = "gpbAgrupa";
-            this.gpbAgrupa.Size = new System.Drawing.Size(395, 55);
-            this.gpbAgrupa.TabIndex = 29;
-            this.gpbAgrupa.TabStop = false;
-            this.gpbAgrupa.Text = "groupBox1";
-            // 
-            // clVoltar
-            // 
-            this.clVoltar.LineColor = System.Drawing.Color.Black;
-            this.clVoltar.LineWidth = 1;
-            this.clVoltar.Location = new System.Drawing.Point(100, 21);
-            this.clVoltar.Name = "clVoltar";
-            this.clVoltar.Size = new System.Drawing.Size(75, 10);
-            this.clVoltar.TabIndex = 18;
-            this.clVoltar.Text = "customLine8";
-            this.clVoltar.Enter += new System.EventHandler(this.clVoltar_Enter);
-            this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
-            this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
-            // 
-            // clRestaura
-            // 
-            this.clRestaura.LineColor = System.Drawing.Color.Black;
-            this.clRestaura.LineWidth = 1;
-            this.clRestaura.Location = new System.Drawing.Point(286, 21);
-            this.clRestaura.Name = "clRestaura";
-            this.clRestaura.Size = new System.Drawing.Size(75, 10);
-            this.clRestaura.TabIndex = 4;
-            this.clRestaura.Text = "customLine7";
-            this.clRestaura.Enter += new System.EventHandler(this.clRestaura_Enter);
-            this.clRestaura.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRestaura_KeyDown);
-            this.clRestaura.Leave += new System.EventHandler(this.clRestaura_Leave);
-            // 
-            // clLogout
-            // 
-            this.clLogout.LineColor = System.Drawing.Color.Black;
-            this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(7, 21);
-            this.clLogout.Name = "clLogout";
-            this.clLogout.Size = new System.Drawing.Size(75, 10);
-            this.clLogout.TabIndex = 20;
-            this.clLogout.Text = "customLine4";
-            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
-            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
-            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
-            // 
-            // clRefresh
-            // 
-            this.clRefresh.LineColor = System.Drawing.Color.Black;
-            this.clRefresh.LineWidth = 1;
-            this.clRefresh.Location = new System.Drawing.Point(191, 21);
-            this.clRefresh.Name = "clRefresh";
-            this.clRefresh.Size = new System.Drawing.Size(75, 10);
-            this.clRefresh.TabIndex = 19;
-            this.clRefresh.Text = "customLine3";
-            this.clRefresh.Enter += new System.EventHandler(this.clRefresh_Enter);
-            this.clRefresh.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRefresh_KeyDown);
-            this.clRefresh.Leave += new System.EventHandler(this.clRefresh_Leave);
             // 
             // btnAltTamF
             // 
@@ -994,6 +956,19 @@ namespace tccCsharp
             this.btnAltTamF.TextoPrincipal = System.Drawing.Color.Black;
             this.btnAltTamF.UseVisualStyleBackColor = true;
             this.btnAltTamF.Click += new System.EventHandler(this.btnAltTamF_Click);
+            // 
+            // clVoltar
+            // 
+            this.clVoltar.LineColor = System.Drawing.Color.Black;
+            this.clVoltar.LineWidth = 1;
+            this.clVoltar.Location = new System.Drawing.Point(23, 282);
+            this.clVoltar.Name = "clVoltar";
+            this.clVoltar.Size = new System.Drawing.Size(75, 6);
+            this.clVoltar.TabIndex = 18;
+            this.clVoltar.Text = "customLine8";
+            this.clVoltar.Enter += new System.EventHandler(this.clVoltar_Enter);
+            this.clVoltar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clVoltar_KeyDown);
+            this.clVoltar.Leave += new System.EventHandler(this.clVoltar_Leave);
             // 
             // clAltF
             // 
@@ -1074,6 +1049,19 @@ namespace tccCsharp
             this.clPersonaliza.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clPersonaliza_KeyDown);
             this.clPersonaliza.Leave += new System.EventHandler(this.clPersonaliza_Leave);
             // 
+            // clLogout
+            // 
+            this.clLogout.LineColor = System.Drawing.Color.Black;
+            this.clLogout.LineWidth = 1;
+            this.clLogout.Location = new System.Drawing.Point(7, 525);
+            this.clLogout.Name = "clLogout";
+            this.clLogout.Size = new System.Drawing.Size(47, 6);
+            this.clLogout.TabIndex = 20;
+            this.clLogout.Text = "customLine4";
+            this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
+            this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
+            this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
             // btnVoltar
             // 
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -1126,7 +1114,6 @@ namespace tccCsharp
             this.tlpBaseConfig5.ResumeLayout(false);
             this.tlpBaseConfig5.PerformLayout();
             this.tlpBaseConfig6.ResumeLayout(false);
-            this.gpbAgrupa.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1182,7 +1169,6 @@ namespace tccCsharp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCorAviso2;
         private RoundButton btnRestaurarPadrao;
-        private System.Windows.Forms.GroupBox gpbAgrupa;
         private CustomLine clVoltar;
         private CustomLine clRestaura;
         private CustomLine clAltF;

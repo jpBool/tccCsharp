@@ -32,31 +32,12 @@
             this.tlpBase2 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBase3 = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBase5 = new System.Windows.Forms.TableLayoutPanel();
+            this.rgbNomeP = new tccCsharp.RoundedGroupBox();
+            this.lblNomeProjeto = new System.Windows.Forms.Label();
             this.lblProjeto = new System.Windows.Forms.Label();
             this.lblUpload = new System.Windows.Forms.Label();
             this.lblNomeImagem = new System.Windows.Forms.Label();
             this.lblDescricao = new System.Windows.Forms.Label();
-            this.tlpBase6 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblImagemPrincipal = new System.Windows.Forms.Label();
-            this.radNao = new System.Windows.Forms.RadioButton();
-            this.radSim = new System.Windows.Forms.RadioButton();
-            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tlpBase1 = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
-            this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
-            this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
-            this.lblCriador = new System.Windows.Forms.Label();
-            this.lblCriadoquando = new System.Windows.Forms.Label();
-            this.TLPAtualizacao = new System.Windows.Forms.TableLayoutPanel();
-            this.lblAtualizador = new System.Windows.Forms.Label();
-            this.lblAtualizadoquando = new System.Windows.Forms.Label();
-            this.groupPorcentagem = new tccCsharp.CustomGroupBox();
-            this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
-            this.lblPorcentagem = new System.Windows.Forms.Label();
-            this.rgbNomeP = new tccCsharp.RoundedGroupBox();
-            this.lblNomeProjeto = new System.Windows.Forms.Label();
             this.rgbDescricaoImg = new tccCsharp.RoundedGroupBox();
             this.lblCar3 = new System.Windows.Forms.Label();
             this.txtDescricaoImg = new System.Windows.Forms.TextBox();
@@ -69,9 +50,14 @@
             this.txtNomeImagem = new System.Windows.Forms.TextBox();
             this.lblCar2 = new System.Windows.Forms.Label();
             this.customLine2 = new CustomLine();
+            this.tlpBase6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnExcluir = new RoundButton();
             this.btnLimparForm = new RoundButton();
+            this.lblImagemPrincipal = new System.Windows.Forms.Label();
+            this.radNao = new System.Windows.Forms.RadioButton();
+            this.radSim = new System.Windows.Forms.RadioButton();
             this.btnSalvar = new RoundButton();
+            this.tlpBase4 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbOpcoes = new tccCsharp.RoundedGroupBox();
             this.btnSairSSalvar = new RoundButton();
             this.rgbImagensP = new tccCsharp.RoundedGroupBox();
@@ -84,6 +70,20 @@
             this.clLimparForm = new CustomLine();
             this.clVoltar = new CustomLine();
             this.clConfig = new CustomLine();
+            this.tlpBase1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPHead2 = new System.Windows.Forms.TableLayoutPanel();
+            this.rgbHeadImgs2 = new tccCsharp.RoundedGroupBox();
+            this.TLPInfoshead = new System.Windows.Forms.TableLayoutPanel();
+            this.TLPCriacao = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCriador = new System.Windows.Forms.Label();
+            this.lblCriadoquando = new System.Windows.Forms.Label();
+            this.TLPAtualizacao = new System.Windows.Forms.TableLayoutPanel();
+            this.lblAtualizador = new System.Windows.Forms.Label();
+            this.lblAtualizadoquando = new System.Windows.Forms.Label();
+            this.groupPorcentagem = new tccCsharp.CustomGroupBox();
+            this.groupPorcentagem2 = new tccCsharp.CustomGroupBox();
+            this.lblPorcentagem = new System.Windows.Forms.Label();
+            this.TLPHead1 = new System.Windows.Forms.TableLayoutPanel();
             this.rgbHeadImgs1 = new tccCsharp.RoundedGroupBox();
             this.opbLogo = new System.Windows.Forms.PictureBox();
             this.OPBRecarregar = new tccCsharp.OvalPictureBox();
@@ -93,23 +93,23 @@
             this.tlpBase2.SuspendLayout();
             this.tlpBase3.SuspendLayout();
             this.tlpBase5.SuspendLayout();
-            this.tlpBase6.SuspendLayout();
-            this.tlpBase4.SuspendLayout();
-            this.tlpBase1.SuspendLayout();
-            this.TLPHead2.SuspendLayout();
-            this.TLPHead1.SuspendLayout();
-            this.rgbHeadImgs2.SuspendLayout();
-            this.TLPInfoshead.SuspendLayout();
-            this.TLPCriacao.SuspendLayout();
-            this.TLPAtualizacao.SuspendLayout();
-            this.groupPorcentagem.SuspendLayout();
             this.rgbNomeP.SuspendLayout();
             this.rgbDescricaoImg.SuspendLayout();
             this.rgbUpload.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbUpload)).BeginInit();
             this.rgbNomeImagem.SuspendLayout();
+            this.tlpBase6.SuspendLayout();
+            this.tlpBase4.SuspendLayout();
             this.rgbOpcoes.SuspendLayout();
             this.rgbImagensP.SuspendLayout();
+            this.tlpBase1.SuspendLayout();
+            this.TLPHead2.SuspendLayout();
+            this.rgbHeadImgs2.SuspendLayout();
+            this.TLPInfoshead.SuspendLayout();
+            this.TLPCriacao.SuspendLayout();
+            this.TLPAtualizacao.SuspendLayout();
+            this.groupPorcentagem.SuspendLayout();
+            this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRecarregar)).BeginInit();
@@ -179,350 +179,6 @@
             this.tlpBase5.Size = new System.Drawing.Size(617, 412);
             this.tlpBase5.TabIndex = 0;
             // 
-            // lblProjeto
-            // 
-            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblProjeto.AutoSize = true;
-            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjeto.Location = new System.Drawing.Point(16, 19);
-            this.lblProjeto.Name = "lblProjeto";
-            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
-            this.lblProjeto.TabIndex = 0;
-            this.lblProjeto.Text = "Projeto:";
-            // 
-            // lblUpload
-            // 
-            this.lblUpload.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUpload.AutoSize = true;
-            this.lblUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpload.Location = new System.Drawing.Point(16, 178);
-            this.lblUpload.Name = "lblUpload";
-            this.lblUpload.Size = new System.Drawing.Size(64, 20);
-            this.lblUpload.TabIndex = 1;
-            this.lblUpload.Text = "Upload:";
-            // 
-            // lblNomeImagem
-            // 
-            this.lblNomeImagem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblNomeImagem.AutoSize = true;
-            this.lblNomeImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeImagem.Location = new System.Drawing.Point(9, 328);
-            this.lblNomeImagem.Name = "lblNomeImagem";
-            this.lblNomeImagem.Size = new System.Drawing.Size(77, 40);
-            this.lblNomeImagem.TabIndex = 2;
-            this.lblNomeImagem.Text = "Nome da imagem:";
-            // 
-            // lblDescricao
-            // 
-            this.lblDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(6, 380);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(84, 20);
-            this.lblDescricao.TabIndex = 3;
-            this.lblDescricao.Text = "Descrição:";
-            // 
-            // tlpBase6
-            // 
-            this.tlpBase6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase6.ColumnCount = 3;
-            this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.45697F));
-            this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.14911F));
-            this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.41815F));
-            this.tlpBase6.Controls.Add(this.btnExcluir, 0, 2);
-            this.tlpBase6.Controls.Add(this.btnLimparForm, 0, 2);
-            this.tlpBase6.Controls.Add(this.lblImagemPrincipal, 0, 1);
-            this.tlpBase6.Controls.Add(this.radNao, 1, 1);
-            this.tlpBase6.Controls.Add(this.radSim, 2, 1);
-            this.tlpBase6.Controls.Add(this.btnSalvar, 2, 2);
-            this.tlpBase6.Location = new System.Drawing.Point(3, 421);
-            this.tlpBase6.Name = "tlpBase6";
-            this.tlpBase6.RowCount = 3;
-            this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.3125F));
-            this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.6875F));
-            this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tlpBase6.Size = new System.Drawing.Size(617, 119);
-            this.tlpBase6.TabIndex = 4;
-            // 
-            // lblImagemPrincipal
-            // 
-            this.lblImagemPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagemPrincipal.Location = new System.Drawing.Point(3, 14);
-            this.lblImagemPrincipal.Name = "lblImagemPrincipal";
-            this.lblImagemPrincipal.Size = new System.Drawing.Size(237, 26);
-            this.lblImagemPrincipal.TabIndex = 4;
-            this.lblImagemPrincipal.Text = "Colocar como imagem principal?";
-            // 
-            // radNao
-            // 
-            this.radNao.AutoSize = true;
-            this.radNao.Checked = true;
-            this.radNao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radNao.Location = new System.Drawing.Point(308, 17);
-            this.radNao.Name = "radNao";
-            this.radNao.Size = new System.Drawing.Size(56, 24);
-            this.radNao.TabIndex = 4;
-            this.radNao.TabStop = true;
-            this.radNao.Text = "Não";
-            this.radNao.UseVisualStyleBackColor = true;
-            // 
-            // radSim
-            // 
-            this.radSim.AutoSize = true;
-            this.radSim.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radSim.Location = new System.Drawing.Point(456, 17);
-            this.radSim.Name = "radSim";
-            this.radSim.Size = new System.Drawing.Size(54, 24);
-            this.radSim.TabIndex = 5;
-            this.radSim.TabStop = true;
-            this.radSim.Text = "Sim";
-            this.radSim.UseVisualStyleBackColor = true;
-            // 
-            // tlpBase4
-            // 
-            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase4.ColumnCount = 1;
-            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
-            this.tlpBase4.Controls.Add(this.rgbImagensP, 0, 0);
-            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
-            this.tlpBase4.Name = "tlpBase4";
-            this.tlpBase4.RowCount = 2;
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
-            this.tlpBase4.TabIndex = 1;
-            // 
-            // tlpBase1
-            // 
-            this.tlpBase1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpBase1.ColumnCount = 1;
-            this.tlpBase1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBase1.Controls.Add(this.TLPHead2, 0, 1);
-            this.tlpBase1.Controls.Add(this.tlpBase2, 0, 2);
-            this.tlpBase1.Controls.Add(this.TLPHead1, 0, 0);
-            this.tlpBase1.Location = new System.Drawing.Point(-2, -3);
-            this.tlpBase1.Margin = new System.Windows.Forms.Padding(0);
-            this.tlpBase1.Name = "tlpBase1";
-            this.tlpBase1.RowCount = 3;
-            this.tlpBase1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tlpBase1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
-            this.tlpBase1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBase1.Size = new System.Drawing.Size(1264, 681);
-            this.tlpBase1.TabIndex = 5;
-            // 
-            // TLPHead2
-            // 
-            this.TLPHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead2.ColumnCount = 1;
-            this.TLPHead2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead2.Controls.Add(this.rgbHeadImgs2, 0, 0);
-            this.TLPHead2.Location = new System.Drawing.Point(0, 60);
-            this.TLPHead2.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead2.Name = "TLPHead2";
-            this.TLPHead2.RowCount = 1;
-            this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead2.Size = new System.Drawing.Size(1264, 66);
-            this.TLPHead2.TabIndex = 11;
-            // 
-            // TLPHead1
-            // 
-            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPHead1.ColumnCount = 1;
-            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
-            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
-            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
-            this.TLPHead1.Name = "TLPHead1";
-            this.TLPHead1.RowCount = 1;
-            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
-            this.TLPHead1.TabIndex = 7;
-            // 
-            // rgbHeadImgs2
-            // 
-            this.rgbHeadImgs2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rgbHeadImgs2.AutoSize = true;
-            this.rgbHeadImgs2.BackgroundColor = System.Drawing.Color.White;
-            this.rgbHeadImgs2.BorderWidth = 1F;
-            this.rgbHeadImgs2.Controls.Add(this.TLPInfoshead);
-            this.rgbHeadImgs2.CornerRadius = 10;
-            this.rgbHeadImgs2.Location = new System.Drawing.Point(3, 3);
-            this.rgbHeadImgs2.Name = "rgbHeadImgs2";
-            this.rgbHeadImgs2.Size = new System.Drawing.Size(1258, 60);
-            this.rgbHeadImgs2.TabIndex = 7;
-            this.rgbHeadImgs2.TabStop = false;
-            // 
-            // TLPInfoshead
-            // 
-            this.TLPInfoshead.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPInfoshead.ColumnCount = 5;
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.611557F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.74318F));
-            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.99037F));
-            this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
-            this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
-            this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
-            this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
-            this.TLPInfoshead.Location = new System.Drawing.Point(6, 5);
-            this.TLPInfoshead.Name = "TLPInfoshead";
-            this.TLPInfoshead.RowCount = 1;
-            this.TLPInfoshead.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPInfoshead.Size = new System.Drawing.Size(1246, 49);
-            this.TLPInfoshead.TabIndex = 1;
-            // 
-            // TLPCriacao
-            // 
-            this.TLPCriacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPCriacao.ColumnCount = 1;
-            this.TLPCriacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.Controls.Add(this.lblCriador, 0, 1);
-            this.TLPCriacao.Controls.Add(this.lblCriadoquando, 0, 0);
-            this.TLPCriacao.Location = new System.Drawing.Point(727, 0);
-            this.TLPCriacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.TLPCriacao.Name = "TLPCriacao";
-            this.TLPCriacao.RowCount = 2;
-            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPCriacao.Size = new System.Drawing.Size(240, 49);
-            this.TLPCriacao.TabIndex = 6;
-            // 
-            // lblCriador
-            // 
-            this.lblCriador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCriador.AutoSize = true;
-            this.lblCriador.Location = new System.Drawing.Point(3, 24);
-            this.lblCriador.Name = "lblCriador";
-            this.lblCriador.Size = new System.Drawing.Size(234, 25);
-            this.lblCriador.TabIndex = 1;
-            this.lblCriador.Text = "Criador:";
-            this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblCriadoquando
-            // 
-            this.lblCriadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCriadoquando.AutoSize = true;
-            this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
-            this.lblCriadoquando.Name = "lblCriadoquando";
-            this.lblCriadoquando.Size = new System.Drawing.Size(234, 24);
-            this.lblCriadoquando.TabIndex = 0;
-            this.lblCriadoquando.Text = "Criado em";
-            this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TLPAtualizacao
-            // 
-            this.TLPAtualizacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TLPAtualizacao.ColumnCount = 1;
-            this.TLPAtualizacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.Controls.Add(this.lblAtualizador, 0, 1);
-            this.TLPAtualizacao.Controls.Add(this.lblAtualizadoquando, 0, 0);
-            this.TLPAtualizacao.Location = new System.Drawing.Point(973, 0);
-            this.TLPAtualizacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.TLPAtualizacao.Name = "TLPAtualizacao";
-            this.TLPAtualizacao.RowCount = 2;
-            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPAtualizacao.Size = new System.Drawing.Size(270, 49);
-            this.TLPAtualizacao.TabIndex = 5;
-            // 
-            // lblAtualizador
-            // 
-            this.lblAtualizador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAtualizador.AutoSize = true;
-            this.lblAtualizador.Location = new System.Drawing.Point(3, 24);
-            this.lblAtualizador.Name = "lblAtualizador";
-            this.lblAtualizador.Size = new System.Drawing.Size(264, 25);
-            this.lblAtualizador.TabIndex = 3;
-            this.lblAtualizador.Text = "Atualizado por:";
-            this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblAtualizadoquando
-            // 
-            this.lblAtualizadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAtualizadoquando.AutoSize = true;
-            this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
-            this.lblAtualizadoquando.Name = "lblAtualizadoquando";
-            this.lblAtualizadoquando.Size = new System.Drawing.Size(264, 24);
-            this.lblAtualizadoquando.TabIndex = 2;
-            this.lblAtualizadoquando.Text = "Atualizado em";
-            this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // groupPorcentagem
-            // 
-            this.groupPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupPorcentagem.BackgroundColor = System.Drawing.Color.White;
-            this.groupPorcentagem.BorderWidth = 1F;
-            this.groupPorcentagem.Controls.Add(this.groupPorcentagem2);
-            this.groupPorcentagem.CornerRadius = 21;
-            this.groupPorcentagem.Location = new System.Drawing.Point(3, 3);
-            this.groupPorcentagem.Name = "groupPorcentagem";
-            this.groupPorcentagem.Size = new System.Drawing.Size(560, 43);
-            this.groupPorcentagem.TabIndex = 3;
-            this.groupPorcentagem.TabStop = false;
-            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
-            // 
-            // groupPorcentagem2
-            // 
-            this.groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
-            this.groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
-            this.groupPorcentagem2.BorderWidth = 1F;
-            this.groupPorcentagem2.CornerRadius = 22;
-            this.groupPorcentagem2.Location = new System.Drawing.Point(0, -1);
-            this.groupPorcentagem2.Name = "groupPorcentagem2";
-            this.groupPorcentagem2.Size = new System.Drawing.Size(45, 45);
-            this.groupPorcentagem2.TabIndex = 0;
-            this.groupPorcentagem2.TabStop = false;
-            // 
-            // lblPorcentagem
-            // 
-            this.lblPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPorcentagem.AutoSize = true;
-            this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(569, 0);
-            this.lblPorcentagem.Name = "lblPorcentagem";
-            this.lblPorcentagem.Size = new System.Drawing.Size(107, 49);
-            this.lblPorcentagem.TabIndex = 2;
-            this.lblPorcentagem.Text = "%";
-            this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // rgbNomeP
             // 
             this.rgbNomeP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -542,13 +198,62 @@
             // 
             this.lblNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblNomeProjeto.AutoEllipsis = true;
             this.lblNomeProjeto.AutoSize = true;
-            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeProjeto.Location = new System.Drawing.Point(15, 4);
+            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeProjeto.Location = new System.Drawing.Point(15, 8);
             this.lblNomeProjeto.Name = "lblNomeProjeto";
-            this.lblNomeProjeto.Size = new System.Drawing.Size(79, 29);
+            this.lblNomeProjeto.Size = new System.Drawing.Size(51, 20);
             this.lblNomeProjeto.TabIndex = 0;
             this.lblNomeProjeto.Text = "Nome";
+            // 
+            // lblProjeto
+            // 
+            this.lblProjeto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblProjeto.AutoEllipsis = true;
+            this.lblProjeto.AutoSize = true;
+            this.lblProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProjeto.Location = new System.Drawing.Point(16, 19);
+            this.lblProjeto.Name = "lblProjeto";
+            this.lblProjeto.Size = new System.Drawing.Size(63, 20);
+            this.lblProjeto.TabIndex = 0;
+            this.lblProjeto.Text = "Projeto:";
+            // 
+            // lblUpload
+            // 
+            this.lblUpload.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUpload.AutoEllipsis = true;
+            this.lblUpload.AutoSize = true;
+            this.lblUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpload.Location = new System.Drawing.Point(16, 178);
+            this.lblUpload.Name = "lblUpload";
+            this.lblUpload.Size = new System.Drawing.Size(64, 20);
+            this.lblUpload.TabIndex = 1;
+            this.lblUpload.Text = "Upload:";
+            // 
+            // lblNomeImagem
+            // 
+            this.lblNomeImagem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNomeImagem.AutoEllipsis = true;
+            this.lblNomeImagem.AutoSize = true;
+            this.lblNomeImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeImagem.Location = new System.Drawing.Point(9, 328);
+            this.lblNomeImagem.Name = "lblNomeImagem";
+            this.lblNomeImagem.Size = new System.Drawing.Size(77, 40);
+            this.lblNomeImagem.TabIndex = 2;
+            this.lblNomeImagem.Text = "Nome da imagem:";
+            // 
+            // lblDescricao
+            // 
+            this.lblDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDescricao.AutoEllipsis = true;
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricao.Location = new System.Drawing.Point(6, 380);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(84, 20);
+            this.lblDescricao.TabIndex = 3;
+            this.lblDescricao.Text = "Descrição:";
             // 
             // rgbDescricaoImg
             // 
@@ -726,6 +431,30 @@
             this.customLine2.TabStop = false;
             this.customLine2.Text = "customLine2";
             // 
+            // tlpBase6
+            // 
+            this.tlpBase6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase6.ColumnCount = 3;
+            this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.45697F));
+            this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.14911F));
+            this.tlpBase6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.41815F));
+            this.tlpBase6.Controls.Add(this.btnExcluir, 0, 2);
+            this.tlpBase6.Controls.Add(this.btnLimparForm, 0, 2);
+            this.tlpBase6.Controls.Add(this.lblImagemPrincipal, 0, 1);
+            this.tlpBase6.Controls.Add(this.radNao, 1, 1);
+            this.tlpBase6.Controls.Add(this.radSim, 2, 1);
+            this.tlpBase6.Controls.Add(this.btnSalvar, 2, 2);
+            this.tlpBase6.Location = new System.Drawing.Point(3, 421);
+            this.tlpBase6.Name = "tlpBase6";
+            this.tlpBase6.RowCount = 3;
+            this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.3125F));
+            this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.6875F));
+            this.tlpBase6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.tlpBase6.Size = new System.Drawing.Size(617, 119);
+            this.tlpBase6.TabIndex = 4;
+            // 
             // btnExcluir
             // 
             this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -770,6 +499,43 @@
             this.btnLimparForm.UseVisualStyleBackColor = true;
             this.btnLimparForm.Click += new System.EventHandler(this.btnLimparForm_Click);
             // 
+            // lblImagemPrincipal
+            // 
+            this.lblImagemPrincipal.AutoEllipsis = true;
+            this.lblImagemPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImagemPrincipal.Location = new System.Drawing.Point(3, 14);
+            this.lblImagemPrincipal.Name = "lblImagemPrincipal";
+            this.lblImagemPrincipal.Size = new System.Drawing.Size(237, 26);
+            this.lblImagemPrincipal.TabIndex = 4;
+            this.lblImagemPrincipal.Text = "Colocar como imagem principal?";
+            // 
+            // radNao
+            // 
+            this.radNao.AutoSize = true;
+            this.radNao.Checked = true;
+            this.radNao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radNao.Location = new System.Drawing.Point(308, 17);
+            this.radNao.Name = "radNao";
+            this.radNao.Size = new System.Drawing.Size(56, 24);
+            this.radNao.TabIndex = 4;
+            this.radNao.TabStop = true;
+            this.radNao.Text = "Não";
+            this.radNao.UseVisualStyleBackColor = true;
+            // 
+            // radSim
+            // 
+            this.radSim.AutoSize = true;
+            this.radSim.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radSim.Location = new System.Drawing.Point(456, 17);
+            this.radSim.Name = "radSim";
+            this.radSim.Size = new System.Drawing.Size(54, 24);
+            this.radSim.TabIndex = 5;
+            this.radSim.TabStop = true;
+            this.radSim.Text = "Sim";
+            this.radSim.UseVisualStyleBackColor = true;
+            // 
             // btnSalvar
             // 
             this.btnSalvar.AutoHoover = false;
@@ -790,6 +556,24 @@
             this.btnSalvar.TextoPrincipal = System.Drawing.Color.Black;
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // tlpBase4
+            // 
+            this.tlpBase4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase4.ColumnCount = 1;
+            this.tlpBase4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBase4.Controls.Add(this.rgbOpcoes, 0, 1);
+            this.tlpBase4.Controls.Add(this.rgbImagensP, 0, 0);
+            this.tlpBase4.Location = new System.Drawing.Point(632, 3);
+            this.tlpBase4.Name = "tlpBase4";
+            this.tlpBase4.RowCount = 2;
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpBase4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBase4.Size = new System.Drawing.Size(623, 543);
+            this.tlpBase4.TabIndex = 1;
             // 
             // rgbOpcoes
             // 
@@ -963,6 +747,232 @@
             this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
             this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
             // 
+            // tlpBase1
+            // 
+            this.tlpBase1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBase1.ColumnCount = 1;
+            this.tlpBase1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBase1.Controls.Add(this.TLPHead2, 0, 1);
+            this.tlpBase1.Controls.Add(this.tlpBase2, 0, 2);
+            this.tlpBase1.Controls.Add(this.TLPHead1, 0, 0);
+            this.tlpBase1.Location = new System.Drawing.Point(-2, -3);
+            this.tlpBase1.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpBase1.Name = "tlpBase1";
+            this.tlpBase1.RowCount = 3;
+            this.tlpBase1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tlpBase1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
+            this.tlpBase1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBase1.Size = new System.Drawing.Size(1264, 681);
+            this.tlpBase1.TabIndex = 5;
+            // 
+            // TLPHead2
+            // 
+            this.TLPHead2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead2.ColumnCount = 1;
+            this.TLPHead2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Controls.Add(this.rgbHeadImgs2, 0, 0);
+            this.TLPHead2.Location = new System.Drawing.Point(0, 60);
+            this.TLPHead2.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead2.Name = "TLPHead2";
+            this.TLPHead2.RowCount = 1;
+            this.TLPHead2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead2.Size = new System.Drawing.Size(1264, 66);
+            this.TLPHead2.TabIndex = 11;
+            // 
+            // rgbHeadImgs2
+            // 
+            this.rgbHeadImgs2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rgbHeadImgs2.AutoSize = true;
+            this.rgbHeadImgs2.BackgroundColor = System.Drawing.Color.White;
+            this.rgbHeadImgs2.BorderWidth = 1F;
+            this.rgbHeadImgs2.Controls.Add(this.TLPInfoshead);
+            this.rgbHeadImgs2.CornerRadius = 10;
+            this.rgbHeadImgs2.Location = new System.Drawing.Point(3, 3);
+            this.rgbHeadImgs2.Name = "rgbHeadImgs2";
+            this.rgbHeadImgs2.Size = new System.Drawing.Size(1258, 60);
+            this.rgbHeadImgs2.TabIndex = 7;
+            this.rgbHeadImgs2.TabStop = false;
+            // 
+            // TLPInfoshead
+            // 
+            this.TLPInfoshead.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPInfoshead.ColumnCount = 5;
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.611557F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.74318F));
+            this.TLPInfoshead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.99037F));
+            this.TLPInfoshead.Controls.Add(this.TLPCriacao, 3, 0);
+            this.TLPInfoshead.Controls.Add(this.TLPAtualizacao, 4, 0);
+            this.TLPInfoshead.Controls.Add(this.groupPorcentagem, 0, 0);
+            this.TLPInfoshead.Controls.Add(this.lblPorcentagem, 1, 0);
+            this.TLPInfoshead.Location = new System.Drawing.Point(6, 5);
+            this.TLPInfoshead.Name = "TLPInfoshead";
+            this.TLPInfoshead.RowCount = 1;
+            this.TLPInfoshead.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TLPInfoshead.Size = new System.Drawing.Size(1246, 49);
+            this.TLPInfoshead.TabIndex = 1;
+            // 
+            // TLPCriacao
+            // 
+            this.TLPCriacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPCriacao.ColumnCount = 1;
+            this.TLPCriacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPCriacao.Controls.Add(this.lblCriador, 0, 1);
+            this.TLPCriacao.Controls.Add(this.lblCriadoquando, 0, 0);
+            this.TLPCriacao.Location = new System.Drawing.Point(727, 0);
+            this.TLPCriacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.TLPCriacao.Name = "TLPCriacao";
+            this.TLPCriacao.RowCount = 2;
+            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPCriacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPCriacao.Size = new System.Drawing.Size(240, 49);
+            this.TLPCriacao.TabIndex = 6;
+            // 
+            // lblCriador
+            // 
+            this.lblCriador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriador.AutoEllipsis = true;
+            this.lblCriador.AutoSize = true;
+            this.lblCriador.Location = new System.Drawing.Point(3, 24);
+            this.lblCriador.Name = "lblCriador";
+            this.lblCriador.Size = new System.Drawing.Size(234, 25);
+            this.lblCriador.TabIndex = 1;
+            this.lblCriador.Text = "Criador:";
+            this.lblCriador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblCriadoquando
+            // 
+            this.lblCriadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriadoquando.AutoEllipsis = true;
+            this.lblCriadoquando.AutoSize = true;
+            this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
+            this.lblCriadoquando.Name = "lblCriadoquando";
+            this.lblCriadoquando.Size = new System.Drawing.Size(234, 24);
+            this.lblCriadoquando.TabIndex = 0;
+            this.lblCriadoquando.Text = "Criado em";
+            this.lblCriadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TLPAtualizacao
+            // 
+            this.TLPAtualizacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPAtualizacao.ColumnCount = 1;
+            this.TLPAtualizacao.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPAtualizacao.Controls.Add(this.lblAtualizador, 0, 1);
+            this.TLPAtualizacao.Controls.Add(this.lblAtualizadoquando, 0, 0);
+            this.TLPAtualizacao.Location = new System.Drawing.Point(973, 0);
+            this.TLPAtualizacao.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.TLPAtualizacao.Name = "TLPAtualizacao";
+            this.TLPAtualizacao.RowCount = 2;
+            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPAtualizacao.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPAtualizacao.Size = new System.Drawing.Size(270, 49);
+            this.TLPAtualizacao.TabIndex = 5;
+            // 
+            // lblAtualizador
+            // 
+            this.lblAtualizador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizador.AutoEllipsis = true;
+            this.lblAtualizador.AutoSize = true;
+            this.lblAtualizador.Location = new System.Drawing.Point(3, 24);
+            this.lblAtualizador.Name = "lblAtualizador";
+            this.lblAtualizador.Size = new System.Drawing.Size(264, 25);
+            this.lblAtualizador.TabIndex = 3;
+            this.lblAtualizador.Text = "Atualizado por:";
+            this.lblAtualizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAtualizadoquando
+            // 
+            this.lblAtualizadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizadoquando.AutoEllipsis = true;
+            this.lblAtualizadoquando.AutoSize = true;
+            this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
+            this.lblAtualizadoquando.Name = "lblAtualizadoquando";
+            this.lblAtualizadoquando.Size = new System.Drawing.Size(264, 24);
+            this.lblAtualizadoquando.TabIndex = 2;
+            this.lblAtualizadoquando.Text = "Atualizado em";
+            this.lblAtualizadoquando.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // groupPorcentagem
+            // 
+            this.groupPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPorcentagem.BackgroundColor = System.Drawing.Color.White;
+            this.groupPorcentagem.BorderWidth = 1F;
+            this.groupPorcentagem.Controls.Add(this.groupPorcentagem2);
+            this.groupPorcentagem.CornerRadius = 21;
+            this.groupPorcentagem.Location = new System.Drawing.Point(3, 3);
+            this.groupPorcentagem.Name = "groupPorcentagem";
+            this.groupPorcentagem.Size = new System.Drawing.Size(560, 43);
+            this.groupPorcentagem.TabIndex = 3;
+            this.groupPorcentagem.TabStop = false;
+            this.groupPorcentagem.SizeChanged += new System.EventHandler(this.groupPorcentagem_SizeChanged);
+            // 
+            // groupPorcentagem2
+            // 
+            this.groupPorcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.groupPorcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupPorcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.groupPorcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.groupPorcentagem2.BorderWidth = 1F;
+            this.groupPorcentagem2.CornerRadius = 22;
+            this.groupPorcentagem2.Location = new System.Drawing.Point(0, -1);
+            this.groupPorcentagem2.Name = "groupPorcentagem2";
+            this.groupPorcentagem2.Size = new System.Drawing.Size(45, 45);
+            this.groupPorcentagem2.TabIndex = 0;
+            this.groupPorcentagem2.TabStop = false;
+            // 
+            // lblPorcentagem
+            // 
+            this.lblPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagem.AutoSize = true;
+            this.lblPorcentagem.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentagem.Location = new System.Drawing.Point(569, 0);
+            this.lblPorcentagem.Name = "lblPorcentagem";
+            this.lblPorcentagem.Size = new System.Drawing.Size(107, 49);
+            this.lblPorcentagem.TabIndex = 2;
+            this.lblPorcentagem.Text = "%";
+            this.lblPorcentagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TLPHead1
+            // 
+            this.TLPHead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TLPHead1.ColumnCount = 1;
+            this.TLPHead1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Controls.Add(this.rgbHeadImgs1, 0, 0);
+            this.TLPHead1.Location = new System.Drawing.Point(0, 0);
+            this.TLPHead1.Margin = new System.Windows.Forms.Padding(0);
+            this.TLPHead1.Name = "TLPHead1";
+            this.TLPHead1.RowCount = 1;
+            this.TLPHead1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TLPHead1.Size = new System.Drawing.Size(1264, 60);
+            this.TLPHead1.TabIndex = 7;
+            // 
             // rgbHeadImgs1
             // 
             this.rgbHeadImgs1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1081,22 +1091,6 @@
             this.tlpBase3.ResumeLayout(false);
             this.tlpBase5.ResumeLayout(false);
             this.tlpBase5.PerformLayout();
-            this.tlpBase6.ResumeLayout(false);
-            this.tlpBase6.PerformLayout();
-            this.tlpBase4.ResumeLayout(false);
-            this.tlpBase1.ResumeLayout(false);
-            this.TLPHead2.ResumeLayout(false);
-            this.TLPHead2.PerformLayout();
-            this.TLPHead1.ResumeLayout(false);
-            this.TLPHead1.PerformLayout();
-            this.rgbHeadImgs2.ResumeLayout(false);
-            this.TLPInfoshead.ResumeLayout(false);
-            this.TLPInfoshead.PerformLayout();
-            this.TLPCriacao.ResumeLayout(false);
-            this.TLPCriacao.PerformLayout();
-            this.TLPAtualizacao.ResumeLayout(false);
-            this.TLPAtualizacao.PerformLayout();
-            this.groupPorcentagem.ResumeLayout(false);
             this.rgbNomeP.ResumeLayout(false);
             this.rgbNomeP.PerformLayout();
             this.rgbDescricaoImg.ResumeLayout(false);
@@ -1105,9 +1099,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbUpload)).EndInit();
             this.rgbNomeImagem.ResumeLayout(false);
             this.rgbNomeImagem.PerformLayout();
+            this.tlpBase6.ResumeLayout(false);
+            this.tlpBase6.PerformLayout();
+            this.tlpBase4.ResumeLayout(false);
             this.rgbOpcoes.ResumeLayout(false);
             this.rgbImagensP.ResumeLayout(false);
             this.rgbImagensP.PerformLayout();
+            this.tlpBase1.ResumeLayout(false);
+            this.TLPHead2.ResumeLayout(false);
+            this.TLPHead2.PerformLayout();
+            this.rgbHeadImgs2.ResumeLayout(false);
+            this.TLPInfoshead.ResumeLayout(false);
+            this.TLPInfoshead.PerformLayout();
+            this.TLPCriacao.ResumeLayout(false);
+            this.TLPCriacao.PerformLayout();
+            this.TLPAtualizacao.ResumeLayout(false);
+            this.TLPAtualizacao.PerformLayout();
+            this.groupPorcentagem.ResumeLayout(false);
+            this.TLPHead1.ResumeLayout(false);
+            this.TLPHead1.PerformLayout();
             this.rgbHeadImgs1.ResumeLayout(false);
             this.rgbHeadImgs1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).EndInit();

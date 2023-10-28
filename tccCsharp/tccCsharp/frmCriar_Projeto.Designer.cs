@@ -61,14 +61,14 @@
             this.txtNomeProjeto = new System.Windows.Forms.TextBox();
             this.lblcar1 = new System.Windows.Forms.Label();
             this.customLine1 = new CustomLine();
-            this.lblNome = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblAutores = new System.Windows.Forms.Label();
             this.lblLinguagem = new System.Windows.Forms.Label();
             this.lblBreve = new System.Windows.Forms.Label();
             this.lblSite = new System.Windows.Forms.Label();
-            this.lblYoutube = new System.Windows.Forms.Label();
             this.lblPalavras = new System.Windows.Forms.Label();
+            this.lblYoutube = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.RGBCampos = new tccCsharp.RoundedGroupBox();
             this.boxSemPrevisao = new System.Windows.Forms.CheckBox();
             this.radioSim = new System.Windows.Forms.RadioButton();
@@ -235,9 +235,9 @@
             this.RGBPalavras.BorderWidth = 2F;
             this.RGBPalavras.Controls.Add(this.txtPalavras);
             this.RGBPalavras.CornerRadius = 12;
-            this.RGBPalavras.Location = new System.Drawing.Point(165, 297);
+            this.RGBPalavras.Location = new System.Drawing.Point(164, 297);
             this.RGBPalavras.Name = "RGBPalavras";
-            this.RGBPalavras.Size = new System.Drawing.Size(450, 108);
+            this.RGBPalavras.Size = new System.Drawing.Size(451, 108);
             this.RGBPalavras.TabIndex = 8;
             this.RGBPalavras.TabStop = false;
             // 
@@ -252,7 +252,7 @@
             this.txtPalavras.MaxLength = 500;
             this.txtPalavras.Multiline = true;
             this.txtPalavras.Name = "txtPalavras";
-            this.txtPalavras.Size = new System.Drawing.Size(432, 89);
+            this.txtPalavras.Size = new System.Drawing.Size(433, 89);
             this.txtPalavras.TabIndex = 8;
             this.txtPalavras.Text = "Ex. Tecnologia; Inovação; Automação...";
             this.txtPalavras.Enter += new System.EventHandler(this.txtPalavras_Enter);
@@ -267,9 +267,9 @@
             this.RGBYoutube.Controls.Add(this.txtVideo);
             this.RGBYoutube.Controls.Add(this.customLine7);
             this.RGBYoutube.CornerRadius = 12;
-            this.RGBYoutube.Location = new System.Drawing.Point(165, 255);
+            this.RGBYoutube.Location = new System.Drawing.Point(164, 255);
             this.RGBYoutube.Name = "RGBYoutube";
-            this.RGBYoutube.Size = new System.Drawing.Size(450, 36);
+            this.RGBYoutube.Size = new System.Drawing.Size(451, 36);
             this.RGBYoutube.TabIndex = 7;
             this.RGBYoutube.TabStop = false;
             // 
@@ -283,7 +283,7 @@
             this.txtVideo.Location = new System.Drawing.Point(8, 6);
             this.txtVideo.MaxLength = 50;
             this.txtVideo.Name = "txtVideo";
-            this.txtVideo.Size = new System.Drawing.Size(434, 19);
+            this.txtVideo.Size = new System.Drawing.Size(435, 19);
             this.txtVideo.TabIndex = 7;
             this.txtVideo.Text = "Vídeo demonstrativo do projeto no YouTube";
             this.txtVideo.Enter += new System.EventHandler(this.txtVideo_Enter);
@@ -297,7 +297,7 @@
             this.customLine7.LineWidth = 3;
             this.customLine7.Location = new System.Drawing.Point(8, 26);
             this.customLine7.Name = "customLine7";
-            this.customLine7.Size = new System.Drawing.Size(434, 3);
+            this.customLine7.Size = new System.Drawing.Size(435, 3);
             this.customLine7.TabIndex = 3;
             this.customLine7.TabStop = false;
             this.customLine7.Text = "customLine7";
@@ -311,9 +311,9 @@
             this.RGBSite.Controls.Add(this.txtSite);
             this.RGBSite.Controls.Add(this.customLine6);
             this.RGBSite.CornerRadius = 12;
-            this.RGBSite.Location = new System.Drawing.Point(165, 213);
+            this.RGBSite.Location = new System.Drawing.Point(164, 213);
             this.RGBSite.Name = "RGBSite";
-            this.RGBSite.Size = new System.Drawing.Size(450, 36);
+            this.RGBSite.Size = new System.Drawing.Size(451, 36);
             this.RGBSite.TabIndex = 6;
             this.RGBSite.TabStop = false;
             // 
@@ -327,7 +327,7 @@
             this.txtSite.Location = new System.Drawing.Point(8, 6);
             this.txtSite.MaxLength = 250;
             this.txtSite.Name = "txtSite";
-            this.txtSite.Size = new System.Drawing.Size(434, 19);
+            this.txtSite.Size = new System.Drawing.Size(435, 19);
             this.txtSite.TabIndex = 6;
             this.txtSite.Text = "Site do projeto";
             this.txtSite.Enter += new System.EventHandler(this.txtSite_Enter);
@@ -341,7 +341,7 @@
             this.customLine6.LineWidth = 3;
             this.customLine6.Location = new System.Drawing.Point(8, 26);
             this.customLine6.Name = "customLine6";
-            this.customLine6.Size = new System.Drawing.Size(434, 3);
+            this.customLine6.Size = new System.Drawing.Size(435, 3);
             this.customLine6.TabIndex = 3;
             this.customLine6.TabStop = false;
             this.customLine6.Text = "customLine6";
@@ -356,9 +356,9 @@
             this.RGBBreve.Controls.Add(this.lblcar5);
             this.RGBBreve.Controls.Add(this.customLine5);
             this.RGBBreve.CornerRadius = 12;
-            this.RGBBreve.Location = new System.Drawing.Point(165, 171);
+            this.RGBBreve.Location = new System.Drawing.Point(164, 171);
             this.RGBBreve.Name = "RGBBreve";
-            this.RGBBreve.Size = new System.Drawing.Size(450, 36);
+            this.RGBBreve.Size = new System.Drawing.Size(451, 36);
             this.RGBBreve.TabIndex = 5;
             this.RGBBreve.TabStop = false;
             // 
@@ -372,7 +372,7 @@
             this.txtDescricaoBreve.Location = new System.Drawing.Point(8, 6);
             this.txtDescricaoBreve.MaxLength = 80;
             this.txtDescricaoBreve.Name = "txtDescricaoBreve";
-            this.txtDescricaoBreve.Size = new System.Drawing.Size(373, 19);
+            this.txtDescricaoBreve.Size = new System.Drawing.Size(374, 19);
             this.txtDescricaoBreve.TabIndex = 5;
             this.txtDescricaoBreve.Text = "Defina seu projeto em poucas palavras (Obrigatório)";
             this.txtDescricaoBreve.Enter += new System.EventHandler(this.txtDescricaoBreve_Enter);
@@ -383,7 +383,7 @@
             this.lblcar5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar5.AutoSize = true;
             this.lblcar5.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar5.Location = new System.Drawing.Point(377, 11);
+            this.lblcar5.Location = new System.Drawing.Point(378, 11);
             this.lblcar5.Name = "lblcar5";
             this.lblcar5.Size = new System.Drawing.Size(40, 13);
             this.lblcar5.TabIndex = 4;
@@ -397,7 +397,7 @@
             this.customLine5.LineWidth = 3;
             this.customLine5.Location = new System.Drawing.Point(8, 26);
             this.customLine5.Name = "customLine5";
-            this.customLine5.Size = new System.Drawing.Size(373, 3);
+            this.customLine5.Size = new System.Drawing.Size(374, 3);
             this.customLine5.TabIndex = 3;
             this.customLine5.TabStop = false;
             this.customLine5.Text = "customLine5";
@@ -412,9 +412,9 @@
             this.RGBLinguagem.Controls.Add(this.lblCar4);
             this.RGBLinguagem.Controls.Add(this.customLine4);
             this.RGBLinguagem.CornerRadius = 12;
-            this.RGBLinguagem.Location = new System.Drawing.Point(165, 129);
+            this.RGBLinguagem.Location = new System.Drawing.Point(164, 129);
             this.RGBLinguagem.Name = "RGBLinguagem";
-            this.RGBLinguagem.Size = new System.Drawing.Size(450, 36);
+            this.RGBLinguagem.Size = new System.Drawing.Size(451, 36);
             this.RGBLinguagem.TabIndex = 4;
             this.RGBLinguagem.TabStop = false;
             // 
@@ -428,7 +428,7 @@
             this.txtLinguagem.Location = new System.Drawing.Point(8, 6);
             this.txtLinguagem.MaxLength = 100;
             this.txtLinguagem.Name = "txtLinguagem";
-            this.txtLinguagem.Size = new System.Drawing.Size(373, 19);
+            this.txtLinguagem.Size = new System.Drawing.Size(374, 19);
             this.txtLinguagem.TabIndex = 4;
             this.txtLinguagem.Text = "Linguagens de programação utilizadas";
             this.txtLinguagem.Enter += new System.EventHandler(this.txtLinguagem_Enter);
@@ -439,7 +439,7 @@
             this.lblCar4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCar4.AutoSize = true;
             this.lblCar4.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar4.Location = new System.Drawing.Point(377, 12);
+            this.lblCar4.Location = new System.Drawing.Point(378, 12);
             this.lblCar4.Name = "lblCar4";
             this.lblCar4.Size = new System.Drawing.Size(46, 13);
             this.lblCar4.TabIndex = 4;
@@ -453,7 +453,7 @@
             this.customLine4.LineWidth = 3;
             this.customLine4.Location = new System.Drawing.Point(8, 26);
             this.customLine4.Name = "customLine4";
-            this.customLine4.Size = new System.Drawing.Size(373, 3);
+            this.customLine4.Size = new System.Drawing.Size(374, 3);
             this.customLine4.TabIndex = 3;
             this.customLine4.TabStop = false;
             this.customLine4.Text = "customLine4";
@@ -468,9 +468,9 @@
             this.RGBAutores.Controls.Add(this.lblCar3);
             this.RGBAutores.Controls.Add(this.customLine3);
             this.RGBAutores.CornerRadius = 12;
-            this.RGBAutores.Location = new System.Drawing.Point(165, 87);
+            this.RGBAutores.Location = new System.Drawing.Point(164, 87);
             this.RGBAutores.Name = "RGBAutores";
-            this.RGBAutores.Size = new System.Drawing.Size(450, 36);
+            this.RGBAutores.Size = new System.Drawing.Size(451, 36);
             this.RGBAutores.TabIndex = 3;
             this.RGBAutores.TabStop = false;
             // 
@@ -484,7 +484,7 @@
             this.txtAutores.Location = new System.Drawing.Point(8, 6);
             this.txtAutores.MaxLength = 150;
             this.txtAutores.Name = "txtAutores";
-            this.txtAutores.Size = new System.Drawing.Size(373, 19);
+            this.txtAutores.Size = new System.Drawing.Size(374, 19);
             this.txtAutores.TabIndex = 3;
             this.txtAutores.Text = "Nome dos responsáveis pelo projeto";
             this.txtAutores.Enter += new System.EventHandler(this.txtAutores_Enter);
@@ -495,7 +495,7 @@
             this.lblCar3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCar3.AutoSize = true;
             this.lblCar3.BackColor = System.Drawing.Color.Transparent;
-            this.lblCar3.Location = new System.Drawing.Point(377, 12);
+            this.lblCar3.Location = new System.Drawing.Point(378, 12);
             this.lblCar3.Name = "lblCar3";
             this.lblCar3.Size = new System.Drawing.Size(46, 13);
             this.lblCar3.TabIndex = 4;
@@ -509,7 +509,7 @@
             this.customLine3.LineWidth = 3;
             this.customLine3.Location = new System.Drawing.Point(8, 26);
             this.customLine3.Name = "customLine3";
-            this.customLine3.Size = new System.Drawing.Size(373, 3);
+            this.customLine3.Size = new System.Drawing.Size(374, 3);
             this.customLine3.TabIndex = 0;
             this.customLine3.TabStop = false;
             this.customLine3.Text = "customLine3";
@@ -524,9 +524,9 @@
             this.RGBEmail.Controls.Add(this.lblcar2);
             this.RGBEmail.Controls.Add(this.customLine2);
             this.RGBEmail.CornerRadius = 12;
-            this.RGBEmail.Location = new System.Drawing.Point(165, 45);
+            this.RGBEmail.Location = new System.Drawing.Point(164, 45);
             this.RGBEmail.Name = "RGBEmail";
-            this.RGBEmail.Size = new System.Drawing.Size(450, 36);
+            this.RGBEmail.Size = new System.Drawing.Size(451, 36);
             this.RGBEmail.TabIndex = 2;
             this.RGBEmail.TabStop = false;
             // 
@@ -540,7 +540,7 @@
             this.txtEmail.Location = new System.Drawing.Point(8, 6);
             this.txtEmail.MaxLength = 256;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(373, 19);
+            this.txtEmail.Size = new System.Drawing.Size(374, 19);
             this.txtEmail.TabIndex = 2;
             this.txtEmail.Text = "E-mail para que enteressados entrem em contato";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
@@ -551,7 +551,7 @@
             this.lblcar2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar2.AutoSize = true;
             this.lblcar2.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar2.Location = new System.Drawing.Point(377, 12);
+            this.lblcar2.Location = new System.Drawing.Point(378, 12);
             this.lblcar2.Name = "lblcar2";
             this.lblcar2.Size = new System.Drawing.Size(46, 13);
             this.lblcar2.TabIndex = 4;
@@ -565,7 +565,7 @@
             this.customLine2.LineWidth = 3;
             this.customLine2.Location = new System.Drawing.Point(8, 26);
             this.customLine2.Name = "customLine2";
-            this.customLine2.Size = new System.Drawing.Size(373, 3);
+            this.customLine2.Size = new System.Drawing.Size(374, 3);
             this.customLine2.TabIndex = 16;
             this.customLine2.TabStop = false;
             this.customLine2.Text = "customLine2";
@@ -580,9 +580,9 @@
             this.RGBNome.Controls.Add(this.lblcar1);
             this.RGBNome.Controls.Add(this.customLine1);
             this.RGBNome.CornerRadius = 12;
-            this.RGBNome.Location = new System.Drawing.Point(165, 3);
+            this.RGBNome.Location = new System.Drawing.Point(164, 3);
             this.RGBNome.Name = "RGBNome";
-            this.RGBNome.Size = new System.Drawing.Size(450, 36);
+            this.RGBNome.Size = new System.Drawing.Size(451, 36);
             this.RGBNome.TabIndex = 1;
             this.RGBNome.TabStop = false;
             // 
@@ -596,7 +596,7 @@
             this.txtNomeProjeto.Location = new System.Drawing.Point(8, 8);
             this.txtNomeProjeto.MaxLength = 20;
             this.txtNomeProjeto.Name = "txtNomeProjeto";
-            this.txtNomeProjeto.Size = new System.Drawing.Size(373, 19);
+            this.txtNomeProjeto.Size = new System.Drawing.Size(374, 19);
             this.txtNomeProjeto.TabIndex = 1;
             this.txtNomeProjeto.Text = "Digite o nome do projeto (Obrigatório)";
             this.txtNomeProjeto.Enter += new System.EventHandler(this.txtNomeProjeto_Enter);
@@ -607,7 +607,7 @@
             this.lblcar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar1.AutoSize = true;
             this.lblcar1.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar1.Location = new System.Drawing.Point(377, 12);
+            this.lblcar1.Location = new System.Drawing.Point(378, 12);
             this.lblcar1.Name = "lblcar1";
             this.lblcar1.Size = new System.Drawing.Size(40, 13);
             this.lblcar1.TabIndex = 1;
@@ -621,25 +621,10 @@
             this.customLine1.LineWidth = 3;
             this.customLine1.Location = new System.Drawing.Point(8, 28);
             this.customLine1.Name = "customLine1";
-            this.customLine1.Size = new System.Drawing.Size(373, 3);
+            this.customLine1.Size = new System.Drawing.Size(374, 3);
             this.customLine1.TabIndex = 15;
             this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
-            // 
-            // lblNome
-            // 
-            this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNome.AutoEllipsis = true;
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(15, 5);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(142, 32);
-            this.lblNome.TabIndex = 1;
-            this.lblNome.Text = "Nome do Projeto:";
-            this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblEmail
             // 
@@ -651,7 +636,7 @@
             this.lblEmail.Location = new System.Drawing.Point(15, 47);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(142, 32);
+            this.lblEmail.Size = new System.Drawing.Size(141, 32);
             this.lblEmail.TabIndex = 2;
             this.lblEmail.Text = "E-mail para Contato:";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -666,7 +651,7 @@
             this.lblAutores.Location = new System.Drawing.Point(15, 89);
             this.lblAutores.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblAutores.Name = "lblAutores";
-            this.lblAutores.Size = new System.Drawing.Size(142, 32);
+            this.lblAutores.Size = new System.Drawing.Size(141, 32);
             this.lblAutores.TabIndex = 3;
             this.lblAutores.Text = "Nome dos Autores:";
             this.lblAutores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -681,7 +666,7 @@
             this.lblLinguagem.Location = new System.Drawing.Point(15, 131);
             this.lblLinguagem.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblLinguagem.Name = "lblLinguagem";
-            this.lblLinguagem.Size = new System.Drawing.Size(142, 32);
+            this.lblLinguagem.Size = new System.Drawing.Size(141, 32);
             this.lblLinguagem.TabIndex = 4;
             this.lblLinguagem.Text = "Linguagem:";
             this.lblLinguagem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -696,7 +681,7 @@
             this.lblBreve.Location = new System.Drawing.Point(15, 173);
             this.lblBreve.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblBreve.Name = "lblBreve";
-            this.lblBreve.Size = new System.Drawing.Size(142, 32);
+            this.lblBreve.Size = new System.Drawing.Size(141, 32);
             this.lblBreve.TabIndex = 5;
             this.lblBreve.Text = "Descrição Breve:";
             this.lblBreve.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -711,25 +696,10 @@
             this.lblSite.Location = new System.Drawing.Point(15, 215);
             this.lblSite.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblSite.Name = "lblSite";
-            this.lblSite.Size = new System.Drawing.Size(142, 32);
+            this.lblSite.Size = new System.Drawing.Size(141, 32);
             this.lblSite.TabIndex = 6;
             this.lblSite.Text = "Link para Site:";
             this.lblSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblYoutube
-            // 
-            this.lblYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblYoutube.AutoEllipsis = true;
-            this.lblYoutube.AutoSize = true;
-            this.lblYoutube.Location = new System.Drawing.Point(15, 257);
-            this.lblYoutube.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.lblYoutube.Name = "lblYoutube";
-            this.lblYoutube.Size = new System.Drawing.Size(142, 32);
-            this.lblYoutube.TabIndex = 7;
-            this.lblYoutube.Text = "Link para Vídeo:";
-            this.lblYoutube.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblPalavras
             // 
@@ -741,10 +711,40 @@
             this.lblPalavras.Location = new System.Drawing.Point(15, 299);
             this.lblPalavras.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblPalavras.Name = "lblPalavras";
-            this.lblPalavras.Size = new System.Drawing.Size(142, 104);
+            this.lblPalavras.Size = new System.Drawing.Size(141, 104);
             this.lblPalavras.TabIndex = 8;
             this.lblPalavras.Text = "Palavras-Chave:";
             this.lblPalavras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblYoutube
+            // 
+            this.lblYoutube.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblYoutube.AutoEllipsis = true;
+            this.lblYoutube.AutoSize = true;
+            this.lblYoutube.Location = new System.Drawing.Point(15, 257);
+            this.lblYoutube.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblYoutube.Name = "lblYoutube";
+            this.lblYoutube.Size = new System.Drawing.Size(141, 32);
+            this.lblYoutube.TabIndex = 7;
+            this.lblYoutube.Text = "Link para Vídeo:";
+            this.lblYoutube.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblNome
+            // 
+            this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNome.AutoEllipsis = true;
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(15, 5);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(141, 32);
+            this.lblNome.TabIndex = 1;
+            this.lblNome.Text = "Nome do Projeto:";
+            this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // RGBCampos
             // 
@@ -773,7 +773,6 @@
             // 
             // boxSemPrevisao
             // 
-            this.boxSemPrevisao.AutoEllipsis = true;
             this.boxSemPrevisao.AutoSize = true;
             this.boxSemPrevisao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxSemPrevisao.Location = new System.Drawing.Point(252, 13);
@@ -795,7 +794,8 @@
             this.radioSim.Location = new System.Drawing.Point(346, 78);
             this.radioSim.Name = "radioSim";
             this.radioSim.Size = new System.Drawing.Size(54, 24);
-            this.radioSim.TabIndex = 12;
+            this.radioSim.TabIndex = 13;
+            this.radioSim.TabStop = true;
             this.radioSim.Text = "Sim";
             this.radioSim.UseVisualStyleBackColor = false;
             // 
@@ -921,7 +921,7 @@
             this.txtDetalhada.Multiline = true;
             this.txtDetalhada.Name = "txtDetalhada";
             this.txtDetalhada.Size = new System.Drawing.Size(595, 271);
-            this.txtDetalhada.TabIndex = 13;
+            this.txtDetalhada.TabIndex = 14;
             this.txtDetalhada.Text = "Objetivo, Escopo, Funcionalidades principais, Tecnologias utilizadas, Futuras Mel" +
     "horias...";
             this.txtDetalhada.Enter += new System.EventHandler(this.txtDetalhada_Enter);
@@ -966,7 +966,7 @@
             this.Invisi5.Location = new System.Drawing.Point(487, 141);
             this.Invisi5.Name = "Invisi5";
             this.Invisi5.Size = new System.Drawing.Size(75, 23);
-            this.Invisi5.TabIndex = 19;
+            this.Invisi5.TabIndex = 20;
             this.Invisi5.Text = "Invisi5";
             this.Invisi5.Enter += new System.EventHandler(this.Invisi5_Enter);
             this.Invisi5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi5_KeyDown);
@@ -979,7 +979,7 @@
             this.Invisi4.Location = new System.Drawing.Point(487, 112);
             this.Invisi4.Name = "Invisi4";
             this.Invisi4.Size = new System.Drawing.Size(75, 23);
-            this.Invisi4.TabIndex = 18;
+            this.Invisi4.TabIndex = 19;
             this.Invisi4.Text = "Invisi4";
             this.Invisi4.Enter += new System.EventHandler(this.Invisi4_Enter);
             this.Invisi4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi4_KeyDown);
@@ -992,7 +992,7 @@
             this.Invisi3.Location = new System.Drawing.Point(487, 83);
             this.Invisi3.Name = "Invisi3";
             this.Invisi3.Size = new System.Drawing.Size(75, 23);
-            this.Invisi3.TabIndex = 17;
+            this.Invisi3.TabIndex = 18;
             this.Invisi3.Text = "Invisi3";
             this.Invisi3.Enter += new System.EventHandler(this.Invisi3_Enter);
             this.Invisi3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi3_KeyDown);
@@ -1005,7 +1005,7 @@
             this.Invisi2.Location = new System.Drawing.Point(487, 54);
             this.Invisi2.Name = "Invisi2";
             this.Invisi2.Size = new System.Drawing.Size(75, 23);
-            this.Invisi2.TabIndex = 16;
+            this.Invisi2.TabIndex = 17;
             this.Invisi2.Text = "Invisi2";
             this.Invisi2.Enter += new System.EventHandler(this.Invisi2_Enter);
             this.Invisi2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi2_KeyDown);
@@ -1018,7 +1018,7 @@
             this.Invisi1.Location = new System.Drawing.Point(487, 25);
             this.Invisi1.Name = "Invisi1";
             this.Invisi1.Size = new System.Drawing.Size(75, 23);
-            this.Invisi1.TabIndex = 15;
+            this.Invisi1.TabIndex = 16;
             this.Invisi1.Text = "Invisi1";
             this.Invisi1.Enter += new System.EventHandler(this.Invisi1_Enter);
             this.Invisi1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Invisi1_KeyDown);
@@ -1087,7 +1087,7 @@
             this.radioSemModelos.Location = new System.Drawing.Point(3, 40);
             this.radioSemModelos.Name = "radioSemModelos";
             this.radioSemModelos.Size = new System.Drawing.Size(173, 24);
-            this.radioSemModelos.TabIndex = 14;
+            this.radioSemModelos.TabIndex = 15;
             this.radioSemModelos.TabStop = true;
             this.radioSemModelos.Text = "Não utilizar modelos.";
             this.radioSemModelos.UseVisualStyleBackColor = false;

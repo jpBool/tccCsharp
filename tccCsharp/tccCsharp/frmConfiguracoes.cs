@@ -55,6 +55,19 @@ namespace tccCsharp
         public void DoDesign()
         {
             tlpBaseConfig1.Font = Program.fonte;
+
+            tlpBaseConfig2.Font = Program.fonte;
+            tlpBaseConfig3.Font = Program.fonte;
+            tlpBaseConfig4.Font = Program.fonte;
+            lblCoresAviso.Font = Program.fonte;
+            lblCoresElementos.Font = Program.fonte;
+            lblCoresTexto.Font = Program.fonte;
+            lblPCores.Font = Program.fonte;
+            lblConfigsG.Font = Program.fonte;          
+            lblConfiguracoes.Font = Program.fonte;
+            
+            
+
             //COMPONENTES DE AGRUPAMENTO
             tlpBaseConfig1.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             rgbMenu.BackgroundColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
@@ -142,9 +155,7 @@ namespace tccCsharp
             OPBLogout.BordaPrincipal = Color.Transparent;           
             opbRecarregar.BordaPrincipal = Color.Transparent;
 
-            //gpbAgrupa.Visible = false;
-            gpbAgrupa.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
-            gpbAgrupa.ForeColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            
             clAltF.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             clAltF.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             clPersonaliza.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
@@ -309,7 +320,7 @@ namespace tccCsharp
 
                 Font Nova = new Font("Microsoft Sans Serif", 12);
 
-                if (fd.Font.Size >= 16 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
+                if (fd.Font.Size > 16 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
                 {
                     Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
                 }
@@ -323,13 +334,13 @@ namespace tccCsharp
                 // No doDesign de cada form: TLP_Mãe.Font = Program.fonte;
                 //  (fiz no frmPerfil, funciona quase totalmente)
 
-                tlpBaseConfig1.Font = fd.Font;
-                tlpBaseConfig2.Font = fd.Font;
-                tlpBaseConfig3.Font = fd.Font;
-                tlpBaseConfig4.Font = fd.Font;
+                //tlpBaseConfig1.Font = fd.Font;
+                //tlpBaseConfig2.Font = fd.Font;
+                //tlpBaseConfig3.Font = fd.Font;
+                //tlpBaseConfig4.Font = fd.Font;
 
-                lblConfigsG.Font = fd.Font;
-                lblConfiguracoes.Font = fd.Font;
+                //lblConfigsG.Font = fd.Font;
+                //lblConfiguracoes.Font = fd.Font;
 
                 
             }

@@ -223,6 +223,7 @@
             this.lblCriador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriador.AutoEllipsis = true;
             this.lblCriador.AutoSize = true;
             this.lblCriador.Location = new System.Drawing.Point(3, 24);
             this.lblCriador.Name = "lblCriador";
@@ -236,6 +237,7 @@
             this.lblCriadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriadoquando.AutoEllipsis = true;
             this.lblCriadoquando.AutoSize = true;
             this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblCriadoquando.Name = "lblCriadoquando";
@@ -267,6 +269,7 @@
             this.lblAtualizador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizador.AutoEllipsis = true;
             this.lblAtualizador.AutoSize = true;
             this.lblAtualizador.Location = new System.Drawing.Point(3, 24);
             this.lblAtualizador.Name = "lblAtualizador";
@@ -280,6 +283,7 @@
             this.lblAtualizadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizadoquando.AutoEllipsis = true;
             this.lblAtualizadoquando.AutoSize = true;
             this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblAtualizadoquando.Name = "lblAtualizadoquando";
@@ -392,6 +396,7 @@
             // btnSairSSalvar
             // 
             this.btnSairSSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSairSSalvar.AutoEllipsis = true;
             this.btnSairSSalvar.AutoHoover = false;
             this.btnSairSSalvar.BordaHoover = System.Drawing.Color.Green;
             this.btnSairSSalvar.BordaPrincipal = System.Drawing.Color.Black;
@@ -696,11 +701,12 @@
             // 
             this.lblNomeProjeto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblNomeProjeto.AutoEllipsis = true;
             this.lblNomeProjeto.AutoSize = true;
-            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeProjeto.Location = new System.Drawing.Point(15, 5);
+            this.lblNomeProjeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeProjeto.Location = new System.Drawing.Point(15, 13);
             this.lblNomeProjeto.Name = "lblNomeProjeto";
-            this.lblNomeProjeto.Size = new System.Drawing.Size(79, 29);
+            this.lblNomeProjeto.Size = new System.Drawing.Size(51, 20);
             this.lblNomeProjeto.TabIndex = 0;
             this.lblNomeProjeto.Text = "Nome";
             // 
@@ -806,6 +812,7 @@
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalvar.AutoEllipsis = true;
             this.btnSalvar.AutoHoover = false;
             this.btnSalvar.BordaHoover = System.Drawing.Color.Green;
             this.btnSalvar.BordaPrincipal = System.Drawing.Color.Black;
@@ -849,6 +856,7 @@
             this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.AutoEllipsis = true;
             this.btnExcluir.AutoHoover = false;
             this.btnExcluir.BordaHoover = System.Drawing.Color.Green;
             this.btnExcluir.BordaPrincipal = System.Drawing.Color.Black;
@@ -874,6 +882,7 @@
             this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNovo.AutoEllipsis = true;
             this.btnNovo.AutoHoover = false;
             this.btnNovo.BordaHoover = System.Drawing.Color.Green;
             this.btnNovo.BordaPrincipal = System.Drawing.Color.Black;
