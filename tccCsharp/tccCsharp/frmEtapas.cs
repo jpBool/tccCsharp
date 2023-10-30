@@ -356,6 +356,7 @@ namespace tccCsharp
                     lblPorcentagemGP2.Visible = false;
                     Grupo2groupPorcentagem1.Visible = false;
                     Grupo2groupPorcentagem2.Visible = false;
+                    
                 }
                 
 
@@ -434,6 +435,7 @@ namespace tccCsharp
                 GPBEtapa21.Visible = false;
                 GPBEtapa22.Visible = false;
                 GPBEtapa23.Visible = false;
+                OPBRight2.Visible = false;
             }
 
 

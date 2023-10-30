@@ -389,7 +389,7 @@
             this.txtDescricaoBreve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricaoBreve.ForeColor = System.Drawing.Color.Gray;
             this.txtDescricaoBreve.Location = new System.Drawing.Point(8, 6);
-            this.txtDescricaoBreve.MaxLength = 80;
+            this.txtDescricaoBreve.MaxLength = 256;
             this.txtDescricaoBreve.Name = "txtDescricaoBreve";
             this.txtDescricaoBreve.Size = new System.Drawing.Size(382, 19);
             this.txtDescricaoBreve.TabIndex = 5;
@@ -404,9 +404,9 @@
             this.lblcar5.BackColor = System.Drawing.Color.Transparent;
             this.lblcar5.Location = new System.Drawing.Point(386, 12);
             this.lblcar5.Name = "lblcar5";
-            this.lblcar5.Size = new System.Drawing.Size(40, 13);
+            this.lblcar5.Size = new System.Drawing.Size(46, 13);
             this.lblcar5.TabIndex = 4;
-            this.lblcar5.Text = "80 car.";
+            this.lblcar5.Text = "256 car.";
             // 
             // customLine5
             // 

@@ -59,16 +59,25 @@
             this.lblProjetos = new System.Windows.Forms.Label();
             this.TLP_Filha2 = new System.Windows.Forms.TableLayoutPanel();
             this.RGPProjeto2 = new tccCsharp.RoundedGroupBox();
+            this.lblPorcentagemP2 = new System.Windows.Forms.Label();
+            this.Projeto2Porcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Projeto2Porcentagem2 = new tccCsharp.CustomGroupBox();
             this.opbEditarP2 = new tccCsharp.OvalPictureBox();
             this.RGBDescricaoP2 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP2 = new System.Windows.Forms.Label();
             this.lblNomeP2 = new System.Windows.Forms.Label();
             this.RGPProjeto1 = new tccCsharp.RoundedGroupBox();
+            this.lblPorcentagemP1 = new System.Windows.Forms.Label();
+            this.Projeto1Porcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Projeto1Porcentagem2 = new tccCsharp.CustomGroupBox();
             this.opbEditarP1 = new tccCsharp.OvalPictureBox();
             this.RGBDescricaoP1 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP1 = new System.Windows.Forms.Label();
             this.lblNomeP1 = new System.Windows.Forms.Label();
             this.RGPProjeto3 = new tccCsharp.RoundedGroupBox();
+            this.lblPorcentagemP3 = new System.Windows.Forms.Label();
+            this.Projeto3Porcentagem1 = new tccCsharp.CustomGroupBox();
+            this.Projeto3Porcentagem2 = new tccCsharp.CustomGroupBox();
             this.RGBDescricaoP3 = new tccCsharp.RoundedGroupBox();
             this.lblDescricaoP3 = new System.Windows.Forms.Label();
             this.lblNomeP3 = new System.Windows.Forms.Label();
@@ -98,12 +107,15 @@
             this.rgbProjetos.SuspendLayout();
             this.TLP_Filha2.SuspendLayout();
             this.RGPProjeto2.SuspendLayout();
+            this.Projeto2Porcentagem1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).BeginInit();
             this.RGBDescricaoP2.SuspendLayout();
             this.RGPProjeto1.SuspendLayout();
+            this.Projeto1Porcentagem1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).BeginInit();
             this.RGBDescricaoP1.SuspendLayout();
             this.RGPProjeto3.SuspendLayout();
+            this.Projeto3Porcentagem1.SuspendLayout();
             this.RGBDescricaoP3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRight)).BeginInit();
@@ -223,7 +235,7 @@
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(283, 85);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(283, 84);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // RGBSeguindo
@@ -240,7 +252,7 @@
             this.RGBSeguindo.Location = new System.Drawing.Point(151, 10);
             this.RGBSeguindo.Margin = new System.Windows.Forms.Padding(10);
             this.RGBSeguindo.Name = "RGBSeguindo";
-            this.RGBSeguindo.Size = new System.Drawing.Size(122, 65);
+            this.RGBSeguindo.Size = new System.Drawing.Size(122, 64);
             this.RGBSeguindo.TabIndex = 10;
             this.RGBSeguindo.TabStop = false;
             // 
@@ -249,7 +261,7 @@
             this.lblNSeguindo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNSeguindo.BackColor = System.Drawing.Color.Transparent;
-            this.lblNSeguindo.Location = new System.Drawing.Point(6, 26);
+            this.lblNSeguindo.Location = new System.Drawing.Point(6, 25);
             this.lblNSeguindo.Name = "lblNSeguindo";
             this.lblNSeguindo.Size = new System.Drawing.Size(110, 30);
             this.lblNSeguindo.TabIndex = 52;
@@ -265,7 +277,7 @@
             this.lblSeguindo.Location = new System.Drawing.Point(25, 1);
             this.lblSeguindo.Margin = new System.Windows.Forms.Padding(50);
             this.lblSeguindo.Name = "lblSeguindo";
-            this.lblSeguindo.Size = new System.Drawing.Size(66, 25);
+            this.lblSeguindo.Size = new System.Drawing.Size(66, 24);
             this.lblSeguindo.TabIndex = 50;
             this.lblSeguindo.Text = "(num)";
             this.lblSeguindo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -283,7 +295,7 @@
             this.RGBSeguidores.Location = new System.Drawing.Point(10, 10);
             this.RGBSeguidores.Margin = new System.Windows.Forms.Padding(10);
             this.RGBSeguidores.Name = "RGBSeguidores";
-            this.RGBSeguidores.Size = new System.Drawing.Size(121, 65);
+            this.RGBSeguidores.Size = new System.Drawing.Size(121, 64);
             this.RGBSeguidores.TabIndex = 0;
             this.RGBSeguidores.TabStop = false;
             // 
@@ -292,7 +304,7 @@
             this.lblNSeguidores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNSeguidores.BackColor = System.Drawing.Color.Transparent;
-            this.lblNSeguidores.Location = new System.Drawing.Point(7, 26);
+            this.lblNSeguidores.Location = new System.Drawing.Point(7, 25);
             this.lblNSeguidores.Name = "lblNSeguidores";
             this.lblNSeguidores.Size = new System.Drawing.Size(109, 30);
             this.lblNSeguidores.TabIndex = 51;
@@ -307,7 +319,7 @@
             this.lblSeguidores.BackColor = System.Drawing.Color.Transparent;
             this.lblSeguidores.Location = new System.Drawing.Point(29, 1);
             this.lblSeguidores.Name = "lblSeguidores";
-            this.lblSeguidores.Size = new System.Drawing.Size(67, 25);
+            this.lblSeguidores.Size = new System.Drawing.Size(67, 24);
             this.lblSeguidores.TabIndex = 49;
             this.lblSeguidores.Text = "(num)";
             this.lblSeguidores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,9 +337,9 @@
             this.RGBCommits.Controls.Add(this.lblAMD);
             this.RGBCommits.Controls.Add(this.lblAtivoDesde);
             this.RGBCommits.CornerRadius = 10;
-            this.RGBCommits.Location = new System.Drawing.Point(3, 94);
+            this.RGBCommits.Location = new System.Drawing.Point(3, 93);
             this.RGBCommits.Name = "RGBCommits";
-            this.RGBCommits.Size = new System.Drawing.Size(283, 62);
+            this.RGBCommits.Size = new System.Drawing.Size(283, 63);
             this.RGBCommits.TabIndex = 2;
             this.RGBCommits.TabStop = false;
             // 
@@ -335,7 +347,7 @@
             // 
             this.lblNCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNCommits.AutoSize = true;
-            this.lblNCommits.Location = new System.Drawing.Point(137, 2);
+            this.lblNCommits.Location = new System.Drawing.Point(137, 3);
             this.lblNCommits.Name = "lblNCommits";
             this.lblNCommits.Size = new System.Drawing.Size(68, 20);
             this.lblNCommits.TabIndex = 41;
@@ -345,7 +357,7 @@
             // 
             this.lblCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCommits.AutoSize = true;
-            this.lblCommits.Location = new System.Drawing.Point(17, 0);
+            this.lblCommits.Location = new System.Drawing.Point(17, 1);
             this.lblCommits.Name = "lblCommits";
             this.lblCommits.Size = new System.Drawing.Size(114, 20);
             this.lblCommits.TabIndex = 38;
@@ -355,7 +367,7 @@
             // 
             this.lblAMD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAMD.AutoSize = true;
-            this.lblAMD.Location = new System.Drawing.Point(152, 35);
+            this.lblAMD.Location = new System.Drawing.Point(152, 36);
             this.lblAMD.Name = "lblAMD";
             this.lblAMD.Size = new System.Drawing.Size(89, 20);
             this.lblAMD.TabIndex = 40;
@@ -365,7 +377,7 @@
             // 
             this.lblAtivoDesde.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAtivoDesde.AutoSize = true;
-            this.lblAtivoDesde.Location = new System.Drawing.Point(17, 35);
+            this.lblAtivoDesde.Location = new System.Drawing.Point(17, 36);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
             this.lblAtivoDesde.Size = new System.Drawing.Size(96, 20);
             this.lblAtivoDesde.TabIndex = 39;
@@ -571,6 +583,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGPProjeto2.BackgroundColor = System.Drawing.Color.White;
             this.RGPProjeto2.BorderWidth = 1F;
+            this.RGPProjeto2.Controls.Add(this.lblPorcentagemP2);
+            this.RGPProjeto2.Controls.Add(this.Projeto2Porcentagem1);
             this.RGPProjeto2.Controls.Add(this.opbEditarP2);
             this.RGPProjeto2.Controls.Add(this.RGBDescricaoP2);
             this.RGPProjeto2.Controls.Add(this.lblNomeP2);
@@ -581,6 +595,46 @@
             this.RGPProjeto2.Size = new System.Drawing.Size(326, 311);
             this.RGPProjeto2.TabIndex = 4;
             this.RGPProjeto2.TabStop = false;
+            // 
+            // lblPorcentagemP2
+            // 
+            this.lblPorcentagemP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagemP2.AutoSize = true;
+            this.lblPorcentagemP2.BackColor = System.Drawing.Color.Transparent;
+            this.lblPorcentagemP2.Location = new System.Drawing.Point(268, 267);
+            this.lblPorcentagemP2.Name = "lblPorcentagemP2";
+            this.lblPorcentagemP2.Size = new System.Drawing.Size(50, 20);
+            this.lblPorcentagemP2.TabIndex = 50;
+            this.lblPorcentagemP2.Text = "100%";
+            // 
+            // Projeto2Porcentagem1
+            // 
+            this.Projeto2Porcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Projeto2Porcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Projeto2Porcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Projeto2Porcentagem1.BorderWidth = 1F;
+            this.Projeto2Porcentagem1.Controls.Add(this.Projeto2Porcentagem2);
+            this.Projeto2Porcentagem1.CornerRadius = 14;
+            this.Projeto2Porcentagem1.Location = new System.Drawing.Point(25, 267);
+            this.Projeto2Porcentagem1.Name = "Projeto2Porcentagem1";
+            this.Projeto2Porcentagem1.Size = new System.Drawing.Size(237, 28);
+            this.Projeto2Porcentagem1.TabIndex = 49;
+            this.Projeto2Porcentagem1.TabStop = false;
+            // 
+            // Projeto2Porcentagem2
+            // 
+            this.Projeto2Porcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Projeto2Porcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Projeto2Porcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Projeto2Porcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Projeto2Porcentagem2.BorderWidth = 1F;
+            this.Projeto2Porcentagem2.CornerRadius = 14;
+            this.Projeto2Porcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Projeto2Porcentagem2.Name = "Projeto2Porcentagem2";
+            this.Projeto2Porcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Projeto2Porcentagem2.TabIndex = 0;
+            this.Projeto2Porcentagem2.TabStop = false;
             // 
             // opbEditarP2
             // 
@@ -614,7 +668,7 @@
             this.RGBDescricaoP2.Location = new System.Drawing.Point(25, 52);
             this.RGBDescricaoP2.Margin = new System.Windows.Forms.Padding(0);
             this.RGBDescricaoP2.Name = "RGBDescricaoP2";
-            this.RGBDescricaoP2.Size = new System.Drawing.Size(276, 225);
+            this.RGBDescricaoP2.Size = new System.Drawing.Size(276, 197);
             this.RGBDescricaoP2.TabIndex = 39;
             this.RGBDescricaoP2.TabStop = false;
             // 
@@ -625,7 +679,7 @@
             this.lblDescricaoP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricaoP2.Location = new System.Drawing.Point(3, 22);
             this.lblDescricaoP2.Name = "lblDescricaoP2";
-            this.lblDescricaoP2.Size = new System.Drawing.Size(270, 200);
+            this.lblDescricaoP2.Size = new System.Drawing.Size(270, 172);
             this.lblDescricaoP2.TabIndex = 36;
             this.lblDescricaoP2.Text = "Descrição do projeto";
             // 
@@ -646,6 +700,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGPProjeto1.BackgroundColor = System.Drawing.Color.White;
             this.RGPProjeto1.BorderWidth = 1F;
+            this.RGPProjeto1.Controls.Add(this.lblPorcentagemP1);
+            this.RGPProjeto1.Controls.Add(this.Projeto1Porcentagem1);
             this.RGPProjeto1.Controls.Add(this.opbEditarP1);
             this.RGPProjeto1.Controls.Add(this.RGBDescricaoP1);
             this.RGPProjeto1.Controls.Add(this.lblNomeP1);
@@ -656,6 +712,46 @@
             this.RGPProjeto1.Size = new System.Drawing.Size(326, 311);
             this.RGPProjeto1.TabIndex = 3;
             this.RGPProjeto1.TabStop = false;
+            // 
+            // lblPorcentagemP1
+            // 
+            this.lblPorcentagemP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagemP1.AutoSize = true;
+            this.lblPorcentagemP1.BackColor = System.Drawing.Color.Transparent;
+            this.lblPorcentagemP1.Location = new System.Drawing.Point(270, 267);
+            this.lblPorcentagemP1.Name = "lblPorcentagemP1";
+            this.lblPorcentagemP1.Size = new System.Drawing.Size(50, 20);
+            this.lblPorcentagemP1.TabIndex = 48;
+            this.lblPorcentagemP1.Text = "100%";
+            // 
+            // Projeto1Porcentagem1
+            // 
+            this.Projeto1Porcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Projeto1Porcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Projeto1Porcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Projeto1Porcentagem1.BorderWidth = 1F;
+            this.Projeto1Porcentagem1.Controls.Add(this.Projeto1Porcentagem2);
+            this.Projeto1Porcentagem1.CornerRadius = 14;
+            this.Projeto1Porcentagem1.Location = new System.Drawing.Point(27, 267);
+            this.Projeto1Porcentagem1.Name = "Projeto1Porcentagem1";
+            this.Projeto1Porcentagem1.Size = new System.Drawing.Size(237, 28);
+            this.Projeto1Porcentagem1.TabIndex = 47;
+            this.Projeto1Porcentagem1.TabStop = false;
+            // 
+            // Projeto1Porcentagem2
+            // 
+            this.Projeto1Porcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Projeto1Porcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Projeto1Porcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Projeto1Porcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Projeto1Porcentagem2.BorderWidth = 1F;
+            this.Projeto1Porcentagem2.CornerRadius = 14;
+            this.Projeto1Porcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Projeto1Porcentagem2.Name = "Projeto1Porcentagem2";
+            this.Projeto1Porcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Projeto1Porcentagem2.TabIndex = 0;
+            this.Projeto1Porcentagem2.TabStop = false;
             // 
             // opbEditarP1
             // 
@@ -689,7 +785,7 @@
             this.RGBDescricaoP1.Location = new System.Drawing.Point(27, 52);
             this.RGBDescricaoP1.Margin = new System.Windows.Forms.Padding(0);
             this.RGBDescricaoP1.Name = "RGBDescricaoP1";
-            this.RGBDescricaoP1.Size = new System.Drawing.Size(276, 225);
+            this.RGBDescricaoP1.Size = new System.Drawing.Size(276, 197);
             this.RGBDescricaoP1.TabIndex = 38;
             this.RGBDescricaoP1.TabStop = false;
             // 
@@ -700,7 +796,7 @@
             this.lblDescricaoP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricaoP1.Location = new System.Drawing.Point(3, 22);
             this.lblDescricaoP1.Name = "lblDescricaoP1";
-            this.lblDescricaoP1.Size = new System.Drawing.Size(270, 200);
+            this.lblDescricaoP1.Size = new System.Drawing.Size(270, 172);
             this.lblDescricaoP1.TabIndex = 36;
             this.lblDescricaoP1.Text = "Descrição do projeto";
             // 
@@ -721,6 +817,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RGPProjeto3.BackgroundColor = System.Drawing.Color.White;
             this.RGPProjeto3.BorderWidth = 1F;
+            this.RGPProjeto3.Controls.Add(this.lblPorcentagemP3);
+            this.RGPProjeto3.Controls.Add(this.Projeto3Porcentagem1);
             this.RGPProjeto3.Controls.Add(this.RGBDescricaoP3);
             this.RGPProjeto3.Controls.Add(this.lblNomeP3);
             this.RGPProjeto3.Controls.Add(this.opbEditarP3);
@@ -731,6 +829,46 @@
             this.RGPProjeto3.Size = new System.Drawing.Size(326, 311);
             this.RGPProjeto3.TabIndex = 5;
             this.RGPProjeto3.TabStop = false;
+            // 
+            // lblPorcentagemP3
+            // 
+            this.lblPorcentagemP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagemP3.AutoSize = true;
+            this.lblPorcentagemP3.BackColor = System.Drawing.Color.Transparent;
+            this.lblPorcentagemP3.Location = new System.Drawing.Point(268, 267);
+            this.lblPorcentagemP3.Name = "lblPorcentagemP3";
+            this.lblPorcentagemP3.Size = new System.Drawing.Size(50, 20);
+            this.lblPorcentagemP3.TabIndex = 52;
+            this.lblPorcentagemP3.Text = "100%";
+            // 
+            // Projeto3Porcentagem1
+            // 
+            this.Projeto3Porcentagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Projeto3Porcentagem1.BackColor = System.Drawing.Color.Transparent;
+            this.Projeto3Porcentagem1.BackgroundColor = System.Drawing.Color.White;
+            this.Projeto3Porcentagem1.BorderWidth = 1F;
+            this.Projeto3Porcentagem1.Controls.Add(this.Projeto3Porcentagem2);
+            this.Projeto3Porcentagem1.CornerRadius = 14;
+            this.Projeto3Porcentagem1.Location = new System.Drawing.Point(25, 267);
+            this.Projeto3Porcentagem1.Name = "Projeto3Porcentagem1";
+            this.Projeto3Porcentagem1.Size = new System.Drawing.Size(237, 28);
+            this.Projeto3Porcentagem1.TabIndex = 51;
+            this.Projeto3Porcentagem1.TabStop = false;
+            // 
+            // Projeto3Porcentagem2
+            // 
+            this.Projeto3Porcentagem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Projeto3Porcentagem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Projeto3Porcentagem2.BackColor = System.Drawing.Color.Transparent;
+            this.Projeto3Porcentagem2.BackgroundColor = System.Drawing.Color.Silver;
+            this.Projeto3Porcentagem2.BorderWidth = 1F;
+            this.Projeto3Porcentagem2.CornerRadius = 14;
+            this.Projeto3Porcentagem2.Location = new System.Drawing.Point(0, 0);
+            this.Projeto3Porcentagem2.Name = "Projeto3Porcentagem2";
+            this.Projeto3Porcentagem2.Size = new System.Drawing.Size(28, 28);
+            this.Projeto3Porcentagem2.TabIndex = 0;
+            this.Projeto3Porcentagem2.TabStop = false;
             // 
             // RGBDescricaoP3
             // 
@@ -745,7 +883,7 @@
             this.RGBDescricaoP3.Location = new System.Drawing.Point(25, 52);
             this.RGBDescricaoP3.Margin = new System.Windows.Forms.Padding(0);
             this.RGBDescricaoP3.Name = "RGBDescricaoP3";
-            this.RGBDescricaoP3.Size = new System.Drawing.Size(276, 225);
+            this.RGBDescricaoP3.Size = new System.Drawing.Size(276, 197);
             this.RGBDescricaoP3.TabIndex = 39;
             this.RGBDescricaoP3.TabStop = false;
             // 
@@ -756,7 +894,7 @@
             this.lblDescricaoP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricaoP3.Location = new System.Drawing.Point(3, 22);
             this.lblDescricaoP3.Name = "lblDescricaoP3";
-            this.lblDescricaoP3.Size = new System.Drawing.Size(270, 200);
+            this.lblDescricaoP3.Size = new System.Drawing.Size(270, 172);
             this.lblDescricaoP3.TabIndex = 36;
             this.lblDescricaoP3.Text = "Descrição do projeto";
             // 
@@ -968,14 +1106,17 @@
             this.TLP_Filha2.ResumeLayout(false);
             this.RGPProjeto2.ResumeLayout(false);
             this.RGPProjeto2.PerformLayout();
+            this.Projeto2Porcentagem1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP2)).EndInit();
             this.RGBDescricaoP2.ResumeLayout(false);
             this.RGPProjeto1.ResumeLayout(false);
             this.RGPProjeto1.PerformLayout();
+            this.Projeto1Porcentagem1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP1)).EndInit();
             this.RGBDescricaoP1.ResumeLayout(false);
             this.RGPProjeto3.ResumeLayout(false);
             this.RGPProjeto3.PerformLayout();
+            this.Projeto3Porcentagem1.ResumeLayout(false);
             this.RGBDescricaoP3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.opbEditarP3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OPBRight)).EndInit();
@@ -1044,5 +1185,14 @@
         private OvalPictureBox opbConfiguracoes;
         private OvalPictureBox opbLogout;
         private System.Windows.Forms.PictureBox opbLogo;
+        private System.Windows.Forms.Label lblPorcentagemP1;
+        private CustomGroupBox Projeto1Porcentagem1;
+        private CustomGroupBox Projeto1Porcentagem2;
+        private System.Windows.Forms.Label lblPorcentagemP2;
+        private CustomGroupBox Projeto2Porcentagem1;
+        private CustomGroupBox Projeto2Porcentagem2;
+        private System.Windows.Forms.Label lblPorcentagemP3;
+        private CustomGroupBox Projeto3Porcentagem1;
+        private CustomGroupBox Projeto3Porcentagem2;
     }
 }

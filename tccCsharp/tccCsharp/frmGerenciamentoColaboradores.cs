@@ -179,6 +179,22 @@ namespace tccCsharp
             //gpbAgrupaCl.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             //gpbAgrupaCl.ForeColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
 
+            clAdicionar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clProcurar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clRemover.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clLogout.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clRecarregar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clConfig.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clVoltar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+
+            clAdicionar.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clProcurar.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clRemover.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clLogout.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clRecarregar.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clConfig.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+            clVoltar.LineColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
+
 
             Logo(Program.logo);
         }
@@ -247,14 +263,8 @@ namespace tccCsharp
             comboTelefone.TabIndex = 2;
             comboEmail.TabIndex = 3;
 
-            clAdicionar.Visible = false;
-            clProcurar.Visible = false;
-            clRemover.Visible = false;
-            clLogout.Visible = false;
-            clRecarregar.Visible = false;
-            clConfig.Visible = false;
-            clVoltar.Visible = false;
-            clNome.Visible = false;
+            
+
         }
 
         private void groupPorcentagem_SizeChanged(object sender, EventArgs e)

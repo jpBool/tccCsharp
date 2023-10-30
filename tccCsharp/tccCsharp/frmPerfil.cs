@@ -41,6 +41,18 @@ namespace tccCsharp
                 projeto1 = projetos[X + 0];
                 lblNomeP1.Text = projeto1.nome_projeto;
                 lblDescricaoP1.Text = projeto1.descricao_breve;
+
+                lblPorcentagemP1.Text = Convert.ToInt32(projeto1.porcentagem).ToString() + "%";
+                if (Convert.ToInt32(projeto1.porcentagem) == 100)
+                    Projeto1Porcentagem2.Width = Projeto1Porcentagem1.Width;
+                else
+                {
+                    Projeto1Porcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Projeto1Porcentagem1.Width) / 100) * Convert.ToDouble(projeto1.porcentagem));
+                    if (Projeto1Porcentagem2.Width < 28)
+                        Projeto1Porcentagem2.Width = 28;
+                }
+
+
             }
             else
             {
@@ -54,6 +66,16 @@ namespace tccCsharp
                 projeto2 = projetos[X + 1];
                 lblNomeP2.Text = projeto2.nome_projeto;
                 lblDescricaoP2.Text = projeto2.descricao_breve;
+
+                lblPorcentagemP2.Text = Convert.ToInt32(projeto2.porcentagem).ToString() + "%";
+                if (Convert.ToInt32(projeto2.porcentagem) == 100)
+                    Projeto2Porcentagem2.Width = Projeto2Porcentagem1.Width;
+                else
+                {
+                    Projeto2Porcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Projeto2Porcentagem1.Width) / 100) * Convert.ToDouble(projeto2.porcentagem));
+                    if (Projeto2Porcentagem2.Width < 28)
+                        Projeto2Porcentagem2.Width = 28;
+                }
             }
             else
             {
@@ -67,6 +89,16 @@ namespace tccCsharp
                 projeto3 = projetos[X + 2];
                 lblNomeP3.Text = projeto3.nome_projeto;
                 lblDescricaoP3.Text = projeto3.descricao_breve;
+
+                lblPorcentagemP3.Text = Convert.ToInt32(projeto3.porcentagem).ToString() + "%";
+                if (Convert.ToInt32(projeto3.porcentagem) == 100)
+                    Projeto3Porcentagem2.Width = Projeto3Porcentagem1.Width;
+                else
+                {
+                    Projeto3Porcentagem2.Width = Convert.ToInt32((Convert.ToDouble(Projeto3Porcentagem1.Width) / 100) * Convert.ToDouble(projeto3.porcentagem));
+                    if (Projeto3Porcentagem2.Width < 28)
+                        Projeto3Porcentagem2.Width = 28;
+                }
             }
             else
             {
@@ -247,7 +279,12 @@ namespace tccCsharp
             lblNomeP2.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblNomeP3.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
-            
+            Projeto1Porcentagem1.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+            Projeto1Porcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
+            Projeto2Porcentagem1.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+            Projeto2Porcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
+            Projeto3Porcentagem1.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+            Projeto3Porcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
         }
 
         private void frmPerfil_Load(object sender, EventArgs e)

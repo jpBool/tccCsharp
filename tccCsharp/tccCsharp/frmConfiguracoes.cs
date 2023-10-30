@@ -50,6 +50,8 @@ namespace tccCsharp
             //clPersonaliza.Visible = false;
             //clTut.Visible = false;
             btnAltTamF.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            //btnAltTamF.ButtonColor
+            btnAltTamF.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
         public void DoDesign()

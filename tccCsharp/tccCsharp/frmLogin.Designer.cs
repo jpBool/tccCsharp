@@ -213,7 +213,7 @@
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.53061F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
             this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tlpLoginBase3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.tlpLoginBase3.Controls.Add(this.lblEmail, 1, 1);
             this.tlpLoginBase3.Controls.Add(this.lblSenha, 1, 3);
             this.tlpLoginBase3.Controls.Add(this.txtEmail, 3, 1);
@@ -259,7 +259,7 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtEmail.Location = new System.Drawing.Point(95, 38);
+            this.txtEmail.Location = new System.Drawing.Point(94, 38);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(244, 20);
             this.txtEmail.TabIndex = 1;
@@ -268,7 +268,7 @@
             // 
             this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSenha.Location = new System.Drawing.Point(95, 93);
+            this.txtSenha.Location = new System.Drawing.Point(94, 93);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '•';
             this.txtSenha.Size = new System.Drawing.Size(244, 20);
