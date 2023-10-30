@@ -40,7 +40,10 @@ namespace tccCsharp
 
             groupPorcentagem.BackgroundColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
             groupPorcentagem2.BackgroundColor = Color.FromArgb(Program.Cor3[0], Program.Cor3[1], Program.Cor3[2]);
-            lblPorcentagem.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            lblPorcentagem.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);         
+            groupPorcentagem.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);          
+            groupPorcentagem2.ForeColor = Color.FromArgb(Program.Cor1[0], Program.Cor1[1], Program.Cor1[2]);
+
 
             TLPConteudo.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
@@ -177,6 +180,8 @@ namespace tccCsharp
             opbEditarP23.BordaPrincipal = Color.Transparent;
             opbEditarE1.BordaPrincipal = Color.Transparent;
             opbEditarE2.BordaPrincipal = Color.Transparent;
+
+            //groupPorcentagem._bordercolor
 
             Logo(Program.logo);
         }

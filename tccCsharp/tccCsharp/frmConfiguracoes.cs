@@ -64,8 +64,7 @@ namespace tccCsharp
             lblCoresAviso.Font = Program.fonte;
             lblCoresElementos.Font = Program.fonte;
             lblCoresTexto.Font = Program.fonte;
-            lblPCores.Font = Program.fonte;
-            lblConfigsG.Font = Program.fonte;          
+            lblPCores.Font = Program.fonte;          
             lblConfiguracoes.Font = Program.fonte;
             
             
@@ -91,9 +90,8 @@ namespace tccCsharp
             lblCorTexto1.BackColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblCorTexto2.BackColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
 
-            //OUTRAS LABELS
-            lblConfigsG.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
-            lblConfiguracoes.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
+            //OUTRAS LABELS        
+            lblConfiguracoes.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             lblCoresElementos.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblCoresTexto.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
             lblCoresAviso.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
@@ -145,14 +143,23 @@ namespace tccCsharp
 
             btnAltTamF.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnAltTamF.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnAltTamF.BorderColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+
             btnPersonalizar.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnPersonalizar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnPersonalizar.BorderColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+
             btnTutoriais.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnTutoriais.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnTutoriais.BorderColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+
             btnVoltar.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnVoltar.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnVoltar.BorderColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
+
             btnRestaurarPadrao.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             btnRestaurarPadrao.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnRestaurarPadrao.BorderColor = Color.FromArgb(Program.Cor7[0], Program.Cor7[1], Program.Cor7[2]);
 
             OPBLogout.BordaPrincipal = Color.Transparent;           
             opbRecarregar.BordaPrincipal = Color.Transparent;
@@ -169,6 +176,9 @@ namespace tccCsharp
             clRefresh.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             clVoltar.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             clRestaura.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+
+            lblConfiguracoes.Font = new Font("Microsoft Sans Serif", 26);
+            lblPCores.Font = new Font("Arial", 18);
 
             Logo(Program.logo);
         }
@@ -728,6 +738,11 @@ namespace tccCsharp
             Properties.Settings.Default.CorAviso1 = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             Properties.Settings.Default.CorAviso2 = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
             Properties.Settings.Default.Save();
+        }
+
+        private void lblConfigsG_Click(object sender, EventArgs e)
+        {
+
         }
     }
  
