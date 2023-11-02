@@ -39,7 +39,7 @@ namespace tccCsharp
                 radPreto.Checked = false;
                 radBranco.Checked = true;
             }
-            clRestaura.Visible = false;
+            //clRestaura.Visible = false;
             DoDesign();
 
             btnAltTamF.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
@@ -131,6 +131,11 @@ namespace tccCsharp
             btnRestaurarPadrao.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             btnRestaurarPadrao.AutoHoover = true;
 
+            btnRestauraFont.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
+            btnRestauraFont.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnRestauraFont.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnRestauraFont.AutoHoover = true;
+
             OPBLogout._bordercolor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             OPBLogout.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             OPBLogout.AutoHoover = true;
@@ -161,6 +166,10 @@ namespace tccCsharp
             btnRestaurarPadrao.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnRestaurarPadrao.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
+            btnRestauraFont.BordaPrincipal = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnRestauraFont.TextoPrincipal = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+            btnRestauraFont.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+
             OPBLogout.BordaPrincipal = Color.Transparent;           
             opbRecarregar.BordaPrincipal = Color.Transparent;
 
@@ -171,11 +180,20 @@ namespace tccCsharp
             clPersonaliza.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             clTut.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
             clTut.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clRestaura.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clRestaura.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clRestauraFonte.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clRestauraFonte.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
             clLogout.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clLogout.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+
             clRefresh.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clRefresh.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+
             clVoltar.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
-            clRestaura.LineColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            clVoltar.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+
 
             lblConfiguracoes.Font = new Font("Microsoft Sans Serif", 26);
             lblPCores.Font = new Font("Arial", 18);
@@ -407,7 +425,7 @@ namespace tccCsharp
             //rgbPCores.Visible= true;
             toggle = !toggle;
             rgbPCores.Visible = toggle;
-            clRestaura.Visible = toggle;
+            //clRestaura.Visible = toggle;
         }
 
 
@@ -505,7 +523,7 @@ namespace tccCsharp
                 Program.logo = 0;
                 OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
                 opbRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
-               
+                
             }
         }
 
@@ -750,6 +768,28 @@ namespace tccCsharp
             Font afdasda = new Font("Microsoft Sans Serif", 12);
             Program.fonte = afdasda;
             DoDesign();
+        }
+
+        private void clRestauraFonte_Enter(object sender, EventArgs e)
+        {
+            btnRestauraFont.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+            btnRestauraFont.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
+        }
+
+        private void clRestauraFonte_Leave(object sender, EventArgs e)
+        {
+            btnRestauraFont.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+            btnRestauraFont.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+        }
+
+        private void clRestauraFonte_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnRestauraFont.BorderColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
+                btnRestauraFont.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
+                btnRestauraFont_Click(sender, e);
+            }
         }
     }
  

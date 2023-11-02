@@ -81,7 +81,7 @@
             this.comboTelefone = new System.Windows.Forms.ComboBox();
             this.comboEmail = new System.Windows.Forms.ComboBox();
             this.textNome = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpAgrupaCl = new System.Windows.Forms.TableLayoutPanel();
             this.clProcurar = new CustomLine();
             this.clLogout = new CustomLine();
             this.clRecarregar = new CustomLine();
@@ -118,7 +118,7 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
+            this.tlpAgrupaCl.SuspendLayout();
             this.TLPHead1.SuspendLayout();
             this.rgbHeadImgs1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.opbLogo)).BeginInit();
@@ -640,7 +640,7 @@
             this.TLPDados.Controls.Add(this.tableLayoutPanel4, 0, 5);
             this.TLPDados.Controls.Add(this.tableLayoutPanel3, 0, 4);
             this.TLPDados.Controls.Add(this.textNome, 0, 3);
-            this.TLPDados.Controls.Add(this.tableLayoutPanel6, 0, 8);
+            this.TLPDados.Controls.Add(this.tlpAgrupaCl, 0, 8);
             this.TLPDados.Location = new System.Drawing.Point(6, 9);
             this.TLPDados.Name = "TLPDados";
             this.TLPDados.RowCount = 9;
@@ -924,27 +924,27 @@
             this.textNome.TabIndex = 2;
             this.textNome.TabStop = false;
             // 
-            // tableLayoutPanel6
+            // tlpAgrupaCl
             // 
-            this.tableLayoutPanel6.ColumnCount = 4;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.66667F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.33333F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
-            this.tableLayoutPanel6.Controls.Add(this.clProcurar, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.clLogout, 2, 1);
-            this.tableLayoutPanel6.Controls.Add(this.clRecarregar, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.clConfig, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.clVoltar, 3, 0);
-            this.tableLayoutPanel6.Controls.Add(this.clRemover, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.clAdicionar, 2, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 448);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(599, 17);
-            this.tableLayoutPanel6.TabIndex = 9;
+            this.tlpAgrupaCl.ColumnCount = 4;
+            this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.66667F));
+            this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.33333F));
+            this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
+            this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+            this.tlpAgrupaCl.Controls.Add(this.clProcurar, 0, 0);
+            this.tlpAgrupaCl.Controls.Add(this.clLogout, 2, 1);
+            this.tlpAgrupaCl.Controls.Add(this.clRecarregar, 1, 1);
+            this.tlpAgrupaCl.Controls.Add(this.clConfig, 0, 1);
+            this.tlpAgrupaCl.Controls.Add(this.clVoltar, 3, 0);
+            this.tlpAgrupaCl.Controls.Add(this.clRemover, 1, 0);
+            this.tlpAgrupaCl.Controls.Add(this.clAdicionar, 2, 0);
+            this.tlpAgrupaCl.Location = new System.Drawing.Point(3, 448);
+            this.tlpAgrupaCl.Name = "tlpAgrupaCl";
+            this.tlpAgrupaCl.RowCount = 2;
+            this.tlpAgrupaCl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpAgrupaCl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpAgrupaCl.Size = new System.Drawing.Size(599, 17);
+            this.tlpAgrupaCl.TabIndex = 9;
             // 
             // clProcurar
             // 
@@ -963,7 +963,7 @@
             // 
             this.clLogout.LineColor = System.Drawing.Color.Black;
             this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(301, 11);
+            this.clLogout.Location = new System.Drawing.Point(299, 11);
             this.clLogout.Name = "clLogout";
             this.clLogout.Size = new System.Drawing.Size(75, 3);
             this.clLogout.TabIndex = 12;
@@ -976,7 +976,7 @@
             // 
             this.clRecarregar.LineColor = System.Drawing.Color.Black;
             this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(166, 11);
+            this.clRecarregar.Location = new System.Drawing.Point(165, 11);
             this.clRecarregar.Name = "clRecarregar";
             this.clRecarregar.Size = new System.Drawing.Size(75, 3);
             this.clRecarregar.TabIndex = 11;
@@ -1002,7 +1002,7 @@
             // 
             this.clVoltar.LineColor = System.Drawing.Color.Red;
             this.clVoltar.LineWidth = 1;
-            this.clVoltar.Location = new System.Drawing.Point(464, 3);
+            this.clVoltar.Location = new System.Drawing.Point(462, 3);
             this.clVoltar.Name = "clVoltar";
             this.clVoltar.Size = new System.Drawing.Size(75, 2);
             this.clVoltar.TabIndex = 9;
@@ -1015,7 +1015,7 @@
             // 
             this.clRemover.LineColor = System.Drawing.Color.Red;
             this.clRemover.LineWidth = 1;
-            this.clRemover.Location = new System.Drawing.Point(166, 3);
+            this.clRemover.Location = new System.Drawing.Point(165, 3);
             this.clRemover.Name = "clRemover";
             this.clRemover.Size = new System.Drawing.Size(75, 2);
             this.clRemover.TabIndex = 7;
@@ -1028,7 +1028,7 @@
             // 
             this.clAdicionar.LineColor = System.Drawing.Color.Red;
             this.clAdicionar.LineWidth = 1;
-            this.clAdicionar.Location = new System.Drawing.Point(301, 3);
+            this.clAdicionar.Location = new System.Drawing.Point(299, 3);
             this.clAdicionar.Name = "clAdicionar";
             this.clAdicionar.Size = new System.Drawing.Size(75, 2);
             this.clAdicionar.TabIndex = 8;
@@ -1198,7 +1198,7 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tlpAgrupaCl.ResumeLayout(false);
             this.TLPHead1.ResumeLayout(false);
             this.TLPHead1.PerformLayout();
             this.rgbHeadImgs1.ResumeLayout(false);
@@ -1279,6 +1279,6 @@
         private CustomLine clConfig;
         private CustomLine clVoltar;
         private CustomLine clProcurar;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tlpAgrupaCl;
     }
 }

@@ -73,13 +73,13 @@
             this.btnExcluir = new RoundButton();
             this.btnAtualizar = new RoundButton();
             this.btnCancelar = new RoundButton();
-            this.clExcluir = new CustomLine();
-            this.clRecarregar = new CustomLine();
-            this.clAtualizar = new CustomLine();
-            this.clCancelar = new CustomLine();
-            this.clConfig = new CustomLine();
             this.RGBInvisi = new tccCsharp.RoundedGroupBox();
             this.clLogout = new CustomLine();
+            this.clExcluir = new CustomLine();
+            this.clRecarregar = new CustomLine();
+            this.clCancelar = new CustomLine();
+            this.clConfig = new CustomLine();
+            this.clAtualizar = new CustomLine();
             this.TLP_Mãe.SuspendLayout();
             this.TLPHead2.SuspendLayout();
             this.RGBHead2.SuspendLayout();
@@ -217,6 +217,7 @@
             this.lblCriadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriadoquando.AutoEllipsis = true;
             this.lblCriadoquando.AutoSize = true;
             this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblCriadoquando.Name = "lblCriadoquando";
@@ -262,6 +263,7 @@
             this.lblAtualizadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizadoquando.AutoEllipsis = true;
             this.lblAtualizadoquando.AutoSize = true;
             this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblAtualizadoquando.Name = "lblAtualizadoquando";
@@ -823,71 +825,6 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // clExcluir
-            // 
-            this.clExcluir.LineColor = System.Drawing.Color.Black;
-            this.clExcluir.LineWidth = 1;
-            this.clExcluir.Location = new System.Drawing.Point(27, 19);
-            this.clExcluir.Name = "clExcluir";
-            this.clExcluir.Size = new System.Drawing.Size(75, 10);
-            this.clExcluir.TabIndex = 7;
-            this.clExcluir.Text = "customLine4";
-            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
-            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
-            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
-            // 
-            // clRecarregar
-            // 
-            this.clRecarregar.LineColor = System.Drawing.Color.Black;
-            this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(27, 94);
-            this.clRecarregar.Name = "clRecarregar";
-            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
-            this.clRecarregar.TabIndex = 11;
-            this.clRecarregar.Text = "customLine3";
-            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
-            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
-            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
-            // 
-            // clAtualizar
-            // 
-            this.clAtualizar.LineColor = System.Drawing.Color.Black;
-            this.clAtualizar.LineWidth = 1;
-            this.clAtualizar.Location = new System.Drawing.Point(27, 64);
-            this.clAtualizar.Name = "clAtualizar";
-            this.clAtualizar.Size = new System.Drawing.Size(75, 10);
-            this.clAtualizar.TabIndex = 9;
-            this.clAtualizar.Text = "customLine7";
-            this.clAtualizar.Enter += new System.EventHandler(this.clAtualizar_Enter);
-            this.clAtualizar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAtualizar_KeyDown);
-            this.clAtualizar.Leave += new System.EventHandler(this.clAtualizar_Leave);
-            // 
-            // clCancelar
-            // 
-            this.clCancelar.LineColor = System.Drawing.Color.Black;
-            this.clCancelar.LineWidth = 1;
-            this.clCancelar.Location = new System.Drawing.Point(27, 44);
-            this.clCancelar.Name = "clCancelar";
-            this.clCancelar.Size = new System.Drawing.Size(75, 10);
-            this.clCancelar.TabIndex = 8;
-            this.clCancelar.Text = "customLine5";
-            this.clCancelar.Enter += new System.EventHandler(this.clCancelar_Enter);
-            this.clCancelar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCancelar_KeyDown);
-            this.clCancelar.Leave += new System.EventHandler(this.clCancelar_Leave);
-            // 
-            // clConfig
-            // 
-            this.clConfig.LineColor = System.Drawing.Color.Black;
-            this.clConfig.LineWidth = 1;
-            this.clConfig.Location = new System.Drawing.Point(27, 110);
-            this.clConfig.Name = "clConfig";
-            this.clConfig.Size = new System.Drawing.Size(75, 10);
-            this.clConfig.TabIndex = 10;
-            this.clConfig.Text = "customLine2";
-            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
-            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
-            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
-            // 
             // RGBInvisi
             // 
             this.RGBInvisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -920,6 +857,71 @@
             this.clLogout.Enter += new System.EventHandler(this.clLogout_Enter);
             this.clLogout.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clLogout_KeyDown);
             this.clLogout.Leave += new System.EventHandler(this.clLogout_Leave);
+            // 
+            // clExcluir
+            // 
+            this.clExcluir.LineColor = System.Drawing.Color.Black;
+            this.clExcluir.LineWidth = 1;
+            this.clExcluir.Location = new System.Drawing.Point(27, 19);
+            this.clExcluir.Name = "clExcluir";
+            this.clExcluir.Size = new System.Drawing.Size(75, 10);
+            this.clExcluir.TabIndex = 7;
+            this.clExcluir.Text = "customLine4";
+            this.clExcluir.Enter += new System.EventHandler(this.clExcluir_Enter);
+            this.clExcluir.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clExcluir_KeyDown);
+            this.clExcluir.Leave += new System.EventHandler(this.clExcluir_Leave);
+            // 
+            // clRecarregar
+            // 
+            this.clRecarregar.LineColor = System.Drawing.Color.Black;
+            this.clRecarregar.LineWidth = 1;
+            this.clRecarregar.Location = new System.Drawing.Point(27, 94);
+            this.clRecarregar.Name = "clRecarregar";
+            this.clRecarregar.Size = new System.Drawing.Size(75, 10);
+            this.clRecarregar.TabIndex = 11;
+            this.clRecarregar.Text = "customLine3";
+            this.clRecarregar.Enter += new System.EventHandler(this.clRecarregar_Enter);
+            this.clRecarregar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clRecarregar_KeyDown);
+            this.clRecarregar.Leave += new System.EventHandler(this.clRecarregar_Leave);
+            // 
+            // clCancelar
+            // 
+            this.clCancelar.LineColor = System.Drawing.Color.Black;
+            this.clCancelar.LineWidth = 1;
+            this.clCancelar.Location = new System.Drawing.Point(27, 44);
+            this.clCancelar.Name = "clCancelar";
+            this.clCancelar.Size = new System.Drawing.Size(75, 10);
+            this.clCancelar.TabIndex = 8;
+            this.clCancelar.Text = "customLine5";
+            this.clCancelar.Enter += new System.EventHandler(this.clCancelar_Enter);
+            this.clCancelar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clCancelar_KeyDown);
+            this.clCancelar.Leave += new System.EventHandler(this.clCancelar_Leave);
+            // 
+            // clConfig
+            // 
+            this.clConfig.LineColor = System.Drawing.Color.Black;
+            this.clConfig.LineWidth = 1;
+            this.clConfig.Location = new System.Drawing.Point(27, 110);
+            this.clConfig.Name = "clConfig";
+            this.clConfig.Size = new System.Drawing.Size(75, 10);
+            this.clConfig.TabIndex = 10;
+            this.clConfig.Text = "customLine2";
+            this.clConfig.Enter += new System.EventHandler(this.clConfig_Enter);
+            this.clConfig.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clConfig_KeyDown);
+            this.clConfig.Leave += new System.EventHandler(this.clConfig_Leave);
+            // 
+            // clAtualizar
+            // 
+            this.clAtualizar.LineColor = System.Drawing.Color.Black;
+            this.clAtualizar.LineWidth = 1;
+            this.clAtualizar.Location = new System.Drawing.Point(27, 64);
+            this.clAtualizar.Name = "clAtualizar";
+            this.clAtualizar.Size = new System.Drawing.Size(75, 10);
+            this.clAtualizar.TabIndex = 9;
+            this.clAtualizar.Text = "customLine7";
+            this.clAtualizar.Enter += new System.EventHandler(this.clAtualizar_Enter);
+            this.clAtualizar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.clAtualizar_KeyDown);
+            this.clAtualizar.Leave += new System.EventHandler(this.clAtualizar_Leave);
             // 
             // frmEditar_Grupo
             // 

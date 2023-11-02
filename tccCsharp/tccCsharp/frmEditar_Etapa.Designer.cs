@@ -231,7 +231,7 @@
             this.lblDescri2.Location = new System.Drawing.Point(15, 257);
             this.lblDescri2.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblDescri2.Name = "lblDescri2";
-            this.lblDescri2.Size = new System.Drawing.Size(133, 119);
+            this.lblDescri2.Size = new System.Drawing.Size(132, 119);
             this.lblDescri2.TabIndex = 16;
             this.lblDescri2.Text = "Descrição do Impedimento:";
             this.lblDescri2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,9 +246,9 @@
             this.RGBNome.Controls.Add(this.lblcar1);
             this.RGBNome.Controls.Add(this.customLine1);
             this.RGBNome.CornerRadius = 12;
-            this.RGBNome.Location = new System.Drawing.Point(156, 8);
+            this.RGBNome.Location = new System.Drawing.Point(155, 8);
             this.RGBNome.Name = "RGBNome";
-            this.RGBNome.Size = new System.Drawing.Size(459, 47);
+            this.RGBNome.Size = new System.Drawing.Size(460, 47);
             this.RGBNome.TabIndex = 1;
             this.RGBNome.TabStop = false;
             // 
@@ -263,7 +263,7 @@
             this.txtNomeEtapa.Location = new System.Drawing.Point(8, 19);
             this.txtNomeEtapa.MaxLength = 50;
             this.txtNomeEtapa.Name = "txtNomeEtapa";
-            this.txtNomeEtapa.Size = new System.Drawing.Size(372, 19);
+            this.txtNomeEtapa.Size = new System.Drawing.Size(373, 19);
             this.txtNomeEtapa.TabIndex = 1;
             this.txtNomeEtapa.Leave += new System.EventHandler(this.txtNomeEtapa_Leave);
             // 
@@ -272,7 +272,7 @@
             this.lblcar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblcar1.AutoSize = true;
             this.lblcar1.BackColor = System.Drawing.Color.Transparent;
-            this.lblcar1.Location = new System.Drawing.Point(386, 19);
+            this.lblcar1.Location = new System.Drawing.Point(387, 19);
             this.lblcar1.Name = "lblcar1";
             this.lblcar1.Size = new System.Drawing.Size(40, 13);
             this.lblcar1.TabIndex = 1;
@@ -286,7 +286,7 @@
             this.customLine1.LineWidth = 3;
             this.customLine1.Location = new System.Drawing.Point(8, 39);
             this.customLine1.Name = "customLine1";
-            this.customLine1.Size = new System.Drawing.Size(372, 3);
+            this.customLine1.Size = new System.Drawing.Size(373, 3);
             this.customLine1.TabIndex = 0;
             this.customLine1.TabStop = false;
             this.customLine1.Text = "customLine1";
@@ -301,7 +301,7 @@
             this.lblNome.Location = new System.Drawing.Point(15, 5);
             this.lblNome.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(133, 53);
+            this.lblNome.Size = new System.Drawing.Size(132, 53);
             this.lblNome.TabIndex = 1;
             this.lblNome.Text = "Nome da Etapa:";
             this.lblNome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -316,7 +316,7 @@
             this.lblImpedimento.Location = new System.Drawing.Point(15, 203);
             this.lblImpedimento.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblImpedimento.Name = "lblImpedimento";
-            this.lblImpedimento.Size = new System.Drawing.Size(133, 44);
+            this.lblImpedimento.Size = new System.Drawing.Size(132, 44);
             this.lblImpedimento.TabIndex = 5;
             this.lblImpedimento.Text = "Possui Impedimento?";
             this.lblImpedimento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -331,7 +331,7 @@
             this.lblDescri.Location = new System.Drawing.Point(15, 68);
             this.lblDescri.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
             this.lblDescri.Name = "lblDescri";
-            this.lblDescri.Size = new System.Drawing.Size(133, 125);
+            this.lblDescri.Size = new System.Drawing.Size(132, 125);
             this.lblDescri.TabIndex = 8;
             this.lblDescri.Text = "Descrição da Etapa";
             this.lblDescri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -347,9 +347,9 @@
             this.RGBDecri1.BorderWidth = 2F;
             this.RGBDecri1.Controls.Add(this.txtDescricao);
             this.RGBDecri1.CornerRadius = 12;
-            this.RGBDecri1.Location = new System.Drawing.Point(156, 66);
+            this.RGBDecri1.Location = new System.Drawing.Point(155, 66);
             this.RGBDecri1.Name = "RGBDecri1";
-            this.RGBDecri1.Size = new System.Drawing.Size(459, 129);
+            this.RGBDecri1.Size = new System.Drawing.Size(460, 129);
             this.RGBDecri1.TabIndex = 2;
             this.RGBDecri1.TabStop = false;
             // 
@@ -365,7 +365,7 @@
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDescricao.Size = new System.Drawing.Size(441, 110);
+            this.txtDescricao.Size = new System.Drawing.Size(442, 110);
             this.txtDescricao.TabIndex = 2;
             // 
             // RGBDescri2
@@ -379,9 +379,9 @@
             this.RGBDescri2.BorderWidth = 2F;
             this.RGBDescri2.Controls.Add(this.txtDescriImpedimento);
             this.RGBDescri2.CornerRadius = 12;
-            this.RGBDescri2.Location = new System.Drawing.Point(156, 255);
+            this.RGBDescri2.Location = new System.Drawing.Point(155, 255);
             this.RGBDescri2.Name = "RGBDescri2";
-            this.RGBDescri2.Size = new System.Drawing.Size(459, 123);
+            this.RGBDescri2.Size = new System.Drawing.Size(460, 123);
             this.RGBDescri2.TabIndex = 4;
             this.RGBDescri2.TabStop = false;
             // 
@@ -397,7 +397,7 @@
             this.txtDescriImpedimento.Multiline = true;
             this.txtDescriImpedimento.Name = "txtDescriImpedimento";
             this.txtDescriImpedimento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDescriImpedimento.Size = new System.Drawing.Size(441, 104);
+            this.txtDescriImpedimento.Size = new System.Drawing.Size(442, 104);
             this.txtDescriImpedimento.TabIndex = 4;
             // 
             // boxSim
@@ -406,7 +406,7 @@
             this.boxSim.AutoSize = true;
             this.boxSim.Checked = true;
             this.boxSim.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.boxSim.Location = new System.Drawing.Point(156, 216);
+            this.boxSim.Location = new System.Drawing.Point(155, 216);
             this.boxSim.Name = "boxSim";
             this.boxSim.Size = new System.Drawing.Size(45, 17);
             this.boxSim.TabIndex = 3;
@@ -1121,6 +1121,7 @@
             this.lblCriador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriador.AutoEllipsis = true;
             this.lblCriador.AutoSize = true;
             this.lblCriador.Location = new System.Drawing.Point(3, 25);
             this.lblCriador.Name = "lblCriador";
@@ -1134,6 +1135,7 @@
             this.lblCriadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCriadoquando.AutoEllipsis = true;
             this.lblCriadoquando.AutoSize = true;
             this.lblCriadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblCriadoquando.Name = "lblCriadoquando";
@@ -1165,6 +1167,7 @@
             this.lblAtualizador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizador.AutoEllipsis = true;
             this.lblAtualizador.AutoSize = true;
             this.lblAtualizador.Location = new System.Drawing.Point(3, 25);
             this.lblAtualizador.Name = "lblAtualizador";
@@ -1178,6 +1181,7 @@
             this.lblAtualizadoquando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAtualizadoquando.AutoEllipsis = true;
             this.lblAtualizadoquando.AutoSize = true;
             this.lblAtualizadoquando.Location = new System.Drawing.Point(3, 0);
             this.lblAtualizadoquando.Name = "lblAtualizadoquando";
