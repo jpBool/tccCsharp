@@ -143,6 +143,8 @@ namespace tccCsharp
         {
             if (e.KeyCode == Keys.Enter)
             {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
                 btnLogar_Click(sender, e);
             }
         }

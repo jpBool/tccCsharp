@@ -360,7 +360,7 @@ namespace tccCsharp
                 
             }
 
-            toggle = !toggle;          
+            DoDesign();
         }
 
         private void btnPersonalizar_Click(object sender, EventArgs e)
@@ -727,11 +727,7 @@ namespace tccCsharp
             Properties.Settings.Default.CorAviso2 = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
 
 
-            Properties.Settings.Default.fonte = Program.fonte;//new Font("Microsoft Sans Serif", 12); //, Program.fonte;
-            //Properties.Settings.Default.fonte = new Font(fonte.Font, fonte.Font.Style);
-            //Properties.Settings.Default.fonte = new Font(Font.FontFamily, 12, Font.Style);
-            //Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
-
+            Properties.Settings.Default.fonte = Program.fonte;
             Properties.Settings.Default.logo = Program.logo;
 
 
