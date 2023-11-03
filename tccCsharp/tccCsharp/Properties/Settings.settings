@@ -35,5 +35,11 @@
     <Setting Name="CorAviso2" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">Transparent</Value>
     </Setting>
+    <Setting Name="fonte" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft Sans Serif, 12pt</Value>
+    </Setting>
+    <Setting Name="logo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

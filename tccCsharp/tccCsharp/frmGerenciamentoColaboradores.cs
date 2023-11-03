@@ -141,18 +141,13 @@ namespace tccCsharp
 
 
             RGBColaboradores.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            //rgbImagensP.BackColor = 
-
-            //rgbNomeImagem.BackColor = 
-
+            
             rgbNomeP.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            //rgbNomeP.BackColor = 
-
-            rgbOpcoes.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            //rgbOpcoes.BackColor = 
+            
+            rgbOpcoes.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);           
 
             RGBDados.BackgroundColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            //rgbUpload.BackColor = 
+            
             RGBDados.BackColor = Color.FromArgb(Program.Cor6[0], Program.Cor6[1], Program.Cor6[2]);
 
             //Porcentagem
@@ -175,10 +170,7 @@ namespace tccCsharp
             OPBRecarregar.BordaPrincipal = Color.Transparent;
             OPBConfiguracoes.BordaPrincipal = Color.Transparent;
 
-            //gpbAgrupaCl.Visible = false;
-            //gpbAgrupaCl.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-            //gpbAgrupaCl.ForeColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
-
+            
             clAdicionar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             clProcurar.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
             clRemover.BackColor = Color.FromArgb(Program.Cor5[0], Program.Cor5[1], Program.Cor5[2]);
@@ -578,14 +570,14 @@ namespace tccCsharp
             switch (logo)
             {
                 case 0:
-                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; 
                     OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
                     OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
                     break;
 
                 case 1:
-                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; 
                     OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
                     OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;
@@ -763,7 +755,8 @@ namespace tccCsharp
             }
         }
 
-        private void clNome_Enter(object sender, EventArgs e)
+        //TESTE
+        /*private void clNome_Enter(object sender, EventArgs e)
         {
             //comboNome.BackColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
@@ -778,23 +771,7 @@ namespace tccCsharp
             if (e.KeyCode == Keys.Enter)
             {
                 comboNome.BackColor = Color.Plum;
-                //comboNome.TabIndex = 1;
-                //comboEmail.TabIndex = 2;
-                //comboTelefone.TabIndex = 3;
-                //comboNome_Click(sender, e); 
-                //comboNome_DropDown(sender, e);
-
             }
-        }
-
-        private void comboNome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboNome_DropDown(object sender, EventArgs e)
-        {
-
-        }
+        }*/      
     }
 }

@@ -26,9 +26,7 @@ namespace tccCsharp
         {
             WindowState = FormWindowState.Maximized;
             //cldPersonalizacao = new ColorDialog();
-            //cldPersonalizacao = new ColorDialog()
-            //;
-            //frmConfiguracoes.BackgroundColor
+            
             if (Program.logo == 0)
             {
                 radPreto.Checked = true;
@@ -43,14 +41,8 @@ namespace tccCsharp
             DoDesign();
 
             btnAltTamF.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            btnAltTamF.AutoHoover = true;
-
-            //gpbAgrupa.Visible = false;
-            //clAltF.Visible = false;
-            //clPersonaliza.Visible = false;
-            //clTut.Visible = false;
-            btnAltTamF.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            //btnAltTamF.ButtonColor
+            btnAltTamF.AutoHoover = true;          
+            btnAltTamF.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);         
             btnAltTamF.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
         }
 
@@ -98,14 +90,6 @@ namespace tccCsharp
             lblPCores.ForeColor = Color.FromArgb(Program.CorTexto1[0], Program.CorTexto1[1], Program.CorTexto1[2]);
 
             //BOTÕES
-            //btnAltTamF.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
-            //btnAltTamF.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            //btnAltTamF.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
-            //btnAltTamF.AutoHoover = true;
-
-            //btnAltTamF.BorderColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-            //btnAltTamF.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
-
             btnAltTamF.ButtonColor = Color.FromArgb(Program.Cor2[0], Program.Cor2[1], Program.Cor2[2]);
             btnAltTamF.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             btnAltTamF.BordaHoover = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
@@ -350,7 +334,7 @@ namespace tccCsharp
 
                 Font Nova = new Font("Microsoft Sans Serif", 12);
 
-                if (fd.Font.Size > 16 /*    fd.Font.Height > X  */)//Verifica se é mt grande 
+                if (fd.Font.Size > 16) /*    fd.Font.Height > X  *///Verifica se é mt grande 
                 {
                     Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
                 }
@@ -375,10 +359,7 @@ namespace tccCsharp
                 
             }
 
-
-            toggle = !toggle;
-            //nudFonte.Visible = toggle;
-            
+            toggle = !toggle;          
         }
 
         private void btnPersonalizar_Click(object sender, EventArgs e)
@@ -416,10 +397,7 @@ namespace tccCsharp
 
                 Program.Cor6[0] = cldPersonalizacao.Color.R;
                 Program.Cor6[1] = cldPersonalizacao.Color.G;
-                Program.Cor6[2] = cldPersonalizacao.Color.B;
-
-                //colocar cor do texto e aviso tbm?
-
+                Program.Cor6[2] = cldPersonalizacao.Color.B;              
             }
             */
             //rgbPCores.Visible= true;
@@ -443,16 +421,6 @@ namespace tccCsharp
         {
             this.Close();
         }
-
-        private void rgbPCores_Enter(object sender, EventArgs e)
-        {
-            if(rgbPCores.Visible==false)
-            {
-
-            }
-        }
-
-
 
         private void btnRestaurarPadrao_Click(object sender, EventArgs e)
         {
@@ -720,7 +688,8 @@ namespace tccCsharp
             }
         }
 
-        private void clCor1_Enter(object sender, EventArgs e)
+        //TESTE
+        /*private void clCor1_Enter(object sender, EventArgs e)
         {
             lblCor1.Margin = new System.Windows.Forms.Padding(1,1,1,1); 
             //btnRestaurarPadrao.ForeColor = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
@@ -740,7 +709,7 @@ namespace tccCsharp
                 //lblCor1.ForeColor = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
                 lblCor1_Click(sender, e);
             }
-        }
+        }*/
 
         private void frmConfiguracoes_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -755,14 +724,17 @@ namespace tccCsharp
             Properties.Settings.Default.CorTexto2 = Color.FromArgb(Program.CorTexto2[0], Program.CorTexto2[1], Program.CorTexto2[2]);
             Properties.Settings.Default.CorAviso1 = Color.FromArgb(Program.CorAviso1[0], Program.CorAviso1[1], Program.CorAviso1[2]);
             Properties.Settings.Default.CorAviso2 = Color.FromArgb(Program.CorAviso2[0], Program.CorAviso2[1], Program.CorAviso2[2]);
+
+
+            Properties.Settings.Default.fonte = Program.fonte;//new Font("Microsoft Sans Serif", 12); //, Program.fonte;
+            //Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
+
+            Properties.Settings.Default.logo = Program.logo;
+
+
             Properties.Settings.Default.Save();
         }
-
-        private void lblConfigsG_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnRestauraFont_Click(object sender, EventArgs e)
         {
             Font afdasda = new Font("Microsoft Sans Serif", 12);

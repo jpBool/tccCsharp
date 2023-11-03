@@ -583,14 +583,14 @@ namespace tccCsharp
             switch (logo)
             {
                 case 0:
-                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; //mudar img
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_White2; 
                     OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_Black;
                     OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_Black;
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_Black;
                     break;
 
                 case 1:
-                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; //mudar img
+                    opbLogo.Image = global::tccCsharp.Properties.Resources.Logo_Black2; 
                     OPBLogout.Image = global::tccCsharp.Properties.Resources.Logout_White;
                     OPBRecarregar.Image = global::tccCsharp.Properties.Resources.Refresh_White;
                     OPBConfiguracoes.Image = global::tccCsharp.Properties.Resources.Config_White;

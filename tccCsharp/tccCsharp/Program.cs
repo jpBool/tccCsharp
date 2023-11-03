@@ -132,6 +132,12 @@ namespace tccCsharp
             if (Properties.Settings.Default.CorAviso2 == Color.Transparent)
                 Properties.Settings.Default.CorAviso2 = Color.FromArgb(242, 92, 84);
 
+            //if (Properties.Settings.Default.fonte == new Font("Microsoft Sans Serif", 12))
+                Properties.Settings.Default.fonte = new Font("Microsoft Sans Serif", 12);
+
+            //if (Properties.Settings.Default.logo == 1)
+                Properties.Settings.Default.logo = 1;
+
             // Salvar as alterações nas configurações
             Properties.Settings.Default.Save();
         }

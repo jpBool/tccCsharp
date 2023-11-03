@@ -281,7 +281,7 @@ namespace tccCsharp
             this.rgbPCores.TabIndex = 23;
             this.rgbPCores.TabStop = false;
             this.rgbPCores.Visible = false;
-            this.rgbPCores.Enter += new System.EventHandler(this.rgbPCores_Enter);
+            //this.rgbPCores.Enter += new System.EventHandler(this.rgbPCores_Enter);
             // 
             // TLPPersonaliza
             // 
