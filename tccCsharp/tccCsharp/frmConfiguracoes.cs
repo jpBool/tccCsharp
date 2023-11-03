@@ -411,8 +411,7 @@ namespace tccCsharp
 
         private void btnTutoriais_Click(object sender, EventArgs e)
         {
-            Process.Start("https://chat.openai.com/c/15dd028c-3306-4a87-bb70-9351762c50e1");
-            //subtituir link
+            Process.Start("http://200.145.153.91/matheussoares/SENSEI/Help%20do%20Sistema%20-%20SENSEI.pdf");
         }
 
 
