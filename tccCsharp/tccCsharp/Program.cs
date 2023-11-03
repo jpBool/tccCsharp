@@ -95,6 +95,10 @@ namespace tccCsharp
             CorAviso2[0] = Properties.Settings.Default.CorAviso2.R;
             CorAviso2[1] = Properties.Settings.Default.CorAviso2.G;
             CorAviso2[2] = Properties.Settings.Default.CorAviso2.B;
+
+            fonte = Properties.Settings.Default.fonte;
+            //Font Properties.Settings.fonte;
+            logo = Properties.Settings.Default.logo;
         }
 
         public static void SetarConfiguracoesIniciais()
@@ -130,13 +134,14 @@ namespace tccCsharp
                 Properties.Settings.Default.CorAviso1 = Color.FromArgb(204, 255, 51);
 
             if (Properties.Settings.Default.CorAviso2 == Color.Transparent)
-                Properties.Settings.Default.CorAviso2 = Color.FromArgb(242, 92, 84);
+            { Properties.Settings.Default.CorAviso2 = Color.FromArgb(242, 92, 84); }
 
             //if (Properties.Settings.Default.fonte == new Font("Microsoft Sans Serif", 12))
                 Properties.Settings.Default.fonte = new Font("Microsoft Sans Serif", 12);
-
+            //fonte.Font, fonte.Font.Style);
+            
             //if (Properties.Settings.Default.logo == 1)
-                Properties.Settings.Default.logo = 1;
+            Properties.Settings.Default.logo = 1;
 
             // Salvar as alterações nas configurações
             Properties.Settings.Default.Save();

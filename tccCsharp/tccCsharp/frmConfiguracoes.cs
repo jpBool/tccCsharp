@@ -58,6 +58,7 @@ namespace tccCsharp
             lblCoresTexto.Font = Program.fonte;
             lblPCores.Font = Program.fonte;          
             lblConfiguracoes.Font = Program.fonte;
+            lblTrocaIcones.Font = Program.fonte;
             
             
 
@@ -727,6 +728,8 @@ namespace tccCsharp
 
 
             Properties.Settings.Default.fonte = Program.fonte;//new Font("Microsoft Sans Serif", 12); //, Program.fonte;
+            //Properties.Settings.Default.fonte = new Font(fonte.Font, fonte.Font.Style);
+            //Properties.Settings.Default.fonte = new Font(Font.FontFamily, 12, Font.Style);
             //Nova = new Font(fd.Font.FontFamily, 12, fd.Font.Style);
 
             Properties.Settings.Default.logo = Program.logo;
