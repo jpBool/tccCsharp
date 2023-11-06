@@ -260,6 +260,7 @@
             // 
             this.lblNSeguindo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNSeguindo.AutoEllipsis = true;
             this.lblNSeguindo.BackColor = System.Drawing.Color.Transparent;
             this.lblNSeguindo.Location = new System.Drawing.Point(6, 25);
             this.lblNSeguindo.Name = "lblNSeguindo";
@@ -273,6 +274,7 @@
             this.lblSeguindo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSeguindo.AutoEllipsis = true;
             this.lblSeguindo.BackColor = System.Drawing.Color.Transparent;
             this.lblSeguindo.Location = new System.Drawing.Point(25, 1);
             this.lblSeguindo.Margin = new System.Windows.Forms.Padding(50);
@@ -303,6 +305,7 @@
             // 
             this.lblNSeguidores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNSeguidores.AutoEllipsis = true;
             this.lblNSeguidores.BackColor = System.Drawing.Color.Transparent;
             this.lblNSeguidores.Location = new System.Drawing.Point(7, 25);
             this.lblNSeguidores.Name = "lblNSeguidores";
@@ -316,6 +319,7 @@
             this.lblSeguidores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSeguidores.AutoEllipsis = true;
             this.lblSeguidores.BackColor = System.Drawing.Color.Transparent;
             this.lblSeguidores.Location = new System.Drawing.Point(29, 1);
             this.lblSeguidores.Name = "lblSeguidores";
@@ -346,6 +350,7 @@
             // lblNCommits
             // 
             this.lblNCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNCommits.AutoEllipsis = true;
             this.lblNCommits.AutoSize = true;
             this.lblNCommits.Location = new System.Drawing.Point(137, 3);
             this.lblNCommits.Name = "lblNCommits";
@@ -356,6 +361,7 @@
             // lblCommits
             // 
             this.lblCommits.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCommits.AutoEllipsis = true;
             this.lblCommits.AutoSize = true;
             this.lblCommits.Location = new System.Drawing.Point(17, 1);
             this.lblCommits.Name = "lblCommits";
@@ -376,6 +382,7 @@
             // lblAtivoDesde
             // 
             this.lblAtivoDesde.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblAtivoDesde.AutoEllipsis = true;
             this.lblAtivoDesde.AutoSize = true;
             this.lblAtivoDesde.Location = new System.Drawing.Point(17, 36);
             this.lblAtivoDesde.Name = "lblAtivoDesde";
@@ -405,6 +412,7 @@
             // lblEmail
             // 
             this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblEmail.AutoEllipsis = true;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(120, 137);
             this.lblEmail.Name = "lblEmail";
@@ -432,6 +440,7 @@
             // lblNome
             // 
             this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblNome.AutoEllipsis = true;
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(118, 113);
             this.lblNome.Name = "lblNome";
@@ -685,6 +694,7 @@
             // 
             // lblNomeP2
             // 
+            this.lblNomeP2.AutoEllipsis = true;
             this.lblNomeP2.AutoSize = true;
             this.lblNomeP2.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeP2.Location = new System.Drawing.Point(6, 15);
@@ -802,6 +812,7 @@
             // 
             // lblNomeP1
             // 
+            this.lblNomeP1.AutoEllipsis = true;
             this.lblNomeP1.AutoSize = true;
             this.lblNomeP1.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeP1.Location = new System.Drawing.Point(6, 15);
@@ -900,6 +911,7 @@
             // 
             // lblNomeP3
             // 
+            this.lblNomeP3.AutoEllipsis = true;
             this.lblNomeP3.AutoSize = true;
             this.lblNomeP3.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeP3.Location = new System.Drawing.Point(6, 15);
