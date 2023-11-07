@@ -1295,7 +1295,7 @@ namespace tccCsharp
                 String sql = "SELECT id_colaborador, nome, email, telefone, avatar, colaborador_adm from gp2_colaboradores T1 " +
                     "INNER JOIN gp2_usuarios T2 on T1.id_colaborador = T2.id_usuario " +
                     "INNER JOIN gp2_projetos T3 ON T1.id_projeto = T3.id_projeto AND T1.id_colaborador != T3.id_criador " +
-                    "WHERE T1.id_projeto = @1";
+                    "WHERE T1.id_projeto = @1 ORDER BY nome";
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
@@ -1362,7 +1362,7 @@ namespace tccCsharp
             try
             {
                 Conectar();
-                String sql = "SELECT T1.id_usuario, nome, email, telefone, avatar FROM gp2_usuarios T1 LEFT JOIN gp2_colaboradores T2 ON T1.id_usuario = T2.id_colaborador AND T2.id_Projeto = @1 where id_colaborador IS NULL ORDER BY id_usuario";
+                String sql = "SELECT T1.id_usuario, nome, email, telefone, avatar FROM gp2_usuarios T1 LEFT JOIN gp2_colaboradores T2 ON T1.id_usuario = T2.id_colaborador AND T2.id_Projeto = @1 where id_colaborador IS NULL ORDER BY nome";
                 List<object> param = new List<object>();
                 param.Add(Program.id_projeto_atual);
                 NpgsqlDataReader dr = Banco.Selecionar(sql, param);
