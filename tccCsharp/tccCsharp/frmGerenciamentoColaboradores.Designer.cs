@@ -928,7 +928,7 @@
             this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.66667F));
             this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.33333F));
             this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
+            this.tlpAgrupaCl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149F));
             this.tlpAgrupaCl.Controls.Add(this.clProcurar, 0, 0);
             this.tlpAgrupaCl.Controls.Add(this.clLogout, 2, 1);
             this.tlpAgrupaCl.Controls.Add(this.clRecarregar, 1, 1);
@@ -961,7 +961,7 @@
             // 
             this.clLogout.LineColor = System.Drawing.Color.Black;
             this.clLogout.LineWidth = 1;
-            this.clLogout.Location = new System.Drawing.Point(290, 11);
+            this.clLogout.Location = new System.Drawing.Point(289, 11);
             this.clLogout.Name = "clLogout";
             this.clLogout.Size = new System.Drawing.Size(75, 3);
             this.clLogout.TabIndex = 12;
@@ -974,7 +974,7 @@
             // 
             this.clRecarregar.LineColor = System.Drawing.Color.Black;
             this.clRecarregar.LineWidth = 1;
-            this.clRecarregar.Location = new System.Drawing.Point(160, 11);
+            this.clRecarregar.Location = new System.Drawing.Point(159, 11);
             this.clRecarregar.Name = "clRecarregar";
             this.clRecarregar.Size = new System.Drawing.Size(75, 3);
             this.clRecarregar.TabIndex = 11;
@@ -1000,7 +1000,7 @@
             // 
             this.clVoltar.LineColor = System.Drawing.Color.Red;
             this.clVoltar.LineWidth = 1;
-            this.clVoltar.Location = new System.Drawing.Point(453, 3);
+            this.clVoltar.Location = new System.Drawing.Point(452, 3);
             this.clVoltar.Name = "clVoltar";
             this.clVoltar.Size = new System.Drawing.Size(75, 2);
             this.clVoltar.TabIndex = 9;
@@ -1013,7 +1013,7 @@
             // 
             this.clRemover.LineColor = System.Drawing.Color.Red;
             this.clRemover.LineWidth = 1;
-            this.clRemover.Location = new System.Drawing.Point(160, 3);
+            this.clRemover.Location = new System.Drawing.Point(159, 3);
             this.clRemover.Name = "clRemover";
             this.clRemover.Size = new System.Drawing.Size(75, 2);
             this.clRemover.TabIndex = 7;
@@ -1026,7 +1026,7 @@
             // 
             this.clAdicionar.LineColor = System.Drawing.Color.Red;
             this.clAdicionar.LineWidth = 1;
-            this.clAdicionar.Location = new System.Drawing.Point(290, 3);
+            this.clAdicionar.Location = new System.Drawing.Point(289, 3);
             this.clAdicionar.Name = "clAdicionar";
             this.clAdicionar.Size = new System.Drawing.Size(75, 2);
             this.clAdicionar.TabIndex = 8;
