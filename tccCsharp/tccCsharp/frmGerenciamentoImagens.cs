@@ -508,6 +508,9 @@ namespace tccCsharp
                 }
 
             }
+
+            MessageBox.Show("Imagem excluída com sucesso", "Sucesso", MessageBoxButtons.OK);
+
             pcbUpload.Image = null;
             pcbUpload.Tag = null;
             radNao.Checked = true;

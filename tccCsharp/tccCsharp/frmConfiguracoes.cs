@@ -328,6 +328,7 @@ namespace tccCsharp
 
         private void btnAltTamF_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Tamanho max. de fonte: 16. O tamanho da fonte pode variar de acordo com o seu estilo. Determinados estilos com o limite max. de tamanho podem afetar visualmente o espaço delimitado dos elementos do design.", "Alteração de fonte", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //Matheus ->
             FontDialog fd = new FontDialog();
             if(fd.ShowDialog() == DialogResult.OK)

@@ -318,6 +318,7 @@ namespace tccCsharp
             }
 
             Banco.InsereEtapa(novaEtapa);
+            MessageBox.Show("Etapa criada com sucesso!!", "Sucesso", MessageBoxButtons.OK);
             this.Close();
         }
 

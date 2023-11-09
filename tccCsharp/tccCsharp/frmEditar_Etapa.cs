@@ -438,6 +438,7 @@ namespace tccCsharp
             }
 
             Banco.AtualizaEtapa(EtapaAtualizada);
+            MessageBox.Show("Etapa atualizada com sucesso!!", "Sucesso", MessageBoxButtons.OK);
             this.Close();
         }
 

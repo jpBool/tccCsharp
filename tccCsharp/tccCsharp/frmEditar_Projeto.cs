@@ -824,6 +824,7 @@ namespace tccCsharp
             if (resultado == DialogResult.Yes)
             {
                 Banco.ExcluirProjeto();
+                MessageBox.Show("Projeto excluído com sucesso", "Sucesso", MessageBoxButtons.OK);
                 this.Close();
             }
             else if (resultado == DialogResult.No)
@@ -920,6 +921,7 @@ namespace tccCsharp
             editando.data_atualizacao = DateTime.Now;
 
             Banco.AtualizarProjeto(editando);
+            MessageBox.Show("Projeto atualizado com sucesso!!", "Sucesso", MessageBoxButtons.OK);
         }
     }
 }

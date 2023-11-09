@@ -49,6 +49,14 @@ namespace tccCsharp
             tlpLoginBase.Font = Program.fonte;
             tlpLoginBase2.Font = Program.fonte;
             tlpLoginBase3.Font = Program.fonte;
+            //lblAviso.Font = Program.fonte;
+            //lblBoasVindas.Font = Program.fonte;
+            lblEmail.Font = Program.fonte;
+            //lblFacaLogin.Font = Program.fonte;
+            //lblLogin.Font = Program.fonte;
+            lblSenha.Font = Program.fonte;
+            btnLogar.Font = Program.fonte;
+
             WindowState = FormWindowState.Maximized;
             rgbLogin.BackgroundColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);
             lblLogin.BackColor = Color.FromArgb(Program.Cor4[0], Program.Cor4[1], Program.Cor4[2]);

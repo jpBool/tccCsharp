@@ -378,10 +378,12 @@ namespace tccCsharp
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
-        {
+        {      
+
             if (Editando == false)
             {
                 comboNome.SelectedIndex = -1;
+                MessageBox.Show("Colaborador removido com sucesso", "Sucesso", MessageBoxButtons.OK);
             }
             else
             {
@@ -506,6 +508,8 @@ namespace tccCsharp
             FimCarregamento = true;
             Editando = false;
             selecionado = new Collaborators();
+
+            MessageBox.Show("Colaborador adicionado com sucesso!!", "Sucesso", MessageBoxButtons.OK);
         }
 
         private void OPBLogout_Click(object sender, EventArgs e)
