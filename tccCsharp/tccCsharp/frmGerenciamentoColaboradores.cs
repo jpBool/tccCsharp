@@ -382,8 +382,7 @@ namespace tccCsharp
 
             if (Editando == false)
             {
-                comboNome.SelectedIndex = -1;
-                MessageBox.Show("Colaborador removido com sucesso", "Sucesso", MessageBoxButtons.OK);
+                comboNome.SelectedIndex = -1;               
             }
             else
             {
@@ -421,6 +420,7 @@ namespace tccCsharp
                 FimCarregamento = true;
                 Editando = false;
                 selecionado = new Collaborators();
+                MessageBox.Show("Colaborador removido com sucesso", "Sucesso", MessageBoxButtons.OK);
             }
         }
 
